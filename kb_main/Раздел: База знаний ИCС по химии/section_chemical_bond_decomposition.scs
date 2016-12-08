@@ -1,0 +1,25 @@
+section_chemical_bond
+	<= nrel_section_decomposition:
+	{
+		section_covalent_bond
+		(*
+		=> nrel_section_base_order: 
+			section_ionic_bond;;
+		*);
+		section_ionic_bond
+		(*
+		=> nrel_section_base_order: 
+			section_hydrogen_bond;;
+		*);
+		section_hydrogen_bond
+		(*
+		=> nrel_section_base_order: 
+			section_metallic_bond;;
+		*);
+		section_metallic_bond
+		(*
+		=> nrel_section_base_order: 
+			section_hybridization_of_orbitals;;
+		*);
+		section_hybridization_of_orbitals
+	};;

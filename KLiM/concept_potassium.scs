@@ -1,0 +1,75 @@
+sc_node_not_relation -> concept_potassium;;
+
+concept_potassium => nrel_main_idtf:
+	[калий](* <-lang_ru;; *);
+	[potassium; K](* <-lang_en;; *);;
+
+concept_potassium <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: калий] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: potassium; K] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Калий (K) - это химический элемент первой группы с атомным номером 19; мягкий щелочной металл.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Potassium (K) is the chemical element of the first group with atomic number 19; soft alkali metal.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_potassium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+
+concept_potassium <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Cпособ получения калия - электролиз расплава хлорида калия](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Method of obtaining potassium is an electrolysis of molten potassium chloride](*<- lang_en;;*);;
+			*);;
+		-> rrel_key_sc_element: concept_potassium_chloride; nrel_electrolysis;;
+		*);;
+
+concept_potassium <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Основной способ получения калия в промышленности - обменная реакция между металлическим натрием и хлоридом калия](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The main method of obtaining potassium in industry is an exchange reaction between the metallic sodium and potassium chloride](*<- lang_en;;*);;
+			*);;
+		-> rrel_key_sc_element: concept_potassium_chloride; concept_exchange_reaction; nrel_electrolysis;;
+		*);;
+
+concept_potassium <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_metal; nrel_plotnost; nrel_temper_plavlen;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Калий — серебристо-белый металл. Плотность равна 0,856 г/см³, температура плавления 63,65 °C](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Potassium is silver-white metal. The density is 0,856 g/cm³, the melting temperature 63,65 °C](*<- lang_en;;*);;
+			*);;
+		*);;
+
+
+
+concept_potassium	<-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://Potassium.png";;*) ;;	
+				*);;

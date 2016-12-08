@@ -1,0 +1,28 @@
+resistent_acids<= nrel_inclusion: acid;;
+resistent_acids
+=> nrel_main_idtf:
+	[устойчивые кислоты]
+	(* <- lang_ru;;	*);
+	[resistent acids]
+	(* <- lang_en;;	*);;
+resistent_acids
+<- rrel_key_sc_element:
+	Definition_of_resistent_acids
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/resistent_acids.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<= nrel_using_constants:
+			{
+				acid
+			};;
+
+Definition_of_resistent_acids
+=> nrel_main_idtf:
+	[Опр.(устойчивые  кислоты)]
+	(* <- lang_ru;;	*);;

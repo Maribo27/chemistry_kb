@@ -1,0 +1,25 @@
+initiators
+        => nrel_main_idtf:
+                [initiators](*<- lang_en;;*);
+                [инициаторы](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (initiators)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (инициаторы)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [ИНИЦИАТОРЫ - вещества, добавление которых к реагентам в ряде случаев необходимо для возбуждения химической реакции, которая далее происходит без посторонней помощи. Инициаторы расходуются в ходе реакции, поэтому их не надо путать с КАТАЛИЗАТОРАМИ.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [INITIATORS - substances whose addition to the reagents in a number of cases it is necessary to excite the chemical reaction which occurs without further assistance. The initiators are consumed during the reaction, so they should not be confused with the catalyst.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

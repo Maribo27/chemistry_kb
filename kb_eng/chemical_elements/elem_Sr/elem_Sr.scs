@@ -1,0 +1,3 @@
+elem_Sr
+	=> nrel_main_idtf: [Strontium] (* <-lang_en;;*);
+	=> nrel_idtf: [Sr] (* <-lang_en;;*);;

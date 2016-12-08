@@ -1,0 +1,20 @@
+section_complex_substances
+	<= nrel_section_decomposition:
+	{
+		section_oxides
+		(*
+		=> nrel_section_base_order: 
+			section_basis;;
+		*);
+		section_basis
+		(*
+		=> nrel_section_base_order: 
+			section_acids;;
+		*);
+		section_acids
+		(*
+		=> nrel_section_base_order: 
+			section_salts;;
+		*);
+		section_salts
+	};;

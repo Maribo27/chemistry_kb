@@ -1,0 +1,14 @@
+functional_group
+	=> nrel_main_idtf: [functional_group](*<- lang_en;;*);
+						[функциональная группа](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://functional_group.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);;
+	

@@ -1,0 +1,53 @@
+neutron
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Нейтрон]
+	(* <- lang_ru;;	*);
+	[Neutron]
+	(* <- lang_en;;	*);;
+neutron
+<- rrel_key_sc_element:
+	Definition_of_neutron
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/neutron.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Несмотря на нулевой электрический заряд, нейтрон не является истинно нейтральной частицей. Античастицей нейтрона является антинейтрон, который не совпадает с самим нейтроном. Нейтрон аннигилирует с антинейтроном и другими антиадронами (в частности, с антипротоном).] (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Нейтрон — единственная из имеющих массу покоя элементарных частиц, для которой непосредственно наблюдалось гравитационное взаимодействие — искривление в поле земного тяготения траектории хорошо коллимированного пучка ультрахолодных нейтронов.] (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+Definition_of_neutron
+=> nrel_main_idtf:
+	[Опр.(Нейтрон)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

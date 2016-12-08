@@ -1,0 +1,24 @@
+allotropy
+        => nrel_main_idtf:
+                [allotropy](*<- lang_en;;*);
+                [аллотропия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (allotropy)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (аллотропия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [АЛЛОТРОПИЯ - явление существования химического элемента в виде двух или нескольких простых веществ, различных по строению и свойствам. Эти простые вещества, различные по строению и свойствам, называются аллотропными формами или аллотропными модификациями. Например, графит и алмаз - две аллотропные формы (модификации) углерода, молекулярный кислород и озон - две аллотропные модификации кислорода. При определенных условиях аллотропные модификации могут переходить друг в друга.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Allotropes - the phenomenon of the existence of a chemical element in the form of two or more simple substances, different in structure and properties. These simple substances, different in structure and properties, called allotropic forms or allotropic modifications. For example, graphite and diamond - two allotropic forms (modifications) of carbon, molecular oxygen and ozone - two allotropic modification of oxygen. Under certain conditions, allotropic modifications can transform into each other.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;

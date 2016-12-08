@@ -1,0 +1,3 @@
+elem_Cr
+	=> nrel_main_idtf: [Chromium] (* <-lang_en;;*);
+	=> nrel_idtf: [Cr] (* <-lang_en;;*);;

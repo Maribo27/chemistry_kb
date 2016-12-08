@@ -1,0 +1,26 @@
+aerosols
+        => nrel_main_idtf:
+                [aerosols](*<- lang_en;;*);
+                [аэрозоли](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (aerosols)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (аэрозоли)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Аэрозо́ль — дисперсная система, состоящая из взвешенных в газовой среде (дисперсионной среде), обычно в воздухе, мелких частиц (дисперсной фазы).]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Aerosol - disperse system consisting of suspended in a gaseous medium (dispersion medium), usually in the air, fine particles (dispersion phase).]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+<- rrel_key_sc_element: section_solutions;;
+

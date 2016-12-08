@@ -1,0 +1,36 @@
+elem_Ba
+	<= Integer_atomic_number: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 56(*<- number;;*);;
+		*);;
+	*);
+<= Double_atomic_weight: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 137.327(*<- number;;*);;
+		*);;
+	*);
+<= Double_electronegativity: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 0.89(*<- number;;*);;
+		*);;
+	*);
+<= ArrayOfInteger_oxidation_states: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 2(*<- number;;*);;
+		*);;
+	*);
+
+
+	<- rrel_periodic_row6:  rrel_periodic_column2: periodic_table;;

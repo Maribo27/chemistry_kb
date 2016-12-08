@@ -1,0 +1,8 @@
+section_periodic_law
+=> nrel_main_idtf: [Section: Periodic law](*<- lang_en;;*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_periodic_law.html" (* <-lang_en;; *);;
+		*);;

@@ -1,0 +1,26 @@
+emulsion
+        => nrel_main_idtf:
+                [emulsion](*<- lang_en;;*);
+                [эмульсия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (emulsion)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (эмульсия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Эму́льсия — дисперсная система, состоящая из микроскопических капель жидкости (дисперсной фазы), распределенных в другой жидкости (дисперсионной среде).]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Emulsion - a dispersed system consisting of microscopic liquid droplets (disperse phase) dispersed in another liquid (dispersion medium).]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+<- rrel_key_sc_element: section_solutions;;
+

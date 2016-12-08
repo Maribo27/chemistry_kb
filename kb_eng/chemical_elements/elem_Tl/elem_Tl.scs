@@ -1,0 +1,3 @@
+elem_Tl
+	=> nrel_main_idtf: [Thallium] (* <-lang_en;;*);
+	=> nrel_idtf: [Tl] (* <-lang_en;;*);;

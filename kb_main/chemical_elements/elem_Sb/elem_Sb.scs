@@ -1,0 +1,52 @@
+elem_Sb
+	<= Integer_atomic_number: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 51(*<- number;;*);;
+		*);;
+	*);
+<= Double_atomic_weight: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 121.757(*<- number;;*);;
+		*);;
+	*);
+<= Double_electronegativity: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 2.05(*<- number;;*);;
+		*);;
+	*);
+<= ArrayOfInteger_oxidation_states: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 3(*<- number;;*);;
+		*);;
+	*);
+<= ArrayOfInteger_oxidation_states: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> [negate-3](*<- number;;*);;
+		*);;
+	*);
+<= ArrayOfInteger_oxidation_states: ...
+	(*
+		<- value;;
+		=> nrel_maybe_value: ...
+		(*
+			-> 5(*<- number;;*);;
+		*);;
+	*);
+
+
+	<- rrel_periodic_row5:  rrel_periodic_column15: periodic_table;;

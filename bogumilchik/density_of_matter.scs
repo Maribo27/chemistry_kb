@@ -1,0 +1,25 @@
+density_of_matter
+        => nrel_main_idtf:
+                [density_of_matter](*<- lang_en;;*);
+                [плотность вещества](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (density of matter)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (плотнотсь вещества)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Плотность вещества — это плотность однородного тела, состоящего из этого вещества.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                             [material density - the density of the homogeneous body consisting of this material.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);; 
+                                        *);;
+*);;
+

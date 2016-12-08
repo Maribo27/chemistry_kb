@@ -1,0 +1,22 @@
+concept_salt <= nrel_inclusion: complex_substance;;
+concept_salt
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[concept_salt] (*<- lang_en;;*);
+		[соль] (*<- lang_ru;;*);;
+salt <- rrel_key_sc_element: salt_definition
+(*
+	=> nrel_main_idtf:
+		[Опр.(соль)](* <-lang_ru;; *);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:"file://salt_ru.html" (* <-lang_ru;;*);;
+		*);;
+*);
+<= nrel_using_constants:
+{
+	metal;
+	acid_residue
+};;
+	

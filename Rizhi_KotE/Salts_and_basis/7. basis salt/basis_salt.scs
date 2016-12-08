@@ -1,0 +1,20 @@
+basis_salt <= nrel_inclusion: concept_salt;;
+basis_salt
+	=> nrel_main_idtf: [basis_salt](*<- lang_en;;*);
+						[основные соли](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://basis_salt_ru.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+<= nrel_using_constants:
+	{
+		metal;
+		acid_residue;
+		hydroxyl_group
+	};;

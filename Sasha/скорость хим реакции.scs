@@ -1,0 +1,58 @@
+nrel_chemical_reaction_rate
+=>nrel_main_idtf:
+	[скорость химической реакции*] (* <-lang_ru;; *);
+=>nrel_idtf:
+	[chemical reaction rate*] (* <-lang_en;; *);
+	
+<- rrel_key_sc_element: Definition_nrel_chemical_reaction_rate
+	(*
+	=> nrel_main_idtf:	
+	[Опр (скорость химической реакции*)]
+	 (* <- lang_ru;; *);;
+	<-sc_definiton;;
+	=>nrel_using_constants: quantity;substance;unit_of_time;;
+	<= nrel_sc_text_translation: 
+	...
+		(* 
+		-> rrel_example:
+			[Скорость химической реакции — изменение количества одного из реагирующих веществ за единицу времени в единице реакционного пространства. Является ключевым понятием химической кинетики.] 
+			(* <-lang_ru;; *);;
+		*);;
+	*);
+
+	
+
+<- rrel_main_key_sc_element: stat_nrel_chemical_reaction_rate
+	(*
+		<- sc_Statement;;		
+		=> nrel_main_idtf: 					      			
+			[Утв.(величина*,вещество*,значение*)] 
+				(* <-lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example: 
+					[Скорость химической реакции — величина всегда положительная, поэтому, если она определяется по исходному веществу (концентрация которого убывает в процессе реакции), то полученное значение умножается на −1.] 
+						(* <- lang_ru;; *);;
+			*);;
+	*);
+<-sc_const;	
+<-sc_node_norole_relation;;
+
+
+nrel_chemical_reaction_rate => nrel_first_domain: reaction;;
+nrel_chemical_reaction_rate => nrel_second_domain: unit_of_measurement_of_time;;
+nrel_chemical_reaction_rate => nrel_definitional_domain:...
+	(*
+		<= nrel_combination:
+			{
+			reaction;
+			unit_of_measurement_of_time
+			};;
+	*);;
+
+quantity =>nrel_main_idtf:[изменение](* <-lang_ru;; *);;
+substance =>nrel_main_idtf:[количество](* <-lang_ru;; *);;
+unit_of_time =>nrel_main_idtf:[единица времени](* <-lang_ru;; *);;
+reaction =>nrel_main_idtf:[реакции](* <-lang_ru;; *);;
+unit_of_measurement_of_time =>nrel_main_idtf:[единицы измерения времени](* <-lang_ru;; *);;
+

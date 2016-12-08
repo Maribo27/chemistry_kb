@@ -1,0 +1,59 @@
+sc_node_not_relation -> concept_rubidium;;
+
+concept_rubidium => nrel_main_idtf:
+	[рубидий](* <-lang_ru;; *);
+	[rubidium; Rb](* <-lang_en;; *);;
+
+concept_rubidium <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: рубидий] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: rubidium; Rb] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Рубидий (Rb) - это химический элемент первой группы с атомным номером 37; мягкий легкоплавкий щелочной металл.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Rubidium (Rb) is the chemical element of the first group with atomic number 37; soft fusible alkali metal.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_rubidium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+
+concept_rubidium <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Основной способ получения рубидия - побочный продукт при производстве лития из лепидолита, получаемый после его осаждения  и разделения многократной перекристаллизацией](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The main method of obtaining rubidium is aby-product of lithium lepidolite obtained after precipitation and separation by repeated recrystallization](*<- lang_en;;*);;
+			*);;
+		-> rrel_key_sc_element: concept_lithium; concept_lepidolite; nrel_precipitation;;
+		*);;
+
+concept_rubidium <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_metal; nrel_plotnost; nrel_temper_plavlen;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Рубидий — серебристо-белый металл. Плотность равна 1,532 г/см³, температура плавления 39,05 °C](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Rubidium is silver-white metal. The density is 1,532 g/cm³, the melting temperature 39,05 °C](*<- lang_en;;*);;
+			*);;
+		*);;
+
+
+concept_rubidium	<-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://rubidii.png";;*) ;;	
+				*);;

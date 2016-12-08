@@ -1,0 +1,20 @@
+hydroxyl_group <= nrel_inclusion: functional_group;;
+hydroxyl_group
+	=> nrel_main_idtf: [hydroxyl_group](*<- lang_en;;*);
+						[гидроксильная группа](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://hydroxyl_group.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	<= nrel_using_constants:
+		{
+			oxygen;
+			hydrogen;
+			nrel_covalent_bond
+		};;

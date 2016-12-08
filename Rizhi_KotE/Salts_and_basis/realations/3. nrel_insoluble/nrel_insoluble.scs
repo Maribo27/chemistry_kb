@@ -1,0 +1,16 @@
+sc_node_norole_relation->nrel_insoluble;;
+nrel_insoluble
+	=> nrel_main_idtf: [nrel_insoluble](*<- lang_en;;*);
+						[растворимый](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://nrel_insoluble_ru.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_first_domain : substance;
+	=> nrel_second_domain : substance;;

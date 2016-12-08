@@ -1,0 +1,24 @@
+adsorption
+        => nrel_main_idtf:
+                [adsorption](*<- lang_en;;*);
+                [адсорбция](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (adsorption)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (адсорбция)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [АДСОРБЦИЯ - концентрирование какого-либо вещества на поверхности раздела фаз. Например, концентрирование молекул газа (адсорбата) на твердой поверхности (адсорбенте). В качестве адсорбентов используют, как правило, пористые тела с сильно развитой поверхностью (пример - активированный уголь). Адсорбция может быть результатом действия только физических сил между частицами вещества, но может сопровождаться и химическим взаимодействием адсорбата с адсорбентом (хемосорбция).]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Adsorption - concentration of a substance at the interface. For example, the concentration of the gas molecules (the adsorbate) to a solid surface (adsorbent). As adsorbents generally used porous bodies with high surface area (for example - charcoal). Adsorption can only be the result of physical forces between particles of a substance, but can be accompanied by a chemical interaction of adsorbate and the adsorbent (chemisorption).]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;

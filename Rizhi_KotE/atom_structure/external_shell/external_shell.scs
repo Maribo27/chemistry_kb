@@ -1,0 +1,38 @@
+external_shell <= nrel_inclusion: electron_shell;;
+external_shell
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[external_shell] (*<- lang_en;;*);
+		[внешняя электронная оболочка] (*<- lang_ru;;*);
+	=> nrel_idtf:
+			[валентная оболочка] (*<- lang_ru;;*);
+	<- rrel_key_sc_element: external_shell_definition
+	(*
+		=> nrel_main_idtf:
+			[Опр.(внешняя электронная оболочка)](* <-lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://external_shell_ru.html" (* <-lang_ru;;*);;
+			*);;
+		<= nrel_using_constants:
+			{
+				atom
+			};;
+	*);
+	<- rrel_key_sc_element: external_shel_of_noble_gases
+	(*
+		=> nrel_main_idtf:
+			[Утв.(внешняя электронная оболочка, благородный газ, гелий)](* <-lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:"file://external_shel_of_noble_gases_ru.html" (* <-lang_ru;;*);;
+			*);;
+		<= nrel_using_constants:
+			{
+				external_shell;
+				noble_gas;
+				helium
+			};;
+	*);;

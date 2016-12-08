@@ -1,0 +1,60 @@
+sc_node_not_relation -> concept_sodium;;
+
+concept_sodium => nrel_main_idtf:
+	[натрий](* <-lang_ru;; *);
+	[sodium; Na](* <-lang_en;; *);;
+
+concept_sodium <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: натрий] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: sodium; Na] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Натрий (Na) - это химический элемент первой группы с атомным номером 11; мягкий щелочной металл.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Sodium (Na) is the chemical element of the first group with atomic number 11; soft alkali metal.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_sodium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+
+concept_sodium <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Основной способ получения натрия - электролиз расплава едкого натра или хлорида натрия](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The main method of obtaining sodium is an electrolysis of molten sodium hydroxide or sodium chloride](*<- lang_en;;*);;
+			*);;
+		-> rrel_key_sc_element: concept_sodium_hydroxide; concept_sodium_chloride; nrel_electrolysis;;
+		*);;
+
+concept_sodium <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_metal; nrel_plotnost; nrel_temper_plavlen;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Натрий — серебристо-белый металл, пластичен. Плотность равна 0,96842 г/см³, температура плавления 97,86 °C](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Sodium is silver-white metal, plastic. The density is 0.96842 g / cm³, the melting temperature of 97,86 ° C](*<- lang_en;;*);;
+			*);;
+		*);;
+
+
+
+concept_sodium	<-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://Na_(Sodium).png";;*) ;;	
+				*);;

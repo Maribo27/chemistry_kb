@@ -1,0 +1,25 @@
+absolute_mass_of_molecule
+        => nrel_main_idtf:
+                [absolute_mass_of_molecule](*<- lang_en;;*);
+                [абсолютная масса молекулы](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (absolute mass of molecule)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (абсолютная масса молекулы)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Абсолютная молекулярная масса – масса молекулы, выраженная в единицах массы: г, кг. Она обозначается mM(Х), где Х – формула вещества. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [Absolute molecular weight - the mass of the molecule, expressed in units of weight: g, kg. It is denoted mM (X), where X - the formula of the substance.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

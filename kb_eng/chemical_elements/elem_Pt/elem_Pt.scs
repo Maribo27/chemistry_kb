@@ -1,0 +1,3 @@
+elem_Pt
+	=> nrel_main_idtf: [Platinum] (* <-lang_en;;*);
+	=> nrel_idtf: [Pt] (* <-lang_en;;*);;

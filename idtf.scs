@@ -1,0 +1,12 @@
+nrel_count_of_inclusion=>nrel_main_idtf:[количество вхождений*](*<-lang_ru;;*);;
+nrel_count_of_inclusion<-sc_node_norole_relation;;
+concept_hydrogen_oxide->H2O;;
+H2O->H;;
+H2O->O;;
+
+H2O=>nrel_inclusion:O;;
+H2O=>nrel_inclusion:H;;
+nrel_compound=>nrel_main_idtf:[соединение*](*<-lang_ru;;*);;
+nrel_compound<-sc_node_norole_relation;;
+nrel_decomposition=>nrel_main_idtf:[разложение*](*<-lang_ru;;*);;
+nrel_decomposition<-sc_node_norole_relation;;

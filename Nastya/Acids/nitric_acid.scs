@@ -1,0 +1,55 @@
+nitric_acid
+=> nrel_main_idtf:
+	[азотная кислота]
+	(* <- lang_ru;;	*);
+	[nitric acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[HNO3] 
+	(* <-lang_en;;*);;
+
+nitric_acid
+<- rrel_key_sc_element:
+	Definition_of_nitric_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nitric_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				strong_acids;
+				monobasic_acids;
+				acid;
+				liquid
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Азотная кислота смешивается с водой во всех соотношениях.](* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Высококонцентрированная азотная кислота имеет обычно бурую окраску вследствие происходящего на свету процесса разложения.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+Definition_of_nitric_acid
+=> nrel_main_idtf:
+	[Опр.(азотная кислота)]
+	(* <- lang_ru;;	*);;

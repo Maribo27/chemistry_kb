@@ -1,0 +1,10 @@
+section_simple_substances
+	<= nrel_section_decomposition:
+	{
+		section_metals
+		(*
+		=> nrel_section_base_order: 
+			section_nonmetals;;
+		*);
+		section_nonmetals
+	};;

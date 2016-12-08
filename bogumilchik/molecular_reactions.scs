@@ -1,0 +1,25 @@
+molecular_reactions
+        => nrel_main_idtf:
+                [molecular_reactions](*<- lang_en;;*);
+                [молекулярность реакции](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (molecular_reactions)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (молекулярность реакции)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [МОЛЕКУЛЯРНОСТЬ РЕАКЦИИ - число исходных частиц (например молекул, ионов), одновременно взаимодействующих друг с другом в одном элементарном акте реакции. Молекулярность реакции может составлять 1, 2 или 3. Соответственно различают МОНОМОЛЕКУЛЯРНЫЕ, БИМОЛЕКУЛЯРНЫЕ и ТРИМОЛЕКУЛЯРНЫЕ реакции. Иногда (но не всегда) молекулярность реакции совпадает с ПОРЯДКОМ РЕАКЦИИ.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [Molecular reactions - the number of primary particles (such as molecules, ions), at the same time interacting with each other in one elementary act of reaction. Molecular reactions may be 1, 2 or 3. Accordingly, there are monomolecular, bimolecular and intramolecular reaction. Sometimes (but not always) molecular reactions coincides with the order of the reaction.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

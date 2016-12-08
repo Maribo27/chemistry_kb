@@ -1,0 +1,3 @@
+elem_V
+	=> nrel_main_idtf: [Vanadium] (* <-lang_en;;*);
+	=> nrel_idtf: [V] (* <-lang_en;;*);;

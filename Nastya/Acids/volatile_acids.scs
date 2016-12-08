@@ -1,0 +1,40 @@
+volatile_acids<= nrel_inclusion: acid;;
+volatile_acids
+=> nrel_main_idtf:
+	[летучие кислоты]
+	(* <- lang_ru;;	*);
+	[volatile acids]
+	(* <- lang_en;;	*);;
+volatile_acids
+<- rrel_key_sc_element:
+	Definition_of_volatile_acids
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/volatile_acids.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				acid;
+				molecule
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Менее летучие кислоты вытесняют более летучие из их солей.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+Definition_of_volatile_acids
+=> nrel_main_idtf:
+	[Опр.(летучие кислоты)]
+	(* <- lang_ru;;	*);;

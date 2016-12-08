@@ -1,0 +1,17 @@
+sc_node_norole_relation->nrel_indicator;;
+nrel_indicator
+	=> nrel_main_idtf: [nrel_indicator](*<- lang_en;;*);
+						[индикатор](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"nrel_indicator_ru.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	nrel_header=>nrel_first_domain:substance;;
+	nrel_header=>nrel_second_domain:substance;
+	

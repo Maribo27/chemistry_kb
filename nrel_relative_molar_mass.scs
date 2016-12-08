@@ -1,0 +1,72 @@
+nrel_relative_molar_mass
+=>nrel_main_idtf:
+	[относительная молярная масса*] (* <-lang_ru;; *);
+=>nrel_idtf:
+	[relative molar mass*] (* <-lang_en;; *);
+	
+<- rrel_key_sc_element: Definition_nrel_relative_molar_mass
+	(*
+	=> nrel_main_idtf:	
+	[Опр (относительная молярная масса*)]
+	 (* <- lang_ru;; *);;
+	<-sc_definiton;;
+	=>nrel_using_constants: value;molecule;atom;;
+	<= nrel_sc_text_translation: 
+	...
+		(* 
+		-> rrel_example:
+			[Относительная молярная масса - это величина, которая показывает, во сколько раз масса молекулы больше 1/12 массы атома углерода.] 
+			(* <-lang_ru;; *);;
+		*);;
+	*);
+
+	
+
+<- rrel_main_key_sc_element: stat_nrel_relative_molar_mass
+	(*
+		<- sc_Statement;;		
+		=> nrel_main_idtf: 					      			
+			[Утв.(сумма*,элемент*,индекс*)] 
+				(* <-lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example: 
+					[Относительная молярная масса вещества равна сумме относительных атомнх масс всех элементов с учётом индексов.] 
+						(* <- lang_ru;; *);;
+			*);;
+	*);
+<-sc_const;	
+<-sc_node_norole_relation;;
+
+nrel_relative_molar_mass->rrel_examlpe: ( HCl => 36.5 );;
+HCl<-concept_vesheatvo;;
+36.5<-concept_number;;
+
+nrel_arity_relations => nrel_main_idtf:[арность отношения*](* <-lang_ru;; *);;
+sc_node_norole_relation ->nrel_arity_relations;;
+nrel_relative_molar_mass=>nrel_arity_relations:2(*<-concept_number;;*);;
+
+
+
+nrel_relative_molar_mass => nrel_first_domain: atom;;
+nrel_relative_molar_mass => nrel_second_domain: number;;
+nrel_relative_molar_mass => nrel_definitional_domain:...
+	(*
+		<= nrel_combination:
+			{
+			atom;
+			number
+			};;
+	*);;
+
+binary_relation => nrel_inclusion: reflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+nrel_relative_molar_mass <- reflexive_relation; antitransitive_relation; oriented_relation 
+	(* 
+		<= nrel_inclusion: relation 
+			(* 
+				=> nrel_inclusion: binary_relation;; 
+			*);; 
+	*);;
+atom =>nrel_main_idtf:[атом](* <-lang_ru;; *);;
+molecule =>nrel_main_idtf:[молекула](* <-lang_ru;; *);;

@@ -1,0 +1,25 @@
+rate_of_chemical_reaction
+        => nrel_main_idtf:
+                [rate_of_chemical_reaction](*<- lang_en;;*);
+                [скорость химической реакции](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (rate_of_chemical_reaction)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (скорость химической реакции)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Скорость химической реакции — изменение количества одного из реагирующих веществ за единицу времени в единице реакционного пространства. Является ключевым понятием химической кинетики. Скорость химической реакции — величина всегда положительная, поэтому, если она определяется по исходному веществу (концентрация которого убывает в процессе реакции), то полученное значение умножается на −1.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [The rate of chemical reaction - a change amount of one of the reactants per unit time per unit reaction volume. It is a key concept of chemical kinetics. The rate of chemical reactions - is always a positive value, therefore, if it is determined by the starting material (the concentration of which decreases during the reaction), the value obtained is multiplied by -1.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

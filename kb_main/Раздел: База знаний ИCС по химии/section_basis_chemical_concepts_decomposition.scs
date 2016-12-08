@@ -1,0 +1,15 @@
+section_basis_chemical_concepts
+	<= nrel_section_decomposition:
+	{
+		section_atomic_molecular_doctrine
+		(*
+		=> nrel_section_base_order: 
+			section_planetary_model_of_atomic_structure;;
+		*);
+		section_planetary_model_of_atomic_structure
+		(*
+		=> nrel_section_base_order: 
+			section_radioactivity;;
+		*);
+		section_radioactivity
+	};;

@@ -1,0 +1,42 @@
+elementary_particle
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Элементарная частица]
+	(* <- lang_ru;;	*);
+	[Elementary particle]
+	(* <- lang_en;;	*);;
+elementary_particle
+<- rrel_key_sc_element:
+	Definition_of_elementary_particle
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/elementary_particle.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<- rrel_key_sc_element:
+	... (*	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Некоторые элементарные частицы (электрон, нейтрино, кварки и т. д.) на данный момент считаются бесструктурными и рассматриваются как первичные фундаментальные частицы.] (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+Definition_of_elementary_particle
+=> nrel_main_idtf:
+	[Опр.(Элементарная частица)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

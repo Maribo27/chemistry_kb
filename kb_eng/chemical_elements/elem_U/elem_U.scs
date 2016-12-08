@@ -1,0 +1,3 @@
+elem_U
+	=> nrel_main_idtf: [Uranium] (* <-lang_en;;*);
+	=> nrel_idtf: [U] (* <-lang_en;;*);;

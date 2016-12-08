@@ -1,0 +1,41 @@
+salt_forming_oxides
+        => nrel_main_idtf:
+                [salt-forming oxides](*<- lang_en;;*);
+                [солеобразующие оксиды](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (salt-forming oxides)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (солеобразующие оксиды)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Солеобразующие оксиды</b> - <sc_element sys_idtf="concept_oxides">оксиды</sc_element> <sc_element sys_idtf="concept_nonmetal">неметаллов</sc_element> и <sc_element sys_idtf="concept_metal">металлов</sc_element>, при взаимодействии с <sc_element sys_idtf="water">водой</sc_element> образующие соответствующие <sc_element sys_idtf="concept_acid">кислоты</sc_element>, при взаимодействии с <sc_element sys_idtf="concept_basis">основаниями</sc_element> — соответствующие нормальные и кислые <sc_element sys_idtf="concept_salt">соли</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Salt-forming oxides</b> - <sc_element sys_idtf="concept_oxides">oxides</sc_element> of <sc_element sys_idtf="concept_nonmetal">non-metals</sc_element> and <sc_element sys_idtf="concept_metal">metals</sc_element>, in contact with <sc_element sys_idtf="water">water</sc_element> form the corresponding <sc_element sys_idtf="concept_acid">acid</sc_element> by reaction with <sc_element sys_idtf="concept_basis">bases</sc_element> - appropriate normal and acid <sc_element sys_idtf="concept_salt">salts</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+          <= nrel_subdividing:
+		      {
+			      acid_oxides;
+			      amphoteric_oxides;	
+                    basic_oxides		  
+		       };
+             
+        <= nrel_using_constants:
+                {
+                        oxides;
+                        nonmetal;
+                        metal;
+                        concept_acid;
+                        concept_basis;
+                        concept_salt
+                };
+<- rrel_key_sc_element: section_oxides;;
