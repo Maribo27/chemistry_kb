@@ -1,0 +1,3 @@
+elem_Ca
+	=> nrel_main_idtf: [calcium] (* <-lang_en;;*);
+	=> nrel_idtf: [Ca] (* <-lang_en;;*);;

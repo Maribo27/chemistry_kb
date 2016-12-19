@@ -1,0 +1,3 @@
+elem_Nb
+	=> nrel_main_idtf: [niobium] (* <-lang_en;;*);
+	=> nrel_idtf: [Nb] (* <-lang_en;;*);;

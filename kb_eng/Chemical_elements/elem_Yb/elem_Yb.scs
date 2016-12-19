@@ -1,0 +1,3 @@
+elem_Yb
+	=> nrel_main_idtf: [ytterbium] (* <-lang_en;;*);
+	=> nrel_idtf: [Yb] (* <-lang_en;;*);;

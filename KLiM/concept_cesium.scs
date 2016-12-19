@@ -1,10 +1,4 @@
-sc_node_not_relation -> concept_cesium;;
-
-concept_cesium => nrel_main_idtf:
-	[цезий](* <-lang_ru;; *);
-	[cesium; Cs](* <-lang_en;; *);;
-
-concept_cesium <- rrel_key_sc_element: 
+elem_Cs <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,9 +13,9 @@ concept_cesium <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_cesium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+elem_Cs <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
 
-concept_cesium <- rrel_key_sc_element:...
+elem_Cs <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -36,7 +30,7 @@ concept_cesium <- rrel_key_sc_element:...
 		-> rrel_key_sc_element: concept_reduction; concept_pollucite; concept_reducing_agent;;
 		*);;
 
-concept_cesium <- rrel_key_sc_element:...
+elem_Cs  <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -51,7 +45,7 @@ concept_cesium <- rrel_key_sc_element:...
 		-> rrel_key_sc_element: concept_reducing_agent;;
 		*);;
 
-concept_cesium <- rrel_key_sc_element:...
+elem_Cs  <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -67,7 +61,7 @@ concept_cesium <- rrel_key_sc_element:...
 		*);;
 
 
-concept_cesium	<-rrel_key_sc_element:...
+elem_Cs <-rrel_key_sc_element:...
 				(*<-sc_illustration;;
 				<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://Cs.png";;*) ;;	

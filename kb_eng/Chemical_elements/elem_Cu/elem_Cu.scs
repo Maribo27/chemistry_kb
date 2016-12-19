@@ -1,0 +1,3 @@
+elem_Cu
+	=> nrel_main_idtf: [copper] (* <-lang_en;;*);
+	=> nrel_idtf: [Cu] (* <-lang_en;;*);;

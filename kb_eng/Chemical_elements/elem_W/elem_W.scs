@@ -1,0 +1,3 @@
+elem_W
+	=> nrel_main_idtf: [tungsten] (* <-lang_en;;*);
+	=> nrel_idtf: [W] (* <-lang_en;;*);;

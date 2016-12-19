@@ -1,10 +1,4 @@
-sc_node_not_relation -> concept_lithium;;
-
-concept_lithium => nrel_main_idtf:
-	[литий](* <-lang_ru;; *);
-	[lithium; Li](* <-lang_en;; *);;
-
-concept_lithium <- rrel_key_sc_element: 
+elem_Li <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,7 +13,7 @@ concept_lithium <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_lithium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+elem_Li <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
 
 concept_lithium <- rrel_key_sc_element:...
 		(*
@@ -36,7 +30,7 @@ concept_lithium <- rrel_key_sc_element:...
 		-> rrel_key_sc_element: concept_lithium_chloride; nrel_electrolysis;;
 		*);;
 
-concept_lithium <- rrel_key_sc_element:
+elem_Li <- rrel_key_sc_element:
 		...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
@@ -52,7 +46,7 @@ concept_lithium <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_lithium	<-rrel_key_sc_element:...
+elem_Li <-rrel_key_sc_element:...
 				(*<-sc_illustration;;
 				<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://Limetal.png";;*) ;;	

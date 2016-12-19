@@ -1,0 +1,3 @@
+elem_Tc
+	=> nrel_main_idtf: [technetium] (* <-lang_en;;*);
+	=> nrel_idtf: [Tc] (* <-lang_en;;*);;

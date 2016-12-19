@@ -1,10 +1,8 @@
-sc_node_not_relation -> concept_sodium;;
-
-concept_sodium => nrel_main_idtf:
+elem_Na => nrel_main_idtf:
 	[натрий](* <-lang_ru;; *);
 	[sodium; Na](* <-lang_en;; *);;
 
-concept_sodium <- rrel_key_sc_element: 
+elem_Na <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,9 +17,9 @@ concept_sodium <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_sodium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+elem_Na <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
 
-concept_sodium <- rrel_key_sc_element:...
+elem_Na <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -36,7 +34,7 @@ concept_sodium <- rrel_key_sc_element:...
 		-> rrel_key_sc_element: concept_sodium_hydroxide; concept_sodium_chloride; nrel_electrolysis;;
 		*);;
 
-concept_sodium <- rrel_key_sc_element:...
+elem_Na <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -53,7 +51,7 @@ concept_sodium <- rrel_key_sc_element:...
 
 
 
-concept_sodium	<-rrel_key_sc_element:...
+elem_Na <-rrel_key_sc_element:...
 				(*<-sc_illustration;;
 				<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://Na_(Sodium).png";;*) ;;	

@@ -1,10 +1,4 @@
-sc_node_not_relation -> concept_potassium;;
-
-concept_potassium => nrel_main_idtf:
-	[калий](* <-lang_ru;; *);
-	[potassium; K](* <-lang_en;; *);;
-
-concept_potassium <- rrel_key_sc_element: 
+elem_K <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,9 +13,9 @@ concept_potassium <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_potassium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+elem_K <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
 
-concept_potassium <- rrel_key_sc_element:...
+elem_K <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -36,7 +30,7 @@ concept_potassium <- rrel_key_sc_element:...
 		-> rrel_key_sc_element: concept_potassium_chloride; nrel_electrolysis;;
 		*);;
 
-concept_potassium <- rrel_key_sc_element:...
+elem_K <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -51,7 +45,7 @@ concept_potassium <- rrel_key_sc_element:...
 		-> rrel_key_sc_element: concept_potassium_chloride; concept_exchange_reaction; nrel_electrolysis;;
 		*);;
 
-concept_potassium <- rrel_key_sc_element:...
+elem_K <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -66,9 +60,7 @@ concept_potassium <- rrel_key_sc_element:...
 			*);;
 		*);;
 
-
-
-concept_potassium	<-rrel_key_sc_element:...
+elem_K <-rrel_key_sc_element:...
 				(*<-sc_illustration;;
 				<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://Potassium.png";;*) ;;	

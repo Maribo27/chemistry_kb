@@ -1,0 +1,3 @@
+elem_Rf
+	=> nrel_main_idtf: [rutherfordium] (* <-lang_en;;*);
+	=> nrel_idtf: [Rf] (* <-lang_en;;*);;

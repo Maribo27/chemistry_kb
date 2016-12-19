@@ -1,10 +1,4 @@
-sc_node_not_relation -> concept_rubidium;;
-
-concept_rubidium => nrel_main_idtf:
-	[рубидий](* <-lang_ru;; *);
-	[rubidium; Rb](* <-lang_en;; *);;
-
-concept_rubidium <- rrel_key_sc_element: 
+elem_Rb <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,9 +13,9 @@ concept_rubidium <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_rubidium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
+elem_Rb <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal;;*);;
 
-concept_rubidium <- rrel_key_sc_element:...
+elem_Rb <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -36,7 +30,7 @@ concept_rubidium <- rrel_key_sc_element:...
 		-> rrel_key_sc_element: concept_lithium; concept_lepidolite; nrel_precipitation;;
 		*);;
 
-concept_rubidium <- rrel_key_sc_element:...
+elem_Rb <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -52,7 +46,7 @@ concept_rubidium <- rrel_key_sc_element:...
 		*);;
 
 
-concept_rubidium	<-rrel_key_sc_element:...
+elem_Rb <-rrel_key_sc_element:...
 				(*<-sc_illustration;;
 				<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://rubidii.png";;*) ;;	

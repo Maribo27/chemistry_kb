@@ -1,0 +1,3 @@
+elem_P
+	=> nrel_main_idtf: [phosphorus] (* <-lang_en;;*);
+	=> nrel_idtf: [P] (* <-lang_en;;*);;

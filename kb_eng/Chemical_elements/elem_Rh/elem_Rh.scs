@@ -1,0 +1,3 @@
+elem_Rh
+	=> nrel_main_idtf: [rhodium] (* <-lang_en;;*);
+	=> nrel_idtf: [Rh] (* <-lang_en;;*);;

@@ -1,0 +1,3 @@
+elem_Rg
+	=> nrel_main_idtf: [roentgenium] (* <-lang_en;;*);
+	=> nrel_idtf: [Rg] (* <-lang_en;;*);;

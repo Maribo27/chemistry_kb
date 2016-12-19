@@ -1,4 +1,4 @@
-elem_Uuh
+elem_Lv
 	<= Integer_atomic_number: ...
 	(*
 		<- value;;
@@ -12,7 +12,7 @@ elem_Uuh
 		<- value;;
 		=> nrel_maybe_value: ...
 		(*
-			-> 289.0(*<- number;;*);;
+			-> 293.0(*<- number;;*);;
 		*);;
 	*);
 <= Double_electronegativity: ...

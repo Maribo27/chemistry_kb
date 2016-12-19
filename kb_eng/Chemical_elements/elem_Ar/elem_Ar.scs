@@ -1,0 +1,3 @@
+elem_Ar
+	=> nrel_main_idtf: [argon] (* <-lang_en;;*);
+	=> nrel_idtf: [Ar] (* <-lang_en;;*);;

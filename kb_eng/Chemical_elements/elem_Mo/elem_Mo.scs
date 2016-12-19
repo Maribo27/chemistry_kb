@@ -1,0 +1,3 @@
+elem_Mo
+	=> nrel_main_idtf: [molybdenum] (* <-lang_en;;*);
+	=> nrel_idtf: [Mo] (* <-lang_en;;*);;

@@ -1,4 +1,4 @@
-concept_disaccharide
+disaccharide
 <- sc_node_not_relation;
 <= nrel_inclusion: oligosaccharide;
 <= nrel_subdividing: ...
@@ -17,38 +17,12 @@ concept_disaccharide
 	[biose](* <- lang_en;; *);
 	[double sugar](* <- lang_en;; *);;
 
-concept_disaccharide
-<- rrel_key_sc_element: concept_disaccharide_definition
+disaccharide
+<- rrel_key_sc_element:...
 	(*
-	<- sc_explanation;;
-	=> nrel_main_idtf:[Опр. (дисахарид)](* <- lang_ru;;*);;
-	<= nrel_sc_text_translation:...
-		(*
-		-> rrel_example: [Дисахаридами называются органические соединения, одна из основных групп углеводов; являются частным случаем олигосахаридов.] (* <-lang_ru;; *);;  
-		*);;
-	<= nrel_using_constants:...
-		(* 
-		-> oligosaccharide;organic_compound;carbohydrate;;
-		*);;
-	*);;
-
-concept_disaccharide
-<- rrel_key_sc_element:...
-	(* 
-	<- sc_explanation;;
-	=> nrel_main_idtf: [Утв.(дисахарид, молекула, моносахарид, гидроксильная группа)] (*<-lang_ru;;*);;
-	<= nrel_sc_text_translation:...
-		(* 
-		-> rrel_example: [Молекулы дисахаридов состоят из двух остатков моносахаридов, соединённых друг с другом за счёт взаимодействия гидроксильных групп (двух полуацетальных или одной полуацетальной и одной спиртовой).] (* <-lang_ru;; *);;
-		*);;
-	*);
-
-<- rrel_key_sc_element:...
-	(* 
-	<- sc_explanation;;
-	=> nrel_main_idtf: [Утв.(дисахарид, вещество, спирт, оптическая активность*)] (* <-lang_ru;; *);; 
-	<= nrel_sc_text_translation:...
-		(* 
-		-> rrel_example: [Дисахариды — твёрдые, кристаллические вещества, от слегка белого до коричневатого цвета, хорошо растворимые в воде и в 45 — 48°-градусном спирте, плохо растворимы в 96-градусном спирте, имеют оптическую активность; сладкие на вкус.] (* <-lang_ru;; *);;
-		*);;
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://html/concept_disaccharide.html"(* <- lang_ru;; *);;
+        *);;
 	*);;

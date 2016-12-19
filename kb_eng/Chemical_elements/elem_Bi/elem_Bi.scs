@@ -1,0 +1,3 @@
+elem_Bi
+	=> nrel_main_idtf: [bismuth] (* <-lang_en;;*);
+	=> nrel_idtf: [Bi] (* <-lang_en;;*);;

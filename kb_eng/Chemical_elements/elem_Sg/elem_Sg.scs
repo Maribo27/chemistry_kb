@@ -1,0 +1,3 @@
+elem_Sg
+	=> nrel_main_idtf: [seaborgium] (* <-lang_en;;*);
+	=> nrel_idtf: [Sg] (* <-lang_en;;*);;

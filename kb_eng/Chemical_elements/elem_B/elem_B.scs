@@ -1,0 +1,3 @@
+elem_B
+	=> nrel_main_idtf: [boron] (* <-lang_en;;*);
+	=> nrel_idtf: [B] (* <-lang_en;;*);;

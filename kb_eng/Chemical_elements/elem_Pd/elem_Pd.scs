@@ -1,0 +1,3 @@
+elem_Pd
+	=> nrel_main_idtf: [palladium] (* <-lang_en;;*);
+	=> nrel_idtf: [Pd] (* <-lang_en;;*);;

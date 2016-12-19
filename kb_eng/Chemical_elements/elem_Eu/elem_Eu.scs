@@ -1,0 +1,3 @@
+elem_Eu
+	=> nrel_main_idtf: [europium] (* <-lang_en;;*);
+	=> nrel_idtf: [Eu] (* <-lang_en;;*);;

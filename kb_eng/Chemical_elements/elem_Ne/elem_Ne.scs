@@ -1,0 +1,3 @@
+elem_Ne
+	=> nrel_main_idtf: [neon] (* <-lang_en;;*);
+	=> nrel_idtf: [Ne] (* <-lang_en;;*);;

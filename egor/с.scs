@@ -1,14 +1,4 @@
-elem_c
-=> nrel_main_idtf:
-	[углерод]
-	(* <- lang_ru;;	*);
-	[c]
-	(* <- lang_en;;	*);;
-elem_c
-=> nrel_idtf:
-	[carbon]
-	(* <- lang_en;;	*);;
-elem_c
+elem_C
 <- rrel_key_sc_element:
 	Definition_of_carbon
 	(* 

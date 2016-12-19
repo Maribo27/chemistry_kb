@@ -1,0 +1,3 @@
+elem_Rn
+	=> nrel_main_idtf: [radon] (* <-lang_en;;*);
+	=> nrel_idtf: [Rn] (* <-lang_en;;*);;

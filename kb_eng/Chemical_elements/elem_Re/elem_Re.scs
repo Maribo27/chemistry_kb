@@ -1,0 +1,3 @@
+elem_Re
+	=> nrel_main_idtf: [rhenium] (* <-lang_en;;*);
+	=> nrel_idtf: [Re] (* <-lang_en;;*);;

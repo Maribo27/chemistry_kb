@@ -1,0 +1,3 @@
+elem_Fr
+	=> nrel_main_idtf: [francium] (* <-lang_en;;*);
+	=> nrel_idtf: [Fr] (* <-lang_en;;*);;

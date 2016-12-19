@@ -17,29 +17,13 @@ nrel_oxidation_state
 	[oxidation number*](* <- lang_en;; *);;
 
 nrel_oxidation_state
-<- rrel_key_sc_element: nrel_oxidation_state_definition
-	(*
-	<- sc_explanation;;
-	=> nrel_main_idtf: [Опр.(степень окисления*)](* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation:...
-		(*
-		-> rrel_example: [Степенью окисления атома в молекуле называется количество отданных или принятых атомом электронов.](* <-lang_ru;; *);;  
-		*);;
-	<= nrel_using_constants:...
-		(*
-		->atom;electron;molecule;;
-	 	*);;
-	*);;
-
-nrel_oxidation_state
 <- rrel_key_sc_element:...
-	(* 
-	<- sc_explanation;;
-	=> nrel_main_idtf: [Утв.(степень окисления*, соединение*, атом, заряд*, ион)] (* <-lang_ru;; *);; 
-	<= nrel_sc_text_translation:...
-		(* 
-		-> rrel_example: [При связывании разных атомов степень окисления равна заряду, который приобрел бы атом в этом соединении, если бы оно могло состоять из одних ионов.] (* <-lang_ru;; *);;
-		*);;
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://html/nrel_oxidation_state.html"(* <- lang_ru;; *);;
+        *);;
 	*);;
 
 nrel_oxidation_state

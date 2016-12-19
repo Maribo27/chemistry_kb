@@ -1,0 +1,3 @@
+elem_K
+	=> nrel_main_idtf: [potassium] (* <-lang_en;;*);
+	=> nrel_idtf: [K] (* <-lang_en;;*);;

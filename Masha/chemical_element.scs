@@ -5,31 +5,15 @@ chemical_element
 	[chemical_element](* <- lang_en;; *);;
 
 chemical_element
-<- rrel_key_sc_element: chemical_element_definition
-	(*
-	<- sc_explanation;;
-	=> nrel_main_idtf:[Опр. (химический элемент)](* <- lang_ru;;*);;
-	<= nrel_sc_text_translation:...
-		(*
-		-> rrel_example: [Химическим элементом называется совокупность атомов с одинаковым зарядом атомных ядер и одинаковым числом электронов в атомной оболочке.] (* <-lang_ru;; *);;  
-		*);;
-	<= nrel_using_constants:...
-		(* 
-		-> nrel_charge;electron;nucleus;electron_shell;;
-		*);;
-	*);;
-
-chemical_element
 <- rrel_key_sc_element:...
-	(* 
-	<- sc_explanation;;
-	=> nrel_main_idtf: [Утв.(химический элемент, простое вещество)] (*<-lang_ru;;*);;
-	<= nrel_sc_text_translation:...
-		(* 
-		-> rrel_example: [Формой существования химических элементов в свободном виде являются простые вещества (одноэлементные).] (* <-lang_ru;; *);;
-		*);;
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://html/chemical_element.html"(* <- lang_ru;; *);;
+        *);;
 	*);
-
+	
 <- rrel_key_sc_element:...
 	(* 
 	<- sc_explanation;;

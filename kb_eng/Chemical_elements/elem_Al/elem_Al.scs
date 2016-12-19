@@ -1,0 +1,3 @@
+elem_Al
+	=> nrel_main_idtf: [aluminum] (* <-lang_en;;*);
+	=> nrel_idtf: [Al] (* <-lang_en;;*);;

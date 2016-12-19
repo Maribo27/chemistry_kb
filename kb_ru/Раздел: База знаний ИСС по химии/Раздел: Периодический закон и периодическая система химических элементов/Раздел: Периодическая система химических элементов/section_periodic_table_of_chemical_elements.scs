@@ -6,7 +6,9 @@ section_periodic_table_of_chemical_elements
 		(* 
 		-> rrel_example: "file://htmls/section_periodic_table_of_chemical_elements.html" (* <-lang_ru;; *);;
 		*);
-<= nrel_sc_text_translation:...
-		(*
-		-> rrel_example:  "file://section_periodic_table.jpg";;
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/table.html" (* <-lang_ru;; *);;
 		*);;

@@ -1,0 +1,3 @@
+elem_Fe
+	=> nrel_main_idtf: [iron] (* <-lang_en;;*);
+	=> nrel_idtf: [Fe] (* <-lang_en;;*);;

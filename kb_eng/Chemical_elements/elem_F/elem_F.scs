@@ -1,0 +1,3 @@
+elem_F
+	=> nrel_main_idtf: [fluorine] (* <-lang_en;;*);
+	=> nrel_idtf: [F] (* <-lang_en;;*);;

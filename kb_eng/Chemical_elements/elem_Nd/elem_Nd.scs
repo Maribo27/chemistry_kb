@@ -1,0 +1,3 @@
+elem_Nd
+	=> nrel_main_idtf: [neodymium] (* <-lang_en;;*);
+	=> nrel_idtf: [Nd] (* <-lang_en;;*);;

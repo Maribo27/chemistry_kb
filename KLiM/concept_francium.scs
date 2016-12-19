@@ -1,10 +1,4 @@
-sc_node_not_relation -> concept_francium;;
-
-concept_francium => nrel_main_idtf:
-	[франций](* <-lang_ru;; *);
-	[francium; Fr](* <-lang_en;; *);;
-
-concept_francium <- rrel_key_sc_element: 
+elem_Fr <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,9 +13,9 @@ concept_francium <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_francium <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal; radioactivity;;*);;
+elem_Fr <= nrel_using_constants:... (*->chemical_element; atomic_number; nrel_periodic_group; alkali_metal; radioactivity;;*);;
 
-concept_francium <- rrel_key_sc_element:...
+elem_Fr <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -35,7 +29,7 @@ concept_francium <- rrel_key_sc_element:...
 			*);;
 		*);;
 
-concept_francium <- rrel_key_sc_element:...
+elem_Fr <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -52,7 +46,7 @@ concept_francium <- rrel_key_sc_element:...
 
 
 
-concept_francium	<-rrel_key_sc_element:...
+elem_Fr <-rrel_key_sc_element:...
 				(*<-sc_illustration;;
 				<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://Francium.png";;*) ;;	
