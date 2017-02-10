@@ -1,0 +1,3 @@
+elem_Ts
+	=> nrel_main_idtf: [tennessinum] (* <-lang_en;;*);
+	=> nrel_idtf: [Ts] (* <-lang_en;;*);;

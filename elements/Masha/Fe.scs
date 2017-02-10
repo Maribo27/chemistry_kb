@@ -1,0 +1,92 @@
+elem_Fe
+<- rrel_key_sc_element:
+	Definition_of_Fe
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Fe.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+			};
+
+<- rrel_key_sc_element: number_of_fe
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (железо, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер железа равен 26] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_fe
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (железо, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Простое вещество железо — ковкий, вязкий металл серебристо-белого цвета с высокой химической реакционной способностью: железо быстро корродирует при высоких температурах или при высокой влажности на воздухе. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_fe
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (железо, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В чистом кислороде железо горит, а в мелкодисперсном состоянии самовозгорается и на воздухе. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_fe
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (железо, взаимодействие*, кислота, давление*, оксид углерода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Взаимодействует с кислотами. При повышенном давлении металлическое железо реагирует с оксидом углерода(II).] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: receipt_of_fe
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Fe_(receipt).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_fe
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://htmls/Fe_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_Fe
+=> nrel_main_idtf:
+	[Опр.(Железо)]
+	(* <- lang_ru;;	*);;

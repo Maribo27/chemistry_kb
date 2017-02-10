@@ -1,0 +1,80 @@
+elem_Yb
+<- rrel_key_sc_element:
+	Definition_of_ytterbium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Yb.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_yb
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (иттербий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер иттербия равен 70.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Ytterbium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+
+<- rrel_key_sc_element: receipt_of_ytterbium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (иттербий, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Основные методы получения иттербия — это восстановление оксида иттербия (III) в вакууме углеродом или лантаном, а также электролизом расплава хлорида YbCl3..] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: application_of_ytterbium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (иттербий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Ионы иттербия применяются для генерации лазерного излучения в ближнем инфракрасном диапазоне, с длиной волны излучения 1,06÷1,07 мкм, и в виде оксида иттербия используются для производства мощных волоконных лазеров.  ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_ytterbium
+=> nrel_main_idtf:
+	[Опр.(Иттербий)]
+	(* <- lang_ru;;	*);;

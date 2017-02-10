@@ -1,0 +1,72 @@
+elem_Lu
+<- rrel_key_sc_element:
+	Definition_of_lutetium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/lu.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				elem_S;
+				elem_F;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_lutetium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (лютеций, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер лютеция равен 71. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_lutetium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (лютеций, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://htmls/lu_chem_prop.html" (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_lutetium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (лютеций, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Лютеций — металл серебристо-белого цвета, легко поддаётся механической обработке. Он является самым тяжёлым элементом среди лантаноидов как по атомному весу, так и по плотности (9,8404 г/см³). Температура плавления лютеция (1663 °C) максимальна среди всех редкоземельных элементов. Благодаря эффекту лантаноидного сжатия среди всех лантаноидов лютеций имеет наименьшие атомный и ионный радиусы. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/lu.jpg";;
+		*);;
+	*);;
+
+
+
+
+Definition_of_lutetium
+=> nrel_main_idtf:
+	[Опр.(Лютеций)]
+	(* <- lang_ru;;	*);;

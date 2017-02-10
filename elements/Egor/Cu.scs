@@ -1,0 +1,138 @@
+elem_Cu
+<- rrel_key_sc_element:
+	Definition_of_cuprum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Cu.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_cu
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер меди равен 29] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_cu
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Простое вещество медь — это пластичный переходный металл золотисто-розового цвета (розового цвета при отсутствии оксидной плёнки).] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: location_of_cuprum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, нахождение)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Медь встречается в природе как в соединениях, так и в самородном виде.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: face_centered_cubic_lattice_of_cuprum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, кубическая гранецентрированая решётка)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Медь образует кубическую гранецентрированную решётку.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Cuprum.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+<- rrel_key_sc_element: thermal_and_electrical_conductivity_of_cuprum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, теплопроводность*, электропроводность*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Медь обладает высокой тепло- и электропроводностью.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: alloy_of_cuprum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, сплав)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Существует ряд сплавов меди: латуни — с цинком, бронзы — с оловом и другими элементами, мельхиор — с никелем и другие.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: receipt_of_cuprum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Медь получают из медных руд и минералов. Основные методы получения меди — пирометаллургия, гидрометаллургия и электролиз.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: reducing_agent_cuprum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, востановитель)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Медь является слабым восстановителем, не вступает в реакцию с водой и разбавленной соляной кислотой.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: oxidation_of_cuprum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (медь, окисление*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[На влажном воздухе медь окисляется, образуя основный карбонат меди(II) ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_cuprum
+=> nrel_main_idtf:
+	[Опр.(Медь)]
+	(* <- lang_ru;;	*);;

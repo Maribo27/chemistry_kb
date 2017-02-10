@@ -1,0 +1,155 @@
+elem_Hf
+<- rrel_key_sc_element:
+	Definition_of_hafnium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Hf.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_hf
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер гафния равен 72.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Hafnium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_hafnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Простое вещество гафний — тяжёлый тугоплавкий серебристо-белый металл. В мелкодисперсном состоянии имеет тёмно-серый, почти чёрный цвет; матовый. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: receipt_of_hafnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гафний получают путём переработки циркониевых руд.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: hafnium_mod
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, модификация*, кристалическая решётка)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гафний имеет две модификации. При комнатной температуре гафний обладает гексагональной плотноупакованной кристаллической решёткой. При температуре, равной 2016 К, гафний претерпевает аллотропическое превращение — гексагональная решётка переходит в объёмноцентрированную кубическую решётку.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: thermal_neutrons_and_hafnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, тепловые нейтроны)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гафний обладает высоким сечением захвата тепловых нейтронов.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: hafnium_inert_material
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, инетртный материал)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гафний — достаточно инертный материал из-за образования тонкой пассивной плёнки оксидов на поверхности.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: solvent_of_hafnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, растворитель*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Лучшим растворителем гафния является фтороводородная кислота (HF) или смесь фтороводородной и азотной кислот, а также царская водка.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: oxidation_of_hafnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, окислитель*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[При высоких температурах (свыше 1000 К) гафний окисляется на воздухе, а в кислороде сгорает. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: halogens_and_hafnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, галоген, взаимодействовать*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гафний реагирует с галогенами. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_hafnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гафний, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Основные области применения металлического гафния — производство сплавов для аэрокосмической техники, атомная промышленность, специальная оптика. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_hafnium
+=> nrel_main_idtf:
+	[Опр.(Гафний)]
+	(* <- lang_ru;;	*);;
