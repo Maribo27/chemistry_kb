@@ -1,8 +1,0 @@
-section_periodic_law
-=> nrel_main_idtf: [Раздел: Периодический закон](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_periodic_law.html" (* <-lang_ru;; *);;
-		*);;
