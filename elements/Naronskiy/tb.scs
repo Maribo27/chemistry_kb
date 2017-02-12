@@ -47,7 +47,7 @@ elem_Tb
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (тербий, химические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (тербий, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Степени окисления:4, 3.] (*<- lang_ru;;*);;
@@ -59,7 +59,7 @@ elem_Tb
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (тербий, физические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (тербий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Мягкий, вязкий металл серебристо-белого цвета.] (*<- lang_ru;;*);;

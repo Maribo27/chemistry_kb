@@ -1,0 +1,48 @@
+sc_agent_find_object_structure
+=> nrel_main_idtf:
+	[sc-агент поиск составляющих предмета] (* <- lang_ru;; *);
+	[sc-agent find object structure] (* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_find_object_structure_condition => ..sc_agent_find_object_structure_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_find_object_structure
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_find_object_structure
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_find_object_structure
+		};;
+	-> sc_agent_find_object_structure_scp    
+		(* <- active_sc_agent;; *);; 
+	*);;
+
+..sc_agent_find_object_structure
+= [*
+	question_find_object_structure _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_find_object_structure_result
+= [*
+	question_find_object_structure _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

@@ -47,7 +47,7 @@ elem_Tl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (таллий, химические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (таллий, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Степени окисления:3, 1] (*<- lang_ru;;*);;
@@ -59,7 +59,7 @@ elem_Tl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (таллий, физические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (таллий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Мягкий серебристо-белый металл с голубоватым оттенком.] (*<- lang_ru;;*);;

@@ -47,7 +47,7 @@ elem_Ta
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (тантал, химические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (тантал, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Степерь окисления:5.] (*<- lang_ru;;*);;
@@ -59,7 +59,7 @@ elem_Ta
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (тантал, физические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (тантал, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Тяжёлый твёрдый металл серого цвета] (*<- lang_ru;;*);;

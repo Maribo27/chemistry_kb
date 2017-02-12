@@ -47,7 +47,7 @@ elem_Tm
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (тулий, химические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (тулий, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Энергия ионизации(первый электрон):589,0 (6,10) кДж/моль (эВ)] (*<- lang_ru;;*);;
@@ -59,7 +59,7 @@ elem_Tm
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (тулий, физические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (тулий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Мягкий серебристо-белый металл] (*<- lang_ru;;*);;
