@@ -43,7 +43,7 @@ elem_Sg
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
+	*);;
 
 
 Definition_of_seaborgium
