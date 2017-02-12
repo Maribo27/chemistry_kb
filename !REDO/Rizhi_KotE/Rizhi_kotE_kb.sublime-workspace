@@ -19,7 +19,7 @@
 			"file": "substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond_ru.html",
 			"settings":
 			{
-				"buffer_size": 310,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -49,7 +49,7 @@
 			"file": "substances_structure/bond/nrel_polar_covalent_bond/nrel_polar_covalent_bond.scs",
 			"settings":
 			{
-				"buffer_size": 662,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -57,7 +57,7 @@
 			"file": "substances_structure/bond/nrel_nonpolar_covalent_bond/non_polar_covalent_bond_dipole_moment.gwf",
 			"settings":
 			{
-				"buffer_size": 807,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -284,7 +284,7 @@
 			"file": "substances_structure/bond/nrel_ionic_bond/ionic_bond_subject_ru.html",
 			"settings":
 			{
-				"buffer_size": 219,
+				"buffer_size": 0,
 				"line_ending": "Unix",
 				"name": "<p>"
 			}
@@ -293,20 +293,15 @@
 			"file": "scs list",
 			"settings":
 			{
-				"buffer_size": 121,
+				"buffer_size": 589,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
-	"build_system_choices":
-	[
-	],
-	"build_varint": "",
 	"command_palette":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -314,10 +309,7 @@
 	},
 	"console":
 	{
-		"height": 0.0,
-		"history":
-		[
-		]
+		"height": 0.0
 	},
 	"distraction_free":
 	{
@@ -328,18 +320,6 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/chemical_bond",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_covalent_bond",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_ionic_bond",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_nonpolar_covalent_bond",
-		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Yevgen/понятия химия"
-	],
 	"file_history":
 	[
 		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_nonpolar_covalent_bond/nrel_nonpolar_covalent_bond.scs",
@@ -387,7 +367,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 75.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb",
@@ -477,18 +457,17 @@
 				{
 					"buffer": 0,
 					"file": "substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond_ru.html",
-					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 310,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								46,
-								46
+								0,
+								0
 							]
 						],
 						"settings":
@@ -499,13 +478,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
 					"file": "substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 956,
@@ -515,8 +492,8 @@
 						"selection":
 						[
 							[
-								269,
-								269
+								57,
+								57
 							]
 						],
 						"settings":
@@ -528,13 +505,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
 					"file": "substances_structure/bond/nrel_nonpolar_covalent_bond/nrel_nonpolar_covalent_bond.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1095,
@@ -557,16 +532,14 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
 					"file": "substances_structure/bond/nrel_polar_covalent_bond/nrel_polar_covalent_bond.scs",
-					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 662,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -586,16 +559,14 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
 					"file": "substances_structure/bond/nrel_nonpolar_covalent_bond/non_polar_covalent_bond_dipole_moment.gwf",
-					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 807,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -616,13 +587,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
 					"file": "Salts_and_basis/10. metal/metal.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 377,
@@ -645,13 +614,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
 					"file": "Salts_and_basis/11. nonmetal/nonmetal.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 323,
@@ -674,13 +641,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
 					"type": "text"
 				},
 				{
 					"buffer": 7,
 					"file": "Salts_and_basis/12. alkali metal/alkali_metal.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 331,
@@ -703,13 +668,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
 					"type": "text"
 				},
 				{
 					"buffer": 8,
 					"file": "Salts_and_basis/3. Hydroxyl group/hydroxyl_group.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 430,
@@ -732,13 +695,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
 					"type": "text"
 				},
 				{
 					"buffer": 9,
 					"file": "Salts_and_basis/4. alkali/alkali.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 295,
@@ -761,13 +722,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
 					"type": "text"
 				},
 				{
 					"buffer": 10,
 					"file": "Salts_and_basis/5. Functional group/functional_group.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 306,
@@ -790,13 +749,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
 					"type": "text"
 				},
 				{
 					"buffer": 11,
 					"file": "Salts_and_basis/6. Acid salt/acid_salt.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 380,
@@ -819,13 +776,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
 					"type": "text"
 				},
 				{
 					"buffer": 12,
 					"file": "Salts_and_basis/7. basis salt/basis_salt.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 392,
@@ -848,13 +803,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 13,
 					"file": "Salts_and_basis/8. complex substance/complex_substance.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 356,
@@ -877,13 +830,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
 					"type": "text"
 				},
 				{
 					"buffer": 14,
 					"file": "Salts_and_basis/9. Elementaly substance/elementary_substance.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 368,
@@ -906,13 +857,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
 					"type": "text"
 				},
 				{
 					"buffer": 15,
 					"file": "Salts_and_basis/realations/1. nrel_indicator/nrel_indicator.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 397,
@@ -935,13 +884,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 16,
 					"file": "Salts_and_basis/realations/2. nrel_pH/nrel_pH.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 370,
@@ -964,13 +911,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
 					"type": "text"
 				},
 				{
 					"buffer": 17,
 					"file": "Salts_and_basis/realations/3. nrel_insoluble/nrel_insoluble.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 403,
@@ -993,13 +938,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 18,
 					"file": "Salts_and_basis/realations/nrel_indicator.txt",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 412,
@@ -1022,13 +965,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 19,
 					"file": "atom_structure/external_shell/external_shell.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 994,
@@ -1051,13 +992,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 20,
 					"file": "reactions/1. nrel_reaction/nrel_reactions.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1327,
@@ -1080,13 +1019,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 21,
 					"file": "reactions/2. nrel_exchange_reaction/nrel_exchange_reaction.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 755,
@@ -1109,13 +1046,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 22,
 					"file": "substances_structure/bond/chemical_bond/nrel_chemical_bond.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1145,
@@ -1138,13 +1073,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 23,
 					"file": "substances_structure/bond/nrel_covalent_bond/nrel_covalent_bond.scs",
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1490,
@@ -1167,12 +1100,10 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 24,
-					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 5957,
@@ -1297,24 +1228,22 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
 					"type": "text"
 				},
 				{
 					"buffer": 25,
 					"file": "substances_structure/bond/nrel_ionic_bond/ionic_bond_subject_ru.html",
-					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 219,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								213,
-								213
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1326,24 +1255,22 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
 					"type": "text"
 				},
 				{
 					"buffer": 26,
 					"file": "scs list",
-					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 121,
+						"buffer_size": 589,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								121,
-								121
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1354,7 +1281,6 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
 					"type": "text"
 				}
 			]
@@ -1395,8 +1321,6 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
-	"project": "Rizhi_kotE_kb.sublime-project",
 	"replace":
 	{
 		"height": 42.0
@@ -1405,7 +1329,6 @@
 	"select_file":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1414,32 +1337,15 @@
 	"select_project":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
-	},
-	"select_symbol":
-	{
-		"height": 0.0,
-		"last_filter": "",
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"selected_group": 0,
-	"settings":
-	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 197.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+	"status_bar_visible": true
 }
