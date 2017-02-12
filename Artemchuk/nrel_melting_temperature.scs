@@ -3,7 +3,7 @@ nrel_melting_temperature
 => nrel_main_idtf:
 	[температура плавления*]
 	(* <- lang_ru;;	*);
-	[molar concentration*]
+	[melting_temperature*]
 	(* <- lang_en;;	*);;
 
 nrel_melting_temperature
@@ -56,7 +56,7 @@ nrel_melting_temperature
 
 Definition_of_nrel_melting_temperature
 => nrel_main_idtf:
-	[Опр.(температура плавления)]
+	[Опр.(Температура плавления)]
 	(* <- lang_ru;;	*);;
 
 

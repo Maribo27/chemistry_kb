@@ -37,11 +37,24 @@ bromic_acid
 		(* 
 		-> rrel_example:[Бромноватая кислота в свободном состоянии не выделена, существует в растворе с максимальной концентрацией до 50%.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
 
-
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/bromic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_bromic_acid
 => nrel_main_idtf:
-	[Опр.(бромноватая кислота)]
+	[Опр.(Бромноватая кислота)]
 	(* <- lang_ru;;	*);;

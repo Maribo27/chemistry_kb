@@ -19,6 +19,21 @@ elem_Fl
 			};
 
 
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Flerovium.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
 <- rrel_key_sc_element: number_of_fl
 	(*
 		<- sc_explanation;;

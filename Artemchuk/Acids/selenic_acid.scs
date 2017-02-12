@@ -48,9 +48,39 @@ selenic_acid
 		(* 
 		-> rrel_example:[Селеновая кислота — одно из немногих соединений (и единственная кислота в чистом виде) растворяющих золото.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/selenic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/selenic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_selenic_acid
 => nrel_main_idtf:
-	[Опр.(селеновая кислота)]
+	[Опр.(Селеновая кислота)]
 	(* <- lang_ru;;	*);;

@@ -38,9 +38,39 @@ hydrobromic_acid
 		(* 
 		-> rrel_example:[Бромоводородная кислота реагирует с металлами, их оксидами, основаниями.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrobromic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrobromic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_hydrobromic_acid
 => nrel_main_idtf:
-	[Опр.(бромоводородная кислота)]
+	[Опр.(Бромоводородная кислота)]
 	(* <- lang_ru;;	*);;

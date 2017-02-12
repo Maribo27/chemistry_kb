@@ -18,6 +18,20 @@ elem_C
 				
 			};
 
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Carbon.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element: number_of_carbon
 	(*

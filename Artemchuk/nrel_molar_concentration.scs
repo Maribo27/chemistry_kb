@@ -38,7 +38,7 @@ nrel_molar_concentration
 
 Definition_of_nrel_molar_concentration
 => nrel_main_idtf:
-	[Опр.(молярная концентрация)]
+	[Опр.(Молярная концентрация)]
 	(* <- lang_ru;;	*);;
 
 

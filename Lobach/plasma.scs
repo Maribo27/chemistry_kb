@@ -1,8 +1,8 @@
 plasma
 => nrel_main_idtf:
-	[Плазма]
+	[плазма]
 	(* <- lang_ru;;	*);
-	[Plasma]
+	[plasma]
 	(* <- lang_en;;	*);;
 
 plasma
@@ -24,7 +24,20 @@ plasma
 			};
 
 
-
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Plasma_lamp.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element: particles_of_plasma
 	(*

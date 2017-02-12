@@ -68,17 +68,37 @@ sulfuric_acid
 		*);;
 *);
 
- <= nrel_sc_text_translation:...
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfuric_acid.png"
 			(*
-				-> rrel_example:
-					"file://sulfuric_acid.png";;
-			*);
- <= nrel_sc_text_translation:...
-			(*
-				-> rrel_example:
-					"file://sulfuric_acid2.png";;
+			=> nrel_format: format_png;;
 			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfuric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+	
 Definition_of_sulfuric_acid
 => nrel_main_idtf:
-	[Опр.(серная кислота)]
+	[Опр.(Серная кислота)]
 	(* <- lang_ru;;	*);;

@@ -1,0 +1,15 @@
+ui_menu_find_color_of_flame <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти вещества с заданным цветом пламени при горении] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find substances with a given flame color] (* <- lang_en;;*);;
+ui_menu_find_color_of_flame => ui_nrel_command_template:
+	[*
+		action_find_color_of_flame _-> ._action_find_color_of_flame_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_color_of_flame_instance _<- question;;
+	*];;
+
+ui_menu_find_color_of_flame => ui_nrel_command_lang_template: [У каких веществ при горении данный цвет пламени: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_find_color_of_flame => ui_nrel_command_lang_template: [What substances have this color of the flame during the burning: $ui_arg_1] (* <- lang_en;;*);;

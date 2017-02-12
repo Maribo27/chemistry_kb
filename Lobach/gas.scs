@@ -1,8 +1,8 @@
 gas
 => nrel_main_idtf:
-	[Газ]
+	[газ]
 	(* <- lang_ru;;	*);
-	[Gas]
+	[gas]
 	(* <- lang_en;;	*);;
 gas=>nrel_idtf:[Газообразное состояние]
 	(* <- lang_ru;;	*);;
@@ -25,7 +25,20 @@ gas
 			};
 
 
-
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/gas.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element: particles_of_gas
 	(*

@@ -36,9 +36,39 @@ iodic_acid
 		(* 
 		-> rrel_example:[Иодноватая кислота хорошо растворима в воде](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/iodic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/iodic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_iodic_acid
 => nrel_main_idtf:
-	[Опр.(иодноватая кислота)]
+	[Опр.(Иодноватая кислота)]
 	(* <- lang_ru;;	*);;

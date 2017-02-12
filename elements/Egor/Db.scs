@@ -19,6 +19,21 @@ elem_Db
 			};
 
 
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Dubnium.svg"
+			(*
+			=> nrel_format: format_svg;;
+			*);;
+		*);;
+	*);
+
 <- rrel_key_sc_element: number_of_db
 	(*
 		<- sc_explanation;;

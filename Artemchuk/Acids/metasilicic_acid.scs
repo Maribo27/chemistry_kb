@@ -36,9 +36,24 @@ metasilicic_acid
 		(* 
 		-> rrel_example:[Метакремниевая кислота представляет собой желатинообразную массу.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/metasilicic_acid.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_metasilicic_acid
 => nrel_main_idtf:
-	[Опр.(метакремниевая кислота)]
+	[Опр.(Метакремниевая кислота)]
 	(* <- lang_ru;;	*);;

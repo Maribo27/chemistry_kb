@@ -47,9 +47,39 @@ nitric_acid
 		(* 
 		-> rrel_example:[Высококонцентрированная азотная кислота имеет обычно бурую окраску вследствие происходящего на свету процесса разложения.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/nitric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/nitric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_nitric_acid
 => nrel_main_idtf:
-	[Опр.(азотная кислота)]
+	[Опр.(Азотная кислота)]
 	(* <- lang_ru;;	*);;

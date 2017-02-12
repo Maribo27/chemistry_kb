@@ -1,8 +1,8 @@
 anisotropy
 => nrel_main_idtf:
-	[Анизотропия]
+	[анизотропия]
 	(* <- lang_ru;;	*);
-	[Anisotropy]
+	[anisotropy]
 	(* <- lang_en;;	*);;
 anisotropy
 <- rrel_key_sc_element:

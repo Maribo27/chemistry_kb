@@ -1,0 +1,37 @@
+lib_component_agent_find_color_of_flame
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска веществ с заданным цветом пламени при горении]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search substances with given flame color]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_checking_domains_of_relation;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_color_of_flame; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_color_of_flame;;
+
+action_find_color_of_flame => nrel_main_idtf:
+	[действие. Поиск веществ с заданным цветом пламени при горении]
+	(* <- lang_ru;;	*);
+	[action. search substances with given flame color]
+	(* <- lang_en;;	*);;
+

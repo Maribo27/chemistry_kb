@@ -27,10 +27,40 @@ sulfurous_acid
 				dibasic_acids;
 				acid;
 				elem_S	
-			};;
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfurous_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfurous_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 
 Definition_of_sulfurous_acid
 => nrel_main_idtf:
-	[Опр.(сернистая кислота)]
+	[Опр.(Сернистая кислота)]
 	(* <- lang_ru;;	*);;

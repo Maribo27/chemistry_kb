@@ -4,12 +4,11 @@ scp_program -> proc_search_of_object_structure
 	(*
 		-> rrel_1: rrel_in: rrel_fixed: _ans;;
 		-> rrel_2: rrel_in: rrel_fixed: _obj;;
-		-> rrel_3: rrel_in: rrel_fixed: _beg;;
 	*);;
 
 	-> rrel_operators: .proc_search_of_object_structure_operatorset 
 	(*
-		-> rrel_init: /*.proc_search_of_object_structure_operator0
+		-> rrel_init: .proc_search_of_object_structure_operator0
 		(*
 			<- printEl;;
 
@@ -19,7 +18,9 @@ scp_program -> proc_search_of_object_structure
 		*);; 
 
 
-		->*/ .proc_search_of_object_structure_operator1 
+
+
+		-> .proc_search_of_object_structure_operator1 
 		(*
 			<- searchSetStr5;;
 		
@@ -32,7 +33,7 @@ scp_program -> proc_search_of_object_structure
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
 
 			=> nrel_then: .proc_search_of_object_structure_operator2;;
-			=> nrel_else: .proc_search_of_object_structure_operator6;;
+			=> nrel_else: .proc_search_of_object_structure_operatorreturn;;
 		*);;
 
 		//поиск по множеству элементов, если оно не пустое, то переходим к следующему пункту, иначе выводим ответ и выходим из программы
@@ -67,8 +68,6 @@ scp_program -> proc_search_of_object_structure
 			(*
 				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _ans;;
 				-> rrel_2: rrel_fixed: rrel_scp_var: _elem;;
-				-> rrel_3: rrel_fixed: rrel_scp_var: _beg;;
-
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
 			
@@ -81,38 +80,36 @@ scp_program -> proc_search_of_object_structure
 			
 			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set2;;
 			
-			=> nrel_goto: .proc_search_of_object_structure_operator2;;
+			=> nrel_goto: .proc_search_of_object_structure_operator6;;
 		*);;
 
 		//поиск 5тиэлементной конструкции (предмет => элемент)
 		-> .proc_search_of_object_structure_operator6
 		(*
-			<- searchElStr3;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcx;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _obj;;
-
-			=> nrel_then: .proc_search_of_object_structure_operatorreturn;;
-			=> nrel_else: .proc_search_of_object_structure_operator7;;
-		*);;
-
-		//поиск 5тиэлементной конструкции (предмет => элемент)
-		-> .proc_search_of_object_structure_operator7
-		(*
 			<- searchElStr5;;
 		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _beg;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _obj;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _aarc4;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _obj;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _aarc5;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object_structure;;
+	  		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object_structure;;
 
-			=> nrel_then: .proc_search_of_object_structure_operator8;;
-			=> nrel_else: .proc_search_of_object_structure_operator11;;
+			=> nrel_goto: .proc_search_of_object_structure_operator7;;
 		*);;
 
 		//добавляем в ответ элемент
+		-> .proc_search_of_object_structure_operator7
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _ans;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _aarc6;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+		
+			=> nrel_goto:  .proc_search_of_object_structure_operator8;;
+		*);;
+
+		//добавляем в ответ бинарную дугу
 		-> .proc_search_of_object_structure_operator8
 		(*
 			<- genElStr3;;
@@ -133,31 +130,7 @@ scp_program -> proc_search_of_object_structure
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _aarc8;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _aarc5;;
 		
-			=> nrel_goto:  .proc_search_of_object_structure_operator10;;
-		*);;
-
-		-> .proc_search_of_object_structure_operator10
-		(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _ans;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _aarc6;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _obj;;
-		
-			=> nrel_goto:  .proc_search_of_object_structure_operatorreturn;;
-		*);;
-
-		-> .proc_search_of_object_structure_operator11
-		(*
-			<- genElStr5;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _beg;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _aarc9;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _obj;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _aarc10;;
-	  		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object_structure;;
-		
-			=> nrel_goto:  .proc_search_of_object_structure_operator7;;
+			=> nrel_goto:  .proc_search_of_object_structure_operator2;;
 		*);;
 
 		->.proc_search_of_object_structure_operatorreturn 

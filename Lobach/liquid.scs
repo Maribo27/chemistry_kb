@@ -1,8 +1,8 @@
 liquid
 => nrel_main_idtf:
-	[Жидкость]
+	[жидкость]
 	(* <- lang_ru;;	*);
-	[Liquid]
+	[liquid]
 	(* <- lang_en;;	*);;
 liquid
 <- rrel_key_sc_element:

@@ -48,9 +48,39 @@ chloric_acid
 		(* 
 		-> rrel_example:[Хлорноватая кислота в свободном виде не получена; в водных растворах при концентрации ниже 30% на холоде довольно устойчива; в более концентрированных растворах распадается.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/chloric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/chloric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_chloric_acid
 => nrel_main_idtf:
-	[Опр.(хлорноватая кислота)]
+	[Опр.(Хлорноватая кислота)]
 	(* <- lang_ru;;	*);;

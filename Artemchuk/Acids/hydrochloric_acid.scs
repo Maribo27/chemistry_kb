@@ -39,9 +39,24 @@ hydrochloric_acid
 		(* 
 		-> rrel_example:[Соляную кислоту получают растворением газообразного хлороводорода в воде.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrochloric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_hydrochloric_acid
 => nrel_main_idtf:
-	[Опр.(соляная кислота)]
+	[Опр.(Соляная кислота)]
 	(* <- lang_ru;;	*);;

@@ -1,8 +1,8 @@
 thermal_motion
 => nrel_main_idtf:
-	[Тепловое движение]
+	[тепловое движение]
 	(* <- lang_ru;;	*);
-	[Thermal motion]
+	[thermal motion]
 	(* <- lang_en;;	*);;
 
 thermal_motion

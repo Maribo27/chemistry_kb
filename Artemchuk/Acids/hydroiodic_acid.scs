@@ -39,9 +39,39 @@ hydroiodic_acid
 		(* 
 		-> rrel_example:[Иодоводородная кислота — очень сильный восстановитель, поэтому окисляется даже кислородом воздуха.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydroiodic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydroiodic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
 
 Definition_of_hydroiodic_acid
 => nrel_main_idtf:
-	[Опр.(иодоводородная кислота)]
+	[Опр.(Иодоводородная кислота)]
 	(* <- lang_ru;;	*);;

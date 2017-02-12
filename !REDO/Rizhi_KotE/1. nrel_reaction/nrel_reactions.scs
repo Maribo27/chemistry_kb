@@ -40,4 +40,14 @@ nrel_reaction
 				reagent;
 				product
 			};;
+		*);
+<- rrel_key_sc_element: new_substances
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (химическая реакция*, атом)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В химических процессах (химических реакциях) получаются новые вещества с отличными от реагентов свойствами, но никогда не образуются атомы новых элементов.  ] (*<- lang_ru;;*);;
 		*);;
+	*);;

@@ -1,6 +1,6 @@
 halogen
 => nrel_main_idtf:
-	[галогены]
+	[галоген]
 	(* <- lang_ru;;	*);
 	[halogen]
 	(* <- lang_en;;	*);;
@@ -28,6 +28,21 @@ halogen
 				
 			};
 
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/podgruppaftora.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element: halogen_nonmetal
 	(*

@@ -1,7 +1,7 @@
 pH_indicator
 
 => nrel_main_idtf:
-	[кислотно-основные индикаторы]
+	[кислотно-основной индикатор]
 	(* <- lang_ru;;	*);
 	[pH indicator]
 	(* <- lang_en;;	*);;
@@ -20,6 +20,20 @@ pH_indicator
 	*);
 
 
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/PH_indicator_paper.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element: using1_of_pH_indicator
 	(*

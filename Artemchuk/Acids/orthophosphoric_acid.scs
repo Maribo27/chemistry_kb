@@ -69,17 +69,37 @@ orthophosphoric_acid
 		*);;
 *);
 
- <= nrel_sc_text_translation:...
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/orthophosphoric_acid.png"
 			(*
-				-> rrel_example:
-					"file://orthophosphoric_acid.png";;
-			*);
- <= nrel_sc_text_translation:...
-			(*
-				-> rrel_example:
-					"file://orthophosphoric_acid2.png";;
+			=> nrel_format: format_png;;
 			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/orthophosphoric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
 Definition_of_orthophosphoric_acid
 => nrel_main_idtf:
-	[Опр.(ортофосфорная кислота)]
+	[Опр.(Ортофосфорная кислота)]
 	(* <- lang_ru;;	*);;
