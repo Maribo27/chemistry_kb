@@ -35,7 +35,7 @@ elem_Ar
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (аргон, физические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (аргон, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Аргон — инертный одноатомный газ без цвета, вкуса и запаха. ] (*<- lang_ru;;*);;
@@ -47,7 +47,7 @@ elem_Ar
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (аргон, химические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (аргон, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Инертный, неактивный газ. Не горюч, не ядовит. ] (*<- lang_ru;;*);;

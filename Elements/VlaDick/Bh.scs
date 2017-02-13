@@ -35,7 +35,7 @@ elem_Bh
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (борий, физические свойтсва)](*<- lang_ru;;*);;
+			[Утв. (борий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Борий — трансурановый элемент, металл.  ] (*<- lang_ru;;*);;
