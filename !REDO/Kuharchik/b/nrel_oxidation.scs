@@ -1,0 +1,21 @@
+sc_node_norole_relation->nrel_oxidation;;
+
+nrel_oxidation
+	=> nrel_main_idtf: 
+		[oxidation](*<- lang_en;;*);
+		[окисление*](*<- lang_ru;;*);
+
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				[Окисление - химическая реакция, при которой электроны отбираются у данного вещества окислителем.]
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_second_domain:substance;
+	=> nrel_first_domain:substance;
+<- rrel_key_sc_element: section_acids;;
+	

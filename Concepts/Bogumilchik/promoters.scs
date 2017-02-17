@@ -1,21 +1,21 @@
-promoters
+promoter
         => nrel_main_idtf:
-                [promoters](*<- lang_en;;*);
-                [промоторы](*<- lang_ru;;*);
+                [promoter](*<- lang_en;;*);
+                [промотор](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
                         <- sc_definition;;
-                        => nrel_main_idtf: [Definition (promoters)](*<- lang_en;;*);;
-                        => nrel_main_idtf: [Определение (промоторы)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Definition (promoter)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (промотор)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [ПРОМОТОРЫ - вещества, сами по себе не являющиеся КАТАЛИЗАТОРАМИ данной реакции, но усиливающие действие основного катализатора.]
+                                                [Промоторы - вещества, сами по себе не являющиеся КАТАЛИЗАТОРАМИ данной реакции, но усиливающие действие основного катализатора.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
                                                 *); 
-                                            [Promoter - substances themselves are not of the catalyst reaction, but the reinforcing effect of a basic catalyst.]
+                                            [Promoters - substances themselves are not of the catalyst reaction, but the reinforcing effect of a basic catalyst.]
                                                 (*
                                                         <- lang_en;;
                                                         => nrel_format: format_html;;

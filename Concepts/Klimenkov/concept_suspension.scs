@@ -1,11 +1,11 @@
-sc_node_not_relation -> concept_suspension;;
+sc_node_not_relation -> suspension;;
 
-concept_suspension => nrel_main_idtf:
+suspension => nrel_main_idtf:
 	[суспензия](* <-lang_ru;; *);
 	[взвесь](* <-lang_ru;; *);
 	[suspension](* <-lang_en;; *);;
 
-concept_suspension <- rrel_key_sc_element: 
+suspension <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -14,18 +14,18 @@ concept_suspension <- rrel_key_sc_element:
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
-				[Суспе́нзия — дисперсная система, где твёрдое вещество распределено в виде мельчайших частиц в жидком веществе во взвешенном (неосевшем) состоянии.](*<- lang_ru;;*);;
+				[Суспензия — дисперсная система, где твёрдое вещество распределено в виде мельчайших частиц в жидком веществе во взвешенном (неосевшем) состоянии.](*<- lang_ru;;*);;
 			-> rrel_example: 
 				[Suspension is dispersion, where solid matter is distributed in the form of tiny particles in a liquid substance in a suspension (neosevshem) state.](*<- lang_en;;*);;
 			*);;
 		*);;
 
-concept_emulsion <= nrel_using_constants: concept_dispersion;;
+suspension <= nrel_using_constants: dispersion;;
 
-concept_emulsion <- rrel_key_sc_element:...
+suspension <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
-		-> rrel_key_sc_element: concept_rubber;;
+		-> rrel_key_sc_element: rubber;;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*
@@ -34,7 +34,7 @@ concept_emulsion <- rrel_key_sc_element:...
 			*);;
 		*);;
 
-concept_emulsion <- rrel_key_sc_element:...
+suspension <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;

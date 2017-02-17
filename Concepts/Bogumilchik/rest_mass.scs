@@ -10,12 +10,12 @@ rest_mass
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [МАССА ПОКОЯ - масса тела в системе отсчета, в которой оно покоится.]
+                                                [Масса покоя - масса тела в системе отсчета, в которой оно покоится.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
                                                 *);
-                                              [REST MASS - weight in the reference frame in which it rests.]
+                                              [Rest mass - weight in the reference frame in which it rests.]
                                                 (*
                                                         <- lang_en;;
                                                         => nrel_format: format_html;;

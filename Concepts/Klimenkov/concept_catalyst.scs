@@ -1,10 +1,10 @@
-sc_node_not_relation -> concept_catalyst;;
+sc_node_not_relation -> catalyst;;
 
-concept_catalyst => nrel_main_idtf:
+catalyst => nrel_main_idtf:
 	[катализатор](* <-lang_ru;; *);
 	[catalyst](* <-lang_en;; *);;
 
-concept_catalyst <- rrel_key_sc_element: 
+catalyst <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,9 +19,9 @@ concept_catalyst <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_catalyst <= nrel_using_constants: nrel_reaction; substance; reaction_product;;
+catalyst <= nrel_using_constants: nrel_reaction; substance; reaction_product;;
 
-concept_catalyst <- rrel_key_sc_element:
+catalyst <- rrel_key_sc_element:
 		...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
@@ -36,7 +36,7 @@ concept_catalyst <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_catalyst <- rrel_key_sc_element:...
+catalyst <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;

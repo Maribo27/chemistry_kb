@@ -1,0 +1,18 @@
+sc_node_norole_relation->nrel_oxidizer;;
+nrel_oxidizer
+	=> nrel_main_idtf: [oxidizer*](*<- lang_en;;*);
+						[окислитель*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				[Окислитель - вещество, способное отнимать электроны у другого вещества (восстановителя).]
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_second_domain:substance;
+	=> nrel_first_domain:substance;
+<- rrel_key_sc_element: section_acids;;
+	

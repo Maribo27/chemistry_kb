@@ -6,7 +6,7 @@ nrel_precipitation
 nrel_precipitation
 		=>nrel_first_domain:chemical_element;;
 nrel_precipitation
-		=> nrel_second_domain:concept_solution;;
+		=> nrel_second_domain:solution;;
 
 nrel_precipitation <-rrel_key_sc_element:...
 		(*
@@ -22,7 +22,7 @@ nrel_precipitation <-rrel_key_sc_element:...
 			*);;
 		*);;
 nrel_precipitation <=nrel_using_constants:...
-				(*->concept_precipitate; nrel_reaction;;
+				(*->precipitate; nrel_reaction;;
 				*);;
 
 nrel_precipitation <- rrel_key_sc_element:...
@@ -37,7 +37,7 @@ nrel_precipitation <- rrel_key_sc_element:...
 			-> rrel_example: 
 				[After the reaction, the resulting precipitate is called the dry residue and the liquid above it is supernatant.](*<- lang_en;;*);;
 			*);;
-		-> rrel_key_sc_element: concept_precipitate;;
+		-> rrel_key_sc_element: precipitate;;
 		*);;
 
 nrel_precipitation <-rrel_key_sc_element:...

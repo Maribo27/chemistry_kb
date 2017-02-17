@@ -21,7 +21,7 @@ brownian_motion
 				liquid;
 				gas;
 				particle;
-				chemical_substance
+				substance
 			};
 
 

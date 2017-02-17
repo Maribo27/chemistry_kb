@@ -23,8 +23,8 @@ orthophosphoric_acid
 
 <= nrel_using_constants:
 			{
-				strong_acids;
-				tribasic_acids;
+				strong_acid;
+				tribasic_acid;
 				acid;
 				water;
 				solid				

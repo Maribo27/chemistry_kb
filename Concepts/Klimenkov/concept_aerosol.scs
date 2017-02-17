@@ -1,10 +1,10 @@
-sc_node_not_relation -> concept_aerosol;;
+sc_node_not_relation -> aerosol;;
 
-concept_aerosol => nrel_main_idtf:
+aerosol => nrel_main_idtf:
 	[аэрозоль](* <-lang_ru;; *);
 	[aerosol](* <-lang_en;; *);;
 
-concept_aerosol <- rrel_key_sc_element: 
+aerosol <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,9 +19,9 @@ concept_aerosol <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_aerosol <= nrel_using_constants: concept_dispersion;;
+aerosol => nrel_using_constants: dispersion;;
 
-concept_aerosol <- rrel_key_sc_element:...
+aerosol <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		<- sc_statement;;
@@ -34,7 +34,7 @@ concept_aerosol <- rrel_key_sc_element:...
 			*);;
 		*);;
 
-concept_aerosol <- rrel_key_sc_element:...
+aerosol <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -46,6 +46,5 @@ concept_aerosol <- rrel_key_sc_element:...
 			-> rrel_example: 
 				[Aerosols are formed by mechanical grinding and spraying of solids or liquids in crushing, abrasion, explosions, burning.](*<- lang_en;;*);;
 			*);;
-		-> rrel_key_sc_element: concept_explosion; concept_burning;;
 		*);;
 

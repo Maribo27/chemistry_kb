@@ -1,0 +1,53 @@
+nrel_reaction
+	<-sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[chemical reaction] (*<- lang_en;;*);
+		[химическая реакция] (*<- lang_ru;;*);
+	<- rrel_key_sc_element: nreal_reaction_definition
+	(*
+	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Опр.(реакция)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Химическая реа́кция</b> — превращение одного или нескольких исходных веществ (реагентов) в другие вещества, при которых <sc_element sys_idtf = "atomic_nucleus">ядра атомов</sc_element> не меняются, при этом происходит перераспределение <sc_element sys_idtf = "electron">электронов</sc_element> и ядер, и образуются новые химические вещества.</p>
+			]	(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+		*);;
+	*);
+	<= nrel_using_constants:
+	{
+		reagent;
+		product
+	};
+	<- rrel_key_sc_element:
+		the_law_of_conservation_of_mass
+		(*
+		<- sc_explanation;;
+		=> nrel_main_idtf:
+			[Закон сохранения массы](*<-lang_ru;;*);;
+		-> rrel_example:
+			[<p>Масса веществ, <sc_element sys_idtf = "reagent">вступающих в химическую реакцию</sc_element>, равна массе веществ, <sc_element sys_idtf = "product">образующихся в результате реакции</sc_element></p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		<= nrel_using_constants:
+			{
+				reagent;
+				product
+			};;
+		*);
+<- rrel_key_sc_element: new_substances
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (химическая реакция*, атом)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В химических процессах (химических реакциях) получаются новые вещества с отличными от реагентов свойствами, но никогда не образуются атомы новых элементов.  ] (*<- lang_ru;;*);;
+		*);;
+	*);;

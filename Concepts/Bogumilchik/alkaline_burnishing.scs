@@ -1,6 +1,6 @@
 alkaline_burnishing
         => nrel_main_idtf:
-                [alkaline_burnishing](*<- lang_en;;*);
+                [alkaline burnishing](*<- lang_en;;*);
                 [щелочное воронение](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*

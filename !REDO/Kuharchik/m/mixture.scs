@@ -1,0 +1,36 @@
+mixture
+        => nrel_main_idtf:
+                [mixture](*<- lang_en;;*);
+                [смесь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (mixture)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (смесь)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Смесь</b> -  вещество, состоящее из <sc_element sys_idtf="molecule">молекул</sc_element> или <sc_element sys_idtf="atom">атомов</sc_element> двух или нескольких веществ (неважно - простых или сложных). Вещества, из которых состоит смесь, могут быть разделены.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Mixture</b> - a substance consisting of <sc_element sys_idtf="molecule">molecules</sc_element> or <sc_element sys_idtf="atom">atoms</sc_element> of two or more substances (no matter - simple or complex). The substances of which the mixture can be separated.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+          <= nrel_subdividing:
+		      {
+			      homogeneous_mixture;
+			      heterogeneous_mixture			  
+		       };
+
+        <= nrel_using_constants:
+                {
+                        molecule;
+                        atom
+                };
+<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;

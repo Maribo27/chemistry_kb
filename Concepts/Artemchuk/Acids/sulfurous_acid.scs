@@ -23,8 +23,8 @@ sulfurous_acid
 
 <= nrel_using_constants:
 			{
-				nonpersistent_acids;
-				dibasic_acids;
+				nonpersistent_acid;
+				dibasic_acid;
 				acid;
 				elem_S	
 			};

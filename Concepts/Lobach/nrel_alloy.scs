@@ -20,7 +20,7 @@ nrel_alloy
 <= nrel_using_constants:
 			{
 				chemical_element;
-				chemical_substance
+				substance
 			};
 
 
@@ -39,7 +39,7 @@ nrel_alloy
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (сплав*, свойтсва)](*<- lang_ru;;*);;
+			[Утв. (сплав*, свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Свойства металлов и сплавов полностью определяются их структурой.] (*<- lang_ru;;*);;

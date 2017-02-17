@@ -1,10 +1,10 @@
-sc_node_not_relation -> concept_boiling;;
+sc_node_not_relation -> boiling;;
 
-concept_boiling => nrel_main_idtf:
+boiling => nrel_main_idtf:
 	[кипение](* <-lang_ru;; *);
 	[boiling](* <-lang_en;; *);;
 
-concept_boiling <- rrel_key_sc_element: 
+boiling <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,12 +19,11 @@ concept_boiling <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_boiling <= nrel_using_constants: concept_evaporation;;
+boiling <= nrel_using_constants: evaporation;;
 
-concept_boiling <- rrel_key_sc_element:...
+boiling <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
-		-> rrel_key_sc_element: concept_impurity;;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*

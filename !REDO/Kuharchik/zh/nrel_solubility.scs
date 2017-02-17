@@ -1,0 +1,18 @@
+sc_node_norole_relation->nrel_solubility;;
+nrel_solubility
+	=> nrel_main_idtf: [solubility*](*<- lang_en;;*);
+						[растворимость*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				[Растворимость - способность вещества растворяться в том или ином растворителе. Мерой растворимости вещества при данных условиях является его содержание в насыщенном растворе. ]
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_second_domain:substance;
+	=> nrel_first_domain:substance;
+<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+	

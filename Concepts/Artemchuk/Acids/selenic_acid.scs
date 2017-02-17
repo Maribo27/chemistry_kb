@@ -23,7 +23,7 @@ selenic_acid
 
 <= nrel_using_constants:
 			{
-				dibasic_acids;
+				dibasic_acid;
 				acid;
 				water;
 				elem_H

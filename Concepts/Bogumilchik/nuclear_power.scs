@@ -1,6 +1,6 @@
 nuclear_power
         => nrel_main_idtf:
-                [nuclear_power](*<- lang_en;;*);
+                [nuclear power](*<- lang_en;;*);
                 [ядерная энергия](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*

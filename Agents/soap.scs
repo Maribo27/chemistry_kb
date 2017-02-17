@@ -1,0 +1,42 @@
+soap 
+	=> nrel_main_idtf:
+		[мыло](*<-lang_ru;;*);
+		[soap](*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_soap
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[Мыло — жидкий или твёрдый продукт, содержащий поверхностно-активные вещества, в соединении с водой, используемый либо как косметическое средство — для очищения кожи и ухода за ней, либо как средство бытовой химии — в качестве моющего средства.] (* <-lang_ru;; *);;
+		*);;
+	*);
+<= nrel_using_constants:
+			{
+				product;
+				water
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://soap.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+Definition_of_soap
+=> nrel_main_idtf:
+	[Опр.(Мыло)]
+	(* <- lang_ru;;	*);;

@@ -1,0 +1,39 @@
+substance
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[вещество]
+	(* <- lang_ru;;	*);
+	[substance]
+	(* <- lang_en;;	*);;
+
+substance
+<- rrel_key_sc_element:
+	Definition_of_substance
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/substance .html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+Definition_of_substance
+=> nrel_main_idtf:
+	[Опр.(Вещество)]
+	(* <- lang_ru;;	*);;
+
+substance <- rrel_key_sc_element: ...
+(*
+<- sc_statement;; 
+-> rrel_main_key_sc_element: substance;;
+=> nrel_main_idtf: [Утв.(химия, атомы, малекулы, радикалы)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		[Химия изучает главным образом вещество, организованное в атомы, молекулы, ионы и радикалы.] (*<-lang_ru;;*);;
+		*);;
+*);;
+
+

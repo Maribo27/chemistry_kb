@@ -25,9 +25,9 @@ hydrosulfuric_acid
 			{
 				hydrogen_sulfide;
 				water;
-				nonpersistent_acids;
-				weak_acids;
-				dibasic_acids;
+				nonpersistent_acid;
+				weak_acid;
+				dibasic_acid;
 				acid
 			};
 <- rrel_key_sc_element:

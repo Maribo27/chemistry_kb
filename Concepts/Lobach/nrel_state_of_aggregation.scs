@@ -19,10 +19,10 @@ nrel_state_of_aggregation
 	*);
 <= nrel_using_constants:
 			{
-				chemical_substance
+				substance
 			};
 
-<=nrel_first_domain:chemical_substance;
+<=nrel_first_domain:substance;
 
 <=nrel_second_domain:...(*
 			->solid;;
@@ -36,7 +36,7 @@ nrel_state_of_aggregation
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (агрегатное состояние*, свойтсва*)](*<- lang_ru;;*);;
+			[Утв. (агрегатное состояние*, свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Агрегатное состояние характеризуется определёнными, неизменными в пределах указанных интервалов, качественными свойствами

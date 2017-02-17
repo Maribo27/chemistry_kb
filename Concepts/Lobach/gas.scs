@@ -21,7 +21,7 @@ gas
 <= nrel_using_constants:
 			{
 				nrel_state_of_aggregation;
-				chemical_substance
+				substance
 			};
 
 

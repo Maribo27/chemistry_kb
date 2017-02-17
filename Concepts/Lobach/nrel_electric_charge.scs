@@ -19,11 +19,11 @@ nrel_electric_charge
 	*);
 <= nrel_using_constants:
 			{
-				chemical_substance
+				substance
 			};
 
 <=nrel_first_domain:...(*
-			->chemical_substance;;
+			->substance;;
 			->atom;;
 			->chemical_element;;	
 			*);

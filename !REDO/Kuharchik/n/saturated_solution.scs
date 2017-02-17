@@ -1,0 +1,48 @@
+saturated_solution
+        => nrel_main_idtf:
+                [saturated_solution](*<- lang_en;;*);
+                [насыщенный раствор](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (saturated solution)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (насыщенный раствор)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Насыщенный раствор– это раствор, который содержит максимальное количество растворяемого вещества при данных условиях.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Saturated solution - a solution that contains the maximum amount of solute under these conditions.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_explanation;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [При добавлении вещества в такой раствор вещество больше не растворяется.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [By adding such a substance in the solution is no longer soluble substance.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                         *);;
+                 *);
+
+        <= nrel_using_constants:
+                {
+                        solute
+                };
+<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;

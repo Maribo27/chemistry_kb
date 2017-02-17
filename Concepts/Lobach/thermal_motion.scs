@@ -20,7 +20,7 @@ thermal_motion
 <= nrel_using_constants:
 			{
 				particle;
-				chemical_substance
+				substance
 			};
 
 

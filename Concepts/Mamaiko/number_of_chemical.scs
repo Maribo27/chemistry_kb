@@ -41,6 +41,6 @@ Definition_of_number_of_chemical
 
 
 number_of_chemical
-=>nrel_first_domain: chemical_substance;
+=>nrel_first_domain: substance;
 =>nrel_second_domain: number;;
 

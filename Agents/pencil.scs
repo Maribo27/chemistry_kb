@@ -1,0 +1,43 @@
+pencil 
+	=> nrel_main_idtf:
+		[карандаш](*<-lang_ru;;*);
+		[pencil](*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_pencil
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[Карандаш — инструмент в виде стержня, изготавливаемого из пишущего материала (угля, графита, сухих красок и тому подобного), применяемый для письма, рисования, черчения, маркировки, разметки (в строительстве и на производстве), а также в косметических и других похожих целях. Часто, в целях удобства, пишущий стержень карандаша вставляется в специальную оправу] (* <-lang_ru;; *);;
+		*);;
+	*);
+<= nrel_using_constants:
+			{
+				coal;
+				graphite;
+				paint
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://pencil.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+Definition_of_pencil
+=> nrel_main_idtf:
+	[Опр.(Карандаш)]
+	(* <- lang_ru;;	*);;

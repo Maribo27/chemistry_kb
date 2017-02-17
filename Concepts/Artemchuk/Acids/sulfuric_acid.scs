@@ -23,8 +23,8 @@ sulfuric_acid
 
 <= nrel_using_constants:
 			{
-				strong_acids;
-				dibasic_acids;
+				strong_acid;
+				dibasic_acid;
 				acid;
 				elem_S				
 			};

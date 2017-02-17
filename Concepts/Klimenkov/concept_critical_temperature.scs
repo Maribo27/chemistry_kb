@@ -1,10 +1,10 @@
-sc_node_not_relation -> concept_critical_temperature;;
+sc_node_not_relation -> critical_temperature;;
 
-concept_critical_temperature => nrel_main_idtf:
+critical_temperature => nrel_main_idtf:
 	[критическая температура](* <-lang_ru;; *);
 	[critical temperature](* <-lang_en;; *);;
 
-concept_critical_temperature <- rrel_key_sc_element: 
+critical_temperature <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -18,5 +18,3 @@ concept_critical_temperature <- rrel_key_sc_element:
 				[The critical temperature - the temperature value at the critical point. At temperatures above the critical temperature of the gas can not condense under any pressure.](*<- lang_en;;*);;
 			*);;
 		*);;
-
-concept_critical_temperature <= nrel_using_constants: concept_condensation;;

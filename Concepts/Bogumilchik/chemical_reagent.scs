@@ -1,6 +1,6 @@
 chemical_reagent
         => nrel_main_idtf:
-                [chemical_reagent](*<- lang_en;;*);
+                [chemical reagent](*<- lang_en;;*);
                 [химический реактив](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
@@ -15,7 +15,7 @@ chemical_reagent
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
                                                 *);
-                                              [Chemical reagents (chemicals) - chemicals intended for chemical analysis of research, different labs. In most cases, chemicals are individual substance; however refer to reagents and certain mixtures of substances (for example, petroleum ether). Sometimes called reagents solutions rather complex structure a special purpose (such as Nessler reagent - for the determination of ammonia).]
+                                                [Chemical reagents (chemicals) - chemicals intended for chemical analysis of research, different labs. In most cases, chemicals are individual substance; however refer to reagents and certain mixtures of substances (for example, petroleum ether). Sometimes called reagents solutions rather complex structure a special purpose (such as Nessler reagent - for the determination of ammonia).]
                                                 (*
                                                         <- lang_en;;
                                                         => nrel_format: format_html;;

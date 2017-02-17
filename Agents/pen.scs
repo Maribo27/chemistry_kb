@@ -1,0 +1,42 @@
+pen 
+	=> nrel_main_idtf:
+		[ручка](*<-lang_ru;;*);
+		[pen](*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_pen
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[Ручка — письменная принадлежность, с помощью которой можно оставить чернильный след на поверхности (обычно на бумаге).] (* <-lang_ru;; *);;
+		*);;
+	*);
+<= nrel_using_constants:
+			{
+				ink;
+				paper
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://pen.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+Definition_of_pen
+=> nrel_main_idtf:
+	[Опр.(Ручка)]
+	(* <- lang_ru;;	*);;

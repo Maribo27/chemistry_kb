@@ -1,6 +1,6 @@
 electrolytic_dissociation
         => nrel_main_idtf:
-                [electrolytic_dissociation](*<- lang_en;;*);
+                [electrolytic dissociation](*<- lang_en;;*);
                 [электролитическая диссоциация](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*

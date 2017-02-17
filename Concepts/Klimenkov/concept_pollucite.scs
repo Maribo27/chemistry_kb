@@ -1,11 +1,11 @@
-sc_node_not_relation -> concept_pollucite;;
+sc_node_not_relation -> pollucite;;
 
-concept_pollucite => nrel_main_idtf:
+pollucite => nrel_main_idtf:
 	[поллуцит](* <-lang_ru;; *);
 	[поллукс](* <-lang_ru;; *);
 	[pollucite](* <-lang_en;; *);;
 
-concept_pollucite <- rrel_key_sc_element: 
+pollucite <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -20,9 +20,12 @@ concept_pollucite <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_pollucite <= nrel_using_constants:... (*->concept_mineral; concept_aluminosilicate; concept_sodium; concept_cesium;;*);;
+pollucite <= nrel_using_constants:
+{
+	mineral; aluminosilicate; elem_Na; elem_Cs
+};;
 
-concept_pollucite <- rrel_key_sc_element:...
+pollucite <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -34,10 +37,9 @@ concept_pollucite <- rrel_key_sc_element:...
 			-> rrel_example: 
 				[Used as the main natural source of cesium from pollucite sometimes extracted and rubidium, which accounts for 0.3-1.2 wt.%.](*<- lang_en;;*);;
 			*);;
-		-> rrel_key_sc_element: concept_cesium; concept_rubidium;;
 		*);;
 
-concept_pollucite <- rrel_key_sc_element:...
+pollucite <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
@@ -49,11 +51,10 @@ concept_pollucite <- rrel_key_sc_element:...
 			-> rrel_example: 
 				[The main deposits of pollucite are in Canada (Lake Bernik Lake). Known deposits in Namibia, Zimbabwe, United States, China, Russia.](*<- lang_en;;*);;
 			*);;
-		-> rrel_key_sc_element: concept_born_field;;
 		*);;
 
 
-concept_pollucite <-rrel_key_sc_element:...
+pollucite <-rrel_key_sc_element:...
 				(*<-sc_illustration;;
 				<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://polluzit.png";;*) ;;	

@@ -1,0 +1,18 @@
+sc_node_norole_relation->nrel_reducing_agent;;
+
+nrel_reducing_agent
+	=> nrel_main_idtf: [reducing agent*](*<- lang_en;;*);
+						[восстановитель*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				[Восстановитель - вещество, способное отдавать электроны другому веществу (окислителю).]
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_second_domain:substance;
+	=> nrel_first_domain:substance;
+<- rrel_key_sc_element: section_acids;;

@@ -1,6 +1,6 @@
 activation_energy
         => nrel_main_idtf:
-                [activation_energy](*<- lang_en;;*);
+                [activation energy](*<- lang_en;;*);
                 [энергия активации](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*

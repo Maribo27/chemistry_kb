@@ -51,17 +51,6 @@ elem_Ne
 			[Утв. (, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[  ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: chemical_properties_of_Neon
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (неон, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
 			-> rrel_example:[ Неон - инертный газ без цвета, вкуса и запаха. ] (*<- lang_ru;;*);;
 		*);;
 	*);

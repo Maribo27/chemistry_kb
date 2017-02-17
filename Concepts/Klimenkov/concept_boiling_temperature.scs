@@ -1,11 +1,11 @@
-sc_node_not_relation -> concept_boiling_temperature;;
+sc_node_not_relation -> boiling_temperature;;
 
-concept_boiling_temperature => nrel_main_idtf:
+boiling_temperature => nrel_main_idtf:
 	[температура кипения](* <-lang_ru;; *);
 	[точка кипения](* <-lang_ru;; *);
 	[boiling temperature](* <-lang_en;; *);;
 
-concept_boiling_temperature <- rrel_key_sc_element: 
+boiling_temperature <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -14,18 +14,18 @@ concept_boiling_temperature <- rrel_key_sc_element:
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
-				[Температу́ра кипе́ния — температура, при которой происходит кипение жидкости, находящейся под постоянным давлением.](*<- lang_ru;;*);;
+				[Температура кипения — температура, при которой происходит кипение жидкости, находящейся под постоянным давлением.](*<- lang_ru;;*);;
 			-> rrel_example: 
 				[Boiling point - the temperature at which the fluid boils under constant pressure.](*<- lang_en;;*);;
 			*);;
 		*);;
 
-concept_boiling <= nrel_using_constants: concept_boiling; concept_pressure;;
+boiling_temperature <= nrel_using_constants: boiling; pressure;;
 
-concept_boiling <- rrel_key_sc_element:...
+boiling_temperature <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
-		-> rrel_key_sc_element: concept_critical_temperature;;
+		-> rrel_key_sc_element: critical_temperature;;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*

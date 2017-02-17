@@ -1,6 +1,6 @@
 thermal_burnishing
         => nrel_main_idtf:
-                [thermal_burnishing](*<- lang_en;;*);
+                [thermal burnishing](*<- lang_en;;*);
                 [термическое воронение](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*

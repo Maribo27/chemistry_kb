@@ -1,0 +1,44 @@
+electrolyte
+        => nrel_main_idtf:
+                [electrolyte](*<- lang_en;;*);
+                [электролит](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Def. (electrolyte)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр. (электролит)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Электроли́т — вещество, которое проводит электрический ток вследствие диссоциации на ионы, что происходит в растворах и расплавах, или движения ионов в кристаллических решётках твёрдых электролитов.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Electrolyte - a substance that conducts electricity due to the dissociation into ions that occurs in solutions and melts, or the motion of the ions in the crystal lattice of solid electrolytes.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_explanation;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [ Электролиты — проводники второго рода, вещества, электропроводность которых обусловлена подвижностью положительно или отрицательно заряженных ионов.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Electrolytes - the conductors of the second kind of matter, electrical conductivity that is caused by the mobility of positively or negatively charged ions.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                         *);;
+                 *);
+<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;

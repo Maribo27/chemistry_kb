@@ -1,0 +1,24 @@
+cathode
+        => nrel_main_idtf:
+                [cathode](*<- lang_en;;*);
+                [катод](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (cathode)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (катод)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Катод — электрод, на котором происходят реакции восстановления.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [The cathode - the electrode on which reduction reaction occurs.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);;

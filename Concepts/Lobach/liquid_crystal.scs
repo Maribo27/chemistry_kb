@@ -23,7 +23,7 @@ liquid_crystal
 <= nrel_using_constants:
 			{
 				phase_state;
-				chemical_substance
+				substance
 			};
 
 

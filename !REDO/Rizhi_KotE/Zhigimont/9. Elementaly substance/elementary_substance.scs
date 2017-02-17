@@ -1,0 +1,15 @@
+elementary_substance <= nrel_inclusion: substance;;
+elementary_substance
+	=> nrel_main_idtf: [elementary substance](*<- lang_en;;*);
+						[простое вещество](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://elementary_substance_ru.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);;
+	

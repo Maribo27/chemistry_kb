@@ -1,11 +1,11 @@
 chemical_equilibrium
         => nrel_main_idtf:
-                [chemical_equilibrium](*<- lang_en;;*);
+                [chemical equilibrium](*<- lang_en;;*);
                 [химическое равновесие](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
                         <- sc_definition;;
-                        => nrel_main_idtf: [Definition (chemical_equilibrium)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Definition (chemical equilibrium)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (химическое равновесие)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*

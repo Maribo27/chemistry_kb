@@ -1,6 +1,6 @@
 atom_energy
         => nrel_main_idtf:
-                [atom_energy](*<- lang_en;;*);
+                [atom energy](*<- lang_en;;*);
                 [атомная энергия](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*

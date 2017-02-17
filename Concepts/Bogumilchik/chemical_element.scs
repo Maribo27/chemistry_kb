@@ -2,7 +2,7 @@ chemical_element
 <- sc_node_not_relation;
 => nrel_main_idtf:
 	[химический элемент](* <-lang_ru;; *);
-	[chemical_element](* <- lang_en;; *);;
+	[chemical element](* <- lang_en;; *);;
 
 chemical_element
 <- rrel_key_sc_element:...

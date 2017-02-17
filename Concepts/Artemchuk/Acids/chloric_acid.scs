@@ -23,8 +23,8 @@ chloric_acid
 
 <= nrel_using_constants:
 			{
-				strong_acids;
-				monobasic_acids;
+				strong_acid;
+				monobasic_acid;
 				acid;
 				elem_Cl
 			};

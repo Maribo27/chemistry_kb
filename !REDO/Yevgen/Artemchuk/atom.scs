@@ -1,0 +1,53 @@
+atom
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[атом]
+	(* <- lang_ru;;	*);
+	[atom]
+	(* <- lang_en;;	*);;
+atom
+<- rrel_key_sc_element:
+	Definition_of_atom
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/atom.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Атом состоит из атомного ядра и электронов. Если число протонов в ядре совпадает с числом электронов, то атом в целом оказывается электрически нейтральным.] (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Ядро, несущее почти всю (более чем 99,9 %) массу атома, состоит из положительно заряженных протонов и незаряженных нейтронов, связанных между собой при помощи сильного взаимодействия] (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+Definition_of_atom
+=> nrel_main_idtf:
+	[Опр.(Атом)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

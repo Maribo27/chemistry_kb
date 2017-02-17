@@ -1,10 +1,10 @@
-sc_node_not_relation -> concept_impurity;;
+sc_node_not_relation -> impurity;;
 
-concept_impurity => nrel_main_idtf:
+impurity => nrel_main_idtf:
 	[примесь](* <-lang_ru;; *);
 	[impurity](* <-lang_en;; *);;
 
-concept_impurity <- rrel_key_sc_element: 
+impurity <- rrel_key_sc_element: 
 		... 
 		(*
 		<- sc_definition;;
@@ -19,4 +19,4 @@ concept_impurity <- rrel_key_sc_element:
 			*);;
 		*);;
 
-concept_impurity <= nrel_using_constants:... (*->chemical_element;;*);;
+impurity <= nrel_using_constants:... (*->chemical_element;;*);;

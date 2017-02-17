@@ -13,8 +13,10 @@ concept_object -> ink;;
 concept_object -> chalk;;
 
 concept_object => nrel_main_idtf:[предмет](*<-lang_ru;;*);;
+coal => nrel_main_idtf:[уголь](*<-lang_ru;;*);;
+graphite => nrel_main_idtf:[графит](*<-lang_ru;;*);;
+paint => nrel_main_idtf:[краска](*<-lang_ru;;*);;
 concept_object <- sc_node_not_relation;;
-pencil => nrel_main_idtf:[карандаш](*<-lang_ru;;*);;
 pen => nrel_main_idtf:[ручка](*<-lang_ru;;*);;
 table => nrel_main_idtf:[стол](*<-lang_ru;;*);;
 plastic => nrel_main_idtf:[пластик](*<-lang_ru;;*);;

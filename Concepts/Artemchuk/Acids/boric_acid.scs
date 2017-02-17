@@ -23,8 +23,8 @@ boric_acid
 
 <= nrel_using_constants:
 			{
-				weak_acids;
-				tribasic_acids;
+				weak_acid;
+				tribasic_acid;
 				acid
 			};
 <- rrel_key_sc_element:
