@@ -1,0 +1,79 @@
+elem_Hg
+<- rrel_key_sc_element:
+	Definition_of_hydrargyrum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Hg.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_hydrargyrum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ртуть, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер ртути равен 80] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_hydrargyrum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ртуть, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Ртуть — единственный металл, который находится в жидком состоянии при комнатной температуре. Представляет собой тяжёлую серебристо-белую жидкость, пары которой чрезвычайно ядовиты. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_hydrargyrum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ртуть, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Ртуть — малоактивный металл. Она не растворяется в растворах кислот, не обладающих окислительными свойствами. При нагревании до 300 °C ртуть вступает в реакцию с кислородом, а при 340 °C наблюдается обратная реакция. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Hg.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_hydrargyrum
+=> nrel_main_idtf:
+	[Опр.(Ртуть)]
+	(* <- lang_ru;;	*);;

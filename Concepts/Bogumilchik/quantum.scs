@@ -1,0 +1,24 @@
+quantum
+        => nrel_main_idtf:
+                [quantum](*<- lang_en;;*);
+                [квант](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (quantum)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (квант)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [КВАНТ - определенное количество ("порция") энергии, которое способна отдать или поглотить физическая система (например, атом) в одном акте изменения состояния. Квант света - порция световой энергии - называется фотоном.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [QUANTUM - a certain amount ("batch") energy that is able to pay or absorb physical system (for example, a) in a single act of state changes. Quantum of light - a portion of the light energy - is called a photon.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;

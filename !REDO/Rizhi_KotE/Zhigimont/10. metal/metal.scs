@@ -1,0 +1,16 @@
+metal <= nrel_inclusion: elementary_substance;;
+metal
+	=> nrel_main_idtf: [metal](*<- lang_en;;*);
+						[металл](*<- lang_ru;;*);
+	<- rrel_key_sc_element: metal_definition
+	(*
+		=> nrel_main_idtf:
+			[Опр.(металл)](*<-lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://metal_ru.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);;

@@ -1,0 +1,25 @@
+rest_mass
+        => nrel_main_idtf:
+                [rest_mass](*<- lang_en;;*);
+                [масса покоя](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (rest mass)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (масса покоя)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Масса покоя - масса тела в системе отсчета, в которой оно покоится.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [Rest mass - weight in the reference frame in which it rests.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

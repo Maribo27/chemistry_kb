@@ -1,0 +1,10 @@
+concept_metals -> Li; Na; K; Rb; Cs; Fr;;
+concept_metals -> Ca; Sr; Ba; Ra;;
+concept_metals -> Sc; Ti; V; Cr; Mn; Fe; Co; Ni; Cu; Zn;;
+concept_metals -> Y; Zr; Nb; Mo; Tc; Ru; Rh; Pd; Ag; Cs;;
+concept_metals -> La; Hf; Ta; W; Re; Os; Ir; Pt; Au; Hg;;
+concept_metals -> Ac; Rf; Db; Sg; Bh; Hs; Mt; Ds; Rg; Cn;;
+concept_metals -> Al; Ga; In; Sn; Tl; Pb; Bi;;
+concept_metals -> B; Si; Ge; As; Sb; Te; Po;;
+concept_metals -> Ce; Pr; Nd; Pm; Sm; Eu; Gd; Tb; Dy; Ho; Er; Tm; Yb; Lu;;
+concept_metals -> Th; Pa; U; Np; Pu; Am; Cm; Bk; Cf; Es; Fm; Md; No; Lr;;

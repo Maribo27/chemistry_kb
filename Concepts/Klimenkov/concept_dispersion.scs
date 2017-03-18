@@ -1,0 +1,54 @@
+sc_node_not_relation -> dispersion;;
+
+dispersion => nrel_main_idtf:
+	[дисперсная система](* <-lang_ru;; *);
+	[disperse system](* <-lang_en;; *);
+	[dispersion](* <-lang_en;; *);;
+
+dispersion <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дисперсная система] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: disperse system] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Диспе́рсная систе́ма — образования из двух или большего числа тел, которые практически не смешиваются и не реагируют друг с другом химически.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dispersion is the formation of two or more compounds which practically don't mix or react with each other chemically.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+dispersion => nrel_using_constants: nrel_reaction;;
+
+dispersion <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дисперсная система представляет собой системы веществ: первое (дисперсная фаза) мелко распределено во втором (дисперсионная среда). Если фаз несколько, их можно отделить друг от друга физическим способом, например центрифугировать.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dispersion is a system of substances: the first one (dispersed phase) finely distributed in the second (dispersion medium). If multiple phases, they can be separated by physical means such as centrifuge.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+dispersion <- rrel_key_sc_element:...
+		(*
+		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Классификация дисперсных систем основана на различии в агрегатном состоянии дисперсионной среды и дисперсной фазы (фаз).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Classification of disperse systems based on the difference in the aggregate state of the dispersion medium and the dispersed phase (s).](*<- lang_en;;*);;
+			*);;
+		<-sc_illustration;;
+			<=nrel_sc_text_translation:...
+				(*->rrel_example: "file://disp_sist.png";;*) ;;
+		*);;

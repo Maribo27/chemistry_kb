@@ -1,0 +1,25 @@
+thermal_burnishing
+        => nrel_main_idtf:
+                [thermal burnishing](*<- lang_en;;*);
+                [термическое воронение](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (thermal burnishing)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (термическое воронение)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [термическое воронение — окисление стали при высоких температурах: в атмосфере перегретого водяного пара при 200—480 °C или в парах аммиачно-спиртовой смеси при 520—880 °C, в расплавленных солях при 400—600 °C, а также в воздушной атмосфере при 310—450 °C с предварительным покрытием поверхности детали тонким слоем асфальтового или масляного лака.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *); 
+                                            [thermal burnishing - oxidation of steel at high temperatures in an atmosphere of superheated steam at 200-480 ° C in the vapor or ammonia-alcohol mixture at 520-880 ° C, a molten salt at 400-600 ° C, and in an air atmosphere at 310-450 ° C from pre-coating the workpiece surface with a thin layer of asphalt or oil varnish.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

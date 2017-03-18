@@ -1,0 +1,90 @@
+elem_Db
+<- rrel_key_sc_element:
+	Definition_of_dubnium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Db.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Dubnium.svg"
+			(*
+			=> nrel_format: format_svg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: number_of_db
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дубний, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер дубния равен 105.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_dubnium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дубний, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Дубний - металл, повидимому находится в твердом состоянии при 298 K (25 °C). Цвет неизвестен, но, вероятно, металлический и серебристо-белый или серый.  ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_dubnium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дубний, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Дубний — радиоактивен. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receipt_of_dubnium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дубний, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Дубний — искуственно синтезированный элемент, в природе не встречается. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_dubnium
+=> nrel_main_idtf:
+	[Опр.(Дубний)]
+	(* <- lang_ru;;	*);;

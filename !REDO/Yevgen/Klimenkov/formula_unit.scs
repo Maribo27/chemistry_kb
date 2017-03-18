@@ -1,0 +1,50 @@
+formula_unit
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Формульныя единица]
+	(* <- lang_ru;;	*);
+	[Formula unit]
+	(* <- lang_en;;	*);;
+
+formula_unit
+<- rrel_key_sc_element:
+	Definition_of_formula_unit
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/formula_unit.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+Definition_of_formula_unit
+=> nrel_main_idtf:
+	[Опр.(Формульная единица)]
+	(* <- lang_ru;;	*);;
+
+formula_unit <- rrel_key_sc_element: ...
+(*
+<- sc_statement;; 
+-> rrel_main_key_sc_element: substance;;
+=> nrel_main_idtf: [Утв.(электрон, химическое вещество)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+		[В число формульных единиц включаются также электроны, которые сами химического вещества не образуют] (*<-lang_ru;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[формульная единица – наименьшая порция вещества, сохраняющая его химические свойства. Для веществ молекулярного строения понятия молекулы и формульной единицы тождественны.] (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;

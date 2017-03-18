@@ -1,0 +1,77 @@
+elem_F
+<- rrel_key_sc_element:
+	Definition_of_fluorum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/f.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_fluorum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фтор, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер фтора равен 9] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+	<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/fluorum.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_fluorum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фтор, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Самый активный неметалл, бурно взаимодействует почти со всеми веществами, кроме фторидов в высших степенях окисления и редких исключений — фторопластов, и с большинством из них — с горением и взрывом, и всеми химическими элементами, кроме гелия, неона и аргона.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_fluorum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фтор, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Бледно-жёлтый газ, в малых концентрациях запах напоминает одновременно озон и хлор, очень агрессивен и ядовит. Фтор имеет аномально низкую температуру кипения (85,03 К, −188,12 °C) и плавления (53,53 К, −219,70 °C).] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_fluorum
+=> nrel_main_idtf:
+	[Опр.(Фтор)]
+	(* <- lang_ru;;	*);;

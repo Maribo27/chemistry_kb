@@ -1,0 +1,79 @@
+elem_Au
+<- rrel_key_sc_element:
+	Definition_of_aurum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Au.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_aurum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер золота равен 79] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_aurum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Золото — мягкий металл жёлтого цвета. В тонких плёнках золото просвечивает зелёным. Золото — очень тяжёлый и высокопластичный металл. Некоторые соединения золота токсичны. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_aurum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Золото — один из самых инертных металлов. При нормальных условиях оно не взаимодействует с большинством кислот и не образует оксидов, поэтому его относят к благородным металлам. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Au.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_aurum
+=> nrel_main_idtf:
+	[Опр.(Золото)]
+	(* <- lang_ru;;	*);;

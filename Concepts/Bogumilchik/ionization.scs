@@ -1,0 +1,18 @@
+ionization
+
+=> nrel_main_idtf:
+    [ionization](*<- lang_en;;*);
+    [ионизация](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Def. (ionization)](*<- lang_en;;*);;
+    => nrel_main_idtf: [Опр. (ионизация)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            "file://html/ionization rus.html"(*<- lang_ru;;*);
+            "file://html/ionization eng.html"(*<- lang_en;;*);;
+    *);;
+*);;

@@ -1,0 +1,240 @@
+agent_find_object_structure
+=> nrel_main_idtf:
+	[агентная scp-программа поиска составляющих предмета] (* <- lang_ru;; *);
+	
+	[agent scp-program of finding object structure] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_find_object_structure
+(*
+	-> rrel_params: .agent_find_object_structure_params 
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+
+	-> rrel_operators: .agent_find_object_structure_operatorset 
+	(*
+		-> rrel_init: .find_object_structure_operator1 
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _question;;
+
+			=> nrel_goto: .agent_find_object_structure_operator2;;
+		*);;
+
+		-> .agent_find_object_structure_operator2 
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_find_object_structure;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+
+			=> nrel_then: .agent_find_object_structure_operator3;;
+			=> nrel_else: .agent_find_object_structure_operatorreturn;;
+		*);;
+		
+		-> .agent_find_object_structure_operator3 
+		(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+
+			=> nrel_goto: .agent_find_object_structure_operator4;;
+		*);;
+
+		-> .agent_find_object_structure_operator4
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _object;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_dividend;;
+
+			=> nrel_goto: .agent_find_object_structure_operator5;;
+		*);;
+
+		//формируем ответ
+		-> .agent_find_object_structure_operator5 
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_find_object_structure_operator6;;
+		*);;
+
+		//добавляем в ответ исходный предмет
+		-> .agent_find_object_structure_operator6
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _object;;
+		
+			=> nrel_goto:  .agent_find_object_structure_operator7;;
+		*);;
+
+		//поиск элементов, входящих в исходный предмет
+		-> .agent_find_object_structure_operator7
+		(*
+			<- searchSetStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _object;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc14;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object_structure;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_find_object_structure_operator8;;
+			=> nrel_else: .agent_find_object_structure_operatorreturn;;
+		*);;
+
+		//добавляем в ответ отношение "входит в состав"
+		-> .agent_find_object_structure_operator8
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_object_structure;;
+		
+			=> nrel_goto:  .agent_find_object_structure_operator9;;
+		*);;
+
+		//поиск по множеству элементов, если оно не пустое, то переходим к следующему пункту, иначе выводим ответ и выходим из программы
+		-> .agent_find_object_structure_operator9
+		(*
+			<- searchElStr3;;	
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc7;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el;;
+
+			=> nrel_then: .agent_find_object_structure_operator10;;
+			=> nrel_else: .agent_find_object_structure_operatorgen_answer;;
+		*);;
+
+		//удаление рассматриваемого элемента из множества
+		-> .agent_find_object_structure_operator10
+		(*
+			<- eraseEl;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc7;;
+
+			=> nrel_goto: .agent_find_object_structure_operator10a;;
+		*);;
+
+		-> .agent_find_object_structure_operator10a
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [blyat];;
+
+			=> nrel_goto: .agent_find_object_structure_operator10aa;;
+		*);;
+
+
+		-> .agent_find_object_structure_operator10aa
+		(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_object_structure;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _el;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set1;;
+			
+			=> nrel_goto: .agent_find_object_structure_operator10b;;
+		*);;
+
+		-> .agent_find_object_structure_operator10b
+		(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set1;;
+			
+			=> nrel_goto: .agent_find_object_structure_operator11;;
+		*);;
+
+		//поиск 5тиэлементной конструкции (предмет => элемент)
+		-> .agent_find_object_structure_operator11
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _object;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc8;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _el;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc9;;
+	  		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_object_structure;;
+
+			=> nrel_goto: .agent_find_object_structure_operator12;;
+		*);;
+
+		//добавляем в ответ элемент
+		-> .agent_find_object_structure_operator12
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc10;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _el;;
+		
+			=> nrel_goto:  .agent_find_object_structure_operator13;;
+		*);;
+
+		//добавляем в ответ бинарную дугу
+		-> .agent_find_object_structure_operator13
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc11;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc8;;
+		
+			=> nrel_goto:  .agent_find_object_structure_operator14;;
+		*);;
+
+		//добавляем в ответ дугу, после этого возвращаемся ко множеству элементов
+		-> .agent_find_object_structure_operator14
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc12;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc9;;
+		
+			=> nrel_goto:  .agent_find_object_structure_operator9;;
+		*);;
+
+		//выводим ответ
+		-> .agent_find_object_structure_operatorgen_answer
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc4;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_find_object_structure_operatorreturn;;
+		*);;
+
+		-> .agent_find_object_structure_operatorreturn 
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;

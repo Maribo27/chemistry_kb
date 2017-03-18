@@ -1,0 +1,106 @@
+elem_Mg
+<- rrel_key_sc_element:
+	Definition_of_Magnesium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Mg.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group				
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Magnesium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: number_of_mg
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (магний, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер магния равен 12.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_Magnesium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (магний, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Магний - лёгкий, ковкий, серебристо-белый металл. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_Magnesium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (магний, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ При нагревании на воздухе магний сгорает с образованием оксида и небольшого количества нитрида. При этом выделяется большое количество теплоты и световой энергии. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: receipt_of_Magnesium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (магний, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Mg_(receipt).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_Magnesium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (магний, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://htmls/Mg_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_Magnesium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (магний, взаимодействие*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Магний может гореть даже в углекислом газе. Раскаленный магний энергично реагирует с водой. Щелочи на магний не действуют, в кислотах он растворяется с бурным выделением водорода. Магний со взрывом реагирует с сильными окислителями типа порошкового перманганата калия. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+Definition_of_Magnesium
+=> nrel_main_idtf:
+	[Опр.(Магний)]
+	(* <- lang_ru;;	*);;

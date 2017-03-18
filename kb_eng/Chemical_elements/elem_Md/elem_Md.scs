@@ -1,0 +1,3 @@
+elem_Md
+	=> nrel_main_idtf: [mendelevium] (* <-lang_en;;*);
+	=> nrel_idtf: [Md] (* <-lang_en;;*);;

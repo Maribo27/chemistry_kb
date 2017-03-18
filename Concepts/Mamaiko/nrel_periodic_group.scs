@@ -1,0 +1,43 @@
+nrel_periodic_group<= nrel_inclusion: nrel_group;;
+nrel_periodic_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[периодическая группа]
+	(* <- lang_ru;;	*);
+	[periodic group]
+	(* <- lang_en;;	*);;
+
+nrel_periodic_group
+<- rrel_key_sc_element:
+	Definition_of_nrel_periodic_group
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_periodic_group.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				nrel_group;
+				nrel_cyclic_group
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Экспонента (или период) периодической группы {G} G — это наименьшее общее кратное порядков элементов {G} G, если таковое существует. Любая конечная группа имеет экспоненту — это делитель числа |G|.] (* <-lang_ru;; *);;
+		*);;
+*);;
+	
+
+Definition_of_nrel_periodic_group
+=> nrel_main_idtf:
+	[Опр.(Периодическая группа)]
+	(* <- lang_ru;;	*);;
+

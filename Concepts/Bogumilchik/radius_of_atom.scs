@@ -1,0 +1,24 @@
+nrel_radius_of_atom
+        => nrel_main_idtf:
+                [radius of atom*](*<- lang_en;;*);
+                [радиус атома*](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Def. (radius of atom*)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр. (радиус атома*)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Радиусом атома - называется расстояние между атомным ядром и самой дальней из стабильных орбит электронов в электронной оболочке этого атома]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                             [The radius of an atom - is the distance between the atomic nucleus and the outermost electrons of stable orbits in the electron shell of an atom]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;

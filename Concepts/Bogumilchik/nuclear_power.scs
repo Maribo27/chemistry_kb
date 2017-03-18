@@ -1,0 +1,25 @@
+nuclear_power
+        => nrel_main_idtf:
+                [nuclear power](*<- lang_en;;*);
+                [ядерная энергия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (nuclear power)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (ядерная энергия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Ядерная энергия — энергия, содержащаяся в атомных ядрах и выделяемая при ядерных реакциях и радиоактивном распаде.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [Nuclear energy - the energy contained in the nuclei and released in nuclear reactions and radioactive decay.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

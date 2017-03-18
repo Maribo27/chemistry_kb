@@ -1,0 +1,3 @@
+elem_Mc
+	=> nrel_main_idtf: [moscovium] (* <-lang_en;;*);
+	=> nrel_idtf: [Mc] (* <-lang_en;;*);;

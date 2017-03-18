@@ -1,0 +1,3 @@
+elem_Xe
+	=> nrel_main_idtf: [xenon] (* <-lang_en;;*);
+	=> nrel_idtf: [Xe] (* <-lang_en;;*);;

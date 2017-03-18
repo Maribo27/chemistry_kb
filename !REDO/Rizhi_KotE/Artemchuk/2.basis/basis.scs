@@ -1,0 +1,34 @@
+basis <= nrel_inclusion: complex_substance;;
+basis
+	=> nrel_main_idtf: 
+		[concept basis](*<- lang_en;;*);
+		[основание](*<- lang_ru;;*);
+	<- rrel_key_sc_element: basis_definition
+	(*
+		=> nrel_main_idtf:
+			[Опр.(основание)](*<-lang_ru;; *);;
+			<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://basis.html"
+				(*<- lang_ru;;*);;
+		*);;
+		<= nrel_using_constants:
+			{
+				metal;
+				hydroxyl_group
+			};;
+	*);;
+basis
+
+<- rrel_key_sc_element: basic_hydroxides
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (основание, основные гидроксиды)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В узком смысле под основаниями понимают осно́вные гидроксиды — сложные вещества, при диссоциации которых в водных растворах отщепляется только один вид анионов — гидроксид-ионы OH] (*<- lang_ru;;*);;
+		*);;
+	*);;

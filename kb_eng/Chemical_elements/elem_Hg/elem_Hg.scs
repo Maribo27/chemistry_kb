@@ -1,0 +1,3 @@
+elem_Hg
+	=> nrel_main_idtf: [mercury] (* <-lang_en;;*);
+	=> nrel_idtf: [Hg] (* <-lang_en;;*);;

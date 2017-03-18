@@ -1,0 +1,3 @@
+elem_Ni
+	=> nrel_main_idtf: [nickel] (* <-lang_en;;*);
+	=> nrel_idtf: [Ni] (* <-lang_en;;*);;

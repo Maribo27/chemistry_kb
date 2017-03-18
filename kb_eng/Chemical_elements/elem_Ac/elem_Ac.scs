@@ -1,0 +1,3 @@
+elem_Ac
+	=> nrel_main_idtf: [actinium] (* <-lang_en;;*);
+	=> nrel_idtf: [Ac] (* <-lang_en;;*);;

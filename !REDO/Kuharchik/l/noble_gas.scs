@@ -1,0 +1,42 @@
+noble_gas
+        => nrel_main_idtf:
+                [noble gas](*<- lang_en;;*);
+                [благородный газ](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (noble_gas)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (благородный газ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Благоро́дные газы (также инертные или редкие газы) — группа химических элементов со схожими свойствами: при нормальных условиях они представляют собой одноатомные газы без цвета и запаха с очень низкой химической реактивностью.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Noble gases (also inert or rare gases) - a group of chemical elements with similar properties: under normal conditions, they are monatomic gases are colorless and odorless with a very low chemical reactivity.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_explanation;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [К благородным газам относятся гелий (He), неон (Ne), аргон (Ar), криптон (Kr), ксенон (Xe) и радиоактивный радон (Rn). В последнее время к этой группе также причисляют унуноктий.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [By the noble gases are helium (He), neon (Ne), argon (Ar), krypton (Kr), xenon (Xe) and the radioactive radon (Rn). Recently, this group also rank ununoctium.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                         *);;
+                 *);;

@@ -1,0 +1,86 @@
+selenic_acid
+=> nrel_main_idtf:
+	[селеновая кислота]
+	(* <- lang_ru;;	*);
+	[selenic acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2SeO4] 
+	(* <-lang_en;;*);;
+
+selenic_acid
+<- rrel_key_sc_element:
+	Definition_of_selenic_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/selenic_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				dibasic_acid;
+				acid;
+				water;
+				elem_H
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Селеновая кислота ядовита, гигроскопична и является сильным окислителем.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Селеновая кислота — одно из немногих соединений (и единственная кислота в чистом виде) растворяющих золото.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/selenic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/selenic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+Definition_of_selenic_acid
+=> nrel_main_idtf:
+	[Опр.(Селеновая кислота)]
+	(* <- lang_ru;;	*);;

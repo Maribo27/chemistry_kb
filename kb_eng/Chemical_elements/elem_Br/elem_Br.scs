@@ -1,0 +1,3 @@
+elem_Br
+	=> nrel_main_idtf: [bromine] (* <-lang_en;;*);
+	=> nrel_idtf: [Br] (* <-lang_en;;*);;

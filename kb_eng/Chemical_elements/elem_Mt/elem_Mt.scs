@@ -1,0 +1,3 @@
+elem_Mt
+	=> nrel_main_idtf: [meitnerium] (* <-lang_en;;*);
+	=> nrel_idtf: [Mt] (* <-lang_en;;*);;

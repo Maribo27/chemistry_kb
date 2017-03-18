@@ -1,0 +1,3 @@
+elem_Ag
+	=> nrel_main_idtf: [silver] (* <-lang_en;;*);
+	=> nrel_idtf: [Ag] (* <-lang_en;;*);;

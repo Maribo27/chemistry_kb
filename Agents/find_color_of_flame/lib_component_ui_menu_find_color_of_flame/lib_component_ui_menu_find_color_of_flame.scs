@@ -1,0 +1,25 @@
+lib_component_ui_menu_find_color_of_flame
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для поиска веществ с заданным цветом пламени при горении]
+	(* <- lang_ru;; *);
+	[Library component. User interface command of search substances with a given flame color]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+<- library_of_reusable_components_of_knowledge_bases;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_Domains.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_ui_menu_find_color_of_flame  = [*^"file://ui_menu_find_color_of_flame.scsi"*];; 

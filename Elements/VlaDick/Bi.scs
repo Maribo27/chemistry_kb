@@ -1,0 +1,79 @@
+elem_Bi
+<- rrel_key_sc_element:
+	Definition_of_bismuthum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Bi.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_bismuthum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (мышьяк, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер висмута равен 83] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_bismuthum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (висмут, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Висмут — металл серебристо-белого цвета с розоватым оттенком. При комнатной температуре висмут хрупкий металл и в изломе имеет грубозернистое строение, но при температуре 150—250 °C проявляет пластические свойства. Переход из твёрдого в жидкое состояние сопровождается увеличением плотности. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_bismuthum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (висмут, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ При комнатной температуре в среде сухого воздуха не окисляется, но в среде влажного воздуха покрывается тонкой плёнкой оксида, а нагрев до температуры плавления приводит к окислению. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Bi.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_bismuthum
+=> nrel_main_idtf:
+	[Опр.(Висмут)]
+	(* <- lang_ru;;	*);;

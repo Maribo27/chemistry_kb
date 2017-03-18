@@ -1,0 +1,37 @@
+material_weight
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Масса вещества]
+	(* <- lang_ru;;	*);
+	[Material weight]
+	(* <- lang_en;;	*);;
+Definition_of_material_weight
+=> nrel_main_idtf:
+	[Опр.(Масса вещества)]
+	(* <- lang_ru;;	*);;
+
+material_weight
+<- rrel_key_sc_element:
+	Definition_of_material_weight
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/material_weight.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Количественно масса 1 моль вещества - масса вещества в граммах, численно равная его атомной или молекулярной массе.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+	
+
+

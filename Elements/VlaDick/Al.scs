@@ -1,0 +1,79 @@
+elem_Al
+<- rrel_key_sc_element:
+	Definition_of_aluminium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Al.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_aluminium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (алюминий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер алюминия равен 13] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_aluminium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (алюминий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Алюминий — лёгкий металл серебристо-белого цвета, легко поддающийся формовке, литью, механической обработке. Алюминий обладает высокой тепло- и электропроводностью, стойкостью к коррозии. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_aluminium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (алюминий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ При нормальных условиях алюминий покрыт тонкой и прочной оксидной плёнкой, благодаря этому алюминий практически не подвержен коррозии. При разрушении оксидной плёнки алюминий выступает как активный металл-восстановитель. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Al.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_aluminium
+=> nrel_main_idtf:
+	[Опр.(Алюминий)]
+	(* <- lang_ru;;	*);;

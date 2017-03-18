@@ -1,0 +1,3 @@
+elem_Er
+	=> nrel_main_idtf: [erbium] (* <-lang_en;;*);
+	=> nrel_idtf: [Er] (* <-lang_en;;*);;

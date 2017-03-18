@@ -1,0 +1,79 @@
+elem_Na
+<- rrel_key_sc_element:
+	Definition_of_natrium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Na.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_natrium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (натрий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер натрия равен 11] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_natrium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (натрий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Натрий — серебристо-белый металл, пластичен, даже мягок. Под давлением становится прозрачным и красным.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_natrium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (натрий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Натрий - щелочной металл, на воздухе легко окисляется. Является сильным восстановителем и энергично взаимодействуют со многими неметаллами. С водой натрий реагирует очень бурно. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Na.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_natrium
+=> nrel_main_idtf:
+	[Опр.(Натрий)]
+	(* <- lang_ru;;	*);;

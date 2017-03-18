@@ -1,0 +1,3 @@
+elem_Zr
+	=> nrel_main_idtf: [zirconium] (* <-lang_en;;*);
+	=> nrel_idtf: [Zr] (* <-lang_en;;*);;

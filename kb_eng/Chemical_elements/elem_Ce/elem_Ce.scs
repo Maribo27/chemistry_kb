@@ -1,0 +1,3 @@
+elem_Ce
+	=> nrel_main_idtf: [cerium] (* <-lang_en;;*);
+	=> nrel_idtf: [Ce] (* <-lang_en;;*);;

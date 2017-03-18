@@ -1,0 +1,25 @@
+alkaline_burnishing
+        => nrel_main_idtf:
+                [alkaline burnishing](*<- lang_en;;*);
+                [щелочное воронение](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (alkaline burnishing)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (щелочное воронение)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [щелочное воронение — воронение в щелочных растворах с окислителями при температуре 135—150 °C.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *); 
+                                             [alkaline burnishing - burnishing in alkaline solutions with oxidants at temperatures 135-150 ° C.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

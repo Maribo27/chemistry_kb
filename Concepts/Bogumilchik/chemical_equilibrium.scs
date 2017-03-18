@@ -1,0 +1,26 @@
+chemical_equilibrium
+        => nrel_main_idtf:
+                [chemical equilibrium](*<- lang_en;;*);
+                [химическое равновесие](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (chemical equilibrium)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (химическое равновесие)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Химическое равновесие — состояние химической системы, в которой протекает одна или несколько химических реакций, причём скорости в каждой паре прямой-обратной реакции равны между собой. Для системы, находящейся в химическом равновесии, концентрации реагентов, температура и другие параметры системы не изменяются со временем.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                             [Chemical equilibrium - state of the chemical system in which runs the one or more chemical reactions, with the reverse-speed direct reaction in each pair are equal. For a system in chemical equilibrium, reagent concentrations, temperature and other parameters of the system do not change with time.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+
+

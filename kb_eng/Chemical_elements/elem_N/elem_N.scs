@@ -1,0 +1,3 @@
+elem_N
+	=> nrel_main_idtf: [nitrogen] (* <-lang_en;;*);
+	=> nrel_idtf: [N] (* <-lang_en;;*);;

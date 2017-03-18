@@ -1,0 +1,50 @@
+elem_Hs
+<- rrel_key_sc_element:
+	Definition_of_hassium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Hs.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_hassium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хассий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер хассия равен 108] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receipt_of_hassium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хассий, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Хассий создан бомбардировкой атома свинца Pb-208 ядрами железа Fe-58 с выделением нейтрона. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+Definition_of_hassium
+=> nrel_main_idtf:
+	[Опр.(Хассий)]
+	(* <- lang_ru;;	*);;

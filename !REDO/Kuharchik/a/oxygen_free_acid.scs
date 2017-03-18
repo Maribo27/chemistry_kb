@@ -1,0 +1,30 @@
+oxygen_free_acid
+        => nrel_main_idtf:
+                [oxygen-free_acid](*<- lang_en;;*);
+                [бескислородные кислоты](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (oxygen-free_acid)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (бескислородные кислоты)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Бескислородные кислоты</b> - <sc_element sys_idtf="concept_acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых не содержат <sc_element sys_idtf="oxygen">кислорода</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Oxygen-free_acid</b> - <sc_element sys_idtf="concept_acid">acid</sc_element> whose <sc_element sys_idtf="molecule">molecules</sc_element> do not contain <sc_element sys_idtf="oxygen">oxygen</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+
+        <= nrel_using_constants:
+                {
+                        molecule                    
+                };
+<- rrel_key_sc_element: section_acids;;

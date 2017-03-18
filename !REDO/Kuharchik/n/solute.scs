@@ -1,0 +1,26 @@
+solute
+        => nrel_main_idtf:
+                [solute](*<- lang_en;;*);
+                [растворенное вещестов](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (solute)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (растворенное вещество)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [ Растворенное вещество - компонент жидкого или твердого раствора, который присутствует в меньшем или незначительном количестве.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Solute - liquid component or a solid solution which is present in an amount less than or insignificant.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+

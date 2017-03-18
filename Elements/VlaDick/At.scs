@@ -1,0 +1,91 @@
+elem_At
+<- rrel_key_sc_element:
+	Definition_of_astatum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/At.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_astatum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (астат, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер астата равен 85] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_astatum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (астат, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Астат — твёрдое вещество сине-чёрного цвета.  ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: astatum_naturally
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (астат, нахождение в природе)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Астат является наиболее редким элементом среди всех, встречающихся в земной природе. Его суммарное содержание в земной коре не превышает одного грамма. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_astatum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (астат, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ По химическим свойствам астат близок как к иоду (проявляет свойства галогенов), так и к полонию (свойства металла). ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/At.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_astatum
+=> nrel_main_idtf:
+	[Опр.(Астат)]
+	(* <- lang_ru;;	*);;

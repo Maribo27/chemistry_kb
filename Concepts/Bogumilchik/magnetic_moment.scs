@@ -1,0 +1,24 @@
+magnetic_moment
+
+=> nrel_main_idtf:
+    [magnetic moment](*<- lang_en;;*);
+    [магнитный момент](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Def. (magnetic moment)](*<- lang_en;;*);;
+    => nrel_main_idtf: [Опр. (магнитный момент)](*<- lang_ru;;*);;
+
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [ <p><b><sc_element sys_idtf = "magnetic_moment">Магнитный момент</sc_element></b> — основная величина, характеризующая магнитные свойства <sc_element sys_idtf = "substance">вещества</sc_element> (источником магнетизма, согласно классической теории электромагнитных явлений, являются электрические макро- и микротоки; элементарным источником магнетизма считают замкнутый ток). Магнитным моментом обладают элементарные частицы, <sc_element sys_idtf = "nrel_nucleus">атомные ядра</sc_element>, <sc_element sys_idtf = "electron_shell">электронные оболочки</sc_element> <sc_element sys_idtf = "atom">атомов</sc_element> и <sc_element sys_idtf = "molecule">молекул</sc_element>. Магнитный момент элементарных частиц (<sc_element sys_idtf = "electron">электронов</sc_element>, <sc_element sys_idtf = "proton">протонов</sc_element>, нейтронов и других), как показала квантовая механика, обусловлен существованием у них собственного механического момента — спина.</br>
+            </br>
+            Магнитный момент измеряется в А⋅м2 или Дж/Тл (СИ), либо эрг/Гс (СГС), 1 эрг/Гс = 10−3 Дж/Тл. Специфической единицей элементарного магнитного момента является магнетон Бора.</p>]
+                (*
+                    <- lang_ru;;
+                    => nrel_format: format_html;;
+                *);;
+    *);;
+*);;

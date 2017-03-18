@@ -1,0 +1,91 @@
+elem_O
+<- rrel_key_sc_element:
+	Definition_of_Oxygen
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/O.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group				
+			};
+
+
+<- rrel_key_sc_element: number_of_o
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислород, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер кислорода равен 8.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_o
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислород, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Кислород является самым лёгким элементом из группы халькогенов. Простое вещество кислород при нормальных условиях — газ без цвета, вкуса и запаха. Жидкий кислород имеет светло-голубой цвет, а твёрдый представляет собой кристаллы светло-синего цвета. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_o
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислород, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Степень окисления −2. Как правило, реакция окисления протекает с выделением тепла и ускоряется при повышении температуры. Кислород образует пероксиды со степенью окисления атома кислорода, формально равной −1. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: receipt_of_Oxygen
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислород, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://htmls/O_(receipt).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_Oxygen
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислород, взаимодействие*, окислитель, оксид)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Сильный окислитель, взаимодействует со всеми элементами, кроме гелия, неона, аргона и фтора, образуя оксиды] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_Oxygen
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислород, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://htmls/O_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+Definition_of_Oxygen
+=> nrel_main_idtf:
+	[Опр.(Кислород)]
+	(* <- lang_ru;;	*);;

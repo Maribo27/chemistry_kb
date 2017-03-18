@@ -1,0 +1,3 @@
+elem_Sm
+	=> nrel_main_idtf: [samarium] (* <-lang_en;;*);
+	=> nrel_idtf: [Sm] (* <-lang_en;;*);;

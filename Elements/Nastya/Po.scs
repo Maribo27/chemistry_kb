@@ -1,0 +1,73 @@
+elem_Po
+<- rrel_key_sc_element:
+	Definition_of_polonium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Po.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+			
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Po.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);	
+				
+<- rrel_key_sc_element: number_of_polonium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (полоний, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Порядковый номер полония равен 84.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_polonium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (полоний, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Металлический полоний быстро окисляется на воздухе. При растворении полония в соляной кислоте в присутствии магния образуется полоноводород. Подобно теллуру полоний способен с рядом металлов образовывать химические соединения — полониды. В индикаторных количествах получены кислотный триоксид полония РоО3 и соли полониевой кислоты, не существующей в свободном состоянии — полонаты К2РоО4. Образует галогениды состава PoX2, PoX4 и PoX6. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_polonium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (полоний, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Полоний — мягкий серебристо-белый радиоактивный металл. Вследствие высокой радиоактивности в темноте можно заметить светло-голубое свечение, а также наблюдается саморазогревание. Полоний выделяет так много тепловой энергии, что это тепло способно расплавить образец.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+Definition_of_polonium
+=> nrel_main_idtf:
+	[Опр.(Полоний)]
+	(* <- lang_ru;;	*);;

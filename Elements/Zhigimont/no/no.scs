@@ -1,0 +1,71 @@
+elem_No
+<- rrel_key_sc_element:
+	Definition_of_nobelium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/no.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				elem_Yb;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_nobelium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (нобелий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер нобелия равен 102. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_nobelium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (нобелий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://htmls/no_chem_prop.html" (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_nobelium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (нобелий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Искусственно синтезированный радиоактивный элемент, в природе не встречается. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: ...
+(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/no.png";;
+		*);;
+	*);;
+
+
+
+
+Definition_of_nobelium
+=> nrel_main_idtf:
+	[Опр.(Нобелий)]
+	(* <- lang_ru;;	*);;

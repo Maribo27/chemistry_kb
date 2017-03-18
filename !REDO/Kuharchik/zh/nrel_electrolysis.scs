@@ -1,0 +1,16 @@
+sc_node_norole_relation->nrel_electrolysis;;
+nrel_electrolysis
+	=> nrel_main_idtf: [electrolysis*](*<- lang_en;;*);
+						[электролиз*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				[Электро́лиз — физико-химический процесс, состоящий в выделении на электродах составных частей растворённых веществ или других веществ, являющихся результатом вторичных реакций на электродах, который возникает при прохождении электрического тока через раствор, либо расплав электролита.]
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_second_domain:cathode;
+	=> nrel_first_domain:anode;;

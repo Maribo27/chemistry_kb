@@ -1,0 +1,80 @@
+elem_Ds
+<- rrel_key_sc_element:
+	Definition_of_darmstadtium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Ds.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Darmstadtium.svg"
+			(*
+			=> nrel_format: format_svg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: number_of_db
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дармштадтий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер дармштадтия равен 110.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: properties_of_darmstadtium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дармштадтий, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Дармштадтий радиоактивен.  ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+
+<- rrel_key_sc_element: receipt_of_darmstadtium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дармштадтий, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Дармштадтий — искусственно синтезированный химический элемент ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_darmstadtium
+=> nrel_main_idtf:
+	[Опр.(Дармштадтий)]
+	(* <- lang_ru;;	*);;

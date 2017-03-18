@@ -1,0 +1,131 @@
+elem_H
+<- rrel_key_sc_element:
+	Definition_of_hydrogenium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/H.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrogenium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: number_of_h
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер водорода равен 1.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_hydrogenium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Простое вещество водород — лёгкий газ без цвета и вкуса.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_hydrogenium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Молекулы водорода достаточно прочны, и для того, чтобы водород мог вступить в реакцию, должна быть затрачена большая энергия. В смеси с воздухом или кислородом горюч и взрывоопасен. Нетоксичен. Растворим в этаноле и ряде металлов: железе, никеле, палладии, титане, платине.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_hydrogenium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, взаимодействие*, металл, неметалл, температура*, воздействие*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[При обычных температурах водород реагирует только с очень активными металлами и фтором. С большинством же металлов и неметаллов водород реагирует при повышенной температуре или при другом воздействии.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: compound_of_hydrogenium1
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, соединение*, галоген, галогенводород)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[С галогенами образует галогеноводороды.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: compound_of_hydrogenium2
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, соединение*, металл, гидрид)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[При взаимодействии с активными металлами водород образует гидриды.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: receipt_of_hydrogenium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/H_(receipt).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_hydrogenium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (водород, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://htmls/H_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_hydrogenium
+=> nrel_main_idtf:
+	[Опр.(Водород)]
+	(* <- lang_ru;;	*);;

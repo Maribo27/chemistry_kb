@@ -1,0 +1,138 @@
+elem_Co
+<- rrel_key_sc_element:
+	Definition_of_cobaltum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Co.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_co
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер кобальта равен 27] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_co
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[   Простое вещество кобальт — серебристо-белый, слегка желтоватый металл с розоватым или синеватым отливом] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: cobaltum_mod
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт, модификация)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Кобальт существует в двух кристаллических модификациях: α-Co с гексагональной плотноупакованной решёткой, β-Co с кубической гранецентрированной решёткой.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: cobaltum_mineral
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт, минерал)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Кобальт входит в состав минералов(около 30). ] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Cobaltum.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+<- rrel_key_sc_element: place_of_birth_of_cobaltum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт, местонахождение)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Самый крупный поставщик кобальта — Демократическая Республика Конго. Также есть богатые месторождения в Канаде, США, Франции, Замбии, Казахстане, России.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: receipt_of_cobaltum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт,получение)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Кобальт получают в основном из никелевых руд, обрабатывая их растворами серной кислоты или аммиака. Также используется методы пирометаллургии. Для отделения от близкого по свойствам никеля используется хлор, хлорат кобальта выпадает в осадок, а соединения никеля остаются в растворе.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: recovery_of_cobaltum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт,востановление*, водород)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Все оксиды кобальта восстанавливаются водородом.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: cobaltum_catalyst
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт,катализатор*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Кобальт применяется как катализатор химических реакций.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: oxidation_of_cobaltum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кобальт, окисление*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[На воздухе кобальт окисляется при температуре выше 300 °C.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_cobaltum
+=> nrel_main_idtf:
+	[Опр.(Кобальт)]
+	(* <- lang_ru;;	*);;

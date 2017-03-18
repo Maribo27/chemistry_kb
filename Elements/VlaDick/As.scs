@@ -1,0 +1,79 @@
+elem_As
+<- rrel_key_sc_element:
+	Definition_of_arsenicum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/As.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_arsenicum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (мышьяк, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер мышьяка равен 33] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_arsenicum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (мышьяк, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Мышьяк — хрупкий полуметалл стального цвета с зеленоватым оттенком. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_arsenicum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (мышьяк, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Мышьяк - химически малоактивный полуметалл. При нагревании на воздухе выше 400 °C горит. С галогенами Мышьяк соединяется непосредственно. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/As.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_arsenicum
+=> nrel_main_idtf:
+	[Опр.(Мышьяк)]
+	(* <- lang_ru;;	*);;

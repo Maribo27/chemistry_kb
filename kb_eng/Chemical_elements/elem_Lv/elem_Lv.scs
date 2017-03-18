@@ -1,0 +1,3 @@
+elem_Lv
+	=> nrel_main_idtf: [livermorium] (* <-lang_en;;*);
+	=> nrel_idtf: [Lv] (* <-lang_en;;*);;

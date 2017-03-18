@@ -1,0 +1,3 @@
+elem_Mg
+	=> nrel_main_idtf: [magnesium] (* <-lang_en;;*);
+	=> nrel_idtf: [Mg] (* <-lang_en;;*);;

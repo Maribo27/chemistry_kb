@@ -1,0 +1,109 @@
+elem_Dy
+<- rrel_key_sc_element:
+	Definition_of_dysprosium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Dy.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_dy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (диспрозий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер диспрозий равен 66.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Dysprosium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: phyzical_properties_of_dy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (диспрозий, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Диспрозий  - предкоземельный металл с блеском серебра. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: local_of_dysprosium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (диспрозий, месторождения*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Диспрозий не встречается в природе в чистом виде, но входит в состав некоторых минералов, например, ксенотима.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: receipt_of_dysprosium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (диспрозий, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Диспрозий получают восстановлением DyCl3 или DyF3 кальцием, натрием или литием.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_dy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (диспрозий, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[На воздухе окисляется медленно, выше 100 °C — быстро. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: interaction_of_dysprosium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (диспрозий, взаимодействие*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[При нагревании металлический диспрозий реагирует с галогенами, азотом, водородом. Взаимодействует с минеральными кислотами (кроме HF), образуя соли Dy (III), не взаимодействует с растворами щелочей. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_dysprosium
+=> nrel_main_idtf:
+	[Опр.(Диспрозий)]
+	(* <- lang_ru;;	*);;

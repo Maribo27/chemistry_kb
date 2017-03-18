@@ -1,0 +1,41 @@
+saccharin
+=> nrel_main_idtf:
+	[сахарин]
+	(* <- lang_ru;;	*);
+	[saccharin]
+	(* <- lang_en;;	*);;
+
+sucrose
+=> nrel_main_idtf:
+	[сахароза]
+	(* <- lang_ru;;	*);
+	[sucrose]
+	(* <- lang_en;;	*);;
+
+sweetener
+=> nrel_main_idtf:
+	[подсластитель]
+	(* <- lang_ru;;	*);
+	[sweetener]
+	(* <- lang_en;;	*);;
+
+polycrystal
+=> nrel_main_idtf:
+	[поликристалл]
+	(* <- lang_ru;;	*);
+	[polycrystal]
+	(* <- lang_en;;	*);;
+
+crystallite
+=> nrel_main_idtf:
+	[кристаллит]
+	(* <- lang_ru;;	*);
+	[crystallite]
+	(* <- lang_en;;	*);;
+
+sulfamate
+=> nrel_main_idtf:
+	[сульфамат]
+	(* <- lang_ru;;	*);
+	[sulfamate]
+	(* <- lang_en;;	*);;

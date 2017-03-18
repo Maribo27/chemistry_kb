@@ -1,0 +1,73 @@
+elem_Zr
+<- rrel_key_sc_element:
+	Definition_of_zirconium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Zr.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+			
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Zr.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);	
+				
+<- rrel_key_sc_element: number_of_zirconium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (цирконий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Порядковый номер циркония равен 40.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_zirconium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (цирконий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Цирконий устойчив в воде и водяных парах до 300 °C, при более высоких температурах (начиная с примерно 700 °C) начинается экзотермическая пароциркониевая реакция. Не реагирует с соляной и серной (до 50 %) кислотами, а также с растворами щелочей (цирконий — единственный металл, стойкий в щелочах, содержащих аммиак). С азотной кислотой и царской водкой он взаимодействует при температуре выше 100 °C. Растворяется в плавиковой и горячей концентрированной (выше 50 %) серной кислотах. Из кислых растворов могут быть выделены соли соответствующих кислот разного состава, зависящего от концентрации кислоты.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_zirconium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (цирконий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Цирконий — блестящий серебристо-серый металл. Цирконий парамагнитен. Чистый цирконий пластичен, легко поддаётся холодной и горячей обработке (прокатке, ковке, штамповке). Наличие растворённых в металле малых количеств кислорода, азота, водорода и углерода (или соединений этих элементов с цирконием) вызывает хрупкость циркония.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+Definition_of_zirconium
+=> nrel_main_idtf:
+	[Опр.(Цирконий)]
+	(* <- lang_ru;;	*);;

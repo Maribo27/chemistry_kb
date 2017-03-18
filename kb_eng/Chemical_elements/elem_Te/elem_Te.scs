@@ -1,0 +1,3 @@
+elem_Te
+	=> nrel_main_idtf: [tellurium] (* <-lang_en;;*);
+	=> nrel_idtf: [Te] (* <-lang_en;;*);;

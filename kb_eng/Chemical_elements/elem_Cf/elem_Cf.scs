@@ -1,0 +1,3 @@
+elem_Cf
+	=> nrel_main_idtf: [californium] (* <-lang_en;;*);
+	=> nrel_idtf: [Cf] (* <-lang_en;;*);;

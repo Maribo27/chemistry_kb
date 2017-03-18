@@ -1,0 +1,91 @@
+elem_Fr
+<- rrel_key_sc_element:
+	Definition_of_francium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Fr.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_francium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (франций, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер франция равен 87] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_francium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (франций, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Сведения о физических свойствах франция могут быть определены только путём расчета, основываясь на данных для стабильных щелочных металлов. Плотность составляет 1,87 г/см³, температура плавления 27 °C, температура кипения 677 °C. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: francium_naturally
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (франций, нахождение в природе)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Франций — один из редчайших элементов. Общее содержание франция в земной коре оценивается в 30 граммов. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_francium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (франций, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Франций — радиоактивный щелочной металл, обладающий крайне высокой химической активностью. Практически все соединения франция растворимы в воде. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Francium.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_francium
+=> nrel_main_idtf:
+	[Опр.(Франций)]
+	(* <- lang_ru;;	*);;

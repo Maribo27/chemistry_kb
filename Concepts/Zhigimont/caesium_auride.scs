@@ -1,0 +1,112 @@
+caesium_auride
+
+<-auride;
+<-crystal;
+
+=> nrel_main_idtf:
+	[аурид цезия]
+	(* <- lang_ru;;	*);
+	[caesium auride]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[CsAu] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_caesium_auride
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://html/CsAu.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<= nrel_using_constants:
+			{
+				chemical_compound;
+				binary_compound;
+				elem_Cs;
+				elem_Au
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/CsAu.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+
+		-> rrel_example:
+			"file://image/CsAu2.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_caesium_auride
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (аурид цезия, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/physical_properties_of_caesium_auride.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_caesium_auride
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (аурид цезия, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/chemical_properties_of_caesium_auride.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_of_caesium_auride
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (аурид цезия, взаимодействие*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<p>4CsAu + O<sub>2</sub> = 2Cs<sub>2</sub>O + 4Au</p>] 
+			(*
+			<- lang_en;;
+			=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:[<p>2CsAu + Cl<sub>2</sub> = 2CsCl + 2Au</p>] 
+			(*
+			<- lang_en;;
+			=> nrel_format: format_html;;	
+			*);;
+
+			-> rrel_example:[<p>2CsAu + 2H<sub>2</sub>O = 2CsOH + 2Au + H<sub>2</sub></p>] 
+			(*
+			<- lang_en;;
+			=>nrel_format: format_html;;	
+			*);;
+		*);;
+	*);;
+
+Definition_of_caesium_auride
+=> nrel_main_idtf:
+	[Опр.(аурид цезия)]
+	(* <- lang_ru;;	*);;

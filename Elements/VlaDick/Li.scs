@@ -1,0 +1,77 @@
+elem_Li
+<- rrel_key_sc_element:
+	Definition_of_lithium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Li.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_lithium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (литий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер лития равен 3] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_lithium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (литий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Литий является наименее активным щелочным металлом. С сухим воздухом при комнатной температуре практически не реагирует, во влажном - медленно протекающая реакция. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_lithium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (литий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Литий — серебристо-белый металл, мягкий и пластичный. Из всех щелочных металлов характеризуется самыми высокими температурами плавления и кипения (180,54 и 1340 °C, соответственно), у него самая низкая плотность при комнатной температуре среди всех металлов (0,533 г/см³).] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Limetal.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_lithium
+=> nrel_main_idtf:
+	[Опр.(Литий)]
+	(* <- lang_ru;;	*);;

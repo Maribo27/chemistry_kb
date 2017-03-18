@@ -1,0 +1,10 @@
+ui_menu_na_view_kb_chemistry <- ui_user_command_class_noatom;;
+ui_menu_na_view_kb_chemistry => nrel_main_idtf: [Команды для химии] (* <- lang_ru;; *);;
+ui_menu_na_view_kb_chemistry => nrel_main_idtf: [Command to chemistry] (* <- lang_en;; *);;
+ui_menu_na_view_kb_chemistry <= nrel_ui_commands_decomposition:
+{
+	ui_menu_find_compound_reaction_of_chemical_entity;
+	ui_menu_find_decomposition_of_chemical_entity;
+	ui_menu_find_object_structure;
+	ui_menu_find_color_of_flame
+};;

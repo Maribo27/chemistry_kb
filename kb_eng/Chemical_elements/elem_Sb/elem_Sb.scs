@@ -1,0 +1,3 @@
+elem_Sb
+	=> nrel_main_idtf: [antimony] (* <-lang_en;;*);
+	=> nrel_idtf: [Sb] (* <-lang_en;;*);;

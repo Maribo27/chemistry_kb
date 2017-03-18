@@ -1,0 +1,79 @@
+elem_Ir
+<- rrel_key_sc_element:
+	Definition_of_iridium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Ir.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_iridium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (иридий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер иридия равен 77] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_iridium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (иридий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Иридий — тяжёлый серебристо-белый металл, из-за своей твердости плохо поддающийся механической обработке. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_iridium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (иридий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Иридий устойчив на воздухе при обычной температуре и нагревании. Компактный иридий при температурах до 100 °C не реагирует со всеми известными кислотами и их смесями. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Ir.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_iridium
+=> nrel_main_idtf:
+	[Опр.(Иридий)]
+	(* <- lang_ru;;	*);;

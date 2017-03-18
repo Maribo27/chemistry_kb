@@ -1,0 +1,75 @@
+elem_Ti
+<- rrel_key_sc_element:
+	Definition_of_titanium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/ti.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_titanium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер титана равен 22] (*<- lang_ru;;*);;
+		*);;
+	*);
+	<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/titanium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+<- rrel_key_sc_element: chemical_properties_of_titanium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Устойчив к коррозии благодаря оксидной плёнке, но при измельчении в порошок, а также в тонкой стружке или проволоке титан пирофорен.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_titanium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Титан — легкий серебристо-белый металл.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_titanium
+=> nrel_main_idtf:
+	[Опр.(Титан)]
+	(* <- lang_ru;;	*);;

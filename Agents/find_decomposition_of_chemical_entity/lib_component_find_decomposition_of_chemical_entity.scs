@@ -1,0 +1,11 @@
+lib_ui_menu_find_decomposition_of_chemical_entity
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса разложения химического вещества]
+	(* <- lang_ru;; *);
+	[Library component. User interface command of dividing chemical entity]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;;
+
+lib_component_ui_menu_find_decomposition_of_chemical_entity = [*^"file://ui_menu_find_decomposition_of_chemical_entity.scsi"*];;

@@ -1,0 +1,79 @@
+elem_Am
+<- rrel_key_sc_element:
+	Definition_of_americium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Am.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_americium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (америций, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер америция равен 95] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_americium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (америций, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Америций — металл серебристо-белого цвета, тягучий и ковкий. Светится в темноте за счёт собственного α-излучения. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_americium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (америций, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Растворы 3-х валентного америция окрашены в ярко-розовый цвет. Оксиды 4-х валентного америция в водных растворах энергично восстанавливаются под действием собственного сильного α-излучения. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Am.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_americium
+=> nrel_main_idtf:
+	[Опр.(Америций)]
+	(* <- lang_ru;;	*);;

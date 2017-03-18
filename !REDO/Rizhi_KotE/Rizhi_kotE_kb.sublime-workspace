@@ -1,0 +1,1351 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is",
+				"isThisObjectAllArcsOrAllNodes"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond_ru.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_ionic_bond;;\nnrel_ionic_bond\n	<= nrel_strict_inclusion: nrel_chemical_bond;\n	=> nrel_main_idtf: \n			[ionic bond](*<- lang_en;;*);\n			[ионная связь](*<- lang_ru;;*);\n	<- rrel_key_sc_element:nrel_ionic_bond_definition\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Опр. (ионная связь)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://nrel_ionic_bond_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			external_shell\n		};;\n	*);\n	<- rrel_key_sc_element: ionic_bond_subject\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Утв. (ионная связь, типичный металл, неметал)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\"file://ionic_bond_subject_ru.html\" (*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			nrel_ionic_bond;\n			typical_metal;\n			nonmetal\n		};;\n	*);\n	=> nrel_second_domain:atom;\n	=> nrel_first_domain:atom;;\n",
+			"file": "substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond.scs",
+			"file_size": 1015,
+			"file_write_time": 131059646717885211,
+			"settings":
+			{
+				"buffer_size": 956,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_nonpolar_covalent_bond;;\nnrel_nonpolar_covalent_bond\n	<= nrel_strict_inclusion: nrel_chemical_bond;\n	=> nrel_main_idtf: \n			[nonpolar covalent bond](*<- lang_en;;*);\n			[неполярная ковалентная связь](*<- lang_ru;;*);\n	<- rrel_key_sc_element:nrel_nonpolar_covalent_bond_definition\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Опр. (неполярная ковалентная связь)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://nrel_nonpolar_covalent_bond_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			nrel_electronegativity\n		};;\n	*);\n		<- rrel_key_sc_element: non_polar_covalent_bond_dipole_moment\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Утв. (ковалентная связь, дипольный момент)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\"file://non_polar_covalent_bond_dipole_moment_ru.html\" (*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			nrel_nonpolar_covalent_bond;\n			nrel_dipole_moment\n		};;\n	*);\n	=> nrel_second_domain:atom;\n	=> nrel_first_domain:atom;;",
+			"file": "substances_structure/bond/nrel_nonpolar_covalent_bond/nrel_nonpolar_covalent_bond.scs",
+			"file_size": 1183,
+			"file_write_time": 131059626885445358,
+			"settings":
+			{
+				"buffer_size": 1095,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "substances_structure/bond/nrel_polar_covalent_bond/nrel_polar_covalent_bond.scs",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "substances_structure/bond/nrel_nonpolar_covalent_bond/non_polar_covalent_bond_dipole_moment.gwf",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "metal <= nrel_inclusion: elementary_substance;;\nmetal\n	=> nrel_main_idtf: [metal](*<- lang_en;;*);\n						[металл](*<- lang_ru;;*);\n	<- rrel_key_sc_element: metal_definition\n	(*\n		=> nrel_main_idtf:\n			[Опр.(металл)](*<-lang_ru;; *);;\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://metal_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);;",
+			"file": "Salts_and_basis/10. metal/metal.scs",
+			"file_size": 391,
+			"file_write_time": 131058721915830860,
+			"settings":
+			{
+				"buffer_size": 377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "nonmetal <= nrel_inclusion: elementary_substance;;\nnonmetal\n  => nrel_main_idtf: [nonmetal](*<- lang_en;;*);	[неметалл](*<- lang_ru;;*);\n  <- rrel_key_sc_element:...\n	(*\n	  <- sc_explanation;;\n	  <= nrel_sc_text_translation:...\n	  (*\n		-> rrel_example:\n		  \"file://nonmetal_ru.html\"\n		  (*<- lang_ru;;*);;\n		*);;\n	  *);;\n	\n",
+			"file": "Salts_and_basis/11. nonmetal/nonmetal.scs",
+			"file_size": 330,
+			"file_write_time": 131047099293392880,
+			"settings":
+			{
+				"buffer_size": 323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "alkali_metal <= nrel_inclusion: metal;;\nalkali_metal\n	=> nrel_main_idtf: [alkali_metal](*<- lang_en;;*);\n						[щелочной металл](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://alkali_metal_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);;\n	\n",
+			"file": "Salts_and_basis/12. alkali metal/alkali_metal.scs",
+			"file_size": 344,
+			"file_write_time": 131047099293392880,
+			"settings":
+			{
+				"buffer_size": 331,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "hydroxyl_group <= nrel_inclusion: functional_group;;\nhydroxyl_group\n	=> nrel_main_idtf: [hydroxyl_group](*<- lang_en;;*);\n						[гидроксильная группа](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://hydroxyl_group.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n	<= nrel_using_constants:\n		{\n			oxygen;\n			hydrogen;\n			nrel_covalent_bond\n		};;",
+			"file": "Salts_and_basis/3. Hydroxyl group/hydroxyl_group.scs",
+			"file_size": 448,
+			"file_write_time": 131059589036845637,
+			"settings":
+			{
+				"buffer_size": 430,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "alkali <= nrel_inclusion: basis;;\nalkali\n	=> nrel_main_idtf: [alkali](*<- lang_en;;*);\n						[щелочь](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://alkali.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);;\n	\n",
+			"file": "Salts_and_basis/4. alkali/alkali.scs",
+			"file_size": 300,
+			"file_write_time": 131047099293392880,
+			"settings":
+			{
+				"buffer_size": 295,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "functional_group\n	=> nrel_main_idtf: [functional_group](*<- lang_en;;*);\n						[функциональная группа](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://functional_group.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);;\n	\n",
+			"file": "Salts_and_basis/5. Functional group/functional_group.scs",
+			"file_size": 325,
+			"file_write_time": 131058732738591008,
+			"settings":
+			{
+				"buffer_size": 306,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "acid_salt <= nrel_inclusion: salt;;\nacid_salt\n	=> nrel_main_idtf: [acid_salt](*<- lang_en;;*);\n						[кислые соли](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://acid_salt_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n	<= nrel_using_constants:\n	{\n		metal;\n		acid_residue;\n		hydrogen\n	};;",
+			"file": "Salts_and_basis/6. Acid salt/acid_salt.scs",
+			"file_size": 389,
+			"file_write_time": 131058736238271056,
+			"settings":
+			{
+				"buffer_size": 380,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "basis_salt <= nrel_inclusion: salt;;\nbasis_salt\n	=> nrel_main_idtf: [basis_salt](*<- lang_en;;*);\n						[основные соли](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://basis_salt_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n<= nrel_using_constants:\n	{\n		metal;\n		acid_residue;\n		hydroxyl_group\n	};;\n",
+			"file": "Salts_and_basis/7. basis salt/basis_salt.scs",
+			"file_size": 403,
+			"file_write_time": 131058738453311087,
+			"settings":
+			{
+				"buffer_size": 392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "complex_substance <= nrel_inclusion: substance;;\ncomplex_substance\n	=> nrel_main_idtf: [complex_substance](*<- lang_en;;*);\n						[сложное вещество](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://complex_substance_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);;\n	\n",
+			"file": "Salts_and_basis/8. complex substance/complex_substance.scs",
+			"file_size": 370,
+			"file_write_time": 131047099293392880,
+			"settings":
+			{
+				"buffer_size": 356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "elementary_substance <= nrel_inclusion: substance;;\nelementary_substance\n	=> nrel_main_idtf: [elementary_substance](*<- lang_en;;*);\n						[простое вещество](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://elementary_substance_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);;\n	\n",
+			"file": "Salts_and_basis/9. Elementaly substance/elementary_substance.scs",
+			"file_size": 382,
+			"file_write_time": 131047099293432880,
+			"settings":
+			{
+				"buffer_size": 368,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_indicator;;\nnrel_indicator\n	=> nrel_main_idtf: [nrel_indicator](*<- lang_en;;*);\n						[индикатор](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://nrel_indicator.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n	=> nrel_second_domain:substance;\n	=> nrel_first_domain:substance;;\n	\n",
+			"file": "Salts_and_basis/realations/1. nrel_indicator/nrel_indicator.scs",
+			"file_size": 405,
+			"file_write_time": 131058803278511973,
+			"settings":
+			{
+				"buffer_size": 397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_pH;;\nnrel_pH\n	=> nrel_main_idtf: [nrel_pH](*<- lang_en;;*);\n						[кислотность](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://nrel_pH_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n	=> nrel_second_domain:value;\n	=> nrel_first_domain:substance;;\n	\n",
+			"file": "Salts_and_basis/realations/2. nrel_pH/nrel_pH.scs",
+			"file_size": 380,
+			"file_write_time": 131058747341071208,
+			"settings":
+			{
+				"buffer_size": 370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_insoluble;;\nnrel_insoluble\n	=> nrel_main_idtf: [nrel_insoluble](*<- lang_en;;*);\n						[растворимый](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://nrel_insoluble_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n	=> nrel_first_domain : substance;\n	=> nrel_second_domain : substance;;",
+			"file": "Salts_and_basis/realations/3. nrel_insoluble/nrel_insoluble.scs",
+			"file_size": 413,
+			"file_write_time": 131058743182071151,
+			"settings":
+			{
+				"buffer_size": 403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_indicator;;\nnrel_indicator\n	=> nrel_main_idtf: [nrel_indicator](*<- lang_en;;*);\n						[èíäèêàòîð](*<- lang_ru;;*);\n	<- rrel_key_sc_element:...\n	(*\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"nrel_indicator_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n	nrel_header=>nrel_first_domain:substance;;\n	nrel_header=>nrel_second_domain:substance;\n	",
+			"file": "Salts_and_basis/realations/nrel_indicator.txt",
+			"file_size": 427,
+			"file_write_time": 131058803164111972,
+			"settings":
+			{
+				"buffer_size": 412,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "external_shell <= nrel_inclusion: electron_shell;;\nexternal_shell\n	<- sc_node_not_relation;\n	=> nrel_main_idtf: \n		[external_shell] (*<- lang_en;;*);\n		[внешняя электронная оболочка] (*<- lang_ru;;*);\n	=> nrel_idtf:\n			[валентная оболочка] (*<- lang_ru;;*);\n	<- rrel_key_sc_element: external_shell_definition\n	(*\n		=> nrel_main_idtf:\n			[Опр.(внешняя электронная оболочка)](* <-lang_ru;; *);;\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n			(*\n				-> rrel_example:\"file://external_shell_ru.html\" (* <-lang_ru;;*);;\n			*);;\n		<= nrel_using_constants:\n			{\n				atom\n			};;\n	*);\n	<- rrel_key_sc_element: external_shel_of_noble_gases\n	(*\n		=> nrel_main_idtf:\n			[Утв.(внешняя электронная оболочка, благородный газ, гелий)](* <-lang_ru;; *);;\n		<- sc_explanation;;\n		<= nrel_sc_text_translation:...\n			(*\n				-> rrel_example:\"file://external_shel_of_noble_gases_ru.html\" (* <-lang_ru;;*);;\n			*);;\n		<= nrel_using_constants:\n			{\n				external_shell;\n				noble_gas;\n				helium\n			};;\n	*);;",
+			"file": "atom_structure/external_shell/external_shell.scs",
+			"file_size": 1113,
+			"file_write_time": 131059520665909695,
+			"settings":
+			{
+				"buffer_size": 994,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "nrel_reaction\n	<-sc_node_norole_relation;\n	=> nrel_main_idtf:\n		[nrel_reaction] (*<- lang_en;;*);\n		[химическая реакция] (*<- lang_ru;;*);\n	<- rrel_key_sc_element: nreal_reaction_definition\n	(*\n	<- sc_explanation;;\n	=> nrel_main_idtf:\n		[Опр.(реакция)](*<-lang_ru;;*);;\n	<=nrel_sc_text_translation:...\n	(*\n		-> rrel_example:\n			[<p><b>Хими́ческая реа́кция</b> — превращение одного или нескольких исходных веществ (реагентов) в другие вещества, при которых <sc_element sys_idtf = \"atomic_nucleus\">ядра атомов</sc_element> не меняются, при этом происходит перераспределение <sc_element sys_idtf = \"electron\">электронов</sc_element> и ядер, и образуются новые химические вещества.</p>\n			]	(*\n				<-lang_ru;;\n				=> nrel_format: format_html;;\n				*);;\n		*);;\n	*);\n	<= nrel_using_constants:\n	{\n		reagent;\n		product\n	};\n	<- rrel_key_sc_element:\n		the_law_of_conservation_of_mass\n		(*\n		<- sc_explanation;;\n		=> nrel_main_idtf:\n			[Закон сохранения массы](*<-lang_ru;;*);;\n		-> rrel_example:\n			[<p>Масса веществ, <sc_element sys_idtf = \"reagent\">вступающих в химическую реакцию</sc_element>, равна массе веществ, <sc_element sys_idtf = \"product\">образующихся в результате реакции</sc_element></p>]\n			(*\n				<-lang_ru;;\n				=> nrel_format: format_html;;\n			*);;\n		<= nrel_using_constants:\n			{\n				reagent;\n				product\n			};;\n		*);;",
+			"file": "reactions/1. nrel_reaction/nrel_reactions.scs",
+			"file_size": 1663,
+			"file_write_time": 131047099293392880,
+			"settings":
+			{
+				"buffer_size": 1327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "nrel_exchange_reaction\n	<= nrel_inclusion: relation;\n	<- sc_node_norole_realtion;\n	=> nrel_main_idtf:\n		[exchange reaction](*<- lang_en;;*);\n		[реакция обмена](*<- lang_ru;;*);\n	<- rrel_key_sc_element: nrel_exchange_reaction_definition\n	(*\n	<-sc_explanation;;\n	=> nrel_main_idtf: [Опр.(реакция обмена)]\n		(*<- lang_en;;*);;\n	<=nrel_sc_text_translation:...\n		(*\n			-> rrel_example: \n			[ <p><b>Реакциями обмена</b> называют химические реакции, протекающие без изменения <sc_element sys_idtf = \"nrel_oxidation_state\">степеней окисления</sc_element> элементов и приводящие к обмену составных частей реагентов.\n			</p>] \n			(*\n				<-lang_ru;;\n				=> nrel_format: format_html;;\n			*);;\n		*);;\n	<= nrel_using_constants:\n		{\n			nrel_oxidation_state\n		};;		\n	*);;",
+			"file": "reactions/2. nrel_exchange_reaction/nrel_exchange_reaction.scs",
+			"file_size": 914,
+			"file_write_time": 131047099293392880,
+			"settings":
+			{
+				"buffer_size": 755,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_chemical_bond;;\nnrel_chemical_bond\n	=> nrel_main_idtf: \n			[chemical bond](*<- lang_en;;*);\n			[химическая связь](*<- lang_ru;;*);\n	<- rrel_key_sc_element:nrel_chemical_bond_definition\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Опр. (химическая связь)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://nrel_chemical_bond_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n	*);\n	<- rrel_key_sc_element: oktet_rule\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[закон октетов](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\"file://oktet_rule_ru.html\" (*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			external_shell\n		};;\n	*);\n	<- rrel_key_sc_element: cause_of_chemical_bond\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Утв. (химическая связь, энергия атома)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\"file://cause_of_chemical_bond_ru.html\" (*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			atom;\n			atom_energy\n		};;\n	*);\n	=> nrel_second_domain:atom;\n	=> nrel_first_domain:atom;;\n",
+			"file": "substances_structure/bond/chemical_bond/nrel_chemical_bond.scs",
+			"file_size": 1219,
+			"file_write_time": 131059546239069237,
+			"settings":
+			{
+				"buffer_size": 1145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sc_node_norole_relation->nrel_covalent_bond;;\nnrel_covalent_bond\n	<= nrel_strict_inclusion: nrel_chemical_bond;\n	=> nrel_main_idtf: \n			[covalent bond](*<- lang_en;;*);\n			[ковалентная связь](*<- lang_ru;;*);\n	<- rrel_key_sc_element:nrel_covalent_bond_definition\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Опр. (ковалентная связь)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\n				\"file://nrel_covalent_bond_ru.html\"\n				(*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			external_shell\n		};;\n	*);\n	<- rrel_key_sc_element: common_electron_amount\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Утв. (атом, общий электрон, благородный газ)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\"file://common_electron_ammount_ru.html\" (*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			atom;\n			common_electron;\n			noble_gas\n		};;\n	*);\n	<- rrel_key_sc_element: occurrence_of_the_condition_covalent_bond\n	(*\n		<- sc_explanation;;\n		=> nrel_main_idtf: \n			[Утв. (ковалентная связь, радиус атома, валентные электроны)](*<- lang_ru;;*);;\n		<= nrel_sc_text_translation:...\n		(*\n			-> rrel_example:\"file://occurrence_of_the_condition_covalent_bond_ru.html\" (*<- lang_ru;;*);;\n		*);;\n		<= nrel_using_constants: \n		{\n			nrel_covalent_bond;\n			atom_radius\n		};;\n	*);\n	=> nrel_second_domain:atom;\n	=> nrel_first_domain:atom;\n	<= nrel_subdividing:\n	{\n		nrel_polar_covalent_bond;\n		nrel_nonpolar_covalent_bond\n	};;\n",
+			"file": "substances_structure/bond/nrel_covalent_bond/nrel_covalent_bond.scs",
+			"file_size": 1606,
+			"file_write_time": 131059587967605645,
+			"settings":
+			{
+				"buffer_size": 1490,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 121 files for \"sc_definition\"\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/10. metal/metal.scs:\n    7  		=> nrel_main_idtf:\n    8  			[Опр.(металл)](*<-lang_ru;; *);;\n    9: 		<- sc_definition;;\n   10  		<= nrel_sc_text_translation:...\n   11  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/11. nonmetal/nonmetal.scs:\n    4    <- rrel_key_sc_element:...\n    5  	(*\n    6: 	  <- sc_definition;;\n    7  	  <= nrel_sc_text_translation:...\n    8  	  (*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/12. alkali metal/alkali_metal.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/3. Hydroxyl group/hydroxyl_group.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/4. alkali/alkali.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/5. Functional group/functional_group.scs:\n    4  	<- rrel_key_sc_element:...\n    5  	(*\n    6: 		<- sc_definition;;\n    7  		<= nrel_sc_text_translation:...\n    8  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/6. Acid salt/acid_salt.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/7. basis salt/basis_salt.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/8. complex substance/complex_substance.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/9. Elementaly substance/elementary_substance.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/1. nrel_indicator/nrel_indicator.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/2. nrel_pH/nrel_pH.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/3. nrel_insoluble/nrel_insoluble.scs:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/nrel_indicator.txt:\n    5  	<- rrel_key_sc_element:...\n    6  	(*\n    7: 		<- sc_definition;;\n    8  		<= nrel_sc_text_translation:...\n    9  		(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/atom_structure/external_shell/external_shell.scs:\n   11  		=> nrel_main_idtf:\n   12  			[Опр.(внешняя электронная оболочка)](* <-lang_ru;; *);;\n   13: 		<- sc_definition;;\n   14  		<= nrel_sc_text_translation:...\n   15  			(*\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/reactions/1. nrel_reaction/nrel_reactions.scs:\n    6  	<- rrel_key_sc_element: nreal_reaction_definition\n    7  	(*\n    8: 	<- sc_definition;;\n    9  	=> nrel_main_idtf:\n   10  		[Опр.(реакция)](*<-lang_ru;;*);;\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/reactions/2. nrel_exchange_reaction/nrel_exchange_reaction.scs:\n    7  	<- rrel_key_sc_element: nrel_exchange_reaction_definition\n    8  	(*\n    9: 	<-sc_definition;;\n   10  	=> nrel_main_idtf: [Опр.(реакция обмена)]\n   11  		(*<- lang_en;;*);;\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/chemical_bond/nrel_chemical_bond.scs:\n    6  	<- rrel_key_sc_element:nrel_chemical_bond_definition\n    7  	(*\n    8: 		<- sc_definition;;\n    9  		=> nrel_main_idtf: \n   10  			[Опр. (химическая связь)](*<- lang_ru;;*);;\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_covalent_bond/nrel_covalent_bond.scs:\n    7  	<- rrel_key_sc_element:nrel_covalent_bond_definition\n    8  	(*\n    9: 		<- sc_definition;;\n   10  		=> nrel_main_idtf: \n   11  			[Опр. (ковалентная связь)](*<- lang_ru;;*);;\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond.scs:\n    7  	<- rrel_key_sc_element:nrel_ionic_bond_definition\n    8  	(*\n    9: 		<- sc_definition;;\n   10  		=> nrel_main_idtf: \n   11  			[Опр. (ионная связь)](*<- lang_ru;;*);;\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_nonpolar_covalent_bond/nrel_nonpolar_covalent_bond.scs:\n    7  	<- rrel_key_sc_element:nrel_nonpolar_covalent_bond_definition\n    8  	(*\n    9: 		<- sc_definition;;\n   10  		=> nrel_main_idtf: \n   11  			[Опр. (неполярная ковалентная связь)](*<- lang_ru;;*);;\n\n/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_polar_covalent_bond/nrel_polar_covalent_bond.scs:\n    7  	<- rrel_key_sc_element:nrel_polar_covalent_bond_definition\n    8  	(*\n    9: 		<- sc_definition;;\n   10  		=> nrel_main_idtf: \n   11  			[Опр. (полярная ковалентная связь)](*<- lang_ru;;*);;\n\n22 matches across 22 files\n",
+			"settings":
+			{
+				"buffer_size": 5957,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "substances_structure/bond/nrel_ionic_bond/ionic_bond_subject_ru.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "<p>"
+			}
+		},
+		{
+			"file": "scs list",
+			"settings":
+			{
+				"buffer_size": 589,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_nonpolar_covalent_bond/nrel_nonpolar_covalent_bond.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_polar_covalent_bond/nrel_polar_covalent_bond.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_polar_covalent_bond/nrel_polar_covalent_bond_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/scs list",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/TODO",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_nonpolar_covalent_bond/non_polar_covalent_bond_dipole_moment_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_nonpolar_covalent_bond/nrel_nonpolar_covalent_bond_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Rizhi_kotE_kb.sublime-project",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/nrel_covalent_bond/nrel_covalent_bond.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/3. Hydroxyl group/hydroxyl_group.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/reactions/1. nrel_reaction/nrel_reactions.scs",
+		"/home/rizhi-kote/Student/therySet/chemistryKnoledgeBase/ims.ostis.kb/ims/doc_technology_ostis/library_OSTIS/components_kpm/reusable_sc_agents.scsi",
+		"/home/rizhi-kote/Student/therySet/chemistryKnoledgeBase/kb_main/from_ims/terminological_ontology_of_subject_domain_of_sets.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/1.salt/salt.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/substances_structure/bond/chemical_bond/nrel_chemical_bond_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Yevgen/понятия химия/anion.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/12. alkali metal/alkali_metal_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/for_chemical_problems/nrel_quality_composition/nrel_quality_composition.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/5. Functional group/functional_group.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/6. Acid salt/acid_salt_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/6. Acid salt/acid_salt.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/7. basis salt/basis_salt.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/7. basis salt/basis_salt_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/9. Elementaly substance/elementary_substance_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/3. nrel_insoluble/nrel_insoluble.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/2. nrel_pH/nrel_pH.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/2. nrel_pH/nrel_pH_ru.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/realations/1. nrel_indicator/nrel_indicator.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/3. Hydroxyl group/hydroxyl_group.html",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Rizhi_KotE/Salts_and_basis/10. metal/metal.scs",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Salts_and_basis/1.salt/salt.scs",
+		"/home/rizhi-kote/Student/sc-web/sc-web/components/scg/src/scg-scene.js",
+		"/home/rizhi-kote/Student/sc-web/sc-web/components/scg/src/scg.js",
+		"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb/Salts_and_basis/1.salt/salt_ru.html",
+		"/home/rizhi-kote/Student/sc-web/sc-web/components/scg/src/listener/scg-mode-select.js",
+		"/usr/share/X11/xkb/rules/base.lst",
+		"/home/rizhi-kote/Student/sc-web/sc-web/components/scg/static/components/js/scg/scg.js",
+		"/home/rizhi-kote/Student/sc-web/sc-web/components/scg/src/scg-render.js"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/rizhi-kote/Student/chemistryKnoledgeBase/kb",
+			"/home/rizhi-kote/Student/therySet/chemistryKnoledgeBase",
+			"/home/rizhi-kote/Student/therySet/chemistryKnoledgeBase/kb_main",
+			"/home/rizhi-kote/Student/therySet/chemistryKnoledgeBase",
+			"/home/rizhi-kote/Student/sc-web/sc-web/components/scg"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sc_definition",
+			"ковалентная",
+			"nrel_covalent_bond",
+			"nrel_npolar_covalent_bond",
+			"nrel_nonpolar_covalent_bond",
+			"nrel_covalent_bond",
+			"subdividing",
+			"set ",
+			"set",
+			"множество",
+			"nrel_indicator",
+			"\"> ",
+			"в",
+			"> ",
+			"section_subject_domain_of_n_sets",
+			"Subject domai",
+			"section_subject_domain_of_n_sets",
+			"sc_node_n",
+			"sc_node_no",
+			"nrel_quality_composition",
+			"соль",
+			"salt",
+			"nrel_header",
+			"acid_salts",
+			"onSelectionChanged",
+			"event_selection_changed",
+			"onSelectionChanged",
+			"cts.fo",
+			"ype = self.typesMap[$(this).attr('id')];\nelf.scene.selected_objects.f",
+			"elf.scene.isThisO",
+			"toolChangeType",
+			"toolTyp",
+			"stop_modal",
+			"his.toolChangeTyp",
+			"typeCha",
+			"onSelect",
+			"CgModalMode.SCgModalNon",
+			"onSelec",
+			"isThis",
+			"appendSelection: function(obj) ",
+			" this.toolChangeType().click(func",
+			"toolCha",
+			"typeCh",
+			">>>",
+			"changeTy",
+			"changet",
+			"toolChangeT"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sc_explanation",
+			"nrel_npolar_covalent_bond",
+			"nrel_chemical_bond",
+			"nrel_quality_composition",
+			"acid_salt"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond_ru.html",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "substances_structure/bond/nrel_ionic_bond/nrel_ionic_bond.scs",
+					"settings":
+					{
+						"buffer_size": 956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "substances_structure/bond/nrel_nonpolar_covalent_bond/nrel_nonpolar_covalent_bond.scs",
+					"settings":
+					{
+						"buffer_size": 1095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "substances_structure/bond/nrel_polar_covalent_bond/nrel_polar_covalent_bond.scs",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "substances_structure/bond/nrel_nonpolar_covalent_bond/non_polar_covalent_bond_dipole_moment.gwf",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Salts_and_basis/10. metal/metal.scs",
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Salts_and_basis/11. nonmetal/nonmetal.scs",
+					"settings":
+					{
+						"buffer_size": 323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Salts_and_basis/12. alkali metal/alkali_metal.scs",
+					"settings":
+					{
+						"buffer_size": 331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Salts_and_basis/3. Hydroxyl group/hydroxyl_group.scs",
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Salts_and_basis/4. alkali/alkali.scs",
+					"settings":
+					{
+						"buffer_size": 295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Salts_and_basis/5. Functional group/functional_group.scs",
+					"settings":
+					{
+						"buffer_size": 306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Salts_and_basis/6. Acid salt/acid_salt.scs",
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Salts_and_basis/7. basis salt/basis_salt.scs",
+					"settings":
+					{
+						"buffer_size": 392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Salts_and_basis/8. complex substance/complex_substance.scs",
+					"settings":
+					{
+						"buffer_size": 356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Salts_and_basis/9. Elementaly substance/elementary_substance.scs",
+					"settings":
+					{
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Salts_and_basis/realations/1. nrel_indicator/nrel_indicator.scs",
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Salts_and_basis/realations/2. nrel_pH/nrel_pH.scs",
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "Salts_and_basis/realations/3. nrel_insoluble/nrel_insoluble.scs",
+					"settings":
+					{
+						"buffer_size": 403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "Salts_and_basis/realations/nrel_indicator.txt",
+					"settings":
+					{
+						"buffer_size": 412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "atom_structure/external_shell/external_shell.scs",
+					"settings":
+					{
+						"buffer_size": 994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "reactions/1. nrel_reaction/nrel_reactions.scs",
+					"settings":
+					{
+						"buffer_size": 1327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "reactions/2. nrel_exchange_reaction/nrel_exchange_reaction.scs",
+					"settings":
+					{
+						"buffer_size": 755,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "substances_structure/bond/chemical_bond/nrel_chemical_bond.scs",
+					"settings":
+					{
+						"buffer_size": 1145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "substances_structure/bond/nrel_covalent_bond/nrel_covalent_bond.scs",
+					"settings":
+					{
+						"buffer_size": 1490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"settings":
+					{
+						"buffer_size": 5957,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										222,
+										235
+									],
+									[
+										456,
+										469
+									],
+									[
+										698,
+										711
+									],
+									[
+										941,
+										954
+									],
+									[
+										1168,
+										1181
+									],
+									[
+										1415,
+										1428
+									],
+									[
+										1648,
+										1661
+									],
+									[
+										1883,
+										1896
+									],
+									[
+										2132,
+										2145
+									],
+									[
+										2387,
+										2400
+									],
+									[
+										2641,
+										2654
+									],
+									[
+										2881,
+										2894
+									],
+									[
+										3135,
+										3148
+									],
+									[
+										3371,
+										3384
+									],
+									[
+										3658,
+										3671
+									],
+									[
+										3917,
+										3930
+									],
+									[
+										4215,
+										4228
+									],
+									[
+										4519,
+										4532
+									],
+									[
+										4833,
+										4846
+									],
+									[
+										5139,
+										5152
+									],
+									[
+										5476,
+										5489
+									],
+									[
+										5820,
+										5833
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "substances_structure/bond/nrel_ionic_bond/ionic_bond_subject_ru.html",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<p>",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "scs list",
+					"settings":
+					{
+						"buffer_size": 589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true
+}

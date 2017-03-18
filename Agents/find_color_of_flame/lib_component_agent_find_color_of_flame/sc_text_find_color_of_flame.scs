@@ -1,0 +1,6 @@
+sc_text_of_agent_find_color_of_flame
+-> rrel_key_sc_element:
+	agent_find_color_of_flame;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_find_color_of_flame = [*^"file://agent_find_color_of_flame.scsi"*];;

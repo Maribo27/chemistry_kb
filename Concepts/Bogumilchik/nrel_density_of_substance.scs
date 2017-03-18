@@ -1,0 +1,18 @@
+nrel_density_of_substance
+=> nrel_main_idtf:
+    [density of substance*](*<- lang_en;;*);
+    [плотность вещества*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Def. (density of substance*)](*<- lang_en;;*);;
+    => nrel_main_idtf: [Опр. (плотность вещества*)](*<- lang_ru;;*);;
+
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [Плотность вещества — это плотность однородного тела, состоящего из этого вещества.](*<- lang_ru;;*);
+            [The density of a substance is its mass per unit volume.](*<- lang_en;;*);;
+    *);;
+*);;

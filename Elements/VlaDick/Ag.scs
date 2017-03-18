@@ -1,0 +1,79 @@
+elem_Ag
+<- rrel_key_sc_element:
+	Definition_of_argentum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Ag.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_argentum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (серебро, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер серебра равен 47] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_argentum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (серебро, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Серебро — довольно тяжелый, ковкий, пластичный благородный металл серебристо-белого цвета. При комнатной температуре имеет самую высокую электропроводность среди всех известных металлов. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_argentum
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (серебро, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Серебро отличается относительно низкой реакционной способностью. Серебро не окисляется кислородом даже при высоких температурах. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Ag.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_argentum
+=> nrel_main_idtf:
+	[Опр.(Серебро)]
+	(* <- lang_ru;;	*);;

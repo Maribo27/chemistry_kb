@@ -1,0 +1,31 @@
+nrel_oxidation_state
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+	[степень окисления*](* <- lang_ru;; *);
+
+=> nrel_idtf:
+	[окислительное число*](* <- lang_ru;; *);
+	[формальный заряд*](* <- lang_ru;; *);
+	[oxidation state*](* <- lang_en;; *);
+	[oxidation number*](* <- lang_en;; *);;
+
+nrel_oxidation_state
+<- rrel_key_sc_element:...
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://html/nrel_oxidation_state.html"(* <- lang_ru;; *);;
+        *);;
+	*);;
+
+nrel_oxidation_state
+=>nrel_first_domain: chemical_element;
+=>nrel_second_domain: number;;

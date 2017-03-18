@@ -1,0 +1,26 @@
+hybridization
+        => nrel_main_idtf:
+                [hybridization](*<- lang_en;;*);
+                [гибридизация](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (hybridization)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (гибридизация)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Гибридизация - теоретическое представление, с помощью которого удается связать между собой физическую картину строения атома и определяемую опытным путем геометрию молекул. Например, атом углерода имеет s- и p-орбитали, но в молекуле CH4 не удалось опытным путем обнаружить отдельных связей, образованных s-электронами и отдельных связей - образованных p-электронами (все связи в CH4 одинаковы). Поэтому принято, что одна s- и три p-орбитали “смешиваются” (гибридизуются), образуя 4 новые, совершенно одинаковые орбитали (четыре sp3-гибридные орбитали). Эти 4 гибридные орбитали перекрываются с электронными оболочками 4-х атомов Н. Геометрическую формулу образовавшейся молекулы предсказывают исходя из правила, что гибридные орбитали в молекуле стремятся расположиться на максимальном расстоянии друг от друга. Например, для 4-х гибридных орбиталей это тетраэдр. В тех случаях, когда одна или две p-орбитали не участвуют в гибридизации, они остаются в негибридизованном виде и либо не несут электронов, либо участвуют в связывании другого типа (двойные и тройные связи). Это соответственно sp2- и sp-гибридизации. НЕПОДЕЛЕННЫЕ электронные ПАРЫ тоже участвуют в гибридизации. Например, аммиак :NH3 - sp3-гибридизация атома N, молекула имеет форму тетраэдра, одна из вершин которого - неподеленная пара электронов, оставшиеся три - атомы Н. В различных гибридизациях вместе с s- и p-орбиталями могут участвовать также и d-орбитали (sp3d- и sp3d2-гибридизации). Тип гибридизации атома часто определяют с помощью его ОРБИТАЛЬНОЙ ДИАГРАММЫ. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                             [Hybridization - theoretical presentation, using which it is possible to link the physical picture of the structure of the atom, and is determined empirically geometry of molecules. For example, a carbon atom has s- and p-orbitals, but CH4 molecule was unable to empirically detect individual bonds formed by s-electrons and individual bonds - formed of p-electrons (all links in the same CH4). Therefore, it is assumed that one of the s- and p-orbitals of the three "mixed" (hybridize) to form 4 new, exactly the same orbital (four sp3-hybrid orbitals). These 4 hybrid orbitals overlap with the electron shells of atoms 4 N. geometric formulas resulting molecule predicted on the basis of rules that hybrid orbitals in the molecule tend to stay at maximum distance from each other. For example, 4-hybrid orbitals of a tetrahedron. In those cases where one or two p-orbitals do not participate in hybridization, they remain in the unhybridized form, and either do not carry electrons involved in binding or other type (double or triple bonds). This accordingly sp2- and sp-hybridization. Lone electron pair are also involved in the hybridization. For example, ammonia: NH3 - sp3-hybridization atom N, the molecule has the shape of a tetrahedron, one of the peaks of which - the lone pair of electrons, the remaining three - the atoms N. The various hybridizations with the s- and p-orbitals may also participate and d-orbitals (sp3d- and sp3d2-hybridization). atom type of hybridization is often determined by its orbital diagrams.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+
+

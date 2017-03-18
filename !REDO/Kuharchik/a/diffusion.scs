@@ -1,0 +1,24 @@
+diffusion
+        => nrel_main_idtf:
+                [diffusion](*<- lang_en;;*);
+                [диффузия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (diffusion)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (диффузия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Диффузия – самопроизвольное выравнивание концентрации веществ в смеси, обусловленное тепловым движением молекул. Перенос частиц вещества, приводящий к выравниванию его концентрации в первоначально неоднородной системе. Искусственное перемешивание смеси действует в том же направлении.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Diffusion - spontaneous alignment of the concentration of substances in the mixture caused by the thermal motion of molecules. Transfer of the particulate material, resulting in the alignment of its concentration in the original heterogeneous system. Artificial stirring mixture acts in the same direction.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);;

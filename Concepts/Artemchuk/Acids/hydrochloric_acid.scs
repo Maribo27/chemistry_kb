@@ -1,0 +1,62 @@
+hydrochloric_acid
+=> nrel_main_idtf:
+	[соляная кислота]
+	(* <- lang_ru;;	*);
+	[hydrochloric acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[HCl] 
+	(* <-lang_en;;*);;
+
+hydrochloric_acid
+<- rrel_key_sc_element:
+	Definition_of_hydrochloric_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/hydrochloric_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				hydrogen_chloride;
+				water;
+				strong_acid;
+				monobasic_acid;
+				acid;
+				liquid
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Соляную кислоту получают растворением газообразного хлороводорода в воде.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrochloric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+Definition_of_hydrochloric_acid
+=> nrel_main_idtf:
+	[Опр.(Соляная кислота)]
+	(* <- lang_ru;;	*);;

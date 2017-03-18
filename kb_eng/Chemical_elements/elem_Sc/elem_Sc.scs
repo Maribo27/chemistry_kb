@@ -1,0 +1,3 @@
+elem_Sc
+	=> nrel_main_idtf: [scandium] (* <-lang_en;;*);
+	=> nrel_idtf: [Sc] (* <-lang_en;;*);;

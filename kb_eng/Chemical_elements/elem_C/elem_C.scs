@@ -1,0 +1,3 @@
+elem_C
+	=> nrel_main_idtf: [carbon] (* <-lang_en;;*);
+	=> nrel_idtf: [C] (* <-lang_en;;*);;

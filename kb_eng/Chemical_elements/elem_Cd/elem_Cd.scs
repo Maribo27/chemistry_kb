@@ -1,0 +1,3 @@
+elem_Cd
+	=> nrel_main_idtf: [cadmium] (* <-lang_en;;*);
+	=> nrel_idtf: [Cd] (* <-lang_en;;*);;

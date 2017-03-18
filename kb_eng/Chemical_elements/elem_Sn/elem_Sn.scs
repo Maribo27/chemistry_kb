@@ -1,0 +1,3 @@
+elem_Sn
+	=> nrel_main_idtf: [tin] (* <-lang_en;;*);
+	=> nrel_idtf: [Sn] (* <-lang_en;;*);;

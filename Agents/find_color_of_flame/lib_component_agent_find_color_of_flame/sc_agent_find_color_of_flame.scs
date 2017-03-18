@@ -1,0 +1,50 @@
+sc_agent_find_color_of_flame_of_subject_domain
+=> nrel_main_idtf:	
+	[sc-агент поиска веществ с заданным цветом пламени при горении] (* <- lang_ru;; *);
+	[sc-agent search substances with given flame color] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_find_color_of_flame_of_condition => ..sc_agent_find_color_of_flame_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_find_color_of_flame
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_find_color_of_flame
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_find_color_of_flame
+		};;
+		
+	-> sc_agent_find_color_of_flame_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_find_color_of_flame_condition
+= [*
+	action_find_color_of_flame _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+*];;
+
+..agent_find_color_of_flame_result
+= [*
+	action_find_color_of_flame _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer_for_checking_domains_of_relation;;
+	.._question _-> .._parameter1;;
+	
+*];;

@@ -1,0 +1,28 @@
+nrel_exchange_reaction
+
+<= nrel_inclusion: relation;
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[exchange reaction*](*<- lang_en;;*);
+	[реакция обмена*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element: nrel_exchange_reaction_definition
+(*
+	<-sc_explanation;;
+
+	=> nrel_main_idtf:[Опр.(реакция обмена*)](*<-lang_ru;;*);;
+
+	<=	nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ <p><b><sc_element sys_idtf = "nrel_exchange_reaction">Реакциями обмена</sc_element></b> называют химические реакции, протекающие без изменения <sc_element sys_idtf = "nrel_oxidation_state">степеней окисления</sc_element> элементов и приводящие к обмену составных частей реагентов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:
+		{
+			nrel_oxidation_state
+		};;
+*);;

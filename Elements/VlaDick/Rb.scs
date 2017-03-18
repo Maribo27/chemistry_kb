@@ -1,0 +1,79 @@
+elem_Rb
+<- rrel_key_sc_element:
+	Definition_of_rubidium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Rb.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_rubidium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (рубидий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер рубидия равен 37] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_rubidium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (рубидий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Рубидий — мягкий легкоплавкий щелочной металл серебристо-белого цвета. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_rubidium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (рубидий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Рубидий —  щелочной металл, крайне неустойчив на воздухе (в присутствии следов воды реагирует с воспламенением). Образует все виды солей — большей частью легкорастворимые.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Rb.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_rubidium
+=> nrel_main_idtf:
+	[Опр.(Рубидий)]
+	(* <- lang_ru;;	*);;

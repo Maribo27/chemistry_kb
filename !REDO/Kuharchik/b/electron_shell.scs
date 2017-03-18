@@ -1,0 +1,46 @@
+electron_shell
+
+=> nrel_main_idtf:
+    [electron shell](*<- lang_en;;*);
+    [электронная оболочка](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Def. (electron shell)](*<- lang_en;;*);;
+    => nrel_main_idtf: [Опр. (электронная оболочка)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [Электронная оболочка атома — область пространства вероятного местонахождения электронов, характеризующихся одинаковым значением главного квантового числа n и, как следствие, располагающихся на близких энергетических уровнях. Число электронов в каждой электронной оболочке не превышает определенного максимального значения.]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);
+            [Electronic shell of the atom - the region's probable location of electrons space, characterized by the same value of the principal quantum number n and, as a consequence, which are located on close energy levels. The number of electrons in each electron shell does not exceed a certain maximum value.]
+            (*
+                <- lang_en;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_explanation;;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [Порядок заполнения электронных оболочек (орбиталей с одинаковым значением главного квантового числа n) определяется правилом Клечковского, порядок заполнения электронами орбиталей в пределах одного подуровня (орбиталей с одинаковыми значениями главного квантового числа n и орбитального квантового числа l) определяется Правилом Хунда.]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);
+
+            [The procedure for filling the electron shells (orbitals with the same principal quantum number n) is defined by the rule Klechkovskii, the order of filling orbitals of the electrons within the same sub-layer (orbitals with the same principal quantum number n and orbital quantum number l) is determined by Hund's rule.]
+            (*
+                <- lang_en;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+*);;

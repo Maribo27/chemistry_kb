@@ -1,0 +1,24 @@
+electronic_layer
+        => nrel_main_idtf:
+                [electronic layer](*<- lang_en;;*);
+                [электронный слой](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (electronic_layer)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (электронный слой)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Электронный слой - это совокупность электронов, находящихся на одном энергетическом уровне.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Electronic layer - a collection of electrons at the same energy level.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);;

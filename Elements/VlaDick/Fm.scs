@@ -1,0 +1,51 @@
+elem_Fm
+<- rrel_key_sc_element:
+	Definition_of_fermium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Fm.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_fermium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фермий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер фермия равен 100] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_fermium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фермий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Фермий — радиоактивный трансурановый металл серебристо-белого цвета. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_fermium
+=> nrel_main_idtf:
+	[Опр.(Фермий)]
+	(* <- lang_ru;;	*);;

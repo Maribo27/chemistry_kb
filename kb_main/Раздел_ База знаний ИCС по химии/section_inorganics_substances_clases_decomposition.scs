@@ -1,0 +1,15 @@
+section_inorganics_substances_clases
+	<= nrel_section_decomposition:
+	{
+		section_simple_substances
+		(*
+		=> nrel_section_base_order: 
+			section_complex_substances;;
+		*);
+		section_complex_substances
+		(*
+		=> nrel_section_base_order: 
+			section_genetic_relationship;;
+		*);
+		section_genetic_relationship
+	};;

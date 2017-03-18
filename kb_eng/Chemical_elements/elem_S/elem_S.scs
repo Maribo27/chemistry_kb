@@ -1,0 +1,3 @@
+elem_S
+	=> nrel_main_idtf: [sulfur] (* <-lang_en;;*);
+	=> nrel_idtf: [S] (* <-lang_en;;*);;

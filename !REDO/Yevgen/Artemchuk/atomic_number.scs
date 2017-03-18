@@ -1,0 +1,40 @@
+atomic_number
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Атомный номер]
+	(* <- lang_ru;;	*);
+	[Atomic number]
+	(* <- lang_en;;	*);;
+proton
+<- rrel_key_sc_element:
+	Definition_of_proton
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/atomic_number.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Атомный номер равен заряду ядра в единицах элементарного заряда и одновременно равен порядковому номеру соответствующего ядра химического элемента в таблице Менделеева.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+Definition_of_atomic_number
+=> nrel_main_idtf:
+	[Опр.(Атомный номер)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+hydrogen_bond
+        => nrel_main_idtf:
+                [hydrogen bond](*<- lang_en;;*);
+                [водородная связь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Def. (hydrogen bond)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр. (водородная связь)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+									-> rrel_example:"file://html/hydrogen_bond rus.html"
+                                     (*
+									 	<- lang_ru;;
+									*);
+									
+									"file://html/hydrogen_bond eng.html"
+                                                (*
+                                                        <- lang_en;;
+                                                *);;
+                                        *);;
+*);;
+

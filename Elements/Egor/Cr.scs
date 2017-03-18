@@ -1,0 +1,118 @@
+elem_Cr
+<- rrel_key_sc_element:
+	Definition_of_chromium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Cr.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_cr
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хром, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер хрома равен 24] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_cr
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хром, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[  Простое вещество хром  — твёрдый металл голубовато-белого цвета.   ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: chromium_metall
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хром, чёрный металл)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Хром иногда относят к чёрным металлам.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: solid_metal_chromium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хром, твёрдость, металл)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Хром имеет один из самых твердых чистых металлов.   ] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Chromium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+<- rrel_key_sc_element: chromium_plating
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хром, хромирование)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Хром используется в качестве износоустойчивых и красивых гальванических покрытий (хромирование).] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: chromium_steel
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хром, сталь, сплав)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Хром — важный компонент во многих легированных сталях (в частности, нержавеющих), а также и в ряде других сплавов.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chromium_resistance
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хром, устойчивость, пассирование)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Хром устойчив на воздухе за счёт пассивирования.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_chromium
+=> nrel_main_idtf:
+	[Опр.(Хром)]
+	(* <- lang_ru;;	*);;

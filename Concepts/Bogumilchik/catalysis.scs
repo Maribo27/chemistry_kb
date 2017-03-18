@@ -1,0 +1,25 @@
+catalysis
+        => nrel_main_idtf:
+                [catalysis](*<- lang_en;;*);
+                [катализ](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (catalysis)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (катализ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Катализ — избирательное ускорение одного из возможных термодинамически разрешенных направлений химической реакции под действием катализатора(ов), который многократно вступает в промежуточное химическое взаимодействие с участниками реакции и восстанавливает свой химический состав после каждого цикла промежуточных химических взаимодействий.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Catalysis — selectively accelerating one of the possible directions thermodynamically allowed chemical reactions under the influence of the catalyst (s) that repeatedly comes into engagement with an intermediate chemical reaction participants and regains its chemical composition, after each cycle of intermediate chemical interactions.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

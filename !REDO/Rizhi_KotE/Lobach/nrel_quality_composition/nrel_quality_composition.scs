@@ -1,0 +1,17 @@
+nrel_quality_composition
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: 
+		[nrel_quality_composition] (*<- lang_en;;*);
+		[качественный состав вещества] (*<- lang_ru;;*);;
+	nrel_quality_composition <- rrel_key_sc_element: nrel_quality_composition_definition
+	(*
+	=> nrel_main_idtf:
+		[Опр.(качественный состав вещества)](* <-lang_ru;; *);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:"file://nrel_quality_composition_ru.html" (* <-lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_first_domain: substance;
+	=> nrel_second_domain: chemical_element;;

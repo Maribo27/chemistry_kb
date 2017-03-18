@@ -1,0 +1,15 @@
+complex_substance <= nrel_inclusion: substance;;
+complex_substance
+	=> nrel_main_idtf: [complex_substance](*<- lang_en;;*);
+						[сложное вещество](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://complex_substance_ru.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);;
+	

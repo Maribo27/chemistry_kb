@@ -1,0 +1,24 @@
+electron_breakthrough
+        => nrel_main_idtf:
+                [electron breakthrough](*<- lang_en;;*);
+                [проскок электрона](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (electron breakthrough)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (проскок электрона)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Проскок электрона - отступления от общей для большинства элементов последовательности заполнения электронных оболочек (1s, 2s, 2p, 3s, 3p, 4s, 3d и так далее), связанные с тем, что эти "нарушения правил" обеспечивают атомам некоторых элементов меньшую энергию по сравнению с заполнением электронных оболочек "по правилам".]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Breakthrough Electronic - deviations from the common to most elements of the sequence of filling of electron shells (1s, 2s, 2p, 3s, 3p, 4s, 3d, and so on) associated with the fact that these "violations" provide the atoms of certain elements less energy than with the filling of the electron shells "by the rules".]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;

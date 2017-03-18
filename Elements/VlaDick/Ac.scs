@@ -1,0 +1,80 @@
+elem_Ac
+<- rrel_key_sc_element:
+	Definition_of_actinium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Ac.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_actinium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (актиний, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер актиния равен 89] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_actinium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (актиний, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Актиний - серебристо-белый металл с гранецентрированной кубической решеткой. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: chemical_properties_of_actinium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (актиний, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ На влажном воздухе актиний покрывается белой пленкой оксида, препятствующей дальнейшему окислению металла. Почти все соли Актиний белого цвета, в растворах - бесцветны. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Ac.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+Definition_of_actinium
+=> nrel_main_idtf:
+	[Опр.(Актиний)]
+	(* <- lang_ru;;	*);;

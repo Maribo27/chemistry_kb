@@ -1,0 +1,39 @@
+sc_node_norole_relation->nrel_nonpolar_covalent_bond;;
+nrel_nonpolar_covalent_bond
+	<= nrel_strict_inclusion: nrel_chemical_bond;
+	=> nrel_main_idtf: 
+			[nonpolar covalent bond](*<- lang_en;;*);
+			[неполярная ковалентная связь](*<- lang_ru;;*);
+	<- rrel_key_sc_element:nrel_nonpolar_covalent_bond_definition
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Опр. (неполярная ковалентная связь)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://nrel_nonpolar_covalent_bond_ru.html"
+				(*<- lang_ru;;*);;
+		*);;
+		<= nrel_using_constants: 
+		{
+			nrel_electronegativity
+		};;
+	*);
+		<- rrel_key_sc_element: non_polar_covalent_bond_dipole_moment
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ковалентная связь, дипольный момент)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://non_polar_covalent_bond_dipole_moment_ru.html" (*<- lang_ru;;*);;
+		*);;
+		<= nrel_using_constants: 
+		{
+			nrel_nonpolar_covalent_bond;
+			nrel_dipole_moment
+		};;
+	*);
+	=> nrel_second_domain:atom;
+	=> nrel_first_domain:atom;;

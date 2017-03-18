@@ -1,0 +1,25 @@
+atom_energy
+        => nrel_main_idtf:
+                [atom energy](*<- lang_en;;*);
+                [атомная энергия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (atom energy)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (атомная энергия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Атомная энергия - энергия, выделяющаяся в процессе превращения атомных ядер. Источником атомной энергии является внутренняя энергия атомного ядра.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [Nuclear energy - the energy released in the process of transformation of atomic nuclei. The source of the nuclear energy is the internal energy of the atomic nucleus.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

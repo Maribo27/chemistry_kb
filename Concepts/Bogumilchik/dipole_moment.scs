@@ -1,0 +1,18 @@
+dipole_moment
+
+=> nrel_main_idtf:
+    [dipole moment](*<- lang_en;;*);
+    [дипольный момент](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Def. (dipole moment)](*<- lang_en;;*);;
+    => nrel_main_idtf: [Опр. (дипольный момент)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [Дипольный момент — векторная физическая величина, характеризующая, наряду с суммарным зарядом (и реже используемыми высшими мультипольными моментами), электрические свойства системы заряженных частиц (распределения зарядов) в смысле создаваемого ею поля и действия на неё внешних полей. Главная после суммарного заряда и положения системы в целом (её радиус-вектора) характеристика конфигурации зарядов системы при наблюдении её издали.](*<- lang_ru;;*);
+            [dipole moment - vector physical quantity characterizing, along with net charge (and less frequently used higher multipole moments), the electrical properties of a system of charged particles (charge distribution) in the sense that it produces and field action on it of external fields. Home after the total charge and the position of the system as a whole (its radius vector) characteristic configuration of the system of charges by observing it from a distance.](*<- lang_en;;*);;
+    *);;
+*);;

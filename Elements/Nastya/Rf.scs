@@ -1,0 +1,58 @@
+elem_Rf
+<- rrel_key_sc_element:
+	Definition_of_rutherfordium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Rf.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+		
+<- rrel_key_sc_element: number_of_rutherfordium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (резерфордий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Порядковый номер резерфордия равен 104.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_rutherfordium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (резерфордий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Все исследования свойств резерфордия и его соединений выполнены с использованием ультрамалых количеств его атомов. Установлено, что в степени окисления +4 он образует летучие при температурах 250—300 °C галогениды RfCl4 и RfBr4. При экстракционных процессах с участием сложных комплексных ионов поведение Rf значительно отличается от поведения ионов трехвалентных актиноидов и свидетельствует о существовании в этих системах иона Rf4+.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_rutherfordium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (резерфордий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Внешний вид резерфордия неизвестен. Возможно, серебристо-белый или серый металл.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+Definition_of_rutherfordium
+=> nrel_main_idtf:
+	[Опр.(Резерфордий)]
+	(* <- lang_ru;;	*);;

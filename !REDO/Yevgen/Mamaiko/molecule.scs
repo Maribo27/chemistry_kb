@@ -1,0 +1,53 @@
+molecule
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[молекула]
+	(* <- lang_ru;;	*);
+	[molecule]
+	(* <- lang_en;;	*);;
+molecule
+<- rrel_key_sc_element:
+	Definition_of_molecule
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/molecule.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[С точки зрения квантовой механики молекула представляет собой систему не из атомов, а из электронов и атомных ядер, взаимодействующих между собой.] (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Особенности строения молекул определяют физические свойства вещества, состоящего из этих молекул.] (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+Definition_of_molecule
+=> nrel_main_idtf:
+	[Опр.(Молекула)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+activation_energy
+        => nrel_main_idtf:
+                [activation energy](*<- lang_en;;*);
+                [энергия активации](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (activation energy)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (энергия активации)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [энергия активации - это минимальная энергия (в расчете на 1 моль или 1 кмолъ), которой должны обладать реагирующие (исходные) частицы, чтобы столкновение между ними привело к ре-акции.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                              [activation energy - the minimum energy (based on 1 mol or kmol 1), which should have a reactive (initial) particles to the collision between the two led to the re-action.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

@@ -1,0 +1,88 @@
+elem_Ho
+<- rrel_key_sc_element:
+	Definition_of_holmium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Ho.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+
+<- rrel_key_sc_element: number_of_ho
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гольмий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Порядковый номер гольмия равен 67.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Holmium.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: local_of_holmium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гольмий, месторождения*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Гольмий входит в состав лантаноидов, которые часто встречаются в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: receipt_of_holmium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гольмий, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гольмий получают восстановлением фторида гольмия HoF3 кальцием.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_ho
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (гольмий, химические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Медленно окисляется на воздухе, образуя Ho2O3. Взаимодействует с кислотами (кроме HF), образуя соли Ho3+. Реагирует при нагревании с хлором, бромом, азотом и водородом. Устойчив к действию фтора.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_holmium
+=> nrel_main_idtf:
+	[Опр.(Гольмий)]
+	(* <- lang_ru;;	*);;

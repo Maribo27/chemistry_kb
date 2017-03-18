@@ -1,0 +1,3 @@
+elem_H
+	=> nrel_main_idtf: [hydrogen] (* <-lang_en;;*);
+	=> nrel_idtf: [H] (* <-lang_en;;*);;

@@ -1,0 +1,3 @@
+elem_Kr
+	=> nrel_main_idtf: [krypton] (* <-lang_en;;*);
+	=> nrel_idtf: [Kr] (* <-lang_en;;*);;

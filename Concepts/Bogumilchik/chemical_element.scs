@@ -1,0 +1,25 @@
+chemical_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[химический элемент](* <-lang_ru;; *);
+	[chemical element](* <- lang_en;; *);;
+
+chemical_element
+<- rrel_key_sc_element:...
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://html/chemical_element.html"(* <- lang_ru;; *);;
+        *);;
+	*);
+	
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(химическое вещество, химический элемент)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: [Химические вещества могут состоять как из одного химического элемента, так и из разных.] (* <-lang_ru;; *);;
+		*);;
+	*);;

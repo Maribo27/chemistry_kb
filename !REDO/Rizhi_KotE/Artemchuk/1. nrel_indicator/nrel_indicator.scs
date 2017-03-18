@@ -1,0 +1,45 @@
+sc_node_norole_relation->nrel_indicator;;
+nrel_indicator
+	=> nrel_main_idtf: [nrel_indicator](*<- lang_en;;*);
+						[индикатор](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:
+				"file://nrel_indicator.html"
+				(*<- lang_ru;;*);;
+		*);;
+	*);
+	=> nrel_second_domain:substance;
+	=> nrel_first_domain:substance;
+
+
+<- rrel_key_sc_element: thermoindicators
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (термоиндикатор)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В качестве термоиндикатора можно использовать бумагу, смоченную хлоридом кобальта(II). При нагревании кристаллогидрат теряет связанную воду и меняет последовательно цвет с розового через красный, фиолетовый и синий на бесцветный.
+	] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: indicator_exposure_dose
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (индикатор, доза облучения* )](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Существуют также химические индикаторы для самых различных специальных целей, например, для определения дозы облучения.
+	] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+	
+
+

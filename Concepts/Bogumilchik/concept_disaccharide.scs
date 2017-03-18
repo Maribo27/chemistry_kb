@@ -1,0 +1,28 @@
+disaccharide
+<- sc_node_not_relation;
+<= nrel_inclusion: oligosaccharide;
+<= nrel_subdividing: ...
+(*
+	<- sc_explanation;;
+	->reducing_disaccherides;;
+	->non_reducing_disaccherides;;
+	=>nrel_main_idtf:[Разбиение по признаку способности к восстановлению.](*<-lang_ru;; *);;
+*);
+
+=> nrel_main_idtf:
+	[дисахарид](* <-lang_ru;; *);
+	[disaccharide](* <- lang_en;; *);
+
+=> nrel_idtf:
+	[biose](* <- lang_en;; *);
+	[double sugar](* <- lang_en;; *);;
+
+disaccharide
+<- rrel_key_sc_element:...
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://html/concept_disaccharide.html"(* <- lang_ru;; *);;
+        *);;
+	*);;

@@ -1,0 +1,25 @@
+reagent_reaction
+        => nrel_main_idtf:
+                [reagent_reaction](*<- lang_en;;*);
+                [реагент реакции](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (reagents_reaction)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (реагенты реакции)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Реагенты реакции - исходные вещества в химической реакции. Формулы реагентов записываются всегда в левой части уравнения химической реакции.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *); 
+                                             [Reaction Reagents - starting materials in the chemical reaction. Formula reactants always recorded in the left part of the chemical reaction equation.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
+

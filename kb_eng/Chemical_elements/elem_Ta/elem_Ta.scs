@@ -1,0 +1,3 @@
+elem_Ta
+	=> nrel_main_idtf: [tantalum] (* <-lang_en;;*);
+	=> nrel_idtf: [Ta] (* <-lang_en;;*);;

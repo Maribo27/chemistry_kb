@@ -1,0 +1,24 @@
+heterogeneous_reaction
+        => nrel_main_idtf:
+                [heterogeneous reaction](*<- lang_en;;*);
+                [гетерогенная реакция](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Def. (heterogeneous reaction)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр. (гетерогенная реакция)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Гетерогенные реакции - химические реакции между веществами, находящимися в разных фазах (разных агрегатных состояниях вещества). Например, реакция горения угля - гегерогенная реакция между твердым углеродом и газообразным кислородом. Реакция взаимодействия цинка с соляной кислотой - гетерогенная реакция между твердым цинком и раствором HCl. Гетерогенные реакции протекают не в объеме, а на границе раздела фаз - в этом их принципиальное отличие от ГОМОГЕННЫХ реакций.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Heterogeneous reactions - chemical reactions between substances located in different phases (different aggregate states of matter). For example, coal combustion reaction - gegerogennaya reaction between solid carbon and gaseous oxygen. Reaction interaction of zinc with hydrochloric acid - heterogeneous reaction between zinc and a solid solution of HCl. Heterogeneous reactions are not within the scope and interfacial - the fundamental difference from their homogeneous reaction.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+*);;
