@@ -74,8 +74,8 @@ ammonite => nrel_main_idtf:[аммонит](*<-lang_ru;;*);;
 modifier => nrel_main_idtf:[модификатор](*<-lang_ru;;*);;
 preservative => nrel_main_idtf:[консервант](*<-lang_ru;;*);;
 
-pencil => nrel_object_structure:rubber;wood;lead;;
-pen => nrel_object_structure:plastic;ink;;
+pencil => nrel_object_structure:rubber;wood;lead;metal;;
+pen => nrel_object_structure:plastic;ink;iron;;
 table => nrel_object_structure:wood;glass;iron;;
 plastic => nrel_object_structure:polymer;;
 rubber => nrel_object_structure:caoutchouc;vulcanizing_agent;vulcanization_accelerator;activator;antioxidant;active_filler;inactive_filler;dye;;

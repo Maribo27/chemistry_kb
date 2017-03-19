@@ -25,7 +25,6 @@ suspension <= nrel_using_constants: dispersion;;
 suspension <- rrel_key_sc_element:...
 		(*
 		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
-		-> rrel_key_sc_element: rubber;;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*
