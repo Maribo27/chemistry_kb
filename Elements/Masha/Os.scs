@@ -18,16 +18,21 @@ elem_Os
 			};
 
 
-<- rrel_key_sc_element: number_of_Osmium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (осмий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер осмия равен 76.] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_white_silver;
+=> nrel_group: [8](* <-lang_ru;;*);
+=> nrel_period: [6](* <-lang_ru;;*);
+=> nrel_periodic_number: [76](* <-lang_ru;;*);
+
+<- concept_metals;
+
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+8](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_valence: [4](* <-lang_ru;;*);
+=> nrel_valence: [6](* <-lang_ru;;*);
+=> nrel_valence: [8](* <-lang_ru;;*);
 
 <- rrel_key_sc_element:
 	...

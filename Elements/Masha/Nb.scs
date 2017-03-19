@@ -18,16 +18,17 @@ elem_Nb
 			};
 
 
-<- rrel_key_sc_element: number_of_Niobium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (ниобий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер ниобия равен 41] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_silver_grey;
+=> nrel_group: [5](* <-lang_ru;;*);
+=> nrel_period: [6](* <-lang_ru;;*);
+=> nrel_periodic_number: [41](* <-lang_ru;;*);
+
+<- concept_metals;
+
+=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_valence: [5](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
 
 <- rrel_key_sc_element:
 	...

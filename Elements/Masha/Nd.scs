@@ -13,7 +13,8 @@ elem_Nd
 <= nrel_using_constants:
 			{
 				chemical_element;
-				nrel_group				
+				nrel_group;
+				lanthanide			
 			};
 
 <- rrel_key_sc_element:
@@ -31,16 +32,17 @@ elem_Nd
 		*);;
 	*);
 
-<- rrel_key_sc_element: number_of_Neodymium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (неодим, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер неодима равен 60.] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_white_silver;
+=> nrel_periodic_number: [60](* <-lang_ru;;*);
+
+<- concept_metals;
+<- lanthanide;
+
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_valence: [4](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+
 
 <- rrel_key_sc_element: physical_properties_of_Neodymium
 	(*

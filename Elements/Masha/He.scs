@@ -18,16 +18,16 @@ elem_He
 			};
 
 
-<- rrel_key_sc_element: number_of_he
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (гелий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер гелия равен 2.] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_group: [18](* <-lang_ru;;*);
+=> nrel_period: [1](* <-lang_ru;;*);
+=> nrel_periodic_number: [2](* <-lang_ru;;*);
+<- gas;
+<- noble_gas;
+<- concept_nonmetals;
+
+=> nrel_oxidation_state: [0](* <-lang_ru;;*);
+=> nrel_valence: [0](* <-lang_ru;;*);
+
 
 <- rrel_key_sc_element:
 	...

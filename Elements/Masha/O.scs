@@ -18,16 +18,14 @@ elem_O
 			};
 
 
-<- rrel_key_sc_element: number_of_o
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (кислород, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер кислорода равен 8.] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_group: [16](* <-lang_ru;;*);
+=> nrel_period: [2](* <-lang_ru;;*);
+=> nrel_periodic_number: [8](* <-lang_ru;;*);
+<- gas;
+<- concept_nonmetals;
+
+=> nrel_oxidation_state: [-2](* <-lang_ru;;*);
+=> nrel_valence: [2](* <-lang_ru;;*);
 
 <- rrel_key_sc_element: physical_properties_of_o
 	(*

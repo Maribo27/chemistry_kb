@@ -17,17 +17,6 @@ elem_Zn
 				nrel_group				
 			};
 
-<- rrel_key_sc_element: number_of_Zincum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (цинк, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер цинка равен 30] (*<- lang_ru;;*);;
-		*);;
-	*);
-
 <- rrel_key_sc_element:
 	...
 	(*
@@ -55,13 +44,14 @@ elem_Zn
 	*);
 
 => nrel_color: color_white_blue;
-=> nrel_group: 8;
-=> nrel_period: 4;
+=> nrel_group: [2](* <-lang_ru;;*);
+=> nrel_period: [4](* <-lang_ru;;*);
+=> nrel_periodic_number: [30](* <-lang_ru;;*);
 
 <- concept_metals;
 
-=> nrel_color: color_white_blue;
-=> nrel_color: color_white_blue;
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_valence: [2](* <-lang_ru;;*);
 
 <- rrel_key_sc_element: chemical_properties_of_Zincum
 	(*
@@ -113,5 +103,3 @@ Definition_of_Zincum
 => nrel_main_idtf:
 	[Опр.(Цинк)]
 	(* <- lang_ru;;	*);;
-
-concept_number -> 4; 8;;

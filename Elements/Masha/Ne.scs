@@ -18,16 +18,16 @@ elem_Ne
 			};
 
 
-<- rrel_key_sc_element: number_of_Neon
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (неон, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер неона равен 10.] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_group: [18](* <-lang_ru;;*);
+=> nrel_period: [2](* <-lang_ru;;*);
+=> nrel_periodic_number: [10](* <-lang_ru;;*);
+
+<- concept_nonmetals;
+<- noble_gas;
+<- gas;
+
+=> nrel_oxidation_state: [0](* <-lang_ru;;*);
+=> nrel_valence: [0](* <-lang_ru;;*);
 
 <- rrel_key_sc_element:
 	...

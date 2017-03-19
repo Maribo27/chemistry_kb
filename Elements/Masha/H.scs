@@ -31,16 +31,14 @@ elem_H
 		*);;
 	*);
 
-<- rrel_key_sc_element: number_of_h
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (водород, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер водорода равен 1.] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_group: [1](* <-lang_ru;;*);
+=> nrel_period: [1](* <-lang_ru;;*);
+=> nrel_periodic_number: [1](* <-lang_ru;;*);
+<- gas;
+<- concept_nonmetals;
+
+=> nrel_oxidation_state: [+1](* <-lang_ru;;*);
+=> nrel_valence: [1](* <-lang_ru;;*);
 
 <- rrel_key_sc_element: physical_properties_of_hydrogenium
 

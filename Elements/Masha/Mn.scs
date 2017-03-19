@@ -18,16 +18,20 @@ elem_Mn
 			};
 
 
-<- rrel_key_sc_element: number_of_mn
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (марганец, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер марганца равен 25. ] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_white_silver;
+=> nrel_group: [7](* <-lang_ru;;*);
+=> nrel_period: [4](* <-lang_ru;;*);
+=> nrel_periodic_number: [25](* <-lang_ru;;*);
+
+<- concept_metals;
+
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+7](* <-lang_ru;;*);
+=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_valence: [4](* <-lang_ru;;*);
+=> nrel_valence: [6](* <-lang_ru;;*);
+=> nrel_valence: [7](* <-lang_ru;;*);
 
 <- rrel_key_sc_element:
 	...
@@ -43,6 +47,9 @@ elem_Mn
 			*);;
 		*);;
 	*);
+
+
+
 
 <- rrel_key_sc_element: physical_properties_of_Manganum
 	(*

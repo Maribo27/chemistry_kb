@@ -32,16 +32,16 @@ elem_Mg
 		*);;
 	*);
 
-<- rrel_key_sc_element: number_of_mg
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (магний, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер магния равен 12.] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_white_silver;
+=> nrel_group: [2](* <-lang_ru;;*);
+=> nrel_period: [3](* <-lang_ru;;*);
+=> nrel_periodic_number: [12](* <-lang_ru;;*);
+
+<- concept_metals;
+
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_valence: [2](* <-lang_ru;;*);
+
 
 <- rrel_key_sc_element: physical_properties_of_Magnesium
 	(*

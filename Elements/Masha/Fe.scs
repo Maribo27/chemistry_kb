@@ -18,16 +18,18 @@ elem_Fe
 				nrel_group
 			};
 
-<- rrel_key_sc_element: number_of_fe
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (железо, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер железа равен 26] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_white_silver;
+=> nrel_group: [8](* <-lang_ru;;*);
+=> nrel_period: [4](* <-lang_ru;;*);
+=> nrel_periodic_number: [26](* <-lang_ru;;*);
+
+<- concept_metals;
+
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_valence: [6](* <-lang_ru;;*);
 
 <- rrel_key_sc_element: physical_properties_of_fe
 	(*
@@ -67,7 +69,7 @@ elem_Fe
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (, получение*)](*<- lang_ru;;*);;
+			[Утв. (железо, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
@@ -79,7 +81,7 @@ elem_Fe
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (, применение*)](*<- lang_ru;;*);;
+			[Утв. (железо, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://htmls/Fe_(application).html" (* <-lang_ru;; *);;

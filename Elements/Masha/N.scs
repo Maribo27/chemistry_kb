@@ -17,16 +17,24 @@ elem_N
 				nrel_group				
 			};
 
-<- rrel_key_sc_element: number_of_Nitrogenium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (азот, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер азота равен 7. ] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_group: [5](* <-lang_ru;;*);
+=> nrel_period: [2](* <-lang_ru;;*);
+=> nrel_periodic_number: [7](* <-lang_ru;;*);
+<- gas;
+<- concept_nonmetals;
+
+=> nrel_oxidation_state: [-3](* <-lang_ru;;*);
+=> nrel_oxidation_state: [-2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [-1](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_valence: [4](* <-lang_ru;;*);
+=> nrel_valence: [5](* <-lang_ru;;*);
+
 
 <- rrel_key_sc_element:
 	...

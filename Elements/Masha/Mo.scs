@@ -18,16 +18,17 @@ elem_Mo
 			};
 
 
-<- rrel_key_sc_element: number_of_Molybdaenum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (молибден, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер молибдена равен 42. ] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_white_silver;
+=> nrel_group: [6](* <-lang_ru;;*);
+=> nrel_period: [5](* <-lang_ru;;*);
+=> nrel_periodic_number: [42](* <-lang_ru;;*);
+
+<- concept_metals;
+
+=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_valence: [6](* <-lang_ru;;*);
 
 <- rrel_key_sc_element:
 	...

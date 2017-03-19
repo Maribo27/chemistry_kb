@@ -32,16 +32,15 @@ elem_Ni
 		*);;
 	*);
 
-<- rrel_key_sc_element: number_of_Niccolum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (никель, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер никеля равен 28. ] (*<- lang_ru;;*);;
-		*);;
-	*);
+=> nrel_color: color_white_silver;
+=> nrel_group: [10](* <-lang_ru;;*);
+=> nrel_period: [4](* <-lang_ru;;*);
+=> nrel_periodic_number: [28](* <-lang_ru;;*);
+
+<- concept_metals;
+
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_valence: [2](* <-lang_ru;;*);
 
 <- rrel_key_sc_element: physical_properties_of_Niccolum
 	(*
