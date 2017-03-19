@@ -1,0 +1,101 @@
+acesulfame_potassium
+
+<- crystal;
+<- sulfamate;
+
+=> nrel_main_idtf:
+	[ацесульфам калия]
+	(* <- lang_ru;;	*);
+	[ацесульфам]
+	(* <- lang_ru;;	*);
+	[acesulfame potassium]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[C4H4KNO4S] 
+	(* <-lang_en;;*);
+	[E950] 
+	(* <-lang_en;;*);
+	[калиевая соль 2,2-диоксида 3,4-дигидро-6-метил-1,2,3-оксатиазин-4-она]
+	(* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_acesulfame_potassium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="acesulfame_potassium">Ацесульфам</sc_element></b> — <sc_element sys_idtf="sweetener">подсластитель</sc_element> <sc_element sys_idtf="sulfamate">сульфамидного</sc_element> ряда.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<= nrel_using_constants:
+			{
+				sweetener;
+				sulfamate
+			};
+
+<- rrel_key_sc_element: physical_properties_of_acesulfame_potassium
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ацесульфам калия, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Ацесульфам калия предстваляет собой бесцветные <sc_element sys_idtf="crystal">кристаллы</sc_element>, легко растворимые в воде, примерно в 180—200 раз слаще <sc_element sys_idtf="sucrose">сахарозы</sc_element> (традиционного кулинарного сахара).<br>
+			Подобно <sc_element sys_idtf="saccharin">сахарину</sc_element>, также являющемуся сульфамидом, ацесульфам в высоких концентрациях имеет горьковато-металлический привкус, поэтому часто используется в комбинации с аспартамом.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_acesulfame_potassium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ацесульфам калия, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Используется для подслащения <sc_element sys_idtf="carbonated_water">газированных напитков</sc_element>, при изготовлении выпечки, желатиновых десертов и жевательной резинки, также используется в качестве подсластителя некоторых лекарственных форм (сиропы).]
+			(* 
+			<-lang_ru;; 
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: impact_of_acesulfame_potassium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ацесульфам калия, воздействие на организм*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В отдельных средствах массовой информации в публикациях, посвящённых подсластителям, часто утверждается, что ацесульфам может вызывать рак (согласно исследованиям 1970 года), однако 9-месячные токсикологические исследования показали отсутствие связи между приёмом ацесульфама и вероятностью возникновения опухолей.] (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: synthesys_of_acesulfame_potassium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ацесульфам калия, синтез*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/synthesys_of_caesium_chloride.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+Definition_of_acesulfame_potassium
+=> nrel_main_idtf:
+	[Опр.(ацесульфам калия)]
+	(* <- lang_ru;;	*);;
