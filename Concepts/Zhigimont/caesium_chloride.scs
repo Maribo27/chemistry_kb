@@ -22,7 +22,7 @@ caesium_chloride
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="caesium_chloride">Хлори́д це́зия</sc_element></b> — неорганическое <sc_element sys_idtf="binary_compound">бинарное соединение</sc_element> <sc_element sys_idtf="elem_Cs">цезия</sc_element> с <sc_element sys_idtf="elem_Cl>хлором</sc_element>, цезиевая <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrochloric_acid">хлороводородной кислоты</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_chloride">Хлори́д це́зия</sc_element></b> — неорганическое <sc_element sys_idtf="binary_compound">бинарное соединение</sc_element> <sc_element sys_idtf="elem_Cs">цезия</sc_element> с <sc_element sys_idtf="elem_Cl">хлором</sc_element>, цезиевая <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrochloric_acid">хлороводородной кислоты</sc_element>.] 
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
@@ -89,8 +89,8 @@ caesium_chloride
 			-> rrel_example:[Хлорид цезия при растворении в воде практически полностью <sc_element sys_idtf="electrolytic_dissociation">диссоциирует</sc_element> на ионы, при этом в разбавленном растворе <sc_element sys_idtf="cation">катионы</sc_element> цезия <sc_element sys_idtf="nrel_solvation">сольватированы</sc_element>.<br>
 			В водных растворах вступает в типичные <sc_element sys_idtf="nrel_exchange_reaction">реакции обмена</sc_element> с некоторыми соединениями.<br>
 			Твёрдый CsCl при нагревании с концентрированной <sc_element sys_idtf="sulfuric_acid"></sc_element> (кипячение) или гидросульфатом цезия (550—700 °С) образует сульфат.<br>
-			Очень слабый восстановитель, <sc_element sys_idtf="nrel_oxidation"></sc_element> до хлора только с помощью сильных окислителей в жёстких условиях.
-			С некоторыми хлоридами образует смешанные соли: 2CsCl • BaCl2[30], 2CsCl • CuCl2, CsCl • 2CuCl, CsCl • LiCl и ряд других.<br>
+			Очень слабый восстановитель, <sc_element sys_idtf="nrel_oxidation">окисляется</sc_element> до хлора только с помощью сильных окислителей в жёстких условиях.
+			С некоторыми хлоридами образует смешанные соли: 2CsCl • BaCl<sub>2</sub>, 2CsCl • CuCl<sub>2</sub>, CsCl • 2CuCl, CsCl • LiCl и ряд других.<br>
 			Вступает в реакцию с межгалогенными соединениями, образуя полигалогениды.] 
 			(* 
 			<-lang_ru;; 

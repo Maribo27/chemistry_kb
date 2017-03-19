@@ -41,7 +41,6 @@ nonferrous_metal => nrel_main_idtf:[цветной металл](*<-lang_ru;;*);
 cellulose => nrel_main_idtf:[целлюлоза](*<-lang_ru;;*);;
 glucose => nrel_main_idtf:[глюкоза](*<-lang_ru;;*);;
 aspartame => nrel_main_idtf:[аспартам](*<-lang_ru;;*);;
-potassium_atsesulfat => nrel_main_idtf:[ацесульфат калия](*<-lang_ru;;*);;
 saccharin => nrel_main_idtf:[сахарин](*<-lang_ru;;*);;
 apple_acid => nrel_main_idtf:[яблочная кислота](*<-lang_ru;;*);;
 lemon_acid => nrel_main_idtf:[лимонная кислота](*<-lang_ru;;*);;
@@ -88,4 +87,8 @@ lead => nrel_object_structure:elem_C;dye;clay;iron;sludge;soot;water;starch;kaol
 ink => nrel_object_structure:dye;modifier;preservative;solvent;;
 cellulose => nrel_object_structure:glucose;;
 glucose => nrel_object_structure:elem_C;elem_H;elem_O;;
+<<<<<<< HEAD
 chalk => nrel_object_structure:metal;magnesium_carbonate;quartz;calcite;belemnite;ammonite;calcium_carbonate;;
+=======
+chalk => nrel_object_structure:metal;magnesium_carbonate;quartz;calcite;belemnite;ammonite;calcium_carbonate;;
+>>>>>>> 0093855fd37f1c8f095067362a4a54ba9217f577
