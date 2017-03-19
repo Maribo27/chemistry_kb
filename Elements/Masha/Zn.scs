@@ -54,6 +54,15 @@ elem_Zn
 		*);;
 	*);
 
+=> nrel_color: color_white_blue;
+=> nrel_group: 8;
+=> nrel_period: 4;
+
+<- concept_metals;
+
+=> nrel_color: color_white_blue;
+=> nrel_color: color_white_blue;
+
 <- rrel_key_sc_element: chemical_properties_of_Zincum
 	(*
 		<- sc_explanation;;
@@ -104,3 +113,5 @@ Definition_of_Zincum
 => nrel_main_idtf:
 	[Опр.(Цинк)]
 	(* <- lang_ru;;	*);;
+
+concept_number -> 4; 8;;
