@@ -19,6 +19,16 @@ elem_Lu
 				
 			};
 
+=> nrel_oxidation_state: ...
+(*
+		<- concept_quantity;;
+		<= nrel_value:...
+		(*
+			->[+3](* <-lang_ru;;*);;
+		*);;
+*);
+
+=> nrel_color: color_gray;
 
 <- rrel_key_sc_element: number_of_lutetium
 	(*

@@ -18,6 +18,15 @@ elem_No
 				
 			};
 
+=> nrel_oxidation_state: ...
+(*
+		<- concept_quantity;;
+		<= nrel_value:...
+		(*
+			->[+2](* <-lang_ru;;*);;
+			->[+3](* <-lang_ru;;*);;
+		*);;
+*);
 
 <- rrel_key_sc_element: number_of_nobelium
 	(*

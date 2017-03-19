@@ -39,4 +39,6 @@ noble_gas
                                                         => nrel_format: format_html;;
                                                 *);;
                                          *);;
-                 *);;
+                 *);
+
+-> elem_He; elem_Ne; elem_Ar; elem_Kr; elem_Xe; elem_Og;;

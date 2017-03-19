@@ -1,6 +1,6 @@
 salt
 
-<= nrel_inclusion: complex_substance;
+<-complex_substance;
 
 => nrel_main_idtf:
 	[соль]

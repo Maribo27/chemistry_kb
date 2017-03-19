@@ -54,14 +54,6 @@ alkaline_earth_metal
 	[alkaline earth metal]
 	(* <- lang_en;; *);;
 
-normal_salt
-=> nrel_main_idtf:
-	[средняя соль]
-	(* <- lang_ru;; *);
-	[нормальная соль]
-	(* <- lang_ru;; *);
-	[normal salt]
-	(* <- lang_en;; *);;
 
 alkali_salt
 => nrel_main_idtf:
@@ -279,4 +271,23 @@ fluoride
 	[fluoride]
 	(* <- lang_en;; *);;
 
-	
+sodium_carbonate
+=> nrel_main_idtf:
+	[карбонат натрия]
+	(* <- lang_ru;; *);
+	[sodium carbonate]
+	(* <- lang_en;; *);;
+
+tripotassium_phosphate
+=> nrel_main_idtf:
+	[ортофосфат калия]
+	(* <- lang_ru;; *);
+	[tripotassium phosphate]
+	(* <- lang_en;; *);;
+
+color_gray
+=> nrel_main_idtf:
+	[серый цвет]
+	(* <- lang_ru;; *);
+	[gray color]
+	(* <- lang_en;; *);;

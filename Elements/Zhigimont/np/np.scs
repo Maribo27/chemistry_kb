@@ -17,6 +17,20 @@ elem_Np
 				
 			};
 
+=> nrel_oxidation_state: ...
+(*
+		<- concept_quantity;;
+		<= nrel_value:...
+		(*
+			->[+7](* <-lang_ru;;*);;
+			->[+6](* <-lang_ru;;*);;
+			->[+5](* <-lang_ru;;*);;
+			->[+4](* <-lang_ru;;*);;
+			->[+3](* <-lang_ru;;*);;
+		*);;
+*);
+
+=> nrel_color: color_gray;
 
 <- rrel_key_sc_element: number_of_neptunium
 	(*

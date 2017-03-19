@@ -24,6 +24,18 @@ elem_Nh
 				
 			};
 
+=> nrel_oxidation_state: ...
+(*
+		<- concept_quantity;;
+		<= nrel_value:...
+		(*
+			->[-1](* <-lang_ru;;*);;
+			->[+1](* <-lang_ru;;*);;
+			->[+2](* <-lang_ru;;*);;
+			->[+3](* <-lang_ru;;*);;
+			->[+5](* <-lang_ru;;*);;
+		*);;
+*);
 
 <- rrel_key_sc_element: number_of_nihonium
 	(*

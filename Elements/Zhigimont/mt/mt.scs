@@ -18,6 +18,19 @@ elem_Mt
 				
 			};
 
+=> nrel_oxidation_state: ...
+(*
+		<- concept_quantity;;
+		<= nrel_value:...
+		(*
+			->[+9](* <-lang_ru;;*);;
+			->[+8](* <-lang_ru;;*);;
+			->[+6](* <-lang_ru;;*);;
+			->[+4](* <-lang_ru;;*);;
+			->[+3](* <-lang_ru;;*);;
+			->[+1](* <-lang_ru;;*);;
+		*);;
+*);
 
 <- rrel_key_sc_element: number_of_meitnerium
 	(*

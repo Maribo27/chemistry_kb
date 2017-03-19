@@ -15,8 +15,8 @@ elem_Og
 				chemical_element;
 				period;
 				nrel_group
-				
 			};
+
 
 
 <- rrel_key_sc_element: number_of_oganesson
@@ -59,7 +59,20 @@ elem_Og
 		(*
 			-> rrel_example:"file://images/og.png";;
 		*);;
-	*);;
+	*);
+
+
+=> nrel_oxidation_state: ...
+(*
+		<- concept_quantity;;
+		<= nrel_value:...
+		(*
+			->[+4](* <-lang_ru;;*);;
+			->[+2](* <-lang_ru;;*);;
+			->[+6](* <-lang_ru;;*);;
+			->[-1](* <-lang_ru;;*);;
+		*);;
+*);;
 
 
 
@@ -68,3 +81,4 @@ Definition_of_oganesson
 => nrel_main_idtf:
 	[Опр.(Оганесон)]
 	(* <- lang_ru;;	*);;
+
