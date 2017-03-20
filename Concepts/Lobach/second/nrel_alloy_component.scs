@@ -1,0 +1,56 @@
+nrel_alloy_component
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[компонет сплава*]
+	(* <- lang_ru;;	*);
+	[alloy_component*]
+	(* <- lang_en;;	*);;
+
+nrel_alloy_component
+<- rrel_key_sc_element:
+	Definition_of_nrel_alloy_component
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_alloy_component.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				alloy;
+				concept_metals
+			};
+
+=> nrel_second_domain:
+			{
+				concept_metals;
+				chemical_element;
+				substance
+			};
+=> nrel_first_domain:alloy;
+
+<- rrel_key_sc_element: properties_of_nrel_alloy_component
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (компонет сплава, свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Свойства <sc_element sys_idtf  = "alloy">сплавов</sc_element> опрделяются их <sc_element sys_idtf  = "nrel_alloy_component">компонентами</sc_element>.] (*<- lang_ru;;
+											   => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+
+<-binary_relation;;
+
+Definition_of_nrel_alloy_component
+=> nrel_main_idtf:
+	[Опр.(компонет сплава*)]
+	(* <- lang_ru;;	*);;
+
+
+

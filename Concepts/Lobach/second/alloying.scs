@@ -1,0 +1,105 @@
+alloying
+=> nrel_main_idtf:
+	[легирование]
+	(* <- lang_ru;;	*);
+	[alloyage]
+	(* <- lang_en;;	*);;
+
+alloying
+<- rrel_key_sc_element:
+	Definition_of_alloying
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/alloying.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				substance;
+				impurity;
+				alloy
+			};
+<=nrel_inclusion:substance;
+
+<- rrel_key_sc_element: types_of_alloying
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (легирование, объёмное легирование, поверхностное легирование)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Различают объёмное (металлургическое) и поверхностное (ионное, диффузное и др.) легирование] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: alloying_in_metallurgy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (легирование, расплав, шихта, вещество)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В металлургии легирование производится в основном введением в расплав или шихту дополнительных веществ, улучшающих механические, физические и химические свойства сплава] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: alloying_and_changing_properties
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сплав, свойства, металл, поверхностное легирование)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Для изменения различных свойств (повышения твёрдости, износостойкости, коррозионной стойкости и т. д.) приповерхностного слоя металлов и сплавов применяются также и разные виды поверхностного легирования.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: alloying_purposes
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (легирование, получение*, металлическое изделие)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Легирование проводится на различных этапах получения металлического материала с целями повышения качества металлургической продукции и металлических изделий.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: alloying_and_manufacture_of_glass_and_ceramics
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (легирование, стекло, керамика, поверхностое легирование)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[При изготовлении специальных видов стекла и керамики часто производится поверхностное легирование.] (*<- lang_ru;;*);;
+		*);;
+	*);
+<- rrel_key_sc_element: diffuse_substances_into_the_alloyed_material
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (легирование, вещество, диффундировать, материал, структура)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В отличие от напыления и других видов покрытия, добавляемые вещества диффундируют в легируемый материал, становясь частью его структуры.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_alloying
+=> nrel_main_idtf:
+	[Опр.(легирование)]
+	(* <- lang_ru;;	*);;
+
+
+

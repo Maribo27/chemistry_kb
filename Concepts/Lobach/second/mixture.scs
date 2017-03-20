@@ -1,0 +1,94 @@
+mixture
+=> nrel_main_idtf:
+	[смесь]
+	(* <- lang_ru;;	*);;
+
+mixture
+<- rrel_key_sc_element:
+	Definition_of_mixture
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/mixture.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_subdividing:
+		      {
+			      homogeneou_mixture;
+			      heterogeneou_mixture			  
+		       };
+
+<= nrel_using_constants:
+			{
+				substance
+			};
+
+
+<- rrel_key_sc_element: divide_mixture
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (смесь, компонент смеси)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Любую смесь можно разделить на компоненты физическими методами. Изменения состава компонентов смеси при этом не происходит.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: isolation_of_substances_non_uniform_mixture
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (смесь, неоднородная смесь)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Основные способы выделения веществ из неоднородной (гетерогенной) смеси: отстаивание; декантация; инерционная (гравитационная) сепарация; центрифугирование;  фильтрование; флотация.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: isolation_of_substances_uniform_mixture
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (смесь, однородная смесь)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Основные способы выделения веществ из однородной (гомогенной) смеси: кристаллизация; дистилляция (перегонка); обратный осмос; сорбция; хроматография; экстракция.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: types_of_mixture
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (смесь, гомогенная смесь, гетерогенная смесь)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В зависимости от фазового состава различают гомогенную смесь и гетерогенную смесь] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: mixture_state
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сплав, агрегатное состояние, газовая смесь, раствор, твёрдый раствор)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Гомогенные смеси делят по агрегатному состоянию на три группы: газовые смеси (газовые растворы); растворы (жидкие растворы); твёрдые растворы.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_mixture
+=> nrel_main_idtf:
+	[Опр.(Сплав)]
+	(* <- lang_ru;;	*);;
+
+
+
