@@ -1,7 +1,7 @@
 basis <= nrel_inclusion: complex_substance;;
 basis
 	=> nrel_main_idtf: 
-		[concept basis](*<- lang_en;;*);
+		[basis](*<- lang_en;;*);
 		[основание](*<- lang_ru;;*);
 	<- rrel_key_sc_element: basis_definition
 	(*
@@ -19,10 +19,9 @@ basis
 				metal;
 				hydroxyl_group
 			};;
-	*);;
-basis
+	*);
 
-<- rrel_key_sc_element: basic_hydroxides
+<- rrel_key_sc_element: basic_hydroxide
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 

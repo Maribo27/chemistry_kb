@@ -1,0 +1,87 @@
+oxide
+=> nrel_main_idtf:
+    [oxide](*<- lang_en;;*);
+    [оксид](*<- lang_ru;;*);
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Опр. (оксид)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [<b>Оксиды</b> - <sc_element sys_idtf="complex_substance">сложные вещества</sc_element>, в состав которых входят <sc_element sys_idtf="atom">атомы</sc_element> двух <sc_element sys_idtf="chemical_element">химических элементов</sc_element>, один из которых <sc_element sys_idtf="oxygen">кислород</sc_element>.]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- sc_explanation;;
+    => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию.](*<-lang_ru;; *);;
+    -> salt_forming_oxide;;
+    -> unsalt_forming_oxide;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+    <- sc_explanation;;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [Бинарное соединение <sc_element sys_idtf="chemical_element">химического элемента</sc_element> с <sc_element sys_idtf="oxygen">кислородом</sc_element> в <sc_element sys_idtf="nrel_oxidation_state">степени окисления</sc_element> −2, в котором сам <sc_element sys_idtf="oxygen">кислород</sc_element>  связан только с менее электроотрицательным элементом. Химический элемент кислород по электроотрицательности второй после фтора, поэтому к <sc_element sys_idtf="oxide">оксидам</sc_element> относятся почти все соединения химических элементов с кислородом. К исключениям относятся, например, дифторид кислорода OF2]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<= nrel_sc_text_translation:...
+(*
+    -> rrel_example: "file://img/oxide.gif";;
+*);
+
+<- rrel_key_sc_element: ...
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (оксид, получение*)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:
+                [Взаимодействие простых веществ (за исключением инертных газов, золота и платины) с кислородом.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [При горении в кислороде щелочных металлов (кроме лития), а также стронция и бария образуются пероксиды и надпероксиды.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Обжиг или горение бинарных соединений в кислороде.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Термическое разложение солей.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Термическое разложение оснований или кислот.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Окисление низших оксидов в высшие и восстановление высших в низшие.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Взаимодействие некоторых металлов с водой при высокой температуре.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Взаимодействие солей с кислотными оксидами при сжигании кокса с выделением летучего оксида.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Взаимодействие металлов с кислотами-оксилителями.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [При действии водоотнимающих веществ на кислоты и соли.](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Взаимодействие солей слабых неустойчивых кислот с более сильными кислотами.](* <-lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_using_constants:
+{
+    complex_substance;
+    atom;
+    chemical_element;
+    oxygen
+};
+
+<- rrel_key_sc_element: section_oxides;;

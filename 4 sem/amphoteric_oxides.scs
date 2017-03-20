@@ -1,0 +1,52 @@
+amphoteric_oxide
+=> nrel_main_idtf:
+    [amphoteric oxide](*<- lang_en;;*);
+    [амфотерный оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Def. (amphoteric oxide)](*<- lang_en;;*);;
+    => nrel_main_idtf: [Опр. (амфотерный оксид)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [<b>Амфотерные оксиды</b> - <sc_element sys_idtf="salt_forming_oxide">солеобразующие оксиды</sc_element>, проявляющие в зависимости от условий либо основные, либо кислотные свойства.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);
+        [<b>Amphoteric oxides</b> - <sc_element sys_idtf="salt_forming_oxide">salt-forming oxides</sc_element>, exhibit, depending on the conditions of either basic or acidic properties.]
+        (*
+            <- lang_en;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_explanation;;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [Образуются переходными <sc_element sys_idtf="metal">металлами</sc_element>. Металлы в <sc_element sys_idtf="amphoteric_oxide">амфотерных оксидах</sc_element> обычно проявляют <sc_element sys_idtf="nrel_oxidation_state">степень окисления</sc_element> от III до IV, за исключением ZnO, BeO, SnO, PbO.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);
+        [Formed transition <sc_element sys_idtf="metal">metal</sc_element>. Metals in <sc_element sys_idtf="amphoteric_oxide">amphoteric oxides</sc_element> typically exhibit <sc_element sys_idtf="nrel_oxidation_state">oxidation state</sc_element> of III to IV, except for ZnO, BeO, SnO, PbO.]
+        (*
+            <- lang_en;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<= nrel_using_constants:
+{
+    salt_forming_oxide;
+    metal
+};
+
+<- rrel_key_sc_element: section_oxides;;

@@ -1,0 +1,87 @@
+oxide_mineral
+=> nrel_main_idtf:
+    [окисел](*<- lang_ru;;*);
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Опр. (окисел)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [<b>Окислы</b> — <sc_element sys_idtf="mineral">минералы</sc_element>, являющиеся <sc_element sys_idtf="chemical_compound">соединениями</sc_element> <sc_element sys_idtf="metal">металлов</sc_element> и <sc_element sys_idtf="nonmetal">неметаллов</sc_element> с <sc_element sys_idtf="oxygen">кислородом</sc_element>.]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- sc_explanation;;
+    => nrel_main_idtf:[Разбиение по признаку химических свойств](*<-lang_ru;; *);;
+    -> acid_oxide_mineral;;
+    -> basis_oxide_mineral;;
+    -> amphoteric_oxide_mineral;;
+    -> indiffirent_oxide_mineral;;
+    -> mixed_oxide_mineral;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- sc_explanation;;
+    => nrel_main_idtf:[Разбиение по признаку состава](*<-lang_ru;; *);;
+    -> hydrooxide_mineral;;
+    -> simple_oxide_mineral;;
+    -> complex_oxide_mineral;;
+*);
+
+<- rrel_key_sc_element: mineral_groups
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (окисел, минерал)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:"file://htmls/oxide_mineral.html" (* <-lang_ru;; *);;
+        *);;
+    *);
+
+
+<- rrel_key_sc_element: ...
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (окисел, агрегатное состояние*)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:
+                [По агрегатному состоянию окислы бывают твердые, жидкие и газообразные; большинство окислов — твердые вещества.]
+                (* <-lang_ru;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element: ...
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (окисел, применение*)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:
+                [Окислы широко используют в неорганическом синтезе как исходное сырье для получения оснований, кислот, солей и других соединений, а также в качестве катализаторов химических процессов (окись бериллия, пятиокись ванадия, четырехокись осмия и др.).]
+                (* <-lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_using_constants:
+{
+    mineral;
+    chemical_compound;
+    nonmetal;
+    oxygen
+};
+
+<= nrel_inclusion: mineral;
+<= nrel_inclusion: oxide;
+<- rrel_key_sc_element: section_oxides;;

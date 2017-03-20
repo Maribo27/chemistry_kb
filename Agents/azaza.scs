@@ -53,3 +53,53 @@ nrel_valence
 lanthanide => nrel_main_idtf:
 	[лантанид](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
+
+nrel_interaction <- sc_node_norole_relation;relation;oriented_relation;binary_relation;antireflexive_relation;antisymmetric_relation;antitransitive_relation;
+=> nrel_main_idtf:
+	[взаимодействие*](* <- lang_ru;; *);;
+
+silicon_monoxide => nrel_main_idtf:
+	[оксид кремния(II)](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+dinitrogen_monoxide => nrel_main_idtf:
+	[оксид азота(I)](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+nitrogen_monoxide => nrel_main_idtf:
+	[оксид азота(II)](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+carbon_monoxide => nrel_main_idtf:
+	[оксид углерода(II)](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+oxygen => nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+
+acid_oxide_mineral => nrel_main_idtf:
+	[кислотный окисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+basis_oxide_mineral => nrel_main_idtf:
+	[основный окисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+amphoteric_oxide_mineral => nrel_main_idtf:
+	[амфотерный окисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+indiffirent_oxide_mineral => nrel_main_idtf:
+	[безразличный окисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+mixed_oxide_mineral => nrel_main_idtf:
+	[смешанный окисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrooxide_mineral => nrel_main_idtf:
+	[гидрокисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+simple_oxide_mineral => nrel_main_idtf:
+	[простой окисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+complex_oxide_mineral => nrel_main_idtf:
+	[сложный окисел](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrogen => nrel_main_idtf:
+	[водород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;

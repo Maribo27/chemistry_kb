@@ -23,7 +23,7 @@ elem_Nb
 => nrel_period: [6](* <-lang_ru;;*);
 => nrel_periodic_number: [41](* <-lang_ru;;*);
 
-<- concept_metals;
+<- metal;
 
 => nrel_oxidation_state: [+5](* <-lang_ru;;*);
 => nrel_oxidation_state: [+3](* <-lang_ru;;*);

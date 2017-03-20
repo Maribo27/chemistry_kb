@@ -1,21 +1,21 @@
 oxyacids
         => nrel_main_idtf:
-                [oxyacids](*<- lang_en;;*);
-                [кислородсодержащие кислоты](*<- lang_ru;;*);
+                [oxyacid](*<- lang_en;;*);
+                [кислородсодержащая кислота](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
                         <- sc_definition;;
-                        => nrel_main_idtf: [Definition (oxyacids)](*<- lang_en;;*);;
-                        => nrel_main_idtf: [Определение (кислородсодержащие кислоты)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def. (oxyacid)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр. (кислородсодержащая кислота)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="electrolytes">электролиты</sc_element>, образующие при диссоциации в водных растворах ионы водорода H+, или, более точно, ионы гидроксония ( Н3О+- гидратированный ион водорода).]
+                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="electrolyte">электролиты</sc_element>, образующие при диссоциации в водных растворах ионы водорода H+, или, более точно, ионы гидроксония ( Н3О+- гидратированный ион водорода).]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
                                                 *);
-                                                [<b>Oxyacids</b> - this <sc_element sys_idtf="electrolytes">electrolytes</sc_element> forming upon dissociation in aqueous solutions of hydrogen ions H+, or, more precisely, hydronium ions (H3O+- hydrated hydrogen ion).]
+                                                [<b>Oxyacids</b> - this <sc_element sys_idtf="electrolyte">electrolytes</sc_element> forming upon dissociation in aqueous solutions of hydrogen ions H+, or, more precisely, hydronium ions (H3O+- hydrated hydrogen ion).]
                                                 (*
                                                         <- lang_en;;
                                                         => nrel_format: format_html;;
@@ -25,6 +25,6 @@ oxyacids
 
         <= nrel_using_constants:
                 {
-                        electrolytes                    
+                        electrolyte                    
                 };
 <- rrel_key_sc_element: section_acids;;

@@ -1,0 +1,41 @@
+unsalt_forming_oxide
+=> nrel_main_idtf:
+        [unsalt-forming oxide](*<- lang_en;;*);
+        [несолеобразующий оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+        <- sc_definition;;
+        => nrel_main_idtf: [Опр. (несолеобразующий оксид)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+                -> rrel_example:
+                        [<b>Несолеобразующие оксиды</b> - <sc_element sys_idtf="oxide">оксиды</sc_element>, не проявляющие ни кислотных, ни основных, ни амфотерных свойств и не образующие <sc_element sys_idtf="salt">соли</sc_element>.]
+                        (*
+                                <- lang_ru;;
+                                => nrel_format: format_html;;
+                        *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: ...
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (несолеобразующий оксид, оксид, неметалл, образование*)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:
+                [Несолеобразующие оксиды распространены не так широко как остальные виды оксидов и образуются, в основном, при участии двухвалентных неметаллов.](* <-lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_using_constants:
+{
+        oxide;
+        salt
+};
+
+-> silicon_monoxide;dinitrogen_monoxide;nitrogen_monoxide;carbon_monoxide;
+
+<- rrel_key_sc_element: section_oxides;;

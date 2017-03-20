@@ -22,7 +22,7 @@ elem_Ne
 => nrel_period: [2](* <-lang_ru;;*);
 => nrel_periodic_number: [10](* <-lang_ru;;*);
 
-<- concept_nonmetals;
+<- nonmetal;
 <- noble_gas;
 <- gas;
 

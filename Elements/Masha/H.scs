@@ -35,7 +35,7 @@ elem_H
 => nrel_period: [1](* <-lang_ru;;*);
 => nrel_periodic_number: [1](* <-lang_ru;;*);
 <- gas;
-<- concept_nonmetals;
+<- nonmetal;
 
 => nrel_oxidation_state: [+1](* <-lang_ru;;*);
 => nrel_valence: [1](* <-lang_ru;;*);

@@ -1,0 +1,27 @@
+non_electrolyte
+=> nrel_main_idtf:
+        [non electrolyte](*<- lang_en;;*);
+        [неэлектролит](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+        <- sc_definition;;
+        => nrel_main_idtf: [Def. (non electrolyte)](*<- lang_en;;*);;
+        => nrel_main_idtf: [Опр. (неэлектролит)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+                -> rrel_example:
+                [Неэлектролиты — вещества, водные растворы и расплавы которых не проводят электрический ток, так как их молекулы не диссоциируют на ионы.]
+                (*
+                        <- lang_ru;;
+                        => nrel_format: format_html;;
+                *);
+                [Nonelectrolytes - substance melts and aqueous solutions which do not conduct electricity, as their molecules do not dissociate into ions.]
+                (*
+                        <- lang_en;;
+                        => nrel_format: format_html;;
+                *);;
+        *);;
+*);
+
+<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;

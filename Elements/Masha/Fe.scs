@@ -23,7 +23,7 @@ elem_Fe
 => nrel_period: [4](* <-lang_ru;;*);
 => nrel_periodic_number: [26](* <-lang_ru;;*);
 
-<- concept_metals;
+<- metal;
 
 => nrel_oxidation_state: [+2](* <-lang_ru;;*);
 => nrel_oxidation_state: [+3](* <-lang_ru;;*);

@@ -48,7 +48,7 @@ elem_Zn
 => nrel_period: [4](* <-lang_ru;;*);
 => nrel_periodic_number: [30](* <-lang_ru;;*);
 
-<- concept_metals;
+<- metal;
 
 => nrel_oxidation_state: [+2](* <-lang_ru;;*);
 => nrel_valence: [2](* <-lang_ru;;*);

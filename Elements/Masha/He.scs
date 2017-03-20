@@ -23,7 +23,7 @@ elem_He
 => nrel_periodic_number: [2](* <-lang_ru;;*);
 <- gas;
 <- noble_gas;
-<- concept_nonmetals;
+<- nonmetal;
 
 => nrel_oxidation_state: [0](* <-lang_ru;;*);
 => nrel_valence: [0](* <-lang_ru;;*);

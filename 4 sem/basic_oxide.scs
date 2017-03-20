@@ -1,0 +1,63 @@
+basic_oxide
+=> nrel_main_idtf:
+    [basic oxide](*<- lang_en;;*);
+    [основный оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Опр. (основный оксид)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [<b>Основные оксиды</b> - это <sc_element sys_idtf="oxide">оксиды</sc_element> <sc_element sys_idtf="metal">металлов</sc_element> в <sc_element sys_idtf="nrel_oxidation_state">степенях окисления</sc_element> +1 и +2.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_explanation;;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [Основные оксиды — это <sc_element sys_idtf="oxide">оксиды</sc_element>, способные реагировать с <sc_element sys_idtf="acid">кислотами</sc_element>.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (основный оксид, взаимодействие*)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:
+                [Основный оксид + cильная кислота → соль + вода](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Сильноосновный оксид + вода → щелочь](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Сильноосновный оксид + кислотный оксид → соль](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Основный оксид + водород → металл + вода](* <-lang_ru;; *);;
+        *);;
+    *);
+
+<=> nrel_interaction:strong_acid;water;acid_oxide;hydrogen;
+
+<= nrel_using_constants:
+{
+    oxide;
+    metal;
+    nrel_oxidation_state;
+    acid
+};
+
+<- rrel_key_sc_element: section_oxides;;

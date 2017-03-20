@@ -21,7 +21,7 @@ elem_N
 => nrel_period: [2](* <-lang_ru;;*);
 => nrel_periodic_number: [7](* <-lang_ru;;*);
 <- gas;
-<- concept_nonmetals;
+<- nonmetal;
 
 => nrel_oxidation_state: [-3](* <-lang_ru;;*);
 => nrel_oxidation_state: [-2](* <-lang_ru;;*);

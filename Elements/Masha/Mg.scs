@@ -37,7 +37,7 @@ elem_Mg
 => nrel_period: [3](* <-lang_ru;;*);
 => nrel_periodic_number: [12](* <-lang_ru;;*);
 
-<- concept_metals;
+<- metal;
 
 => nrel_oxidation_state: [+2](* <-lang_ru;;*);
 => nrel_valence: [2](* <-lang_ru;;*);

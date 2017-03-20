@@ -22,7 +22,7 @@ elem_O
 => nrel_period: [2](* <-lang_ru;;*);
 => nrel_periodic_number: [8](* <-lang_ru;;*);
 <- gas;
-<- concept_nonmetals;
+<- nonmetal;
 
 => nrel_oxidation_state: [-2](* <-lang_ru;;*);
 => nrel_valence: [2](* <-lang_ru;;*);

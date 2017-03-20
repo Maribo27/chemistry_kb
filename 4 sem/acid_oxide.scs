@@ -1,0 +1,76 @@
+acid_oxide
+=> nrel_main_idtf:
+    [acid oxide](*<- lang_en;;*);
+    [кислотный оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    => nrel_main_idtf: [Опр. (кислотный оксид)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [<b>Кислотные оксиды</b> - <sc_element sys_idtf="oxide">оксиды</sc_element>, проявляющие кислотные свойства и образующие соответствующие кислородсодержащие <sc_element sys_idtf="acid">кислоты</sc_element>.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+    <- sc_explanation;;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [Образованы типичными <sc_element sys_idtf="nonmetal">неметаллами</sc_element> и некоторыми переходными элементами. Элементы в кислотных моноксидах обычно проявляют <sc_element sys_idtf="nrel_oxidation_state">степень окисления</sc_element> от IV до VII.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (кислотный оксид, взаимодействие*)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:
+                [Кислотный оксид + вода → кислота](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Кислотный оксид + основание → соль + вода](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Кислотный оксид + основный оксид → соль](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Нелетучий оксид + соль1 → соль2 + летучий оксид](* <-lang_ru;; *);;
+            -> rrel_example:
+                [Кислотный оксид + амфотерный оксид → средняя соль](* <-lang_ru;; *);;
+        *);;
+    *);
+
+<=> nrel_interaction:salt;water;basic_oxide;acid;basis;amphoteric_oxide;
+
+<- rrel_key_sc_element: ...
+    (*
+        <- sc_explanation;;
+        => nrel_main_idtf: 
+            [Утв. (кислотный оксид, получение*, дегидратация*, кислота)](*<- lang_ru;;*);;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example:
+                [Кислотные оксиды могут быть получены при дегидратации соответствующей кислоты.](* <-lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_using_constants:
+{
+    oxide;
+    nrel_oxidation_state;
+    acid
+};
+
+<- rrel_key_sc_element: section_oxides;;

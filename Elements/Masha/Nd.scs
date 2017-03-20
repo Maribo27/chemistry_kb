@@ -35,7 +35,7 @@ elem_Nd
 => nrel_color: color_white_silver;
 => nrel_periodic_number: [60](* <-lang_ru;;*);
 
-<- concept_metals;
+<- metal;
 <- lanthanide;
 
 => nrel_oxidation_state: [+4](* <-lang_ru;;*);
