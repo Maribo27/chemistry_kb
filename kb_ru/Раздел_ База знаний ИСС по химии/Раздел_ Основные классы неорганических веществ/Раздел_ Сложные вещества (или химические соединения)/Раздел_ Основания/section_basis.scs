@@ -1,4 +1,4 @@
-section_basis => nrel_main_idtf: [Раздел: Основания](*<- lang_ru;;*);
+section_basis => nrel_main_idtf: [Раздел. Основания](*<- lang_ru;;*);
 <= nrel_sc_text_translation:
 
 		...

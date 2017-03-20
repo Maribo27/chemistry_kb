@@ -10,12 +10,6 @@ elem_Og
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-			};
 
 
 
@@ -62,17 +56,11 @@ elem_Og
 	*);
 
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+4](* <-lang_ru;;*);;
-			->[+2](* <-lang_ru;;*);;
-			->[+6](* <-lang_ru;;*);;
-			->[-1](* <-lang_ru;;*);;
-		*);;
-*);;
+=> nrel_oxidation_state: [+4]; [+2]; [+6]; [-1];
+
+=> nrel_group: [18];
+=> nrel_period: [7];
+=> nrel_periodic_number: [118];;
 
 
 
@@ -80,5 +68,12 @@ elem_Og
 Definition_of_oganesson
 => nrel_main_idtf:
 	[Опр.(Оганесон)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+			};;
 

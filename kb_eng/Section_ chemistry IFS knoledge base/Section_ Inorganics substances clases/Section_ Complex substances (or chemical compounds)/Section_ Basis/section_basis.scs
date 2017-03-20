@@ -1,4 +1,4 @@
-section_basis => nrel_main_idtf: [Section: Basis](*<- lang_en;;*);
+section_basis => nrel_main_idtf: [Section. Basis](*<- lang_en;;*);
 <= nrel_sc_text_translation:
 
 		...

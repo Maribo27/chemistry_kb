@@ -10,27 +10,12 @@ elem_Mt
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+9](* <-lang_ru;;*);;
-			->[+8](* <-lang_ru;;*);;
-			->[+6](* <-lang_ru;;*);;
-			->[+4](* <-lang_ru;;*);;
-			->[+3](* <-lang_ru;;*);;
-			->[+1](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [+9]; [+8]; [+6]; [+4]; [+3]; [+1];
+
+=> nrel_group: [8];
+=> nrel_period: [7];
+=> nrel_periodic_number: [109];
 
 <- rrel_key_sc_element: number_of_meitnerium
 	(*
@@ -82,4 +67,12 @@ elem_Mt
 Definition_of_meitnerium
 => nrel_main_idtf:
 	[Опр.(Мейтнерий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

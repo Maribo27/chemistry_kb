@@ -10,21 +10,10 @@ elem_Lr
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				nrel_group
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+3](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [+3];
+
+=> nrel_periodic_number: [103];
 
 <- rrel_key_sc_element: number_of_lawrencium
 	(*
@@ -75,4 +64,11 @@ elem_Lr
 Definition_of_lawrencium
 => nrel_main_idtf:
 	[Опр.(Лоуренсий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				nrel_group
+				
+			};;

@@ -10,32 +10,12 @@ elem_Nh
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group;
-				elem_B;
-				elem_Tl;
-				elem_Al;
-				elem_Cu;
-				elem_Ag;
-				elem_Fl
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[-1](* <-lang_ru;;*);;
-			->[+1](* <-lang_ru;;*);;
-			->[+2](* <-lang_ru;;*);;
-			->[+3](* <-lang_ru;;*);;
-			->[+5](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [-1]; [+1]; [+2]; [+3]; [+5];
+
+=> nrel_group: [13];
+=> nrel_period: [7];
+=> nrel_periodic_number: [113];
 
 <- rrel_key_sc_element: number_of_nihonium
 	(*
@@ -86,4 +66,12 @@ elem_Nh
 Definition_of_nihonium
 => nrel_main_idtf:
 	[Опр.(Нихоний)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

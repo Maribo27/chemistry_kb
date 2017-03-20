@@ -33,11 +33,17 @@ crystallite
 	[crystallite]
 	(* <- lang_en;;	*);;
 
-sulfamate
+sulfamic_acid
 => nrel_main_idtf:
-	[сульфамат]
+	[аминосульфоновая кислота]
 	(* <- lang_ru;;	*);
-	[sulfamate]
+	[сульфаминовая кислота]
+	(* <- lang_ru;;	*);
+	[моноамид серной кислоты]
+	(* <- lang_ru;;	*);
+	[амидосерная кислота]
+	(* <- lang_ru;;	*);
+	[sulfamic acid]
 	(* <- lang_en;;	*);;
 
 dielectric
@@ -290,4 +296,18 @@ color_gray
 	[серый цвет]
 	(* <- lang_ru;; *);
 	[gray color]
+	(* <- lang_en;; *);;
+
+potassium_chloride
+=> nrel_main_idtf:
+	[хлорид калия]
+	(* <- lang_ru;;  *);
+	[potassium chloride]
+	(* <- lang_en;; *);;
+
+ammonia
+=> nrel_main_idtf:
+	[аммиак]
+	(* <- lang_ru;; *);
+	[ammonia]
 	(* <- lang_en;; *);;

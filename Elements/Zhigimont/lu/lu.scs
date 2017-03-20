@@ -10,23 +10,9 @@ elem_Lu
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				elem_S;
-				elem_F;
-				nrel_group
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+3](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [+3];
+=> nrel_periodic_number: [71];
 
 => nrel_color: color_gray;
 
@@ -79,4 +65,12 @@ elem_Lu
 Definition_of_lutetium
 => nrel_main_idtf:
 	[Опр.(Лютеций)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				nrel_group
+				
+			};;
+
