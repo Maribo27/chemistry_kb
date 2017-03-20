@@ -1,5 +1,5 @@
 section_hydrogen_bond
-=> nrel_main_idtf: [Section: Hydrogen bond](*<- lang_en;;*);
+=> nrel_main_idtf: [Section. Hydrogen bond](*<- lang_en;;*);
 <= nrel_sc_text_translation:
 
 		...

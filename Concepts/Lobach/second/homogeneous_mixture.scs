@@ -1,0 +1,23 @@
+homogeneou_mixture
+        => nrel_main_idtf:
+                [homogeneous mixture](*<- lang_en;;*);
+                [однородная смесь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Определение (однородная смесь)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "homogeneou_mixture">Однородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element> двух или нескольких <sc_element sys_idtf  = "substance">веществ</sc_element>, в которых даже под микроскопом нельзя обнаружить частицы этих веществ.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                  *);;
+                *);
+
+        <= nrel_using_constants:
+                {
+                        substance
+                };;

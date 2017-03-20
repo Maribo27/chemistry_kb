@@ -1,5 +1,5 @@
 section_electrolytic_dissociation
-=> nrel_main_idtf: [Section: Electrolytic dissociation](*<- lang_en;;*);
+=> nrel_main_idtf: [Section. Electrolytic dissociation](*<- lang_en;;*);
 <= nrel_sc_text_translation:
 
 		...

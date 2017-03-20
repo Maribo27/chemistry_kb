@@ -1,0 +1,54 @@
+acid_salt
+=> nrel_main_idtf:
+	[кислая соль]
+	(* <- lang_ru;;	*);
+	[acid salt]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_acid_salt
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="acid_salt">Кислая соль</sc_element></b> — это <sc_element sys_idtf="salt">соль</sc_element>, содержащая два вида <sc_element sys_idtf="cation">катионов</sc_element>: катион <sc_element sys_idtf="metal">металла</sc_element> (или <sc_element sys_idtf="ammonia">аммония</sc_element>) и катион <sc_element sys_idtf="elem_H">водорода</sc_element">, и многозарядный <sc_element sys_idtf="anion">анион</sc_element> <sc_element sys_idtf="nrel_acid_residue">кислотного остатка</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: receipt_of_acid_salt
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кислая соль, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Кислые соли образуются при воздействии избытка кислоты на <sc_element sys_idtf="alkali">щелочь</sc_element>. В зависимости от количества молей кислоты (в данном случае — <sc_element sys_idtf="orthophosphoric_acid">ортофосфорной</sc_element>) могут образовываться дигидроортофосфаты и гидроортофосфаты:<br>
+		1. Ba(OH)<sub>2</sub> + 2H<sub>3</sub>PO<sub>4</sub> → Ba(H<sub>2</sub>PO<sub>4</sub>)<sub>2</sub> + 2H<sub>2</sub>O<br>
+		2. Ba(OH)<sub>2</sub> + H<sub>3</sub>PO<sub>4</sub> → BaHPO<sub>4</sub> + 2H<sub>2</sub>O]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_acid_salt
+=> nrel_main_idtf:
+	[Опр.(кислая соль)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				salt;
+				cation;
+				metal;
+				ammonia;
+				elem_H;
+				anion;
+				nrel_acid_residue
+			};;

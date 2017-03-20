@@ -10,23 +10,10 @@ elem_Md
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				nrel_group
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+1](* <-lang_ru;;*);;
-			->[+2](* <-lang_ru;;*);;
-			->[+3](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [+1]; [+2]; [+3];
+
+=> nrel_periodic_number: [101];
 
 <- rrel_key_sc_element: number_of_mendelevium
 	(*
@@ -77,4 +64,11 @@ elem_Md
 Definition_of_mendelevium
 => nrel_main_idtf:
 	[Опр.(Менделевий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+	
+<= nrel_using_constants:
+			{
+				chemical_element;
+				nrel_group
+				
+			};;

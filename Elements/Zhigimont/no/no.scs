@@ -10,24 +10,10 @@ elem_No
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				elem_Yb;
-				nrel_group
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+2](* <-lang_ru;;*);;
-			->[+3](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [+2]; [+3];
 
+=> nrel_periodic_number: [102];
 <- rrel_key_sc_element: number_of_nobelium
 	(*
 		<- sc_explanation;;
@@ -77,4 +63,11 @@ elem_No
 Definition_of_nobelium
 => nrel_main_idtf:
 	[Опр.(Нобелий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				nrel_group
+				
+			};;

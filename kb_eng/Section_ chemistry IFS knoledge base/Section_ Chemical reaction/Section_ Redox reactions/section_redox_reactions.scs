@@ -1,5 +1,5 @@
 section_redox_reactions
-=> nrel_main_idtf: [Section: Redox reactions](*<- lang_en;;*);
+=> nrel_main_idtf: [Section. Redox reactions](*<- lang_en;;*);
 <= nrel_sc_text_translation:
 
 		...

@@ -1,5 +1,5 @@
 section_metals
-=> nrel_main_idtf: [Section: Metals](*<- lang_en;;*);
+=> nrel_main_idtf: [Section. Metals](*<- lang_en;;*);
 <= nrel_sc_text_translation:
 
 		...
