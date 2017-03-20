@@ -1,0 +1,101 @@
+cast_iron
+=> nrel_main_idtf:
+	[чугун]
+	(* <- lang_ru;;	*);
+	[crude iron]
+	(* <- lang_en;;	*);
+	[cast iron]
+	(* <- lang_en;;	*);;
+
+
+
+cast_iron
+<- rrel_key_sc_element:
+	Definition_of_cast_iron
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/cast_iron.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				elem_Fe;
+				elem_C;
+				alloy
+			};
+<-alloy;
+
+=> nrel_alloy_component: elem_Fe;
+=> nrel_alloy_component: elem_C;
+=> nrel_alloy_component: elem_P;
+=> nrel_alloy_component: elem_Mn;
+=> nrel_alloy_component: elem_S;
+=> nrel_alloy_component: elem_Si;
+=> nrel_alloy_component: elem_Al;
+=> nrel_alloy_component: elem_V;
+=> nrel_alloy_component: elem_Ni;
+=>nrel_melting_temperature: 1150;
+=>nrel_density_of_substance: 7000;
+ 
+<= nrel_alloy: ...
+		(*
+			->elem_Fe;;
+			->elem_C;;
+			->elem_P;;
+			->elem_Mn;;
+			->elem_S;;
+			->elem_Si;;
+			->elem_Al;;
+			->elem_V;;
+			->elem_Ni;;
+		*);
+
+<- rrel_key_sc_element: carbon_in_cast_iron_1
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (чугун, доля*, углерод, железо)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Содержание углерода в чугуне не менее 2,14 % (точка предельной растворимости углерода в аустените на диаграмме состояний), сплавы с содержанием углерода менее 2,14 % называются сталью. Углерод придаёт сплавам железа твёрдость, снижая пластичность и вязкость. Углерод в чугуне может содержаться в виде цементита и графита. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: cast_iron_is_very_hard
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (чугун, твёрдость)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ <sc_element sys_idtf  = "cast_iron">Чугун</sc_element> очень тверд.] (*<- lang_ru;;
+														=> nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: carbon_in_cast_iron_2
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сталь, доля*, углерод)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В зависимости от содержания углерода серый чугун называется доэвтектическим (2,14-4,3 % углерода), эвтектическим (4,3 %) или заэвтектическим (4,3-6,67 %). Состав сплава влияет на структуру материала.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_cast_iron
+=> nrel_main_idtf:
+	[Опр.(чугун)]
+	(* <- lang_ru;;	*);;
+
+
+

@@ -1,0 +1,45 @@
+nrel_alloy
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[сплав*]
+	(* <- lang_ru;;	*);
+	[alloy*]
+	(* <- lang_en;;	*);;
+
+nrel_alloy
+<- rrel_key_sc_element:
+	Definition_of_nrel_alloy
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_alloy.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				alloy;
+				substance;
+				mixture
+			};
+<-quasybinary_relation;
+=> nrel_first_domain:
+			{
+				concept_metals;
+				chemical_element;
+				substance
+			};
+=> nrel_second_domain:alloy;;
+
+
+
+
+Definition_of_nrel_alloy
+=> nrel_main_idtf:
+	[Опр.(сплав*)]
+	(* <- lang_ru;;	*);;
+
+
+

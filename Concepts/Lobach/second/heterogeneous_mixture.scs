@@ -1,0 +1,30 @@
+heterogeneou_mixture
+        => nrel_main_idtf:
+                [heterogeneous mixture](*<- lang_en;;*);
+                [неоднородная смесь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Определение (неоднородная смеси)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "heterogeneou_mixture">Неоднородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element>смеси, в которых невооруженным глазом или при помощи микроскопа можно обнаружить частицы двух или нескольких <sc_element sys_idtf  = "substance">веществ</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+          <= nrel_subdividing:
+		      {
+			      suspension;
+			      emulsion;
+                              foam;
+                              aerosol			  
+		       };
+
+        <= nrel_using_constants:
+                {
+                        mixture
+                };;

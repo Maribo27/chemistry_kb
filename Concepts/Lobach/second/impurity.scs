@@ -1,0 +1,22 @@
+sc_node_not_relation -> impurity;;
+
+impurity => nrel_main_idtf:
+	[примесь](* <-lang_ru;; *);
+	[impurity](* <-lang_en;; *);;
+
+impurity <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: примесь] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[<b><sc_element sys_idtf  = "impurity">При́месь</sc_element> </b> — химический элемент, перешедший в состав сплава в процессе его производства как технологическая добавка.]			
+				(*<- lang_ru;;
+				=> nrel_format: format_html;;*);;
+
+			*);;
+		*);;
+
+impurity <= nrel_using_constants:... (*->chemical_element;;*);;
