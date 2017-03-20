@@ -1,4 +1,4 @@
-section_oxides => nrel_main_idtf: [Раздел: Оксиды](*<- lang_ru;;*);
+section_oxides => nrel_main_idtf: [Раздел. Оксиды](*<- lang_ru;;*);
 <= nrel_sc_text_translation:
 
 		...

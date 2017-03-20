@@ -26,7 +26,7 @@ acesulfame_potassium
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="acesulfame_potassium">Ацесульфам</sc_element></b> — <sc_element sys_idtf="sweetener">подсластитель</sc_element> <sc_element sys_idtf="sulfamate">сульфамидного</sc_element> ряда.]
+		-> rrel_example:[<b><sc_element sys_idtf="acesulfame_potassium">Ацесульфам</sc_element></b> — <sc_element sys_idtf="sweetener">подсластитель</sc_element> <sc_element sys_idtf="sulfamic_acid">сульфамидного</sc_element> ряда.]
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
@@ -34,11 +34,7 @@ acesulfame_potassium
 		*);;
 	*);
 
-<= nrel_using_constants:
-			{
-				sweetener;
-				sulfamate
-			};
+
 
 <- rrel_key_sc_element: physical_properties_of_acesulfame_potassium
 
@@ -98,4 +94,9 @@ acesulfame_potassium
 Definition_of_acesulfame_potassium
 => nrel_main_idtf:
 	[Опр.(ацесульфам калия)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				sweetener;
+				sulfamic_acid
+			};;

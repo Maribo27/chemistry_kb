@@ -1,5 +1,5 @@
 section_genetic_relationship
-=> nrel_main_idtf: [Section: The genetic relationship between the various classes of substances](*<- lang_en;;*);
+=> nrel_main_idtf: [Section. The genetic relationship between the various classes of substances](*<- lang_en;;*);
 <= nrel_sc_text_translation:
 
 		...

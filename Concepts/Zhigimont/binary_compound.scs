@@ -24,11 +24,7 @@ binary_compound
 		*);;
 	*);
 
-<= nrel_using_constants:
-			{
-				chemical_substance;
-				chemical_element
-			};
+
 
 
 
@@ -84,4 +80,9 @@ binary_compound
 Definition_of_binary_compound
 => nrel_main_idtf:
 	[Опр.(бинарное соединение)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				chemical_substance;
+				chemical_element
+			};;

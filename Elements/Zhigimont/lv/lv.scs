@@ -10,28 +10,12 @@ elem_Lv
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group;
-				elem_F;
-				elem_H;
-				elem_O;
-				elem_Po
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+2](* <-lang_ru;;*);;
-			->[+4](* <-lang_ru;;*);;
-			->[-2](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [+2]; [+4]; [-2];
+
+=> nrel_group: [16];
+=> nrel_period: [7];
+=> nrel_periodic_number: [116];
 
 <- rrel_key_sc_element: number_of_livermorium
 	(*
@@ -79,4 +63,12 @@ elem_Lv
 Definition_of_livermorium
 => nrel_main_idtf:
 	[Опр.(Ливерморий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

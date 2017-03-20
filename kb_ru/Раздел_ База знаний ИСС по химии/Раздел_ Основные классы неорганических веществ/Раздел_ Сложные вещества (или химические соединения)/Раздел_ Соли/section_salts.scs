@@ -1,4 +1,6 @@
-section_salts => nrel_main_idtf: [Раздел: Соли](*<- lang_ru;;*);
+section_salts 
+=> nrel_main_idtf: [Раздел. Соли](*<- lang_ru;;*);
+
 <= nrel_sc_text_translation:
 
 		...

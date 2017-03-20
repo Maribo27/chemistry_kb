@@ -10,31 +10,12 @@ elem_Mc
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group;
-				elem_N;
-				elem_Bi;
-				elem_Tl;
-				elem_Fl;
-				elem_O;
-				elem_H;
-				elem_Pb;
-				elem_Hg
-				
-			};
 
-=> nrel_oxidation_state: ...
-(*
-		<- concept_quantity;;
-		<= nrel_value:...
-		(*
-			->[+1](* <-lang_ru;;*);;
-			->[+3](* <-lang_ru;;*);;
-		*);;
-*);
+=> nrel_oxidation_state: [+1]; [+3];
+
+=> nrel_group: [15];
+=> nrel_period: [7];
+=> nrel_periodic_number: [115];
 
 <- rrel_key_sc_element: number_of_moscovium
 	(*
@@ -84,4 +65,12 @@ elem_Mc
 Definition_of_moscovium
 => nrel_main_idtf:
 	[Опр.(Московий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

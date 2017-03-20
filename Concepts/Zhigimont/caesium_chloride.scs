@@ -30,14 +30,7 @@ caesium_chloride
 		*);;
 	*);
 
-<= nrel_using_constants:
-			{
-				binary_compound;
-				salt;
-				hydrochloric_acid;
-				elem_Cs;
-				elem_Cl
-			};
+
 
 <- rrel_key_sc_element:
 	...
@@ -151,4 +144,12 @@ caesium_chloride
 Definition_of_caesium_chloride
 => nrel_main_idtf:
 	[Опр.(хлорид цезия)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				binary_compound;
+				salt;
+				hydrochloric_acid;
+				elem_Cs;
+				elem_Cl
+			};;

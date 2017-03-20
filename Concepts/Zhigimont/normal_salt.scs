@@ -20,8 +20,13 @@ normal_salt
 		=> nrel_format: format_html;;
 		*);;
 		*);;
-	*);
+	*);;
 
+
+Definition_of_normal_salt
+=> nrel_main_idtf:
+	[Опр.(средняя соль)]
+	(* <- lang_ru;;	*);
 <= nrel_using_constants:
 			{
 				cation;
@@ -29,9 +34,3 @@ normal_salt
 				acid;
 				elem_H
 			};;
-
-
-Definition_of_normal_salt
-=> nrel_main_idtf:
-	[Опр.(средняя соль)]
-	(* <- lang_ru;;	*);;
