@@ -8,15 +8,16 @@ elem_Cd
 		(* 
 		-> rrel_example:"file://htmls/Cd.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		{
+			chemical_element;
+			period;
+			nrel_group
+		};;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+=> nrel_group: 12;
+=> nrel_period: 5;
+=> nrel_periodic_number: 48;
 
 
 <- rrel_key_sc_element: number_of_cd
