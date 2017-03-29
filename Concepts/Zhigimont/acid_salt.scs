@@ -12,7 +12,7 @@ acid_salt
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="acid_salt">Кислая соль</sc_element></b> — это <sc_element sys_idtf="salt">соль</sc_element>, содержащая два вида <sc_element sys_idtf="cation">катионов</sc_element>: катион <sc_element sys_idtf="metal">металла</sc_element> (или <sc_element sys_idtf="ammonia">аммония</sc_element>) и катион <sc_element sys_idtf="elem_H">водорода</sc_element">, и многозарядный <sc_element sys_idtf="anion">анион</sc_element> <sc_element sys_idtf="nrel_acid_residue">кислотного остатка</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf="acid_salt">Кислая соль</sc_element></b> — это <sc_element sys_idtf="salt">соль</sc_element>, содержащая два вида <sc_element sys_idtf="cation">катионов</sc_element>: катион <sc_element sys_idtf="metal">металла</sc_element> (или <sc_element sys_idtf="ammonia">аммония</sc_element>) и катион <sc_element sys_idtf="elem_H">водорода</sc_element>, и многозарядный <sc_element sys_idtf="anion">анион</sc_element> <sc_element sys_idtf="nrel_acid_residue">кислотного остатка</sc_element>.] 
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;

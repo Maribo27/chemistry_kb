@@ -11,7 +11,11 @@ elem_Nh
 	
 	*);
 
-=> nrel_oxidation_state: [-1]; [+1]; [+2]; [+3]; [+5];
+
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: minus_one; plus_one; plus_three; plus_two; plus_five;;
+*);
 
 => nrel_group: [13];
 => nrel_period: [7];

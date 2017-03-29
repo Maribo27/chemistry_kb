@@ -11,7 +11,10 @@ elem_Md
 	
 	*);
 
-=> nrel_oxidation_state: [+1]; [+2]; [+3];
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_one; plus_two; plus_three;;
+*);
 
 => nrel_periodic_number: [101];
 

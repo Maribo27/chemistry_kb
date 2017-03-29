@@ -196,6 +196,11 @@ acidic_oxide
 	[acidic oxide]
 	(* <- lang_en;; *);;
 
+elementary_substance_chemical_bond
+=> nrel_main_idtf:
+	[Разбиение по типу химической связи между атомами]
+	(* <- lang_ru;; *);;
+
 salt_substitution
 => nrel_main_idtf:
 	[Разбиение по продуктам замены]
@@ -310,4 +315,36 @@ ammonia
 	[аммиак]
 	(* <- lang_ru;; *);
 	[ammonia]
+	(* <- lang_en;; *);;
+
+nrel_allotropy
+=> nrel_main_idtf:
+	[аллотропия*]
+	(* <- lang_ru;; *);
+	[allotropy*]
+	(* <- lang_en;; *);;
+
+
+
+sc_node_norole_relation-> nrel_chemical_properties;;
+nrel_chemical_properties
+=> nrel_main_idtf:
+	[химические свойства*]
+	(* <- lang_ru;; *);
+	[chemical properties*]
+	(* <- lang_en;; *);;
+
+chemical_properties_of_Lr
+=> nrel_main_idtf:
+	[химические свойства лоуренсия]
+	(* <- lang_ru;; *);
+	[chemical properties of lawrencium]
+	(* <- lang_en;; *);;
+
+sc_node_norole_relation-> nrel_application;;
+nrel_application
+=> nrel_main_idtf:
+	[применение*]
+	(* <- lang_ru;; *);
+	[application*]
 	(* <- lang_en;; *);;

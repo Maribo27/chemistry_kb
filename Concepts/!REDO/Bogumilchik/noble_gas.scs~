@@ -3,8 +3,6 @@ noble_gas
                 [noble gas](*<- lang_en;;*);
                 [благородный газ](*<- lang_ru;;*);
                 [инертный газ](*<- lang_ru;;*);
-
--> elem_He; elem_Ne; elem_Ar; elem_Kr; elem_Xe; elem_Rn; elem_Og;
         <- rrel_key_sc_element:...
                 (*
                         <- sc_definition;;
@@ -26,6 +24,7 @@ noble_gas
                                         *);;
                 *);
 
+-> elem_He; elem_Ne; elem_Ar; elem_Kr; elem_Xe; elem_Rn; elem_Og;
 
         <- rrel_key_sc_element:...
                 (*
