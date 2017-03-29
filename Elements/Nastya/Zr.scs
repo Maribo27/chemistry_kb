@@ -10,13 +10,20 @@ elem_Zr
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: [4](* <-lang_ru;;*);
+=> nrel_period: [5](* <-lang_ru;;*);
+=> nrel_periodic_number: [40](* <-lang_ru;;*);
+
+=> nrel_oxidation_state: [+1](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
+
+=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_valence: [4](* <-lang_ru;;*);
+
 			
 <- rrel_key_sc_element:
 	...
@@ -70,4 +77,11 @@ elem_Zr
 Definition_of_zirconium
 => nrel_main_idtf:
 	[Опр.(Цирконий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

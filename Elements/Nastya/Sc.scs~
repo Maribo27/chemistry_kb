@@ -1,0 +1,73 @@
+elem_Sc
+<- rrel_key_sc_element:
+	Definition_of_scandium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Sc.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+			
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Sc.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);	
+				
+<- rrel_key_sc_element: number_of_scandium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (скандий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Порядковый номер скандия равен 21.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_scandium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (скандий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Химические свойства скандия похожи на таковые у алюминия. В большинстве соединений скандий проявляет степень окисления +3. Компактный металл на воздухе покрывается с поверхности оксидной пленкой. При нагревании до красного каления реагирует с фтором, кислородом, азотом, углеродом, фосфором. При комнатной температуре реагирует с хлором, бромом и иодом. Реагирует с разбавленными сильными кислотами; концентрированными кислотами-окислителями и HF пассивируется. Реагирует с концентрированными растворами щелочей.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_scandium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (скандий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Скандий — лёгкий металл серебристого цвета с характерным жёлтым отливом. Температура плавления 1541 °C, температура кипения 2837 °C. Скандий — мягкий металл, с чистотой 99,5 % и выше (в отсутствие O2) легко поддается механической обработке.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+Definition_of_scandium
+=> nrel_main_idtf:
+	[Опр.(Скандий)]
+	(* <- lang_ru;;	*);;

@@ -1,0 +1,73 @@
+elem_Pm
+<- rrel_key_sc_element:
+	Definition_of_promethium
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/Pm.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+			
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Pm.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);	
+				
+<- rrel_key_sc_element: number_of_promethium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (прометий, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Порядковый номер прометия равен 61.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_promethium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (прометий, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Прометий является весьма электроположительным элементом. Он ведет себя как редкоземельный элемент со степенью окисления -1-3. В чистом состоянии в количестве нескольких миллиграммов получены хлорид прометия (имеющий желтую окраску) и нитрат прометия (имеющий розовую окраску). На воздухе медленно окисляется. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_promethium
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (прометий, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Прометий - радиоактивный металл серебристо-белого цвета. Получается искусственным путём; используется в составе с другими веществами в люминесцентных лампах, изготовлении светящихся красок. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+Definition_of_promethium
+=> nrel_main_idtf:
+	[Опр.(Прометий)]
+	(* <- lang_ru;;	*);;

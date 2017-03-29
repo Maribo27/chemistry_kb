@@ -1,0 +1,117 @@
+elem_P
+<- rrel_key_sc_element:
+	Definition_of_phosphorus
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/P.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/P.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);			
+				
+<- rrel_key_sc_element: number_of_phosphorus
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фосфор, порядковый номер*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Порядковый номер фосфора равен 15.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: chemical_properties_of_phosphorus
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фосфор, химические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Химическая активность фосфора значительно выше, чем у азота. Химические свойства фосфора во многом определяются его аллотропной модификацией. Белый фосфор очень активен, в процессе перехода к красному и чёрному фосфору химическая активность снижается. Белый фосфор в воздухе при окислении кислородом воздуха при комнатной температуре излучает видимый свет, свечение обусловлено фотоэмиссионной реакцией окисления фосфора.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: physical_properties_of_phosphorus
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (фосфор, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Элементарный фосфор при нормальных условиях существует в виде нескольких устойчивых аллотропических модификаций. Традиционно различают четыре его модификации: белый, красный, чёрный и металлический фосфор.  ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_white_phosphorus
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (белый фосфор, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Белый фосфор представляет собой белое вещество (из-за примесей может иметь желтоватый оттенок). По внешнему виду он очень похож на очищенный воск или парафин, легко режется ножом и деформируется от небольших усилий.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_red_phosphorus
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (красный фосфор, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В зависимости от способа получения и степени дробления, красный фосфор имеет оттенки от пурпурно-красного до фиолетового, а в литом состоянии — тёмно-фиолетовый с медным оттенком, имеет металлический блеск. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_black_phosphorus
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (черный фосфор, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Чёрный фосфор представляет собой чёрное вещество с металлическим блеском, жирное на ощупь и весьма похожее на графит, и с полностью отсутствующей растворимостью в воде или органических растворителях. ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: physical_properties_of_metal_phosphorus
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (металлический фосфор, физические свойства)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Металлический фосфор - это фаза высокого давления, которая образуется из других модификаций фосфора при давлении 83 ГПа, обладающая металлической проводимостью и с плотностью 3,56 г/см^3. При снятии давления фаза не сохраняется и в зависимости от скорости снятия давления образуются белый или черный фосфор.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+Definition_of_phosphorus
+=> nrel_main_idtf:
+	[Опр.(Фосфор)]
+	(* <- lang_ru;;	*);;

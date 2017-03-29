@@ -10,13 +10,17 @@ elem_Rn
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: [18](* <-lang_ru;;*);
+=> nrel_period: [6](* <-lang_ru;;*);
+=> nrel_periodic_number: [86](* <-lang_ru;;*);
+
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
+
+=> nrel_valence: [0](* <-lang_ru;;*);
+
 		
 <- rrel_key_sc_element: number_of_radon
 	(*
@@ -55,4 +59,11 @@ elem_Rn
 Definition_of_radon
 => nrel_main_idtf:
 	[Опр.(Радон)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;
