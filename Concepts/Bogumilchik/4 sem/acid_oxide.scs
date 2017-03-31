@@ -20,7 +20,7 @@ acid_oxide
 
 <- rrel_key_sc_element:...
 (*
-    <- sc_explanation;;
+    <- explanation;;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:
@@ -34,7 +34,7 @@ acid_oxide
 
 <- rrel_key_sc_element: ...
     (*
-        <- sc_explanation;;
+        <- explanation;;
         => nrel_main_idtf: 
             [Утв. (кислотный оксид, взаимодействие*)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...
@@ -56,7 +56,7 @@ acid_oxide
 
 <- rrel_key_sc_element: ...
     (*
-        <- sc_explanation;;
+        <- explanation;;
         => nrel_main_idtf: 
             [Утв. (кислотный оксид, получение*, дегидратация*, кислота)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...

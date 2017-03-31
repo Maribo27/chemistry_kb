@@ -1,7 +1,7 @@
 elem_Fe
 	<- rrel_key_sc_element: Definition_of_Fe
 	(* 
-		<- sc_explanation;;
+		<- explanation;;
 		<= nrel_sc_text_translation: ...
 		(*
 			-> rrel_example:"file://htmls/Fe.html" (* <-lang_ru;; *);;
@@ -14,9 +14,9 @@ elem_Fe
 		*);;
 	*);
 
-=> nrel_group: 8;
-=> nrel_period: 4;
-=> nrel_periodic_number: 26;
+=> nrel_group: eight;
+=> nrel_period: four;
+=> nrel_periodic_number: twenty_six;
 
 <- metal;
 
@@ -31,7 +31,7 @@ elem_Fe
 
 <- rrel_key_sc_element: physical_properties_of_fe
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (железо, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -42,7 +42,7 @@ elem_Fe
 
 <- rrel_key_sc_element: chemical_properties_of_fe
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (железо, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -54,7 +54,7 @@ elem_Fe
 <- rrel_key_sc_element: interaction_fe
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (железо, взаимодействие*, кислота, давление*, оксид углерода)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -65,7 +65,7 @@ elem_Fe
 
 <- rrel_key_sc_element: receipt_of_fe
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (железо, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -92,7 +92,7 @@ elem_Fe
 
 <- rrel_key_sc_element: application_of_fe
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (железо, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

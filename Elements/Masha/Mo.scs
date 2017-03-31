@@ -2,33 +2,34 @@ elem_Mo
 <- rrel_key_sc_element:
 	Definition_of_Molybdaenum
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/Mo.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
-
-=> nrel_color: color_white_silver;
-=> nrel_group: [6](* <-lang_ru;;*);
-=> nrel_period: [5](* <-lang_ru;;*);
-=> nrel_periodic_number: [42](* <-lang_ru;;*);
+=> nrel_group: six;
+=> nrel_period: five;
+=> nrel_periodic_number: forty_two;
 
 <- metal;
 
-=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_valence: [3](* <-lang_ru;;*);
-=> nrel_valence: [6](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_six;;
+=> nrel_oxidation_state: plus_three;;
+=> nrel_valence: three;;
+=> nrel_valence: six;;
+*);
+
 
 <- rrel_key_sc_element:
 	...
@@ -47,7 +48,7 @@ elem_Mo
 
 <- rrel_key_sc_element: physical_properties_of_Molybdaenum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (молибден, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -58,7 +59,7 @@ elem_Mo
 
 <- rrel_key_sc_element: chemical_properties_of_Molybdaenum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (молибден, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -69,7 +70,7 @@ elem_Mo
 
 <- rrel_key_sc_element: receipt_of_Molybdaenum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (молибден, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -81,7 +82,7 @@ elem_Mo
 
 <- rrel_key_sc_element: application_of_Molybdaenum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (молибден, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -93,7 +94,7 @@ elem_Mo
 <- rrel_key_sc_element: interaction_Molybdaenum
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (молибден, взаимодействие*,)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

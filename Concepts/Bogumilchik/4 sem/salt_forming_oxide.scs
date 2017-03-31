@@ -20,7 +20,7 @@ salt_forming_oxide
 
 <= nrel_subdividing: ...
 (*
-    <- sc_explanation;;
+    <- explanation;;
     => nrel_main_idtf:[Разбиение по признаку наличия основных свойств.](*<-lang_ru;; *);;
     -> acid_oxide;;
     -> amphoteric_oxide;;

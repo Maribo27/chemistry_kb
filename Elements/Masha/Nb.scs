@@ -2,33 +2,33 @@ elem_Nb
 <- rrel_key_sc_element:
 	Definition_of_Niobium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/Nb.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
-
-=> nrel_color: color_silver_grey;
-=> nrel_group: [5](* <-lang_ru;;*);
-=> nrel_period: [6](* <-lang_ru;;*);
-=> nrel_periodic_number: [41](* <-lang_ru;;*);
+=> nrel_group: five;
+=> nrel_period: six;
+=> nrel_periodic_number: forty_one;
 
 <- metal;
 
-=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_valence: [5](* <-lang_ru;;*);
-=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_five;;
+=> nrel_oxidation_state: plus_three;;
+=> nrel_valence: five;;
+=> nrel_valence: three;;
+*);
 
 <- rrel_key_sc_element:
 	...
@@ -47,7 +47,7 @@ elem_Nb
 
 <- rrel_key_sc_element: physical_properties_of_Niobium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ниобий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -58,7 +58,7 @@ elem_Nb
 
 <- rrel_key_sc_element: chemical_properties_of_Niobium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ниобий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -69,7 +69,7 @@ elem_Nb
 
 <- rrel_key_sc_element: receipt_of_Niobium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ниобий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -81,7 +81,7 @@ elem_Nb
 
 <- rrel_key_sc_element: application_of_Niobium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ниобий, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -93,7 +93,7 @@ elem_Nb
 	<- rrel_key_sc_element: interaction_Niobium
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ниобий, взаимодействие*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

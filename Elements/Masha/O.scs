@@ -2,34 +2,37 @@ elem_O
 <- rrel_key_sc_element:
 	Definition_of_Oxygen
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/O.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
 
-=> nrel_group: [16](* <-lang_ru;;*);
-=> nrel_period: [2](* <-lang_ru;;*);
-=> nrel_periodic_number: [8](* <-lang_ru;;*);
+=> nrel_group: sixteen;
+=> nrel_period: two;
+=> nrel_periodic_number: eight;
 <- gas;
 <- nonmetal;
 
-=> nrel_oxidation_state: [-2](* <-lang_ru;;*);
-=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: minus_two;;
+=> nrel_valence: two;;
+*);
+
 
 <- rrel_key_sc_element: physical_properties_of_o
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (кислород, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -40,7 +43,7 @@ elem_O
 
 <- rrel_key_sc_element: chemical_properties_of_o
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (кислород, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -51,7 +54,7 @@ elem_O
 
 <- rrel_key_sc_element: receipt_of_Oxygen
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (кислород, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -62,7 +65,7 @@ elem_O
 
 <- rrel_key_sc_element: interaction_Oxygen
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (кислород, взаимодействие*, окислитель, оксид)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -73,7 +76,7 @@ elem_O
 
 <- rrel_key_sc_element: application_of_Oxygen
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (кислород, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

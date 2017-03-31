@@ -2,21 +2,21 @@ elem_H
 <- rrel_key_sc_element:
 	Definition_of_hydrogenium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/H.html" (* <-lang_ru;; *);;
+		*);;	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-			};
 
-<- rrel_key_sc_element:
+	<- rrel_key_sc_element:
 	...
 	(*
 		<- description_of_a_typical_instance;;
@@ -31,19 +31,22 @@ elem_H
 		*);;
 	*);
 
-=> nrel_group: [1](* <-lang_ru;;*);
-=> nrel_period: [1](* <-lang_ru;;*);
-=> nrel_periodic_number: [1](* <-lang_ru;;*);
+=> nrel_group: one;
+=> nrel_period: one;
+=> nrel_periodic_number: one;
 <- gas;
 <- nonmetal;
 
-=> nrel_oxidation_state: [+1](* <-lang_ru;;*);
-=> nrel_valence: [1](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_valence: one;;
+*);
 
 <- rrel_key_sc_element: physical_properties_of_hydrogenium
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (водород, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -55,7 +58,7 @@ elem_H
 <- rrel_key_sc_element: chemical_properties_of_hydrogenium
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (водород, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -67,7 +70,7 @@ elem_H
 <- rrel_key_sc_element: interaction_hydrogenium
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (водород, взаимодействие*, металл, неметалл, температура*, воздействие*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -79,7 +82,7 @@ elem_H
 <- rrel_key_sc_element: compound_of_hydrogenium1
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (водород, соединение*, галоген, галогенводород)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -91,7 +94,7 @@ elem_H
 <- rrel_key_sc_element: compound_of_hydrogenium2
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (водород, соединение*, металл, гидрид)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -102,7 +105,7 @@ elem_H
 
 <- rrel_key_sc_element: receipt_of_hydrogenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (водород, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -114,7 +117,7 @@ elem_H
 
 <- rrel_key_sc_element: application_of_hydrogenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (водород, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

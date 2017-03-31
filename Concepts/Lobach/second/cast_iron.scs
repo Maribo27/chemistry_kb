@@ -7,53 +7,29 @@ cast_iron
 	[cast iron]
 	(* <- lang_en;;	*);;
 
-
-
 cast_iron
-<- rrel_key_sc_element:
-	Definition_of_cast_iron
-	(* 
+<- rrel_key_sc_element: Definition_of_cast_iron
+(* 
 	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
+	<= nrel_sc_text_translation:...
+	(* 
 		-> rrel_example:"file://htmls/cast_iron.html" (* <-lang_ru;; *);;
-		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				elem_Fe;
-				elem_C;
-				alloy
-			};
-<-alloy;
+	*);;
 
-=> nrel_alloy_component: elem_Fe;
-=> nrel_alloy_component: elem_C;
-=> nrel_alloy_component: elem_P;
-=> nrel_alloy_component: elem_Mn;
-=> nrel_alloy_component: elem_S;
-=> nrel_alloy_component: elem_Si;
-=> nrel_alloy_component: elem_Al;
-=> nrel_alloy_component: elem_V;
-=> nrel_alloy_component: elem_Ni;
-=>nrel_melting_temperature: 1150;
-=>nrel_density_of_substance: 7000;
- 
-<= nrel_alloy: ...
-		(*
-			->elem_Fe;;
-			->elem_C;;
-			->elem_P;;
-			->elem_Mn;;
-			->elem_S;;
-			->elem_Si;;
-			->elem_Al;;
-			->elem_V;;
-			->elem_Ni;;
-		*);
+	<= nrel_using_constants:...
+	(*
+		-> chemical_element;;
+		-> elem_Fe;;
+		-> elem_C;;
+		-> alloy;;
+	*);;
+	
+*);
+
+<- alloy;
+
+=> nrel_melting_temperature: 1150;
+=> nrel_density_of_substance: 7000;
 
 <- rrel_key_sc_element: carbon_in_cast_iron_1
 	(*
@@ -89,13 +65,12 @@ cast_iron
 		*);;
 	*);;
 
-
+cast_iron
+=> nrel_alloy_component: 
+	elem_Fe; elem_C; elem_P; elem_Mn; elem_S; elem_Si; elem_Al; elem_V; elem_Ni;;
 
 
 Definition_of_cast_iron
 => nrel_main_idtf:
 	[Опр.(чугун)]
 	(* <- lang_ru;;	*);;
-
-
-

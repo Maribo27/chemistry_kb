@@ -2,20 +2,19 @@ elem_Zn
 <- rrel_key_sc_element:
 	Definition_of_Zincum
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/Zn.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
 <- rrel_key_sc_element:
 	...
@@ -34,7 +33,7 @@ elem_Zn
 
 <- rrel_key_sc_element: physical_properties_of_Zincum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (цинк, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -43,19 +42,22 @@ elem_Zn
 		*);;
 	*);
 
-=> nrel_color: color_white_blue;
-=> nrel_group: [2](* <-lang_ru;;*);
-=> nrel_period: [4](* <-lang_ru;;*);
-=> nrel_periodic_number: [30](* <-lang_ru;;*);
+=> nrel_group: two;
+=> nrel_period: four;
+=> nrel_periodic_number: thirty;
 
 <- metal;
 
-=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
-=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_two;;
+=> nrel_valence: two;;
+*);
+
 
 <- rrel_key_sc_element: chemical_properties_of_Zincum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (цинк, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -66,7 +68,7 @@ elem_Zn
 
 <- rrel_key_sc_element: receipt_of_Zincum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (цинк, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -78,7 +80,7 @@ elem_Zn
 
 <- rrel_key_sc_element: application_of_Zincum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (цинк, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -90,7 +92,7 @@ elem_Zn
 <- rrel_key_sc_element: interaction_Zincum
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (цинк, взаимодействие*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

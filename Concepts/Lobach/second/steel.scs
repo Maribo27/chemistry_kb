@@ -7,21 +7,21 @@ steel
 <- rrel_key_sc_element:
 	Definition_of_steel
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
+		<- sc_explanation;;
+		
+		<= nrel_sc_text_translation:...
 		(* 
-		-> rrel_example:"file://htmls/steel.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://htmls/steel.html" (* <-lang_ru;; *);;
 		*);;
-	
+		
+		<= nrel_using_constants:...
+		(*
+			-> chemical_element;;
+			-> elem_Fe;;
+			-> elem_C;;
+			-> alloy;;
+		*);;	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				elem_Fe;
-				elem_C;
-				alloy
-			};
 
 => nrel_alloy_component: elem_Fe;
 => nrel_alloy_component: elem_C;
@@ -29,19 +29,11 @@ steel
 => nrel_alloy_component: elem_Mn;
 => nrel_alloy_component: elem_S;
 => nrel_alloy_component: elem_Si;
-=>nrel_melting_temperature: 1500;
-=>nrel_density_of_substance: 7700;
+=> nrel_melting_temperature: 1500;
+=> nrel_density_of_substance: 7700;
  
-<= nrel_alloy: ...
-		(*
-			->elem_Fe;;
-			->elem_C;;
-			->elem_P;;
-			->elem_Mn;;
-			->elem_S;;
-			->elem_Si;;
-		*);
-<-alloy;
+
+<- alloy;
 
 <- rrel_key_sc_element:
 	...
@@ -132,6 +124,3 @@ Definition_of_steel
 => nrel_main_idtf:
 	[Опр.(сталь)]
 	(* <- lang_ru;;	*);;
-
-
-

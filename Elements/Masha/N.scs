@@ -2,38 +2,40 @@ elem_N
 <- rrel_key_sc_element:
 	Definition_of_Nitrogenium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/N.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
-=> nrel_group: [5](* <-lang_ru;;*);
-=> nrel_period: [2](* <-lang_ru;;*);
-=> nrel_periodic_number: [7](* <-lang_ru;;*);
+=> nrel_group: five;
+=> nrel_period: two;
+=> nrel_periodic_number: seven;
 <- gas;
 <- nonmetal;
 
-=> nrel_oxidation_state: [-3](* <-lang_ru;;*);
-=> nrel_oxidation_state: [-2](* <-lang_ru;;*);
-=> nrel_oxidation_state: [-1](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
-=> nrel_valence: [3](* <-lang_ru;;*);
-=> nrel_valence: [2](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-=> nrel_valence: [5](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: minus_three;;
+=> nrel_oxidation_state: minus_two;;
+=> nrel_oxidation_state: minus_one;;
+=> nrel_oxidation_state: plus_two;;
+=> nrel_oxidation_state: plus_three;;
+=> nrel_oxidation_state: plus_four;;
+=> nrel_oxidation_state: plus_five;;
+=> nrel_valence: three;;
+=> nrel_valence: two;;
+=> nrel_valence: four;;
+=> nrel_valence: five;;
+*);
 
 
 <- rrel_key_sc_element:
@@ -53,7 +55,7 @@ elem_N
 
 <- rrel_key_sc_element: physical_properties_of_Nitrogenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -64,7 +66,7 @@ elem_N
 
 <- rrel_key_sc_element: chemical_properties_of_Nitrogenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -76,7 +78,7 @@ elem_N
 <- rrel_key_sc_element: interaction_Nitrogenium
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, взаимодействие*, литий)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -87,7 +89,7 @@ elem_N
 <- rrel_key_sc_element: compound_of_Nitrogenium1
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, соединение*, металл, неметалл, нитрид)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -99,7 +101,7 @@ elem_N
 <- rrel_key_sc_element: compound_of_Nitrogenium2
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, взаимодействие*, водород, аммиак)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -111,7 +113,7 @@ elem_N
 <- rrel_key_sc_element: compound_of_Nitrogenium
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, соединение*, степень окисления*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -122,7 +124,7 @@ elem_N
 
 <- rrel_key_sc_element: receipt_of_Nitrogenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -134,7 +136,7 @@ elem_N
 
 <- rrel_key_sc_element: application_of_Nitrogenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (азот, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

@@ -18,7 +18,7 @@ oxide_mineral
 
 <= nrel_subdividing: ...
 (*
-    <- sc_explanation;;
+    <- explanation;;
     => nrel_main_idtf:[Разбиение по признаку химических свойств](*<-lang_ru;; *);;
     -> acid_oxide_mineral;;
     -> basis_oxide_mineral;;
@@ -29,7 +29,7 @@ oxide_mineral
 
 <= nrel_subdividing: ...
 (*
-    <- sc_explanation;;
+    <- explanation;;
     => nrel_main_idtf:[Разбиение по признаку состава](*<-lang_ru;; *);;
     -> hydrooxide_mineral;;
     -> simple_oxide_mineral;;
@@ -38,7 +38,7 @@ oxide_mineral
 
 <- rrel_key_sc_element: mineral_groups
     (*
-        <- sc_explanation;;
+        <- explanation;;
         => nrel_main_idtf: 
             [Утв. (окисел, минерал)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...
@@ -50,7 +50,7 @@ oxide_mineral
 
 <- rrel_key_sc_element: ...
     (*
-        <- sc_explanation;;
+        <- explanation;;
         => nrel_main_idtf: 
             [Утв. (окисел, агрегатное состояние*)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...
@@ -63,7 +63,7 @@ oxide_mineral
 
 <- rrel_key_sc_element: ...
     (*
-        <- sc_explanation;;
+        <- explanation;;
         => nrel_main_idtf: 
             [Утв. (окисел, применение*)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...

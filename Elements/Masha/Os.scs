@@ -2,37 +2,39 @@ elem_Os
 <- rrel_key_sc_element:
 	Definition_of_Osmium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/Os.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
 
-=> nrel_color: color_white_silver;
-=> nrel_group: [8](* <-lang_ru;;*);
-=> nrel_period: [6](* <-lang_ru;;*);
-=> nrel_periodic_number: [76](* <-lang_ru;;*);
+=> nrel_group: eight;
+=> nrel_period: six;
+=> nrel_periodic_number: seventy_six;
 
 <- metal;
 
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+8](* <-lang_ru;;*);
-=> nrel_valence: [3](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-=> nrel_valence: [6](* <-lang_ru;;*);
-=> nrel_valence: [8](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_three;;
+=> nrel_oxidation_state: plus_four;;
+=> nrel_oxidation_state: plus_six;;
+=> nrel_oxidation_state: plus_eight;;
+=> nrel_valence: three;;
+=> nrel_valence: four;;
+=> nrel_valence: six;;
+=> nrel_valence: eight;;
+*);
+
 
 <- rrel_key_sc_element:
 	...
@@ -51,7 +53,7 @@ elem_Os
 
 <- rrel_key_sc_element: physical_properties_of_Osmium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (осмий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -62,7 +64,7 @@ elem_Os
 
 <- rrel_key_sc_element: chemical_properties_of_Osmium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (осмий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -74,7 +76,7 @@ elem_Os
 <- rrel_key_sc_element: interaction_Osmium
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (осмий, взаимодействие*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -86,7 +88,7 @@ elem_Os
 <- rrel_key_sc_element: compound_of_Osmium1
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (осмий, полиядерное соединение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -98,7 +100,7 @@ elem_Os
 <- rrel_key_sc_element: compound_of_Osmium2
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (осмий, соединение*, взаимодействие*, щелочь, расплав, осмат)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -109,7 +111,7 @@ elem_Os
 
 <- rrel_key_sc_element: receipt_of_Osmium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (осмий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -121,7 +123,7 @@ elem_Os
 
 <- rrel_key_sc_element: application_of_Osmium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (осмий, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

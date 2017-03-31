@@ -2,20 +2,19 @@ elem_Ni
 <- rrel_key_sc_element:
 	Definition_of_Niccolum
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/Ni.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
 <- rrel_key_sc_element:
 	...
@@ -32,19 +31,21 @@ elem_Ni
 		*);;
 	*);
 
-=> nrel_color: color_white_silver;
-=> nrel_group: [10](* <-lang_ru;;*);
-=> nrel_period: [4](* <-lang_ru;;*);
-=> nrel_periodic_number: [28](* <-lang_ru;;*);
+=> nrel_group: ten;
+=> nrel_period: four;
+=> nrel_periodic_number: twenty_eight;
 
 <- metal;
 
-=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
-=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_two;;
+=> nrel_valence: two;;
+*);
 
 <- rrel_key_sc_element: physical_properties_of_Niccolum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (никель, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -55,7 +56,7 @@ elem_Ni
 
 <- rrel_key_sc_element: chemical_properties_of_Niccolum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (никель, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -66,7 +67,7 @@ elem_Ni
 
 <- rrel_key_sc_element: receipt_of_Niccolum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (никель, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -78,7 +79,7 @@ elem_Ni
 
 <- rrel_key_sc_element: application_of_Niccolum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (никель, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -90,7 +91,7 @@ elem_Ni
 	<- rrel_key_sc_element: interaction_Niccolum
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (никель, взаимодействие*,)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -102,7 +103,7 @@ elem_Ni
 	<- rrel_key_sc_element: compound_of_Niccolum
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (никель, соединение*, оксид углерода, карбонил)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

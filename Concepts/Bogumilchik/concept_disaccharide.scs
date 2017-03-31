@@ -3,7 +3,7 @@ disaccharide
 <= nrel_inclusion: oligosaccharide;
 <= nrel_subdividing: ...
 (*
-	<- sc_explanation;;
+	<- explanation;;
 	->reducing_disaccherides;;
 	->non_reducing_disaccherides;;
 	=>nrel_main_idtf:[Разбиение по признаку способности к восстановлению.](*<-lang_ru;; *);;

@@ -20,7 +20,7 @@ basic_oxide
 
 <- rrel_key_sc_element:...
 (*
-    <- sc_explanation;;
+    <- explanation;;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:
@@ -34,7 +34,7 @@ basic_oxide
 
 <- rrel_key_sc_element: ...
     (*
-        <- sc_explanation;;
+        <- explanation;;
         => nrel_main_idtf: 
             [Утв. (основный оксид, взаимодействие*)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...

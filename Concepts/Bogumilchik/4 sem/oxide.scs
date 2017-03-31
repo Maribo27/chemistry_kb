@@ -19,7 +19,7 @@ oxide
 
 <= nrel_subdividing: ...
 (*
-    <- sc_explanation;;
+    <- explanation;;
     => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию.](*<-lang_ru;; *);;
     -> salt_forming_oxide;;
     -> unsalt_forming_oxide;;
@@ -27,7 +27,7 @@ oxide
 
 <- rrel_key_sc_element: ...
 (*
-    <- sc_explanation;;
+    <- explanation;;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:
@@ -46,7 +46,7 @@ oxide
 
 <- rrel_key_sc_element: ...
     (*
-        <- sc_explanation;;
+        <- explanation;;
         => nrel_main_idtf: 
             [Утв. (оксид, получение*)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...

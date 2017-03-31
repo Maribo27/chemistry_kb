@@ -2,20 +2,19 @@ elem_Nd
 <- rrel_key_sc_element:
 	Definition_of_Neodymium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/Nd.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> lanthanide;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				nrel_group;
-				lanthanide			
-			};
 
 <- rrel_key_sc_element:
 	...
@@ -32,21 +31,23 @@ elem_Nd
 		*);;
 	*);
 
-=> nrel_color: color_white_silver;
-=> nrel_periodic_number: [60](* <-lang_ru;;*);
+=> nrel_periodic_number: sixty;
 
 <- metal;
 <- lanthanide;
 
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_four;;
+=> nrel_oxidation_state: plus_three;;
+=> nrel_valence: four;;
+=> nrel_valence: three;;
+*);
 
 
 <- rrel_key_sc_element: physical_properties_of_Neodymium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (неодим, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -57,7 +58,7 @@ elem_Nd
 
 <- rrel_key_sc_element: chemical_properties_of_Neodymium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (неодим, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -68,7 +69,7 @@ elem_Nd
 
 <- rrel_key_sc_element: receipt_of_Neodymium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (неодим, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -80,7 +81,7 @@ elem_Nd
 
 <- rrel_key_sc_element: application_of_Neodymium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (неодим, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

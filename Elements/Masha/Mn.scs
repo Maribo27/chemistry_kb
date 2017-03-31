@@ -2,36 +2,37 @@ elem_Mn
 <- rrel_key_sc_element:
 	Definition_of_Manganum
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:"file://htmls/Mn.html" (* <-lang_ru;; *);;
 		*);;
-	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group				
-			};
 
-
-=> nrel_color: color_white_silver;
-=> nrel_group: [7](* <-lang_ru;;*);
-=> nrel_period: [4](* <-lang_ru;;*);
-=> nrel_periodic_number: [25](* <-lang_ru;;*);
+=> nrel_group: seven;
+=> nrel_period: four;
+=> nrel_periodic_number: twenty_five;
 
 <- metal;
 
-=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+7](* <-lang_ru;;*);
-=> nrel_valence: [2](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-=> nrel_valence: [6](* <-lang_ru;;*);
-=> nrel_valence: [7](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_two;;
+=> nrel_oxidation_state: plus_four;;
+=> nrel_oxidation_state: plus_seven;;
+=> nrel_valence: two;;
+=> nrel_valence: four;;
+=> nrel_valence: six;;
+=> nrel_valence: seven;;
+*);
+
 
 <- rrel_key_sc_element:
 	...
@@ -53,7 +54,7 @@ elem_Mn
 
 <- rrel_key_sc_element: physical_properties_of_Manganum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (марганец, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -64,7 +65,7 @@ elem_Mn
 
 <- rrel_key_sc_element: oxyd_state_of_Manganum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (марганец, степень окисления*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -75,7 +76,7 @@ elem_Mn
 
 <- rrel_key_sc_element: mod_of_Manganum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (марганец, модификация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -86,7 +87,7 @@ elem_Mn
 
 <- rrel_key_sc_element: receipt_of_Manganum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (марганец, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -98,7 +99,7 @@ elem_Mn
 
 <- rrel_key_sc_element: application_of_Manganum
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (марганец, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -110,7 +111,7 @@ elem_Mn
 <- rrel_key_sc_element: interaction_Manganum
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (марганец, взаимодействие*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -122,7 +123,7 @@ elem_Mn
 <- rrel_key_sc_element: compound_of_Manganum
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (марганец, соединение*, оксид)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
