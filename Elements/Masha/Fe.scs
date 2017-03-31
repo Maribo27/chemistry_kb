@@ -1,35 +1,33 @@
 elem_Fe
-<- rrel_key_sc_element:
-	Definition_of_Fe
+	<- rrel_key_sc_element: Definition_of_Fe
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:"file://htmls/Fe.html" (* <-lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> rrel_example:"file://htmls/Fe.html" (* <-lang_ru;; *);;
+		*);;	
+		<= nrel_using_constants: ...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
-	
 	*);
 
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-			};
-
-=> nrel_color: color_white_silver;
-=> nrel_group: [8](* <-lang_ru;;*);
-=> nrel_period: [4](* <-lang_ru;;*);
-=> nrel_periodic_number: [26](* <-lang_ru;;*);
+=> nrel_group: 8;
+=> nrel_period: 4;
+=> nrel_periodic_number: 26;
 
 <- metal;
 
-=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_valence: [2](* <-lang_ru;;*);
-=> nrel_valence: [3](* <-lang_ru;;*);
-=> nrel_valence: [6](* <-lang_ru;;*);
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: six;;
+*);
 
 <- rrel_key_sc_element: physical_properties_of_fe
 	(*
@@ -74,6 +72,21 @@ elem_Fe
 		...
 		(* 
 		-> rrel_example:"file://htmls/Fe_(receipt).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/Fe.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
 		*);;
 	*);
 

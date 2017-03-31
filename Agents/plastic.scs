@@ -6,18 +6,17 @@ plastic
 <- rrel_key_sc_element:
 	Definition_of_plastic
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:...
 		(* 
-		-> rrel_example:
-			[Пластмассы (пластические ма́ссы) или пластики — органические материалы, основой которых являются синтетические или природные высокомолекулярные соединения (полимеры).] (* <-lang_ru;; *);;
+			-> rrel_example:
+				[Пластмассы (пластические ма́ссы) или пластики — органические материалы, основой которых являются синтетические или природные высокомолекулярные соединения (полимеры).] (* <-lang_ru;; *);;
 		*);;
+		<= nrel_using_constants:
+		{
+			polymer
+		};;
 	*);
-<= nrel_using_constants:
-			{
-				polymer
-			};
 
 <- rrel_key_sc_element:
 	...
