@@ -10,14 +10,33 @@ elem_Ru
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-			
+
+=> nrel_group: 8;
+=> nrel_period: 5;
+=> nrel_periodic_number: 44;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_two;;
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_oxidation_state: plus_seven;;
+	=> nrel_oxidation_state: plus_eight;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: six;;
+	=> nrel_valence: seven;;
+	=> nrel_valence: eight;;
+	
+*);
+		
 <- rrel_key_sc_element:
 	...
 	(*
@@ -70,4 +89,10 @@ elem_Ru
 Definition_of_ruthenium
 => nrel_main_idtf:
 	[Опр.(Рутений)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

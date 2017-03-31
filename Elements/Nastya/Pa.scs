@@ -10,14 +10,22 @@ elem_Pa
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-			
+
+=> nrel_group: 3;
+=> nrel_period: 7;
+=> nrel_periodic_number: 91;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_valence: five;;
+	
+*);
+
 <- rrel_key_sc_element:
 	...
 	(*
@@ -70,4 +78,10 @@ elem_Pa
 Definition_of_protactinium
 => nrel_main_idtf:
 	[Опр.(Протактиний)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

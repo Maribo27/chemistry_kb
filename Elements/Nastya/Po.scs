@@ -10,14 +10,25 @@ elem_Po
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-			
+
+=> nrel_group: 16;
+=> nrel_period: 6;
+=> nrel_periodic_number: 84;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_two;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: two;;
+	=> nrel_valence: four;;
+	=> nrel_valence: six;;
+	
+*);
+		
 <- rrel_key_sc_element:
 	...
 	(*
@@ -70,4 +81,10 @@ elem_Po
 Definition_of_polonium
 => nrel_main_idtf:
 	[Опр.(Полоний)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

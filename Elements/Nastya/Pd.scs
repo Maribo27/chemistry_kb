@@ -10,14 +10,23 @@ elem_Pd
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-			
+
+=> nrel_group: 10;
+=> nrel_period: 5;
+=> nrel_periodic_number: 46;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_valence: two;;
+	=> nrel_valence: four;;
+	=> nrel_valence: six;;
+	
+*);
+								
 <- rrel_key_sc_element:
 	...
 	(*
@@ -70,4 +79,10 @@ elem_Pd
 Definition_of_palladium
 => nrel_main_idtf:
 	[Опр.(Паладий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;
