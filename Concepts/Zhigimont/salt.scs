@@ -41,28 +41,6 @@ salt
 	*);
 
 
-<- rrel_key_sc_element: physical_properties_of_salt
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (соль, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Как правило, соли представляют собой <sc_element sys_idtf="crystal">кристаллические</sc_element> вещества с ионной кристаллической решёткой. Например, кристаллы галогенидов <sc_element sys_idtf="alkali_metal">щелочных</sc_element> и <sc_element sys_idtf="alkaline_earth_metal">щёлочноземельных</sc_element> металлов (<sc_element sys_idtf="sodium_chloride">NaCl</sc_element>, <sc_element sys_idtf="caesium_chloride">CsCl</sc_element>, <sc_element sys_idtf="c</sc_element>) построены из анионов, расположенных по принципу плотнейшей шаровой упаковки, и катионов, занимающих пустоты в этой упаковке. Ионные кристаллы солей могут быть построены также из кислотных остатков, объединённых в бесконечные анионные фрагменты и трёхмерные каркасы с катионами в полостях (силикаты). Подобное строение соответствующим образом отражается на их физических свойствах: они имеют высокие <sc_element sys_idtf="nrel_melting_temperature">температуры плавления</sc_element>, в <sc_element sys_idtf="solid">твёрдом состоянии</sc_element> являются <sc_element sys_idtf="dielectric">диэлектриками</sc_element>.
-
-			Известны также соли молекулярного (ковалентного) строения (например, хлорид алюминия <sc_element sys_idtf="aluminium_chloride">AlCl<sub>3</sub></sc_element>). У многих солей характер химических связей является промежуточным между <sc_element sys_idtf="nrel_ionic_bond">ионным</sc_element> и <sc_element sys_idtf="nrel_covalent_bond">ковалентным</sc_element>.
-
-			Особый интерес представляют ионные жидкости — соли с температурой плавления ниже 100 °С. Кроме аномальной температуры плавления ионные жидкости имеют практически нулевое давление насыщенного пара и высокую вязкость. Особые свойства этих солей объясняются низкой симметрией катиона, слабым взаимодействием между ионами и хорошим распределением заряда катиона.
-
-			Важным свойством солей является их <sc_element sys_idtf="nrel_solubility">растворимость</sc_element> в воде. По данному критерию выделяют растворимые, мало растворимые и нерастворимые соли.]
-			(* 
-			<-lang_ru;; 
-			=> nrel_format: format_html;;
-			*);;
-		*);;
-	*);
-
 <= nrel_subdividing:
 	salt_substitution
   (* 
@@ -119,9 +97,24 @@ salt
 			[Утв. (соль, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:"file://html/chemical_properties_of_salt.html" 
+			-> rrel_example:[Соли взаимодействуют с кислотами и основаниями, если в результате реакции получается продукт, который выходит из сферы реакции (осадок, <sc_element sys_idtf="gas">газ</sc_element>, малодиссоциирующие вещества, например, вода):<br>
+			BaCl<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> = BaSO<sub>4</sub>↓ + 2HCl<br>
+			NaHCO<sub>3</sub> + HCl = NaCl + H<sub>2</sub>O + CO<sub>2</sub><br>
+			Na<sub>2</sub>SiO3 + 2HCl = 2NaCl + H<sub>2</sub>SiO3↓<br>
+			Соли взаимодействуют с металлами, если свободный металл находится левее металла в составе соли в электрохимическом ряду активности металлов:<br>
+			Cu + HgCl<sub>2</sub> = CuCl<sub>2</sub> + Hg<br>
+			Соли взаимодействуют между собой, если продукт реакции выходит из сферы реакции (образуется газ, осадок или вода); в том числе эти реакции могут проходить с изменением степеней окисления атомов реагентов:<br>
+CaCl<sub>2</sub> + Na<sub>2</sub>CO<sub>3</sub> = CaCO<sub>3</sub>↓ + 2NaCl<br>
+AgNO<sub>3</sub> + NaCl = AgCl↓ + NaNO<sub>3</sub><br>
+K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> + 3Na<sub>2</sub>SO<sub>3</sub> + 4H<sub>2</sub>SO<sub>4</sub> = Cr<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> + 3Na<sub>2</sub>SO<sub>4</sub> + K<sub>2</sub>SO<sub>4</sub> + 4H<sub>2</sub>O<br>
+Некоторые соли разлагаются при нагревании:<br>
+CuCO<sub>3</sub> = CuO + CO<sub>2</sub><br>
+Ca(NO<sub>3</sub>)<sub>2</sub> = Ca(NO<sub>2</sub>)<sub>2</sub> + O<sub>2</sub><br>
+NH<sub>4</sub>NO<sub>3</sub> = N<sub>2</sub>O + 2H<sub>2</sub>O<br>
+NH<sub>4</sub>NO<sub>2</sub> = N<sub>2</sub> + 2H<sub>2</sub>O]
 			(* 
 			<-lang_ru;;
+			=> nrel_format: format_html;;
 			*);;
 		*);;
 	*);
@@ -134,36 +127,30 @@ salt
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://html/receipt_of_salt.html" 
+		-> rrel_example:[Взаимодействие <sc_element sys_idtf="acid">кислот</sc_element> с <sc_element sys_idtf="metal">металлами</sc_element>, <sc_element sys_idtf="basic_oxide">основными</sc_element> и <sc_element sys_idtf="amphoteric_oxide">амфотерными оксидами</sc_element> / гидроксидами:
+
+	H<sub>2</sub>SO<sub>4</sub> + Mg = MgSO<sub>4</sub> + H<sub>2</sub>
+	H<sub>2</sub>SO<sub>4</sub> + MgO = MgSO<sub>4</sub> + H<sub>2</sub>O
+	3H<sub>2</sub>SO<sub>4</sub> + Al<sub>2</sub>O<sub>3</sub> = Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> + 3H<sub>2</sub>O>br>
+	Взаимодействие <sc_element sys_idtf="acidic_oxide">кислотных оксидов</sc_element> c <sc_element sys_idtf="alkali">щелочами</sc_element>, основными и амфотерными оксидами / гидроксидами:
+
+	Ca(OH)<sub>2</sub> + CO<sub>2</sub> = CaCO<sub>3</sub> + H<sub>2</sub>O
+	CaO + SiO<sub>2</sub> = CaSiO<sub>3</sub>
+	Al<sub>2</sub>O<sub>3</sub> + 3SO<sub>3</sub> = Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>
+	Mg(OH)<sub>2</sub> + CO<sub>2</sub> = MgCO<sub>3</sub> + H<sub>2</sub>O
+	Zn(OH)<sub>2</sub> + SO<sub>3</sub> = ZnSO<sub>4</sub> + H<sub>2</sub>O<br>
+	Взаимодействие солей c кислотами, другими солями (если образуется выходящий из сферы реакции продукт):
+
+	CaCO<sub>3</sub> + 2HCl = CaCl<sub>2</sub> + H<sub>2</sub>O + CO<sub>2</sub>
+	CuCl<sub>2</sub> + Na<sub>2</sub>S = 2NaCl + CuS
+	2Na<sub>2</sub>CO<sub>3</sub> + 2MgCl<sub>2</sub> + H<sub>2</sub>O = [Mg(OH)]<sub>2</sub>CO<sub>3</sub> + CO<sub>2</sub> + 4NaCl<br>
+	Взаимодействие <sc_element sys_idtf="elementary_substance">простых веществ</sc_element>:
+Fe + S = FeS<br>
+Взаимодействие <sc_element sys_idtf="base">оснований</sc_element> с <sc_element sys_idtf="nonmetal">неметаллами</sc_element>, например, с галогенами:
+Ca(OH)<sub>2</sub> + Cl<sub>2</sub> = Ca(OCl)Cl + H<sub>2</sub>O]
 		(* 
 		<-lang_ru;;
-		*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: application_of_salt
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (соль, применение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:"file://html/application_of_salt.html" (* <-lang_ru;; *);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: salt_in_nature
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (соль, нахождение в природе*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:[Многие <sc_element sys_idtf="mineral">минералы</sc_element> — соли, образующие залежи (например, галит NaCl, сильвин KCl, флюорит CaF<sub>2</sub>.] 
-		(* 
-		<-lang_ru;; 
-		=> nrel_format: format_html;;
+			=> nrel_format: format_html;;
 		*);;
 		*);;
 	*);;
@@ -172,14 +159,7 @@ Definition_of_salt
 => nrel_main_idtf:
 	[Опр.(соль)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				complex_substance;
-				water;
-				solution;
-				electrolytic_dissociation;
-				cation;
-				metal;
-				anion;
-				nrel_acid_residue
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> complex_substance; water; solution; electrolytic_dissociation; cation; metal; anion; nrel_acid_residue;;
+			*);;

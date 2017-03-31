@@ -81,8 +81,7 @@ Definition_of_binary_compound
 => nrel_main_idtf:
 	[Опр.(бинарное соединение)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_substance;
-				chemical_element
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> chemical_substance; chemical_element;;
+			*);;

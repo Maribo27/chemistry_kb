@@ -1,9 +1,9 @@
 ion
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[ион]
+	[Ион]
 	(* <- lang_ru;;	*);
-	[ion]
+	[Ion]
 	(* <- lang_en;;	*);;
 ion
 <- rrel_key_sc_element:

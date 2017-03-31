@@ -11,7 +11,11 @@ elem_No
 	
 	*);
 
-=> nrel_oxidation_state: [+2]; [+3];
+
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_two; plus_three;;
+*);
 
 => nrel_periodic_number: [102];
 <- rrel_key_sc_element: number_of_nobelium

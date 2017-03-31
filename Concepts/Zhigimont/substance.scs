@@ -1,0 +1,37 @@
+// переделать
+substance
+=> nrel_main_idtf:
+	[вещество]
+	(* <- lang_ru;;	*);
+	[substance]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_substance
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="substance">Вещество</sc_element></b> — вид материи, которая обладает массой покоя.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+	
+<= nrel_subdividing:
+	substance_state_of_matter
+  (* 
+    -> solid;;
+	-> liquid;;
+	-> gas;;
+	*);;
+	
+	
+	
+Definition_of_substance
+=> nrel_main_idtf:
+	[Опр.(вещество)]
+	(* <- lang_ru;;	*);;

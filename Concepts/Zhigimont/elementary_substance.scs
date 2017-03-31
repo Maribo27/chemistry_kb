@@ -1,0 +1,51 @@
+elementary_substance
+=> nrel_main_idtf: 
+	[elementary substance](*<- lang_en;;*);
+	[простое вещество](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_elementary_substance
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Просто́е вещество́</sc_element></b> — <sc_element sys_idtf="substance">вещество</sc_element>, состоящее исключительно из <sc_element sys_idtf="atom">атомов</sc_element> одного <sc_element sys_idtf="chemical_element">химического элемента</sc_element>.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+<= nrel_subdividing:
+	elementary_substance_chemical_bond
+  (* 
+    -> metal; nonmetal;;
+	*);
+
+<- rrel_key_sc_element: elementary_substance_allotropy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (простое вещество, аллотропия*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Один и тот же химический элемент зачастую может образовывать несколько типов простых веществ (<sc_element sys_idtf="nrel_allotropy">аллотропия</sc_element>), называемых аллотропными модификациями. Явление аллотропии может быть обусловлено либо различным составом молекул данного элемента (<i>аллотропия состава</i>), либо различным строением молекул и способом размещения молекул (атомов) в <sc_element sys_idtf="crystal">кристаллах</sc_element> (<i>аллотропия формы</i>). Способность элемента к образованию соответствующих аллотропных модификаций обусловлена строением атома, которое определяет тип <sc_element sys_idtf="chemical_bond">химической связи</sc_element>, строение молекул и кристаллов.
+		Различные аллотропные модификации могут переходить друг в друга. Для данного химического элемента его аллотропные модификации всегда различаются по физическим свойствам и химической активности (например, озон активнее кислорода, <sc_element sys_idtf="nrel_melting_temperature">температура плавления</sc_element> алмаза больше, чем фуллерена).] 
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_elementary_substance
+=> nrel_main_idtf:
+	[Опр.(простое вещество)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> substance; atom; chemical_element;;
+			*);;
