@@ -74,7 +74,8 @@ elem_Pb
 Definition_of_plumbum
 => nrel_main_idtf:
 	[Опр.(Свинец)]
-	(* <- lang_ru;;	*);<= nrel_using_constants:
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
 			{
 				chemical_element;
 				period;

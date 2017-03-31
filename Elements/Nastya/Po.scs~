@@ -77,7 +77,8 @@ elem_Po
 Definition_of_polonium
 => nrel_main_idtf:
 	[Опр.(Полоний)]
-	(* <- lang_ru;;	*);<= nrel_using_constants:
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
 			{
 				chemical_element;
 				period;

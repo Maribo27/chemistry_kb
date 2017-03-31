@@ -10,13 +10,23 @@ elem_Rh
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: [9](* <-lang_ru;;*);
+=> nrel_period: [5](* <-lang_ru;;*);
+=> nrel_periodic_number: [45](* <-lang_ru;;*);
+
+=> nrel_oxidation_state: [-1](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+1](* <-lang_ru;;*); 
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*); 
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*); 
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*); 
+=> nrel_oxidation_state: [+5](* <-lang_ru;;*); 
+=> nrel_oxidation_state: [+6](* <-lang_ru;;*); 
+
+=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_valence: [4](* <-lang_ru;;*);
+=> nrel_valence: [6](* <-lang_ru;;*);
 			
 <- rrel_key_sc_element:
 	...
@@ -70,4 +80,11 @@ elem_Rh
 Definition_of_rhodium
 => nrel_main_idtf:
 	[Опр.(Родий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

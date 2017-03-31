@@ -73,7 +73,8 @@ elem_Pa
 Definition_of_protactinium
 => nrel_main_idtf:
 	[Опр.(Протактиний)]
-	(* <- lang_ru;;	*);<= nrel_using_constants:
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
 			{
 				chemical_element;
 				period;

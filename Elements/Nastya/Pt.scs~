@@ -79,7 +79,8 @@ elem_Pt
 Definition_of_platinum
 => nrel_main_idtf:
 	[Опр.(Платина)]
-	(* <- lang_ru;;	*);<= nrel_using_constants:
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
 			{
 				chemical_element;
 				period;

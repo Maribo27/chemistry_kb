@@ -11,18 +11,23 @@ elem_Sb
 	
 	*);
 
-=> nrel_group: [15](* <-lang_ru;;*);
-=> nrel_period: [5](* <-lang_ru;;*);
-=> nrel_periodic_number: [51](* <-lang_ru;;*);
+=> nrel_group: 15;
+=> nrel_period: 5;
+=> nrel_periodic_number: 51;
 
-=> nrel_oxidation_state: [-3](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_three;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: five;;
 	
-=> nrel_valence: [3](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-=> nrel_valence: [5](* <-lang_ru;;*);
-			
+*);
+		
 <- rrel_key_sc_element:
 	...
 	(*
@@ -76,10 +81,9 @@ Definition_of_stibium
 => nrel_main_idtf:
 	[Опр.(Сурьма)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

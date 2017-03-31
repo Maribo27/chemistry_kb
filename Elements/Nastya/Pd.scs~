@@ -73,7 +73,8 @@ elem_Pd
 Definition_of_palladium
 => nrel_main_idtf:
 	[Опр.(Паладий)]
-	(* <- lang_ru;;	*);<= nrel_using_constants:
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
 			{
 				chemical_element;
 				period;

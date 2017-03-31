@@ -10,13 +10,27 @@ elem_Ru
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: [8](* <-lang_ru;;*);
+=> nrel_period: [5](* <-lang_ru;;*);
+=> nrel_periodic_number: [44](* <-lang_ru;;*);
+
+=> nrel_oxidation_state: [-2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+1](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+7](* <-lang_ru;;*);
+=> nrel_oxidation_state: [+8](* <-lang_ru;;*);
+
+=> nrel_valence: [2](* <-lang_ru;;*);
+=> nrel_valence: [3](* <-lang_ru;;*);
+=> nrel_valence: [4](* <-lang_ru;;*);
+=> nrel_valence: [6](* <-lang_ru;;*);
+=> nrel_valence: [7](* <-lang_ru;;*);
+=> nrel_valence: [8](* <-lang_ru;;*);
 			
 <- rrel_key_sc_element:
 	...
@@ -70,4 +84,11 @@ elem_Ru
 Definition_of_ruthenium
 => nrel_main_idtf:
 	[Опр.(Рутений)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;
