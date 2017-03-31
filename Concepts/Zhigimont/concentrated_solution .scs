@@ -1,0 +1,32 @@
+concentrated_solution 
+        => nrel_main_idtf:
+                [concentrated solution](*<- lang_en;;*);
+                [концентрированный раствор](*<- lang_ru;;*);
+				
+        => nrel_idtf:
+                [концентрат](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_concentrated_solution
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="concentrated_solution">Концентрированный раствор</sc_element></b> — <sc_element sys_idtf="solution">раствор</sc_element> с высоким содержанием <sc_element sys_idtf="rrel_solute">растворённого вещества</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+
+Definition_of_concentrated_solution
+=> nrel_main_idtf:
+	[Опр.(концентрированный раствор)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> solution; rrel_solute;;
+				
+			*);;

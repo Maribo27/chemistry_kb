@@ -1,0 +1,48 @@
+sc_node_role_relation->rrel_solvent;;
+rrel_solvent
+	=> nrel_main_idtf: [solvent'](*<- lang_en;;*);
+					   [растворитель'](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_rrel_solvent
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Растворитель</sc_element></b> — <sc_element sys_idtf="liquid">жидкое</sc_element>, <sc_element sys_idtf="solid">твёрдое</sc_element> или <sc_element sys_idtf="gas">газообразное</sc_element> <sc_element sys_idtf="substance">вещество</sc_element>, способное <sc_element sys_idtf="solubility">растворять</sc_element> другие твёрдые, жидкие или газообразные вещества.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_rrel_solvent
+
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (растворитель', применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Обычно используются как органические растворители в химчистках (например, тетрахлорэтилен), как бытовые растворители (например, ацетон, скипидар), для удаления лаков и клея (ацетон, метиловый спирт, этилацетат), в моющих средствах (цитрусовые терпены), в парфюмерии (этанол) и в химическом синтезе.]
+			(* 
+			<-lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+	
+<= nrel_subdividing: solvent_state
+  (* 
+    -> rrel_organic_solvent; rrel_inorganic_solvent; rrel_liquid_solvent; rrel_solid_solvent; rrel_aprotic_solvent; rrel_amphidic_solvent; rrel_protophilic_solvent;;
+	*);;
+
+Definition_of_rrel_solvent
+=> nrel_main_idtf:
+	[Опр.(растворитель')]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> liquid; solid; gas; substance; solubility;;
+			*);;

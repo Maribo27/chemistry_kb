@@ -10,13 +10,24 @@ elem_Zr
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: 4;
+=> nrel_period: 5;
+=> nrel_periodic_number: 40;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	
+*);
 			
 <- rrel_key_sc_element:
 	...
@@ -70,4 +81,10 @@ elem_Zr
 Definition_of_zirconium
 => nrel_main_idtf:
 	[Опр.(Цирконий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

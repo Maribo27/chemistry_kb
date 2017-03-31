@@ -55,8 +55,10 @@ elem_Og
 		*);;
 	*);
 
-
-=> nrel_oxidation_state: [+4]; [+2]; [+6]; [-1];
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_two; plus_four; plus_six; minus_one;;
+*);
 
 => nrel_group: [18];
 => nrel_period: [7];

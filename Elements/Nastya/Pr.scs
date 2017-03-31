@@ -10,14 +10,22 @@ elem_Pr
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-			
+
+=> nrel_group: 3;
+=> nrel_period: 6;
+=> nrel_periodic_number: 59;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_valence: three;;
+	
+*);
+
 <- rrel_key_sc_element:
 	...
 	(*
@@ -70,4 +78,10 @@ elem_Pr
 Definition_of_praseodymium
 => nrel_main_idtf:
 	[Опр.(Празеодим)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

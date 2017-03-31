@@ -1,0 +1,41 @@
+ion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Ион]
+	(* <- lang_ru;;	*);
+	[Ion]
+	(* <- lang_en;;	*);;
+ion
+<- rrel_key_sc_element:
+	Definition_of_ion
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/ion.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Положительно заряженный ион принято называть катионом, отрицательно заряженный ион — анионом] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_ion
+=> nrel_main_idtf:
+	[Опр.(Ион)]
+	(* <- lang_ru;;	*);;
+
+
+
+
+
+
+

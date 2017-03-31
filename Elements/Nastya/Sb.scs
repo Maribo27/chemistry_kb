@@ -10,14 +10,24 @@ elem_Sb
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-			
+
+=> nrel_group: 15;
+=> nrel_period: 5;
+=> nrel_periodic_number: 51;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_three;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: five;;
+	
+*);
+		
 <- rrel_key_sc_element:
 	...
 	(*
@@ -70,4 +80,10 @@ elem_Sb
 Definition_of_stibium
 => nrel_main_idtf:
 	[Опр.(Сурьма)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

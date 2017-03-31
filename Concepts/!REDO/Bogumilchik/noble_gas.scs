@@ -2,6 +2,9 @@ noble_gas
         => nrel_main_idtf:
                 [noble gas](*<- lang_en;;*);
                 [благородный газ](*<- lang_ru;;*);
+                [инертный газ](*<- lang_ru;;*);
+
+-> elem_He; elem_Ne; elem_Ar; elem_Kr; elem_Xe; elem_Rn; elem_Og;
         <- rrel_key_sc_element:...
                 (*
                         <- sc_definition;;
@@ -22,6 +25,8 @@ noble_gas
                                                 *);;
                                         *);;
                 *);
+
+
         <- rrel_key_sc_element:...
                 (*
                         <- sc_explanation;;

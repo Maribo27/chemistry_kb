@@ -1,0 +1,39 @@
+complex_substance
+	=> nrel_main_idtf: 
+	[complex substance]
+	(*<- lang_en;;*);
+	[сложное вещество]
+	(*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:
+	Definition_of_complex_substance
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Сложное вещество</sc_element></b> — это <sc_element sys_idtf="substance">вещество</sc_element>, состоящее из <sc_element sys_idtf="atom">атомов</sc_element> двух и более разных <sc_element sys_idtf="chemical_element">химических элементов</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+	
+<= nrel_subdividing:
+	complex_substance_structure
+  (* 
+    -> binary_compound;;
+	-> multielement_compound;;
+	*);;
+	
+	
+	Definition_of_complex_substance
+=> nrel_main_idtf:
+	[Опр.(сложное вещество)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> substance; atom; chemical_element;;
+				
+			*);;

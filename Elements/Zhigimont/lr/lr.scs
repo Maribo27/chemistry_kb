@@ -11,43 +11,11 @@ elem_Lr
 	
 	*);
 
-=> nrel_oxidation_state: [+3];
+
+
 
 => nrel_periodic_number: [103];
 
-<- rrel_key_sc_element: number_of_lawrencium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (лоуренсий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер лоуренсия равен 103. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: chemical_properties_of_lawrencium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (лоуренсий, химические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Химическими экспериментами установлено, что в водных растворах устойчивое окислительное состояние лоуренсий имеет место при 3+, чем были подтверждены прогнозы теоретиков о получении четырнадцатого радиоактивного элемента-аналога. Практическое применение лоуренсия из-за малого времени жизни представляется затруднительным. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: physical_properties_of_lawrencium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (лоуренсий, физические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Искусственно синтезированный радиоактивный элемент, в природе не встречается. ] (*<- lang_ru;;*);;
-		*);;
-	*);
 <- rrel_key_sc_element: ...
 (*
 		<- sc_illustration;;
@@ -59,7 +27,9 @@ elem_Lr
 	*);;
 
 
-
+nrel_oxidation_state <- sc_node_norole_relation;;
+elem_Lr => nrel_chemical_properties: chemical_properties_of_Lr;;
+chemical_properties_of_Lr => nrel_oxidation_state: plus_three;;
 
 Definition_of_lawrencium
 => nrel_main_idtf:

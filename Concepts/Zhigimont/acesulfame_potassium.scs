@@ -35,24 +35,6 @@ acesulfame_potassium
 	*);
 
 
-
-<- rrel_key_sc_element: physical_properties_of_acesulfame_potassium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (ацесульфам калия, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Ацесульфам калия предстваляет собой бесцветные <sc_element sys_idtf="crystal">кристаллы</sc_element>, легко растворимые в воде, примерно в 180—200 раз слаще <sc_element sys_idtf="sucrose">сахарозы</sc_element> (традиционного кулинарного сахара).<br>
-			Подобно <sc_element sys_idtf="saccharin">сахарину</sc_element>, также являющемуся сульфамидом, ацесульфам в высоких концентрациях имеет горьковато-металлический привкус, поэтому часто используется в комбинации с аспартамом.] 
-		(* 
-		<-lang_ru;; 
-		=> nrel_format: format_html;;
-		*);;
-		*);;
-	*);
-
 <- rrel_key_sc_element: application_of_acesulfame_potassium
 	(*
 		<- sc_explanation;;
@@ -86,7 +68,7 @@ acesulfame_potassium
 			[Утв. (ацесульфам калия, синтез*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:"file://html/synthesys_of_caesium_chloride.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/synthesys_of_acesulfame.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
@@ -95,8 +77,7 @@ Definition_of_acesulfame_potassium
 => nrel_main_idtf:
 	[Опр.(ацесульфам калия)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				sweetener;
-				sulfamic_acid
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> sweetener; sulfamic_acid;;
+			*);;

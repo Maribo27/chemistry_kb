@@ -85,8 +85,7 @@ Definition_of_crystal
 => nrel_main_idtf:
 	[Опр.(кристалл)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				solid;
-				atom
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> solid; atom;;
+			*);;

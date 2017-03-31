@@ -10,14 +10,29 @@ elem_Rh
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-			
+
+=> nrel_group: 9;
+=> nrel_period: 5;
+=> nrel_periodic_number: 45;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_one;;
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: six;;
+	
+*);
+		
 <- rrel_key_sc_element:
 	...
 	(*
@@ -70,4 +85,10 @@ elem_Rh
 Definition_of_rhodium
 => nrel_main_idtf:
 	[Опр.(Родий)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

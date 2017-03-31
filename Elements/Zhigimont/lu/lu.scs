@@ -11,7 +11,11 @@ elem_Lu
 	
 	*);
 
-=> nrel_oxidation_state: [+3];
+=> nrel_chemical_properties: ...
+(*
+=> nrel_oxidation_state: plus_three;;
+*);
+
 => nrel_periodic_number: [71];
 
 => nrel_color: color_gray;

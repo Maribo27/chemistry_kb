@@ -1,0 +1,28 @@
+bromide
+        => nrel_main_idtf:
+                [bromide](*<- lang_en;;*);
+                [бромид](*<- lang_ru;;*);
+				
+<- rrel_key_sc_element:
+	Definition_of_bromide
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="bromide">Броми́д</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrobromic_acid">бромоводородной кислоты</sc_element> HBr.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_bromide
+=> nrel_main_idtf:
+	[Опр.(бромид)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; hydrobromic_acid;;
+			*);;

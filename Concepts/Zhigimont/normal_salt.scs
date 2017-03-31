@@ -27,10 +27,7 @@ Definition_of_normal_salt
 => nrel_main_idtf:
 	[Опр.(средняя соль)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				cation;
-				metal;
-				acid;
-				elem_H
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> cation; metal; acid; elem_H;;
+			*);;

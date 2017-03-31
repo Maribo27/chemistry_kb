@@ -23,6 +23,5 @@ product=>nrel_main_idtf:[продукт](*<-lang_ru;;*);;
 reagent=>nrel_main_idtf:[реагент](*<-lang_ru;;*);;
 hydrogen_chloride=>nrel_main_idtf:[хлористый водород](*<-lang_ru;;*);;
 
-
 nrel_chemical_properties => nrel_main_idtf:[химические свойства*](*<-lang_ru;;*);;
 nrel_chemical_properties <- sc_node_norole_relation;;

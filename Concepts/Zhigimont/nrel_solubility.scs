@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_solubility;;
+nrel_solubility
+=> nrel_main_idtf:  [solubility*](*<- lang_en;;*);
+						[растворимость*](*<- lang_ru;;*);
+						
+<- rrel_key_sc_element:
+	Definition_of_nrel_solubility
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_solubility">Раствори́мость</sc_element></b> — способность <sc_element sys_idtf="substance">вещества</sc_element> образовывать <sc_element sys_idtf="solution">растворы</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+	
+=> nrel_second_domain: number;
+=> nrel_first_domain: substance;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: ...
+	(* 
+    -> substance; number;;
+	*);;
+	*);
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;;
+
+Definition_of_nrel_solubility
+=> nrel_main_idtf:
+	[Опр.(растворимость*)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> substance; solution;;
+			*);;
