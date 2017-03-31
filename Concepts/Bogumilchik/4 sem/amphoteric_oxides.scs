@@ -22,6 +22,11 @@ amphoteric_oxide
             => nrel_format: format_html;;
         *);;
     *);;
+    <= nrel_using_constants:...
+    (*
+        -> salt_forming_oxide;;
+        -> metal;;
+    *);;
 *);
 
 <- rrel_key_sc_element:...
@@ -42,11 +47,5 @@ amphoteric_oxide
         *);;
     *);;
 *);
-
-<= nrel_using_constants:
-{
-    salt_forming_oxide;
-    metal
-};
 
 <- rrel_key_sc_element: section_oxides;;

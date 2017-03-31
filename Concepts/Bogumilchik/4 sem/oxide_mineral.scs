@@ -14,6 +14,13 @@ oxide_mineral
                 => nrel_format: format_html;;
             *);;
     *);;
+    <= nrel_using_constants:...
+    (*
+        -> mineral;;
+        -> chemical_compound;;
+        -> nonmetal;;
+        -> oxygen;;
+    *);;
 *);
 
 <= nrel_subdividing: ...
@@ -73,14 +80,6 @@ oxide_mineral
                 (* <-lang_ru;; *);;
         *);;
     *);
-
-<= nrel_using_constants:
-{
-    mineral;
-    chemical_compound;
-    nonmetal;
-    oxygen
-};
 
 <= nrel_inclusion: mineral;
 <= nrel_inclusion: oxide;

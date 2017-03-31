@@ -15,6 +15,14 @@ oxide
                 => nrel_format: format_html;;
             *);;
     *);;
+
+    <= nrel_using_constants:...
+    (*
+        -> complex_substance;;
+        -> atom;;
+        -> chemical_element;;
+        -> oxygen;;
+    *);;
 *);
 
 <= nrel_subdividing: ...
@@ -75,13 +83,5 @@ oxide
                 [Взаимодействие солей слабых неустойчивых кислот с более сильными кислотами.](* <-lang_ru;; *);;
         *);;
     *);
-
-<= nrel_using_constants:
-{
-    complex_substance;
-    atom;
-    chemical_element;
-    oxygen
-};
 
 <- rrel_key_sc_element: section_oxides;;

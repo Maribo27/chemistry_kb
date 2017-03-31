@@ -8,28 +8,48 @@ elem_U
 		(* 
 		-> rrel_example:"file://htmls/u.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: 7;
+=> nrel_period: 7;
+=> nrel_periodic_number: 92;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*	
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;	
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: five;;
+	=> nrel_valence: six;;
+	=> nrel_valence: four;;	
+*);
 
 
-<- rrel_key_sc_element: number_of_uranium
+<- rrel_key_sc_element: physical_properties_of_u
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (уран, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (уран, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер урана равен 92] (*<- lang_ru;;*);;
+			-> rrel_example:[Уран — очень тяжёлый, серебристо-белый глянцеватый металл. В чистом виде он немного мягче стали, ковкий, гибкий, обладает небольшими парамагнитными свойствами.] (*<- lang_ru;;*);;
 		*);;
 	*);
-	<- rrel_key_sc_element:
+
+<- rrel_key_sc_element:
 	...
 	(*
 		<- description_of_a_typical_instance;;
@@ -42,30 +62,7 @@ elem_U
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-<- rrel_key_sc_element: chemical_properties_of_uranium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (уран, химические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Уран может проявлять степени окисления от +3 до +6.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: physical_properties_of_uranium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (уран, физические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Уран — очень тяжёлый, серебристо-белый глянцеватый металл. В чистом виде он немного мягче стали, ковкий, гибкий, обладает небольшими парамагнитными свойствами.  ] (*<- lang_ru;;*);;
-		*);;
 	*);;
-
 
 
 

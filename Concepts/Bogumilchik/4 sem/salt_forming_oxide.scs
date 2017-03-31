@@ -16,6 +16,15 @@ salt_forming_oxide
             => nrel_format: format_html;;
         *);;
     *);;
+    <= nrel_using_constants:...
+    (*
+        -> oxide;;
+        -> nonmetal;;
+        -> metal;;
+        -> acid;;
+        -> basis;;
+        -> salt;;
+    *);;
 *);
 
 <= nrel_subdividing: ...
@@ -27,13 +36,4 @@ salt_forming_oxide
     -> basic_oxide;;
 *);
 
-<= nrel_using_constants:
-{
-    oxide;
-    nonmetal;
-    metal;
-    acid;
-    basis;
-    salt
-};
 <- rrel_key_sc_element: section_oxides;;

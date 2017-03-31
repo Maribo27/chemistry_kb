@@ -8,28 +8,55 @@ elem_Ti
 		(* 
 		-> rrel_example:"file://htmls/ti.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: 4;
+=> nrel_period: 4;
+=> nrel_periodic_number: 22;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*	
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+*);
 
 
-<- rrel_key_sc_element: number_of_titanium
+<- rrel_key_sc_element: chemical_properties_of_ti
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (титан, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (титан, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер титана равен 22] (*<- lang_ru;;*);;
+			-> rrel_example:[Устойчив к коррозии благодаря оксидной плёнке, но при измельчении в порошок, а также в тонкой стружке или проволоке титан пирофорен.] (*<- lang_ru;;*);;
 		*);;
 	*);
-	<- rrel_key_sc_element:
+
+<- rrel_key_sc_element: physical_properties_of_ti
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Титан — легкий серебристо-белый металл.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
 	...
 	(*
 		<- description_of_a_typical_instance;;
@@ -42,30 +69,7 @@ elem_Ti
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-<- rrel_key_sc_element: chemical_properties_of_titanium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (титан, химические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Устойчив к коррозии благодаря оксидной плёнке, но при измельчении в порошок, а также в тонкой стружке или проволоке титан пирофорен.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: physical_properties_of_titanium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (титан, физические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Титан — легкий серебристо-белый металл.] (*<- lang_ru;;*);;
-		*);;
 	*);;
-
 
 
 

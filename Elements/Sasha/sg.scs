@@ -8,29 +8,32 @@ elem_Sg
 		(* 
 		-> rrel_example:"file://htmls/sg.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_seaborgium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (сиборгий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер сиборгия равен 106] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
-	<- rrel_key_sc_element:
+=> nrel_group: 6;
+=> nrel_period: 7;
+=> nrel_periodic_number: 106;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_four;;	
+	=> nrel_oxidation_state: plus_six;;	
+	=> nrel_valence: four;;	
+	=> nrel_valence: six;;	
+*);
+
+
+
+<- rrel_key_sc_element:
 	...
 	(*
 		<- description_of_a_typical_instance;;
@@ -44,6 +47,7 @@ elem_Sg
 			*);;
 		*);;
 	*);;
+
 
 
 Definition_of_seaborgium

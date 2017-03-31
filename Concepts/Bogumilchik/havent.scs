@@ -1,8 +1,0 @@
-oligosaccharide <- sc_node_not_relation; => nrel_main_idtf:[олигосахарид](*<-lang_ru;;*);;
-monosaccharide <- sc_node_not_relation; => nrel_main_idtf:[моносахарид](*<-lang_ru;;*);;
-reducing_disaccherides <- sc_node_not_relation; => nrel_main_idtf:[восстанавливающий дисахарид](*<-lang_ru;;*);;
-non_reducing_disaccheride <- sc_node_not_relation; => nrel_main_idtf:[невосстанавливающий дисахарид](*<-lang_ru;;*);;
-organic_compound <- sc_node_not_relation; => nrel_main_idtf:[органическое соединение](*<-lang_ru;;*);;
-carbohydrate <- sc_node_not_relation; => nrel_main_idtf:[углевод](*<-lang_ru;;*);;
-nrel_optical_activity <- sc_node_norole_relation; => nrel_main_idtf:[оптическая активность*](*<-lang_ru;;*);;
-nrel_charge <- sc_node_norole_relation; => nrel_main_idtf:[заряд*](*<-lang_ru;;*);;

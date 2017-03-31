@@ -10,11 +10,18 @@ colour_blue<-sc_node_not_relation;;
 colour_yellow=>nrel_main_idtf:[жёлтый цвет](*<-lang_ru;;*);;
 colour_yellow<-sc_node_not_relation;;
 
-nrel_color_of_the_flame_during_combustion=>nrel_main_idtf:[цвет пламени во время горения](*<-lang_ru;;*);;
-nrel_color_of_the_flame_during_combustion<-sc_node_norole_relation;;
+nrel_color_of_the_flame_during_combustion => nrel_main_idtf:[цвет пламени во время горения](*<-lang_ru;;*);;
+nrel_color_of_the_flame_during_combustion <- sc_node_norole_relation;;
 
 
 colour_red<=nrel_color_of_the_flame_during_combustion:LiCl; SrCl2; CaSO4;Ba;;
 colour_green<=nrel_color_of_the_flame_during_combustion:CuSO4; P2;elem_Cu;elem_K;;
 colour_blue<=nrel_color_of_the_flame_during_combustion:CuCl;elem_Se;;
 colour_yellow<=nrel_color_of_the_flame_during_combustion:NaCl;;
+
+color_white_blue => nrel_main_idtf:
+	[бело-голубой цвет*](* <- lang_ru;; *);;
+color_silver_grey => nrel_main_idtf:
+	[серебристо-серый цвет*](* <- lang_ru;; *);;
+color_white_silver => nrel_main_idtf:
+	[серебристо-белый цвет*](* <- lang_ru;; *);;

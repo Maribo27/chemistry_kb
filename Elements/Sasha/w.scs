@@ -8,28 +8,59 @@ elem_W
 		(* 
 		-> rrel_example:"file://htmls/w.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+
+=> nrel_group: 6;
+=> nrel_period: 6;
+=> nrel_periodic_number: 74;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*	
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;	
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: five;;
+	=> nrel_valence: four;;	
+	=> nrel_valence: six;;
+*);
 
 
-<- rrel_key_sc_element: number_of_wolframium
+<- rrel_key_sc_element: chemical_properties_of_w
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (вольфрам, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (вольфрам, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер вольфрама равен 74] (*<- lang_ru;;*);;
+			-> rrel_example:[Проявляет валентность от 2 до 6. Наиболее устойчив 6-валентный вольфрам. 3- и 2-валентные соединения вольфрама неустойчивы и практического значения не имеют.] (*<- lang_ru;;*);;
 		*);;
 	*);
-	<- rrel_key_sc_element:
+
+<- rrel_key_sc_element: physical_properties_of_w
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (вольфрам, физические свойства*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Вольфрам — блестящий светло-серый металл, имеющий самые высокие доказанные температуры плавления и кипения.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
 	...
 	(*
 		<- description_of_a_typical_instance;;
@@ -42,30 +73,7 @@ elem_W
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-<- rrel_key_sc_element: chemical_properties_of_wolframium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (вольфрам, химические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Проявляет валентность от 2 до 6. Наиболее устойчив 6-валентный вольфрам. 3- и 2-валентные соединения вольфрама неустойчивы и практического значения не имеют.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: physical_properties_of_wolframium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (вольфрам, физические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Вольфрам — блестящий светло-серый металл, имеющий самые высокие доказанные температуры плавления и кипения.] (*<- lang_ru;;*);;
-		*);;
 	*);;
-
 
 
 

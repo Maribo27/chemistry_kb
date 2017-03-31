@@ -16,6 +16,14 @@ basic_oxide
             => nrel_format: format_html;;
         *);;
     *);;
+
+    <= nrel_using_constants:...
+    (*
+        -> oxide;;
+        -> metal;;
+        -> nrel_oxidation_state;;
+        -> acid;;
+    *);;
 *);
 
 <- rrel_key_sc_element:...
@@ -50,14 +58,6 @@ basic_oxide
         *);;
     *);
 
-<=> nrel_interaction:strong_acid;water;acid_oxide;hydrogen;
-
-<= nrel_using_constants:
-{
-    oxide;
-    metal;
-    nrel_oxidation_state;
-    acid
-};
+=> nrel_interaction:strong_acid;water;acid_oxide;hydrogen;
 
 <- rrel_key_sc_element: section_oxides;;

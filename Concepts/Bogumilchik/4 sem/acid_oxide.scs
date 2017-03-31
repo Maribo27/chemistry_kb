@@ -16,6 +16,12 @@ acid_oxide
             => nrel_format: format_html;;
         *);;
     *);;
+    <= nrel_using_constants:...
+    (*
+        -> oxide;;
+        -> nrel_oxidation_state;;
+        -> acid;;
+    *);;
 *);
 
 <- rrel_key_sc_element:...
@@ -52,7 +58,7 @@ acid_oxide
         *);;
     *);
 
-<=> nrel_interaction:salt;water;basic_oxide;acid;basis;amphoteric_oxide;
+=> nrel_interaction:salt;water;basic_oxide;acid;basis;amphoteric_oxide;
 
 <- rrel_key_sc_element: ...
     (*
@@ -65,12 +71,5 @@ acid_oxide
                 [Кислотные оксиды могут быть получены при дегидратации соответствующей кислоты.](* <-lang_ru;; *);;
         *);;
     *);
-
-<= nrel_using_constants:
-{
-    oxide;
-    nrel_oxidation_state;
-    acid
-};
 
 <- rrel_key_sc_element: section_oxides;;
