@@ -104,10 +104,7 @@ Definition_of_caesium_auride
 => nrel_main_idtf:
 	[Опр.(аурид цезия)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_compound;
-				binary_compound;
-				elem_Cs;
-				elem_Au
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; binary_compound; elem_Cs; elem_Au;;
+			*);;

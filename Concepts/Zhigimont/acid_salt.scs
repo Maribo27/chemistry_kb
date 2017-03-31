@@ -42,13 +42,7 @@ Definition_of_acid_salt
 => nrel_main_idtf:
 	[Опр.(кислая соль)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				salt;
-				cation;
-				metal;
-				ammonia;
-				elem_H;
-				anion;
-				nrel_acid_residue
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> salt; cation; metal; ammonia; elem_H; anion; nrel_acid_residue;;
+			*);;

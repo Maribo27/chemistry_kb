@@ -56,9 +56,7 @@ Definition_of_chemical_substance
 => nrel_main_idtf:
 	[Опр.(химическое вещество)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				substance;
-				atom;
-				plasma
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> substance; atom; plasma;;
+			*);;

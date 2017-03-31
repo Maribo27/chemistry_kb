@@ -334,13 +334,6 @@ nrel_chemical_properties
 	[chemical properties*]
 	(* <- lang_en;; *);;
 
-chemical_properties_of_Lr
-=> nrel_main_idtf:
-	[химические свойства лоуренсия]
-	(* <- lang_ru;; *);
-	[chemical properties of lawrencium]
-	(* <- lang_en;; *);;
-
 sc_node_norole_relation-> nrel_application;;
 nrel_application
 => nrel_main_idtf:
@@ -348,3 +341,92 @@ nrel_application
 	(* <- lang_ru;; *);
 	[application*]
 	(* <- lang_en;; *);;
+
+	solvent_state
+=> nrel_main_idtf:
+	[Разбиение растворителей по структуре]
+	(* <- lang_ru;;	*);;
+	
+solution_concentration
+=> nrel_main_idtf:
+	[Разбиение растворов по концентрации]
+	(* <- lang_ru;;	*);;
+	
+rrel_organic_solvent
+=> nrel_main_idtf:
+    [organic solvent'](*<- lang_en;;*);
+	[органический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_inorganic_solvent
+=> nrel_main_idtf:
+    [inorganic solvent'](*<- lang_en;;*);
+	[неорганический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_liquid_solvent
+=> nrel_main_idtf:
+    [liquid solvent'](*<- lang_en;;*);
+	[жидкий растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_solid_solvent
+=> nrel_main_idtf:
+    [solid solvent'](*<- lang_en;;*);
+	[твёрдый растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_aprotic_solvent
+=> nrel_main_idtf:
+    [aprotic solvent'](*<- lang_en;;*);
+	[апротонный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_amphidic_solvent
+=> nrel_main_idtf:
+    [amphidic solvent'](*<- lang_en;;*);
+	[амфипротный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_protophilic_solvent
+=> nrel_main_idtf:
+    [protophilic solvent'](*<- lang_en;;*);
+	[протофильный растворитель']
+	(* <- lang_ru;;	*);;
+	
+multielement_compound
+=> nrel_main_idtf:
+    [многоэлементное соединение](*<- lang_en;;*);
+	[multielement compound]
+	(* <- lang_ru;;	*);;
+	
+complex_substance_structure
+=> nrel_main_idtf:
+	[Разбиение сложных веществ по структуре]
+	(* <- lang_ru;;	*);;
+
+substance_state_of_matter
+=> nrel_main_idtf:
+	[Разбиение веществ по агрегатному состоянию]
+	(* <- lang_ru;;	*);;
+
+solution_molecule_size
+=> nrel_main_idtf:
+	[Разбиение растворов по размеру частиц]
+	(* <- lang_ru;;	*);;
+
+colloidal_solution
+=> nrel_main_idtf:
+    [colloidal solution]
+    (*<- lang_en;;*);
+	[коллоидальный раствор]
+	(* <- lang_ru;;	*);;
+
+molecular_solution
+=> nrel_main_idtf:
+    [molecular solution]
+    (*<- lang_en;;*);
+	[истинный раствор]
+	(* <- lang_ru;;	*);
+	[молекулярный раствор]
+	(* <- lang_ru;;	*);;

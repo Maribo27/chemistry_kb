@@ -45,9 +45,7 @@ Definition_of_elementary_substance
 => nrel_main_idtf:
 	[Опр.(простое вещество)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				substance;
-				atom;
-				chemical_element
-			};;
+<= nrel_using_constants: ...
+			(*
+				-> substance; atom; chemical_element;;
+			*);;

@@ -1,0 +1,28 @@
+saturated_solution
+        => nrel_main_idtf:
+                [saturated solution](*<- lang_en;;*);
+                [насыщенный раствор](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	Definition_of_saturated_solution
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="saturated_solution">Насыщенный раствор</sc_element></b> — <sc_element sys_idtf="solution">раствор</sc_element>, в котором <sc_element sys_idtf="rrel_solute">растворённое вещество</sc_element> при данных условиях достигло максимальной <sc_element sys_idtf="nrel_concentration">концентрации</sc_element> и больше не растворяется.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_saturated_solution
+=> nrel_main_idtf:
+	[Опр.(насыщенный раствор)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> solution; nrel_concentration; rrel_solute;;
+				
+			*);;
