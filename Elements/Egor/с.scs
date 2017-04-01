@@ -8,15 +8,16 @@ elem_C
 		(* 
 		-> rrel_example:"file://htmls/с.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		{
+			chemical_element;
+			period;
+			nrel_group
+		};;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
+=> nrel_group: 14;
+=> nrel_period: 2;
+=> nrel_periodic_number: 6;
 
 <- rrel_key_sc_element:
 	...

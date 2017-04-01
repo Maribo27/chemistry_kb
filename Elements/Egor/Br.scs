@@ -8,15 +8,17 @@ elem_Br
 		(* 
 		-> rrel_example:"file://htmls/Br.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
+	<= nrel_using_constants:
 			{
 				chemical_element;
 				period;
 				nrel_group
 				
-			};
+			};;
+	*);
+=> nrel_group: 17;
+=> nrel_period: 4;
+=> nrel_periodic_number: 35;
 
 
 <- rrel_key_sc_element: number_of_br

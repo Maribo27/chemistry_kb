@@ -8,16 +8,17 @@ elem_Cu
 		(* 
 		-> rrel_example:"file://htmls/Cu.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		{
+			chemical_element;
+			period;
+			nrel_group
+		};;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
 
+=> nrel_group: 11;
+=> nrel_period: 4;
+=> nrel_periodic_number: 29;
 
 <- rrel_key_sc_element: number_of_cu
 	(*

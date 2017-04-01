@@ -8,16 +8,17 @@ elem_Er
 		(* 
 		-> rrel_example:"file://htmls/Er.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		{
+			chemical_element;
+			period;
+			nrel_group
+		};;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
 
+=> nrel_group: 3;
+=> nrel_period: 5;
+=> nrel_periodic_number: 68;
 
 <- rrel_key_sc_element: number_of_er
 	(*

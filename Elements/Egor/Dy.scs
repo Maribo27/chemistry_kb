@@ -8,16 +8,17 @@ elem_Dy
 		(* 
 		-> rrel_example:"file://htmls/Dy.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		{
+			chemical_element;
+			period;
+			nrel_group
+		};;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
 
+=> nrel_group: 3;
+=> nrel_period: 6;
+=> nrel_periodic_number: 66;
 
 <- rrel_key_sc_element: number_of_dy
 	(*
