@@ -14,13 +14,13 @@ solid
 		(* 
 		-> rrel_example:"file://htmls/solid.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:..
+			(*
+				->nrel_state_of_aggregation;;
+				->substance;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				nrel_state_of_aggregation;
-				substance
-			};
+
 
 
 
@@ -41,7 +41,7 @@ solid
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (твёрдое тело, атом, молекула)](*<- lang_ru;;*);;
+			[Прим. (твёрдое тело, атом, молекула)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Атомы и молекулы, составляющие твёрдое тело, плотно упакованы вместе. Другими словами, молекулы твёрдого тела практически сохраняют своё взаимное положение относительно других молекул[4] и удерживаются между собой межмолекулярным взаимодействием.] (*<- lang_ru;;*);;

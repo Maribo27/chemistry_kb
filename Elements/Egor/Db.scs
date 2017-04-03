@@ -8,17 +8,23 @@ elem_Db
 		(* 
 		-> rrel_example:"file://htmls/Db.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 5;
 => nrel_period: 7;
 => nrel_periodic_number: 105;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;plus_four;plus_five;;
+	=> nrel_valence: five;;
+*);
 
 <- rrel_key_sc_element:
 	...
@@ -39,7 +45,7 @@ elem_Db
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дубний, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (дубний, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер дубния равен 105.] (*<- lang_ru;;*);;
@@ -51,7 +57,7 @@ elem_Db
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дубний, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (дубний, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Дубний - металл, повидимому находится в твердом состоянии при 298 K (25 °C). Цвет неизвестен, но, вероятно, металлический и серебристо-белый или серый.  ] (*<- lang_ru;;*);;
@@ -63,7 +69,7 @@ elem_Db
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дубний, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (дубний, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Дубний — радиоактивен. ] (*<- lang_ru;;*);;
@@ -75,7 +81,7 @@ elem_Db
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дубний, получение*)](*<- lang_ru;;*);;
+			[Прим. (дубний, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Дубний — искуственно синтезированный элемент, в природе не встречается. ] (*<- lang_ru;;*);;

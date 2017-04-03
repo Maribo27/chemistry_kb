@@ -8,24 +8,29 @@ elem_Ca
 		(* 
 		-> rrel_example:"file://htmls/Ca.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};;
+			*);;
 	*);
 
 => nrel_group: 2;
 => nrel_period: 4;
 => nrel_periodic_number: 20;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_valence: two;;
+*);
 
 <- rrel_key_sc_element: number_of_ca
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кальций, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (кальций, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер кальция равен 20] (*<- lang_ru;;*);;
@@ -36,7 +41,7 @@ elem_Ca
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кальций, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (кальций, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Простое вещество кальций — мягкий, химически активный щёлочноземельный металл серебристо-белого цвета. ] (*<- lang_ru;;*);;
@@ -49,7 +54,7 @@ elem_Ca
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кальций, химическая активность)](*<- lang_ru;;*);;
+			[Прим. (кальций, химическая активность)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Из-за высокой химической активности кальций в свободном виде в природе не встречается.  ] (*<- lang_ru;;*);;
@@ -75,7 +80,7 @@ elem_Ca
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кальций, щёлочноземельный металл)](*<- lang_ru;;*);;
+			[Прим. (кальций, щёлочноземельный металл)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Кальций — типичный щёлочноземельный металл.] (*<- lang_ru;;*);;

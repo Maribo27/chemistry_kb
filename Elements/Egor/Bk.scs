@@ -8,18 +8,23 @@ elem_Bk
 		(* 
 		-> rrel_example:"file://htmls/Bk.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};;
+			*);;
 	*);
 
 => nrel_group: 3;
 => nrel_period: 7;
 => nrel_periodic_number: 97;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;plus_four;;
+	=> nrel_valence: three;four;;
+*);
 
 <- rrel_key_sc_element:
 	...
@@ -41,7 +46,7 @@ elem_Bk
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (берклий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер берклия равен 97.] (*<- lang_ru;;*);;
@@ -53,7 +58,7 @@ elem_Bk
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (берклий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Простое вещество берклий — радиоактивный металл серебристо-белого цвета.] (*<- lang_ru;;*);;
@@ -65,7 +70,7 @@ elem_Bk
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (берклий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Берклий очень реакционноспособен.] (*<- lang_ru;;*);;
@@ -77,7 +82,7 @@ elem_Bk
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, взаимодействие*, кислород, галоген, сера)](*<- lang_ru;;*);;
+			[Прим. (берклий, взаимодействие*, кислород, галоген, сера)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Берклий взаимодействует с кислородом (оксид и диоксид), галогенами и серой.] (*<- lang_ru;;*);;
@@ -89,7 +94,7 @@ elem_Bk
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, соединение*, кислота)](*<- lang_ru;;*);;
+			[Прим. (берклий, соединение*, кислота)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Берклий образует комплексные соединения с минеральными и органическими кислотами.] (*<- lang_ru;;*);;
@@ -100,7 +105,7 @@ elem_Bk
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, получение*)](*<- lang_ru;;*);;
+			[Прим. (берклий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Изотопы берклия с массовыми числами до 248 получают из соответствующих изотопов америция или кюрия по реакции (α, n) или (α, p, n). Вк249 образуется в ядерном реакторе при облучении нейтронами U238 или Pu239. Вк250 получают облучением Вк249 по реакции (γ, n).] (*<- lang_ru;;*);;
@@ -112,7 +117,7 @@ elem_Bk
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, применение*)](*<- lang_ru;;*);;
+			[Прим. (берклий, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Нуклид Вк249 используется для получения изотопов калифорния. Использовался для получения 117 элемента.  ] (*<- lang_ru;;*);;

@@ -8,23 +8,29 @@ elem_Ho
 		(* 
 		-> rrel_example:"file://htmls/Ho.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 3;
 => nrel_period: 6;
 => nrel_periodic_number: 67;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: three;;
+*);
 
 <- rrel_key_sc_element: number_of_ho
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гольмий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (гольмий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер гольмия равен 67.] (*<- lang_ru;;*);;
@@ -52,7 +58,7 @@ elem_Ho
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гольмий, месторождения*)](*<- lang_ru;;*);;
+			[Прим. (гольмий, месторождения*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Гольмий входит в состав лантаноидов, которые часто встречаются в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
@@ -62,7 +68,7 @@ elem_Ho
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гольмий, получение*)](*<- lang_ru;;*);;
+			[Прим. (гольмий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Гольмий получают восстановлением фторида гольмия HoF3 кальцием.] (*<- lang_ru;;*);;
@@ -73,7 +79,7 @@ elem_Ho
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гольмий, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (гольмий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Медленно окисляется на воздухе, образуя Ho2O3. Взаимодействует с кислотами (кроме HF), образуя соли Ho3+. Реагирует при нагревании с хлором, бромом, азотом и водородом. Устойчив к действию фтора.] (*<- lang_ru;;*);;

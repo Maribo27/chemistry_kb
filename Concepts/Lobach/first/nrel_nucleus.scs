@@ -15,12 +15,12 @@ nrel_nucleus
 		(* 
 		-> rrel_example:"file://htmls/nrel_nucleus.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->atom;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				atom
-			};
+
 
 
 <- rrel_key_sc_element: charge_of_nucleus
@@ -30,7 +30,7 @@ nrel_nucleus
 			[Утв. (атомное ядро*, заряд*, атом)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Ядро заряжено положительно, заряд ядра определяет химический элемент, к которому относят атом..] (*<- lang_ru;;*);;
+			-> rrel_example:[ Ядро заряжено положительно, заряд ядра определяет химический элемент, к которому относят атом.] (*<- lang_ru;;*);;
 		*);;
 	*);
 

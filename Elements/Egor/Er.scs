@@ -8,23 +8,28 @@ elem_Er
 		(* 
 		-> rrel_example:"file://htmls/Er.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 3;
 => nrel_period: 5;
 => nrel_periodic_number: 68;
-
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: three;;
+*);
 <- rrel_key_sc_element: number_of_er
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (еропий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (еропий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер эрбия равен 68.] (*<- lang_ru;;*);;
@@ -53,7 +58,7 @@ elem_Er
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эрбий, месторождения*)](*<- lang_ru;;*);;
+			[Прим. (эрбий, месторождения*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Эрбий входит в состав лантаноидов, которые встречаются очень редко. Лантаноиды встречаются в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
@@ -63,7 +68,7 @@ elem_Er
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эрбий, получение*)](*<- lang_ru;;*);;
+			[Прим. (эрбий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Металлический эрбий получают электролизом расплава хлорида (фторида) эрбия ErCl3 (ErF3), а также кальцийтермическим восстановлением этих солей.] (*<- lang_ru;;*);;
@@ -75,7 +80,7 @@ elem_Er
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эрбий, применение*)](*<- lang_ru;;*);;
+			[Прим. (эрбий, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Монокристаллы оксида эрбия используются в качестве высокоэффективных лазерных материалов. ] (*<- lang_ru;;*);;
