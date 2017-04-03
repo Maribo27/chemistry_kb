@@ -1,0 +1,66 @@
+brass
+=> nrel_main_idtf:
+	[латунь]
+	(* <- lang_ru;;	*);;
+
+brass
+<- rrel_key_sc_element:
+	Definition_of_bronze
+	(* 
+		<- sc_explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:"file://htmls/brass.html" (* <-lang_ru;; *);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> elem_Cu;;
+			-> elem_Zn;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: elem_Zn;
+=> nrel_alloy_component: elem_Cu;
+=> nrel_alloy_component: elem_Ni;
+=> nrel_alloy_component: elem_Fe;
+=> nrel_alloy_component: elem_Mn;
+=> nrel_alloy_component: elem_Pb;
+=> nrel_melting_temperature: 880;
+=> nrel_density_of_substance: 8300;
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: additives_in_brass
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (латунь, добавки)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В латунь добавляют олово (меньше, чем цинка, иначе получится традиционная оловянная бронза), никель, свинец, марганца, железо.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: brass_Bi_Pb
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (латунь, висмут, свинец)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Висмут и свинец имеют вредное влияние на латунь, так как уменьшают способность к деформации в горячем состоянии.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_brass
+=> nrel_main_idtf:
+	[Опр.(латунь)]
+	(* <- lang_ru;;	*);;

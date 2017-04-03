@@ -15,16 +15,17 @@ heterogeneou_mixture
                                                         => nrel_format: format_html;;
                                                 *);;
                                         *);;
+        		<= nrel_using_constants:...
+                		(*
+                        		->mixture;;
+               			*);;
                 *);
-          <= nrel_subdividing:
-		      {
-			      suspension;
-			      emulsion;
-                              foam;
-                              aerosol			  
-		       };
+          <= nrel_subdividing:...
+		      (*
+			      ->suspension;;
+			      ->emulsion;;
+                              ->foam;;
+                              ->aerosol;;		  
+		       *);;
 
-        <= nrel_using_constants:
-                {
-                        mixture
-                };;
+

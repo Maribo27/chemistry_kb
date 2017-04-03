@@ -1,0 +1,71 @@
+duralumin
+=> nrel_main_idtf:
+	[дюралюминий]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[дюралюмин]
+	(* <- lang_ru;;	*);
+	[дюраль]
+	(* <- lang_ru;;	*);;
+
+duralumin
+<- rrel_key_sc_element:
+	Definition_of_duralumin
+	(* 
+		<- sc_explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:"file://htmls/duralumin.html" (* <-lang_ru;; *);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> elem_Al;;
+			-> elem_Cu;;
+			-> elem_Mg;;
+			-> elem_Mn;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: elem_Al;
+=> nrel_alloy_component: elem_Cu;
+=> nrel_alloy_component: elem_Mg;
+=> nrel_alloy_component: elem_Mn;
+=> nrel_melting_temperature: 600;
+=> nrel_density_of_substance: 2770;
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: substance_in_duralumin
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (дюралюминий, доля*, медь, магний, марганец, алюминий)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[  Основными легирующими элементами в нём являлись медь (4,5 % массы), магний (1,5 %) и марганец (0,5 %); остальное — алюминий (93,5 %).] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: duralumin_material
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (дюралюминий, материал)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Дюралюминий — основной конструкционный материал в авиации, космонавтике и других областях машиностроения, для которых принципиальную роль играет минимальная масса конструкции.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_duralumin
+=> nrel_main_idtf:
+	[Опр.(дюралюминий)]
+	(* <- lang_ru;;	*);;

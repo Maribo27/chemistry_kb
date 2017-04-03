@@ -16,13 +16,13 @@ gas
 		(* 
 		-> rrel_example:"file://htmls/gas.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->nrel_state_of_aggregation;;
+				->substance;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				nrel_state_of_aggregation;
-				substance
-			};
+
 
 
 <- rrel_key_sc_element:
@@ -67,7 +67,7 @@ gas
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (газ, объём*, поверхность*)](*<- lang_ru;;*);;
+			[Прим. (газ, объём*, поверхность*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Газы не имеют фиксированного объёма и не образуют свободной поверхности, а стремятся заполнить весь доступный объём ] (*<- lang_ru;;*);;
@@ -79,7 +79,7 @@ gas
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (газ, состояние*)](*<- lang_ru;;*);;
+			[Прим. (газ, состояние*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Газообразное состояние — самое распространённое состояние вещества Вселенной] (*<- lang_ru;;*);;

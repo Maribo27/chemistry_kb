@@ -8,22 +8,29 @@ elem_Cr
 		(* 
 		-> rrel_example:"file://htmls/Cr.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
 
+=> nrel_group: 6;
+=> nrel_period: 4;
+=> nrel_periodic_number: 24;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;plus_two;plus_three;plus_four;plus_five;plus_six;;
+	=> nrel_valence: one;two;three;four;five;six;;
+*);
 
 <- rrel_key_sc_element: number_of_cr
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (хром, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер хрома равен 24] (*<- lang_ru;;*);;
@@ -34,7 +41,7 @@ elem_Cr
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (хром, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[  Простое вещество хром  — твёрдый металл голубовато-белого цвета.   ] (*<- lang_ru;;*);;
@@ -47,7 +54,7 @@ elem_Cr
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, чёрный металл)](*<- lang_ru;;*);;
+			[Прим. (хром, чёрный металл)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Хром иногда относят к чёрным металлам.] (*<- lang_ru;;*);;
@@ -57,7 +64,7 @@ elem_Cr
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, твёрдость, металл)](*<- lang_ru;;*);;
+			[Прим. (хром, твёрдость, металл)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Хром имеет один из самых твердых чистых металлов.   ] (*<- lang_ru;;*);;
@@ -81,7 +88,7 @@ elem_Cr
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, хромирование)](*<- lang_ru;;*);;
+			[Прим. (хром, хромирование)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Хром используется в качестве износоустойчивых и красивых гальванических покрытий (хромирование).] (*<- lang_ru;;*);;
@@ -91,7 +98,7 @@ elem_Cr
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, сталь, сплав)](*<- lang_ru;;*);;
+			[Прим. (хром, сталь, сплав)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Хром — важный компонент во многих легированных сталях (в частности, нержавеющих), а также и в ряде других сплавов.] (*<- lang_ru;;*);;
@@ -102,7 +109,7 @@ elem_Cr
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, устойчивость, пассирование)](*<- lang_ru;;*);;
+			[Прим. (хром, устойчивость, пассирование)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Хром устойчив на воздухе за счёт пассивирования.] (*<- lang_ru;;*);;

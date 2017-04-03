@@ -24,12 +24,12 @@ nrel_alloy_component
 *);
 
 
-=> nrel_second_domain:
-{
-	metal;
-	chemical_element;
-	substance
-};
+=> nrel_second_domain:...
+(*
+	->metal;;
+	->chemical_element;;
+	->substance;;
+*);
 => nrel_first_domain: alloy;
 
 <- rrel_key_sc_element: properties_of_nrel_alloy_component

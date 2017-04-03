@@ -8,22 +8,29 @@ elem_Eu
 		(* 
 		-> rrel_example:"file://htmls/Eu.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
+=> nrel_group: 3;
+=> nrel_period: 6;
+=> nrel_periodic_number: 63;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;plus_three;;
+	=> nrel_valence: two;three;;
+*);
 
 
 <- rrel_key_sc_element: number_of_eu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (еропий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (еропий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер европия равен 63.] (*<- lang_ru;;*);;
@@ -49,7 +56,7 @@ elem_Eu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (европий, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (европий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[   Простое вещество европий — серебристо-белый металл, легко окисляющийся на воздухе. ] (*<- lang_ru;;*);;
@@ -62,7 +69,7 @@ elem_Eu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (европий, месторождения*)](*<- lang_ru;;*);;
+			[Прим. (европий, месторождения*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Европий входит в состав лантаноидов, которые часто встречаются в США, Казахстанe, России, Австралии, Бразилии, Индии, Скандинавии и на Украине[источник не указан 889 дней]. Крупнейшее в мире месторождение европия находится в Кении.] (*<- lang_ru;;*);;
@@ -72,7 +79,7 @@ elem_Eu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (европий, получение*)](*<- lang_ru;;*);;
+			[Прим. (европий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Металлический европий получают восстановлением Eu2O3 в вакууме лантаном или углеродом, а также электролизом расплава EuCl3.] (*<- lang_ru;;*);;
@@ -83,7 +90,7 @@ elem_Eu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (европий, химическме свойства*)](*<- lang_ru;;*);;
+			[Прим. (европий, химическме свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[На воздухе быстро окисляется, на поверхности металла всегда есть оксидная пленка. Хранят в банках или ампулах под слоем жидкого парафина или в керосине. Очень активен, может вытеснять из растворов солей почти все металлы.] (*<- lang_ru;;*);;
@@ -93,7 +100,7 @@ elem_Eu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (европий, применение*)](*<- lang_ru;;*);;
+			[Прим. (европий, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Европий используется в ядерной энергетике в качестве поглотителя нейтронов ] (*<- lang_ru;;*);;
@@ -105,7 +112,7 @@ elem_Eu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (европий, токсин)](*<- lang_ru;;*);;
+			[Прим. (европий, токсин)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Европий относится к малотоксичным элементам.] (*<- lang_ru;;*);;

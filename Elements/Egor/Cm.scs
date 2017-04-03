@@ -8,22 +8,29 @@ elem_Cm
 		(* 
 		-> rrel_example:"file://htmls/Cm.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
 
+=> nrel_group: 3;
+=> nrel_period: 7;
+=> nrel_periodic_number: 96;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;plus_four;;
+	=> nrel_valence: three;four;;
+*);
 
 <- rrel_key_sc_element: number_of_cm
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кюрий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (кюрий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер кюрия равен 96.] (*<- lang_ru;;*);;
@@ -52,7 +59,7 @@ elem_Cm
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кюрий, получение*)](*<- lang_ru;;*);;
+			[Прим. (кюрий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Определенные изотопы кюрия производят в атомных реакторах. Путём последовательного захвата нейтронов ядрами элементов-мишени происходит накопление атомов кюрия. После накопления кюрия в достаточных количествах его выделяют методами химической переработки, концентрируют и вырабатывают оксид кюрия.] (*<- lang_ru;;*);;
@@ -64,7 +71,7 @@ elem_Cm
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кюрий, применение*)](*<- lang_ru;;*);;
+			[Прим. (кюрий, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[В настоящий момент кюрий используется только в самых важных областях ядерных технологий. .  ] (*<- lang_ru;;*);;

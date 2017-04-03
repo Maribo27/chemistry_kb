@@ -1,0 +1,37 @@
+alloy_hardening
+=> nrel_main_idtf:
+	[упрочнение сплавов]
+	(* <- lang_ru;;	*);;
+
+alloy_hardening
+<- rrel_key_sc_element:
+	Definition_of_alloy_hardening
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/alloy_hardening.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->alloy;;
+				->chemical_element;;
+			*);;
+	*);;
+alloy_hardening
+<= nrel_subdividing:...
+		      (*
+			     	->hardening(*=> nrel_main_idtf:[наклёп](* <- lang_ru;;	*);;*);;
+				->recrystallization(*=> nrel_main_idtf:[перекристаллизация](* <- lang_ru;;	*);;*);;
+				->precipitation_hardening(*=> nrel_main_idtf:[дисперсионное твердение](* <- lang_ru;;	*);;*);;
+				->martensitic_transformation(*=> nrel_main_idtf:[мартенситное превращение](* <- lang_ru;;	*);;*);;  
+		       *);;
+
+Definition_of_alloy_hardening
+=> nrel_main_idtf:
+	[Опр.(упрочнение сплавов)]
+	(* <- lang_ru;;	*);;
+
+
+

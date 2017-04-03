@@ -8,22 +8,29 @@ elem_Cl
 		(* 
 		-> rrel_example:"file://htmls/Cl.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
 
+=> nrel_group: 17;
+=> nrel_period: 3;
+=> nrel_periodic_number: 17;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_one;zero;plus_one;plus_three;plus_five;plus_seven;;
+	=> nrel_valence: one;three;five;seven;;
+*);
 
 <- rrel_key_sc_element: number_of_cl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (углерод, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (углерод, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер углерода равен 17] (*<- lang_ru;;*);;
@@ -34,7 +41,7 @@ elem_Cl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлор, химические свойства)](*<- lang_ru;;*);;
+			[Прим. (хлор, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Простое вещество хлор при нормальных условиях — ядовитый газ желтовато-зелёного цвета, тяжелее воздуха, с резким запахом и сладковатым, «металлическим» вкусом.  ] (*<- lang_ru;;*);;
@@ -47,7 +54,7 @@ elem_Cl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлор, горение)](*<- lang_ru;;*);;
+			[Прим. (хлор, горение)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Газообразный хлор относительно легко сжижается.  ] (*<- lang_ru;;*);;
@@ -57,7 +64,7 @@ elem_Cl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлор, взаимодействие, металл)](*<- lang_ru;;*);;
+			[Прим. (хлор, взаимодействие, металл)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Хлор непосредственно реагирует почти со всеми металлами.  ] (*<- lang_ru;;*);;
@@ -82,7 +89,7 @@ elem_Cl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлор, физические свойства)](*<- lang_ru;;*);;
+			[Прим. (хлор, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Молекула хлора двухатомная .] (*<- lang_ru;;*);;

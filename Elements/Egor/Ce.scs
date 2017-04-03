@@ -8,22 +8,28 @@ elem_Ce
 		(* 
 		-> rrel_example:"file://htmls/Ce.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
 
-
+=> nrel_group: 3;
+=> nrel_period: 6;
+=> nrel_periodic_number: 58;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;plus_four;;
+	=> nrel_valence: three;four;;
+*);
 <- rrel_key_sc_element: number_of_ce
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (церий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (церий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер церия равен 58.] (*<- lang_ru;;*);;
@@ -49,7 +55,7 @@ elem_Ce
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кадмий, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (кадмий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[   Церий представляет собой серебристо-белый вязкий и ковкий металл, легко поддаётся ковке и механической обработке при комнатной температуре. ] (*<- lang_ru;;*);;
@@ -62,7 +68,7 @@ elem_Ce
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (церий, месторождения*)](*<- lang_ru;;*);;
+			[Прим. (церий, месторождения*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Главные месторождения церия находятся в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
@@ -72,7 +78,7 @@ elem_Ce
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (церий, получение*)](*<- lang_ru;;*);;
+			[Прим. (церий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Церий выделяют из смеси редкоземельных элементов процессами экстракции и хроматографии. Получают электролизом расплава фторида церия CeF3.] (*<- lang_ru;;*);;
@@ -83,7 +89,7 @@ elem_Ce
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (церий, химическме свойства*)](*<- lang_ru;;*);;
+			[Прим. (церий, химическме свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Церий редкоземельный металл, неустойчив на воздухе, постепенно окисляется, превращаясь в белый оксид и карбонат церия.] (*<- lang_ru;;*);;
@@ -93,7 +99,7 @@ elem_Ce
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (церий, взаимодействие*, окисление*)](*<- lang_ru;;*);;
+			[Прим. (церий, взаимодействие*, окисление*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Церий реагирует с кислотами, при кипячении окисляется водой, устойчив к действию щелочей. Энергично взаимодействует с галогенами, халькогенами, азотом и углеродом.] (*<- lang_ru;;*);;
@@ -105,7 +111,7 @@ elem_Ce
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (церий, биоаккумуляция*)](*<- lang_ru;;*);;
+			[Прим. (церий, биоаккумуляция*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Церий обладает способностью к биоаккумуляции.] (*<- lang_ru;;*);;

@@ -15,12 +15,12 @@ nrel_electric_charge
 		(* 
 		-> rrel_example:"file://htmls/nrel_electric_charge.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->substance;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				substance
-			};
+
 
 <=nrel_first_domain:...(*
 			->substance;;

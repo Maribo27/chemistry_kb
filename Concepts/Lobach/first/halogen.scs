@@ -18,15 +18,15 @@ halogen
 		(* 
 		-> rrel_example:"file://htmls/halogen.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				nrel_group;
-				periodic_table
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->nrel_group;;
+				->periodic_table;;
 				
-			};
+			*);;
+
+	*);
 
 
 <- rrel_key_sc_element:
@@ -82,7 +82,7 @@ halogen
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (галогены, металл, соль)](*<- lang_ru;;*);;
+			[Прим. (галогены, металл, соль)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ При взаимодействии с металлами возникает ионная связь, и образуются соли. ] (*<- lang_ru;;*);;

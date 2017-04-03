@@ -17,14 +17,14 @@ chemical_compound
 		(* 
 		-> rrel_example:"file://htmls/chemical_compound.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->molecule;;
+				->atom;;
+				->complex_substance;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				molecule;
-				atom;
-				complex_substance
-			};
+
 
 <- rrel_key_sc_element:
 	... (*
