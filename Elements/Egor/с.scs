@@ -8,16 +8,22 @@ elem_C
 		(* 
 		-> rrel_example:"file://htmls/с.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 => nrel_group: 14;
 => nrel_period: 2;
 => nrel_periodic_number: 6;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_four;plus_two;plus_four;;
+	=> nrel_valence: four;;
+*);
 
 <- rrel_key_sc_element:
 	...
@@ -38,7 +44,7 @@ elem_C
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (углерод, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (углерод, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер углерода равен 6] (*<- lang_ru;;*);;
@@ -49,7 +55,7 @@ elem_C
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (углерод, химические свойства)](*<- lang_ru;;*);;
+			[Прим. (углерод, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ При обычных температурах углерод химически инертен, при достаточно высоких температурах соединяется со многими элементами, проявляет сильные восстановительные свойства. ] (*<- lang_ru;;*);;
@@ -61,7 +67,7 @@ elem_C
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (углерод, физические свойства)](*<- lang_ru;;*);;
+			[Прим. (углерод, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Углерод существует во множестве аллотропных модификаций с очень разнообразными физическими свойствами. Разнообразие модификаций обусловлено способностью углерода образовывать химические связи разного типа.] (*<- lang_ru;;*);;

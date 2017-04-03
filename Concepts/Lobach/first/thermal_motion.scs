@@ -15,13 +15,13 @@ thermal_motion
 		(* 
 		-> rrel_example:"file://htmls/thermal_motion.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->particle;;
+				->substance;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				particle;
-				substance
-			};
+
 
 
 
@@ -30,7 +30,7 @@ thermal_motion
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (тепловое движение, скорость*)](*<- lang_ru;;*);;
+			[Прим. (тепловое движение, скорость*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Чем выше температура, тем больше скорость движения частиц..] (*<- lang_ru;;*);;

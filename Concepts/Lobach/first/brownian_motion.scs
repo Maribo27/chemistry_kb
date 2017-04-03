@@ -14,15 +14,15 @@ brownian_motion
 		(* 
 		-> rrel_example:"file://htmls/brownian_motion.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->liquid;;
+				->gas;;
+				->particle;;
+				->substance;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				liquid;
-				gas;
-				particle;
-				substance
-			};
+
 
 
 

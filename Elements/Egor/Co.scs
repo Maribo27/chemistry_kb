@@ -8,23 +8,29 @@ elem_Co
 		(* 
 		-> rrel_example:"file://htmls/Co.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 9;
 => nrel_period: 4;
 => nrel_periodic_number: 27;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;plus_two;plus_three;plus_four;;
+	=> nrel_valence: one;two;three;four;;
+*);
 
 <- rrel_key_sc_element: number_of_co
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кобальт, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (кобальт, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер кобальта равен 27] (*<- lang_ru;;*);;
@@ -35,7 +41,7 @@ elem_Co
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кобальт, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (кобальт, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[   Простое вещество кобальт — серебристо-белый, слегка желтоватый металл с розоватым или синеватым отливом] (*<- lang_ru;;*);;

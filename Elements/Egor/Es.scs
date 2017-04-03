@@ -8,17 +8,23 @@ elem_Es
 		(* 
 		-> rrel_example:"file://htmls/Es.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 3;
 => nrel_period: 7;
 => nrel_periodic_number: 99;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;plus_three;;
+	=> nrel_valence: two;three;;
+*);
 
 <- rrel_key_sc_element:
 	...
@@ -39,7 +45,7 @@ elem_Es
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эйнштейний, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (эйнштейний, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер эйнштейния равен 99.] (*<- lang_ru;;*);;
@@ -51,7 +57,7 @@ elem_Es
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эйнштейний, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (эйнштейний, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Эйнштейний является радиоактивным металлом.  ] (*<- lang_ru;;*);;
@@ -63,7 +69,7 @@ elem_Es
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эйнштейний, химические свойства*, решётка)](*<- lang_ru;;*);;
+			[Прим. (эйнштейний, химические свойства*, решётка)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Эйнштейний — металл с кубической гранецентрированной решёткой. Характеризуется относительно высокой летучестью.] (*<- lang_ru;;*);;
@@ -75,7 +81,7 @@ elem_Es
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эйнштейний, получение*)](*<- lang_ru;;*);;
+			[Прим. (эйнштейний, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Эйнштейний может быть получен путём восстановления EsF3 литием. ] (*<- lang_ru;;*);;
@@ -88,7 +94,7 @@ elem_Es
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эйнштейний, применение*)](*<- lang_ru;;*);;
+			[Прим. (эйнштейний, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Эйнштейний используется для получения менделевия при бомбардировке в циклотроне ядрами гелия  ] (*<- lang_ru;;*);;

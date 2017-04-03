@@ -8,17 +8,19 @@ elem_Ds
 		(* 
 		-> rrel_example:"file://htmls/Ds.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 10;
 => nrel_period: 7;
 => nrel_periodic_number: 110;
+
 
 <- rrel_key_sc_element:
 	...
@@ -39,7 +41,7 @@ elem_Ds
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дармштадтий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (дармштадтий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер дармштадтия равен 110.] (*<- lang_ru;;*);;
@@ -51,7 +53,7 @@ elem_Ds
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дармштадтий, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (дармштадтий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Дармштадтий радиоактивен.  ] (*<- lang_ru;;*);;
@@ -65,7 +67,7 @@ elem_Ds
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дармштадтий, получение*)](*<- lang_ru;;*);;
+			[Прим. (дармштадтий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Дармштадтий — искусственно синтезированный химический элемент ] (*<- lang_ru;;*);;

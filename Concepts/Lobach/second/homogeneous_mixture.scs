@@ -15,9 +15,10 @@ homogeneou_mixture
                                                         => nrel_format: format_html;;
                                                 *);;
                                   *);;
-                *);
+        		<= nrel_using_constants:...
+                		(*
+                        		->substance;;
+                		*);;
+                *);;
 
-        <= nrel_using_constants:
-                {
-                        substance
-                };;
+

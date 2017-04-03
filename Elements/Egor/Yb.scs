@@ -8,23 +8,29 @@ elem_Yb
 		(* 
 		-> rrel_example:"file://htmls/Yb.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 3;
 => nrel_period: 6;
 => nrel_periodic_number: 70;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;plus_three;;
+	=> nrel_valence: two;three;;
+*);
 
 <- rrel_key_sc_element: number_of_yb
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иттербий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (иттербий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер иттербия равен 70.] (*<- lang_ru;;*);;
@@ -53,7 +59,7 @@ elem_Yb
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иттербий, получение*)](*<- lang_ru;;*);;
+			[Прим. (иттербий, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Основные методы получения иттербия — это восстановление оксида иттербия (III) в вакууме углеродом или лантаном, а также электролизом расплава хлорида YbCl3..] (*<- lang_ru;;*);;
@@ -65,7 +71,7 @@ elem_Yb
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иттербий, применение*)](*<- lang_ru;;*);;
+			[Прим. (иттербий, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Ионы иттербия применяются для генерации лазерного излучения в ближнем инфракрасном диапазоне, с длиной волны излучения 1,06÷1,07 мкм, и в виде оксида иттербия используются для производства мощных волоконных лазеров.  ] (*<- lang_ru;;*);;

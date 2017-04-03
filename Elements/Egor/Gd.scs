@@ -8,23 +8,29 @@ elem_Gd
 		(* 
 		-> rrel_example:"file://htmls/Gd.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
-		{
-			chemical_element;
-			period;
-			nrel_group
-		};;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
 	*);
 
 => nrel_group: 3;
 => nrel_period: 6;
 => nrel_periodic_number: 64;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: three;;
+*);
 
 <- rrel_key_sc_element: number_of_gd
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гадолиний, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (гадолиний, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер гадалиния равен 64.] (*<- lang_ru;;*);;
@@ -51,7 +57,7 @@ elem_Gd
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гадолиний, месторождения*)](*<- lang_ru;;*);;
+			[Прим. (гадолиний, месторождения*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Гадолиний входит в состав руд лантаноидов, которые часто встречаются в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
@@ -61,7 +67,7 @@ elem_Gd
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гадолиний, получение*)](*<- lang_ru;;*);;
+			[Прим. (гадолиний, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Гадолиний получают восстановлением фторида или хлорида гадолиния (GdF3, GdCl3) кальцием. Соединения гадолиния получают разделением оксидов редкоземельных металлов на фракции.] (*<- lang_ru;;*);;
@@ -72,7 +78,7 @@ elem_Gd
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гадолиний, сплав)](*<- lang_ru;;*);;
+			[Прим. (гадолиний, сплав)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Ряд сплавов гадолиния и особенно сплав с кобальтом и железом позволяет создавать носители информации с колоссальной плотностью записи. ] (*<- lang_ru;;*);;
@@ -82,7 +88,7 @@ elem_Gd
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гадолиний, применение*)](*<- lang_ru;;*);;
+			[Прим. (гадолиний, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Область применения гадолиния очень и очень широкая. Основными областями применения гадолиния являются электроника и ядерная энергетика.] (*<- lang_ru;;*);;
