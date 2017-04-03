@@ -6,12 +6,21 @@ chemical_element
 
 chemical_element
 <- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/chemical_element.html"(* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants:...
 	(*
-		<- sc_definition;;
-        <= nrel_sc_text_translation:...
-        (*
-			-> rrel_example:"file://html/chemical_element.html"(* <- lang_ru;; *);;
-        *);;
+		-> atom;;
+		-> nrel_charge;;
+		-> nucleus;;
+		-> electron;;
+		-> electron_shell;;
+		-> elementary_substance;;
+	*);;
 	*);
 	
 <- rrel_key_sc_element:...

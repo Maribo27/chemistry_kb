@@ -4,7 +4,7 @@ alkaline_burnishing
                 [щелочное воронение](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_definition;;
+                        <- definition;;
                         => nrel_main_idtf: [Definition (alkaline burnishing)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (щелочное воронение)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...

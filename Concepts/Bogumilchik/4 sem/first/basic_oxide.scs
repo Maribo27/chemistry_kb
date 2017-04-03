@@ -5,7 +5,7 @@ basic_oxide
 
 <- rrel_key_sc_element:...
 (*
-    <- sc_definition;;
+    <- definition;;
     => nrel_main_idtf: [Опр. (основный оксид)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
@@ -57,7 +57,5 @@ basic_oxide
                 [Основный оксид + водород → металл + вода](* <-lang_ru;; *);;
         *);;
     *);
-
-=> nrel_interaction:strong_acid;water;acid_oxide;hydrogen;
 
 <- rrel_key_sc_element: section_oxides;;

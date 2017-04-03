@@ -4,7 +4,7 @@ hydroxyl_group
 						[гидроксильная группа](*<- lang_ru;;*);
 	<- rrel_key_sc_element:...
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:

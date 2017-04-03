@@ -1,0 +1,80 @@
+amphoteric_oxide 
+<- ...
+(*
+	=> nrel_main_idtf: [амфотерный оксид + сильная кислота](*<- lang_ru;;*);;
+	-> strong_acid;;
+	=> nrel_reaction:...
+	(*
+		=> nrel_main_idtf: [соль + вода](*<- lang_ru;;*);;
+		-> salt;;
+		-> water;;
+	*);;
+*);
+
+<- ...
+(*
+	=> nrel_main_idtf: [амфотерный оксид + сильная щелочь](*<- lang_ru;;*);;
+	-> strong_basis;;
+	=> nrel_reaction:...
+	(*
+		=> nrel_main_idtf: [оксид + вода](*<- lang_ru;;*);;
+		-> oxide;;
+		-> water;;
+	*);;
+*);
+
+<- ...
+(*
+	=> nrel_main_idtf: [амфотерный оксид + кислота](*<- lang_ru;;*);;
+	-> acid;;
+	=> nrel_reaction:...
+	(*
+		=> nrel_main_idtf: [соль + вода](*<- lang_ru;;*);;
+		-> salt;;
+		-> water;;
+	*);;
+*);
+
+<- ...
+(*
+	=> nrel_main_idtf: [амфотерный оксид + кислотный оксид](*<- lang_ru;;*);;
+	-> acid_oxide;;
+	=> nrel_reaction: salt;;
+*);
+
+<- ...
+(*
+	=> nrel_main_idtf: [амфотерный оксид + основный оксид](*<- lang_ru;;*);;
+	-> basic_oxide;;
+	=> nrel_reaction:...
+	(*
+		=> nrel_main_idtf: [соль + вода](*<- lang_ru;;*);;
+		-> salt;;
+		-> water;;
+	*);;
+*);;
+
+trioxide
+<- ...
+(*
+	=> nrel_main_idtf: [триоксид + HF (кислота)](*<- lang_ru;;*);;
+	-> hydrogen_fluoride;;
+	=> nrel_reaction:...
+	(*
+		=> nrel_main_idtf: [соль + вода](*<- lang_ru;;*);;
+		-> salt;;
+		-> water;;
+	*);;
+*);
+
+<- ...
+(*
+	=> nrel_main_idtf: [триоксид + щелочь](*<- lang_ru;;*);;
+	-> basis;;
+	=> nrel_reaction:...
+	(*
+		=> nrel_main_idtf: [соль + вода](*<- lang_ru;;*);;
+		-> salt;;
+		-> water;;
+	*);;
+*);;

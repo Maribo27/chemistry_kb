@@ -50,3 +50,35 @@ nrel_optical_activity => nrel_main_idtf: [оптическая активнос�
 
 nrel_charge => nrel_main_idtf: [заряд*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;	
+
+nrel_heating => nrel_main_idtf: [нагревание*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;	
+
+nrel_sedimentation => nrel_main_idtf: [осаждение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_receiving => nrel_main_idtf: [получение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+	
+nrel_applying => nrel_main_idtf: [применение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+	
+nrel_decomposition => nrel_main_idtf: [распад*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_main_characteristics => nrel_main_idtf: [основные характеристики*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_mass => nrel_main_idtf: [масса*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_spin => nrel_main_idtf: [спин*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_gravitational_radius => nrel_main_idtf: [гравитационный радиус*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_being_in_nature => nrel_main_idtf: [нахождение в природе*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_reducing_reaction => nrel_main_idtf: [реакция восстановления*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_isotopic_modification => nrel_main_idtf: [изотопная модификация*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;

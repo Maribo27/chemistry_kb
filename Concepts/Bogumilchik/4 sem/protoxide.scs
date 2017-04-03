@@ -1,0 +1,28 @@
+protoxide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[закись](* <- lang_ru;;	*);
+	[protoxide](* <- lang_en;;	*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (триоксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b>Закись</b> - <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element> <sc_element sys_idtf="chemical_element">элемента</sc_element> с <sc_element sys_idtf="elem_O">кислородом</sc_element>, в котором элемент проявляет низшую <sc_element sys_idtf="nrel_oxidation_state">степень окисления</sc_element>.]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_compound;;
+		-> nrel_oxidation_state;;
+		-> elem_O;;
+		-> chemical_element;;
+	*);;
+*);
+-> nitrous_oxide;;

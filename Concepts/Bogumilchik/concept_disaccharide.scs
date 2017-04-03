@@ -3,10 +3,10 @@ disaccharide
 <= nrel_inclusion: oligosaccharide;
 <= nrel_subdividing: ...
 (*
-	<- explanation;;
-	->reducing_disaccherides;;
-	->non_reducing_disaccherides;;
-	=>nrel_main_idtf:[Разбиение по признаку способности к восстановлению.](*<-lang_ru;; *);;
+	-> reducing_disaccherides;;
+	-> non_reducing_disaccherides;;
+	=> nrel_main_idtf:
+		[Разбиение по признаку способности к восстановлению](*<-lang_ru;;*);;
 *);
 
 => nrel_main_idtf:
@@ -19,10 +19,23 @@ disaccharide
 
 disaccharide
 <- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/concept_disaccharide.html"(* <- lang_ru;; *);;
+    *);;
+    <= nrel_using_constants:...
 	(*
-		<- sc_definition;;
-        <= nrel_sc_text_translation:...
-        (*
-			-> rrel_example:"file://html/concept_disaccharide.html"(* <- lang_ru;; *);;
-        *);;
+		-> organic_compound;;
+		-> carbohydrate;;
+		-> oligosaccharide;;
+		-> substance;;
+		-> nrel_insoluble;;
+		-> water;;
+		-> nrel_optical_activity;;
+		-> molecule;;
+		-> monosaccharide;;
+		-> hydroxyl_group;;
 	*);;
+*);;

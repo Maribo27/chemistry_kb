@@ -5,7 +5,7 @@ acid_oxide
 
 <- rrel_key_sc_element:...
 (*
-    <- sc_definition;;
+    <- definition;;
     => nrel_main_idtf: [Опр. (кислотный оксид)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
@@ -57,8 +57,6 @@ acid_oxide
                 [Кислотный оксид + амфотерный оксид → средняя соль](* <-lang_ru;; *);;
         *);;
     *);
-
-=> nrel_interaction:salt;water;basic_oxide;acid;basis;amphoteric_oxide;
 
 <- rrel_key_sc_element: ...
     (*

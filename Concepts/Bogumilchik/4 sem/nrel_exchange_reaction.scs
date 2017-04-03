@@ -1,6 +1,5 @@
 nrel_exchange_reaction
-
-<= nrel_inclusion: relation;
+<- nrel_reaction;
 <- sc_node_norole_relation;
 => nrel_main_idtf:
 	[exchange reaction*](*<- lang_en;;*);
@@ -8,7 +7,7 @@ nrel_exchange_reaction
 
 <- rrel_key_sc_element: nrel_exchange_reaction_definition
 (*
-	<-sc_explanation;;
+	<- explanation;;
 
 	=> nrel_main_idtf:[Опр.(реакция обмена*)](*<-lang_ru;;*);;
 
@@ -21,8 +20,18 @@ nrel_exchange_reaction
 				=> nrel_format: format_html;;
 			*);;
 	*);;
-	<= nrel_using_constants:
-		{
-			nrel_oxidation_state
-		};;
+	<= nrel_using_constants:...
+	(*
+		->nrel_oxidation_state;;
+	*);;
 *);;
+
+=> nrel_second_domain: number;
+=> nrel_first_domain: chemical_element;
+=> nrel_definitional_domain:...
+(*
+	<= nrel_combination: ...
+	(* 
+	    -> chemical_element; number;;
+	*);;
+*);

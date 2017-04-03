@@ -1,0 +1,132 @@
+water
+=> nrel_main_idtf:
+	[water](*<- lang_en;;*);
+	[вода](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[H2O](*<- lang_en;;*);
+	[оксид водорода](*<- lang_ru;;*);
+	[дигидрогена монооксид](*<- lang_ru;;*);
+	[дигидромонооксид](*<- lang_ru;;*);
+	[оксидан](*<- lang_ru;;*);
+	[гидроксильная кислота](*<- lang_ru;;*);
+	[гидроксид водорода](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Вода (оксид водорода)</b> — <sc_element sys_idtf = "binary_compound">бинарное химическое соединение</sc_element> с <sc_element sys_idtf = "chemical_formula">химической формулой Н2O. <sc_element sys_idtf = "molecule">Молекула</sc_element> воды состоит из двух <sc_element sys_idtf = "atom">атомов</sc_element> <sc_element sys_idtf = "hydrogen">водорода</sc_element> и одного — <sc_element sys_idtf = "oxygen">кислорода</sc_element>, которые соединены между собой <sc_element sys_idtf = "nrel_covalent_bond">ковалентной связью</sc_element>.</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> binary_compound;;
+		-> chemical_formula;;
+		-> molecule;;
+		-> atom;;
+		-> hydrogen;;
+		-> oxygen;;
+		-> nrel_covalent_bond;;
+	*);;
+*);
+
+<= nrel_sc_text_translation:...
+(*
+    -> rrel_example: "file://img/water.png";;
+*);
+
+<= nrel_being_in_nature:...
+(*
+	-> ocean;;
+	-> sea;;
+	-> lake;;
+	-> river;;
+	-> ice;;
+	-> groundwater;;
+	-> precipitation;;
+	-> reservoire;;
+*);
+
+<- ampholyte;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+	-> solid;;
+*);
+
+=> nrel_isotopic_modification:...
+(*
+	-> light_water;;
+	-> deuterium_water;;
+	-> tritium_water;;
+	-> tritium_deuterium_water;;
+	-> tritium_protict_water;;
+	-> deuterium_protie_water;;
+*);
+
+<= nrel_receiving:...
+(*
+	-> nrel_reaction;;
+	-> neutralization_reaction;;
+	-> nrel_reducing_reaction;;
+*);
+
+<= nrel_applying:...
+(*
+	-> solvent;;
+	-> agriculture;;
+	-> cooking;;
+	-> heat_transfer_agent;;
+	-> moderator;;
+	-> firefighting;;
+	-> sport;;
+	-> tool;;
+	-> grease;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:[Разбиение по содержанию катионов кальция и магния](*<-lang_ru;; *);;
+    -> soft_water;;
+    -> hard_water;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию](*<-lang_ru;; *);;
+    -> salt_forming_oxide;;
+    -> unsalt_forming_oxide;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию](*<-lang_ru;; *);;
+    -> salt_forming_oxide;;
+    -> unsalt_forming_oxide;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ При нормальных условиях представляет собой прозрачную жидкость, не имеет цвета (в малом объёме), запаха и вкуса.]
+				(*
+					<- lang_ru;;
+					=> nrel_format: format_html;;
+				*);;
+	*);;
+*);;
