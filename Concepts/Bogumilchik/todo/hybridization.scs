@@ -4,7 +4,7 @@ hybridization
                 [гибридизация](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_definition;;
+                        <- definition;;
                         => nrel_main_idtf: [Definition (hybridization)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (гибридизация)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...

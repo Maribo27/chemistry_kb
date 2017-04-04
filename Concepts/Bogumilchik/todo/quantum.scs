@@ -4,7 +4,7 @@ quantum
                 [квант](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_definition;;
+                        <- definition;;
                         => nrel_main_idtf: [Definition (quantum)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (квант)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...

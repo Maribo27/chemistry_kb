@@ -116,14 +116,7 @@ basic_oxide
 	(* <- lang_ru;; *);
 	[basic oxide]
 	(* <- lang_en;; *);;
-
-amphoteric_oxide
-=> nrel_main_idtf:
-	[амфотерный оксид]
-	(* <- lang_ru;; *);
-	[amphoteric oxide]
-	(* <- lang_en;; *);;
-
+	
 base
 => nrel_main_idtf:
 	[основание]

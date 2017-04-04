@@ -7,7 +7,7 @@ nrel_reaction_molecularity
 
 <- rrel_key_sc_element:...
 (*
-        <- sc_definition;;
+        <- definition;;
         => nrel_main_idtf: [Def. (reaction molecularity*)](*<- lang_en;;*);;
         => nrel_main_idtf: [Опр. (молекулярность реакции*)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...

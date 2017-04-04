@@ -4,7 +4,7 @@ atom_energy
                 [атомная энергия](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_definition;;
+                        <- definition;;
                         => nrel_main_idtf: [Definition (atom energy)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (атомная энергия)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...

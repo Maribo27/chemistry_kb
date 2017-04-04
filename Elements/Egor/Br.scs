@@ -8,22 +8,29 @@ elem_Br
 		(* 
 		-> rrel_example:"file://htmls/Br.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
+=> nrel_group: 17;
+=> nrel_period: 4;
+=> nrel_periodic_number: 35;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_one;zero;plus_one;plus_three;plus_five;plus_seven;;
+	=> nrel_valence: one;three;five;seven;;
+*);
 
 
 <- rrel_key_sc_element: number_of_br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (бром, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер брома равен 35.] (*<- lang_ru;;*);;
@@ -49,7 +56,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (бром, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[  Простое вещество бром при нормальных условиях является тяжёлой едкой жидкостью красно-бурого цвета с сильным неприятным запахом. ] (*<- lang_ru;;*);;
@@ -62,7 +69,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, яд)](*<- lang_ru;;*);;
+			[Прим. (бром, яд)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Бром - ядовит.] (*<- lang_ru;;*);;
@@ -72,7 +79,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, молекула)](*<- lang_ru;;*);;
+			[Прим. (бром, молекула)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Молекула брома двухатомна.] (*<- lang_ru;;*);;
@@ -83,7 +90,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, получение*)](*<- lang_ru;;*);;
+			[Прим. (бром, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Бром получают химическим путём из рассола Br−.] (*<- lang_ru;;*);;
@@ -93,7 +100,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, жидкость)](*<- lang_ru;;*);;
+			[Прим. (бром, жидкость)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Бром при комнатной температуре является жидким.] (*<- lang_ru;;*);;
@@ -103,7 +110,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, раствор)](*<- lang_ru;;*);;
+			[Прим. (бром, раствор)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Бром растворим в воде, раствор называют бромной водой. В бромной воде протекает реакция с образованием бромоводородной и неустойчивой бромноватистой кислот.] (*<- lang_ru;;*);;
@@ -114,7 +121,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, бромирование*)](*<- lang_ru;;*);;
+			[Прим. (бром, бромирование*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[С большинством органических растворителей бром смешивается во всех отношениях, при этом часто происходит бромирование молекул органических растворителей.] (*<- lang_ru;;*);;
@@ -124,7 +131,7 @@ elem_Br
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, применение*)](*<- lang_ru;;*);;
+			[Прим. (бром, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[В медицине бромид натрия и бромид калия применяют как успокаивающие средства.] (*<- lang_ru;;*);;

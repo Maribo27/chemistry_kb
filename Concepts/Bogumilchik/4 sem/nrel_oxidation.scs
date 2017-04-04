@@ -1,0 +1,29 @@
+nrel_oxidation
+=> nrel_main_idtf: 
+	[oxidation](*<- lang_en;;*);
+	[окисление*](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Окисление</b> - <sc_element sys_idtf = "nrel_reaction">химическая реакция</sc_element>, при которой <sc_element sys_idtf = "electron"электроны</sc_element> отбираются у данного <sc_element sys_idtf = "substance"вещества</sc_element> <sc_element sys_idtf = "rrel_oxidizer"окислителем</sc_element>.</p>]
+				(*<- lang_ru;;*);;
+	*);;
+
+	<= nrel_using_constants:...
+	(*
+		-> nrel_reaction;;
+		-> electron;;
+		-> substance;;
+		-> rrel_oxidizer;;
+	*);;
+*);
+
+<- sc_node_norole_relation;
+
+=> nrel_second_domain:substance;
+=> nrel_first_domain:substance;
+=> nrel_definitional_domain: substance;;

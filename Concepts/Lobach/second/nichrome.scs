@@ -1,0 +1,66 @@
+nichrome
+=> nrel_main_idtf:
+	[нихром]
+	(* <- lang_ru;;	*);;
+
+nichrome
+<- rrel_key_sc_element:
+	Definition_of_nichrome
+	(* 
+		<- sc_explanation;;
+		
+		<= nrel_sc_text_translation:...
+		(* 
+			-> rrel_example:"file://htmls/nichrome.html" (* <-lang_ru;; *);;
+		*);;
+		
+		<= nrel_using_constants:...
+		(*
+			-> elem_Cr;;
+			-> elem_Ni;;
+			-> alloy;;
+		*);;	
+	*);
+
+=> nrel_alloy_component: elem_Cr;
+=> nrel_alloy_component: elem_Ni;
+=> nrel_alloy_component: elem_Mg;
+=> nrel_alloy_component: elem_Si;
+=> nrel_alloy_component: elem_Fe;
+=> nrel_alloy_component: elem_Al;
+=> nrel_melting_temperature: 1100;
+=> nrel_density_of_substance: 8200;
+ 
+
+<- alloy;
+
+
+<- rrel_key_sc_element: additives_in_nichrome
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (нихром, добавки)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ В качестве добавок могут быть использованы: марганец, кремний, железо, алюминий.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: electric_resistance_of_nichrome
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (нихром, электрическое сопротивление)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Нихром обладает высокой жаростойкостью в окислительной атмосфере, высоким удельным электрическим сопротивлением, имеет минимальный температурный коэффициент электрического сопротивления. ] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_nichrome
+=> nrel_main_idtf:
+	[Опр.(нихром)]
+	(* <- lang_ru;;	*);;

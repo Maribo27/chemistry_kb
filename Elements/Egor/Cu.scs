@@ -8,22 +8,28 @@ elem_Cu
 		(* 
 		-> rrel_example:"file://htmls/Cu.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
 
-
+=> nrel_group: 11;
+=> nrel_period: 4;
+=> nrel_periodic_number: 29;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;plus_two;plus_three;;
+	=> nrel_valence: one;two;three;;
+*);
 <- rrel_key_sc_element: number_of_cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (медь, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер меди равен 29] (*<- lang_ru;;*);;
@@ -34,7 +40,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (медь, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Простое вещество медь — это пластичный переходный металл золотисто-розового цвета (розового цвета при отсутствии оксидной плёнки).] (*<- lang_ru;;*);;
@@ -47,7 +53,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, нахождение)](*<- lang_ru;;*);;
+			[Прим. (медь, нахождение)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Медь встречается в природе как в соединениях, так и в самородном виде.] (*<- lang_ru;;*);;
@@ -57,7 +63,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, кубическая гранецентрированая решётка)](*<- lang_ru;;*);;
+			[Прим. (медь, кубическая гранецентрированая решётка)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Медь образует кубическую гранецентрированную решётку.] (*<- lang_ru;;*);;
@@ -81,7 +87,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, теплопроводность*, электропроводность*)](*<- lang_ru;;*);;
+			[Прим. (медь, теплопроводность*, электропроводность*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Медь обладает высокой тепло- и электропроводностью.] (*<- lang_ru;;*);;
@@ -91,7 +97,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, сплав)](*<- lang_ru;;*);;
+			[Прим. (медь, сплав)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Существует ряд сплавов меди: латуни — с цинком, бронзы — с оловом и другими элементами, мельхиор — с никелем и другие.] (*<- lang_ru;;*);;
@@ -101,7 +107,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, получение*)](*<- lang_ru;;*);;
+			[Прим. (медь, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Медь получают из медных руд и минералов. Основные методы получения меди — пирометаллургия, гидрометаллургия и электролиз.] (*<- lang_ru;;*);;
@@ -112,7 +118,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, востановитель)](*<- lang_ru;;*);;
+			[Прим. (медь, востановитель)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Медь является слабым восстановителем, не вступает в реакцию с водой и разбавленной соляной кислотой.] (*<- lang_ru;;*);;
@@ -122,7 +128,7 @@ elem_Cu
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, окисление*)](*<- lang_ru;;*);;
+			[Прим. (медь, окисление*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[На влажном воздухе медь окисляется, образуя основный карбонат меди(II) ] (*<- lang_ru;;*);;

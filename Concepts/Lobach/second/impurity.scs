@@ -17,6 +17,6 @@ impurity <- rrel_key_sc_element:
 				=> nrel_format: format_html;;*);;
 
 			*);;
+		<=nrel_using_constants:... (*->chemical_element;;*);;
 		*);;
 
-impurity <= nrel_using_constants:... (*->chemical_element;;*);;

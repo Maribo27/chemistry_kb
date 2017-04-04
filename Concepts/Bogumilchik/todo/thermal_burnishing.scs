@@ -4,7 +4,7 @@ thermal_burnishing
                 [термическое воронение](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_definition;;
+                        <- definition;;
                         => nrel_main_idtf: [Definition (thermal burnishing)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (термическое воронение)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...

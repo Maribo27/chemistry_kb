@@ -93,3 +93,192 @@ organic_compound => nrel_main_idtf:
 carbohydrate => nrel_main_idtf:
 	[углевод](*<-lang_ru;;*);
 	<- sc_node_not_relation;;
+
+strong_basis
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[сильная щелочь](* <- lang_ru;; *);;
+zinc_oxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[оксид цинка](* <- lang_ru;; *);;
+chromium_oxide_3
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[оксид меди (III)](* <- lang_ru;; *);;
+aluminium_oxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[оксид аллюминия](* <- lang_ru;; *);;
+lead_oxide_2
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[оксид свинца (II)](* <- lang_ru;; *);;
+beryllium_oxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[оксид бериллия](* <- lang_ru;; *);;
+iron_oxide_3
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[оксид железа (III)](* <- lang_ru;; *);;
+aqueous_solution_of_ammonia_hydrate
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[водный раствор гидрата аммиака](* <- lang_ru;; *);;
+
+metal_compound
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[соединение металлов](* <- lang_ru;; *);;
+hydrogen_fluoride
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[фтористый водород](* <- lang_ru;; *);;
+
+ionizing_radiation
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ионизирующее излучение](* <- lang_ru;; *);;
+electron_capture
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[захват электрона](* <- lang_ru;; *);;
+organic_formation
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[органическое образование](* <- lang_ru;; *);;
+acetone_peroxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[перекись ацетона](* <- lang_ru;; *);;
+proper_peroxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[правильный пероксид](* <- lang_ru;; *);;
+superperoxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[суперпероксид](* <- lang_ru;; *);;
+inorganic_ozonide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[неорганический озонид](* <- lang_ru;; *);;
+organic_peroxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[органический пероксид](* <- lang_ru;; *);;
+inorganic_peroxides
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[неорганический пероксид](* <- lang_ru;; *);;
+radiotechnics
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[радиотехника](* <- lang_ru;; *);;
+metallurgy
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[металлургия](* <- lang_ru;; *);;
+chemical_industry
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[химическая промышленность](* <- lang_ru;; *);;
+nuclear_energy
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ядерная энергетика](* <- lang_ru;; *);;
+rocket_technology
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[ракетная техника](* <- lang_ru;; *);;
+space_technology
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[космическая техника](* <- lang_ru;; *);;
+acid_hydroxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[кислотный гидроксид](* <- lang_ru;; *);;
+amphoteric_hydroxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[амфотерный гидроксид](* <- lang_ru;; *);;
+basic_hydroxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[основный гидроксид](* <- lang_ru;; *);;
+tetroxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[тетроксид](* <- lang_ru;; *);;
+pure_metal
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[чистый метал](* <- lang_ru;; *);;
+catalytic_process
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[каталитический процесс](* <- lang_ru;; *);;
+carbon_suboxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[субоксид углерода](* <- lang_ru;; *);;
+boron_suboxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[субоксид бора](* <- lang_ru;; *);;
+rubidium_suboxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[субоксид рубидия](* <- lang_ru;; *);;
+silicon_suboxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[субоксид кремния](* <- lang_ru;; *);;
+caesium_suboxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[субоксид цезия](* <- lang_ru;; *);;
+potassium_oxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[окись калия](* <- lang_ru;; *);;
+carbon_monoxide
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[монооксид углерода](* <- lang_ru;; *);;
+neutron_mass <- sc_node_not_relation;
+	=> nrel_main_idtf:[1,674 927 471(21)·10^(−27) кг](* <- lang_ru;; *);;
+neutron_spin <- sc_node_not_relation;
+	=> nrel_main_idtf:[0,5](* <- lang_ru;; *);;
+neutron_radius <- sc_node_not_relation;
+	=> nrel_main_idtf:[2,48 * 10^(-52) см](* <- lang_ru;; *);;
+
+
+cryogenic_equipment <- sc_node_not_relation;
+	=> nrel_main_idtf:[криогенная техника](* <- lang_ru;; *);;
+
+breathing_mixture <- sc_node_not_relation;
+	=> nrel_main_idtf:[дыхательная смесь](* <- lang_ru;; *);;
+
+welding <- sc_node_not_relation;
+	=> nrel_main_idtf:[сварка](* <- lang_ru;; *);;
+
+ocean <- sc_node_not_relation;
+	=> nrel_main_idtf:[океан](* <- lang_ru;; *);;
+sea <- sc_node_not_relation;
+	=> nrel_main_idtf:[море](* <- lang_ru;; *);;
+lake <- sc_node_not_relation;
+	=> nrel_main_idtf:[озеро](* <- lang_ru;; *);;
+river <- sc_node_not_relation;
+	=> nrel_main_idtf:[река](* <- lang_ru;; *);;
+ice <- sc_node_not_relation;
+	=> nrel_main_idtf:[лёд](* <- lang_ru;; *);;
+groundwater <- sc_node_not_relation;
+	=> nrel_main_idtf:[грунтовые воды](* <- lang_ru;; *);;
+ampholyte <- sc_node_not_relation;
+	=> nrel_main_idtf:[амфолит](* <- lang_ru;; *);
+	=> nrel_inclusion: acid; basis;;
+
+light_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[лёгкая вода](* <- lang_ru;; *);;
+deuterium_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[дейтериевая вода](* <- lang_ru;; *);;
+tritium_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[тритиевая вода](* <- lang_ru;; *);;
+tritium_deuterium_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[тритий-дейтериевая вода](* <- lang_ru;; *);;
+tritium_protict_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[тритий-протиевая вода](* <- lang_ru;; *);;
+deuterium_protie_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[дейтерий-протиевая вода](* <- lang_ru;; *);;
+precipitation <- sc_node_not_relation;
+	=> nrel_main_idtf:[осадки](* <- lang_ru;; *);;
+
+soft_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[мягкая вода](* <- lang_ru;; *);;
+hard_water <- sc_node_not_relation;
+	=> nrel_main_idtf:[жёсткая вода](* <- lang_ru;; *);;
+
+agriculture <- sc_node_not_relation;
+	=> nrel_main_idtf:[земледелие](* <- lang_ru;; *);;
+cooking <- sc_node_not_relation;
+	=> nrel_main_idtf:[приготовление пищи](* <- lang_ru;; *);;
+heat_transfer_agent <- sc_node_not_relation;
+	=> nrel_main_idtf:[теплоноситель](* <- lang_ru;; *);;
+moderator <- sc_node_not_relation;
+	=> nrel_main_idtf:[замедлитель](* <- lang_ru;; *);;
+firefighting <- sc_node_not_relation;
+	=> nrel_main_idtf:[пожаротушение](* <- lang_ru;; *);;
+sport <- sc_node_not_relation;
+	=> nrel_main_idtf:[спорт](* <- lang_ru;; *);;
+tool <- sc_node_not_relation;
+	=> nrel_main_idtf:[инструмент](* <- lang_ru;; *);;
+grease <- sc_node_not_relation;
+	=> nrel_main_idtf:[смазка](* <- lang_ru;; *);;
+
+reservoir <- sc_node_not_relation;
+	=> nrel_main_idtf:[водохранилище](* <- lang_ru;; *);;

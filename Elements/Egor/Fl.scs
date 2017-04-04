@@ -8,16 +8,17 @@ elem_Fl
 		(* 
 		-> rrel_example:"file://htmls/Fl.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
-
+			*);;
+	*);
+=> nrel_group: 14;
+=> nrel_period: 7;
+=> nrel_periodic_number: 114;
 
 <- rrel_key_sc_element:
 	...
@@ -38,7 +39,7 @@ elem_Fl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (флеровий, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (флеровий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер флеровия равен 114.] (*<- lang_ru;;*);;
@@ -50,7 +51,7 @@ elem_Fl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (флеровий, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (флеровий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Аномальные свойства флеровия объясняет низкое межмолекулярное взаимодействие его атомов.  ] (*<- lang_ru;;*);;
@@ -62,7 +63,7 @@ elem_Fl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (флеровий, химические свойства*)](*<- lang_ru;;*);;
+			[Прим. (флеровий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Элемент радиоактивен.] (*<- lang_ru;;*);;
@@ -74,7 +75,7 @@ elem_Fl
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дубний, получение*)](*<- lang_ru;;*);;
+			[Прим. (дубний, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[В настоящее время флеровий может быть получен только путём ядерного синтеза, так же, как и другие сверхтяжёлые элементы. ] (*<- lang_ru;;*);;

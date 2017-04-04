@@ -1,0 +1,23 @@
+rrel_reducing_agent
+=> nrel_main_idtf: 
+	[reducing agent'](*<- lang_en;;*);
+	[восстановитель''](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Восстановитель</b> - <sc_element sys_idtf = "substance">вещество</sc_element>, способное отдавать <sc_element sys_idtf = "electron">электроны</sc_element> другому веществу (<sc_element sys_idtf = "rrel_oxidizer">окислителю</sc_element>).</p>]
+			(*<- lang_ru;;*);;
+	*);;
+	<= nrel_using_constants:...
+    (*
+        -> substance;;
+        -> electron;;
+        -> rrel_oxidizer;;
+    *);;
+*);
+
+<- sc_node_role_relation;;

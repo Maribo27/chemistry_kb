@@ -4,7 +4,7 @@ reagent_reaction
                 [реагент реакции](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_definition;;
+                        <- definition;;
                         => nrel_main_idtf: [Definition (reagents_reaction)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (реагенты реакции)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...

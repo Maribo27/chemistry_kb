@@ -10,12 +10,12 @@ oxygen_free_acid
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [<b>Бескислородные кислоты</b> - <sc_element sys_idtf="concept_acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых не содержат <sc_element sys_idtf="oxygen">кислорода</sc_element>.]
+                                                [<b>Бескислородные кислоты</b> - <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых не содержат <sc_element sys_idtf="oxygen">кислорода</sc_element>.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
                                                 *);
-                                                [<b>Oxygen-free_acid</b> - <sc_element sys_idtf="concept_acid">acid</sc_element> whose <sc_element sys_idtf="molecule">molecules</sc_element> do not contain <sc_element sys_idtf="oxygen">oxygen</sc_element>.]
+                                                [<b>Oxygen-free_acid</b> - <sc_element sys_idtf="acid">acid</sc_element> whose <sc_element sys_idtf="molecule">molecules</sc_element> do not contain <sc_element sys_idtf="oxygen">oxygen</sc_element>.]
                                                 (*
                                                         <- lang_en;;
                                                         => nrel_format: format_html;;

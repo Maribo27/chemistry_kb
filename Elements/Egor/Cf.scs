@@ -8,17 +8,23 @@ elem_Cf
 		(* 
 		-> rrel_example:"file://htmls/Cf.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
 
-
+=> nrel_group: 3;
+=> nrel_period: 7;
+=> nrel_periodic_number: 98;
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;plus_three;plus_four;;
+	=> nrel_valence: two;three;four;;
+*);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -38,7 +44,7 @@ elem_Cf
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (калифорний, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер калифорния равен 98.] (*<- lang_ru;;*);;
@@ -50,7 +56,7 @@ elem_Cf
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, физические свойства*)](*<- lang_ru;;*);;
+			[Прим. (калифорний, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Калифорний — чрезвычайно летучий металл. ] (*<- lang_ru;;*);;
@@ -62,7 +68,7 @@ elem_Cf
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, химические свойства*, лантаноид)](*<- lang_ru;;*);;
+			[Прим. (калифорний, химические свойства*, лантаноид)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[По химическим свойствам калифорний подобен лантаноидам.] (*<- lang_ru;;*);;
@@ -74,7 +80,7 @@ elem_Cf
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, получение*)](*<- lang_ru;;*);;
+			[Прим. (калифорний, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Для производства одного грамма калифорния плутоний или кюрий подвергают длительному нейтронному облучению в ядерном реакторе, от 8 месяцев до 1,5 лет. Затем из получившихся продуктов облучения химическим путём выделяют калифорний.] (*<- lang_ru;;*);;
@@ -84,7 +90,7 @@ elem_Cf
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, получение*, востановление*)](*<- lang_ru;;*);;
+			[Прим. (калифорний, получение*, востановление*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Металлический калифорний получают путем восстановления фторида калифорния CfF3 литием или оксида калифорния Cf2O3 кальцием.] (*<- lang_ru;;*);;
@@ -95,7 +101,7 @@ elem_Cf
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, токсичность*)](*<- lang_ru;;*);;
+			[Прим. (калифорний, токсичность*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Радионуклид Cf252 высокотоксичен.   ] (*<- lang_ru;;*);;
@@ -106,7 +112,7 @@ elem_Cf
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, применение*)](*<- lang_ru;;*);;
+			[Прим. (калифорний, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Калифорний используется как мощный источник нейтронов в нейтронно-активационном анализе, в лучевой терапии опухолей.  ] (*<- lang_ru;;*);;

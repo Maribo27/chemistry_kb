@@ -6,7 +6,7 @@ neutralization_reaction
 
 <- rrel_key_sc_element:...
 (*
-    <- sc_definition;;
+    <- definition;;
     => nrel_main_idtf: [Def. (neutralization reaction)](*<- lang_en;;*);;
     => nrel_main_idtf: [Опр. (реакция нейтрализации)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...

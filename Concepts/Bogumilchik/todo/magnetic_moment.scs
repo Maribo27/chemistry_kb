@@ -6,7 +6,7 @@ magnetic_moment
 
 <- rrel_key_sc_element:...
 (*
-    <- sc_definition;;
+    <- definition;;
     => nrel_main_idtf: [Def. (magnetic moment)](*<- lang_en;;*);;
     => nrel_main_idtf: [Опр. (магнитный момент)](*<- lang_ru;;*);;
 

@@ -4,7 +4,7 @@ electron_breakthrough
                 [проскок электрона](*<- lang_ru;;*);
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_definition;;
+                        <- definition;;
                         => nrel_main_idtf: [Definition (electron breakthrough)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Определение (проскок электрона)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...

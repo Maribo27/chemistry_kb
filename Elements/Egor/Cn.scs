@@ -8,15 +8,18 @@ elem_Cn
 		(* 
 		-> rrel_example:"file://htmls/Cn.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
 				
-			};
+			*);;
+	*);
+
+=> nrel_group: 12;
+=> nrel_period: 7;
+=> nrel_periodic_number: 112;
 
 
 <- rrel_key_sc_element:
@@ -38,7 +41,7 @@ elem_Cn
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (коперниций, порядковый номер*)](*<- lang_ru;;*);;
+			[Прим. (коперниций, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Порядковый номер коперниция равен 112.] (*<- lang_ru;;*);;

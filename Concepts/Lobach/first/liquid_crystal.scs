@@ -18,13 +18,13 @@ liquid_crystal
 		(* 
 		-> rrel_example:"file://htmls/liquid_crystal.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->phase_state;;
+				->substance;;
+			*);;
 	*);
-<= nrel_using_constants:
-			{
-				phase_state;
-				substance
-			};
+
 
 
 <- rrel_key_sc_element:
@@ -46,7 +46,7 @@ liquid_crystal
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (жидкий кристалл, состояние*)](*<- lang_ru;;*);;
+			[Прим. (жидкий кристалл, состояние*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ По структуре ЖК представляют собой вязкие жидкости, состоящие из молекул вытянутой или дискообразной формы, определённым образом упорядоченных во всем объёме этой жидкости. ] (*<- lang_ru;;*);;
@@ -69,7 +69,7 @@ liquid_crystal
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (жидкий кристалл, свойство*, ориентация молекул)](*<- lang_ru;;*);;
+			[Прим. (жидкий кристалл, свойство*, ориентация молекул)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Наиболее характерным свойством ЖК является их способность изменять ориентацию молекул под воздействием электрических полей] (*<- lang_ru;;*);;

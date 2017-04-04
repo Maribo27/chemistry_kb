@@ -21,7 +21,7 @@ basis
 			};;
 	*);
 
-<- rrel_key_sc_element: basic_hydroxide
+<- rrel_key_sc_element: ...
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
