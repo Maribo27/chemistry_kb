@@ -1,0 +1,45 @@
+explosive
+
+=> nrel_main_idtf:
+	[взрывчатое вещество]
+	(* <- lang_ru;;	*);
+	[explosive]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[ВВ] 
+	(* <-lang_ru;;*);
+	[взрывчатка] 
+	(* <-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_explosive
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="explosive">Взры́вчатое вещество́</sc_element></b> — конденсированное <sc_element sys_idtf="chemical_substance">химическое вещество</sc_element> или <sc_element sys_idtf="mixture">смесь</sc_element> таких веществ, способное при определенных условиях под влиянием внешних воздействий к быстрому самораспространяющемуся химическому превращению (взрыву) с выделением большого количества тепла и газообразных продуктов.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+<= nrel_subdividing:
+	explosive_physical_state
+  (* 
+    -> gas_explosive;;
+    -> liquid_explosive;;
+	*);;
+
+Definition_of_explosive
+=> nrel_main_idtf:
+	[Опр.(взрывчатое вещество)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_substance; mixture;;
+			*);;

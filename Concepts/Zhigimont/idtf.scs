@@ -431,3 +431,11 @@ nrel_solvation
     (*<- lang_en;;*);
 	[сольватация*]
 	(* <- lang_ru;;	*);;
+
+picric_acid
+=> nrel_main_idtf:
+    [picric acid]
+    (*<- lang_en;;*);
+	[пикриновая кислота]
+	(* <- lang_ru;;	*);;
+

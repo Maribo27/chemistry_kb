@@ -1,0 +1,31 @@
+picrate
+        => nrel_main_idtf:
+                [picrate](*<- lang_en;;*);
+                [пикрат](*<- lang_ru;;*);
+
+=> nrel_applying: explosive;
+<= nrel_inclusion: explosive;
+				
+<- rrel_key_sc_element:
+	Definition_of_picrate
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<sc_element sys_idtf="picrate">Пикрат</sc_element> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="picric_acid">пикриновой кислоты</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_picrate
+=> nrel_main_idtf:
+	[Опр.(пикрат)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; picric_acid;;
+			*);;
