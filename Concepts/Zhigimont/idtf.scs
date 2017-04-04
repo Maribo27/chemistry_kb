@@ -37,12 +37,6 @@ sulfamic_acid
 => nrel_main_idtf:
 	[аминосульфоновая кислота]
 	(* <- lang_ru;;	*);
-	[сульфаминовая кислота]
-	(* <- lang_ru;;	*);
-	[моноамид серной кислоты]
-	(* <- lang_ru;;	*);
-	[амидосерная кислота]
-	(* <- lang_ru;;	*);
 	[sulfamic acid]
 	(* <- lang_en;;	*);;
 
@@ -103,13 +97,6 @@ complex_salt
 	[complex salt]
 	(* <- lang_en;; *);;
 
-nonmetal
-=> nrel_main_idtf:
-	[неметалл]
-	(* <- lang_ru;; *);
-	[nonmetal]
-	(* <- lang_en;; *);;
-
 basic_oxide
 => nrel_main_idtf:
 	[основный оксид]
@@ -140,46 +127,11 @@ nrel_crystallization
 	[crystallization*]
 	(* <- lang_en;; *);;
 
-chloride
-=> nrel_main_idtf:
-	[хлорид]
-	(* <- lang_ru;; *);
-	[chloride]
-	(* <- lang_en;; *);;
-
-nrel_crystallization
-=> nrel_main_idtf:
-	[кристаллизация*]
-	(* <- lang_ru;; *);
-	[crystallization*]
-	(* <- lang_en;; *);;
-
-sulfate
-=> nrel_main_idtf:
-	[сульфат]
-	(* <- lang_ru;; *);
-	[sulfate]
-	(* <- lang_en;; *);;
-
-nitrate
-=> nrel_main_idtf:
-	[нитрат]
-	(* <- lang_ru;; *);
-	[nitrate]
-	(* <- lang_en;; *);;
-
 phosphate
 => nrel_main_idtf:
 	[фосфат]
 	(* <- lang_ru;; *);
 	[phosphate]
-	(* <- lang_en;; *);;
-
-carbonate
-=> nrel_main_idtf:
-	[карбонат]
-	(* <- lang_ru;; *);
-	[carbonate]
 	(* <- lang_en;; *);;
 
 acidic_oxide
@@ -189,30 +141,6 @@ acidic_oxide
 	[acidic oxide]
 	(* <- lang_en;; *);;
 
-elementary_substance_chemical_bond
-=> nrel_main_idtf:
-	[Разбиение по типу химической связи между атомами]
-	(* <- lang_ru;; *);;
-
-salt_substitution
-=> nrel_main_idtf:
-	[Разбиение по продуктам замены]
-	(* <- lang_ru;; *);;
-
-salt_structure
-=> nrel_main_idtf:
-	[Разбиение по числу катионов и анионов]
-	(* <- lang_ru;; *);;
-
-salt_molecule
-=> nrel_main_idtf:
-	[Разбиение по входящим в состав частицам]
-	(* <- lang_ru;; *);;
-
-salt_solubility
-=> nrel_main_idtf:
-	[Разбиение по растворимости]
-	(* <- lang_ru;; *);;
 
 soluble_salt
 => nrel_main_idtf:
@@ -233,25 +161,6 @@ insoluble_salt
 	[нерастворимая соль]
 	(* <- lang_ru;; *);
 	[insoluble salt]
-	(* <- lang_en;; *);;
-
-subdividing_salt_by_acid
-=> nrel_main_idtf:
-	[Разбиение по соответствующим кислотам]
-	(* <- lang_ru;; *);;
-
-silicate
-=> nrel_main_idtf:
-	[силикат]
-	(* <- lang_ru;; *);
-	[silicate]
-	(* <- lang_en;; *);;
-
-bromide
-=> nrel_main_idtf:
-	[бромид]
-	(* <- lang_ru;; *);
-	[bromide]
 	(* <- lang_en;; *);;
 
 iodide
@@ -289,13 +198,6 @@ tripotassium_phosphate
 	[tripotassium phosphate]
 	(* <- lang_en;; *);;
 
-color_gray
-=> nrel_main_idtf:
-	[серый цвет]
-	(* <- lang_ru;; *);
-	[gray color]
-	(* <- lang_en;; *);;
-
 potassium_chloride
 => nrel_main_idtf:
 	[хлорид калия]
@@ -317,34 +219,6 @@ nrel_allotropy
 	[allotropy*]
 	(* <- lang_en;; *);;
 
-
-
-sc_node_norole_relation-> nrel_chemical_properties;;
-nrel_chemical_properties
-=> nrel_main_idtf:
-	[химические свойства*]
-	(* <- lang_ru;; *);
-	[chemical properties*]
-	(* <- lang_en;; *);;
-
-sc_node_norole_relation-> nrel_application;;
-nrel_application
-=> nrel_main_idtf:
-	[применение*]
-	(* <- lang_ru;; *);
-	[application*]
-	(* <- lang_en;; *);;
-
-	solvent_state
-=> nrel_main_idtf:
-	[Разбиение растворителей по структуре]
-	(* <- lang_ru;;	*);;
-	
-solution_concentration
-=> nrel_main_idtf:
-	[Разбиение растворов по концентрации]
-	(* <- lang_ru;;	*);;
-	
 rrel_organic_solvent
 => nrel_main_idtf:
     [organic solvent'](*<- lang_en;;*);
@@ -393,20 +267,7 @@ multielement_compound
 	[multielement compound]
 	(* <- lang_ru;;	*);;
 	
-complex_substance_structure
-=> nrel_main_idtf:
-	[Разбиение сложных веществ по структуре]
-	(* <- lang_ru;;	*);;
 
-substance_state_of_matter
-=> nrel_main_idtf:
-	[Разбиение веществ по агрегатному состоянию]
-	(* <- lang_ru;;	*);;
-
-solution_molecule_size
-=> nrel_main_idtf:
-	[Разбиение растворов по размеру частиц]
-	(* <- lang_ru;;	*);;
 
 colloidal_solution
 => nrel_main_idtf:
@@ -439,3 +300,100 @@ picric_acid
 	[пикриновая кислота]
 	(* <- lang_ru;;	*);;
 
+gas_explosive
+=> nrel_main_idtf:
+    [gas explosive]
+    (*<- lang_en;;*);
+	[газообразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+liquid_explosive
+=> nrel_main_idtf:
+    [liquid explosive]
+    (*<- lang_en;;*);
+	[жидкое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+gel_explosive
+=> nrel_main_idtf:
+    [gel explosive]
+    (*<- lang_en;;*);
+	[гелеобразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+solid_explosive
+=> nrel_main_idtf:
+    [solid explosive]
+    (*<- lang_en;;*);
+	[твёрдое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+elastic_explosive
+=> nrel_main_idtf:
+    [elastic explosive]
+    (*<- lang_en;;*);
+	[эластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+emulsion_explosive
+=> nrel_main_idtf:
+    [emulsion explosive]
+    (*<- lang_en;;*);
+	[эмульсионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+plastic_explosive
+=> nrel_main_idtf:
+    [plastic explosive]
+    (*<- lang_en;;*);
+	[пластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+suspension_explosive
+=> nrel_main_idtf:
+    [suspension explosive]
+    (*<- lang_en;;*);
+	[суспензионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+pressed_explosive
+=> nrel_main_idtf:
+    [pressed explosive]
+    (*<- lang_en;;*);
+	[прессованное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+cast_explosive
+=> nrel_main_idtf:
+    [cast explosive]
+    (*<- lang_en;;*);
+	[литое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+patronized_explosive
+=> nrel_main_idtf:
+    [patronized explosive]
+    (*<- lang_en;;*);
+	[патронированное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+war_industry
+=> nrel_main_idtf: [военная промышленность](* <- lang_ru;;	*);;
+
+mining
+=> nrel_main_idtf: [горное дело](* <- lang_ru;;	*);;
+
+construction
+=> nrel_main_idtf: [строительство](* <- lang_ru;;	*);;
+
+seismic_survey
+=> nrel_main_idtf: [сейсморазведка](* <- lang_ru;;	*);;
+
+material_processing
+=> nrel_main_idtf: [обработка материалов](* <- lang_ru;;	*);;
+
+fertilizer
+=> nrel_main_idtf: [удобрения](* <- lang_ru;;	*);;
+
+medicine
+=> nrel_main_idtf: [медицина](* <- lang_ru;;	*);;

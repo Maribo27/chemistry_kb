@@ -9,7 +9,7 @@ substance
 <- rrel_key_sc_element:
 	Definition_of_substance
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -35,3 +35,9 @@ Definition_of_substance
 => nrel_main_idtf:
 	[Опр.(вещество)]
 	(* <- lang_ru;;	*);;
+
+substance_state_of_matter
+=> nrel_main_idtf:
+	[Разбиение веществ по агрегатному состоянию]
+	(* <- lang_ru;;	*);;
+

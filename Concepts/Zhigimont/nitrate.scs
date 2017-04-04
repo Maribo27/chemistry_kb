@@ -1,0 +1,38 @@
+nitrate
+=> nrel_main_idtf:
+	[нитрат]
+	(* <- lang_ru;; *);
+	[nitrate]
+	(* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_nitrate
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="nitrate">Нитрат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="nitric_acid">азотной кислоты</sc_element> HNO<sub>3</sub>] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+=> nrel_applying: ...
+(*
+		-> explosive;;
+		-> fertilizer;;
+		-> cooking;;
+		-> medicine;;
+*);;
+
+Definition_of_nitrate
+=> nrel_main_idtf:
+	[Опр.(нитрат)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; nitric_acid;;
+			*);;

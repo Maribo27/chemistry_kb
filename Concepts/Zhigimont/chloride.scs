@@ -6,11 +6,11 @@ chloride
 <- rrel_key_sc_element:
 	Definition_of_chloride
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<sc_element sys_idtf="chloride">Хлори́д</sc_element> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrochloric_acid">хлороводородной (соляной) кислоты</sc_element> HCl] 
+		-> rrel_example:[<b><sc_element sys_idtf="chloride">Хлори́д</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrochloric_acid">хлороводородной (соляной) кислоты</sc_element> HCl] 
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;

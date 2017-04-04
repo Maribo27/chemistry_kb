@@ -15,7 +15,7 @@ explosive
 <- rrel_key_sc_element:
 	Definition_of_explosive
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -28,12 +28,37 @@ explosive
 	*);
 
 
-<= nrel_subdividing:
-	explosive_physical_state
-  (* 
+=> nrel_applying: ...
+(*
+		-> war_industry;;
+		-> mining;;
+		-> construction;;
+		-> seismic_survey;;
+		-> material_processing;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:[Разбиение по физическому состоянию](*<-lang_ru;; *);;
     -> gas_explosive;;
     -> liquid_explosive;;
-	*);;
+    -> gel_explosive;;
+    -> solid_explosive;;
+    -> elastic_explosive;;
+    -> emulsion_explosive;;
+    -> plastic_explosive;;
+    -> suspension_explosive;;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:[Разбиение по методу приготовления зарядов](*<-lang_ru;; *);;
+    -> pressed_explosive;;
+    -> cast_explosive;;
+    -> patronized_explosive;;
+*);;
 
 Definition_of_explosive
 => nrel_main_idtf:

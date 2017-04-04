@@ -1,0 +1,31 @@
+sulfate
+=> nrel_main_idtf:
+	[сульфат]
+	(* <- lang_ru;; *);
+	[sulfate]
+	(* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:
+	Definition_of_sulfate
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="sulfate">Сульфат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="sulfuric_acid">серной кислоты</sc_element> H<sub>2</sub>SO<sub>4</sub>] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+Definition_of_sulfate
+=> nrel_main_idtf:
+	[Опр.(сульфат)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; sulfuric_acid;;
+			*);;

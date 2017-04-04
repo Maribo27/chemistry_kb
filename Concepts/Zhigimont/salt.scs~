@@ -11,7 +11,7 @@ salt
 <- rrel_key_sc_element:
 	Definition_of_salt
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -54,7 +54,7 @@ salt
 <- rrel_key_sc_element: physical_properties_of_salt
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (соль, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -124,7 +124,7 @@ salt
 <- rrel_key_sc_element: chemical_properties_of_salt
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (соль, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -138,7 +138,7 @@ salt
 
 <- rrel_key_sc_element: receipt_of_salt
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (соль, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -153,7 +153,7 @@ salt
 
 <- rrel_key_sc_element: application_of_salt
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (соль, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -164,7 +164,7 @@ salt
 
 <- rrel_key_sc_element: salt_in_nature
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (соль, нахождение в природе*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
