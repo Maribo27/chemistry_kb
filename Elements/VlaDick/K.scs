@@ -8,34 +8,34 @@ elem_K
 		(* 
 		-> rrel_example:"file://htmls/K.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_kalium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (калий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер калия равен 19] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 1;
+=> nrel_period: 4;
+=> nrel_periodic_number: 19;
 
-<- rrel_key_sc_element: physical_properties_of_kalium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_valence: one;;
+*);
+
+
+
+<- rrel_key_sc_element: physical_properties_of_k
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (калий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Калий — серебристое вещество с характерным блеском на свежеобразованной поверхности. Очень лёгок и легкоплавок. ] (*<- lang_ru;;*);;
@@ -43,11 +43,11 @@ elem_K
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_kalium
+<- rrel_key_sc_element: chemical_properties_of_k
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (калий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Калий, как и другие щелочные металлы, проявляет типичные металлические свойства и очень химически активен, является сильным восстановителем. С водой реагирует со взрывом. ] (*<- lang_ru;;*);;

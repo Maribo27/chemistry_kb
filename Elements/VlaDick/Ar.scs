@@ -8,34 +8,26 @@ elem_Ar
 		(* 
 		-> rrel_example:"file://htmls/Ar.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_argon
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (аргон, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер аргона равен 18] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 18;
+=> nrel_period: 3;
+=> nrel_periodic_number: 18;
 
-<- rrel_key_sc_element: physical_properties_of_argon
+<- gas;
+
+<- rrel_key_sc_element: physical_properties_of_ar
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (аргон, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (аргон, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Аргон — инертный одноатомный газ без цвета, вкуса и запаха. ] (*<- lang_ru;;*);;
@@ -43,11 +35,11 @@ elem_Ar
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_argon
+<- rrel_key_sc_element: chemical_properties_of_ar
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (аргон, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (аргон, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Инертный, неактивный газ. Не горюч, не ядовит. ] (*<- lang_ru;;*);;

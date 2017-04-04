@@ -8,34 +8,32 @@ elem_Al
 		(* 
 		-> rrel_example:"file://htmls/Al.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_aluminium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (алюминий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер алюминия равен 13] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 13;
+=> nrel_period: 3;
+=> nrel_periodic_number: 13;
 
-<- rrel_key_sc_element: physical_properties_of_aluminium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: three;;
+*);
+
+<- rrel_key_sc_element: physical_properties_of_al
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (алюминий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (алюминий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Алюминий — лёгкий металл серебристо-белого цвета, легко поддающийся формовке, литью, механической обработке. Алюминий обладает высокой тепло- и электропроводностью, стойкостью к коррозии. ] (*<- lang_ru;;*);;
@@ -43,11 +41,11 @@ elem_Al
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_aluminium
+<- rrel_key_sc_element: chemical_properties_of_al
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (алюминий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (алюминий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ При нормальных условиях алюминий покрыт тонкой и прочной оксидной плёнкой, благодаря этому алюминий практически не подвержен коррозии. При разрушении оксидной плёнки алюминий выступает как активный металл-восстановитель. ] (*<- lang_ru;;*);;

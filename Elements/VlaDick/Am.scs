@@ -8,34 +8,39 @@ elem_Am
 		(* 
 		-> rrel_example:"file://htmls/Am.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_americium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (америций, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер америция равен 95] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 3;
+=> nrel_period: 7;
+=> nrel_periodic_number: 95;
 
-<- rrel_key_sc_element: physical_properties_of_americium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: five;;
+	=> nrel_valence: six;;
+*);
+
+
+<- rrel_key_sc_element: physical_properties_of_am
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (америций, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (америций, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Америций — металл серебристо-белого цвета, тягучий и ковкий. Светится в темноте за счёт собственного α-излучения. ] (*<- lang_ru;;*);;
@@ -43,14 +48,14 @@ elem_Am
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_americium
+<- rrel_key_sc_element: chemical_properties_of_am
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (америций, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (америций, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Растворы 3-х валентного америция окрашены в ярко-розовый цвет. Оксиды 4-х валентного америция в водных растворах энергично восстанавливаются под действием собственного сильного α-излучения. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ Растворы 3-х валентного америция окрашены в ярко-розовый цвет. Оксиды 4-х валентного америция в водных растворах энергично восстанавливаются под действием собственного сильного α-излучения. Растворяется в хлороводородной кислоте, не растворяется в концентрированных азотной и серной кислотах.] (*<- lang_ru;;*);;
 		*);;
 	*);
 

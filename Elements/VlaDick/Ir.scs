@@ -8,34 +8,41 @@ elem_Ir
 		(* 
 		-> rrel_example:"file://htmls/Ir.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_iridium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (иридий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер иридия равен 77] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 9;
+=> nrel_period: 6;
+=> nrel_periodic_number: 77;
 
-<- rrel_key_sc_element: physical_properties_of_iridium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_one;;
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: six;;
+*);
+
+
+<- rrel_key_sc_element: physical_properties_of_ir
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иридий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (иридий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Иридий — тяжёлый серебристо-белый металл, из-за своей твердости плохо поддающийся механической обработке. ] (*<- lang_ru;;*);;
@@ -43,11 +50,11 @@ elem_Ir
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_iridium
+<- rrel_key_sc_element: chemical_properties_of_ir
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иридий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (иридий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Иридий устойчив на воздухе при обычной температуре и нагревании. Компактный иридий при температурах до 100 °C не реагирует со всеми известными кислотами и их смесями. ] (*<- lang_ru;;*);;

@@ -8,34 +8,36 @@ elem_Ag
 		(* 
 		-> rrel_example:"file://htmls/Ag.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_argentum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (серебро, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер серебра равен 47] (*<- lang_ru;;*);;
-		*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;	
 	*);
 
+=> nrel_group: 11;
+=> nrel_period: 5;
+=> nrel_periodic_number: 47;
 
-<- rrel_key_sc_element: physical_properties_of_argentum
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: one;;
+	=> nrel_valence: two;;
+*);
+
+
+<- rrel_key_sc_element: physical_properties_of_ag
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (серебро, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (серебро, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Серебро — довольно тяжелый, ковкий, пластичный благородный металл серебристо-белого цвета. При комнатной температуре имеет самую высокую электропроводность среди всех известных металлов. ] (*<- lang_ru;;*);;
@@ -43,11 +45,11 @@ elem_Ag
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_argentum
+<- rrel_key_sc_element: chemical_properties_of_ag
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (серебро, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (серебро, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Серебро отличается относительно низкой реакционной способностью. Серебро не окисляется кислородом даже при высоких температурах. ] (*<- lang_ru;;*);;

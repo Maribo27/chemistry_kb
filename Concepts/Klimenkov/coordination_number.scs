@@ -1,0 +1,41 @@
+coordination_number
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[координационное число](* <-lang_ru;; *);
+	[coordination number](* <- lang_en;; *);;
+
+coordination_number
+<- rrel_key_sc_element:...
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/coordination_number.html"(* <- lang_ru;; *);;
+        *);;
+	*);;
+	
+
+
+	
+coordination_number
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(координационное число, применение*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/coordination_number1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+coordination_number
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(координационное число, пример')] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/coordination_number2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

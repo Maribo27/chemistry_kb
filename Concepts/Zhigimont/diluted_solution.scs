@@ -15,8 +15,7 @@ diluted_solution
 		=> nrel_format: format_html;;
 		*);;
 		*);;
-	*);
-<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+	*);;
 
 Definition_of_diluted_solution
 => nrel_main_idtf:

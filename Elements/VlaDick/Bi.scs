@@ -8,34 +8,37 @@ elem_Bi
 		(* 
 		-> rrel_example:"file://htmls/Bi.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_bismuthum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (мышьяк, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер висмута равен 83] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
 
-<- rrel_key_sc_element: physical_properties_of_bismuthum
+=> nrel_group: 15;
+=> nrel_period: 6;
+=> nrel_periodic_number: 83;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_three;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_valence: three;;
+	=> nrel_valence: five;;
+*);
+
+
+<- rrel_key_sc_element: physical_properties_of_bi
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (висмут, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (висмут, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Висмут — металл серебристо-белого цвета с розоватым оттенком. При комнатной температуре висмут хрупкий металл и в изломе имеет грубозернистое строение, но при температуре 150—250 °C проявляет пластические свойства. Переход из твёрдого в жидкое состояние сопровождается увеличением плотности. ] (*<- lang_ru;;*);;
@@ -43,11 +46,11 @@ elem_Bi
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_bismuthum
+<- rrel_key_sc_element: chemical_properties_of_bi
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (висмут, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (висмут, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ При комнатной температуре в среде сухого воздуха не окисляется, но в среде влажного воздуха покрывается тонкой плёнкой оксида, а нагрев до температуры плавления приводит к окислению. ] (*<- lang_ru;;*);;
