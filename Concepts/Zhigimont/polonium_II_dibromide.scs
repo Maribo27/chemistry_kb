@@ -1,0 +1,44 @@
+polonium_II_dibromide
+
+<-bromide;
+<-crystal;
+<-salt;
+<-color_brown;
+<-solid;
+
+=> nrel_main_idtf:
+	[бромид полония(II)]
+	(* <- lang_ru;;	*);
+	[polonium(II) dibromide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[PoBr2] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_polonium_II_dibromide
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="polonium_II_dibromide">Бромид полония(II)</sc_element></b> — <sc_element sys_idtf="binary_compound">бинарное соединение</sc_element> двухвалентного <sc_element sys_idtf="elem_Po">полония</sc_element> с <sc_element sys_idtf="elem_Br">бромом</sc_element>, полониевая <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrobromic_acid">бромоводородной кислоты</sc_element>.]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		   *);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_polonium_II_dibromide
+=> nrel_main_idtf:
+	[Опр.(бромид полония(II))]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> binary_compound; elem_Po; elem_Br; salt; hydrobromic_acid;;
+			*);;

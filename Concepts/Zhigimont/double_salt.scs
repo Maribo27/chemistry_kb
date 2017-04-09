@@ -1,0 +1,33 @@
+double_salt
+
+<= nrel_inclusion: solid;
+
+=> nrel_main_idtf:
+	[двойная соль]
+	(* <- lang_ru;;	*);
+	[double salt]
+	(* <- lang_en;;	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_double_salt
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="double_salt">Двойная соль</sc_element></b> — это <sc_element sys_idtf="salt">соль</sc_element>, содержащая два типа <sc_element sys_idtf="cation">катионов</sc_element>.]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);;
+
+Definition_of_double_salt
+=> nrel_main_idtf:
+	[Опр.(двойная соль)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> salt; cation;;
+			*);;
