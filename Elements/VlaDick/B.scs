@@ -8,34 +8,35 @@ elem_B
 		(* 
 		-> rrel_example:"file://htmls/B.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_borum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (бор, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер бора равен 5] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
 
-<- rrel_key_sc_element: physical_properties_of_borum
+=> nrel_group: 13;
+=> nrel_period: 2;
+=> nrel_periodic_number: 5;
+
+<- nonmetal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+*);
+
+
+<- rrel_key_sc_element: physical_properties_of_b
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бор, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (бор, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Бор — чрезвычайно тердое; бесцветное, серое или красное кристаллическое либо тёмное аморфное вещество. ] (*<- lang_ru;;*);;
@@ -43,11 +44,11 @@ elem_B
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_borum
+<- rrel_key_sc_element: chemical_properties_of_b
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бор, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (бор, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Химически бор довольно инертен. При нагревании на воздухе бор сгорает с большим выделением теплоты. При сильном нагревании бор проявляет восстановительные свойства. ] (*<- lang_ru;;*);;

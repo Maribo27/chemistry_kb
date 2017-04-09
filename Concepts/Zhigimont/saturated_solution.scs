@@ -5,7 +5,7 @@ saturated_solution
 <- rrel_key_sc_element:
 	Definition_of_saturated_solution
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

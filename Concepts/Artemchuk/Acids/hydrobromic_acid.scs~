@@ -1,0 +1,76 @@
+hydrobromic_acid
+=> nrel_main_idtf:
+	[бромоводородная кислота]
+	(* <- lang_ru;;	*);
+	[hydrobromic acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[HBr] 
+	(* <-lang_en;;*);;
+
+hydrobromic_acid
+<- rrel_key_sc_element:
+	Definition_of_hydrobromic_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/hydrobromic_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				hydrogen_bromide;
+				water;
+				strong_acid;
+				monobasic_acid;
+				acid
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Бромоводородная кислота реагирует с металлами, их оксидами, основаниями.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrobromic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrobromic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+Definition_of_hydrobromic_acid
+=> nrel_main_idtf:
+	[Опр.(Бромоводородная кислота)]
+	(* <- lang_ru;;	*);;

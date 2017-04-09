@@ -2,7 +2,7 @@ elem_Rn
 <- rrel_key_sc_element:
 	Definition_of_radon
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,7 +29,7 @@ elem_Rn
 		
 <- rrel_key_sc_element: number_of_radon
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (радон, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -40,7 +40,7 @@ elem_Rn
 
 <- rrel_key_sc_element: chemical_properties_of_radon
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (радон, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -52,7 +52,7 @@ elem_Rn
 
 <- rrel_key_sc_element: physical_properties_of_radon
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (радон, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

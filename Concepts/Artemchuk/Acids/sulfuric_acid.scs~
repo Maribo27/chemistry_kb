@@ -1,0 +1,104 @@
+sulfuric_acid
+=> nrel_main_idtf:
+	[серная кислота]
+	(* <- lang_ru;;	*);
+	[sulfuric acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2SO4] 
+	(* <-lang_en;;*);;
+
+sulfuric_acid
+<- rrel_key_sc_element:
+	Definition_of_sulfuric_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/sulfuric_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				strong_acid;
+				dibasic_acid;
+				acid;
+				elem_S				
+			};
+<- rrel_key_sc_element:
+	... (*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[При обычных условиях концентрированная серная кислота — тяжёлая маслянистая жидкость без цвета и запаха, с кислым «медным» вкусом.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[В промышленности серную кислоту получают окислением диоксида серы до триоксида с последующим взаимодействием SO3 с водой. ](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Серная кислота в концентрированном виде при нагревании — довольно сильный окислитель.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Концентрированная серная кислота поглощает водяные пары, поэтому она применяется для сушки газов, жидкостей и твёрдых тел.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfuric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfuric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+	
+Definition_of_sulfuric_acid
+=> nrel_main_idtf:
+	[Опр.(Серная кислота)]
+	(* <- lang_ru;;	*);;

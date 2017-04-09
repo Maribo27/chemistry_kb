@@ -20,7 +20,7 @@ elem_Sb
 => nrel_chemical_properties: ...
 (*
 	=> nrel_oxidation_state: minus_three;;
-	=> nrel_oxidation_state: plus_three;
+	=> nrel_oxidation_state: plus_three;;
 	=> nrel_oxidation_state: plus_five;;
 	=> nrel_valence: three;;
 	=> nrel_valence: four;;

@@ -4,7 +4,6 @@ chemical_substance
 => nrel_inclusion: mixture;
 => nrel_inclusion: elementary_substance;
 => nrel_inclusion: complex_substance;
-<= nrel_inclusion: substance;
 
 => nrel_main_idtf:
 	[химическое вещество]
@@ -19,7 +18,7 @@ chemical_substance
 <- rrel_key_sc_element:
 	Definition_of_chemical_substance
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -38,7 +37,7 @@ chemical_substance
 <- rrel_key_sc_element: classification_of_chemical_substance
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (химическое вещество, индивидуальное вещество)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

@@ -8,7 +8,7 @@ complex_substance
 <- rrel_key_sc_element:
 	Definition_of_complex_substance
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -37,3 +37,9 @@ complex_substance
 				-> substance; atom; chemical_element;;
 				
 			*);;
+
+complex_substance_structure
+=> nrel_main_idtf:
+	[Разбиение сложных веществ по структуре]
+	(* <- lang_ru;;	*);;
+

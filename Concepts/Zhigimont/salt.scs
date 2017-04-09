@@ -11,7 +11,7 @@ salt
 <- rrel_key_sc_element:
 	Definition_of_salt
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -87,12 +87,13 @@ salt
     -> iodide;;
     -> sulfide;;
     -> fluoride;;
+    -> picrate;;
 	*);
 
 <- rrel_key_sc_element: chemical_properties_of_salt
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (соль, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -121,7 +122,7 @@ NH<sub>4</sub>NO<sub>2</sub> = N<sub>2</sub> + 2H<sub>2</sub>O]
 
 <- rrel_key_sc_element: receipt_of_salt
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (соль, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -163,3 +164,28 @@ Definition_of_salt
 			(*
 				-> complex_substance; water; solution; electrolytic_dissociation; cation; metal; anion; nrel_acid_residue;;
 			*);;
+
+salt_substitution
+=> nrel_main_idtf:
+	[Разбиение по продуктам замены]
+	(* <- lang_ru;; *);;
+
+salt_structure
+=> nrel_main_idtf:
+	[Разбиение по числу катионов и анионов]
+	(* <- lang_ru;; *);;
+
+salt_molecule
+=> nrel_main_idtf:
+	[Разбиение по входящим в состав частицам]
+	(* <- lang_ru;; *);;
+
+salt_solubility
+=> nrel_main_idtf:
+	[Разбиение по растворимости]
+	(* <- lang_ru;; *);;
+	
+subdividing_salt_by_acid
+=> nrel_main_idtf:
+	[Разбиение по соответствующим кислотам]
+	(* <- lang_ru;; *);;

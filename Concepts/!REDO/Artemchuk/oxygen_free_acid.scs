@@ -1,30 +1,29 @@
 oxygen_free_acid
         => nrel_main_idtf:
-                [oxygen-free_acid](*<- lang_en;;*);
-                [бескислородные кислоты](*<- lang_ru;;*);
-        <- rrel_key_sc_element:...
+                [oxygen-free acid](*<- lang_en;;*);
+                [бескислородная кислота](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+	   Definition_of_oxygen_free_acid
                 (*
-                        <- sc_definition;;
-                        => nrel_main_idtf: [Definition (oxygen-free_acid)](*<- lang_en;;*);;
-                        => nrel_main_idtf: [Определение (бескислородные кислоты)](*<- lang_ru;;*);;
+                        <- definition;;
+                        => nrel_main_idtf: [Def.(Oxygen-free acid)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр.(Бескислородная кислота)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [<b>Бескислородные кислоты</b> - <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых не содержат <sc_element sys_idtf="oxygen">кислорода</sc_element>.]
+                                                [<b>Бескислородные кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых не содержат атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
-                                                *);
-                                                [<b>Oxygen-free_acid</b> - <sc_element sys_idtf="acid">acid</sc_element> whose <sc_element sys_idtf="molecule">molecules</sc_element> do not contain <sc_element sys_idtf="oxygen">oxygen</sc_element>.]
-                                                (*
-                                                        <- lang_en;;
-                                                        => nrel_format: format_html;;
                                                 *);;
                                         *);;
-                *);
+                *);;
 
-        <= nrel_using_constants:
-                {
-                        molecule                    
-                };
-<- rrel_key_sc_element: section_acids;;
+Definition_of_oxygen_free_acid
+<= nrel_using_constants: ... 
+	(* 
+		->acid;;
+		->molecule;; 
+		->elem_O;; 
+	*);;
+

@@ -1,5 +1,12 @@
 nrel_melting_temperature
-<-sc_node_norole_relation;
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
 => nrel_main_idtf:
 	[температура плавления*]
 	(* <- lang_ru;;	*);
@@ -10,7 +17,7 @@ nrel_melting_temperature
 <- rrel_key_sc_element:
 	Definition_of_nrel_melting_temperature
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,15 +25,11 @@ nrel_melting_temperature
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				solid;
-				liquid
-			};
+
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -36,7 +39,7 @@ nrel_melting_temperature
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -46,7 +49,7 @@ nrel_melting_temperature
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -56,10 +59,15 @@ nrel_melting_temperature
 
 Definition_of_nrel_melting_temperature
 => nrel_main_idtf:
-	[Опр.(Температура плавления)]
-	(* <- lang_ru;;	*);;
+	[Опр.(Температура плавления*)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->solid;;
+				->liquid;;
+			*);;
 
 
 nrel_melting_temperature
-=>nrel_first_domain: substance;
+=>nrel_first_domain: chemical_substance;
 =>nrel_second_domain: number;;

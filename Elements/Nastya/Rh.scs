@@ -2,7 +2,7 @@ elem_Rh
 <- rrel_key_sc_element:
 	Definition_of_rhodium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -50,7 +50,7 @@ elem_Rh
 				
 <- rrel_key_sc_element: number_of_rhodium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (родий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -61,7 +61,7 @@ elem_Rh
 
 <- rrel_key_sc_element: chemical_properties_of_rhodium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (родий, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -73,7 +73,7 @@ elem_Rh
 
 <- rrel_key_sc_element: physical_properties_of_rhodium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (родий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

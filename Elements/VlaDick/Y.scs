@@ -8,34 +8,34 @@ elem_Y
 		(* 
 		-> rrel_example:"file://htmls/Y.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_yttrium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (иттрий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер иттрия равен 39] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 3;
+=> nrel_period: 5;
+=> nrel_periodic_number: 39;
 
-<- rrel_key_sc_element: physical_properties_of_yttrium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: three;;
+*);
+
+
+
+<- rrel_key_sc_element: physical_properties_of_y
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иттрий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (иттрий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Иттрий — металл светло-серого цвета. Легко поддается механической обработке. ] (*<- lang_ru;;*);;
@@ -43,11 +43,11 @@ elem_Y
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_yttrium
+<- rrel_key_sc_element: chemical_properties_of_y
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иттрий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (иттрий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ На воздухе иттрий покрывается плотной защитной оксидной плёнкой. Интенсивное окисление начинается при 750 °C. ] (*<- lang_ru;;*);;

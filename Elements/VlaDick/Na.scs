@@ -8,34 +8,34 @@ elem_Na
 		(* 
 		-> rrel_example:"file://htmls/Na.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_natrium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (натрий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер натрия равен 11] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 1;
+=> nrel_period: 3;
+=> nrel_periodic_number: 11;
 
-<- rrel_key_sc_element: physical_properties_of_natrium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_valence: one;;
+*);
+
+
+
+<- rrel_key_sc_element: physical_properties_of_na
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (натрий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (натрий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Натрий — серебристо-белый металл, пластичен, даже мягок. Под давлением становится прозрачным и красным.] (*<- lang_ru;;*);;
@@ -43,11 +43,11 @@ elem_Na
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_natrium
+<- rrel_key_sc_element: chemical_properties_of_na
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (натрий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (натрий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Натрий - щелочной металл, на воздухе легко окисляется. Является сильным восстановителем и энергично взаимодействуют со многими неметаллами. С водой натрий реагирует очень бурно. ] (*<- lang_ru;;*);;

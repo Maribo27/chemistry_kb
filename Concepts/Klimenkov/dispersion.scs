@@ -1,0 +1,30 @@
+dispersion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дисперсная система](* <-lang_ru;; *);
+	[disperse system](* <- lang_en;; *);
+	[dispersion](* <- lang_en;; *);;
+
+dispersion
+<- rrel_key_sc_element:...
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/dispersion.html"(* <- lang_ru;; *);;
+        *);;
+	*);;
+	
+
+
+dispersion
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(дисперсная система, классификация)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/dispersion1.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/dispersion_table.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

@@ -8,34 +8,33 @@ elem_Ba
 		(* 
 		-> rrel_example:"file://htmls/Ba.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_barium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (барий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер бария равен 56] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 2;
+=> nrel_period: 6;
+=> nrel_periodic_number: 56;
 
-<- rrel_key_sc_element: physical_properties_of_barium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_valence: two;;
+*);
+
+
+<- rrel_key_sc_element: physical_properties_of_ba
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (барий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (барий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Барий — мягкий, ковкий щёлочноземельный металл серебристо-белого цвета. ] (*<- lang_ru;;*);;
@@ -43,11 +42,11 @@ elem_Ba
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_barium
+<- rrel_key_sc_element: chemical_properties_of_ba
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (барий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (барий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Барий — щёлочноземельный металл. Обладает высокой химической активностью. На воздухе барий быстро окисляется. При незначительном нагревании воспламеняется. ] (*<- lang_ru;;*);;

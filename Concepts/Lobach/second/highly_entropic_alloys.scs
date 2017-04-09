@@ -1,0 +1,62 @@
+highly_entropic_alloys
+=> nrel_main_idtf:
+	[высокоэнтропийный сплав]
+	(* <- lang_ru;;	*);
+	[highly entropic alloys]
+	(* <- lang_en;;	*);
+=>nrel_idtf:
+	[ВЭС]
+	(* <- lang_ru;;	*);;
+
+highly_entropic_alloys
+<- rrel_key_sc_element:
+	Definition_of_highly_entropic_alloys
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/highly_entropic_alloys.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->metal;;
+				->nrel_alloy_component;;
+			*);;
+	*);
+
+
+<=nrel_inclusion:substance;
+
+<- rrel_key_sc_element: highly_entropic_alloys_multicomponent_alloys
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (высокоэнтропийный сплав, многокомпонентный сплав)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Высокоэнтропийными сплавами являются многокомпонентные сплавы, в которых элементы находятся в равной атомной доле ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: group_highly_entropic_alloys
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (высокоэнтропийный сплав, структурообразование, фазообразование)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Высокоэнтропийные сплавы выделены в особую группу, так как процессы структуро- и фазообразования в них, а также диффузионная подвижность атомов, механизм формирования механических свойств и термическая стабильность существенно отличаются от аналогичных процессов в традиционных сплавах.] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+Definition_of_highly_entropic_alloys
+=> nrel_main_idtf:
+	[Опр.(высокоэнтропийный сплав)]
+	(* <- lang_ru;;	*);;
+
+
+

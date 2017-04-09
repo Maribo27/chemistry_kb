@@ -1,0 +1,72 @@
+heavy_alloy
+=> nrel_main_idtf:
+	[тяжёлый сплав]
+	(* <- lang_ru;;	*);
+	[heavy alloy]
+	(* <- lang_en;;	*);;
+
+heavy_alloy
+<- rrel_key_sc_element: Definition_of_heavy_alloy
+(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example:"file://htmls/heavy_alloy.html" (* <-lang_ru;; *);;
+	*);;
+
+	<= nrel_using_constants:...
+	(*
+		-> nrel_density_of_substance;;
+		-> elem_W;;
+		-> alloy;;
+	*);;
+	
+*);
+
+<- alloy;
+
+=> nrel_melting_temperature: 1400;
+=> nrel_density_of_substance: 16500;
+
+<- rrel_key_sc_element: basis_heavy_alloy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (тяжёлый сплав, основа, вольфрам, доля*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Основой тяжёлых сплавов является вольфрам, содержание которого может составлять от 76% до 97% ] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: additives_in_heavy_alloy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (тяжёлый сплав, никель, железо, медь)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Помимо вольфрама в состав сплавов обычно входят никель, железо и медь, но также могут входить и другие металлы — (молибден, кобальт, хром, серебро).] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: spread_heavy_alloy
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Прим. (тяжёлый сплав, распространение)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ Наибольшее распространение нашли тяжёлые сплавы марок ВНЖ (вольфрам−никель−железо) и ВНМ (вольфрам−никель−медь).] (*<- lang_ru;;*);;
+		*);;
+	*);;
+
+heavy_alloy
+=> nrel_alloy_component: 
+	elem_W;elem_Ni;elem_Cu;elem_Fe;elem_Mo;elem_Co;elem_Cr;elem_Ag;;
+
+
+Definition_of_heavy_alloy
+=> nrel_main_idtf:
+	[Опр.(тяжёлый сплав)]
+	(* <- lang_ru;;	*);;

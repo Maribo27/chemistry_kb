@@ -18,24 +18,25 @@ elem_Bh
 				
 			};
 
+=> nrel_group: 7;
+=> nrel_period: 7;
+=> nrel_periodic_number: 107;
 
-<- rrel_key_sc_element: number_of_bohrium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_seven;;
+	=> nrel_valence: seven;;
+*);
+
+
+
+<- rrel_key_sc_element: physical_properties_of_bh
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (борий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер бория равен 107] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: physical_properties_of_bohrium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (борий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (борий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Борий — трансурановый элемент, металл.  ] (*<- lang_ru;;*);;

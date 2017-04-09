@@ -8,27 +8,26 @@ elem_Hs
 		(* 
 		-> rrel_example:"file://htmls/Hs.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_hassium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (хассий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер хассия равен 108] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
+
+=> nrel_group: 8;
+=> nrel_period: 7;
+=> nrel_periodic_number: 89;
+
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_eight;;
+	=> nrel_valence: eight;;
+*);
 
 
 <- rrel_key_sc_element: receipt_of_hassium

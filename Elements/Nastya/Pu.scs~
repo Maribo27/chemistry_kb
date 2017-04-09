@@ -11,23 +11,26 @@ elem_Pu
 	
 	*);
 
-=> nrel_group: [3](* <-lang_ru;;*);
-=> nrel_period: [7](* <-lang_ru;;*);
-=> nrel_periodic_number: [94](* <-lang_ru;;*);
+=> nrel_group: 3;
+=> nrel_period: 7;
+=> nrel_periodic_number: 94;
 
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+7](* <-lang_ru;;*); 	
+<- metal; 
 
-=> nrel_valence: [3](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-=> nrel_valence: [5](* <-lang_ru;;*);
-=> nrel_valence: [6](* <-lang_ru;;*);
-=> nrel_valence: [7](* <-lang_ru;;*);
-
-
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_oxidation_state: plus_seven;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: five;;
+	=> nrel_valence: six;;
+	=> nrel_valence: seven;;
+	
+*);
 			
 <- rrel_key_sc_element:
 	...
@@ -82,10 +85,9 @@ Definition_of_plutonium
 => nrel_main_idtf:
 	[Опр.(Плутоний)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

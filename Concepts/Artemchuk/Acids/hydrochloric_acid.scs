@@ -12,7 +12,7 @@ hydrochloric_acid
 <- rrel_key_sc_element:
 	Definition_of_hydrochloric_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -21,19 +21,10 @@ hydrochloric_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				hydrogen_chloride;
-				water;
-				strong_acid;
-				monobasic_acid;
-				acid;
-				liquid
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -59,4 +50,13 @@ hydrochloric_acid
 Definition_of_hydrochloric_acid
 => nrel_main_idtf:
 	[Опр.(Соляная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->hydrogen_chloride;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;

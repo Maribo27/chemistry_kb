@@ -12,7 +12,7 @@ binary_compound
 <- rrel_key_sc_element:
 	Definition_of_binary_compound
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ binary_compound
 
 <- rrel_key_sc_element: application_of_binary_compound
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (бинарное соединение, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -46,7 +46,7 @@ binary_compound
 <- rrel_key_sc_element: chemical_properties_of_binary_compound
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (бинарное соединение, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -63,7 +63,7 @@ binary_compound
 <- rrel_key_sc_element: physical_properties_of_binary_compound
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (бинарное соединение, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

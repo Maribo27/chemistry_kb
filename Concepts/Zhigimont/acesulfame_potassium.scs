@@ -22,7 +22,7 @@ acesulfame_potassium
 <- rrel_key_sc_element:
 	Definition_of_acesulfame_potassium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -37,7 +37,7 @@ acesulfame_potassium
 
 <- rrel_key_sc_element: application_of_acesulfame_potassium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ацесульфам калия, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -52,7 +52,7 @@ acesulfame_potassium
 
 <- rrel_key_sc_element: impact_of_acesulfame_potassium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ацесульфам калия, воздействие на организм*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -63,7 +63,7 @@ acesulfame_potassium
 
 <- rrel_key_sc_element: synthesys_of_acesulfame_potassium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (ацесульфам калия, синтез*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

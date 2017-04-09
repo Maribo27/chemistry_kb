@@ -12,7 +12,7 @@ chlorous_acid
 <- rrel_key_sc_element:
 	Definition_of_chlorous_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -21,17 +21,10 @@ chlorous_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				strong_acid;
-				monobasic_acid;
-				acid;
-				nonpersistent_acid
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -72,4 +65,11 @@ chlorous_acid
 Definition_of_chlorous_acid
 => nrel_main_idtf:
 	[Опр.(Хлористая кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->nonpersistent_acid;;
+			*);;

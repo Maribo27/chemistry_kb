@@ -1,0 +1,86 @@
+carbonic_acid
+=> nrel_main_idtf:
+	[угольная кислота]
+	(* <- lang_ru;;	*);
+	[carbonic acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2CO3] 
+	(* <-lang_en;;*);;
+
+carbonic_acid
+<- rrel_key_sc_element:
+	Definition_of_carbonic_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/carbonic_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				weak_acid;
+				dibasic_acid;
+				acid;
+				liquid
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Угольная кислота  образуется в малых количествах при растворении углекислого газа в воде.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Угольная кислота в водных растворах неустойчива.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/carbonic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/carbonic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+Definition_of_carbonic_acid
+=> nrel_main_idtf:
+	[Опр.(Угольная кислота)]
+	(* <- lang_ru;;	*);;

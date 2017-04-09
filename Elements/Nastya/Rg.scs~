@@ -11,13 +11,18 @@ elem_Rg
 	
 	*);
 
-=> nrel_group: [11](* <-lang_ru;;*);
-=> nrel_period: [7](* <-lang_ru;;*);
-=> nrel_periodic_number: [111](* <-lang_ru;;*);
+=> nrel_group: 11;
+=> nrel_period: 7;
+=> nrel_periodic_number: 111;
 
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_valence: [3](* <-lang_ru;;*);
+<- metal; 
 
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_valence: three;;
+	
+*);
 
 <- rrel_key_sc_element: number_of_roentgenium
 	(*
@@ -57,10 +62,9 @@ Definition_of_roentgenium
 => nrel_main_idtf:
 	[Опр.(Рентгений)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;
