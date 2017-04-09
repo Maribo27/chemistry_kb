@@ -2,15 +2,16 @@ electrolyte
         => nrel_main_idtf:
                 [electrolyte](*<- lang_en;;*);
                 [электролит](*<- lang_ru;;*);
-        <- rrel_key_sc_element:...
+        <- rrel_key_sc_element:
+	   Definition_of_electrolyte
                 (*
-                        <- sc_definition;;
-                        => nrel_main_idtf: [Def. (electrolyte)](*<- lang_en;;*);;
-                        => nrel_main_idtf: [Опр. (электролит)](*<- lang_ru;;*);;
+                        <- definition;;
+                        => nrel_main_idtf: [Def.(Electrolyte)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр.(Электролит)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [Электроли́т — вещество, которое проводит электрический ток вследствие диссоциации на ионы, что происходит в растворах и расплавах, или движения ионов в кристаллических решётках твёрдых электролитов.]
+                                                [Электролит — вещество, которое проводит электрический ток вследствие диссоциации на ионы, что происходит в растворах и расплавах, или движения ионов в кристаллических решётках твёрдых электролитов.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
@@ -25,7 +26,7 @@ electrolyte
 
         <- rrel_key_sc_element:...
                 (*
-                        <- sc_explanation;;
+                        <- explanation;;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
@@ -40,5 +41,4 @@ electrolyte
                                                         => nrel_format: format_html;;
                                                 *);;
                                          *);;
-                 *);
-<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+                 *);;

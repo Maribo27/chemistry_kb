@@ -12,7 +12,7 @@ hydrosulfuric_acid
 <- rrel_key_sc_element:
 	Definition_of_hydrosulfuric_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -21,19 +21,10 @@ hydrosulfuric_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				hydrogen_sulfide;
-				water;
-				nonpersistent_acid;
-				weak_acid;
-				dibasic_acid;
-				acid
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -74,4 +65,13 @@ hydrosulfuric_acid
 Definition_of_hydrosulfuric_acid
 => nrel_main_idtf:
 	[Опр.(Сероводородная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->hydrogen_sulfide;;
+				->water;;
+				->nonpersistent_acid;;
+				->weak_acid;;
+				->dibasic_acid;;
+				->acid;;
+			*);;

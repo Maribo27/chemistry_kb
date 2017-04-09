@@ -1,14 +1,15 @@
 sc_node_norole_relation->nrel_indicator;;
 nrel_indicator
-	=> nrel_main_idtf: [nrel_indicator](*<- lang_en;;*);
-						[индикатор](*<- lang_ru;;*);
-	<- rrel_key_sc_element:...
+	=> nrel_main_idtf: [indicator*](*<- lang_en;;*);
+			   [индикатор*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:
+	Definition_of_nrel_indicator
 	(*
 		<- sc_explanation;;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:
-				"file://nrel_indicator.html"
+				"file://htmls/nrel_indicator.html"
 				(*<- lang_ru;;*);;
 		*);;
 	*);
@@ -41,5 +42,13 @@ nrel_indicator
 	*);;
 
 	
-
+Definition_of_nrel_indicator
+=> nrel_main_idtf:
+	[Опр.(Индикатор*)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->nrel_indicator;;
+		->substance;; 
+	*);;
 

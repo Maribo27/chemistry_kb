@@ -1,0 +1,77 @@
+hydrosulfuric_acid
+=> nrel_main_idtf:
+	[сероводородная кислота]
+	(* <- lang_ru;;	*);
+	[hydrochloric acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2S] 
+	(* <-lang_en;;*);;
+
+hydrosulfuric_acid
+<- rrel_key_sc_element:
+	Definition_of_hydrosulfuric_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/hydrosulfuric_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				hydrogen_sulfide;
+				water;
+				nonpersistent_acid;
+				weak_acid;
+				dibasic_acid;
+				acid
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Сероводородная кислота медленно окисляется кислородом воздуха с выделением серы.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrosulfuric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/hydrosulfuric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+Definition_of_hydrosulfuric_acid
+=> nrel_main_idtf:
+	[Опр.(Сероводородная кислота)]
+	(* <- lang_ru;;	*);;

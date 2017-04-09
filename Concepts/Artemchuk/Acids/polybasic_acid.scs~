@@ -1,0 +1,41 @@
+polybasic_acid<= nrel_inclusion: acid;;
+polybasic_acid
+=> nrel_main_idtf:
+	[многоосновная кислота]
+	(* <- lang_ru;;	*);
+	[polybasic acid]
+	(* <- lang_en;;	*);;
+polybasic_acid
+<- rrel_key_sc_element:
+	Definition_of_polybasic_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/polybasic_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				acid;
+				atom;
+				elem_H
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Многоосновные кислоты диссоциируют ступенчато. Количество ступеней зависит от количества атомов водорода.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+Definition_of_polybasic_acid
+=> nrel_main_idtf:
+	[Опр.(Многоосновная кислота)]
+	(* <- lang_ru;;	*);;

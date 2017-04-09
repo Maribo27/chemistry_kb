@@ -1,13 +1,14 @@
 non_electrolyte
 => nrel_main_idtf:
-        [non electrolyte](*<- lang_en;;*);
+        [nonelectrolyte](*<- lang_en;;*);
         [неэлектролит](*<- lang_ru;;*);
 
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+Definition_of_non_electrolyte
 (*
-        <- sc_definition;;
-        => nrel_main_idtf: [Def. (non electrolyte)](*<- lang_en;;*);;
-        => nrel_main_idtf: [Опр. (неэлектролит)](*<- lang_ru;;*);;
+        <- definition;;
+        => nrel_main_idtf: [Def.(Nonelectrolyte)](*<- lang_en;;*);;
+        => nrel_main_idtf: [Опр.(Неэлектролит)](*<- lang_ru;;*);;
         <= nrel_sc_text_translation:...
         (*
                 -> rrel_example:
@@ -22,6 +23,4 @@ non_electrolyte
                         => nrel_format: format_html;;
                 *);;
         *);;
-*);
-
-<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+*);;
