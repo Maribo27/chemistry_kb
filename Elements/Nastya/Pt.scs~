@@ -11,9 +11,25 @@ elem_Pt
 	
 	*);
 
-=> nrel_group: [10](* <-lang_ru;;*);
-=> nrel_period: [6](* <-lang_ru;;*);
-=> nrel_periodic_number: [78](* <-lang_ru;;*);
+=> nrel_group: 10;
+=> nrel_period: 6;
+=> nrel_periodic_number: 78;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: one;;
+	=> nrel_valence: two;;
+	=> nrel_valence: three;;
+	=> nrel_valence: four;;
+	=> nrel_valence: six;;
+	
+*);
 
 => nrel_oxidation_state: [+2](* <-lang_ru;;*);
 => nrel_oxidation_state: [+4](* <-lang_ru;;*);
@@ -80,10 +96,9 @@ Definition_of_platinum
 => nrel_main_idtf:
 	[Опр.(Платина)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

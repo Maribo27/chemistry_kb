@@ -1,30 +1,29 @@
-oxyacids
+oxyacid
         => nrel_main_idtf:
                 [oxyacid](*<- lang_en;;*);
                 [кислородсодержащая кислота](*<- lang_ru;;*);
-        <- rrel_key_sc_element:...
+        <- rrel_key_sc_element:
+	   Definition_of_oxyacid
                 (*
-                        <- sc_definition;;
-                        => nrel_main_idtf: [Def. (oxyacid)](*<- lang_en;;*);;
-                        => nrel_main_idtf: [Опр. (кислородсодержащая кислота)](*<- lang_ru;;*);;
+                        <- definition;;
+                        => nrel_main_idtf: [Def.(Oxyacid)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Опр.(Кислородсодержащая кислота)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="electrolyte">электролиты</sc_element>, образующие при диссоциации в водных растворах ионы водорода H+, или, более точно, ионы гидроксония ( Н3О+- гидратированный ион водорода).]
+                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых содержат один или нестолько атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
-                                                *);
-                                                [<b>Oxyacids</b> - this <sc_element sys_idtf="electrolyte">electrolytes</sc_element> forming upon dissociation in aqueous solutions of hydrogen ions H+, or, more precisely, hydronium ions (H3O+- hydrated hydrogen ion).]
-                                                (*
-                                                        <- lang_en;;
-                                                        => nrel_format: format_html;;
                                                 *);;
                                         *);;
-                *);
+                *);;
 
-        <= nrel_using_constants:
-                {
-                        electrolyte                    
-                };
-<- rrel_key_sc_element: section_acids;;
+Definition_of_oxyacid
+<= nrel_using_constants: ... 
+	(* 
+		->acid;;
+		->molecule;; 
+		->elem_O;; 
+	*);;
+

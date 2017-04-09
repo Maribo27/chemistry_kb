@@ -2,7 +2,7 @@ elem_In
 <- rrel_key_sc_element:
 	Definition_of_indium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -45,7 +45,7 @@ elem_In
 				
 <- rrel_key_sc_element: number_of_indium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (индий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -56,7 +56,7 @@ elem_In
 
 <- rrel_key_sc_element: chemical_properties_of_indium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (индий, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -68,7 +68,7 @@ elem_In
 
 <- rrel_key_sc_element: physical_properties_of_indium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (индий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

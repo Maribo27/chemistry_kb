@@ -9,7 +9,7 @@ tribasic_acid
 <- rrel_key_sc_element:
 	Definition_of_tribasic_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,16 +18,10 @@ tribasic_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				acid;
-				atom;
-				elem_H
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -38,4 +32,10 @@ tribasic_acid
 Definition_of_tribasic_acid
 => nrel_main_idtf:
 	[Опр.(Трехосновная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;

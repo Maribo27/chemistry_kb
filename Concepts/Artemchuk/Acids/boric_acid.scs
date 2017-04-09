@@ -12,7 +12,7 @@ boric_acid
 <- rrel_key_sc_element:
 	Definition_of_boric_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -21,16 +21,10 @@ boric_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				weak_acid;
-				tribasic_acid;
-				acid
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -41,7 +35,7 @@ boric_acid
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -82,4 +76,10 @@ boric_acid
 Definition_of_boric_acid
 => nrel_main_idtf:
 	[Опр.(Борная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->weak_acid;;
+				->tribasic_acid;;
+				->acid;;
+			*);;

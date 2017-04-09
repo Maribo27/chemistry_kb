@@ -11,24 +11,29 @@ elem_S
 	
 	*);
 
-=> nrel_group: [16](* <-lang_ru;;*);
-=> nrel_period: [3](* <-lang_ru;;*);
-=> nrel_periodic_number: [16](* <-lang_ru;;*);
+=> nrel_group: 16;
+=> nrel_period: 3;
+=> nrel_periodic_number: 16;
 
-=> nrel_oxidation_state: [-2](* <-lang_ru;;*); 
-=> nrel_oxidation_state: [-1](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+1](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+3](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+5](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+6](* <-lang_ru;;*);
+
+<- nonmetal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_two;;
+	=> nrel_oxidation_state: minus_one;;
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_six;;
+	=> nrel_valence: two;;
+	=> nrel_valence: four;;
+	=> nrel_valence: six;;
 	
-=> nrel_valence: [2](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-=> nrel_valence: [6](* <-lang_ru;;*);
-			
-
+*);
+	
 <- rrel_key_sc_element:
 	...
 	(*
@@ -82,10 +87,9 @@ Definition_of_sulphur
 => nrel_main_idtf:
 	[Опр.(Сера)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

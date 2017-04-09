@@ -1,0 +1,66 @@
+sulfurous_acid
+=> nrel_main_idtf:
+	[сернистая кислота]
+	(* <- lang_ru;;	*);
+	[sulfurous acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2SO3] 
+	(* <-lang_en;;*);;
+
+sulfurous_acid
+<- rrel_key_sc_element:
+	Definition_of_sulfurous_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/sulfurous_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				nonpersistent_acid;
+				dibasic_acid;
+				acid;
+				elem_S	
+			};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfurous_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/sulfurous_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+
+Definition_of_sulfurous_acid
+=> nrel_main_idtf:
+	[Опр.(Сернистая кислота)]
+	(* <- lang_ru;;	*);;

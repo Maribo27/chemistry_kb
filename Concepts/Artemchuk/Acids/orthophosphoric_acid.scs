@@ -12,7 +12,7 @@ orthophosphoric_acid
 <- rrel_key_sc_element:
 	Definition_of_orthophosphoric_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -21,17 +21,9 @@ orthophosphoric_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				strong_acid;
-				tribasic_acid;
-				acid;
-				water;
-				solid				
-			};
 <- rrel_key_sc_element:
 	... (*
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -41,7 +33,7 @@ orthophosphoric_acid
 
 <- rrel_key_sc_element:
 	... (*
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -51,7 +43,7 @@ orthophosphoric_acid
 
 <- rrel_key_sc_element:
 	... (*
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -61,7 +53,7 @@ orthophosphoric_acid
 
 <- rrel_key_sc_element:
 	... (*
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -102,4 +94,12 @@ orthophosphoric_acid
 Definition_of_orthophosphoric_acid
 => nrel_main_idtf:
 	[Опр.(Ортофосфорная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->tribasic_acid;;
+				->acid;;
+				->water;;
+				->solid;;			
+			*);;

@@ -12,7 +12,7 @@ hydrobromic_acid
 <- rrel_key_sc_element:
 	Definition_of_hydrobromic_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -21,18 +21,10 @@ hydrobromic_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				hydrogen_bromide;
-				water;
-				strong_acid;
-				monobasic_acid;
-				acid
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -73,4 +65,12 @@ hydrobromic_acid
 Definition_of_hydrobromic_acid
 => nrel_main_idtf:
 	[Опр.(Бромоводородная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->hydrogen_bromide;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+			*);;

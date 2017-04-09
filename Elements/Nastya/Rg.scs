@@ -2,7 +2,7 @@ elem_Rg
 <- rrel_key_sc_element:
 	Definition_of_roentgenium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -26,7 +26,7 @@ elem_Rg
 
 <- rrel_key_sc_element: number_of_roentgenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (рентгений, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -37,7 +37,7 @@ elem_Rg
 
 <- rrel_key_sc_element: chemical_properties_of_roentgenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (рентгений, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -49,7 +49,7 @@ elem_Rg
 
 <- rrel_key_sc_element: physical_properties_of_roentgenium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (рентгений, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

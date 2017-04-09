@@ -9,7 +9,7 @@ soluble_acid
 <- rrel_key_sc_element:
 	Definition_of_soluble_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,15 +18,10 @@ soluble_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				acid;
-				water
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -37,4 +32,9 @@ soluble_acid
 Definition_of_soluble_acid
 => nrel_main_idtf:
 	[Опр.(Растворимая кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->water;;
+			*);;

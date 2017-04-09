@@ -2,7 +2,7 @@ elem_Pm
 <- rrel_key_sc_element:
 	Definition_of_promethium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -41,7 +41,7 @@ elem_Pm
 				
 <- rrel_key_sc_element: number_of_promethium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (прометий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -52,7 +52,7 @@ elem_Pm
 
 <- rrel_key_sc_element: chemical_properties_of_promethium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (прометий, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -64,7 +64,7 @@ elem_Pm
 
 <- rrel_key_sc_element: physical_properties_of_promethium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (прометий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

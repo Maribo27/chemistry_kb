@@ -1,15 +1,15 @@
 electron
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[Электрон]
+	[электрон]
 	(* <- lang_ru;;	*);
-	[Electron]
+	[electron]
 	(* <- lang_en;;	*);;
 electron
 <- rrel_key_sc_element:
 	Definition_of_electron
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -20,7 +20,7 @@ electron
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ electron
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -40,7 +40,7 @@ electron
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -50,7 +50,7 @@ electron
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -62,7 +62,13 @@ electron
 Definition_of_electron
 => nrel_main_idtf:
 	[Опр.(Электрон)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->electron;;
+		->elementary_particle;; 
+		->substance;; 
+	*);;
 
 
 

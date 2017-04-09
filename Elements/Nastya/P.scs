@@ -2,7 +2,7 @@ elem_P
 <- rrel_key_sc_element:
 	Definition_of_phosphorus
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -50,7 +50,7 @@ elem_P
 				
 <- rrel_key_sc_element: number_of_phosphorus
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (фосфор, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -61,7 +61,7 @@ elem_P
 
 <- rrel_key_sc_element: chemical_properties_of_phosphorus
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (фосфор, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -73,7 +73,7 @@ elem_P
 
 <- rrel_key_sc_element: physical_properties_of_phosphorus
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (фосфор, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -84,7 +84,7 @@ elem_P
 
 <- rrel_key_sc_element: physical_properties_of_white_phosphorus
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (белый фосфор, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -95,7 +95,7 @@ elem_P
 
 <- rrel_key_sc_element: physical_properties_of_red_phosphorus
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (красный фосфор, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -106,7 +106,7 @@ elem_P
 
 <- rrel_key_sc_element: physical_properties_of_black_phosphorus
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (черный фосфор, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -117,7 +117,7 @@ elem_P
 
 <- rrel_key_sc_element: physical_properties_of_metal_phosphorus
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (металлический фосфор, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

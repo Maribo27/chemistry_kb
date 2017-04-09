@@ -9,7 +9,7 @@ strong_acid
 <- rrel_key_sc_element:
 	Definition_of_strong_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,15 +18,10 @@ strong_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				acid;
-				solution
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -36,7 +31,7 @@ strong_acid
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -46,7 +41,7 @@ strong_acid
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -57,4 +52,9 @@ strong_acid
 Definition_of_strong_acid
 => nrel_main_idtf:
 	[Опр.(Сильная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->solution;;
+			*);;

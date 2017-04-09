@@ -1,10 +1,13 @@
 sc_node_norole_relation->nrel_electrolysis;;
 nrel_electrolysis
 	=> nrel_main_idtf: [electrolysis*](*<- lang_en;;*);
-						[электролиз*](*<- lang_ru;;*);
-	<- rrel_key_sc_element:...
+			   [электролиз*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:
+     Definition_of_nrel_electrolysis
 	(*
-		<- sc_explanation;;
+		<- definition;;
+		=> nrel_main_idtf: [Def.(Electrolysis*)](*<- lang_en;;*);;
+        	=> nrel_main_idtf: [Опр.(Электролиз*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:

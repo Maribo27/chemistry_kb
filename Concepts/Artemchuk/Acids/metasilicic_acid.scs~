@@ -1,0 +1,59 @@
+metasilicic_acid
+=> nrel_main_idtf:
+	[метакремниевая кислота]
+	(* <- lang_ru;;	*);
+	[metasilicic acid]
+	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2SiO3] 
+	(* <-lang_en;;*);;
+
+metasilicic_acid
+<- rrel_key_sc_element:
+	Definition_of_metasilicic_acid
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/metasilicic_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<= nrel_using_constants:
+			{
+				weak_acid;
+				dibasic_acid;
+				acid
+			};
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Метакремниевая кислота представляет собой желатинообразную массу.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/metasilicic_acid.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+Definition_of_metasilicic_acid
+=> nrel_main_idtf:
+	[Опр.(Метакремниевая кислота)]
+	(* <- lang_ru;;	*);;
