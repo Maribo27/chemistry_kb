@@ -2,7 +2,7 @@ elem_S
 <- rrel_key_sc_element:
 	Definition_of_sulphur
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -51,7 +51,7 @@ elem_S
 				
 <- rrel_key_sc_element: number_of_sulphur
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (сера, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -62,7 +62,7 @@ elem_S
 
 <- rrel_key_sc_element: chemical_properties_of_sulphur
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (сера, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -74,7 +74,7 @@ elem_S
 
 <- rrel_key_sc_element: physical_properties_of_sulphur
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (сера, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

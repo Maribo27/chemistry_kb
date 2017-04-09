@@ -11,16 +11,19 @@ elem_Pb
 	
 	*);
 
-=> nrel_group: [14](* <-lang_ru;;*);
-=> nrel_period: [6](* <-lang_ru;;*);
-=> nrel_periodic_number: [82](* <-lang_ru;;*);
+=> nrel_group: 14;
+=> nrel_period: 6;
+=> nrel_periodic_number: 82;
 
-=> nrel_oxidation_state: [-4](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+2](* <-lang_ru;;*);
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);	
-=> nrel_valence: [2](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
-
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_four;;
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_valence: two;;
+	=> nrel_valence: four;;
+	
+*);
 			
 <- rrel_key_sc_element:
 	...
@@ -75,10 +78,9 @@ Definition_of_plumbum
 => nrel_main_idtf:
 	[Опр.(Свинец)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

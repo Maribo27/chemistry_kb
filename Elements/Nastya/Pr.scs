@@ -2,7 +2,7 @@ elem_Pr
 <- rrel_key_sc_element:
 	Definition_of_praseodymium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -43,7 +43,7 @@ elem_Pr
 				
 <- rrel_key_sc_element: number_of_praseodymium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (празеодим, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -54,7 +54,7 @@ elem_Pr
 
 <- rrel_key_sc_element: chemical_properties_of_praseodymium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (празеодим, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -66,7 +66,7 @@ elem_Pr
 
 <- rrel_key_sc_element: physical_properties_of_praseodymium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (празеодим, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

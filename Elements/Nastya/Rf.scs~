@@ -11,13 +11,18 @@ elem_Rf
 	
 	*);
 
-=> nrel_group: [4](* <-lang_ru;;*);
-=> nrel_period: [7](* <-lang_ru;;*);
-=> nrel_periodic_number: [94](* <-lang_ru;;*);
+=> nrel_group: 4;
+=> nrel_period: 7;
+=> nrel_periodic_number: 94;
 
-=> nrel_oxidation_state: [+4](* <-lang_ru;;*);
-=> nrel_valence: [4](* <-lang_ru;;*);
+<- metal; 
 
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_four;;
+	=> nrel_valence: four;;
+	
+*);
 		
 <- rrel_key_sc_element: number_of_rutherfordium
 	(*
@@ -57,10 +62,9 @@ Definition_of_rutherfordium
 => nrel_main_idtf:
 	[Опр.(Резерфордий)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;

@@ -2,7 +2,7 @@ elem_Pd
 <- rrel_key_sc_element:
 	Definition_of_palladium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -44,7 +44,7 @@ elem_Pd
 				
 <- rrel_key_sc_element: number_of_palladium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (паладий, порядковый номер*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -55,7 +55,7 @@ elem_Pd
 
 <- rrel_key_sc_element: chemical_properties_of_palladium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (паладий, химические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -67,7 +67,7 @@ elem_Pd
 
 <- rrel_key_sc_element: physical_properties_of_palladium
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (паладий, физические свойства)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...

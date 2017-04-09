@@ -11,9 +11,18 @@ elem_Ra
 	
 	*);
 
-=> nrel_group: [2](* <-lang_ru;;*);
-=> nrel_period: [7](* <-lang_ru;;*);
-=> nrel_periodic_number: [88](* <-lang_ru;;*);
+=> nrel_group: 2;
+=> nrel_period: 7;
+=> nrel_periodic_number: 88;
+
+<- metal; 
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_valence: two;;
+	
+*);
 
 => nrel_oxidation_state: [+2](* <-lang_ru;;*);
 => nrel_valence: [2](* <-lang_ru;;*);
@@ -72,10 +81,9 @@ Definition_of_radium
 => nrel_main_idtf:
 	[Опр.(Радий)]
 	(* <- lang_ru;;	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};;
+<= nrel_using_constants: ... 
+	(* 
+		->chemical_element;;
+		->period;; 
+		->nrel_group;; 
+	*);;
