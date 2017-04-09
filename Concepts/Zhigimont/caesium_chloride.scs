@@ -18,7 +18,7 @@ caesium_chloride
 <- rrel_key_sc_element:
 	Definition_of_caesium_chloride
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -57,7 +57,7 @@ caesium_chloride
 <- rrel_key_sc_element: physical_properties_of_caesium_chloride
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (хлорид цезия, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -74,7 +74,7 @@ caesium_chloride
 <- rrel_key_sc_element: chemical_properties_of_caesium_chloride
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (хлорид цезия, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -94,7 +94,7 @@ caesium_chloride
 
 <- rrel_key_sc_element: receipt_of_caesium_chloride
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (хлорид цезия, получение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
@@ -115,7 +115,7 @@ caesium_chloride
 
 <- rrel_key_sc_element: application_of_caesium_chloride
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (хлорид цезия, применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -126,7 +126,7 @@ caesium_chloride
 
 <- rrel_key_sc_element: toxicity_of_caesium_chloride
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (хлорид цезия, токсичность*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:

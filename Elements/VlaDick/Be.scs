@@ -8,34 +8,32 @@ elem_Be
 		(* 
 		-> rrel_example:"file://htmls/Be.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_beryllium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (бериллий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер бериллия равен 4] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 2;
+=> nrel_period: 2;
+=> nrel_periodic_number: 4;
 
-<- rrel_key_sc_element: physical_properties_of_beryllium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_two;;
+	=> nrel_valence: two;;
+*);
+
+<- rrel_key_sc_element: physical_properties_of_be
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бериллий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (бериллий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Бериллий — относительно твёрдый, но хрупкий металл светло-серого цвета, имеет весьма высокую стоимость. ] (*<- lang_ru;;*);;
@@ -43,11 +41,11 @@ elem_Be
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_beryllium
+<- rrel_key_sc_element: chemical_properties_of_be
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бериллий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (бериллий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Бериллий относительно мало реакционноспособен при комнатной температуре. Порошок бериллия при поджигании горит ярким пламенем. Бериллий легко растворяется в разбавленных водных растворах кислот.  ] (*<- lang_ru;;*);;

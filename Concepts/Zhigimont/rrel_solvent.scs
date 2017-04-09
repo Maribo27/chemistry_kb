@@ -5,7 +5,7 @@ rrel_solvent
 <- rrel_key_sc_element:
 	Definition_of_rrel_solvent
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -20,7 +20,7 @@ rrel_solvent
 <- rrel_key_sc_element: application_of_rrel_solvent
 
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (растворитель', применение*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
@@ -46,3 +46,8 @@ Definition_of_rrel_solvent
 			(*
 				-> liquid; solid; gas; substance; solubility;;
 			*);;
+
+solvent_state
+=> nrel_main_idtf:
+	[Разбиение растворителей по структуре]
+	(* <- lang_ru;;	*);;

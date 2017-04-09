@@ -1,0 +1,67 @@
+copper_II_bromide
+
+<-bromide;
+<-crystal;
+<-salt;
+<-color_black;
+<-solid;
+
+=> nrel_main_idtf:
+	[бромид меди(II)]
+	(* <- lang_ru;;	*);
+	[copper (II) bromide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[CuBr2] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_copper_II_bromide
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="copper_II_bromide">Бромид меди(II)</sc_element></b> — соединение двухвалентной <sc_element sys_idtf="elem_Cu">меди</sc_element> с <sc_element sys_idtf="elem_Br">бромом</sc_element>.]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/copper_II_bromide.PNG"
+			(*
+			=> nrel_format: format_PNG;;
+			*);;
+		*);;
+	*);
+	
+=> nrel_applying: bromination; photography;;
+
+bromination
+=> nrel_main_idtf: [бромирование](* <- lang_ru;; *);;
+photography
+=> nrel_main_idtf: [фотография](* <- lang_ru;;	*);;
+
+
+
+
+Definition_of_copper_II_bromide
+=> nrel_main_idtf:
+	[Опр.(бромид меди(II))]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> elem_Cu; elem_Br;;
+			*);;

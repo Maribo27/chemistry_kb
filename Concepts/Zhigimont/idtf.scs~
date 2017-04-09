@@ -1,0 +1,432 @@
+saccharin
+=> nrel_main_idtf:
+	[сахарин]
+	(* <- lang_ru;;	*);
+	[saccharin]
+	(* <- lang_en;;	*);;
+
+sucrose
+=> nrel_main_idtf:
+	[сахароза]
+	(* <- lang_ru;;	*);
+	[sucrose]
+	(* <- lang_en;;	*);;
+
+sweetener
+=> nrel_main_idtf:
+	[подсластитель]
+	(* <- lang_ru;;	*);
+	[sweetener]
+	(* <- lang_en;;	*);;
+
+polycrystal
+=> nrel_main_idtf:
+	[поликристалл]
+	(* <- lang_ru;;	*);
+	[polycrystal]
+	(* <- lang_en;;	*);;
+
+crystallite
+=> nrel_main_idtf:
+	[кристаллит]
+	(* <- lang_ru;;	*);
+	[crystallite]
+	(* <- lang_en;;	*);;
+
+sulfamic_acid
+=> nrel_main_idtf:
+	[аминосульфоновая кислота]
+	(* <- lang_ru;;	*);
+	[сульфаминовая кислота]
+	(* <- lang_ru;;	*);
+	[моноамид серной кислоты]
+	(* <- lang_ru;;	*);
+	[амидосерная кислота]
+	(* <- lang_ru;;	*);
+	[sulfamic acid]
+	(* <- lang_en;;	*);;
+
+dielectric
+=> nrel_main_idtf:
+	[диэлектрик]
+	(* <- lang_ru;; *);
+	[dielectric]
+	(* <- lang_en;; *);;
+
+alkaline_earth_metal
+=> nrel_main_idtf:
+	[щелочноземельный металл]
+	(* <- lang_ru;; *);
+	[alkaline earth metal]
+	(* <- lang_en;; *);;
+
+
+alkali_salt
+=> nrel_main_idtf:
+	[основная соль]
+	(* <- lang_ru;; *);
+	[alkali salt]
+	(* <- lang_en;; *);;
+
+simple_salt
+=> nrel_main_idtf:
+	[простая соль]
+	(* <- lang_ru;; *);
+	[simple salt]
+	(* <- lang_en;; *);;
+
+double_salt
+=> nrel_main_idtf:
+	[двойная соль]
+	(* <- lang_ru;; *);
+	[double salt]
+	(* <- lang_en;; *);;
+
+mixed_salt
+=> nrel_main_idtf:
+	[смешанная соль]
+	(* <- lang_ru;; *);
+	[mixed salt]
+	(* <- lang_en;; *);;
+
+inner_salt
+=> nrel_main_idtf:
+	[внутренняя соль]
+	(* <- lang_ru;; *);
+	[inner salt]
+	(* <- lang_en;; *);;
+
+complex_salt
+=> nrel_main_idtf:
+	[комплексная соль]
+	(* <- lang_ru;; *);
+	[complex salt]
+	(* <- lang_en;; *);;
+
+nonmetal
+=> nrel_main_idtf:
+	[неметалл]
+	(* <- lang_ru;; *);
+	[nonmetal]
+	(* <- lang_en;; *);;
+
+basic_oxide
+=> nrel_main_idtf:
+	[основный оксид]
+	(* <- lang_ru;; *);
+	[basic oxide]
+	(* <- lang_en;; *);;
+
+amphoteric_oxide
+=> nrel_main_idtf:
+	[амфотерный оксид]
+	(* <- lang_ru;; *);
+	[amphoteric oxide]
+	(* <- lang_en;; *);;
+
+base
+=> nrel_main_idtf:
+	[основание]
+	(* <- lang_ru;; *);
+	[base]
+	(* <- lang_en;; *);;
+
+alkali
+=> nrel_main_idtf:
+	[щёлочь]
+	(* <- lang_ru;; *);
+	[щелочь]
+	(* <- lang_ru;; *);
+	[alkali]
+	(* <- lang_en;; *);;
+
+nrel_crystallization
+=> nrel_main_idtf:
+	[кристаллизация*]
+	(* <- lang_ru;; *);
+	[crystallization*]
+	(* <- lang_en;; *);;
+
+chloride
+=> nrel_main_idtf:
+	[хлорид]
+	(* <- lang_ru;; *);
+	[chloride]
+	(* <- lang_en;; *);;
+
+nrel_crystallization
+=> nrel_main_idtf:
+	[кристаллизация*]
+	(* <- lang_ru;; *);
+	[crystallization*]
+	(* <- lang_en;; *);;
+
+sulfate
+=> nrel_main_idtf:
+	[сульфат]
+	(* <- lang_ru;; *);
+	[sulfate]
+	(* <- lang_en;; *);;
+
+nitrate
+=> nrel_main_idtf:
+	[нитрат]
+	(* <- lang_ru;; *);
+	[nitrate]
+	(* <- lang_en;; *);;
+
+phosphate
+=> nrel_main_idtf:
+	[фосфат]
+	(* <- lang_ru;; *);
+	[phosphate]
+	(* <- lang_en;; *);;
+
+carbonate
+=> nrel_main_idtf:
+	[карбонат]
+	(* <- lang_ru;; *);
+	[carbonate]
+	(* <- lang_en;; *);;
+
+acidic_oxide
+=> nrel_main_idtf:
+	[кислотный оксид]
+	(* <- lang_ru;; *);
+	[acidic oxide]
+	(* <- lang_en;; *);;
+
+elementary_substance_chemical_bond
+=> nrel_main_idtf:
+	[Разбиение по типу химической связи между атомами]
+	(* <- lang_ru;; *);;
+
+salt_substitution
+=> nrel_main_idtf:
+	[Разбиение по продуктам замены]
+	(* <- lang_ru;; *);;
+
+salt_structure
+=> nrel_main_idtf:
+	[Разбиение по числу катионов и анионов]
+	(* <- lang_ru;; *);;
+
+salt_molecule
+=> nrel_main_idtf:
+	[Разбиение по входящим в состав частицам]
+	(* <- lang_ru;; *);;
+
+salt_solubility
+=> nrel_main_idtf:
+	[Разбиение по растворимости]
+	(* <- lang_ru;; *);;
+
+soluble_salt
+=> nrel_main_idtf:
+	[растворимая соль]
+	(* <- lang_ru;; *);
+	[soluble salt]
+	(* <- lang_en;; *);;
+
+poorly_soluble_salt
+=> nrel_main_idtf:
+	[малорастворимая соль]
+	(* <- lang_ru;; *);
+	[poorly soluble salt]
+	(* <- lang_en;; *);;
+	
+insoluble_salt
+=> nrel_main_idtf:
+	[нерастворимая соль]
+	(* <- lang_ru;; *);
+	[insoluble salt]
+	(* <- lang_en;; *);;
+
+subdividing_salt_by_acid
+=> nrel_main_idtf:
+	[Разбиение по соответствующим кислотам]
+	(* <- lang_ru;; *);;
+
+silicate
+=> nrel_main_idtf:
+	[силикат]
+	(* <- lang_ru;; *);
+	[silicate]
+	(* <- lang_en;; *);;
+
+bromide
+=> nrel_main_idtf:
+	[бромид]
+	(* <- lang_ru;; *);
+	[bromide]
+	(* <- lang_en;; *);;
+
+iodide
+=> nrel_main_idtf:
+	[иодид]
+	(* <- lang_ru;; *);
+	[iodide]
+	(* <- lang_en;; *);;
+
+sulfide
+=> nrel_main_idtf:
+	[сульфид]
+	(* <- lang_ru;; *);
+	[sulfide]
+	(* <- lang_en;; *);;
+
+fluoride
+=> nrel_main_idtf:
+	[фторид]
+	(* <- lang_ru;; *);
+	[fluoride]
+	(* <- lang_en;; *);;
+
+sodium_carbonate
+=> nrel_main_idtf:
+	[карбонат натрия]
+	(* <- lang_ru;; *);
+	[sodium carbonate]
+	(* <- lang_en;; *);;
+
+tripotassium_phosphate
+=> nrel_main_idtf:
+	[ортофосфат калия]
+	(* <- lang_ru;; *);
+	[tripotassium phosphate]
+	(* <- lang_en;; *);;
+
+color_gray
+=> nrel_main_idtf:
+	[серый цвет]
+	(* <- lang_ru;; *);
+	[gray color]
+	(* <- lang_en;; *);;
+
+potassium_chloride
+=> nrel_main_idtf:
+	[хлорид калия]
+	(* <- lang_ru;;  *);
+	[potassium chloride]
+	(* <- lang_en;; *);;
+
+ammonia
+=> nrel_main_idtf:
+	[аммиак]
+	(* <- lang_ru;; *);
+	[ammonia]
+	(* <- lang_en;; *);;
+
+nrel_allotropy
+=> nrel_main_idtf:
+	[аллотропия*]
+	(* <- lang_ru;; *);
+	[allotropy*]
+	(* <- lang_en;; *);;
+
+
+
+sc_node_norole_relation-> nrel_chemical_properties;;
+nrel_chemical_properties
+=> nrel_main_idtf:
+	[химические свойства*]
+	(* <- lang_ru;; *);
+	[chemical properties*]
+	(* <- lang_en;; *);;
+
+sc_node_norole_relation-> nrel_application;;
+nrel_application
+=> nrel_main_idtf:
+	[применение*]
+	(* <- lang_ru;; *);
+	[application*]
+	(* <- lang_en;; *);;
+
+	solvent_state
+=> nrel_main_idtf:
+	[Разбиение растворителей по структуре]
+	(* <- lang_ru;;	*);;
+	
+solution_concentration
+=> nrel_main_idtf:
+	[Разбиение растворов по концентрации]
+	(* <- lang_ru;;	*);;
+	
+rrel_organic_solvent
+=> nrel_main_idtf:
+    [organic solvent'](*<- lang_en;;*);
+	[органический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_inorganic_solvent
+=> nrel_main_idtf:
+    [inorganic solvent'](*<- lang_en;;*);
+	[неорганический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_liquid_solvent
+=> nrel_main_idtf:
+    [liquid solvent'](*<- lang_en;;*);
+	[жидкий растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_solid_solvent
+=> nrel_main_idtf:
+    [solid solvent'](*<- lang_en;;*);
+	[твёрдый растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_aprotic_solvent
+=> nrel_main_idtf:
+    [aprotic solvent'](*<- lang_en;;*);
+	[апротонный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_amphidic_solvent
+=> nrel_main_idtf:
+    [amphidic solvent'](*<- lang_en;;*);
+	[амфипротный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_protophilic_solvent
+=> nrel_main_idtf:
+    [protophilic solvent'](*<- lang_en;;*);
+	[протофильный растворитель']
+	(* <- lang_ru;;	*);;
+	
+multielement_compound
+=> nrel_main_idtf:
+    [многоэлементное соединение](*<- lang_en;;*);
+	[multielement compound]
+	(* <- lang_ru;;	*);;
+	
+complex_substance_structure
+=> nrel_main_idtf:
+	[Разбиение сложных веществ по структуре]
+	(* <- lang_ru;;	*);;
+
+substance_state_of_matter
+=> nrel_main_idtf:
+	[Разбиение веществ по агрегатному состоянию]
+	(* <- lang_ru;;	*);;
+
+solution_molecule_size
+=> nrel_main_idtf:
+	[Разбиение растворов по размеру частиц]
+	(* <- lang_ru;;	*);;
+
+colloidal_solution
+=> nrel_main_idtf:
+    [colloidal solution]
+    (*<- lang_en;;*);
+	[коллоидальный раствор]
+	(* <- lang_ru;;	*);;
+
+molecular_solution
+=> nrel_main_idtf:
+    [molecular solution]
+    (*<- lang_en;;*);
+	[истинный раствор]
+	(* <- lang_ru;;	*);
+	[молекулярный раствор]
+	(* <- lang_ru;;	*);;

@@ -1,0 +1,33 @@
+silicate
+=> nrel_main_idtf:
+	[силикат]
+	(* <- lang_ru;; *);
+	[silicate]
+	(* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:
+	Definition_of_silicate
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="silicate">Силикат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="metasilicic_acid">кремниевых кислот.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+=> nrel_applying: construction;;
+
+Definition_of_silicate
+=> nrel_main_idtf:
+	[Опр.(силикат)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; salt; metasilicic_acid;;
+			*);;

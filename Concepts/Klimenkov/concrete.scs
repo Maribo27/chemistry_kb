@@ -1,0 +1,35 @@
+concrete
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[бетон](* <-lang_ru;; *);
+	[concrete](* <- lang_en;; *);;
+
+concrete
+<- rrel_key_sc_element:...
+	(*
+		<- sc_definition;;
+        <= nrel_sc_text_translation:...
+        (*
+			-> rrel_example:"file://htmls/concrete.html"(* <- lang_ru;; *);;
+        *);;
+	*);;
+	
+
+concrete
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(бетон, изготовление*)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/concrete1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+concrete
+<-rrel_key_sc_element:...
+				(*<-sc_illustration;;
+				<=nrel_sc_text_translation:...
+						(*->rrel_example: "file://img/concrete.jpg";;*) ;;	
+				*);;
+

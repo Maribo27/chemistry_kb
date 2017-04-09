@@ -5,7 +5,7 @@ solution
     <- rrel_key_sc_element:
 	Definition_of_solution
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -42,3 +42,14 @@ Definition_of_solution
 				-> mixture; rrel_solvent; atom; molecule; ion;;
 				
 			*);;
+
+
+solution_concentration
+=> nrel_main_idtf:
+	[Разбиение растворов по концентрации]
+	(* <- lang_ru;;	*);;
+	
+solution_molecule_size
+=> nrel_main_idtf:
+	[Разбиение растворов по размеру частиц]
+	(* <- lang_ru;;	*);;

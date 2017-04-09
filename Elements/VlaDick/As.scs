@@ -8,46 +8,47 @@ elem_As
 		(* 
 		-> rrel_example:"file://htmls/As.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
 	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
 
+=> nrel_group: 15;
+=> nrel_period: 4;
+=> nrel_periodic_number: 89;
 
-<- rrel_key_sc_element: number_of_arsenicum
+<- nonmetal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_three;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_valence: three;;
+	=> nrel_valence: five;;
+*);
+
+<- rrel_key_sc_element: physical_properties_of_as
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (мышьяк, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (мышьяк, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер мышьяка равен 33] (*<- lang_ru;;*);;
+			-> rrel_example:[ Мышьяк — хрупкий полуметалл стального цвета с зеленоватым оттенком. Мышьяк и его соединения очень ядовиты. ] (*<- lang_ru;;*);;
 		*);;
 	*);
 
 
-<- rrel_key_sc_element: physical_properties_of_arsenicum
+<- rrel_key_sc_element: chemical_properties_of_as
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (мышьяк, физические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Мышьяк — хрупкий полуметалл стального цвета с зеленоватым оттенком. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_arsenicum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (мышьяк, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (мышьяк, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Мышьяк - химически малоактивный полуметалл. При нагревании на воздухе выше 400 °C горит. С галогенами Мышьяк соединяется непосредственно. ] (*<- lang_ru;;*);;

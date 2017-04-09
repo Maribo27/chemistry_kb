@@ -8,34 +8,41 @@ elem_At
 		(* 
 		-> rrel_example:"file://htmls/At.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_astatum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (астат, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер астата равен 85] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
 
-<- rrel_key_sc_element: physical_properties_of_astatum
+=> nrel_group: 17;
+=> nrel_period: 6;
+=> nrel_periodic_number: 85;
+
+<- nonmetal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: minus_one;;
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_oxidation_state: plus_three;;
+	=> nrel_oxidation_state: plus_five;;
+	=> nrel_oxidation_state: plus_seven;;
+	=> nrel_valence: one;;
+	=> nrel_valence: five;;
+*);
+
+
+
+
+<- rrel_key_sc_element: physical_properties_of_at
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (астат, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (астат, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Астат — твёрдое вещество сине-чёрного цвета.  ] (*<- lang_ru;;*);;
@@ -47,7 +54,7 @@ elem_At
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (астат, нахождение в природе)](*<- lang_ru;;*);;
+			[Утв. (астат, нахождение в природе*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Астат является наиболее редким элементом среди всех, встречающихся в земной природе. Его суммарное содержание в земной коре не превышает одного грамма. ] (*<- lang_ru;;*);;
@@ -55,11 +62,11 @@ elem_At
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_astatum
+<- rrel_key_sc_element: chemical_properties_of_at
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (астат, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (астат, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ По химическим свойствам астат близок как к иоду (проявляет свойства галогенов), так и к полонию (свойства металла). ] (*<- lang_ru;;*);;

@@ -6,7 +6,7 @@ bromide
 <- rrel_key_sc_element:
 	Definition_of_bromide
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

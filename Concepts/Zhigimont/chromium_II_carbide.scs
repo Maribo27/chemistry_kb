@@ -1,0 +1,58 @@
+chromium_II_carbide
+
+<-salt;
+<-carbide;
+<-solid;
+<-crystal;
+<-color_gray;
+
+=> nrel_main_idtf:
+	[карбид хрома(II)]
+	(* <- lang_ru;;	*);
+	[chromium(II) carbide]
+	(* <- lang_en;;	*);
+
+=> nrel_idtf: 
+	[Cr3C2] 
+	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_chromium_II_carbide
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="chromium_II_carbide">Карбид хрома(II)</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element> <sc_element sys_idtf="elem_Cr">хрома</sc_element> и <sc_element sys_idtf="elem_C">углерода</sc_element>. ]
+		(* <-lang_ru;; 
+		   => nrel_format: format_html;;
+		   *);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/chromium_II_carbide.JPG"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+	
+=> nrel_applying: metallurgy;;
+
+Definition_of_chromium_II_carbide
+=> nrel_main_idtf:
+	[Опр.(карбид хрома(II))]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> chemical_compound; elem_Cr; elem_C;;
+			*);;

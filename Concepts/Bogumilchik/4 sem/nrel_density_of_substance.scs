@@ -15,7 +15,7 @@ nrel_density_of_substance
             [Плотность вещества — это плотность однородного тела, состоящего из этого вещества.](*<- lang_ru;;*);
             [The density of a substance is its mass per unit volume.](*<- lang_en;;*);;
     *);;
-*);;
+*);
 
 
 => nrel_second_domain: number;
@@ -26,4 +26,4 @@ nrel_density_of_substance
     (* 
         -> chemical_element; number;;
     *);;
-*);
+*);;

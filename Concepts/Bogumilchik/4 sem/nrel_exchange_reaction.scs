@@ -24,7 +24,7 @@ nrel_exchange_reaction
 	(*
 		->nrel_oxidation_state;;
 	*);;
-*);;
+*);
 
 => nrel_second_domain: number;
 => nrel_first_domain: chemical_element;
@@ -34,4 +34,4 @@ nrel_exchange_reaction
 	(* 
 	    -> chemical_element; number;;
 	*);;
-*);
+*);;

@@ -8,34 +8,34 @@ elem_Cs
 		(* 
 		-> rrel_example:"file://htmls/Cs.html" (* <-lang_ru;; *);;
 		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				chemical_element;
-				period;
-				nrel_group
-				
-			};
-
-
-<- rrel_key_sc_element: number_of_caesium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (цезий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+	<= nrel_using_constants:
+		...
 		(*
-			-> rrel_example:[ Порядковый номер цезия равен 55] (*<- lang_ru;;*);;
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
 		*);;
 	*);
 
+=> nrel_group: 1;
+=> nrel_period: 6;
+=> nrel_periodic_number: 55;
 
-<- rrel_key_sc_element: physical_properties_of_caesium
+<- metal;
+
+=> nrel_chemical_properties: ...
+(*
+	=> nrel_oxidation_state: plus_one;;
+	=> nrel_valence: one;;
+*);
+
+
+
+<- rrel_key_sc_element: physical_properties_of_cs
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (цезий, физические свойства)](*<- lang_ru;;*);;
+			[Утв. (цезий, физические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Цезий — мягкий металл золотисто-белого цвета, при комнатной температуре находится в полужидком состоянии. ] (*<- lang_ru;;*);;
@@ -43,11 +43,11 @@ elem_Cs
 	*);
 
 
-<- rrel_key_sc_element: chemical_properties_of_caesium
+<- rrel_key_sc_element: chemical_properties_of_cs
 	(*
 		<- sc_explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (цезий, химические свойства)](*<- lang_ru;;*);;
+			[Утв. (цезий, химические свойства*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ Цезий является сильнейшим восстановителем. На воздухе мгновенно окисляется с воспламенением. Взаимодействие с водой происходит со взрывом. ] (*<- lang_ru;;*);;

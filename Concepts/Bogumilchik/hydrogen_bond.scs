@@ -30,6 +30,6 @@ nrel_hydrogen_bond
 	*);;
 *);
 
-=> nrel_first_domain: atom;;
+=> nrel_first_domain: atom;
 => nrel_second_domain: atom;
 => nrel_definitional_domain: atom;;
