@@ -1,8 +1,9 @@
 oxide
+<- sc_node_not_relation;
 => nrel_main_idtf:
     [oxide](*<- lang_en;;*);
     [оксид](*<- lang_ru;;*);
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element: definition_oxide
 (*
     <- definition;;
     => nrel_main_idtf: [Опр. (оксид)](*<- lang_ru;;*);;
@@ -25,10 +26,10 @@ oxide
     *);;
 *);
 
-<= nrel_subdividing: ...
+<= nrel_subdividing: salt_formation_subdividing
 (*
     <- explanation;;
-    => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию.](*<-lang_ru;; *);;
+    => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию](*<-lang_ru;; *);;
     -> salt_forming_oxide;;
     -> unsalt_forming_oxide;;
 *);

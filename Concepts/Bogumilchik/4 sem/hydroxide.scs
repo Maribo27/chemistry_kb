@@ -1,4 +1,5 @@
 hydroxide
+<-sc_node_not_relation;
 => nrel_main_idtf:
 	[hydroxide](*<- lang_en;;*);
 	[гидроксид](*<- lang_ru;;*);
@@ -43,10 +44,10 @@ hydroxide
     *);;
 *);
 
-<= nrel_subdividing: ...
+<= nrel_subdividing: hydroxide_subdividing
 (*
     <- explanation;;
-    => nrel_main_idtf:[Разбиение по признаку наличия основных свойств.](*<-lang_ru;; *);;
+    => nrel_main_idtf:[Разбиение по признаку наличия основных свойств](*<-lang_ru;; *);;
     -> acid_hydroxide;;
     -> amphoteric_hydroxide;;
     -> basic_hydroxide;;

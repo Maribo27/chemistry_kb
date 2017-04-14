@@ -1,5 +1,5 @@
 nrel_group
-<- sc_node_not_relation;
+<- sc_node_norole_relation;
 => nrel_main_idtf:
 	[группа]
 	(* <- lang_ru;;	*);

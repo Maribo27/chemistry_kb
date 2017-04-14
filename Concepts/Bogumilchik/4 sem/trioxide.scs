@@ -36,7 +36,7 @@ trioxide
 	=> nrel_decomposition: tetroxide;;
 *);
 
-=> nrel_applying: ...
+=> nrel_applying: trioxide_applying
 (*
 	-> pure_metal;;
 	-> catalytic_process;;

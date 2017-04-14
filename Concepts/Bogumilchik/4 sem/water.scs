@@ -1,4 +1,5 @@
 water
+<-sc_node_not_relation;
 => nrel_main_idtf:
 	[water](*<- lang_en;;*);
 	[вода](*<- lang_ru;;*);
@@ -42,7 +43,7 @@ water
     -> rrel_example: "file://img/water.png";;
 *);
 
-<= nrel_being_in_nature:...
+<= nrel_being_in_nature:water_in_nature
 (*
 	-> ocean;;
 	-> sea;;
@@ -51,7 +52,6 @@ water
 	-> ice;;
 	-> groundwater;;
 	-> precipitation;;
-	-> reservoire;;
 *);
 
 <- ampholyte;
@@ -99,22 +99,6 @@ water
     => nrel_main_idtf:[Разбиение по содержанию катионов кальция и магния](*<-lang_ru;; *);;
     -> soft_water;;
     -> hard_water;;
-*);
-
-<= nrel_subdividing: ...
-(*
-    <- explanation;;
-    => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию](*<-lang_ru;; *);;
-    -> salt_forming_oxide;;
-    -> unsalt_forming_oxide;;
-*);
-
-<= nrel_subdividing: ...
-(*
-    <- explanation;;
-    => nrel_main_idtf:[Разбиение по признаку способности к солеобразованию](*<-lang_ru;; *);;
-    -> salt_forming_oxide;;
-    -> unsalt_forming_oxide;;
 *);
 
 <- rrel_key_sc_element:...

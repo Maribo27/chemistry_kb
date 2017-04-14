@@ -1,4 +1,5 @@
 refractory_oxide
+<-sc_node_not_relation;
 => nrel_main_idtf:
 	[refractory oxide](*<- lang_en;;*);
 	[тугоплавкий оксид](*<- lang_ru;;*);

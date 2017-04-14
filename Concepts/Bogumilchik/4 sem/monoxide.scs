@@ -1,4 +1,5 @@
 monoxide
+<-sc_node_not_relation;
 => nrel_main_idtf:
     [monoxide](*<- lang_en;;*);
     [монооксид](*<- lang_ru;;*);

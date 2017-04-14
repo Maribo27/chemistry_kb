@@ -1,4 +1,4 @@
-atomic_mass
+nrel_atomic_mass
 <- sc_node_not_relation;
 => nrel_main_idtf:
 	[атомная масса*]
@@ -6,7 +6,7 @@ atomic_mass
 	[atomic mass*]
 	(* <- lang_en;;	*);;
 
-atomic_mass
+nrel_atomic_mass
 <- rrel_key_sc_element:
 	Definition_of_atomic_mass
 	(* 
@@ -18,10 +18,10 @@ atomic_mass
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				atom
-			};
+<= nrel_using_constants:...
+(*
+	->atom;;
+*);
 <- rrel_key_sc_element:
 	... (*
 	
@@ -46,11 +46,10 @@ atomic_mass
 
 Definition_of_atomic_mass
 => nrel_main_idtf:
-	[Опр.(Атомная масса)]
+	[Опр.(атомная масса*)]
 	(* <- lang_ru;;	*);;
 
 
-atomic_mass
+nrel_atomic_mass
 =>nrel_first_domain: chemical_element;
 =>nrel_second_domain: number;;
-

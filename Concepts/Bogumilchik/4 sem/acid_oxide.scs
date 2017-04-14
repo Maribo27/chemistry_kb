@@ -1,4 +1,5 @@
 acid_oxide
+<-sc_node_not_relation;
 => nrel_main_idtf:
     [acid oxide](*<- lang_en;;*);
     [кислотный оксид](*<- lang_ru;;*);

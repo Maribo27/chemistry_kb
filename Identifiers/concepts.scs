@@ -119,6 +119,10 @@ aqueous_solution_of_ammonia_hydrate
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[водный раствор гидрата аммиака](* <- lang_ru;; *);;
 
+chemical_process
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[химический процесс](* <- lang_ru;; *);;
+
 metal_compound
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[соединение металлов](* <- lang_ru;; *);;

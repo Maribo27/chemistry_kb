@@ -1,10 +1,10 @@
 nrel_periodic_group<= nrel_inclusion: nrel_group;;
 nrel_periodic_group
-<- sc_node_not_relation;
+<- sc_node_norole_relation;
 => nrel_main_idtf:
-	[периодическая группа]
+	[периодическая группа*]
 	(* <- lang_ru;;	*);
-	[periodic group]
+	[periodic group*]
 	(* <- lang_en;;	*);;
 
 nrel_periodic_group

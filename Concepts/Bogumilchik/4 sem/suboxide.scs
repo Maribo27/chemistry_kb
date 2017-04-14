@@ -1,4 +1,5 @@
 suboxide
+<-sc_node_not_relation;
 => nrel_main_idtf:
     [suboxide](*<- lang_en;;*);
     [субоксид](*<- lang_ru;;*);

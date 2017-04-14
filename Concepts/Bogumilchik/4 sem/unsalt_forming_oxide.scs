@@ -1,4 +1,5 @@
 unsalt_forming_oxide
+<-sc_node_not_relation;
 => nrel_main_idtf:
     [unsalt-forming oxide](*<- lang_en;;*);
     [несолеобразующий оксид](*<- lang_ru;;*);

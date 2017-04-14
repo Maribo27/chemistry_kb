@@ -22,11 +22,6 @@ color => nrel_main_idtf: [цвет*](* <- lang_ru;; *);
 	<- sc_node_not_relation;
 	-> color_white_blue; color_white_silver; color_silver_grey;;
 
-nrel_valence => nrel_main_idtf: [валентность*](* <- lang_ru;; *);
-	<- sc_node_not_relation;
-	=> nrel_first_domain: chemical_element;
-	=> nrel_second_domain: number;;
-
 nrel_count_of_inclusion => nrel_main_idtf:[количество вхождений*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
 
@@ -55,6 +50,7 @@ nrel_heating => nrel_main_idtf: [нагревание*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;	
 
 nrel_sedimentation => nrel_main_idtf: [осаждение*](*<-lang_ru;;*);
+	<- chemical_process;
 	<- sc_node_norole_relation;;
 
 nrel_receiving => nrel_main_idtf: [получение*](*<-lang_ru;;*);

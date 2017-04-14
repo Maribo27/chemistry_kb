@@ -1,15 +1,15 @@
-nrel_valence
-<- sc_node_norole_relation;
+valence
+<- sc_node_not_relation;
 => nrel_main_idtf:
-	[валентность*]
+	[валентность]
 	(* <- lang_ru;;	*);
-	[valence*]
+	[valence]
 	(* <- lang_en;;	*);
 
 <- rrel_key_sc_element:...
 (* 
 	<- explanation;;
-	=> nrel_main_idtf: [Опр.(валентность*)](* <- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр.(валентность)](* <- lang_ru;;*);;
 	<=	nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -24,16 +24,6 @@ nrel_valence
 		-> atom;;
 		-> chemical_bond;;
 		-> chemical_element;;
-	*);;
-*);
-
-=> nrel_second_domain: number;
-=> nrel_first_domain: chemical_element;
-=> nrel_definitional_domain:...
-(*
-	<= nrel_combination: ...
-	(* 
-	    -> chemical_element; number;;
 	*);;
 *);
 
