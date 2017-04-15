@@ -17,87 +17,84 @@ elem_Cl
 			*);;
 	*);
 
-=> nrel_group: 17;
-=> nrel_period: 3;
-=> nrel_periodic_number: 17;
-=> nrel_chemical_properties: ...
+=> nrel_group: seventeen;
+=> nrel_period: three;
+=> nrel_periodic_number: seventeen;
+
+
+<- nonmetal;
+
+<= nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_one;  oxidation_state_plus_seven; oxidation_state_zero; oxidation_state_plus_five; oxidation_state_minus_one;
+<= nrel_inclusion: valence_three; valence_seven; valence_one; valence_five;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: minus_one;zero;plus_one;plus_three;plus_five;plus_seven;;
-	=> nrel_valence: one;three;five;seven;;
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:99(*<- number;;*);;
+	*);;
 *);
 
-<- rrel_key_sc_element: number_of_cl
+=> nrel_electronegativity: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
 	(*
-		<- sc_explanation;;
+		-> three_and_sixteen(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_covalent_radius: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:102(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Cl;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Cl
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Прим. (углерод, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (хлор, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер углерода равен 17] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Ne] 3s<sup>2</sup>3p<sup>5</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
 
-<- rrel_key_sc_element: chemical_properties_of_cl
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (хлор, химические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Простое вещество хлор при нормальных условиях — ядовитый газ желтовато-зелёного цвета, тяжелее воздуха, с резким запахом и сладковатым, «металлическим» вкусом.  ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-
-<- rrel_key_sc_element: chlorine_burning
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (хлор, горение)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Газообразный хлор относительно легко сжижается.  ] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: chlorine_and_metals
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (хлор, взаимодействие, металл)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Хлор непосредственно реагирует почти со всеми металлами.  ] (*<- lang_ru;;*);;
-		*);;
-	*);
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент хлор)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Chlorine_ampoule.jpg"
+			"file://image/Chlorum.jpg"
 			(*
 			=> nrel_format: format_jpg;;
 			*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: physical_properties_of_carbon
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (хлор, физические свойства)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Молекула хлора двухатомная .] (*<- lang_ru;;*);;
 		*);;
 	*);;
 
 
 
+atomic_mass_Cl <- number;
+=> nrel_main_idtf:[35,45](*<-lang_ru;; <- lang_en;;*);;
 
 Definition_of_chlorine
 => nrel_main_idtf:

@@ -17,65 +17,51 @@ elem_Ds
 			*);;
 	*);
 
-=> nrel_group: 10;
-=> nrel_period: 7;
-=> nrel_periodic_number: 110;
+=> nrel_group: ten;
+=> nrel_period: seven;
+=> nrel_periodic_number: one_hundred_and_ten;
 
+<- metal;
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Ds;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Ds
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дармштадтий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>8</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент дармштадтий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Darmstadtium.svg"
+			"file://image/Darmstadtium.jpg"
 			(*
-			=> nrel_format: format_svg;;
+			=> nrel_format: format_jpg;;
 			*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: number_of_db
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (дармштадтий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер дармштадтия равен 110.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: properties_of_darmstadtium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (дармштадтий, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Дармштадтий радиоактивен.  ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-
-
-<- rrel_key_sc_element: receipt_of_darmstadtium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (дармштадтий, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Дармштадтий — искусственно синтезированный химический элемент ] (*<- lang_ru;;*);;
 		*);;
 	*);;
 
-
-
+atomic_mass_Ds <- number;
+=> nrel_main_idtf:[271](*<-lang_ru;; <- lang_en;;*);;
 
 Definition_of_darmstadtium
 => nrel_main_idtf:

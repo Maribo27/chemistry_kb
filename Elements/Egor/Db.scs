@@ -17,79 +17,55 @@ elem_Db
 			*);;
 	*);
 
-=> nrel_group: 5;
-=> nrel_period: 7;
-=> nrel_periodic_number: 105;
-=> nrel_chemical_properties: ...
+=> nrel_group: five;
+=> nrel_period: seven;
+=> nrel_periodic_number: one_hundred_and_five;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_four; oxidation_state_plus_five;
+<= nrel_inclusion: valence_five;
+
+
+=> nrel_atomic_mass: ...
 (*
-	=> nrel_oxidation_state: plus_three;plus_four;plus_five;;
-	=> nrel_valence: five;;
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Os;;
+	*);;
 *);
+
+<- rrel_key_sc_element: electron_configuration_Db
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (дубний, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>3</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент дубний)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Dubnium.svg"
+			"file://image/Dubnium.jpg"
 			(*
-			=> nrel_format: format_svg;;
+			=> nrel_format: format_jpg;;
 			*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: number_of_db
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (дубний, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер дубния равен 105.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: physical_properties_of_dubnium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (дубний, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Дубний - металл, повидимому находится в твердом состоянии при 298 K (25 °C). Цвет неизвестен, но, вероятно, металлический и серебристо-белый или серый.  ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: chemical_properties_of_dubnium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (дубний, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Дубний — радиоактивен. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: receipt_of_dubnium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (дубний, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Дубний — искуственно синтезированный элемент, в природе не встречается. ] (*<- lang_ru;;*);;
 		*);;
 	*);;
 
 
-
+atomic_mass_Db <- number;
+=> nrel_main_idtf:[268](*<-lang_ru;; <- lang_en;;*);;
 
 Definition_of_dubnium
 => nrel_main_idtf:

@@ -1,0 +1,99 @@
+elem_C
+<- rrel_key_sc_element:
+	Definition_of_carbon
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/C.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->chemical_element;;
+				->period;;
+				->nrel_group;;
+				
+			*);;
+	*);
+=> nrel_group: fourteen;
+=> nrel_period: two;
+=> nrel_periodic_number: six;
+
+<- nonmetal;
+
+<= nrel_inclusion: oxidation_state_minus_four; oxidation_state_plus_four; oxidation_state_plus_two;
+<= nrel_inclusion: valence_four;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:77(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> two_and_fifty_five(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_covalent_radius: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:77(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_C;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_C
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (углерод, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [He] 2s<sup>s</sup>2p<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент углерод)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Carbon.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+atomic_mass_C <- number;
+=> nrel_main_idtf:[12,01](*<-lang_ru;; <- lang_en;;*);;
+
+Definition_of_carbon
+=> nrel_main_idtf:
+	[Опр.(Углерод)]
+	(* <- lang_ru;;	*);;

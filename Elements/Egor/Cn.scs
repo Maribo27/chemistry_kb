@@ -17,17 +17,42 @@ elem_Cn
 			*);;
 	*);
 
-=> nrel_group: 12;
-=> nrel_period: 7;
-=> nrel_periodic_number: 112;
+=> nrel_group: twelve;
+=> nrel_period: seven;
+=> nrel_periodic_number: one_hundred_and_twelve;
 
+
+<- metal;
+
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Cn;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Cn
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (коперниций, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>10</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент коперниций)] (* <- lang_ru;;*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
 			"file://image/Copernicium.jpg"
@@ -35,21 +60,12 @@ elem_Cn
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-
-<- rrel_key_sc_element: number_of_cn
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (коперниций, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер коперниция равен 112.] (*<- lang_ru;;*);;
-		*);;
 	*);;
 
 
 
+atomic_mass_Cn <- number;
+=> nrel_main_idtf:[285,177(4)](*<-lang_ru;; <- lang_en;;*);;
 
 Definition_of_copernicium
 => nrel_main_idtf:
