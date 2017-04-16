@@ -17,14 +17,14 @@ elem_Cd
 				
 			*);;
 	*);
-=> nrel_group: twelve;
-=> nrel_period: five;
+<- group_twelve;
+<- period_five;
 => nrel_periodic_number: forty_eight;
 
 <- metal;
 
-<= nrel_inclusion: oxidation_state_plus_two;
-<= nrel_inclusion: valence_two;
+<- oxidation_state_plus_two;
+<- nrel_inclusion: valence_two;
 
 
 => nrel_atomic_radius: ...
@@ -35,15 +35,10 @@ elem_Cd
 		-> rrel_pm:154(*<- number;;*);;
 	*);;
 *);
-
-=> nrel_electronegativity: ...
-(*
-	<- quantity;;
-	<= nrel_value:...
-	(*
-		-> one_and_sixty_nine(*<- number;;*);;
-	*);;
-*);
+=> nrel_electronegativity: electronegativity_Cd
+			(* <- number;;
+			=> nrel_main_idtf:[1,69](*<-lang_ru;; <- lang_en;;*);;
+			*);
 
 => nrel_covalent_radius: ...
 (*

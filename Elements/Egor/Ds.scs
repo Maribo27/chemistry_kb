@@ -17,8 +17,8 @@ elem_Ds
 			*);;
 	*);
 
-=> nrel_group: ten;
-=> nrel_period: seven;
+<- group_ten;
+<- period_seven;
 => nrel_periodic_number: one_hundred_and_ten;
 
 <- metal;

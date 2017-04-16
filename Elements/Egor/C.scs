@@ -16,14 +16,14 @@ elem_C
 				
 			*);;
 	*);
-=> nrel_group: fourteen;
-=> nrel_period: two;
+<- group_fourteen;
+<- period_two;
 => nrel_periodic_number: six;
 
 <- nonmetal;
 
-<= nrel_inclusion: oxidation_state_minus_four; oxidation_state_plus_four; oxidation_state_plus_two;
-<= nrel_inclusion: valence_four;
+<- oxidation_state_minus_four; oxidation_state_plus_four; oxidation_state_plus_two;
+<- valence_four;
 
 
 => nrel_atomic_radius: ...
@@ -35,14 +35,11 @@ elem_C
 	*);;
 *);
 
-=> nrel_electronegativity: ...
-(*
-	<- quantity;;
-	<= nrel_value:...
-	(*
-		-> two_and_fifty_five(*<- number;;*);;
-	*);;
-*);
+=> nrel_electronegativity: electronegativity_C
+			(* <- number;;
+			=> nrel_main_idtf:[2,55](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
 
 => nrel_covalent_radius: ...
 (*

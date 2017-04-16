@@ -16,15 +16,15 @@ elem_Eu
 				
 			*);;
 	*);
-=> nrel_group: three;
-=> nrel_period: six;
+<- group_three;
+<- period_six;
 => nrel_periodic_number: sixty_three;
 
 
 <- metal;
 
-<= nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_two;
-<= nrel_inclusion: valence_three;valence_two;
+<- oxidation_state_plus_three; oxidation_state_plus_two;
+<- valence_three;valence_two;
 
 
 => nrel_atomic_radius: ...
@@ -35,15 +35,10 @@ elem_Eu
 		-> rrel_pm:199(*<- number;;*);;
 	*);;
 *);
-
-=> nrel_electronegativity: ...
-(*
-	<- quantity;;
-	<= nrel_value:...
-	(*
-		-> one_and_two(*<- number;;*);;
-	*);;
-*);
+=> nrel_electronegativity: electronegativity_Eu
+			(* <- number;;
+			=> nrel_main_idtf:[1,2](*<-lang_ru;; <- lang_en;;*);;
+			*);
 
 => nrel_covalent_radius: ...
 (*

@@ -17,14 +17,14 @@ elem_Ca
 			*);;
 	*);
 
-=> nrel_group: two;
-=> nrel_period: four;
+<- group_two;
+<- period_four;
 => nrel_periodic_number: twenty;
 
 <- metal;
 
-<= nrel_inclusion: oxidation_state_plus_two;
-<= nrel_inclusion: valence_two;
+<- oxidation_state_plus_two;
+<- valence_two;
 
 => nrel_atomic_radius: ...
 (*
@@ -35,14 +35,11 @@ elem_Ca
 	*);;
 *);
 
-=> nrel_electronegativity: ...
-(*
-	<- quantity;;
-	<= nrel_value:...
-	(*
-		-> one_and_zero(*<- number;;*);;
-	*);;
-*);
+=> nrel_electronegativity: electronegativity_Ca
+			(* <- number;;
+			=> nrel_main_idtf:[1,0](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
 
 => nrel_covalent_radius: ...
 (*

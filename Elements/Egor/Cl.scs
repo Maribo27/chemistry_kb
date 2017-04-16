@@ -17,15 +17,15 @@ elem_Cl
 			*);;
 	*);
 
-=> nrel_group: seventeen;
-=> nrel_period: three;
+<- group_seventeen;
+<- period_three;
 => nrel_periodic_number: seventeen;
 
 
 <- nonmetal;
 
-<= nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_one;  oxidation_state_plus_seven; oxidation_state_zero; oxidation_state_plus_five; oxidation_state_minus_one;
-<= nrel_inclusion: valence_three; valence_seven; valence_one; valence_five;
+<- oxidation_state_plus_three; oxidation_state_plus_one;  oxidation_state_plus_seven; oxidation_state_zero; oxidation_state_plus_five; oxidation_state_minus_one;
+<- valence_three; valence_seven; valence_one; valence_five;
 
 
 => nrel_atomic_radius: ...
@@ -37,14 +37,11 @@ elem_Cl
 	*);;
 *);
 
-=> nrel_electronegativity: ...
-(*
-	<- quantity;;
-	<= nrel_value:...
-	(*
-		-> three_and_sixteen(*<- number;;*);;
-	*);;
-*);
+=> nrel_electronegativity: electronegativity_Cl
+			(* <- number;;
+			=> nrel_main_idtf:[3,17](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
 
 => nrel_covalent_radius: ...
 (*

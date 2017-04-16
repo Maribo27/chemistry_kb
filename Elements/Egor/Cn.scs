@@ -17,8 +17,8 @@ elem_Cn
 			*);;
 	*);
 
-=> nrel_group: twelve;
-=> nrel_period: seven;
+<- group_twelve;
+<- period_seven;
 => nrel_periodic_number: one_hundred_and_twelve;
 
 

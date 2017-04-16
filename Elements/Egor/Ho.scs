@@ -17,14 +17,14 @@ elem_Ho
 			*);;
 	*);
 
-=> nrel_group: three;
-=> nrel_period: six;
+<- group_three;
+<- period_six;
 => nrel_periodic_number: sixty_seven;
 
 <- metal;
 
-<= nrel_inclusion: oxidation_state_plus_three; 
-<= nrel_inclusion: valence_three; 
+<- oxidation_state_plus_three; 
+<- valence_three; 
 
 
 => nrel_atomic_radius: ...
@@ -35,15 +35,11 @@ elem_Ho
 		-> rrel_pm:179(*<- number;;*);;
 	*);;
 *);
+=> nrel_electronegativity: electronegativity_Ho
+			(* <- number;;
+			=> nrel_main_idtf:[1,23](*<-lang_ru;; <- lang_en;;*);;
+			*);
 
-=> nrel_electronegativity: ...
-(*
-	<- quantity;;
-	<= nrel_value:...
-	(*
-		-> one_and_twenty_three(*<- number;;*);;
-	*);;
-*);
 
 => nrel_covalent_radius: ...
 (*

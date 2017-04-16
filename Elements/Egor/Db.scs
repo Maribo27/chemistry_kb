@@ -17,14 +17,14 @@ elem_Db
 			*);;
 	*);
 
-=> nrel_group: five;
-=> nrel_period: seven;
+<- group_five;
+<- period_seven;
 => nrel_periodic_number: one_hundred_and_five;
 
 <- metal;
 
-<= nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_four; oxidation_state_plus_five;
-<= nrel_inclusion: valence_five;
+<- nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_four; oxidation_state_plus_five;
+<- nrel_inclusion: valence_five;
 
 
 => nrel_atomic_mass: ...

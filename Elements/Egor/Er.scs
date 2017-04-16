@@ -17,14 +17,14 @@ elem_Er
 			*);;
 	*);
 
-=> nrel_group: three;
-=> nrel_period: five;
+<- group_three;
+<- period_five;
 => nrel_periodic_number: sixty_eight;
 
 <- metal;
 
-<= nrel_inclusion: oxidation_state_plus_three;
-<= nrel_inclusion: valence_three;
+<- oxidation_state_plus_three;
+<- valence_three;
 
 
 => nrel_atomic_radius: ...
