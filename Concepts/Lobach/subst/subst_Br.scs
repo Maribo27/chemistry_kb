@@ -1,0 +1,69 @@
+subst_Br
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[bromum (substance)](*<- lang_en;;*);
+	[бром (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Br (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (бром (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Бром (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - тяжёлая едкая <sc_element sys_idtf = "liquid">жидкость</sc_element> красно-бурого <sc_element sys_idtf = "color">цвета</sc_element> с сильным неприятным <sc_element sys_idtf = "smell">запахом</sc_element>.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> liquid;;
+		-> color;;
+		-> smell;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (бром (вещество), красно-бурая жидкость с сильным неприятным запахом)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Brom.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> liquid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_seven (*<-number;;
+							=>nrel_main_idtf:[-7](*<- lang_en;;*);;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:58 (*<-number;;*);;		
+		*);;
+	*);;
