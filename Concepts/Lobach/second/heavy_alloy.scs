@@ -25,8 +25,15 @@ heavy_alloy
 
 <- alloy;
 
-=> nrel_melting_temperature: 1400;
 => nrel_density_of_substance: 16500;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1400 (*<-number;;*);;		
+		*);;
+	*);
 
 <- rrel_key_sc_element: basis_heavy_alloy
 	(*

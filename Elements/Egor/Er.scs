@@ -17,31 +17,61 @@ elem_Er
 			*);;
 	*);
 
-=> nrel_group: 3;
-=> nrel_period: 5;
-=> nrel_periodic_number: 68;
-=> nrel_chemical_properties: ...
+<- group_three;
+<- period_five;
+=> nrel_periodic_number: sixty_eight;
+
+<- metal;
+
+<- oxidation_state_plus_three;
+<- valence_three;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_valence: three;;
-*);
-<- rrel_key_sc_element: number_of_er
+	<- quantity;;
+	<= nrel_value:...
 	(*
-		<- sc_explanation;;
+		-> rrel_pm:178(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_covalent_radius: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:157(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Er;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Er
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Прим. (еропий, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (эрбий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер эрбия равен 68.] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Xe] 4f<sup>12</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент эрбий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
 			"file://image/Erbium.jpg"
@@ -49,46 +79,10 @@ elem_Er
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-
-
-
-
-<- rrel_key_sc_element: local_of_erbium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (эрбий, месторождения*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Эрбий входит в состав лантаноидов, которые встречаются очень редко. Лантаноиды встречаются в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: receipt_of_erbium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (эрбий, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Металлический эрбий получают электролизом расплава хлорида (фторида) эрбия ErCl3 (ErF3), а также кальцийтермическим восстановлением этих солей.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: application_of_erbium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (эрбий, применение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Монокристаллы оксида эрбия используются в качестве высокоэффективных лазерных материалов. ] (*<- lang_ru;;*);;
-		*);;
 	*);;
 
-
-
+atomic_mass_Er <- number;
+=> nrel_main_idtf:[167,259(3)](*<-lang_ru;; <- lang_en;;*);;
 
 Definition_of_erbium
 => nrel_main_idtf:

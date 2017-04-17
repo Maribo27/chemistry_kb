@@ -17,31 +17,65 @@ elem_Ce
 			*);;
 	*);
 
-=> nrel_group: 3;
-=> nrel_period: 6;
-=> nrel_periodic_number: 58;
-=> nrel_chemical_properties: ...
+<- group_three;
+<- period_six;
+=> nrel_periodic_number: fifty_eight;
+
+<- metal;
+
+<- oxidation_state_plus_three; oxidation_state_plus_four;
+<- valence_three; valence_four; 
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;plus_four;;
-	=> nrel_valence: three;four;;
-*);
-<- rrel_key_sc_element: number_of_ce
+	<- quantity;;
+	<= nrel_value:...
 	(*
-		<- sc_explanation;;
+		-> rrel_pm:181(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Ce
+			(* <- number;;
+			=> nrel_main_idtf:[1,12](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_covalent_radius: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:165(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Ce;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Ce
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Прим. (церий, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (церий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер церия равен 58.] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Xe] 4f<sup>15</sup>5d<sup>16</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент церий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
 			"file://image/Cerium.jpg"
@@ -49,77 +83,10 @@ elem_Ce
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-
-<- rrel_key_sc_element: phyzical_properties_of_ce
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (кадмий, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[   Церий представляет собой серебристо-белый вязкий и ковкий металл, легко поддаётся ковке и механической обработке при комнатной температуре. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-
-<- rrel_key_sc_element: local_of_cerium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (церий, месторождения*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Главные месторождения церия находятся в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: receipt_of_cerium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (церий, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Церий выделяют из смеси редкоземельных элементов процессами экстракции и хроматографии. Получают электролизом расплава фторида церия CeF3.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: chemical_properties_of_ce
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (церий, химическме свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Церий редкоземельный металл, неустойчив на воздухе, постепенно окисляется, превращаясь в белый оксид и карбонат церия.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: interaction_of_cerium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (церий, взаимодействие*, окисление*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Церий реагирует с кислотами, при кипячении окисляется водой, устойчив к действию щелочей. Энергично взаимодействует с галогенами, халькогенами, азотом и углеродом.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: biocerium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (церий, биоаккумуляция*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Церий обладает способностью к биоаккумуляции.] (*<- lang_ru;;*);;
-		*);;
 	*);;
 
-
-
+atomic_mass_Ce <- number;
+=> nrel_main_idtf:[140,116(1)](*<-lang_ru;; <- lang_en;;*);;
 
 Definition_of_cerium
 => nrel_main_idtf:

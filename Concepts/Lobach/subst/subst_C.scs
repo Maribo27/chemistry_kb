@@ -1,0 +1,77 @@
+subst_C
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[carbon (substance)](*<- lang_en;;*);
+	[углерод (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[С (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (углерод (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Углерод (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - <sc_element sys_idtf = "substance">вещество</sc_element>, существующее во множестве аллотропных модификаций с очень разнообразными физическими свойствами. 
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> substance;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (углерод (вещество), матово-чёрный (графит), либо прозрачный (алмаз))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Carbon.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:3550 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:4027 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (углерод (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы углерода:  <sup>8</sup>С, <sup>9</sup>С, <sup>10</sup>С, <sup>11</sup>С, <sup>12</sup>С, <sup>13</sup>С, <sup>14</sup>С, <sup>15</sup>С, <sup>16</sup>С, <sup>17</sup>С, <sup>18</sup>С, <sup>19</sup>С, <sup>20</sup>С, <sup>21</sup>С, <sup>22</sup>С] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;

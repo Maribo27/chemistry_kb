@@ -1,4 +1,5 @@
 elem_Br
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_bromum
 	(* 
@@ -16,125 +17,75 @@ elem_Br
 				
 			*);;
 	*);
-=> nrel_group: 17;
-=> nrel_period: 4;
-=> nrel_periodic_number: 35;
-=> nrel_chemical_properties: ...
+<- group_seventeen;
+<- period_four;
+=> nrel_periodic_number: thirty_five;
+
+<-nonmetal;
+
+<- oxidation_state_minus_one; oxidation_state_zero; oxidation_state_plus_one; oxidation_state_plus_three; oxidation_state_plus_five; oxidation_state_plus_seven;
+<- valence_three; valence_one; valence_seven; valence_five;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: minus_one;zero;plus_one;plus_three;plus_five;plus_seven;;
-	=> nrel_valence: one;three;five;seven;;
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:94(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Br
+			(* <- number;;
+			=> nrel_main_idtf:[2,96](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_covalent_radius: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:114(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Br;;
+	*);;
 *);
 
 
-<- rrel_key_sc_element: number_of_br
+<- rrel_key_sc_element: electron_configuration_Br
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Прим. (бром, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (бром, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер брома равен 35.] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Ar] 3d<sup>10</sup>4s<sup>2</sup>4p<sup>5</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
+
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент бром)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
 			"file://image/Brom.jpg"
 			(*
 			=> nrel_format: format_jpg;;
 			*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: chemical_properties_of_br
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[  Простое вещество бром при нормальных условиях является тяжёлой едкой жидкостью красно-бурого цвета с сильным неприятным запахом. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-
-<- rrel_key_sc_element: toxic_bromum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, яд)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Бром - ядовит.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: bromum_molecul
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, молекула)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Молекула брома двухатомна.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: receipt_of_bromum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Бром получают химическим путём из рассола Br−.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: liquid_bromum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, жидкость)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Бром при комнатной температуре является жидким.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: bromine_water
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, раствор)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Бром растворим в воде, раствор называют бромной водой. В бромной воде протекает реакция с образованием бромоводородной и неустойчивой бромноватистой кислот.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: bromination
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, бромирование*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[С большинством органических растворителей бром смешивается во всех отношениях, при этом часто происходит бромирование молекул органических растворителей.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: application_of_bromum
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (бром, применение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[В медицине бромид натрия и бромид калия применяют как успокаивающие средства.] (*<- lang_ru;;*);;
 		*);;
 	*);;
 
@@ -145,3 +96,5 @@ Definition_of_bromum
 => nrel_main_idtf:
 	[Опр.(Бром)]
 	(* <- lang_ru;;	*);;
+atomic_mass_Br <- number;
+=> nrel_main_idtf:[79,9](*<-lang_ru;; <- lang_en;;*);;
