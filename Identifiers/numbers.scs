@@ -125,3 +125,5 @@ one_hundred_and_seventeen => nrel_main_idtf:	[117](* <- lang_ru; lang_en;; *);;
 one_hundred_and_eighteen => nrel_main_idtf:	[118](* <- lang_ru; lang_en;; *);;
 one_hundred_and_nineteen => nrel_main_idtf:	[119](* <- lang_ru; lang_en;; *);;
 one_hundred_and_twenty => nrel_main_idtf:	[120](* <- lang_ru; lang_en;; *);;
+
+two_and_two => nrel_main_idtf:	[2,2](* <- lang_ru; lang_en;; *);;

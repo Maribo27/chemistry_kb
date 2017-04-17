@@ -1,0 +1,112 @@
+elem_Fe
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: definition_of_Fe
+(* 
+	=> nrel_main_idtf: [опр.(железо)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Железо</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> восьмой <sc_element sys_idtf  = "periodic_group">группы</sc_element>, 4-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+<- transition_metal;
+<- siderophile;
+
+=> nrel_periodic_number: twenty_six;
+<- group_eight;
+<- period_four;
+<- oxidation_state_plus_three; oxidation_state_plus_two;
+<- valence_three; valence_two; valence_six;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(железо (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_Fe.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:126(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Fe;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:117(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Fe;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Fe
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(железо, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Ar] 3d<sup>6</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+=> nrel_biological_significance: ...
+(*
+	-> blood_transfusion;;
+	-> DNA_synthesis;;
+*);
+
+=> nrel_allotropic_modification: ...
+(*
+	-> alpha_Fe;;
+	-> beta_Fe;;
+	-> gamma_Fe;;
+	-> delta_Fe;;
+*);
+
+=> nrel_being_in_body: ...
+(*
+	-> blood_plasma;;
+	-> liver;;
+*);;
+
+atomic_mass_Fe <- number;
+=> nrel_main_idtf:[55,847(2)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Fe <- number;
+=> nrel_main_idtf:[1,83](*<-lang_ru;; <- lang_en;;*);;

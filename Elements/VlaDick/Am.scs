@@ -1,8 +1,9 @@
 elem_Am
+<-sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_americium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,62 +18,60 @@ elem_Am
 		*);;
 	*);
 
-=> nrel_group: 3;
-=> nrel_period: 7;
-=> nrel_periodic_number: 95;
+<- group_three;
+<- period_seven;
+=> nrel_periodic_number: ninety_five;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_three; oxidation_state_plus_four; oxidation_state_plus_five; oxidation_state_plus_six;
+<= nrel_inclusion: valence_three; valence_four; valence_five; valence_six;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_oxidation_state: plus_four;;
-	=> nrel_oxidation_state: plus_five;;
-	=> nrel_oxidation_state: plus_six;;
-	=> nrel_valence: three;;
-	=> nrel_valence: four;;
-	=> nrel_valence: five;;
-	=> nrel_valence: six;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:174(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Am;
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Am;;
+	*);;
 *);
 
 
-<- rrel_key_sc_element: physical_properties_of_am
+<- rrel_key_sc_element: electron_configuration_Am
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (америций, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (америций, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Америций — металл серебристо-белого цвета, тягучий и ковкий. Светится в темноте за счёт собственного α-излучения. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Am] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>7</sup> 6s<sup>2</sup>p<sup>6</sup> 7s<sup>2</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_am
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (америций, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Растворы 3-х валентного америция окрашены в ярко-розовый цвет. Оксиды 4-х валентного америция в водных растворах энергично восстанавливаются под действием собственного сильного α-излучения. Растворяется в хлороводородной кислоте, не растворяется в концентрированных азотной и серной кислотах.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент америций)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Am.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Americium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -80,5 +79,10 @@ elem_Am
 
 Definition_of_americium
 => nrel_main_idtf:
-	[Опр.(Америций)]
+	[Опр. (америций)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Am <- number;
+=> nrel_main_idtf:[243](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Am <- number;
+=> nrel_main_idtf:[1,3](*<-lang_ru;; <- lang_en;;*);;

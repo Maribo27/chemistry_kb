@@ -1,0 +1,120 @@
+elem_H
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: definition_of_hydrogenium
+(* 
+	=> nrel_main_idtf: [опр.(водород)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Водород</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>    первой  <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 1-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+=> nrel_being_in_body: cell;
+
+=> nrel_allotropic_modification: ...
+(*
+	-> ortho_hydrogen;;
+	-> para_hydrogen;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [утв.(водород (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/elem_H_isotope.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(водород (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/elem_H.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_periodic_number: one;
+
+<- gas;
+<- nonmetal;
+<- atmophile;
+
+<- group_one;
+<- period_one;
+<- oxidation_state_plus_one;
+<- valence_one;
+
+=> nrel_isotopic_modification: ...
+(*
+	-> protius;;
+	-> deuterium;;
+	-> tritium;;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:53(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: two_and_two;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:32(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_H;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_H
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(водород, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ 1s<sup>1</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_H <- number;
+=> nrel_main_idtf:[1,00784](*<-lang_ru;; <- lang_en;;*);;

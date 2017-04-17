@@ -5,13 +5,23 @@ concrete
 	[concrete](* <- lang_en;; *);;
 
 concrete
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+	Definition_of_concrete
 	(*
 		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(бетон)] (* <-lang_ru;; *);; 
         <= nrel_sc_text_translation:...
         (*
 			-> rrel_example:"file://htmls/concrete.html"(* <- lang_ru;; *);;
         *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> mixture;;
+			-> binder;;
+			-> cement;;
+			-> water;;
+		*);;
 	*);;
 	
 
@@ -19,7 +29,7 @@ concrete
 <- rrel_key_sc_element:...
 	(* 
 	<- sc_explanation;;
-	=> nrel_main_idtf: [Утв.(бетон, изготовление*)] (* <-lang_ru;; *);; 
+	=> nrel_main_idtf: [Прим.(бетон, получение*)] (* <-lang_ru;; *);; 
 	<= nrel_sc_text_translation:...
 		(* 
 		-> rrel_example: "file://htmls/concrete1.html" (* <-lang_ru;; *);;
@@ -28,8 +38,9 @@ concrete
 
 concrete
 <-rrel_key_sc_element:...
-				(*<-sc_illustration;;
-				<=nrel_sc_text_translation:...
+				(*
+					<-sc_illustration;;
+					<=nrel_sc_text_translation:...
 						(*->rrel_example: "file://img/concrete.jpg";;*) ;;	
 				*);;
 

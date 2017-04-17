@@ -1,0 +1,143 @@
+subst_Bi
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[bismuth (substance)](*<- lang_en;;*);
+	[висмут (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Bi (substance)](*<- lang_en;;*);
+	
+
+=> nrel_inclusion: elem_Bi;
+
+<- rrel_key_sc_element: definition_of_subst_Bi
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (висмут (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Висмут (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - достаточно редкий блестящий <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета с розоватым оттенком, хрупкий и легкоплавкий.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> metal;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (висмут (вещество), нормальные условия, твердое агрегатное состояние, цвет)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Bi.jpg";;
+	*);;
+*);
+
+
+<= nrel_being_in_nature: bismuth_in_nature
+(*
+	-> nugget;;
+	-> bismuthinite;;
+	-> aikinite;;
+	-> tetramorph;;
+	-> cosalite;;
+	-> bismit;;
+	-> bismuth;;
+	-> wittichenit;;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+	-> solid;;
+*);
+
+
+<= nrel_receiving:...
+(*
+	-> nrel_reducing_reaction;;
+	-> nrel_electrolysis;;
+*);
+
+
+<= nrel_applying: applying_of_Bi
+(*
+	-> catalyst;;
+	-> metallurgy;;
+	-> semiconductor;;
+	-> nuclear_radiation_detector;;
+	-> electronics;;
+	-> nuclear_engineering;;
+	-> medicine;;
+	-> pigment;;
+	-> cosmetics;;
+	-> military_industry;;
+*);
+
+
+<- silvery_white_color;
+<- no_smell;
+<- no_taste;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:271 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1564 (*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (висмут (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://html/Bi_isotop_table.html" (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (висмут (вещество), строение, температура)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			"file://image/Bi1.jpg";
+			[ В изломе имеет грубозернистое строение, но при температуре 150—250 °C проявляет пластические свойства.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (висмут (вещество), агрегатное состояние)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Переход из твёрдого в жидкое состояние сопровождается увеличением плотности. ] (* <- lang_ru;; *);;
+	*);;
+*);;

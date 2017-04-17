@@ -1,0 +1,105 @@
+elem_Os
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+<- rrel_key_sc_element: definition_of_Osmium
+(* 
+	=> nrel_main_idtf: [опр.(осмий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Осмий</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>    восьмой   <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 6-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [утв.(осмий (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/elem_Os_isotope.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+=> nrel_periodic_number: seventy_six;
+
+<- transition_metal;
+<- platinoid;
+<- siderophile;
+
+<- group_eight;
+<- period_six;
+<- oxidation_state_plus_three; oxidation_state_plus_four; oxidation_state_plus_six; oxidation_state_plus_eight; oxidation_state_zero; oxidation_state_plus_two; oxidation_state_minus_two;
+<- valence_three; valence_four; valence_six; valence_eight; valence_two; valence_five;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:135(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: two_and_two;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:126(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Os;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Os
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(осмий, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Xe] 4f<sup>14</sup>5d<sup>6</sup>6s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(осмий (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_Os.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_Os <- number;
+=> nrel_main_idtf:[190,23(3)](*<-lang_ru;; <- lang_en;;*);;

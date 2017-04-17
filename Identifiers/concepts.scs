@@ -275,14 +275,260 @@ heat_transfer_agent <- sc_node_not_relation;
 	=> nrel_main_idtf:[теплоноситель](* <- lang_ru;; *);;
 moderator <- sc_node_not_relation;
 	=> nrel_main_idtf:[замедлитель](* <- lang_ru;; *);;
-firefighting <- sc_node_not_relation;
-	=> nrel_main_idtf:[пожаротушение](* <- lang_ru;; *);;
-sport <- sc_node_not_relation;
-	=> nrel_main_idtf:[спорт](* <- lang_ru;; *);;
 tool <- sc_node_not_relation;
 	=> nrel_main_idtf:[инструмент](* <- lang_ru;; *);;
 grease <- sc_node_not_relation;
 	=> nrel_main_idtf:[смазка](* <- lang_ru;; *);;
 
-reservoir <- sc_node_not_relation;
-	=> nrel_main_idtf:[водохранилище](* <- lang_ru;; *);;
+cuprite => nrel_main_idtf:
+    [куприт](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+corundum => nrel_main_idtf:
+    [корунд](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+diaspora => nrel_main_idtf:
+    [диаспор](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+bauxite => nrel_main_idtf:
+    [боксит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+spinel => nrel_main_idtf:
+    [шпинель](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+hematite => nrel_main_idtf:
+    [гематит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+chromite => nrel_main_idtf:
+    [хромит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+manganite => nrel_main_idtf:
+    [манганит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+microlite => nrel_main_idtf:
+    [микролит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+
+    chemical_industry=> nrel_main_idtf:
+	[химическая промышленность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+food_industry=> nrel_main_idtf:
+	[пищевая промышленность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+margarine_production=> nrel_main_idtf:
+	[производство маргарина](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+food_additive_E949=> nrel_main_idtf:
+	[пищевая добавка E949](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+meteorology=> nrel_main_idtf:
+	[метеорология](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+rocket_fuel=> nrel_main_idtf:
+	[ракетное топливо](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+electric_power_industry=> nrel_main_idtf:
+	[электроэнергетика](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+coolant=> nrel_main_idtf:
+	[хладагент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+water_vapor_conversion=> nrel_main_idtf:
+	[конверсия водяного пара](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+water_vapor_transmission=> nrel_main_idtf:
+	[перемещение водяного пара](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+catalytic_oxidation=> nrel_main_idtf:
+	[каталитическое окисление](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrocarbons_cracking=> nrel_main_idtf:
+	[крекинг углеводородов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrocarbons_reforming=> nrel_main_idtf:
+	[конверсия углеводородов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydride=> nrel_main_idtf:
+	[гидрид](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+low_temperature_condensation=> nrel_main_idtf:
+	[низкотемпературная конденсация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+adsorption_selection=> nrel_main_idtf:
+	[адсорбционный отбор](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+	aeronautics_filling=> nrel_main_idtf:
+	[аэронавтика](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+breathing_mixture=> nrel_main_idtf:
+	[дыхательная смесь](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+geology=> nrel_main_idtf:
+	[геология](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+purpurite=> nrel_main_idtf:
+	[пурпурит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+non_toxic_substance=> nrel_main_idtf:
+	[нетоксичное вещество](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+carnallit=> nrel_main_idtf:
+	[карналит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+taste=> nrel_main_idtf:
+	[вкус](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+smell=> nrel_main_idtf:
+	[запах](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+bischofite=> nrel_main_idtf:
+	[бисковит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+kieserite=> nrel_main_idtf:
+	[кисерит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+epsomite=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cainite=> nrel_main_idtf:
+	[каинит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+magnesite=> nrel_main_idtf:
+	[магнезит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+dolomite=> nrel_main_idtf:
+	[доломит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+brucite=> nrel_main_idtf:
+	[брусит](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+thermal_receipt=> nrel_main_idtf:
+	[термическое получение](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+aluminothermic_method=> nrel_main_idtf:
+	[алюмотермический метод](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+coke_reduction=> nrel_main_idtf:
+	[коксование](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+chemistry=> nrel_main_idtf:
+	[химия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+organic_synthesis=> nrel_main_idtf:
+	[органический синтез](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+thermoelectric_material=> nrel_main_idtf:
+	[термоэлектрический материал](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+calcification_reduction=> nrel_main_idtf:
+	[кальцификации](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+gas_nebula=> nrel_main_idtf:
+	[газовая туманность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+solar_atmosphere=> nrel_main_idtf:
+	[солнечная атмосфера](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrosphere=> nrel_main_idtf:
+	[гидросфера](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+flotation_method=> nrel_main_idtf:
+	[флотация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+steels_alloying=> nrel_main_idtf:
+	[легирование стали](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+heating_element=> nrel_main_idtf:
+	[нагревательный элемент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+incandescent_lamp=> nrel_main_idtf:
+	[лампа накаливания](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+	ammonium_nitrite=> nrel_main_idtf:
+	[нитрит аммония](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+azide=> nrel_main_idtf:
+	[азид](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cryotherapy=> nrel_main_idtf:
+	[криотерапия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+petrochemistry=> nrel_main_idtf:
+	[нефтехимия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+compound_synthesis=> nrel_main_idtf:
+	[синтез соединений](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+food_additive_E941=> nrel_main_idtf:
+	[пищевая добавка E941](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+sodium_thermic_method=> nrel_main_idtf:
+	[натриево-термальный метод](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+carbothermic_method=> nrel_main_idtf:
+	[карботермический метод](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+crystal_cell=> nrel_main_idtf:
+	[кристаллическая решётка](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+earths_crust=> nrel_main_idtf:
+	[земная кора](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+alloying=> nrel_main_idtf:
+	[легирование](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+magnets_manufacture=> nrel_main_idtf:
+	[производство магнитов](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+dielectric=> nrel_main_idtf:
+	[диэлектрик](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+neodymium_glass=> nrel_main_idtf:
+	[неодимовое стекло](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+smell=> nrel_main_idtf:
+	[запах](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+atmosphere=> nrel_main_idtf:
+	[атмосфера](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cell=> nrel_main_idtf:
+	[клетка](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+signal_lamp=> nrel_main_idtf:
+	[сигнальная лампа](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+photocell=> nrel_main_idtf:
+	[фотоэлемент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+rectifier=> nrel_main_idtf:
+	[выпрямитель](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+gas_laser=> nrel_main_idtf:
+	[газовый лазер](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+advertising=> nrel_main_idtf:
+	[реклама](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+adsorption=> nrel_main_idtf:
+	[адсорбция](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+low_temperature_rectification=> nrel_main_idtf:
+	[низкотемпературная ректификация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+cryogenic_rectification=> nrel_main_idtf:
+	[криогенная ректификация](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+potassium_permanganate=> nrel_main_idtf:
+	[перманганат калия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+catalytic_decomposition=> nrel_main_idtf:
+	[каталитическое разложение](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrogen_peroxide=> nrel_main_idtf:
+	[пероксид водорода](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+potassium_chlorate=> nrel_main_idtf:
+	[хлорат калия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;

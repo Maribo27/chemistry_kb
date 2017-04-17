@@ -1,0 +1,155 @@
+subst_Ac
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[actinium (substance)](*<- lang_en;;*);
+	[актиний (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Ac (substance)](*<- lang_en;;*);
+	
+
+=> nrel_inclusion: elem_Ac;
+
+<- rrel_key_sc_element: definition_of_subst_Ac
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (актиний (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Актиний (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - тяжёлый <sc_element sys_idtf = "radioactivity">радиоактивный</sc_element> <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> radioactivity;;
+		-> metal;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (актиний (вещество), нормальные условия, твердое агрегатное состояние, цвет)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Ac.jpg";;
+	*);;
+*);
+
+
+<= nrel_being_in_nature:actinium_in_nature
+(*
+	-> molybdenite;;
+	-> chalcopyrite;;
+	-> cassiterite;;
+	-> quartz;;
+	-> pyrolusite;;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+	-> solid;;
+*);
+
+
+
+<= nrel_receiving:...
+(*
+	-> nrel_irradiation;;
+	-> nrel_reducing_reaction;;
+*);
+
+
+<= nrel_applying: applying_of_Ac
+(*
+	-> medicine;;
+	-> radioactive_indicator;;
+	-> radioisotope_generator;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Актиний-225 применяется для получения висмута-213. ](*<- lang_ru;;*);;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ <p>
+		Актиний-227 в смеси с <sc_element sys_idtf = "subst_Be">бериллием</sc_element> является источником <sc_element sys_idtf = "neutron">нейтронов</sc_element>. 
+		Ac-Be-источники характеризуются малым выходом гамма-квантов, применяются в активационном анализе при определении <sc_element sys_idtf = "subst_Mn">Mn</sc_element>, <sc_element sys_idtf = "subst_Si">Si</sc_element>, <sc_element sys_idtf = "subst_Al">Al</sc_element> в рудах.
+		</p> ](*<- lang_ru;;=> nrel_format: format_html;;*);;
+	*);;
+
+*);
+
+
+<- silvery_white_color;
+<- no_smell;
+<- no_taste;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1050 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:3197 (*<-number;;*);;		
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (актиний (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://html/Ac_isotop_table.html" (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (актиний (вещество), свечение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			"file://image/Ac_svechen.jpg";
+			[ Благодаря своей сильной радиоактивности актиний светится в темноте с бледно-голубым светом, который исходит из окружающего воздуха, ионизированного испускаемыми энергетическими частицами.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (актиний (вещество), нахождение в природе*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[ Актиний является одним из самых малораспространённых в природе радиоактивных элементов. ] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+
+

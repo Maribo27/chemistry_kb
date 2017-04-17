@@ -1,8 +1,9 @@
 elem_Cs
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_caesium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,57 +18,71 @@ elem_Cs
 		*);;
 	*);
 
-=> nrel_group: 1;
-=> nrel_period: 6;
-=> nrel_periodic_number: 55;
+<- group_one;
+<- period_six;
+=> nrel_periodic_number: fifty_five;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_one; 
+<= nrel_inclusion: valence_one;
+
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_one;;
-	=> nrel_valence: one;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:334(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Cs;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:235(*<- number;;*);;
+	*);;
 *);
 
 
-
-<- rrel_key_sc_element: physical_properties_of_cs
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Cs;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Cs
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (цезий, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (цезий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Цезий — мягкий металл золотисто-белого цвета, при комнатной температуре находится в полужидком состоянии. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Cs] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 5s<sup>2</sup>p<sup>6</sup> 6s<sup>1</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_cs
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (цезий, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Цезий является сильнейшим восстановителем. На воздухе мгновенно окисляется с воспламенением. Взаимодействие с водой происходит со взрывом. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент цезий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Cs.png"
-			(*
-			=> nrel_format: format_png;;
-			*);;
+			"file://image/Cesium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -75,5 +90,10 @@ elem_Cs
 
 Definition_of_caesium
 => nrel_main_idtf:
-	[Опр.(Цезий)]
+	[Опр. (цезий)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Cs <- number;
+=> nrel_main_idtf:[132,9](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Cs <- number;
+=> nrel_main_idtf:[0,79](*<-lang_ru;; <- lang_en;;*);;

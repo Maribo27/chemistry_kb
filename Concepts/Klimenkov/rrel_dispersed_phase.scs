@@ -4,13 +4,21 @@ rrel_dispersed_phase
 	[дисперсная фаза'](* <-lang_ru;; *);;
 
 rrel_dispersed_phase
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+	Definition_of_rrel_dispersed_phase
 	(*
 		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(дисперсная фаза')] (* <-lang_ru;; *);; 
         <= nrel_sc_text_translation:...
         (*
 			-> rrel_example:"file://htmls/rrel_dispersed_phase.html"(* <- lang_ru;; *);;
         *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> dispersion;;
+			-> rrel_dispersion_medium;;
+		*);;
 	*);;
 	
 

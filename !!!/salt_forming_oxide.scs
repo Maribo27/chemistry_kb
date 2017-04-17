@@ -1,0 +1,40 @@
+salt_forming_oxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+    [salt-forming oxide](*<- lang_en;;*);
+    [солеобразующий оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- definition;;
+    => nrel_main_idtf: [опр.(солеобразующий оксид)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [<b>Солеобразующие оксиды</b> - <sc_element sys_idtf="oxide">оксиды</sc_element> <sc_element sys_idtf="nonmetal">неметаллов</sc_element> и <sc_element sys_idtf="metal">металлов</sc_element>, при взаимодействии с <sc_element sys_idtf="water">водой</sc_element> образующие соответствующие <sc_element sys_idtf="acid">кислоты</sc_element>, при взаимодействии с <sc_element sys_idtf="basis">основаниями</sc_element> — соответствующие нормальные и кислые <sc_element sys_idtf="salt">соли</sc_element>.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+    <= nrel_using_constants:...
+    (*
+        -> oxide;;
+        -> nonmetal;;
+        -> metal;;
+        -> acid;;
+        -> basis;;
+        -> salt;;
+    *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf:[Разбиение по признаку наличия основных свойств](*<-lang_ru;; *);;
+    -> acid_oxide;;
+    -> amphoteric_oxide;;
+    -> basic_oxide;;
+*);
+
+<- rrel_key_sc_element: section_oxides;;

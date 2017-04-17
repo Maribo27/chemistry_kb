@@ -1,8 +1,9 @@
 elem_Hs
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_hassium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,33 +18,57 @@ elem_Hs
 		*);;
 	*);
 
-=> nrel_group: 8;
-=> nrel_period: 7;
-=> nrel_periodic_number: 89;
+<- group_eight;
+<- period_seven;
+=> nrel_periodic_number: eighty_nine;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_eight; 
+<= nrel_inclusion: valence_eight;
+
+
+=> nrel_atomic_mass: ...
 (*
-	=> nrel_oxidation_state: plus_eight;;
-	=> nrel_valence: eight;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Hs;;
+	*);;
 *);
 
 
-<- rrel_key_sc_element: receipt_of_hassium
+<- rrel_key_sc_element: electron_configuration_Hs
 	(*
-		<- sc_explanation;;
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хассий, получение*)](*<- lang_ru;;*);;
+			[Утв. (хассий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Хассий создан бомбардировкой атома свинца Pb-208 ядрами железа Fe-58 с выделением нейтрона. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Hs] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 6s<sup>2</sup>p<sup>6</sup>d<sup>6</sup> 7s<sup>2</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент хассий)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/Hassium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
 
-
 Definition_of_hassium
 => nrel_main_idtf:
-	[Опр.(Хассий)]
+	[Опр. (хассий)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Hs <- number;
+=> nrel_main_idtf:[265](*<-lang_ru;; <- lang_en;;*);;

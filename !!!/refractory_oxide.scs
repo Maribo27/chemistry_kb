@@ -1,0 +1,40 @@
+refractory_oxide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[refractory oxide](*<- lang_en;;*);
+	[тугоплавкий оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [опр.(тугоплавкий оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Тугоплавкие оксиды</b> - это <sc_element sys_idtf="chemical_compound">соединения</sc_element> <sc_element sys_idtf="metal">металлов</sc_element> с <sc_element sys_idtf="elem_O">кислородом</sc_element>, имеющие высокую <sc_element sys_idtf="nrel_melting_temperature">температуру плавления</sc_element>.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+
+	<= nrel_using_constants:...
+	(*
+		-> chemical_compound;;
+		-> metal;;
+		-> elem_O;;
+		-> nrel_melting_temperature;;
+	*);;
+*);
+
+=> nrel_applying: ...
+(*
+	-> radiotechnics;;
+	-> metallurgy;;
+	-> chemical_industry;;
+	-> nuclear_energy;;
+	-> rocket_technology;;
+	-> space_technology;;
+*);
+
+<- rrel_key_sc_element: section_oxides;;

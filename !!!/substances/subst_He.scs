@@ -1,0 +1,135 @@
+subst_He
+<- sc_node_not_relation;
+=> nrel_main_idtf: [гелий (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [helium (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_He
+(* 
+	=> nrel_main_idtf: [опр.(гелий (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество гелий</b> - <sc_element sys_idtf = "noble_gas">инертный</sc_element> одноатомный <sc_element sys_idtf  = "gas">газ</sc_element> без <sc_element sys_idtf  = "color">цвета</sc_element>, <sc_element sys_idtf  = "taste">вкуса</sc_element> и <sc_element sys_idtf  = "smell">запаха</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> noble_gas;;
+		-> gas;;
+		-> color;;
+		-> taste;;
+		-> smell;;
+	*);;
+*);
+
+<- no_color;
+<- gas;
+<- non_toxic_substance;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(гелий (вещество), газ)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/subst_Helium.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_receiving: fractional_distillation;
+
+=> nrel_applying: ...
+(*
+	-> metallurgy;;
+	-> food_industry;;
+	-> coolant;;
+	-> aeronautics_filling;;
+	-> breathing_mixture;;
+	-> coolant;;
+	-> geology;;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [0,95] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [4,215] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,0138] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,0829] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [20,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [31,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

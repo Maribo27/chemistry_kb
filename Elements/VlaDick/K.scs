@@ -1,8 +1,9 @@
 elem_K
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_kalium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,57 +18,71 @@ elem_K
 		*);;
 	*);
 
-=> nrel_group: 1;
-=> nrel_period: 4;
-=> nrel_periodic_number: 19;
+<- group_one;
+<- period_four;
+=> nrel_periodic_number: nineteen;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+
+<= nrel_inclusion: oxidation_state_plus_one; 
+<= nrel_inclusion: valence_one;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_one;;
-	=> nrel_valence: one;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:277(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_K;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:203(*<- number;;*);;
+	*);;
 *);
 
 
-
-<- rrel_key_sc_element: physical_properties_of_k
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_K;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_K
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калий, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (калий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Калий — серебристое вещество с характерным блеском на свежеобразованной поверхности. Очень лёгок и легкоплавок. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [K] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup> 4s<sup>1</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_k
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (калий, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Калий, как и другие щелочные металлы, проявляет типичные металлические свойства и очень химически активен, является сильным восстановителем. С водой реагирует со взрывом. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент калий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/K.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Potassium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -75,5 +90,11 @@ elem_K
 
 Definition_of_kalium
 => nrel_main_idtf:
-	[Опр.(Калий)]
+	[Опр. (калий)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_K <- number;
+=> nrel_main_idtf:[39,1](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_K <- number;
+=> nrel_main_idtf:[0,82](*<-lang_ru;; <- lang_en;;*);;

@@ -1,8 +1,9 @@
 elem_As
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_arsenicum
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,58 +18,70 @@ elem_As
 		*);;
 	*);
 
-=> nrel_group: 15;
-=> nrel_period: 4;
-=> nrel_periodic_number: 89;
+<- group_fifteen;
+<- period_four;
+=> nrel_periodic_number: eighty_nine;
 
 <- nonmetal;
 
-=> nrel_chemical_properties: ...
+
+<= nrel_inclusion: oxidation_state_minus_three; oxidation_state_plus_three; oxidation_state_plus_five; 
+<= nrel_inclusion: valence_three; valence_five;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: minus_three;;
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_oxidation_state: plus_five;;
-	=> nrel_valence: three;;
-	=> nrel_valence: five;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:133(*<- number;;*);;
+	*);;
 *);
 
-<- rrel_key_sc_element: physical_properties_of_as
+=> nrel_electronegativity: electronegativity_As;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_pm:120(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_As;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_As
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (мышьяк, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (мышьяк, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Мышьяк — хрупкий полуметалл стального цвета с зеленоватым оттенком. Мышьяк и его соединения очень ядовиты. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [As] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>3</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_as
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (мышьяк, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Мышьяк - химически малоактивный полуметалл. При нагревании на воздухе выше 400 °C горит. С галогенами Мышьяк соединяется непосредственно. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент мышьяк)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/As.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Arsenicum.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -76,5 +89,10 @@ elem_As
 
 Definition_of_arsenicum
 => nrel_main_idtf:
-	[Опр.(Мышьяк)]
+	[Опр. (мышьяк)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Ar <- number;
+=> nrel_main_idtf:[74,92](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_As <- number;
+=> nrel_main_idtf:[2,18](*<-lang_ru;; <- lang_en;;*);;

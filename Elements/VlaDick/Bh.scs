@@ -1,8 +1,9 @@
 elem_Bh
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_bohrium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,46 +19,69 @@ elem_Bh
 				
 			};
 
-=> nrel_group: 7;
-=> nrel_period: 7;
-=> nrel_periodic_number: 107;
+<- group_seven;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_seven;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_seven; 
+<= nrel_inclusion: valence_seven;
+
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_seven;;
-	=> nrel_valence: seven;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:113(*<- number;;*);;
+	*);;
 *);
 
 
-
-<- rrel_key_sc_element: physical_properties_of_bh
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Bh;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Bh
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (борий, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (борий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Борий — трансурановый элемент, металл.  ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Bh] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 6s<sup>2</sup>p<sup>6</sup>d<sup>5</sup> 7s<sup>2</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
 
-
-<- rrel_key_sc_element: receipt_of_bohrium
+<- rrel_key_sc_element:
+	...
 	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (борий, получение*)](*<- lang_ru;;*);;
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент борий)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Борий создан бомбардировкой атома висмута-209 ядрами хрома-54 с выделением нейтрона. Получено всего несколько атомов. ] (*<- lang_ru;;*);;
+		-> rrel_example:
+			"file://image/Bohrium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
 
-
 Definition_of_bohrium
 => nrel_main_idtf:
-	[Опр.(Борий)]
+	[Опр. (борий)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Bh <- number;
+=> nrel_main_idtf:[262](*<-lang_ru;; <- lang_en;;*);;

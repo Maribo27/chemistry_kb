@@ -1,0 +1,95 @@
+elem_Mg
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+<- rrel_key_sc_element: definition_of_Magnesium
+	(* 
+	=> nrel_main_idtf: [опр.(магний)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Магний</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   второй   <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 3-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+=> nrel_being_in_body: tissue;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(магний (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_Mg.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_periodic_number: twelve;
+
+<- alkaline_earth_metal;
+<- lithophile;
+
+<- group_two;
+<- period_three;
+<- oxidation_state_plus_two;
+<- valence_two;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:160(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Mg;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:136(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Mg;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Mg
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(магний, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Ne] 3s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_Mg <- number;
+=> nrel_main_idtf:[24,304](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Mg <- number;
+=> nrel_main_idtf:[1,31](*<-lang_ru;; <- lang_en;;*);;

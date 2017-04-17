@@ -1,0 +1,105 @@
+elem_Nb
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+<- rrel_key_sc_element: definition_of_Niobium
+(* 
+	=> nrel_main_idtf: [опр.(ниобий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Ниобий</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>    пятой   <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 6-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [утв.(молибден (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/elem_Nb_isotope.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+=> nrel_periodic_number: forty_one;
+
+<- transition_metal;
+<- lithophile;
+
+<- group_five;
+<- period_six;
+<- oxidation_state_plus_five; oxidation_state_plus_three;
+<- valence_three; valence_five;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(ниобий (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_Nb.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:146(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Nb;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:164(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Nb;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Nb
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(ниобий, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Kr] 4d<sup>4</sup>5s<sup>1</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_Nb <- number;
+=> nrel_main_idtf:[92,90638(2)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Nb <- number;
+=> nrel_main_idtf:[1,6](*<-lang_ru;; <- lang_en;;*);;

@@ -6,13 +6,21 @@ dispersion
 	[dispersion](* <- lang_en;; *);;
 
 dispersion
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+	Definition_of_dispersion
 	(*
 		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(дисперсная система)] (* <-lang_ru;; *);; 
         <= nrel_sc_text_translation:...
         (*
 			-> rrel_example:"file://htmls/dispersion.html"(* <- lang_ru;; *);;
         *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> rrel_dispersed_phase;;
+			-> rrel_dispersion_medium;;
+		*);;
 	*);;
 	
 
@@ -21,10 +29,10 @@ dispersion
 <- rrel_key_sc_element:...
 	(* 
 	<- sc_explanation;;
-	=> nrel_main_idtf: [Утв.(дисперсная система, классификация)] (* <-lang_ru;; *);; 
+	=> nrel_main_idtf: [Прим.(дисперсная система, классификация*)] (* <-lang_ru;; *);; 
 	<= nrel_sc_text_translation:...
 		(* 
 		-> rrel_example: "file://htmls/dispersion1.html" (* <-lang_ru;; *);;
-		-> rrel_example: "file://htmls/dispersion_table.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/dispersion_table.html";;
 		*);;
 	*);;

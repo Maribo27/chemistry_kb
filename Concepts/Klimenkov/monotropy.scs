@@ -5,13 +5,16 @@ monotropy
 	[monotropy](* <- lang_en;; *);;
 
 monotropy
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+	Definition_of_monotropy
 	(*
 		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(монотропия)] (* <-lang_ru;; *);; 
         <= nrel_sc_text_translation:...
         (*
 			-> rrel_example:"file://htmls/monotropy.html"(* <- lang_ru;; *);;
         *);;
+        
 	*);;
 
 
@@ -19,7 +22,7 @@ monotropy
 <- rrel_key_sc_element:...
 	(* 
 	<- sc_explanation;;
-	=> nrel_main_idtf: [Утв.(монотропия, пример')] (* <-lang_ru;; *);; 
+	=> nrel_main_idtf: [Прим.(монотропия, пример')] (* <-lang_ru;; *);; 
 	<= nrel_sc_text_translation:...
 		(* 
 		-> rrel_example: "file://htmls/monotropy1.html" (* <-lang_ru;; *);;

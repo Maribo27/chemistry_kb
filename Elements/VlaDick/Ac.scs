@@ -1,8 +1,9 @@
 elem_Ac
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_actinium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,60 +18,79 @@ elem_Ac
 		*);;
 	*);
 
-=> nrel_group: 3;
-=> nrel_period: 7;
-=> nrel_periodic_number: 89;
+<- group_three;
+<- period_seven;
+=> nrel_periodic_number: eighty_nine;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_three; 
+<= nrel_inclusion: valence_three;
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_valence: three;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:188(*<- number;;*);;
+	*);;
 *);
 
-<- rrel_key_sc_element: physical_properties_of_ac
+=> nrel_electronegativity: electronegativity_Ac;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_pm:157(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Ac;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Ac
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (актиний, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (актиний, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Актиний - серебристо-белый металл, радиоактивен; с гранецентрированной кубической решеткой. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Ac] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 6s<sup>2</sup>p<sup>6</sup>d<sup>1</sup> 7s<sup>2</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-<- rrel_key_sc_element: chemical_properties_of_ac
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (актиний, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ На влажном воздухе актиний покрывается белой пленкой оксида, препятствующей дальнейшему окислению металла. Почти все соли белого цвета, в растворах - бесцветны. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент актиний)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Ac.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Actinium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
 
-
 Definition_of_actinium
 => nrel_main_idtf:
-	[Опр.(Актиний)]
+	[Опр. (актиний)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Ac <- number;
+=> nrel_main_idtf:[227](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Ac <- number;
+=> nrel_main_idtf:[1,1](*<-lang_ru;; <- lang_en;;*);;

@@ -1,38 +1,29 @@
-small_periods <= nrel_inclusion: period;;
-small_periods
+small_period
+
+<= nrel_inclusion: period;
 <- sc_node_not_relation;
+
 => nrel_main_idtf:
-	[малые периоды]
+	[малый период]
 	(* <- lang_ru;;	*);
-	[small periods]
-	(* <- lang_en;;	*);;
-small_periods
-<- rrel_key_sc_element:
-	Definition_of_small_periods
+	[small period]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element: definition_of_small_period
+(* 
+	<- definition;;
+	<= nrel_sc_text_translation:...
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
 		-> rrel_example:"file://htmls/small_periods.html" (* <-lang_ru;; *);;
-		*);;
-	
-	*);
-<= nrel_using_constants:
-			{
-				period
-			};;
+	*);;
 
+	<= nrel_using_constants:...
+	(*
+		-> period;;
+	*);;
+*);;
 
-
-Definition_of_small_periods
+definition_of_small_period
 => nrel_main_idtf:
-	[Опр.(Малые периоды)]
+	[опр.(малый период)]
 	(* <- lang_ru;;	*);;
-
-
-
-
-
-
-

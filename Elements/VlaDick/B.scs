@@ -1,8 +1,9 @@
 elem_B
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_borum
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,57 +19,71 @@ elem_B
 	*);
 
 
-=> nrel_group: 13;
-=> nrel_period: 2;
-=> nrel_periodic_number: 5;
+<- group_thirteen;
+<- period_two;
+=> nrel_periodic_number: five;
 
 <- nonmetal;
 
-=> nrel_chemical_properties: ...
+
+<= nrel_inclusion: oxidation_state_plus_three; 
+<= nrel_inclusion: valence_three; valence_four;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_valence: three;;
-	=> nrel_valence: four;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:117(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_B;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:82(*<- number;;*);;
+	*);;
 *);
 
 
-<- rrel_key_sc_element: physical_properties_of_b
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_B;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_B
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бор, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (бор, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Бор — чрезвычайно тердое; бесцветное, серое или красное кристаллическое либо тёмное аморфное вещество. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [B] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>1</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_b
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (бор, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Химически бор довольно инертен. При нагревании на воздухе бор сгорает с большим выделением теплоты. При сильном нагревании бор проявляет восстановительные свойства. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент бор)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/B.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Borum.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -76,5 +91,10 @@ elem_B
 
 Definition_of_borum
 => nrel_main_idtf:
-	[Опр.(Бор)]
+	[Опр. (бор)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_B <- number;
+=> nrel_main_idtf:[10,81](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_B <- number;
+=> nrel_main_idtf:[2,04](*<-lang_ru;; <- lang_en;;*);;

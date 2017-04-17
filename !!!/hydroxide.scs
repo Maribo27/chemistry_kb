@@ -1,0 +1,58 @@
+hydroxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[hydroxide](*<- lang_en;;*);
+	[гидроксид](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[гидроокись](*<- lang_ru;;*);
+	[водокись](*<- lang_ru;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [опр.(гидроксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Гидрокси́ды</b> - <sc_element sys_idtf="chemical_compound">химические соединения</sc_element>, содержащие в составе <sc_element sys_idtf="hydroxyl_group">гидроксильную группу -OH</sc_element>.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_compound;;
+		-> hydroxyl_group;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf: 
+            [утв.(гидроксид, химический элемент, минерал)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+        [Известны гидроксиды почти всех <sc_element sys_idtf="chemical_element">химических элементов</sc_element>; некоторые из них встречаются в природе в виде <sc_element sys_idtf="mineral">минералов</sc_element>.]
+        (*
+            <- lang_ru;;
+            => nrel_format: format_html;;
+        *);;
+    *);;
+*);
+
+<= nrel_subdividing: hydroxide_subdividing
+(*
+    <- explanation;;
+    => nrel_main_idtf:[Разбиение по признаку наличия основных свойств](*<-lang_ru;; *);;
+    -> acid_hydroxide;;
+    -> amphoteric_hydroxide;;
+    -> basic_hydroxide;;
+*);
+
+=> nrel_inclusion: water;
+
+<- rrel_key_sc_element: section_oxides;;

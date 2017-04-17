@@ -1,8 +1,9 @@
 elem_Ir
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_iridium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,64 +18,71 @@ elem_Ir
 		*);;
 	*);
 
-=> nrel_group: 9;
-=> nrel_period: 6;
-=> nrel_periodic_number: 77;
+<- group_nine;
+<- period_six;
+=> nrel_periodic_number: seventy_seven;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+
+<= nrel_inclusion: oxidation_state_plus_six; oxidation_state_plus_four; oxidation_state_plus_three; oxidation_state_plus_two; oxidation_state_plus_one; oxidation_state_minus_one; 
+<= nrel_inclusion: valence_two; valence_three; valence_four; valence_six;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: minus_one;;
-	=> nrel_oxidation_state: plus_one;;
-	=> nrel_oxidation_state: plus_two;;
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_oxidation_state: plus_four;;
-	=> nrel_oxidation_state: plus_six;;
-	=> nrel_valence: two;;
-	=> nrel_valence: three;;
-	=> nrel_valence: four;;
-	=> nrel_valence: six;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:187(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Ir;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:127(*<- number;;*);;
+	*);;
 *);
 
 
-<- rrel_key_sc_element: physical_properties_of_ir
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Ir;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Ir
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иридий, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (иридий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Иридий — тяжёлый серебристо-белый металл, из-за своей твердости плохо поддающийся механической обработке. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Ir] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>7</sup> 6s<sup>2</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_ir
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (иридий, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Иридий устойчив на воздухе при обычной температуре и нагревании. Компактный иридий при температурах до 100 °C не реагирует со всеми известными кислотами и их смесями. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент иридий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Ir.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Actinium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -82,5 +90,11 @@ elem_Ir
 
 Definition_of_iridium
 => nrel_main_idtf:
-	[Опр.(Иридий)]
+	[Опр. (иридий)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Ir <- number;
+=> nrel_main_idtf:[192,22](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Ir <- number;
+=> nrel_main_idtf:[2,2](*<-lang_ru;; <- lang_en;;*);;

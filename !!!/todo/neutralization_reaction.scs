@@ -1,0 +1,28 @@
+neutralization_reaction
+
+=> nrel_main_idtf:
+    [neutralization reaction](*<- lang_en;;*);
+    [реакция нейтрализации](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- definition;;
+    => nrel_main_idtf: [Def. (neutralization reaction)](*<- lang_en;;*);;
+    => nrel_main_idtf: [опр.(реакция нейтрализации)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [<p>
+            <b><sc_element sys_idtf = "nrel_exchange_reaction">Реакция нейтрализации</sc_element> — взаимодействие <sc_element sys_idtf = "acid">кислоты</sc_element> и <sc_element sys_idtf = "basis">основания (щелочи)</sc_element> между собой с образованием <sc_element sys_idtf = "salt">соли</sc_element> и слабодиссоциирующего <sc_element sys_idtf = "substance">вещества</sc_element> (<sc_element sys_idtf = "water">воды</sc_element>). В большинстве своем, реакции нейтрализации экзотермичны. К примеру, реакция гидроксида натрия и соляной кислоты:</br>
+            НСl + NaOH = NaCl + Н<sub>2</sub>О</br>
+            В ионном виде уравнение записывают так:</br>
+            Н<sup>+</sup> + ОН<sup>−</sup> = Н<sub>2</sub>О.</br>
+            Тем не менее, существуют также и эндотермические реакции нейтрализации, например, реакция бикарбоната натрия (пищевой соды) и уксусной кислоты.</br>
+            К понятию нейтрализации также могут относиться реакции сильной кислоты с карбонатами, так как в результате такой реакции получается соль и угольная кислота, которая относится к слабым кислотам( не создает полноценную кислотную среду, не вступает в реакции, и слабо диссоциирует) а также, к нестабильным, поэтому разлагается на углекислый газ и воду- два нейтральных вещества (<sc_element sys_idtf = "oxide">оксида</sc_element>).
+            </p>]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+*);;

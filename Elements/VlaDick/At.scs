@@ -1,8 +1,9 @@
 elem_At
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_astatum
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,81 +19,81 @@ elem_At
 	*);
 
 
-=> nrel_group: 17;
-=> nrel_period: 6;
-=> nrel_periodic_number: 85;
+<- group_seventeen;
+<- period_six;
+=> nrel_periodic_number: eighty_five;
 
 <- nonmetal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_minus_one; oxidation_state_plus_one; oxidation_state_plus_three; oxidation_state_plus_five; oxidation_state_plus_seven; 
+<= nrel_inclusion: valence_one; valence_five;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: minus_one;;
-	=> nrel_oxidation_state: plus_one;;
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_oxidation_state: plus_five;;
-	=> nrel_oxidation_state: plus_seven;;
-	=> nrel_valence: one;;
-	=> nrel_valence: five;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:143(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_At;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:145(*<- number;;*);;
+	*);;
 *);
 
 
-
-
-<- rrel_key_sc_element: physical_properties_of_at
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_At;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_At
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (астат, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (астат, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Астат — твёрдое вещество сине-чёрного цвета.  ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [At] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 6s<sup>2</sup>p<sup>5</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: astatum_naturally
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (астат, нахождение в природе*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Астат является наиболее редким элементом среди всех, встречающихся в земной природе. Его суммарное содержание в земной коре не превышает одного грамма. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_at
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (астат, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ По химическим свойствам астат близок как к иоду (проявляет свойства галогенов), так и к полонию (свойства металла). ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент астат)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/At.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Astatum.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
 
-
 Definition_of_astatum
 => nrel_main_idtf:
-	[Опр.(Астат)]
+	[Опр. (астат)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_At <- number;
+=> nrel_main_idtf:[209,99](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_At <- number;
+=> nrel_main_idtf:[2,2](*<-lang_ru;; <- lang_en;;*);;

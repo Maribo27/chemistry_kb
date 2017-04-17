@@ -1,0 +1,58 @@
+amphoteric_oxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[amphoteric oxide](*<- lang_en;;*);
+	[амфотерный оксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [опр.(амфотерный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Амфотерные оксиды</b> - <sc_element sys_idtf="salt_forming_oxide">солеобразующие оксиды</sc_element>, проявляющие в зависимости от условий либо основные, либо кислотные свойства.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> salt_forming_oxide;;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_amphoteric_oxide;
+<- rrel_key_sc_element: interaction_basic_oxide_and_amphoteric_oxide;
+
+<- rrel_key_sc_element: interaction_amphoteric_oxide_and_strong_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(амфотерный оксид, сильная кислота, соль, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Амфотерный оксид + сильная кислота → соль + вода](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_amphoteric_oxide_and_strong_basis
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(амфотерный оксид, сильная щелочь, соль, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Амфотерный оксид + сильная щелочь → соль + вода](*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_receiving: amphoteric_oxide_receiving
+(*
+	=> nrel_sedimentation: aqueous_solution_of_ammonia_hydrate;;
+*);
+
+=> nrel_inclusion: zinc_oxide;chromium_oxide_3;aluminium_oxide;lead_oxide_2;beryllium_oxide;iron_oxide_3;
+
+<- rrel_key_sc_element: section_oxides;;

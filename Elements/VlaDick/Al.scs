@@ -1,8 +1,9 @@
 elem_Al
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_aluminium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,61 +18,82 @@ elem_Al
 		*);;
 	*);
 
-=> nrel_group: 13;
-=> nrel_period: 3;
-=> nrel_periodic_number: 13;
+<- group_thirteen;
+<- period_three;
+=> nrel_periodic_number: thirteen;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+
+<= nrel_inclusion: oxidation_state_plus_three; 
+<= nrel_inclusion: valence_three;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_valence: three;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:182(*<- number;;*);;
+	*);;
 *);
 
-<- rrel_key_sc_element: physical_properties_of_al
+=> nrel_electronegativity: electronegativity_Al;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_pm:118(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Al;;
+	*);;
+*);
+
+
+
+<- rrel_key_sc_element: electron_configuration_Al
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (алюминий, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (алюминий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Алюминий — лёгкий металл серебристо-белого цвета, легко поддающийся формовке, литью, механической обработке. Алюминий обладает высокой тепло- и электропроводностью, стойкостью к коррозии. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Al] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>1</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_al
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (алюминий, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ При нормальных условиях алюминий покрыт тонкой и прочной оксидной плёнкой, благодаря этому алюминий практически не подвержен коррозии. При разрушении оксидной плёнки алюминий выступает как активный металл-восстановитель. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент алюминий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Al.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Aluminium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
 
-
 Definition_of_aluminium
 => nrel_main_idtf:
-	[Опр.(Алюминий)]
+	[Опр. (алюминий)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Al <- number;
+=> nrel_main_idtf:[26,98](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Al <- number;
+=> nrel_main_idtf:[1,61](*<-lang_ru;; <- lang_en;;*);;

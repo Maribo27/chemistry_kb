@@ -5,13 +5,21 @@ nrel_oxidative_activity
 	[oxidative activity*](* <- lang_en;; *);;
 
 nrel_oxidative_activity
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+	Definition_of_nrel_oxidative_activity
 	(*
 		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(окислительная активность*)] (* <-lang_ru;; *);; 
         <= nrel_sc_text_translation:...
         (*
 			-> rrel_example:"file://htmls/nrel_oxidative_activity.html"(* <- lang_ru;; *);;
         *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> electron;;
+			-> atom;;
+		*);;
 	*);;
 	
 nrel_oxidative_activity
@@ -23,7 +31,7 @@ nrel_oxidative_activity
 	<- rrel_key_sc_element:...
 		(* 
 		<- sc_explanation;;
-		=> nrel_main_idtf: [Утв.(окислительная активность*, зависимость*)] (* <-lang_ru;; *);; 
+		=> nrel_main_idtf: [Прим.(окислительная активность*, зависимость*)] (* <-lang_ru;; *);; 
 		<= nrel_sc_text_translation:...
 			(* 
 			-> rrel_example: "file://htmls/nrel_oxidative_activity1.html" (* <-lang_ru;; *);;

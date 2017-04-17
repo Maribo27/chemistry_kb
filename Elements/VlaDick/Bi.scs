@@ -1,8 +1,9 @@
 elem_Bi
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_bismuthum
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,65 +19,84 @@ elem_Bi
 	*);
 
 
-=> nrel_group: 15;
-=> nrel_period: 6;
-=> nrel_periodic_number: 83;
+<- group_fifteen;
+<- period_six;
+=> nrel_periodic_number: eighty_three;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+
+<= nrel_inclusion: oxidation_state_minus_three; oxidation_state_plus_three; oxidation_state_plus_five;
+<= nrel_inclusion: valence_three; valence_five;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: minus_three;;
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_oxidation_state: plus_five;;
-	=> nrel_valence: three;;
-	=> nrel_valence: five;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:163(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Bi;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:146(*<- number;;*);;
+	*);;
 *);
 
 
-<- rrel_key_sc_element: physical_properties_of_bi
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Bi;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Bi
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (висмут, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (висмут, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Висмут — металл серебристо-белого цвета с розоватым оттенком. При комнатной температуре висмут хрупкий металл и в изломе имеет грубозернистое строение, но при температуре 150—250 °C проявляет пластические свойства. Переход из твёрдого в жидкое состояние сопровождается увеличением плотности. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Bi] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 6s<sup>2</sup>p<sup>3</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_bi
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (висмут, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ При комнатной температуре в среде сухого воздуха не окисляется, но в среде влажного воздуха покрывается тонкой плёнкой оксида, а нагрев до температуры плавления приводит к окислению. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент висмут)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Bi.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Bismuth.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
 
 
+
+
 Definition_of_bismuthum
 => nrel_main_idtf:
-	[Опр.(Висмут)]
+	[Опр. (висмут)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Bi <- number;
+=> nrel_main_idtf:[208,98](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Bi <- number;
+=> nrel_main_idtf:[2,02](*<-lang_ru;; <- lang_en;;*);;

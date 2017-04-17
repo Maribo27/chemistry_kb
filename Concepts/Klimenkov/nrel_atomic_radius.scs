@@ -5,13 +5,21 @@ nrel_atomic_radius
 	[atomic radius*](* <- lang_en;; *);;
 
 nrel_atomic_radius
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+	Definition_of_nrel_atomic_radius
 	(*
 		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(радиус атома*)] (* <-lang_ru;; *);; 
         <= nrel_sc_text_translation:...
         (*
 			-> rrel_example:"file://htmls/nrel_atomic_radius.html"(* <- lang_ru;; *);;
         *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> nrel_nucleus;;
+			-> orbital;;
+		*);;	
 	*);;
 	
 nrel_atomic_radius
@@ -23,7 +31,7 @@ nrel_atomic_radius
 	<- rrel_key_sc_element:...
 		(* 
 		<- sc_explanation;;
-		=> nrel_main_idtf: [Утв.(оценка радиуса атома)] (* <-lang_ru;; *);; 
+		=> nrel_main_idtf: [Прим.(оценка радиуса атома)] (* <-lang_ru;; *);; 
 		<= nrel_sc_text_translation:...
 			(* 
 			-> rrel_example: "file://htmls/nrel_atomic_radius1.html" (* <-lang_ru;; *);;
@@ -34,7 +42,7 @@ nrel_atomic_radius
 	<- rrel_key_sc_element:...
 		(* 
 		<- sc_explanation;;
-		=> nrel_main_idtf: [Утв.(радиус атома*, измерение*)] (* <-lang_ru;; *);; 
+		=> nrel_main_idtf: [Прим.(радиус атома*, измерение*)] (* <-lang_ru;; *);; 
 		<= nrel_sc_text_translation:...
 			(* 
 			-> rrel_example: "file://htmls/nrel_atomic_radius2.html" (* <-lang_ru;; *);;

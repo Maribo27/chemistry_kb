@@ -1,8 +1,9 @@
 elem_Ar
+<-sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_argon
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,49 +18,72 @@ elem_Ar
 		*);;
 	*);
 
-=> nrel_group: 18;
-=> nrel_period: 3;
-=> nrel_periodic_number: 18;
+<- group_eighteen;
+<- period_three;
+=> nrel_periodic_number: eighteen;
 
 <- gas;
 
-<- rrel_key_sc_element: physical_properties_of_ar
+
+<= nrel_inclusion: oxidation_state_zero; 
+<= nrel_inclusion: valence_eight;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_pm:88(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Ar;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:98(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Ar;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Ar
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (аргон, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (аргон, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Аргон — инертный одноатомный газ без цвета, вкуса и запаха. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Ar] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_ar
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (аргон, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Инертный, неактивный газ. Не горюч, не ядовит. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент аргон)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Ar.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
+			"file://image/Argon.gif";
+			[<p>
+				P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element>
+			</p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -67,5 +91,10 @@ elem_Ar
 
 Definition_of_argon
 => nrel_main_idtf:
-	[Опр.(Аргон)]
+	[Опр. (аргон)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Ar <- number;
+=> nrel_main_idtf:[39,95](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Ar <- number;
+=> nrel_main_idtf:[0](*<-lang_ru;; <- lang_en;;*);;

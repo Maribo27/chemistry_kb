@@ -1,0 +1,52 @@
+superoxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+    [superoxide](*<- lang_en;;*);
+    [супероксид](*<- lang_ru;;*);
+
+=> nrel_idtf:
+    [сверхокись](*<- lang_ru;;*);
+    [надпероксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- definition;;
+    => nrel_main_idtf: [опр.(супероксид)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [<b>Супероксид</b> - это <sc_element sys_idtf="ion">ион</sc_element> <sc_element sys_idtf="molecule">молекулы</sc_element> <sc_element sys_idtf="elem_O">кислорода</sc_element> с неспаренным <sc_element sys_idtf="electron">электроном</sc_element>.]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+    <= nrel_using_constants:...
+    (*
+        -> ion;;
+        -> elem_O;;
+        -> molecule;;
+        -> electron;;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf: 
+        [утв.(супероксид, вода, кислород (вещество), пероксид водорода)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [Супероксид относится к свободным радикалам, короткоживущий (от миллисекунд до секунд), способен спонтанно дисмутировать с водой в кислород и пероксид водорода.](* <-lang_ru;; *);;
+    *);;
+*);
+
+=> nrel_receiving: ...
+(*
+    -> ionizing_radiation;;
+    -> electron_capture;;
+    -> organic_formation;;
+*);
+
+<- rrel_key_sc_element: section_oxides;;

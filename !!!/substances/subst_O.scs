@@ -1,0 +1,200 @@
+subst_O
+<- sc_node_not_relation;
+=> nrel_main_idtf: [кислород (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [oxygen (substance)] (* <- lang_en;; *);
+<= nrel_inclusion: chemical_substance;
+<- rrel_key_sc_element: definition_of_subst_O
+(* 
+	=> nrel_main_idtf: [опр.(кислород (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество кислород</b> — <sc_element sys_idtf = "gas">газ</sc_element> без <sc_element sys_idtf = "color">цвета</sc_element>, <sc_element sys_idtf = "taste">вкуса</sc_element> и <sc_element sys_idtf = "smell">запаха</sc_element>. <sc_element sys_idtf = "liquid">Жидкий</sc_element> кислород имеет <sc_element sys_idtf = "color_white_blue">светло-голубой цвет</sc_element>, а <sc_element sys_idtf = "solid">твёрдый</sc_element> представляет собой кристаллы светло-синего цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> gas;;
+		-> taste;;
+		-> smell;;
+		-> liquid;;
+		-> solid;;
+		-> color_white_blue;;
+	*);;
+*);
+
+<- gas;
+<- color_white_blue;
+<- no_color;
+
+=> nrel_being_in_nature: ...
+(*
+	-> earths_crust;;
+	-> sea;;
+	-> atmosphere;;
+	-> ocean;;
+	-> cell;;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> air;;
+	-> cryogenic_rectification;;
+	-> ...
+	(*
+		<=  nrel_heating: potassium_permanganate;;
+	*);;
+	->  ...
+	(*
+		<= catalytic_decomposition: hydrogen_peroxide; potassium_chlorate;;
+	*);;
+	-> nrel_electrolysis;;
+*);
+
+=> nrel_applying: ...
+(*
+	-> metallurgy;;
+	-> cryotherapy;;
+	-> petrochemistry;;
+	-> compound_synthesis;;
+	-> food_additive_E941;;
+*);
+
+<- rrel_key_sc_element: interaction_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислород (вещество), взаимодействие*, химический элемент, оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Кислород взаимодействует со всеми элементами, кроме гелия, неона, аргона и фтора, образуя оксиды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_o_and_me
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислород (вещество), горение*, щелочной металл, пероксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При сгорании шелочных металлов в кислороде получаются пероксиды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_o_and_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислород (вещество), поглощение*, оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Некоторые оксиды поглощают кислород.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_o_and_k
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислород (вещество), взаимодействие*, калий (вещество), надпероксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Калий реагирует с кислородом с образованием надпероксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,42897] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [54,8] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [90,19] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [0,444] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [3,4099] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [29,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [14,0] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

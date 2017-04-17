@@ -1,0 +1,106 @@
+elem_Nd
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+<- rrel_key_sc_element: definition_of_Neodymium
+(* 
+	=> nrel_main_idtf: [опр.(неодим)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Неодим</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>  <sc_element sys_idtf  = "periodic_group">группы</sc_element> лантаноидов. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> lanthanide;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(неодим (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/elem_Nd.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [утв.(неодим (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/elem_Nd_isotope.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+=> nrel_periodic_number: sixty;
+
+<- metal;
+<- lanthanide;
+<- rare_earth_metal;
+<- lithophile;
+
+<- period_six;
+<- oxidation_state_plus_three; oxidation_state_plus_four;
+<- valence_three; valence_four;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:182(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Nd;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:184(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Nd;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Nd
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(неодим, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Xe] 4f<sup>4</sup>6s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_Nd <- number;
+=> nrel_main_idtf:[144,242(3)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Nd <- number;
+=> nrel_main_idtf:[1,14](*<-lang_ru;; <- lang_en;;*);;

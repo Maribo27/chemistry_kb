@@ -1,0 +1,120 @@
+elem_O
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+<- rrel_key_sc_element: definition_of_Oxygen
+(* 
+	=> nrel_main_idtf: [опр.(кислород)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b>Кислород</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>    шестнадцатой   <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 2-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [утв.(кислород (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/elem_O_isotope.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+=> nrel_periodic_number: eight;
+
+<- gas;
+<- chalcogens;
+<- lithophile;
+<- nonmetal;
+
+<- group_sixteen;
+<- period_two;
+<- oxidation_state_minus_two;
+<- valence_two;
+
+=> nrel_allotropic_modification: ...
+(*
+	-> subst_O;;
+	-> ozone;;
+*);
+
+=> nrel_biological_significance: ...
+(*
+		-> breath;;
+		-> exchange_process;;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(кислород (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_O.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:60(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_O;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:73(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_O;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_O
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислород, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [He] 2s<sup>2</sup>2p<sup>4</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_O <- number;
+=> nrel_main_idtf:[15,99903](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_O <- number;
+=> nrel_main_idtf:[3,44](*<-lang_ru;; <- lang_en;;*);;

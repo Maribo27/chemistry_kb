@@ -5,13 +5,20 @@ nrel_catenation
 	[catenation*](* <- lang_en;; *);;
 
 nrel_catenation
-<- rrel_key_sc_element:...
+<- rrel_key_sc_element:
+	Definition_of_nrel_catenation
 	(*
 		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(катенация*)] (* <-lang_ru;; *);; 
         <= nrel_sc_text_translation:...
         (*
 			-> rrel_example:"file://htmls/nrel_catenation.html"(* <- lang_ru;; *);;
         *);;
+        <= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+		*);;
 	*);;
 	
 nrel_catenation
@@ -24,7 +31,7 @@ nrel_catenation
 	<- rrel_key_sc_element:...
 		(* 
 		<- sc_explanation;;
-		=> nrel_main_idtf: [Утв.(катенация*, в природе)] (* <-lang_ru;; *);; 
+		=> nrel_main_idtf: [Прим.(катенация*, нахождение в природе*)] (* <-lang_ru;; *);; 
 		<= nrel_sc_text_translation:...
 			(* 
 			-> rrel_example: "file://htmls/nrel_catenation1.html" (* <-lang_ru;; *);;
@@ -35,7 +42,7 @@ nrel_catenation
 	<- rrel_key_sc_element:...
 		(* 
 		<- sc_explanation;;
-		=> nrel_main_idtf: [Утв.(катенация*, пример', сера)] (* <-lang_ru;; *);; 
+		=> nrel_main_idtf: [Прим.(катенация*, пример', сера)] (* <-lang_ru;; *);; 
 		<= nrel_sc_text_translation:...
 			(* 
 			-> rrel_example: "file://htmls/nrel_catenation2.html" (* <-lang_ru;; *);;

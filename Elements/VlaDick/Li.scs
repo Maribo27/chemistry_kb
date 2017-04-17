@@ -2,7 +2,7 @@ elem_Li
 <- rrel_key_sc_element:
 	Definition_of_lithium
 	(* 
-	<- sc_explanation;;
+	<- sc_definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,56 +17,71 @@ elem_Li
 		*);;
 	*);
 
-=> nrel_group: 1;
-=> nrel_period: 2;
-=> nrel_periodic_number: 3;
+<- group_one;
+<- period_two;
+=> nrel_periodic_number: three;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_one; 
+<= nrel_inclusion: valence_one;
+
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_one;;
-	=> nrel_valence: one;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:205(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Li;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:123(*<- number;;*);;
+	*);;
 *);
 
 
-
-<- rrel_key_sc_element: chemical_properties_of_li
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Li;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Li
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (литий, химические свойства*)](*<- lang_ru;;*);;
+			[Утв. (литий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Литий является наименее активным щелочным металлом. С сухим воздухом при комнатной температуре практически не реагирует, во влажном - медленно протекающая реакция. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Li] 1s<sup>2</sup> 2s<sup>1</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: physical_properties_of_li
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (литий, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Литий — серебристо-белый металл, мягкий и пластичный. Из всех щелочных металлов характеризуется самыми высокими температурами плавления и кипения (180,54 и 1340 °C, соответственно), у него самая низкая плотность при комнатной температуре среди всех металлов (0,533 г/см³).] (*<- lang_ru;;*);;
-		*);;
-	*);
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент литий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Limetal.png"
-			(*
-			=> nrel_format: format_png;;
-			*);;
+			"file://image/Lithium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -74,5 +89,11 @@ elem_Li
 
 Definition_of_lithium
 => nrel_main_idtf:
-	[Опр.(Литий)]
+	[Опр. (литий)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Li <- number;
+=> nrel_main_idtf:[6,94](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Li <- number;
+=> nrel_main_idtf:[0,98](*<-lang_ru;; <- lang_en;;*);;

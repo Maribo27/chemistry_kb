@@ -1,0 +1,47 @@
+suboxide
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+    [suboxide](*<- lang_en;;*);
+    [субоксид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+    <- definition;;
+    => nrel_main_idtf: [опр.(субоксид)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [<b>Субоксиды</b> представляют собой класс <sc_element sys_idtf="oxide">оксидов</sc_element> с низшей <sc_element sys_idtf="oxidation_state">степенью окисления</sc_element>, где электроположительный <sc_element sys_idtf="chemical_element">элемент</sc_element> находится в избытке по отношению к «нормальным» оксидам.]
+            (*
+                <- lang_ru;;
+                => nrel_format: format_html;;
+            *);;
+    *);;
+    <= nrel_using_constants:...
+    (*
+        -> oxide;;
+        -> oxidation_state;;
+        -> chemical_element;;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    => nrel_main_idtf: 
+        [утв.(субоксид, химический элемент)](*<- lang_ru;;*);;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example:
+            [Субоксиды обычно характеризуются широким связыванием между электроположительным элементом, часто приводящим к образованию кластеров.](* <-lang_ru;; *);;
+    *);;
+*);
+
+=> nrel_receiving: ...
+(*
+    => nrel_oxidation: metal;;
+*);
+
+=> nrel_inclusion: carbon_suboxide; boron_suboxide; rubidium_suboxide; silicon_suboxide; caesium_suboxide;
+
+<- rrel_key_sc_element: section_oxides;;

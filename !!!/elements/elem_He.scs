@@ -1,0 +1,115 @@
+elem_He
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+<- rrel_key_sc_element: definition_of_Helium
+(* 
+	=> nrel_main_idtf: [опр.(гелий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Гелий</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> восемнадцатой <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 1-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+=> nrel_periodic_number: two;
+<- nonmetal;
+<- atmophile;
+
+<- group_eighteen;
+<- period_one;
+<- oxidation_state_zero;
+<- valence_eight;
+
+=> nrel_receiving: alpha_particle
+(*
+	=> nrel_main_idtf: [альфа-частица] (* <- lang_ru;; *);;
+	<- ...
+	(*		
+		<= nrel_alpha_decay: heavy_element;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [утв.(гелий (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/elem_He_isotope.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(гелий (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_He.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_biological_significance: narcotic_effect;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:31(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_He;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:28(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_He;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_He
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(гелий, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ 1s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_He <- number;
+=> nrel_main_idtf:[4,002602(2)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_He <- number;
+=> nrel_main_idtf:[4,5](*<-lang_ru;; <- lang_en;;*);;

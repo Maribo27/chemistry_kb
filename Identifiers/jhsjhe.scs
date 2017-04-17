@@ -1,0 +1,225 @@
+
+
+
+
+
+building=> nrel_main_idtf:
+	[строительство](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+production=> nrel_main_idtf:
+	[промышленность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+toner=> nrel_main_idtf:
+	[тонер](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+electrical_engineering=> nrel_main_idtf:
+	[электротехника](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+radio_engineering=> nrel_main_idtf:
+	[радиотехника](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+gardening=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+battery=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+coagulant=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+domain_process=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+direct_iron_production_process=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+iron_ore=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+moisture=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+temperature=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+air=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+polymetallic_ore=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+platinum_metal=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+anti_friction_coating=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+catalyst_for_synthesis=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+catalyst_for_hydrogenation=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+
+
+noble_metal=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+galvanizing=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+battery=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+polygraphy=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+antiseptic=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+alloys_production=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+rubber_tires_manufacture=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+oil_paint=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+selective_flotation=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+thermal_water=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+blood_transfusion=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+DNA_synthesis=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+protius=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+deuterium=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+tritium=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+alpha_Fe=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+beta_Fe=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+gamma_Fe=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+delta_Fe=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+pnictogen=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+ortho_hydrogen=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+para_hydrogen=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+life_support=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+protein=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+nucleic_acid=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+amin_acid=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+nucleoprotein=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+chlorophyll=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hemoglobin=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+growth=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+blood_formation=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+sexual_glands_functioning=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+CNS_functioning=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+antioxidants_work=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+tissue_respiration=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+amino_acid_synthesis=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+nitrogen_accumulation=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+breath=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+ozone=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+platinoid=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+iron_oxide_3=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+sodium_oxide=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+magnesium_oxide=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+copper_oxide_II=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+chlorine_dioxide=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+trioxidane=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+protein_synthesis_slowdown=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+inorganic_peroxide=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+nitrous_oxide=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+hydrogen_peroxide=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+sodium_peroxide=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+viability=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+binary_compound=> nrel_main_idtf:
+	[кислород](* <- lang_ru;; *);
+	<- sc_node_not_relation;;

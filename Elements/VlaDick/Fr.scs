@@ -2,7 +2,7 @@ elem_Fr
 <- rrel_key_sc_element:
 	Definition_of_francium
 	(* 
-	<- sc_explanation;;
+	<- sc_definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,76 +17,82 @@ elem_Fr
 		*);;
 	*);
 
-=> nrel_group: 1;
-=> nrel_period: 7;
-=> nrel_periodic_number: 87;
+<- group_one;
+<- period_seven;
+=> nrel_periodic_number: eighty_seven;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_one; 
+<= nrel_inclusion: valence_one;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_one;;
-	=> nrel_valence: one;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:280(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Fr;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:260(*<- number;;*);;
+	*);;
 *);
 
 
 
-
-<- rrel_key_sc_element: physical_properties_of_fr
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Fr;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Fr
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (франций, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (франций, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Сведения о физических свойствах франция могут быть определены только путём расчета, основываясь на данных для стабильных щелочных металлов. Плотность составляет 1,87 г/см³, температура плавления 27 °C, температура кипения 677 °C. ] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Fr] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 6s<sup>2</sup>p<sup>6</sup> 7s<sup>1</sup>] 
+			(*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: francium_naturally
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (франций, нахождение в природе*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Франций — один из редчайших элементов. Общее содержание франция в земной коре оценивается в 30 граммов. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_fr
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (франций, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Франций — радиоактивный щелочной металл, обладающий крайне высокой химической активностью. Практически все соединения франция растворимы в воде. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент франций)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Francium.png"
-			(*
-			=> nrel_format: format_png;;
-			*);;
+			"file://image/Francium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
 
-
 Definition_of_francium
 => nrel_main_idtf:
-	[Опр.(Франций)]
+	[Опр. (франций)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Fr <- number;
+=> nrel_main_idtf:[223](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Fr <- number;
+=> nrel_main_idtf:[0,7](*<-lang_ru;; <- lang_en;;*);;

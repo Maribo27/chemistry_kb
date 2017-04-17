@@ -1,0 +1,101 @@
+acid_oxide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[acid oxide](*<- lang_en;;*);
+	[кислотный оксид](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[ангидрид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [опр.(кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[<b>Кислотные оксиды</b> - <sc_element sys_idtf="oxide">оксиды</sc_element>, проявляющие кислотные свойства и образующие соответствующие кислородсодержащие <sc_element sys_idtf="acid">кислоты</sc_element>.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> oxide;;
+		-> oxidation_state;;
+		-> acid;;
+	*);;
+*);
+
+=> nrel_inclusion: carbon_dioxide; sulphur_dioxide; silicon_dioxide; chromium_trioxide; phosphorus_pentoxide; dinitrogen_pentoxide; sulphur_trioxide; manganese_heptoxide; dichlorine_monoxide;
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислотный оксид, неметалл, переходный элемент, получение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+		[Образованы типичными <sc_element sys_idtf="nonmetal">неметаллами</sc_element> и некоторыми переходными элементами.]
+		(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);
+
+=> nrel_receiving: ...
+(*
+	-> ...
+	(*
+		<= nrel_dehydration: acid;;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислотный оксид, вода, кислота)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + вода → кислота](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_basis
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислотный оксид, основание, соль, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + основание → соль + вода] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_basic_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислотный оксид, основный оксид, соль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + основный оксид → соль](*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_acid_oxide_and_amphoteric_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(кислотный оксид, амфотерный оксид, средняя соль)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Кислотный оксид + амфотерный оксид → средняя соль](*<- lang_ru;;*);;
+	*);;
+*);		
+
+<- rrel_key_sc_element: section_oxides;;

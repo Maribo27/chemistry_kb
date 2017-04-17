@@ -1,0 +1,122 @@
+elem_Zn
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+<- rrel_key_sc_element: definition_of_Zincum
+(* 
+	=> nrel_main_idtf: [опр.(цинк)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Цинк</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> второй <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 4-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(цинк (элемент))] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/elem_Zn.png"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- microelement;
+
+=> nrel_periodic_number: thirty;
+
+<- transition_metal;
+<- post_transition_metal;
+<- chalcophile;
+
+<- group_twelve;
+<- period_four;
+<- oxidation_state_plus_two;
+<- valence_two;
+
+=> nrel_biological_significance: ...
+(*
+	-> metabolism;;
+	-> immunity;;
+	-> hormones_functioning;;
+	-> exchange_process;;
+	-> protein_synthesis;;
+	-> regeneration;;
+	-> reproduction;;
+	-> cell_division;;
+	-> cell_growth;;
+	-> receptors_functioning;;
+	-> alcohol_detoxification;;
+*);
+
+=> nrel_being_in_body: ...
+(*
+	-> tissue;;
+	-> skin;;
+	-> erythrocyte;;
+	-> leukocyte;;
+	-> muscle;;
+	-> liver;;
+	-> pancreas;;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:138(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Zn;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:125(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Zn;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Zn
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(цинк, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Ar] 3d<sup>10</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+atomic_mass_Zn <- number;
+=> nrel_main_idtf:[65,38(2)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Zn <- number;
+=> nrel_main_idtf:[1,65](*<-lang_ru;; <- lang_en;;*);;

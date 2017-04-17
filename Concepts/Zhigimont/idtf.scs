@@ -96,13 +96,6 @@ complex_salt
 	(* <- lang_ru;; *);
 	[complex salt]
 	(* <- lang_en;; *);;
-
-basic_oxide
-=> nrel_main_idtf:
-	[основный оксид]
-	(* <- lang_ru;; *);
-	[basic oxide]
-	(* <- lang_en;; *);;
 	
 base
 => nrel_main_idtf:

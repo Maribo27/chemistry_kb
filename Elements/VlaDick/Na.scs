@@ -1,8 +1,9 @@
 elem_Na
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_natrium
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,57 +18,69 @@ elem_Na
 		*);;
 	*);
 
-=> nrel_group: 1;
-=> nrel_period: 3;
-=> nrel_periodic_number: 11;
+<- group_one;
+<- period_three;
+=> nrel_periodic_number: eleven;
 
 <- metal;
 
-=> nrel_chemical_properties: ...
+<= nrel_inclusion: oxidation_state_plus_one; 
+<= nrel_inclusion: valence_one;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_one;;
-	=> nrel_valence: one;;
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:223(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Na;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:154(*<- number;;*);;
+	*);;
 *);
 
 
-
-<- rrel_key_sc_element: physical_properties_of_na
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Na;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Na
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (натрий, физические свойства*)](*<- lang_ru;;*);;
+			[Утв. (натрий, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Натрий — серебристо-белый металл, пластичен, даже мягок. Под давлением становится прозрачным и красным.] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Na] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>1</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_na
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (натрий, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Натрий - щелочной металл, на воздухе легко окисляется. Является сильным восстановителем и энергично взаимодействуют со многими неметаллами. С водой натрий реагирует очень бурно. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент натрий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
-			"file://image/Na.png"
-			(*
-			=> nrel_format: format_png;;
-			*);;
+			"file://image/Sodium.gif";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;=> nrel_format: format_html;;*);;
 		*);;
 	*);;
 
@@ -75,5 +88,11 @@ elem_Na
 
 Definition_of_natrium
 => nrel_main_idtf:
-	[Опр.(Натрий)]
+	[Опр. (натрий)]
 	(* <- lang_ru;;	*);;
+
+
+atomic_mass_Na <- number;
+=> nrel_main_idtf:[22,99](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Na <- number;
+=> nrel_main_idtf:[0,93](*<-lang_ru;; <- lang_en;;*);;
