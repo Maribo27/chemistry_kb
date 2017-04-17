@@ -28,8 +28,15 @@ cast_iron
 
 <- alloy;
 
-=> nrel_melting_temperature: 1150;
 => nrel_density_of_substance: 7000;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1150 (*<-number;;*);;		
+		*);;
+	*);
 
 <- rrel_key_sc_element: carbon_in_cast_iron_1
 	(*

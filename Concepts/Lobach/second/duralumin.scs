@@ -33,8 +33,15 @@ duralumin
 => nrel_alloy_component: elem_Cu;
 => nrel_alloy_component: elem_Mg;
 => nrel_alloy_component: elem_Mn;
-=> nrel_melting_temperature: 600;
 => nrel_density_of_substance: 2770;
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:600 (*<-number;;*);;		
+		*);;
+	*);
  
 
 <- alloy;

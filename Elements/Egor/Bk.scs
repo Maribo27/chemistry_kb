@@ -1,4 +1,5 @@
 elem_Bk
+<- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_berkelium
 	(* 
@@ -17,18 +18,54 @@ elem_Bk
 			*);;
 	*);
 
-=> nrel_group: 3;
-=> nrel_period: 7;
-=> nrel_periodic_number: 97;
-=> nrel_chemical_properties: ...
+<- group_three;
+<- period_seven;
+=> nrel_periodic_number: ninety_seven;
+
+<- metal;
+
+<-oxidation_state_plus_three;oxidation_state_plus_four;
+<-valence_three;valence_four;
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;plus_four;;
-	=> nrel_valence: three;four;;
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:297(*<- number;;*);;
+	*);;
 *);
+=> nrel_electronegativity: electronegativity_Bk
+			(* <- number;;
+			=> nrel_main_idtf:[1,3](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_aem: atomic_mass_Bk;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Bk
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (берклий, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Rn] 5f<sup>9</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент берклий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -39,90 +76,8 @@ elem_Bk
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-
-
-<- rrel_key_sc_element: number_of_bk
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (берклий, порядковый номер*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Порядковый номер берклия равен 97.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: physical_properties_of_berkelium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (берклий, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Простое вещество берклий — радиоактивный металл серебристо-белого цвета.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: chemical_properties_of_berkelium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (берклий, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Берклий очень реакционноспособен.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: interaction_berkelium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (берклий, взаимодействие*, кислород, галоген, сера)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Берклий взаимодействует с кислородом (оксид и диоксид), галогенами и серой.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: compound_of_berkelium
-
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (берклий, соединение*, кислота)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Берклий образует комплексные соединения с минеральными и органическими кислотами.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: receipt_of_berkelium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (берклий, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Изотопы берклия с массовыми числами до 248 получают из соответствующих изотопов америция или кюрия по реакции (α, n) или (α, p, n). Вк249 образуется в ядерном реакторе при облучении нейтронами U238 или Pu239. Вк250 получают облучением Вк249 по реакции (γ, n).] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: application_of_berkelium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (берклий, применение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Нуклид Вк249 используется для получения изотопов калифорния. Использовался для получения 117 элемента.  ] (*<- lang_ru;;*);;
-		*);;
 	*);;
+
 
 
 
@@ -131,3 +86,6 @@ Definition_of_berkelium
 => nrel_main_idtf:
 	[Опр.(Берклий)]
 	(* <- lang_ru;;	*);;
+
+atomic_mass_Bk <- number;
+=> nrel_main_idtf:[247,0703](*<-lang_ru;; <- lang_en;;*);;

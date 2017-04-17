@@ -17,32 +17,65 @@ elem_Gd
 			*);;
 	*);
 
-=> nrel_group: 3;
-=> nrel_period: 6;
-=> nrel_periodic_number: 64;
-=> nrel_chemical_properties: ...
+<- group_three;
+<- period_six;
+=> nrel_periodic_number: sixty_four;
+
+<- metal;
+
+<- oxidation_state_plus_three;
+<- valence_three;
+
+
+=> nrel_atomic_radius: ...
 (*
-	=> nrel_oxidation_state: plus_three;;
-	=> nrel_valence: three;;
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:179(*<- number;;*);;
+	*);;
+*);
+=> nrel_electronegativity: electronegativity_Gd
+			(* <- number;;
+			=> nrel_main_idtf:[1,2](*<-lang_ru;; <- lang_en;;*);;
+			*);
+
+=> nrel_covalent_radius: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
+	(*
+		-> rrel_pm:161(*<- number;;*);;
+	*);;
 *);
 
-<- rrel_key_sc_element: number_of_gd
+=> nrel_atomic_mass: ...
+(*
+	<- quantity;;
+	<= nrel_value:...
 	(*
-		<- sc_explanation;;
+		-> rrel_aem: atomic_mass_Gd;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Gd
+	(*
+		<- explanation;;
 		=> nrel_main_idtf: 
-			[Прим. (гадолиний, порядковый номер*)](*<- lang_ru;;*);;
+			[Утв. (гадолиний, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[ Порядковый номер гадалиния равен 64.] (*<- lang_ru;;*);;
+			-> rrel_example:[ [Xe] 4f<sup>7</sup>5d<sup>1</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
 		*);;
 	*);
 
 <- rrel_key_sc_element:
 	...
 	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент гадолиний)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
+		<= nrel_sc_text_translation:...
 		(*
 		-> rrel_example:
 			"file://image/Gadolinium.jpg"
@@ -50,53 +83,10 @@ elem_Gd
 			=> nrel_format: format_jpg;;
 			*);;
 		*);;
-	*);
-
-
-<- rrel_key_sc_element: local_of_gadolinium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (гадолиний, месторождения*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[ Гадолиний входит в состав руд лантаноидов, которые часто встречаются в США, Казахстане, России, Украине, Австралии, Бразилии, Индии, Скандинавии.] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: receipt_of_gadolinium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (гадолиний, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Гадолиний получают восстановлением фторида или хлорида гадолиния (GdF3, GdCl3) кальцием. Соединения гадолиния получают разделением оксидов редкоземельных металлов на фракции.] (*<- lang_ru;;*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: allou_of_gadolinium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (гадолиний, сплав)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Ряд сплавов гадолиния и особенно сплав с кобальтом и железом позволяет создавать носители информации с колоссальной плотностью записи. ] (*<- lang_ru;;*);;
-		*);;
-	*);
-<- rrel_key_sc_element: application_of_gadolinium
-	(*
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (гадолиний, применение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Область применения гадолиния очень и очень широкая. Основными областями применения гадолиния являются электроника и ядерная энергетика.] (*<- lang_ru;;*);;
-		*);;
 	*);;
 
-
-
+atomic_mass_Gd <- number;
+=> nrel_main_idtf:[157,25(3)](*<-lang_ru;; <- lang_en;;*);;
 
 Definition_of_gadolinium
 => nrel_main_idtf:

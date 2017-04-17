@@ -1,0 +1,80 @@
+subst_Cl
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[chlorine (substance)](*<- lang_en;;*);
+	[хлор (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Сl (substance)](*<- lang_en;;*);
+	
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (хлор (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Хлор (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - ядовитый <sc_element sys_idtf = "gas">газ</sc_element> желтовато-зелёного <sc_element sys_idtf = "color">цвета</sc_element>, тяжелее воздуха, с резким запахом и сладковатым, «металлическим» вкусом. 
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> gas;;
+		-> color;;
+
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (хлор (вещество) в ампуле)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Chlorine_ampoule.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+	*);;
+*);
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+*);
+
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_101 (*<-number;;
+							=>nrel_main_idtf:[-101](*<- lang_en;;*);;*);;	
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:minus_34 (*<-number;;
+							=>nrel_main_idtf:[-34](*<- lang_en;;*);;*);;	
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (хлоа (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Изотопы хлора:  <sup>28</sup>Сl, <sup>29</sup>Сl, <sup>30</sup>Сl, <sup>31</sup>Сl, <sup>32</sup>Сl, <sup>33</sup>Сl, <sup>34</sup>Сl, <sup>35</sup>Сl, <sup>36</sup>Сl, <sup>37</sup>Сl, <sup>38</sup>Сl, <sup>39</sup>Сl, <sup>40</sup>Сl, <sup>41</sup>Сl, <sup>42</sup>Сl, <sup>43</sup>Сl, <sup>44</sup>Сl, <sup>45</sup>Сl, <sup>46</sup>Сl, <sup>47</sup>Сl, <sup>48</sup>Сl, <sup>49</sup>Сl, <sup>50</sup>Сl, <sup>51</sup>Сl] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);;
