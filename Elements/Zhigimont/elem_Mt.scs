@@ -1,0 +1,71 @@
+elem_Mt
+<- rrel_key_sc_element:
+	Definition_of_meitnerium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/mt.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+
+
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_one;
+<- oxidation_state_plus_four;
+<- oxidation_state_plus_six;
+<- oxidation_state_plus_nine;
+<- oxidation_state_plus_eight;
+
+<- group_eight;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_nine;
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: 278(*<- number;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [рис.(мейтнерий (элемент))] (* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/mt.png";;
+		*);;
+	*);
+
+<- rrel_key_sc_element: electron_configuration_Mt
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(мейтнерий, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>7</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+
+
+Definition_of_meitnerium
+=> nrel_main_idtf:
+	[опр.(мейтнерий)]
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

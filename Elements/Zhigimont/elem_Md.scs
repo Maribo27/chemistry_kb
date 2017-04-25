@@ -1,0 +1,75 @@
+elem_Md
+<- rrel_key_sc_element:
+	Definition_of_mendelevium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/md.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_two;
+<- oxidation_state_plus_one;
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Md(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:287(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_periodic_number: one_hundred_and_one;
+<- rrel_key_sc_element: ...
+(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/md.png";;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: electron_configuration_Md
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(менделевий, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ 5f<sup>13</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+
+
+
+Definition_of_mendelevium
+=> nrel_main_idtf:
+	[опр.(менделевий)]
+	(* <- lang_ru;;	*);
+	
+<= nrel_using_constants:
+			{
+				chemical_element;
+				nrel_group
+				
+			};;
+
+
+atomic_mass_Md <- number;
+=> nrel_main_idtf:[258,1](*<-lang_ru;; <- lang_en;;*);;
