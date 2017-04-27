@@ -41,7 +41,7 @@ elem_Lr
 (*
 		
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(лоуренсий (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом лоуренсия)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/lr.png";;
@@ -62,7 +62,7 @@ elem_Lr
 
 Definition_of_lawrencium
 => nrel_main_idtf:
-	[опр.(лоуренсий)]
+	[Опр.(лоуренсий)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

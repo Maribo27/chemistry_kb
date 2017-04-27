@@ -1,17 +1,19 @@
 acesulfame_potassium
 
+<- sc_node_not_relation;
+
 <- crystal;
 <- sulfamate;
 
 => nrel_main_idtf:
 	[ацесульфам калия]
 	(* <- lang_ru;;	*);
-	[ацесульфам]
-	(* <- lang_ru;;	*);
 	[acesulfame potassium]
 	(* <- lang_en;;	*);
 
 => nrel_idtf: 
+	[ацесульфам]
+	(* <- lang_ru;;	*);
 	[C4H4KNO4S] 
 	(* <-lang_en;;*);
 	[E950] 
@@ -22,7 +24,7 @@ acesulfame_potassium
 <- rrel_key_sc_element:
 	Definition_of_acesulfame_potassium
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -58,17 +60,6 @@ acesulfame_potassium
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[В отдельных средствах массовой информации в публикациях, посвящённых подсластителям, часто утверждается, что ацесульфам может вызывать рак (согласно исследованиям 1970 года), однако 9-месячные токсикологические исследования показали отсутствие связи между приёмом ацесульфама и вероятностью возникновения опухолей.] (* <-lang_ru;; *);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: synthesys_of_acesulfame_potassium
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (ацесульфам калия, синтез*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:"file://html/synthesys_of_acesulfame.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 

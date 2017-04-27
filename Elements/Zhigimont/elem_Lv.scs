@@ -1,4 +1,9 @@
 elem_Lv
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
 <- rrel_key_sc_element:
 	Definition_of_livermorium
 	(* 
@@ -32,7 +37,7 @@ elem_Lv
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(ливерморий (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом ливермория)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/lv.png";;
@@ -53,7 +58,7 @@ elem_Lv
 
 Definition_of_livermorium
 => nrel_main_idtf:
-	[опр.(ливерморий)]
+	[Опр.(ливерморий)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

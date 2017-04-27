@@ -1,4 +1,9 @@
 elem_Mc
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
 <- rrel_key_sc_element:
 	Definition_of_moscovium
 	(* 
@@ -29,7 +34,7 @@ elem_Mc
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(московий (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом московия)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/mc.png";;
@@ -50,7 +55,7 @@ elem_Mc
 
 Definition_of_moscovium
 => nrel_main_idtf:
-	[опр.(московий)]
+	[Опр.(московий)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

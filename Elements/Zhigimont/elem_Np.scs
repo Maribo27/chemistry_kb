@@ -1,4 +1,9 @@
 elem_Np
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
 <- rrel_key_sc_element:
 	Definition_of_neptunium
 	(* 
@@ -41,7 +46,7 @@ elem_Np
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(нептуний (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом нептуния)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/np.jpg";;
@@ -64,7 +69,7 @@ elem_Np
 
 Definition_of_neptunium
 => nrel_main_idtf:
-	[опр.(нептуний)]
+	[Опр.(нептуний)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

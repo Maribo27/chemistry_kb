@@ -1,15 +1,33 @@
 silicate
+
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[силикат]
 	(* <- lang_ru;; *);
 	[silicate]
 	(* <- lang_en;; *);
 
+	<- rrel_key_sc_element: receiving_silicate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (силикат, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Силикаты образуются при взаимодействии кремниевой кислоты и оснований.]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
 
 <- rrel_key_sc_element:
 	Definition_of_silicate
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

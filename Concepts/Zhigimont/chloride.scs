@@ -1,12 +1,32 @@
 chloride
+
+<- sc_node_not_relation;
+
         => nrel_main_idtf:
                 [chloride](*<- lang_en;;*);
                 [хлорид](*<- lang_ru;;*);
+
+
+<- rrel_key_sc_element: receiving_chloride
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (хлорид, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Хлориды образуются при взаимодействии хлороводородной кислоты и оснований.]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
 				
 <- rrel_key_sc_element:
 	Definition_of_chloride
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

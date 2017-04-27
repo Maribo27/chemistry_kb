@@ -1,0 +1,44 @@
+subst_Md
+<- sc_node_not_relation;
+=> nrel_main_idtf: [менделевий (вещество)] (* <- lang_ru;; *);
+=> nrel_main_idtf: [mendelevium (substance)] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Md
+(* 
+	=> nrel_main_idtf: [Опр.(менделевий (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Md">Менделевий</sc_element></b> — искусственно полученное <sc_element sys_idtf="radioactive_substance">радиоактивное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, не встречающееся в природе.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> radioactive_substance;;
+		-> chemical_substance;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+=> nrel_inclusion: elem_Md;
+
+=> nrel_ionization_energy: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole: 635 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1100 (*<- number;;*);;
+	*);;
+*);;

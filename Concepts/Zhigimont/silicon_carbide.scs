@@ -1,4 +1,5 @@
 silicon_carbide
+<- sc_node_not_relation;
 
 <-salt;
 <-carbide;
@@ -25,7 +26,7 @@ silicon_carbide
 <- rrel_key_sc_element:
 	Definition_of_silicon_carbide
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -35,6 +36,38 @@ silicon_carbide
 		   *);;
 		*);;
 	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,21] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 2730 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 4892 (*<- number;;*);;
+	*);;
+*);
 
 
 <- rrel_key_sc_element:

@@ -41,7 +41,7 @@ elem_Lu
 (*
 		
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(лютеций (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом лютеция)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/lu.png";;
@@ -64,7 +64,7 @@ elem_Lu
 
 Definition_of_lutetium
 => nrel_main_idtf:
-	[опр.(лютеций)]
+	[Опр.(лютеций)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

@@ -76,7 +76,7 @@ nrel_decomposition_reaction => nrel_main_idtf: [реакция разложен�
 	<- sc_node_norole_relation;;
 nrel_calcination => nrel_main_idtf: [прокаливание*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
-nrel_molar_heat_capacity => nrel_main_idtf: [Молярная теплоёмкость*](*<-lang_ru;;*);
+nrel_molar_heat_capacity => nrel_main_idtf: [молярная теплоёмкость*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
 nrel_recuperation => nrel_main_idtf: [рекуперация*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
@@ -87,4 +87,10 @@ nrel_covalent_radius => nrel_main_idtf: [ковалентный радиус*](*
 nrel_atomic_mass => nrel_main_idtf: [атомная масса*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
 nrel_thermal_decomposition => nrel_main_idtf: [термическое разложение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_ionization_energy => nrel_main_idtf: [энергия ионизации*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_molar_volume => nrel_main_idtf: [молярный объём*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_nuclear_reaction => nrel_main_idtf: [ядерная реакция*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;

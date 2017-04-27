@@ -1,5 +1,7 @@
 explosive
 
+<- sc_node_not_relation;
+
 => nrel_main_idtf:
 	[взрывчатое вещество]
 	(* <- lang_ru;;	*);
@@ -15,7 +17,7 @@ explosive
 <- rrel_key_sc_element:
 	Definition_of_explosive
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

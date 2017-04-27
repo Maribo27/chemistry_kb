@@ -1,7 +1,10 @@
 caesium_auride
 
+<- sc_node_not_relation;
+
 <-auride;
 <-crystal;
+<-color_yellow;
 
 => nrel_main_idtf:
 	[аурид цезия]
@@ -16,7 +19,7 @@ caesium_auride
 <- rrel_key_sc_element:
 	Definition_of_caesium_auride
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -47,58 +50,71 @@ caesium_auride
 		*);;
 	*);
 
-
-<- rrel_key_sc_element: physical_properties_of_caesium_auride
-
+<- rrel_key_sc_element: interaction_CsAu_and_oxygen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(аурид цезия, взаимодействие*, кислород(вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
 	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (аурид цезия, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:"file://html/physical_properties_of_caesium_auride.html" (* <-lang_ru;; *);;
-		*);;
-	*);
+		-> rrel_example:[ Аурид цезия легко реагирует с кислородом.] (*<- lang_ru;;*);;
+	*);;
+*);
 
-<- rrel_key_sc_element: chemical_properties_of_caesium_auride
-
+<- rrel_key_sc_element: interaction_CsAu_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(аурид цезия, взаимодействие*, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
 	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (аурид цезия, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:"file://html/chemical_properties_of_caesium_auride.html" (* <-lang_ru;; *);;
-		*);;
-	*);
+		-> rrel_example:[ Аурид цезия реагирует с водой.] (*<- lang_ru;;*);;
+	*);;
+*);
 
-<- rrel_key_sc_element: interaction_of_caesium_auride
-
+<- rrel_key_sc_element: interaction_CsAu_and_halogen
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(аурид цезия, взаимодействие*, галоген)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
 	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (аурид цезия, взаимодействие*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+		-> rrel_example:[ Аурид цезия реагирует с галогенами.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_CsAu_exchange_reaction
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[утв.(аурид цезия, реакция обмена*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Со многими соединениями идут реакции обмена.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 585 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm: ...
 		(*
-			-> rrel_example:[<p>4CsAu + O<sub>2</sub> = 2Cs<sub>2</sub>O + 4Au</p>] 
-			(*
-			<- lang_en;;
-			=> nrel_format: format_html;;
-			*);;
-
-			-> rrel_example:[<p>2CsAu + Cl<sub>2</sub> = 2CsCl + 2Au</p>] 
-			(*
-			<- lang_en;;
-			=> nrel_format: format_html;;	
-			*);;
-
-			-> rrel_example:[<p>2CsAu + 2H<sub>2</sub>O = 2CsOH + 2Au + H<sub>2</sub></p>] 
-			(*
-			<- lang_en;;
-			=>nrel_format: format_html;;	
-			*);;
+			=> nrel_main_idtf: 7(*<- number;;*);;
+			<- number;;
 		*);;
 	*);;
+*);;
 
 Definition_of_caesium_auride
 => nrel_main_idtf:

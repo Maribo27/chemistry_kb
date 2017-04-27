@@ -1,4 +1,6 @@
 carbonate
+
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[карбонат]
 	(* <- lang_ru;; *);
@@ -9,13 +11,30 @@ carbonate
 <- rrel_key_sc_element:
 	Definition_of_carbonate
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[<b><sc_element sys_idtf="carbonate">Карбонат</sc_element></b> — <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element>, <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="carbonic_acid">угольной кислоты</sc_element> H<sub>2</sub>CO<sub>3</sub>] 
 		(* 
 		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receiving_carbonate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (карбонат, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Карбонаты образуются при взаимодействии угольной кислоты и оснований.]
+		(* 
+		<-lang_ru;;
 		=> nrel_format: format_html;;
 		*);;
 		*);;

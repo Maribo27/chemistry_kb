@@ -3,12 +3,11 @@ rrel_solute
         => nrel_main_idtf:
                 [solute'](*<- lang_en;;*);
                 [растворенное вещество'](*<- lang_ru;;*);
-                [растворённое вещество'](*<- lang_ru;;*);
 				
 <- rrel_key_sc_element:
 	Definition_of_rrel_solute
 	(* 
-	<- explanation;;
+	<- definiton;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

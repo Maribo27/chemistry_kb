@@ -1,4 +1,9 @@
 elem_Md
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
 <- rrel_key_sc_element:
 	Definition_of_mendelevium
 	(* 
@@ -35,7 +40,8 @@ elem_Md
 => nrel_periodic_number: one_hundred_and_one;
 <- rrel_key_sc_element: ...
 (*
-		<- sc_illustration;;
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(атом мейтнерия)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/md.png";;
@@ -60,7 +66,7 @@ elem_Md
 
 Definition_of_mendelevium
 => nrel_main_idtf:
-	[опр.(менделевий)]
+	[Опр.(менделевий)]
 	(* <- lang_ru;;	*);
 	
 <= nrel_using_constants:

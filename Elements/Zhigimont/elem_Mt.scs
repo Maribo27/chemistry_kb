@@ -1,4 +1,9 @@
 elem_Mt
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
 <- rrel_key_sc_element:
 	Definition_of_meitnerium
 	(* 
@@ -37,7 +42,7 @@ elem_Mt
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(мейтнерий (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом мейтнерия)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/mt.png";;
@@ -59,7 +64,7 @@ elem_Mt
 
 Definition_of_meitnerium
 => nrel_main_idtf:
-	[опр.(мейтнерий)]
+	[Опр.(мейтнерий)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:
