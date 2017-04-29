@@ -4,6 +4,7 @@ elem_Sb
 
 => nrel_main_idtf: [атом сурьмы] (* <-lang_ru;;*);
 => nrel_main_idtf: [antimony atom] (* <-lang_en;;*);
+=> nrel_idtf: [stibium atom](*<- lang_en;;*);
 => nrel_idtf: [атом Sb] (* <-lang_ru;;*);
 => nrel_idtf: [atom Sb] (* <-lang_en;;*);
 

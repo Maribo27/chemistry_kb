@@ -108,6 +108,7 @@ elem_P
 => nrel_allotropic_modification: ...
 (*
 	-> subst_white_P;;
+	-> subst_yellow_P;;
 	-> subst_red_P;;
 	-> subst_black_P;;
 	-> subst_metal_P;;

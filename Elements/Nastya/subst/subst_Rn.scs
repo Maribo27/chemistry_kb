@@ -1,0 +1,107 @@
+subst_Rn
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [радон] (* <- lang_ru;; *);
+=> nrel_main_idtf: [radon] (* <- lang_en;; *);
+=> nrel_idtf: [Rn](*<- lang_en;;*);
+=> nrel_inclusion: elem_Rn;
+
+<- rrel_key_sc_element: definition_of_subst_Rn
+(* 
+	=> nrel_main_idtf: [Опр.(Радон)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество радон</b> - бесцветный, слегка флюоресцирующий радиоактивный <sc_element sys_idtf = "noble_gas">газ</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> noble_gas;;
+	*);;
+*);
+
+<- gas;
+<- no_color;
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [9,81] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [202] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin:...
+		(*
+			=> nrel_main_idtf: [211,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [2,7] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [18,1] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [20,79] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;
