@@ -1,0 +1,129 @@
+elem_Sb
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf: [атом сурьмы] (* <-lang_ru;;*);
+=> nrel_main_idtf: [antimony atom] (* <-lang_en;;*);
+=> nrel_idtf: [атом Sb] (* <-lang_ru;;*);
+=> nrel_idtf: [atom Sb] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_elem_Sb
+(* 
+	=> nrel_main_idtf: [Опр.(Атом сурьмы)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "elem_Sb">Сурьма</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   пятнадцатой  <sc_element sys_idtf  = "periodic_group">группы</sc_element>, 5-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+
+<- metal;
+<- semimetal;
+<- chalcophile;
+<- pnictogen;
+
+=> nrel_periodic_number: 51;
+<- group_fifteen;
+<- period_five;
+
+<- oxidation_state_minus_three;
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_five;
+
+<- valence_three;
+<- valence_four;
+<- valence_five;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Атом сурьмы)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Antimony atom)] (* <- lang_en;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_Sb.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:159(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Sb;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:140(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Sb;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Sb
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом сурьмы, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>10</sup>4s<sup>2</sup>4p<sup>6</sup>4d<sup>10</sup>5s<sup>2</sup>5p<sup>3</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+=> nrel_allotropic_modification: ...
+(*
+	-> subst_explosive_Sb;;
+	-> subst_yellow_Sb;;
+	-> subst_black_Sb;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(атом сурьмы, свойство изотопа*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/isotopes_table_of_elem_Sb.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_Sb <- number;
+=> nrel_main_idtf:[121,760(1)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Sb <- number;
+=> nrel_main_idtf:[2,05](*<-lang_ru;; <- lang_en;;*);;
+
+

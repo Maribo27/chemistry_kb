@@ -1,4 +1,3 @@
-dibasic_acid<= nrel_inclusion: acid;;
 dibasic_acid
 => nrel_main_idtf:
 	[двухосновная кислота]
@@ -9,7 +8,7 @@ dibasic_acid
 <- rrel_key_sc_element:
 	Definition_of_dibasic_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,16 +17,10 @@ dibasic_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				acid;
-				atom;
-				elem_H
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -38,4 +31,10 @@ dibasic_acid
 Definition_of_dibasic_acid
 => nrel_main_idtf:
 	[Опр.(Двухосновная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;

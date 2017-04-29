@@ -23,5 +23,5 @@ Definition_of_nonpersistent_acid
 	(* <- lang_ru;;	*);
 <= nrel_using_constants:...
 			(*
-				acid;;
+				->acid;;
 			*);;

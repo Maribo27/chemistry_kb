@@ -1,0 +1,35 @@
+tribasic_acid
+=> nrel_main_idtf:
+	[трехосновная кислота]
+	(* <- lang_ru;;	*);
+	[tribasic acid]
+	(* <- lang_en;;	*);;
+tribasic_acid
+<- rrel_key_sc_element:
+	Definition_of_tribasic_acid
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/tribasic_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+=>nrel_inclusion:
+	orthophosphoric_acid;
+	boric_acid;
+
+<- rrel_key_sc_element: section_acids;;
+
+Definition_of_tribasic_acid
+=> nrel_main_idtf:
+	[Опр.(Трехосновная кислота)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;

@@ -1,0 +1,33 @@
+resistent_acid
+=> nrel_main_idtf:
+	[устойчивая кислота]
+	(* <- lang_ru;;	*);
+	[resistent acid]
+	(* <- lang_en;;	*);;
+resistent_acid
+<- rrel_key_sc_element:
+	Definition_of_resistent_acid
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/resistent_acid.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+=>nrel_inclusion:
+	hydrosulfuric_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydroiodic_acid;
+	hydrofluoric_acid;;
+
+Definition_of_resistent_acid
+=> nrel_main_idtf:
+	[Опр.(Устойчивая  кислота)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+			*);;

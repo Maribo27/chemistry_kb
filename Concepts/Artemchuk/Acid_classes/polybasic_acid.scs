@@ -1,0 +1,31 @@
+polybasic_acid
+=> nrel_main_idtf:
+	[многоосновная кислота]
+	(* <- lang_ru;;	*);
+	[polybasic acid]
+	(* <- lang_en;;	*);;
+polybasic_acid
+<- rrel_key_sc_element:
+	Definition_of_polybasic_acid
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/polybasic_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<- rrel_key_sc_element: section_acids;;
+
+Definition_of_polybasic_acid
+=> nrel_main_idtf:
+	[Опр.(Многоосновная кислота)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;

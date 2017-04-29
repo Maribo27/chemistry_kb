@@ -1,0 +1,134 @@
+elem_P
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf: [атом фосфора] (* <-lang_ru;;*);
+=> nrel_main_idtf: [phosphorus atom] (* <-lang_en;;*);
+=> nrel_idtf: [атом P] (* <-lang_ru;;*);
+=> nrel_idtf: [atom P] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_elem_P
+(* 
+	=> nrel_main_idtf: [Опр.(Атом фосфора)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "elem_P">Фосфор</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   пятнадцатой  <sc_element sys_idtf  = "periodic_group">группы</sc_element>, 3-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+
+<- nonmetal;
+<- siderophile;
+<- pnictogen;
+
+=> nrel_periodic_number: 15;
+<- group_fifteen;
+<- period_three;
+
+<- oxidation_state_minus_three;
+<- oxidation_state_minus_two;
+<- oxidation_state_minus_one;
+<- oxidation_state_plus_one;
+<- oxidation_state_plus_two;
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_four;
+<- oxidation_state_plus_five;
+
+<- valence_one;
+<- valence_three;
+<- valence_five;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Атом фосфора)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Phosphorus atom)] (* <- lang_en;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_P.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:128(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_P;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:106(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_P;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_P
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом фосфора, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>3</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+=> nrel_allotropic_modification: ...
+(*
+	-> subst_white_P;;
+	-> subst_red_P;;
+	-> subst_black_P;;
+	-> subst_metal_P;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(атом фосфора, свойство изотопа*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/isotopes_table_of_elem_P.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_P <- number;
+=> nrel_main_idtf:[30,973762(2)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_P <- number;
+=> nrel_main_idtf:[2,19](*<-lang_ru;; <- lang_en;;*);;
+
+

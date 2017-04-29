@@ -1,0 +1,34 @@
+weak_acid
+=> nrel_main_idtf:
+	[слабая кислота]
+	(* <- lang_ru;;	*);
+	[weak acid]
+	(* <- lang_en;;	*);;
+weak_acid
+<- rrel_key_sc_element:
+	Definition_of_weak_acid
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/weak_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+=>nrel_inclusion:
+	carbonic_acid;
+	metasilicic_acid;
+	boric_acid;
+	hydrosulfuric_acid;;
+
+
+Definition_of_weak_acid
+=> nrel_main_idtf:
+	[Опр.(Слабая кислота)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->solution;;
+			*);;

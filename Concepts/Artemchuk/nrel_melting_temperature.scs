@@ -70,4 +70,4 @@ Definition_of_nrel_melting_temperature
 
 nrel_melting_temperature
 =>nrel_first_domain: chemical_substance;
-=>nrel_second_domain: number;;
+=>nrel_second_domain: value;;

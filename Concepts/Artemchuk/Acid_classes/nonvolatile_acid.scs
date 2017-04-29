@@ -1,0 +1,35 @@
+nonvolatile_acid
+=> nrel_main_idtf:
+	[нелетучая кислота]
+	(* <- lang_ru;;	*);
+	[nonvolatile acid]
+	(* <- lang_en;;	*);;
+nonvolatile_acid
+<- rrel_key_sc_element:
+	Definition_of_nonvolatile_acid
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nonvolatile_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+=>nrel_inclusion:
+	metasilicic_acid;
+	sulfuric_acid;
+	orthophosphoric_acid;
+
+<- rrel_key_sc_element: section_acids;;
+
+Definition_of_nonvolatile_acid
+=> nrel_main_idtf:
+	[Опр.(Нелетучая кислота)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->molecule;;
+			*);;

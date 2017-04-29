@@ -1,0 +1,34 @@
+nonpersistent_acid
+=> nrel_main_idtf:
+	[неустойчивая  кислота]
+	(* <- lang_ru;;	*);
+	[nonpersistent acid]
+	(* <- lang_en;;	*);;
+nonpersistent_acid
+<- rrel_key_sc_element:
+	Definition_of_nonpersistent_acid
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nonpersistent_acid.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+=>nrel_inclusion:
+	metasilicic_acid;
+	nitric_acid;
+	carbonic_acid;
+	sulfurous_acid;
+
+<- rrel_key_sc_element: section_acids;;
+
+Definition_of_nonpersistent_acid
+=> nrel_main_idtf:
+	[Опр.(Неустойчивая  кислота)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+			*);;

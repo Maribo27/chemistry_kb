@@ -1,4 +1,3 @@
-monobasic_acid<= nrel_inclusion: acid;;
 monobasic_acid
 => nrel_main_idtf:
 	[одноосновная кислота]
@@ -9,7 +8,7 @@ monobasic_acid
 <- rrel_key_sc_element:
 	Definition_of_monobasic_acid
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,24 +17,39 @@ monobasic_acid
 	
 	*);
 
-<= nrel_using_constants:
-			{
-				acid;
-				atom;
-				elem_H
-			};
 <- rrel_key_sc_element:
 	... (*
 	
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[Если кислота одноосновная, то она диссоциирует в одну ступень.](* <-lang_ru;; *);;
 		*);;
-*);;
+*);
+
+=>nrel_inclusion:
+	bromic_acid;
+	carbonic_acid;
+	chloric_acid;
+	chlorous_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydrofluoric_acid;
+	hydroiodic_acid;
+	hydrosulfuric_acid;
+	iodic_acid;
+	metaarsenious_acid;
+	metasilicic_acid;
+	nitric_acid;;
 
 Definition_of_monobasic_acid
 => nrel_main_idtf:
 	[Опр.(Одноосновная кислота)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;

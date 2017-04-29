@@ -1,0 +1,126 @@
+elem_I
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf: [атом иода] (* <-lang_ru;;*);
+=> nrel_main_idtf: [iodine atom] (* <-lang_en;;*);
+=> nrel_idtf: [атом I] (* <-lang_ru;;*);
+=> nrel_idtf: [atom I] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_elem_I
+(* 
+	=> nrel_main_idtf: [Опр.(Атом иода)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "elem_I">Иод</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   семнадцатой  <sc_element sys_idtf  = "periodic_group">группы</sc_element>, 5-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+
+<- nonmetal;
+<- halogen;
+<- lithophile;
+<- pnictogen;
+
+=> nrel_periodic_number: 53;
+<- group_seventeen;
+<- period_five;
+
+<- oxidation_state_minus_one;
+<- oxidation_state_plus_one;
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_five;
+<- oxidation_state_plus_seven;
+
+<- valence_one;
+<- valence_three;
+<- valence_four;
+<- valence_five;
+<- valence_seven;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Атом иода)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Iodine atom)] (* <- lang_en;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_I.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:136(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_I;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:133(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_I;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_I
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом иода, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>10</sup>4s<sup>2</sup>4p<sup>6</sup>4d<sup>10</sup>5s<sup>2</sup>5p<sup>5</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(атом иода, свойство изотопа*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/isotopes_table_of_elem_I.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_I <- number;
+=> nrel_main_idtf:[126,90447(3)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_I <- number;
+=> nrel_main_idtf:[2,66](*<-lang_ru;; <- lang_en;;*);;
+
+

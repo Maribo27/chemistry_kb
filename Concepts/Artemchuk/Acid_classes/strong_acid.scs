@@ -1,0 +1,37 @@
+strong_acid
+=> nrel_main_idtf:
+	[сильная кислота]
+	(* <- lang_ru;;	*);
+	[strong acid]
+	(* <- lang_en;;	*);;
+strong_acid
+<- rrel_key_sc_element:
+	Definition_of_strong_acid
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/strong_acid.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+=>nrel_inclusion:
+	sulfuric_acid;
+	nitric_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydroiodic_acid;
+
+<- rrel_key_sc_element: section_acids;;
+
+Definition_of_strong_acid
+=> nrel_main_idtf:
+	[Опр.(Сильная кислота)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:...
+			(*
+				->acid;;
+				->solution;;
+			*);;

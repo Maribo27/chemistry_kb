@@ -1,0 +1,31 @@
+acid_residue
+	=> nrel_main_idtf: [acid residue](*<- lang_en;;*);
+			   [кислотный остаток](*<- lang_ru;;*);
+	
+	<- rrel_key_sc_element:
+	Definition_of_acid_residue
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/acid_residue.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+<- rrel_key_sc_element: section_acids;;
+
+
+Definition_of_acid_residue
+=> nrel_main_idtf:
+	[Опр.(Кислотный остаток)]
+	(* <- lang_ru;;	*);
+<= nrel_using_constants: ... 
+	(* 
+		->acid_residue;;
+		->anion;; 
+		->acid;; 
+	*);;
+
+	

@@ -1,0 +1,21 @@
+
+
+
+
+
+titanium_group => nrel_main_idtf:
+	[подгруппа титана](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+scandium_group => nrel_main_idtf:
+	[подгруппа скандия](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+pnictogen => nrel_main_idtf:
+	[пниктоген](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+light_metal => nrel_main_idtf:
+	[легкий металл](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+semimetal => nrel_main_idtf:
+	[полуметалл](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
