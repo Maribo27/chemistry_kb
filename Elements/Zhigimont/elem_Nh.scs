@@ -1,5 +1,11 @@
 elem_Nh
 
+
+=> nrel_main_idtf: [атом нихония] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nihonium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Nh] (* <- lang_en;; *);
+
 <- chemical_element;
 <- sc_node_not_relation;
 <= nrel_inclusion: chemical_element;
@@ -70,7 +76,7 @@ elem_Nh
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(нихоний, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом нихония, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>1</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -82,7 +88,7 @@ elem_Nh
 
 Definition_of_nihonium
 => nrel_main_idtf:
-	[Опр.(нихоний)]
+	[Опр.(атом нихония)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

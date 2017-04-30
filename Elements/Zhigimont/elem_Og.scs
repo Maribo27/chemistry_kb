@@ -1,5 +1,10 @@
 elem_Og
 
+=> nrel_main_idtf: [атом оганесона] (* <- lang_ru;; *);
+=> nrel_main_idtf: [oganesson atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Og] (* <- lang_en;; *);
+
 <- chemical_element;
 <- sc_node_not_relation;
 <= nrel_inclusion: chemical_element;
@@ -66,7 +71,7 @@ elem_Og
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(оганесон, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом оганесона, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn] 5f<sup>1</sup>4 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>6</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -76,7 +81,7 @@ elem_Og
 
 Definition_of_oganesson
 => nrel_main_idtf:
-	[Опр.(оганесон)]
+	[Опр.(атом оганесона)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

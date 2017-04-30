@@ -1,5 +1,10 @@
 elem_No
 
+=> nrel_main_idtf: [атом нобелия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nobelium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [No] (* <- lang_en;; *);
+
 <- chemical_element;
 <- sc_node_not_relation;
 <= nrel_inclusion: chemical_element;
@@ -58,7 +63,7 @@ elem_No
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(нобелий, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом нобелия, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn] 5f<sup>14</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -70,7 +75,7 @@ elem_No
 
 Definition_of_nobelium
 => nrel_main_idtf:
-	[Опр.(нобелий)]
+	[Опр.(атом нобелия)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

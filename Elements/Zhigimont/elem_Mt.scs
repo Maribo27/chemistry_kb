@@ -1,5 +1,10 @@
 elem_Mt
 
+=> nrel_main_idtf: [атом мейтнерия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [meitnerium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Mt] (* <- lang_en;; *);
+
 <- chemical_element;
 <- sc_node_not_relation;
 <= nrel_inclusion: chemical_element;
@@ -53,7 +58,7 @@ elem_Mt
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(мейтнерий, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом мейтнерия, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>7</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -64,7 +69,7 @@ elem_Mt
 
 Definition_of_meitnerium
 => nrel_main_idtf:
-	[Опр.(мейтнерий)]
+	[Опр.(атом мейтнерия)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

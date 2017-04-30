@@ -1,3 +1,0 @@
-elem_He
-	=> nrel_main_idtf: [helium] (* <-lang_en;;*);
-	=> nrel_idtf: [He] (* <-lang_en;;*);;

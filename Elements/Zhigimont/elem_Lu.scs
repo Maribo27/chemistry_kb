@@ -1,5 +1,10 @@
 elem_Lu
 
+=> nrel_main_idtf: [атом лютеция] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lutetium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Lu] (* <- lang_en;; *);
+
 <- chemical_element;
 <- sc_node_not_relation;
 <= nrel_inclusion: chemical_element;
@@ -52,7 +57,7 @@ elem_Lu
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(лютеций, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом лютеция, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Xe] 4f<sup>14</sup> 5d<sup>1</sup> 6s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -64,7 +69,7 @@ elem_Lu
 
 Definition_of_lutetium
 => nrel_main_idtf:
-	[Опр.(лютеций)]
+	[Опр.(атом лютеция)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

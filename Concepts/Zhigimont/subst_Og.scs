@@ -1,10 +1,10 @@
 subst_Og
 <- sc_node_not_relation;
-=> nrel_main_idtf: [оганесон (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [oganesson (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [оганесон] (* <- lang_ru;; *);
+=> nrel_main_idtf: [oganesson] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Og
 (* 
-	=> nrel_main_idtf: [Опр.(оганесон (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(оганесон)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -29,7 +29,7 @@ subst_Og
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(оганесон (вещество), получение*)](*<- lang_ru;;*);;
+		[Утв.(оганесон , получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Оганесон получают ядерной реакцией криптона со свинцом.] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -40,7 +40,7 @@ subst_Og
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(оганесон (вещество), получение*)](*<- lang_ru;;*);;
+		[Утв.(оганесон , получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Оганесон получают ядерной реакцией кальция.] (*<- lang_ru;; => nrel_format: format_html;;*);;

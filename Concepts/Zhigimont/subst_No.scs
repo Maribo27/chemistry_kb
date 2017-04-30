@@ -1,10 +1,10 @@
 subst_No
 <- sc_node_not_relation;
-=> nrel_main_idtf: [нобелий (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [nobelium (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [нобелий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nobelium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_No
 (* 
-	=> nrel_main_idtf: [Опр.(нобелий (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(нобелий)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -30,7 +30,7 @@ subst_No
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(нобелий (вещество), получение*)](*<- lang_ru;;*);;
+		[Утв.(нобелий , получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Нобелий получают в результате ядерных реакций углерода.] (*<- lang_ru;; => nrel_format: format_html;;*);;

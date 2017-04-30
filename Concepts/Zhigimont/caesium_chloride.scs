@@ -64,7 +64,7 @@ caesium_chloride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(хлорид цезия, получение*)](*<- lang_ru;;*);;
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Хлорид цезия получают из карбоната цезия.] (*<- lang_ru;;*);;
@@ -75,7 +75,7 @@ caesium_chloride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(хлорид цезия, получение*)](*<- lang_ru;;*);;
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Хлорид цезия получают из гидроксида цезия.] (*<- lang_ru;;*);;

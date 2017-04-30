@@ -54,7 +54,7 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(аурид цезия, взаимодействие*, кислород(вещество))](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, взаимодействие*, кислород(вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Аурид цезия легко реагирует с кислородом.] (*<- lang_ru;;*);;
@@ -65,7 +65,7 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(аурид цезия, взаимодействие*, вода)](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, взаимодействие*, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Аурид цезия реагирует с водой.] (*<- lang_ru;;*);;
@@ -76,7 +76,7 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(аурид цезия, взаимодействие*, галоген)](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, взаимодействие*, галоген)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Аурид цезия реагирует с галогенами.] (*<- lang_ru;;*);;
@@ -87,7 +87,7 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(аурид цезия, реакция обмена*)](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, реакция обмена*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Со многими соединениями идут реакции обмена.] (*<- lang_ru;;*);;

@@ -12,6 +12,14 @@ sucrose
 	[sucrose]
 	(* <- lang_en;;	*);;
 
+
+auride
+=> nrel_main_idtf:
+	[аурид]
+	(* <- lang_ru;;	*);
+	[auride]
+	(* <- lang_en;;	*);;
+
 sweetener
 => nrel_main_idtf:
 	[подсластитель]

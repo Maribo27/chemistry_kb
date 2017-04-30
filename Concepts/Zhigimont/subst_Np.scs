@@ -1,10 +1,10 @@
 subst_Np
 <- sc_node_not_relation;
-=> nrel_main_idtf: [нептуний (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [neptunium (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [нептуний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [neptunium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Np
 (* 
-	=> nrel_main_idtf: [Опр.(нептуний (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(нептуний)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -29,7 +29,7 @@ subst_Np
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(нептуний (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(нептуний , твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Np.jpg"
@@ -44,7 +44,7 @@ subst_Np
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(нептуний (вещество), получение*)](*<- lang_ru;;*);;
+		[Утв.(нептуний , получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Нептуний получают восстановлением фторида нептуния парами бария при 1600 К.] (*<- lang_ru;; => nrel_format: format_html;;*);;

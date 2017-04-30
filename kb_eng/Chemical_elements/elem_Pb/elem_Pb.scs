@@ -1,3 +1,0 @@
-elem_Pb
-	=> nrel_main_idtf: [lead] (* <-lang_en;;*);
-	=> nrel_idtf: [Pb] (* <-lang_en;;*);;

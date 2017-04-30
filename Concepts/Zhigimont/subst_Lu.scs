@@ -1,10 +1,10 @@
 subst_Lu
 <- sc_node_not_relation;
-=> nrel_main_idtf: [лютеций (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [lutetium (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [лютеций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lutetium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Lu
 (* 
-	=> nrel_main_idtf: [Опр.(лютеций (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(лютеций)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -34,7 +34,7 @@ subst_Lu
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(лютеций (вещество), взаимодействие*, кислота)](*<- lang_ru;;*);;
+		[Утв.(лютеций , взаимодействие*, кислота)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Лютеций реагирует с кислотами с образованием солей. ] (*<- lang_ru;;*);;
@@ -48,7 +48,7 @@ subst_Lu
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(лютеций (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(лютеций , твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Lu.jpg"

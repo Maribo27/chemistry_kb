@@ -1,10 +1,10 @@
 subst_Md
 <- sc_node_not_relation;
-=> nrel_main_idtf: [менделевий (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [mendelevium (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [менделевий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [mendelevium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Md
 (* 
-	=> nrel_main_idtf: [Опр.(менделевий (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(менделевий)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*

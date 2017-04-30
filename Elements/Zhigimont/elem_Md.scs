@@ -1,5 +1,10 @@
 elem_Md
 
+=> nrel_main_idtf: [атом менделевия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [mendelevium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Md] (* <- lang_en;; *);
+
 <- chemical_element;
 <- sc_node_not_relation;
 <= nrel_inclusion: chemical_element;
@@ -41,7 +46,7 @@ elem_Md
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(атом мейтнерия)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом менделевия)] (* <- lang_ru;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/md.png";;
@@ -54,7 +59,7 @@ elem_Md
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(менделевий, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом менделевия, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ 5f<sup>13</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -66,7 +71,7 @@ elem_Md
 
 Definition_of_mendelevium
 => nrel_main_idtf:
-	[Опр.(менделевий)]
+	[Опр.(атом менделевия)]
 	(* <- lang_ru;;	*);
 	
 <= nrel_using_constants:

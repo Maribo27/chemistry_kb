@@ -1,10 +1,10 @@
 subst_Mc
 <- sc_node_not_relation;
-=> nrel_main_idtf: [московий (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [moscovium (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [московий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [moscovium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Mc
 (* 
-	=> nrel_main_idtf: [Опр.(московий (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(московий)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*

@@ -1,5 +1,10 @@
 elem_Lr
 
+=> nrel_main_idtf: [атом лоуренсия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lawrencium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Lr] (* <- lang_en;; *);
+
 
 <- chemical_element;
 <- sc_node_not_relation;
@@ -53,7 +58,7 @@ elem_Lr
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(лоуренсий, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом лоуренсия, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn]5f<sup>14</sup>6d<sup>1</sup>7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -62,7 +67,7 @@ elem_Lr
 
 Definition_of_lawrencium
 => nrel_main_idtf:
-	[Опр.(лоуренсий)]
+	[Опр.(атом лоуренсия)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

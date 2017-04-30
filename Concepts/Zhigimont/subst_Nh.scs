@@ -1,10 +1,10 @@
 subst_Nh
 <- sc_node_not_relation;
-=> nrel_main_idtf: [нихоний (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [nihonium (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [нихоний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nihonium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Nh
 (* 
-	=> nrel_main_idtf: [Опр.(нихоний (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(нихоний)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -30,7 +30,7 @@ subst_Nh
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(нихоний (вещество), получение*)](*<- lang_ru;;*);;
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Нихоний получают в результате α-распада изотопов московия.] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -41,7 +41,7 @@ subst_Nh
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(нихоний (вещество), получение*)](*<- lang_ru;;*);;
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Нихоний получают в результате ядерной реакции нептуния.] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -52,7 +52,7 @@ subst_Nh
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(нихоний (вещество), получение*)](*<- lang_ru;;*);;
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Нихоний получают в результате ядерной реакции висмута.] (*<- lang_ru;; => nrel_format: format_html;;*);;

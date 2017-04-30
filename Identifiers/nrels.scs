@@ -94,3 +94,4 @@ nrel_molar_volume => nrel_main_idtf: [молярный объём*](*<-lang_ru;;
 	<- sc_node_norole_relation;;
 nrel_nuclear_reaction => nrel_main_idtf: [ядерная реакция*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
+nrel_atomic_radius <- sc_node_norole_relation;;
