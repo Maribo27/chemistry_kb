@@ -1,8 +1,0 @@
-section_the_concentration_of_solutions
-=> nrel_main_idtf: [Раздел. Концентрация растворов](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_the_concentration_of_solutions.html" (* <-lang_ru;; *);;
-		*);;

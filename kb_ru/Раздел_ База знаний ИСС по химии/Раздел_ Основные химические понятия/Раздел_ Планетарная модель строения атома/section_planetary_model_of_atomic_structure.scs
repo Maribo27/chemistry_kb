@@ -1,8 +1,0 @@
-section_planetary_model_of_atomic_structure
-=> nrel_main_idtf: [Раздел. Планетарная модель строения атома](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_planetary_model_of_atomic_structure.html" (* <-lang_ru;; *);;
-		*);;

@@ -10,7 +10,7 @@ acid
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example:
-			[<b><sc_element sys_idtf  = "acid">Кислота</sc_element></b> - сложное <sc_element sys_idtf  = "chemical_substance">вещество</sc_element>, в <sc_element sys_idtf="molecule">молекуле</sc_element> которого имеется один или несколько атомов водорода, которые могут быть замещены атомами (ионами) <sc_element sys_idtf="metal">металлов</sc_element>. Оставшаяся часть молекулы кислоты называется <sc_element sys_idtf="acid_residue">кислотным остатком</sc_element>.] 
+			[<p><b><sc_element sys_idtf  = "acid">Кислота</sc_element></b> - сложное <sc_element sys_idtf  = "chemical_substance">вещество</sc_element>, в <sc_element sys_idtf="molecule">молекуле</sc_element> которого имеется один или несколько атомов водорода, которые могут быть замещены атомами (ионами) <sc_element sys_idtf="metal">металлов</sc_element>. Оставшаяся часть молекулы кислоты называется <sc_element sys_idtf="acid_residue">кислотным остатком</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;

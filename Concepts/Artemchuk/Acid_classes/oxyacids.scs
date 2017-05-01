@@ -1,23 +1,28 @@
 oxyacid
-        => nrel_main_idtf:
-                [oxyacid](*<- lang_en;;*);
-                [кислородсодержащая кислота](*<- lang_ru;;*);
-        <- rrel_key_sc_element:
+=> nrel_main_idtf:
+	[oxyacid](*<- lang_en;;*);
+	[кислородсодержащая кислота](*<- lang_ru;;*);
+<- rrel_key_sc_element:
 	   Definition_of_oxyacid
                 (*
                         <- definition;;
-                        => nrel_main_idtf: [Def.(Oxyacid)](*<- lang_en;;*);;
                         => nrel_main_idtf: [Опр.(Кислородсодержащая кислота)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых содержат один или нестолько атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
+                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых содержат один или несколько атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
                                                 *);;
                                         *);;
-                *);
+	<= nrel_using_constants: ... 
+		(* 
+			->acid;;
+			->molecule;; 
+			->elem_O;; 
+		*);;
+*);
 
 =>nrel_inclusion:
 	carbonic_acid;
@@ -35,12 +40,3 @@ oxyacid
 	orthophosphoric_acid;
 
 <- rrel_key_sc_element: section_acids;;
-
-Definition_of_oxyacid
-<= nrel_using_constants: ... 
-	(* 
-		->acid;;
-		->molecule;; 
-		->elem_O;; 
-	*);;
-

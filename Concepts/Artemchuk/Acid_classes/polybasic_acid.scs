@@ -1,31 +1,40 @@
 polybasic_acid
 => nrel_main_idtf:
-	[многоосновная кислота]
-	(* <- lang_ru;;	*);
-	[polybasic acid]
-	(* <- lang_en;;	*);;
-polybasic_acid
+	[многоосновная кислота]	(* <- lang_ru;;	*);
+	[polybasic acid](* <- lang_en;;	*);
+
 <- rrel_key_sc_element:
 	Definition_of_polybasic_acid
 	(* 
 	<- definition;;
-	<= nrel_sc_text_translation:
-		...
+	=> nrel_main_idtf:[Опр.(Многоосновная кислота)]	(* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
 		(* 
-		-> rrel_example:"file://htmls/polybasic_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "polybasic_acid">Многоосновные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, содержащие четыре и более <sc_element sys_idtf  = "atom">атомов</sc_element> <sc_element sys_idtf  = "elem_H">водорода</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 		*);;
-	
-	*);
-
-<- rrel_key_sc_element: section_acids;;
-
-Definition_of_polybasic_acid
-=> nrel_main_idtf:
-	[Опр.(Многоосновная кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
+	<= nrel_using_constants:...
 			(*
 				->acid;;
 				->atom;;
 				->elem_H;;
 			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Многоосновные кислоты диссоциируют ступенчато. Количество ступеней зависит от количества атомов водорода.](* <-lang_ru;; *);;
+		*);;
+*);
+
+
+<- rrel_key_sc_element: section_acids;;

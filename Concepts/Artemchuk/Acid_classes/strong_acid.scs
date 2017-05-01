@@ -1,20 +1,27 @@
 strong_acid
 => nrel_main_idtf:
-	[сильная кислота]
-	(* <- lang_ru;;	*);
-	[strong acid]
-	(* <- lang_en;;	*);;
-strong_acid
+	[сильная кислота](* <- lang_ru;; *);
+	[strong acid](* <- lang_en;; *);
+
 <- rrel_key_sc_element:
 	Definition_of_strong_acid
 	(* 
 	<- definition;;
-	<= nrel_sc_text_translation:
-		...
+	=> nrel_main_idtf:[Опр.(Сильная кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
 		(* 
-		-> rrel_example:"file://htmls/strong_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "strong_acid">Сильные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, полностью диссоциированные в разбавленных <sc_element sys_idtf  = "solution">растворах</sc_element>.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->solution;;
+			*);;
 	*);
 
 =>nrel_inclusion:
@@ -24,14 +31,35 @@ strong_acid
 	hydrochloric_acid;
 	hydroiodic_acid;
 
-<- rrel_key_sc_element: section_acids;;
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Более сильные кислоты вытесняют менее сильные кислоты из растворов их солей.](* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Бескислородные кислоты получаю при действии сильных кислот на соли более слабых или летучих бескислородных кислот.](* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Кислородсодержащие кислоты получают при действии сильных кислот на соли более слабых или летучих кислородсодержащих кислот.](* <-lang_ru;; *);;
+		*);;
+*);
 
-Definition_of_strong_acid
-=> nrel_main_idtf:
-	[Опр.(Сильная кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->acid;;
-				->solution;;
-			*);;
+<- rrel_key_sc_element: section_acids;;

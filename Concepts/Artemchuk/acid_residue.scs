@@ -1,30 +1,28 @@
 acid_residue
-	=> nrel_main_idtf: [acid residue](*<- lang_en;;*);
-			   [кислотный остаток](*<- lang_ru;;*);
+=> nrel_main_idtf: 
+	[acid residue](*<- lang_en;;*);
+	[кислотный остаток](*<- lang_ru;;*);
 	
-	<- rrel_key_sc_element:
+<- rrel_key_sc_element:
 	Definition_of_acid_residue
 	(* 
 	<- definition;;
-	<= nrel_sc_text_translation:
-		...
+	=> nrel_main_idtf:[Опр.(Кислотный остаток)](* <- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
 		(* 
-		-> rrel_example:"file://htmls/acid_residue.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+ 			[<p><b><sc_element sys_idtf  = "acid_residue">Кислотный остаток</sc_element></b> - это <sc_element sys_idtf  = "anion">анион</sc_element>, который образуется при диссоциации <sc_element sys_idtf  = "acid">кислоты</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
 		*);;
-	
-	*);
-
-<- rrel_key_sc_element: section_acids;;
-
-Definition_of_acid_residue
-=> nrel_main_idtf:
-	[Опр.(Кислотный остаток)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants: ... 
+	<= nrel_using_constants: ... 
 	(* 
 		->acid_residue;;
 		->anion;; 
 		->acid;; 
 	*);;
+*);
 
-	
+<- rrel_key_sc_element: section_acids;;

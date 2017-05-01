@@ -1,8 +1,0 @@
-section_ionic_reaction_and_hydrolysis
-=> nrel_main_idtf: [Раздел. Ионные реакции. Гидролиз](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_ionic_reaction_and_hydrolysis.html" (* <-lang_ru;; *);;
-		*);;

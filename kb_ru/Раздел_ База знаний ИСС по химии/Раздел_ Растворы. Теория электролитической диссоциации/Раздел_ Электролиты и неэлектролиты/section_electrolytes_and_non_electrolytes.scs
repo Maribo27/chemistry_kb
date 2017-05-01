@@ -1,8 +1,0 @@
-section_electrolytes_and_non_electrolytes
-=> nrel_main_idtf: [Раздел. Электролиты и неэлектролиты](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_electrolytes_and_non_electrolytes.html" (* <-lang_ru;; *);;
-		*);;

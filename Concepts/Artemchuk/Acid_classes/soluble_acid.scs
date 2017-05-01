@@ -1,20 +1,28 @@
 soluble_acid
 => nrel_main_idtf:
-	[растворимая кислота]
-	(* <- lang_ru;;	*);
-	[soluble acid]
-	(* <- lang_en;;	*);;
-soluble_acid
+	[растворимая кислота](* <- lang_ru;; *);
+	[soluble acid]	(* <- lang_en;;	*);
+
 <- rrel_key_sc_element:
 	Definition_of_soluble_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Растворимая кислота)](* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/soluble_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "soluble_acid">Растворимые кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, которые растворяются при взаимодействии с <sc_element sys_idtf  = "water">водой</sc_element>.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->water;;
+			*);;
 	*);
 
 =>nrel_inclusion:
@@ -36,14 +44,15 @@ soluble_acid
 	iodic_acid;
 	metaarsenious_acid;
 
-<- rrel_key_sc_element: section_acids;;
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Почти все кислоты (кроме кремниевой, например) растворяются в воде.](* <-lang_ru;; *);;
+		*);;
+*);
 
-Definition_of_soluble_acid
-=> nrel_main_idtf:
-	[Опр.(Растворимая кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->acid;;
-				->water;;
-			*);;
+<- rrel_key_sc_element: section_acids;;

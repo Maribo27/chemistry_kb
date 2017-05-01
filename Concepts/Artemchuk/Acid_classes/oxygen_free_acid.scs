@@ -1,14 +1,14 @@
 oxygen_free_acid
-        => nrel_main_idtf:
-                [oxygen-free acid](*<- lang_en;;*);
-                [бескислородная кислота](*<- lang_ru;;*);
-        <- rrel_key_sc_element:
+=> nrel_main_idtf:
+	[oxygen-free acid](*<- lang_en;;*);
+	[бескислородная кислота](*<- lang_ru;;*);
+<- rrel_key_sc_element:
 	   Definition_of_oxygen_free_acid
                 (*
-                        <- definition;;
-                        => nrel_main_idtf: [Def.(Oxygen-free acid)](*<- lang_en;;*);;
-                        => nrel_main_idtf: [Опр.(Бескислородная кислота)](*<- lang_ru;;*);;
-                        <= nrel_sc_text_translation:...
+                <- definition;;
+                => nrel_main_idtf: [Def.(Oxygen-free acid)](*<- lang_en;;*);;
+                => nrel_main_idtf: [Опр.(Бескислородная кислота)](*<- lang_ru;;*);;
+                <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
                                                 [<b>Бескислородные кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых не содержат атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
@@ -17,7 +17,13 @@ oxygen_free_acid
                                                         => nrel_format: format_html;;
                                                 *);;
                                         *);;
-                *);
+		<= nrel_using_constants: ... 
+			(* 
+				->acid;;
+				->molecule;; 
+				->elem_O;; 
+			*);;
+*);
 =>nrel_inclusion:
 	hydrobromic_acid;
 	hydrochloric_acid;
@@ -26,12 +32,3 @@ oxygen_free_acid
 	hydrosulfuric_acid;
 
 <- rrel_key_sc_element: section_acids;;
-
-Definition_of_oxygen_free_acid
-<= nrel_using_constants: ... 
-	(* 
-		->acid;;
-		->molecule;; 
-		->elem_O;; 
-	*);;
-

@@ -1,8 +1,0 @@
-section_hybridization_of_orbitals
-=> nrel_main_idtf: [Section. Hybridization of orbitals](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_hybridization_of_orbitals.html" (* <-lang_en;; *);;
-		*);;

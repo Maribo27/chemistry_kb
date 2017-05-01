@@ -1,21 +1,27 @@
 dibasic_acid
 => nrel_main_idtf:
-	[двухосновная кислота]
-	(* <- lang_ru;;	*);
-	[dibasic acid]
-	(* <- lang_en;;	*);;
-dibasic_acid
-<- rrel_key_sc_element:
-	Definition_of_dibasic_acid
+	[двухосновная кислота](*<- lang_ru;;*);
+	[dibasic acid](*<- lang_en;;*);
+<- rrel_key_sc_element:	Definition_of_dibasic_acid
 	(* 
+	=> nrel_main_idtf:[Опр.(Двухосновная кислота)](* <- lang_ru;; *);;
 	<- definition;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:"file://htmls/dibasic_acid.html" (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "dibasic_acid">Двухосновные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, содержащие два <sc_element sys_idtf  = "atom">атома</sc_element> <sc_element sys_idtf  = "elem_H">водорода</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+		(*
+			->acid;;
+			->atom;;
+			->elem_H;;
 		*);;
-	
-	*);
+*);
 
 =>nrel_inclusion:
 	carbonic_acid;
@@ -24,15 +30,15 @@ dibasic_acid
 	sulfuric_acid;
 	sulfurous_acid;
 
-<- rrel_key_sc_element: section_acids;;
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Если кислота двухосновная, то она диссоциирует в две ступени.](* <-lang_ru;; *);;
+		*);;
+*);
 
-Definition_of_dibasic_acid
-=> nrel_main_idtf:
-	[Опр.(Двухосновная кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->acid;;
-				->atom;;
-				->elem_H;;
-			*);;
+<- rrel_key_sc_element: section_acids;;
