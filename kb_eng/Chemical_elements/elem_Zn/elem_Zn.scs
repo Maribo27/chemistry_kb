@@ -1,3 +1,0 @@
-elem_Zn
-	=> nrel_main_idtf: [zinc] (* <-lang_en;;*);
-	=> nrel_idtf: [Zn] (* <-lang_en;;*);;

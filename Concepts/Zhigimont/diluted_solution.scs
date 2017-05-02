@@ -1,11 +1,13 @@
 diluted_solution
+
+<- sc_node_not_relation;
         => nrel_main_idtf:
                 [diluted solution](*<- lang_en;;*);
                 [разбавленный раствор](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_diluted_solution
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

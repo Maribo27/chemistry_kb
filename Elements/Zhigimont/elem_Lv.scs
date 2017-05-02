@@ -1,0 +1,75 @@
+elem_Lv
+
+=> nrel_main_idtf: [атом ливермория] (* <- lang_ru;; *);
+=> nrel_main_idtf: [livermorium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Lv] (* <- lang_en;; *);
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
+<- rrel_key_sc_element:
+	Definition_of_livermorium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/lv.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: 293(*<- number;;*);;
+	*);;
+*);
+
+
+<- group_sixteen;
+<- period_seven;
+
+
+=> nrel_periodic_number: one_hundred_and_sixteen;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(атом ливермория)] (* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/lv.png";;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: electron_configuration_Lv
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом ливермория, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>4</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+Definition_of_livermorium
+=> nrel_main_idtf:
+	[Опр.(атом ливермория)]
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

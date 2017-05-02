@@ -1,5 +1,7 @@
 crystal
 
+<- sc_node_not_relation;
+
 
 <= nrel_inclusion: solid;
 => nrel_inclusion: crystallite;
@@ -15,7 +17,7 @@ crystal
 <- rrel_key_sc_element:
 	Definition_of_crystal
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

@@ -1,4 +1,5 @@
 normal_salt
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[средняя соль]
 	(* <- lang_ru;; *);
@@ -10,7 +11,7 @@ normal_salt
 <- rrel_key_sc_element:
 	Definition_of_normal_salt
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

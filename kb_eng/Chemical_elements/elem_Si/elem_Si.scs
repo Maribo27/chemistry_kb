@@ -1,3 +1,0 @@
-elem_Si
-	=> nrel_main_idtf: [silicon] (* <-lang_en;;*);
-	=> nrel_idtf: [Si] (* <-lang_en;;*);;

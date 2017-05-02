@@ -1,12 +1,30 @@
 bromide
+
+<- sc_node_not_relation;
         => nrel_main_idtf:
                 [bromide](*<- lang_en;;*);
                 [бромид](*<- lang_ru;;*);
+
+<- rrel_key_sc_element: receiving_bromide
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (бромид, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Бромиды образуются при взаимодействии бромоводородной кислоты и оснований.]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
 				
 <- rrel_key_sc_element:
 	Definition_of_bromide
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

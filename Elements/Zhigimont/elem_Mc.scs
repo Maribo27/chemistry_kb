@@ -1,0 +1,72 @@
+elem_Mc
+
+=> nrel_main_idtf: [атом московия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [moscovium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Mc] (* <- lang_en;; *);
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
+<- rrel_key_sc_element:
+	Definition_of_moscovium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/mc.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: 289(*<- number;;*);;
+	*);;
+*);
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_one;
+
+
+<- group_fifteen;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_fifteen;
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(атом московия)] (* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/mc.png";;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: electron_configuration_Mc
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом московия, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>3</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+Definition_of_moscovium
+=> nrel_main_idtf:
+	[Опр.(атом московия)]
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

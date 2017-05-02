@@ -1,4 +1,5 @@
 acid_salt
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[кислая соль]
 	(* <- lang_ru;;	*);
@@ -8,7 +9,7 @@ acid_salt
 <- rrel_key_sc_element:
 	Definition_of_acid_salt
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -20,7 +21,7 @@ acid_salt
 		*);;
 	*);
 
-<- rrel_key_sc_element: receipt_of_acid_salt
+<- rrel_key_sc_element: receiving_acid_salt
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
@@ -28,9 +29,7 @@ acid_salt
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> [Кислые соли образуются при воздействии избытка кислоты на <sc_element sys_idtf="alkali">щелочь</sc_element>. В зависимости от количества молей кислоты (в данном случае — <sc_element sys_idtf="orthophosphoric_acid">ортофосфорной</sc_element>) могут образовываться дигидроортофосфаты и гидроортофосфаты:<br>
-		1. Ba(OH)<sub>2</sub> + 2H<sub>3</sub>PO<sub>4</sub> → Ba(H<sub>2</sub>PO<sub>4</sub>)<sub>2</sub> + 2H<sub>2</sub>O<br>
-		2. Ba(OH)<sub>2</sub> + H<sub>3</sub>PO<sub>4</sub> → BaHPO<sub>4</sub> + 2H<sub>2</sub>O]
+		-> [Кислые соли образуются при воздействии избытка кислоты на <sc_element sys_idtf="alkali">щелочь</sc_element>. В зависимости от количества молей кислоты (в данном случае — <sc_element sys_idtf="orthophosphoric_acid">ортофосфорной</sc_element>) могут образовываться гидроортофосфаты.]
 		(* 
 		<-lang_ru;;
 		=> nrel_format: format_html;;

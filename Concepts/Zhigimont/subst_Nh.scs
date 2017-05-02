@@ -1,0 +1,111 @@
+subst_Nh
+<- sc_node_not_relation;
+=> nrel_main_idtf: [нихоний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [nihonium] (* <- lang_en;; *);
+<- rrel_key_sc_element: definition_of_subst_Nh
+(* 
+	=> nrel_main_idtf: [Опр.(нихоний)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Nh">Нихоний</sc_element></b> — тяжёлый легкоплавкий непереходный <sc_element sys_idtf="radioactive_substance">радиоактивный</sc_element> <sc_element sys_idtf="metal">металл</sc_element>.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> radioactive_substance;;
+		-> metal;;
+	*);;
+*);
+
+<= nrel_inclusion: chemical_substance;
+=> nrel_inclusion: elem_Nh;
+
+
+<- rrel_key_sc_element: receiving_Nh_from_Mc
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нихоний получают в результате α-распада изотопов московия.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_Nh_from_Np
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нихоний получают в результате ядерной реакции нептуния.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_Nh_from_Bi
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Нихоний получают в результате ядерной реакции висмута.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 700 (*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg:...
+		(*
+			=> nrel_main_idtf: [7,61] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_kg: 130 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1430 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm: 16 (*<- number;;*);;
+	*);;
+*);;

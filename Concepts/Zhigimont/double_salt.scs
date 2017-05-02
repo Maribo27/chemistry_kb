@@ -1,5 +1,7 @@
 double_salt
 
+<- sc_node_not_relation;
+
 <= nrel_inclusion: solid;
 
 => nrel_main_idtf:
@@ -12,7 +14,7 @@ double_salt
 <- rrel_key_sc_element:
 	Definition_of_double_salt
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

@@ -1,5 +1,7 @@
 polonium_II_dibromide
 
+<- sc_node_not_relation;
+
 <-bromide;
 <-crystal;
 <-salt;
@@ -16,10 +18,20 @@ polonium_II_dibromide
 	[PoBr2] 
 	(* <-lang_en;;*);
 
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 275 (*<- number;;*);;
+	*);;
+*);
+
 <- rrel_key_sc_element:
 	Definition_of_polonium_II_dibromide
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

@@ -1,3 +1,0 @@
-elem_Ir
-	=> nrel_main_idtf: [iridium] (* <-lang_en;;*);
-	=> nrel_idtf: [Ir] (* <-lang_en;;*);;

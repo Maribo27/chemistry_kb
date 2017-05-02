@@ -1,4 +1,6 @@
 sulfate
+
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[сульфат]
 	(* <- lang_ru;; *);
@@ -6,10 +8,26 @@ sulfate
 	(* <- lang_en;; *);
 
 
+<- rrel_key_sc_element: receiving_sulfate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сульфат, получение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Сульфаты образуются при взаимодействии серной кислоты и оснований.]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
 <- rrel_key_sc_element:
 	Definition_of_sulfate
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

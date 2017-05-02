@@ -18,7 +18,7 @@ chemical_substance
 <- rrel_key_sc_element:
 	Definition_of_chemical_substance
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

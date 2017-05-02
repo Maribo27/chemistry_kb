@@ -1,6 +1,7 @@
 binary_compound
 
 
+<- sc_node_not_relation;
 <= nrel_inclusion: chemical_compound;
 
 => nrel_main_idtf:
@@ -12,7 +13,7 @@ binary_compound
 <- rrel_key_sc_element:
 	Definition_of_binary_compound
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

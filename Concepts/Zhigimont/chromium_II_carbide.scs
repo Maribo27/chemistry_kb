@@ -1,5 +1,8 @@
 chromium_II_carbide
 
+
+<- sc_node_not_relation;
+
 <-salt;
 <-carbide;
 <-solid;
@@ -19,7 +22,7 @@ chromium_II_carbide
 <- rrel_key_sc_element:
 	Definition_of_chromium_II_carbide
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,6 +32,53 @@ chromium_II_carbide
 		   *);;
 		*);;
 	*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [6,68] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_chromium_II_carbide_from_Cr
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (карбид хрома(II), получение*, хром, углерод(вещество))](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Карбонаты образуются непосредственным насыщением хрома углеродом.]
+		(* 
+		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 1895 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 3800 (*<- number;;*);;
+	*);;
+*);
 
 
 <- rrel_key_sc_element:

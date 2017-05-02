@@ -5,7 +5,7 @@ rrel_solvent
 <- rrel_key_sc_element:
 	Definition_of_rrel_solvent
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

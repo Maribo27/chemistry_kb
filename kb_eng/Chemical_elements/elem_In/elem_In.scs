@@ -1,3 +1,0 @@
-elem_In
-	=> nrel_main_idtf: [indium] (* <-lang_en;;*);
-	=> nrel_idtf: [In] (* <-lang_en;;*);;

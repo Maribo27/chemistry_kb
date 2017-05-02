@@ -1,0 +1,78 @@
+elem_Lr
+
+=> nrel_main_idtf: [атом лоуренсия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lawrencium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Lr] (* <- lang_en;; *);
+
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
+<- rrel_key_sc_element:
+	Definition_of_lawrencium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/lr.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: 266(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:282(*<- number;;*);;
+	*);;
+*);
+<- oxidation_state_plus_three;
+=> nrel_periodic_number: one_hundred_and_three;
+
+<- rrel_key_sc_element: ...
+(*
+		
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(атом лоуренсия)] (* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/lr.png";;
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: electron_configuration_Lr
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом лоуренсия, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Rn]5f<sup>14</sup>6d<sup>1</sup>7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+Definition_of_lawrencium
+=> nrel_main_idtf:
+	[Опр.(атом лоуренсия)]
+	(* <- lang_ru;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				nrel_group
+				
+			};;

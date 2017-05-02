@@ -1,3 +1,0 @@
-elem_O
-	=> nrel_main_idtf: [oxygen] (* <-lang_en;;*);
-	=> nrel_idtf: [O] (* <-lang_en;;*);;

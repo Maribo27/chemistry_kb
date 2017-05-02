@@ -1,11 +1,12 @@
 solution
+<- sc_node_not_relation;
         => nrel_main_idtf:
                 [solution](*<- lang_en;;*);
                 [раствор](*<- lang_ru;;*);
     <- rrel_key_sc_element:
 	Definition_of_solution
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

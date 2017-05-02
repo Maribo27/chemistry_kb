@@ -8,7 +8,7 @@ concentrated_solution
 <- rrel_key_sc_element:
 	Definition_of_concentrated_solution
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

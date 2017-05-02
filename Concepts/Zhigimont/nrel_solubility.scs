@@ -6,7 +6,7 @@ nrel_solubility
 <- rrel_key_sc_element:
 	Definition_of_nrel_solubility
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 

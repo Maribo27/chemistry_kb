@@ -1,5 +1,7 @@
 tantalum_carbide
 
+<- sc_node_not_relation;
+
 <-color_brown;
 <-salt;
 <-carbide;
@@ -20,7 +22,7 @@ tantalum_carbide
 <- rrel_key_sc_element:
 	Definition_of_tantalum_carbide
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,6 +32,38 @@ tantalum_carbide
 		   *);;
 		*);;
 	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [14,4] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 3880 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 5500 (*<- number;;*);;
+	*);;
+*);
 
 
 <- rrel_key_sc_element:
