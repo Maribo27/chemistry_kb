@@ -30,6 +30,12 @@ caesium_chloride
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_chloride">Caesium chloride</sc_element></b> is an inorganic <sc_element sys_idtf="binary_compound">cinary compound</sc_element> of <sc_element sys_idtf="elem_Cs">caesium</sc_element> and <sc_element sys_idtf="elem_Cl">chlorine</sc_element>, caesium <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrochloric_acid">hydrochloric acid</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 
@@ -38,7 +44,10 @@ caesium_chloride
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(хлорид цезия, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(caesium_chloride, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -64,10 +73,12 @@ caesium_chloride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);;
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);
+		[Stat.(caesium chloride, receiving*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Хлорид цезия получают из карбоната цезия.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium chloride is received from caesium carbonate.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -75,10 +86,12 @@ caesium_chloride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);;
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);
+		[Stat.(caesium chloride, receiving*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Хлорид цезия получают из гидроксида цезия.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium chloride is received from caesium hydroxide.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -117,14 +130,15 @@ caesium_chloride
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлорид цезия, токсичность*)](*<- lang_ru;;*);;
+			[Утв. (хлорид цезия, токсичность*)](*<- lang_ru;;*);
+			[Stat. (caesium chloride, toxicity*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[Хлорид цезия является низко токсичным соединением, имеющим низкую степень опасности для человека.] 
-		(* 
-		<-lang_ru;;
-		*);;
+		(* <-lang_ru;;*);;
+		-> rrel_example:[Caesium chloride is a low toxic compound having a low degree of danger to humans.] 
+		(* <-lang_en;;*);;
 		*);;
 	*);;
 
@@ -132,6 +146,8 @@ Definition_of_caesium_chloride
 => nrel_main_idtf:
 	[Опр.(хлорид цезия)]
 	(* <- lang_ru;;	*);
+	[Def.(caesium chloride)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> binary_compound;;

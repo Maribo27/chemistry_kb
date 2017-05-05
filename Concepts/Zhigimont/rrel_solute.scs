@@ -16,6 +16,12 @@ rrel_solute
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="rrel_solute">Solute</sc_element></b> is a component of a liquid or solid <sc_element sys_idtf="solution">solition</sc_element>that is present in small amount.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);;
 
@@ -24,6 +30,8 @@ Definition_of_rrel_solute
 => nrel_main_idtf:
 	[Опр.(растворитель')]
 	(* <- lang_ru;;	*);
+	[Def.(solute')]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> solution;;

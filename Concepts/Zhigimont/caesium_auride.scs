@@ -23,7 +23,15 @@ caesium_auride
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://html/CsAu.html" (* <-lang_ru;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_auride">Аури́д це́зия</sc_element></b> — <sc_element sys_idtf="binary_compound">бинарное</sc_element> неорганическое <sc_element sys_idtf="chemical_compound">химическое соединение</sc_element> <sc_element sys_idtf="elem_Cs">цезия</sc_element> и <sc_element sys_idtf="elem_Au">золота</sc_element>.] 
+		(* <-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_auride">Caesium auride</sc_element></b> is a <sc_element sys_idtf="binary_compound">binary</sc_element> inorganic <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Cs">caesium</sc_element> and <sc_element sys_idtf="elem_Au">gold</sc_element>.] 
+		(* <-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 
@@ -32,7 +40,10 @@ caesium_auride
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(аурид цезия, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(caesium auride, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -54,10 +65,12 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(аурид цезия, взаимодействие*, кислород(вещество))](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, взаимодействие*, кислород)](*<- lang_ru;;*);
+		[Stat.(caesium auride, interaction*, oxygen)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Аурид цезия легко реагирует с кислородом.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride interacts with oxygen.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -65,10 +78,12 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(аурид цезия, взаимодействие*, вода)](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, взаимодействие*, вода)](*<- lang_ru;;*);
+		[Stat.(caesium auride, interaction*, water)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Аурид цезия реагирует с водой.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride interacts with water.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -76,10 +91,12 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(аурид цезия, взаимодействие*, галоген)](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, взаимодействие*, галоген)](*<- lang_ru;;*);
+		[Stat.(caesium auride, interaction*, halogen)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Аурид цезия реагирует с галогенами.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride interacts with halogens.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -87,10 +104,12 @@ caesium_auride
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(аурид цезия, реакция обмена*)](*<- lang_ru;;*);;
+		[Утв.(аурид цезия, реакция обмена*)](*<- lang_ru;;*);
+		[Stat.(caesium auride, exchange reaction*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Со многими соединениями идут реакции обмена.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium auride enters into exchange reactions.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -120,6 +139,8 @@ Definition_of_caesium_auride
 => nrel_main_idtf:
 	[Опр.(аурид цезия)]
 	(* <- lang_ru;;	*);
+	[Def.(caesium auride)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; binary_compound; elem_Cs; elem_Au;;

@@ -4,7 +4,9 @@ subst_Np
 => nrel_main_idtf: [neptunium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Np
 (* 
-	=> nrel_main_idtf: [Опр.(нептуний)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: 
+	[Опр.(нептуний)] (* <- lang_ru;; *);
+	[Def.(neptunium)] (* <- lang_en;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -12,6 +14,13 @@ subst_Np
 			[<b><sc_element sys_idtf="subst_Np">Нептуний</sc_element></b> — ковкий, сравнительно мягкий <sc_element sys_idtf="radioactive_substance">радиоактивный</sc_element> <sc_element sys_idtf="metal">металл</sc_element> с <sc_element sys_idtf  = "color_white_silver">серебристым блеском</sc_element>.] 
 			(*
 				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Np">Neptunium</sc_element></b> is a forgeable, relatively soft <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="metal">metal</sc_element> with <sc_element sys_idtf  = "color_white_silver">silver shine</sc_element>.] 
+			(*
+				<-lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;
@@ -29,7 +38,9 @@ subst_Np
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(нептуний , твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: 
+	[Рис.(нептуний, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(neptunium, solid)] (* <- lang_en;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Np.jpg"
@@ -44,10 +55,13 @@ subst_Np
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(нептуний , получение*)](*<- lang_ru;;*);;
+		[Утв.(нептуний, получение*)](*<- lang_ru;;*);
+		[Stat.(neptunium, receiving*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Нептуний получают восстановлением фторида нептуния парами бария при 1600 К.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+
+		-> rrel_example:[ Neptunium is received by restoration of neptunium flupride with barium vapor at 1600 К.] (*<- lang_en;; => nrel_format: format_html;;*);;
 	*);;
 *);
 

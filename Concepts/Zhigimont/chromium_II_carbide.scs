@@ -30,6 +30,11 @@ chromium_II_carbide
 		(* <-lang_ru;; 
 		   => nrel_format: format_html;;
 		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="chromium_II_carbide">Chromium(II) carbide</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Cr">chrom</sc_element> and <sc_element sys_idtf="elem_C">carbon</sc_element>. ]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
 		*);;
 	*);
 
@@ -50,15 +55,16 @@ chromium_II_carbide
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (карбид хрома(II), получение*, хром, углерод(вещество))](*<- lang_ru;;*);;
+			[Утв. (карбид хрома(II), получение*, хром, углерод)](*<- lang_ru;;*);
+			[Stat. (chromium(II) carbide, receiving*, chrom, carbon)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> [Карбонаты образуются непосредственным насыщением хрома углеродом.]
-		(* 
-		<-lang_ru;;
-		=> nrel_format: format_html;;
-		*);;
+		-> rrel_example:[Карбонаты образуются непосредственным насыщением хрома углеродом.]
+		(* <-lang_ru;;*);;
+
+		-> rrel_example:[Carbonates are formed by direct saturation of chromium with carbon.]
+		(* <-lang_en;;*);;
 		*);;
 	*);
 
@@ -84,7 +90,10 @@ chromium_II_carbide
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(карбид хрома(II) , твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(chromium(II) carbide, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -102,6 +111,8 @@ Definition_of_chromium_II_carbide
 => nrel_main_idtf:
 	[Опр.(карбид хрома(II))]
 	(* <- lang_ru;;	*);
+	[Def.(chromium(II) carbide)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; elem_Cr; elem_C;;

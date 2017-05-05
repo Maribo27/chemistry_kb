@@ -16,7 +16,13 @@ elem_No
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/no.html" (* <-lang_ru;; *);;
+		-> rrel_example:[
+<b><sc_element sys_idtf  = "elem_No">Нобелий</sc_element> </b>- искусственно полученный трансфермиевый <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>  <sc_element sys_idtf  = "nrel_group">группы</sc_element> актиноидов. ] 
+(* <-lang_ru;; => nrel_format: format_html;;*);;
+
+-> rrel_example:[
+<b><sc_element sys_idtf  = "elem_No">Nobelium</sc_element> </b> is an artificially received transfermium <sc_element sys_idtf  = "chemical_element">chemical element</sc_element>  of the actinoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ] 
+(* <-lang_en;; => nrel_format: format_html;;*);;
 		*);;
 	
 	*);
@@ -52,7 +58,8 @@ elem_No
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(атом нобелия)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом нобелия)] (* <- lang_ru;;	*);
+	[Pic.(nobelium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/no.png";;
@@ -63,7 +70,8 @@ elem_No
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(атом нобелия, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом нобелия, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(nobelium atom, electronic configuration*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn] 5f<sup>14</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -77,6 +85,8 @@ Definition_of_nobelium
 => nrel_main_idtf:
 	[Опр.(атом нобелия)]
 	(* <- lang_ru;;	*);
+	[Def.(nobelium atom)]
+	(* <- lang_en;;	*);
 
 <= nrel_using_constants:
 			{

@@ -14,6 +14,12 @@ rrel_solvent
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Solvent</sc_element></b> is a <sc_element sys_idtf="liquid">liquid</sc_element>, <sc_element sys_idtf="solid">solid</sc_element> or <sc_element sys_idtf="gas">gas</sc_element> <sc_element sys_idtf="hemical_substance">substancec</sc_element> that is able to <sc_element sys_idtf="solubility">dissolve</sc_element> other solid, liquid or gas substances.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 	
@@ -22,14 +28,15 @@ rrel_solvent
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (растворитель', применение*)](*<- lang_ru;;*);;
+			[Утв. (растворитель', применение*)](*<- lang_ru;;*);
+			[Stat. (solvent', application*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Обычно используются как органические растворители в химчистках (например, тетрахлорэтилен), как бытовые растворители (например, ацетон, скипидар), для удаления лаков и клея (ацетон, метиловый спирт, этилацетат), в моющих средствах (цитрусовые терпены), в парфюмерии (этанол) и в химическом синтезе.]
-			(* 
-			<-lang_ru;;
-			=> nrel_format: format_html;;
-			*);;
+			(* <-lang_ru;;*);;
+
+			-> rrel_example:[Solvents are usually used as organic solvents in dry cleaners (for example, tetrachlorethylene), as household solvents (for example, acetone, turpentine), for removing varnishes and glues (acetone, methyl, ethyl acetate), in detergents (citrus terpenes), in perfumes (ethanol ) and in chemical synthesis.]
+			(* <-lang_en;;*);;
 		*);;
 	*);
 	
@@ -42,6 +49,8 @@ Definition_of_rrel_solvent
 => nrel_main_idtf:
 	[Опр.(растворитель')]
 	(* <- lang_ru;;	*);
+	[Def.(solvent')]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> liquid; solid; gas; substance; solubility;;
@@ -50,4 +59,6 @@ Definition_of_rrel_solvent
 solvent_state
 => nrel_main_idtf:
 	[Разбиение растворителей по структуре]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+	[Partitioning solvents by structure]
+	(* <- lang_en;;	*);;

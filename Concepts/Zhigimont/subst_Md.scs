@@ -4,7 +4,9 @@ subst_Md
 => nrel_main_idtf: [mendelevium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Md
 (* 
-	=> nrel_main_idtf: [Опр.(менделевий)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: 
+	[Опр.(менделевий)] (* <- lang_ru;; *);
+	[Def.(mendelevium)] (* <- lang_en;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -12,6 +14,13 @@ subst_Md
 			[<b><sc_element sys_idtf="subst_Md">Менделевий</sc_element></b> — искусственно полученное <sc_element sys_idtf="radioactive_substance">радиоактивное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, не встречающееся в природе.] 
 			(*
 				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Md">Mendelevium</sc_element></b> is an artificially received <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="chemical_substance">substance</sc_element>that doesn't exist in nature.] 
+			(*
+				<-lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;

@@ -36,6 +36,11 @@ sodium_dichromate
 		(* <-lang_ru;; 
 		   => nrel_format: format_html;;
 		   *);;
+
+		-> rrel_example:[<b><sys_idtf="sodium_dichromate">Sodium dichromate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="elem_Na">sodium</sc_element> <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="dichromic_acid">dichromic acid</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
 		*);;
 	*);
 
@@ -43,7 +48,10 @@ sodium_dichromate
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(дихромат натрия , твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(sodium dichromate, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -81,16 +89,22 @@ sodium_dichromate
 => nrel_applying: leather_industry; electronics;;
 
 dichromic_acid
-=> nrel_main_idtf: [дихромовая кислота](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[дихромовая кислота](* <- lang_ru;;	*);
+[dichromic acid](* <- lang_en;;	*);;
 
 carcinogen
-=> nrel_main_idtf: [канцероген](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[канцероген](* <- lang_ru;;	*);
+[carcinogen](* <- lang_en;;	*);;
 
 
 Definition_of_sodium_dichromate
 => nrel_main_idtf:
 	[Опр.(дихромат натрия)]
 	(* <- lang_ru;;	*);
+	[Def.(sodium dichromate)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; elem_Na; salt; dichromic_acid;;

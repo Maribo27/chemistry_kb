@@ -15,6 +15,12 @@ solution
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="solution">Solution</sc_element></b> — homogeneous <sc_element sys_idtf="mixture">mixture</sc_element> that consists of the partcles of a <sc_element sys_idtf="rrel_solute">solute</sc_element>, <sc_element sys_idtf="rrel_solvent">solvent</sc_element> and their interaction products.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 <= nrel_subdividing:
@@ -38,6 +44,8 @@ Definition_of_solution
 => nrel_main_idtf:
 	[Опр.(раствор)]
 	(* <- lang_ru;;	*);
+	[Def.(solution)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> mixture; rrel_solvent; atom; molecule; ion;;
@@ -48,9 +56,13 @@ Definition_of_solution
 solution_concentration
 => nrel_main_idtf:
 	[Разбиение растворов по концентрации]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+	[Partitioning solutions by concentration]
+	(* <- lang_en;;	*);;
 	
 solution_molecule_size
 => nrel_main_idtf:
 	[Разбиение растворов по размеру частиц]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+	[Partitioning solutions by particles' size]
+	(* <- lang_en;;	*);;

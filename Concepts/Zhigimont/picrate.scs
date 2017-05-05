@@ -23,15 +23,13 @@ picrate
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (пикрат, получение*)](*<- lang_ru;;*);;
+			[Утв. (пикрат, получение*)](*<- lang_ru;;*);
+			[Stat. (picrate, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> [Пикраты образуются при взаимодействии пикриновой кислоты и оснований.]
-		(* 
-		<-lang_ru;;
-		=> nrel_format: format_html;;
-		*);;
+		-> rrel_example:[Пикраты образуются при взаимодействии пикриновой кислоты и оснований.](* <-lang_ru;;	*);;
+		-> rrel_example:[Picrates are received from picric acid and basis interaction.](* <-lang_en;;	*);;
 		*);;
 	*);
 
@@ -47,6 +45,12 @@ picrate
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="picrate">Picrate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="picric_acid">picric acid</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);;
 
@@ -54,6 +58,8 @@ Definition_of_picrate
 => nrel_main_idtf:
 	[Опр.(пикрат)]
 	(* <- lang_ru;;	*);
+	[Def.(picrate)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; salt; picric_acid;;

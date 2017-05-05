@@ -17,6 +17,12 @@ complex_substance
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Complex substance</sc_element></b> is a <sc_element sys_idtf="substance">substance</sc_element> consisting of at least 2 different <sc_element sys_idtf="chemical_element">chemical elements'</sc_element> <sc_element sys_idtf="atom">atoms</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 	
@@ -32,6 +38,8 @@ complex_substance
 => nrel_main_idtf:
 	[Опр.(сложное вещество)]
 	(* <- lang_ru;;	*);
+	[Def.(complex substance)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> substance; atom; chemical_element;;
@@ -41,5 +49,7 @@ complex_substance
 complex_substance_structure
 => nrel_main_idtf:
 	[Разбиение сложных веществ по структуре]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+	[Partitioning complex substances by structure]
+	(* <- lang_en;;	*);;
 

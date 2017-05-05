@@ -1,5 +1,5 @@
-sc_node_norole_relation -> nrel_solubility;;
 nrel_solubility
+<- sc_node_norole_relation;
 => nrel_main_idtf:  [solubility*](*<- lang_en;;*);
 						[растворимость*](*<- lang_ru;;*);
 						
@@ -13,6 +13,12 @@ nrel_solubility
 		-> rrel_example:[<b><sc_element sys_idtf="nrel_solubility">Раствори́мость</sc_element></b> — способность <sc_element sys_idtf="substance">вещества</sc_element> образовывать <sc_element sys_idtf="solution">растворы</sc_element>.] 
 		(* 
 		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="nrel_solubility">Solubility</sc_element></b> is an ability of a <sc_element sys_idtf="substance">substance</sc_element> to form <sc_element sys_idtf="solution">solutions</sc_element>.] 
+		(* 
+		<-lang_en;; 
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -40,6 +46,8 @@ Definition_of_nrel_solubility
 => nrel_main_idtf:
 	[Опр.(растворимость*)]
 	(* <- lang_ru;;	*);
+	[Def.(solubility*)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> substance; solution;;

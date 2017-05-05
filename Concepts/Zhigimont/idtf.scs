@@ -135,14 +135,6 @@ phosphate
 	[phosphate]
 	(* <- lang_en;; *);;
 
-acidic_oxide
-=> nrel_main_idtf:
-	[кислотный оксид]
-	(* <- lang_ru;; *);
-	[acidic oxide]
-	(* <- lang_en;; *);;
-
-
 soluble_salt
 => nrel_main_idtf:
 	[растворимая соль]
@@ -379,22 +371,36 @@ patronized_explosive
 	(* <- lang_ru;;	*);;
 
 war_industry
-=> nrel_main_idtf: [военная промышленность](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[военная промышленность](* <- lang_ru;;	*);
+[war industry](* <- lang_en;;	*);;
 
 mining
-=> nrel_main_idtf: [горное дело](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[горное дело](* <- lang_ru;;	*);
+[mining](* <- lang_en;;	*);;
 
 construction
-=> nrel_main_idtf: [строительство](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[строительство](* <- lang_ru;;	*);
+[construction](* <- lang_en;;	*);;
 
 seismic_survey
-=> nrel_main_idtf: [сейсморазведка](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[сейсморазведка](* <- lang_ru;;	*);
+[seismic survey](* <- lang_en;;	*);;
 
 material_processing
-=> nrel_main_idtf: [обработка материалов](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[обработка материалов](* <- lang_ru;;	*);
+[material processing](* <- lang_en;;	*);;
 
 fertilizer
-=> nrel_main_idtf: [удобрения](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[удобрения](* <- lang_ru;;	*);
+[fertilizer](* <- lang_en;;	*);;
 
 medicine
-=> nrel_main_idtf: [медицина](* <- lang_ru;;	*);;
+=> nrel_main_idtf: 
+[медицина](* <- lang_ru;;	*);
+[medicine](* <- lang_en;;	*);;

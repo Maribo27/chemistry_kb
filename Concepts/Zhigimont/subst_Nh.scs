@@ -4,7 +4,9 @@ subst_Nh
 => nrel_main_idtf: [nihonium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Nh
 (* 
-	=> nrel_main_idtf: [Опр.(нихоний)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: 
+	[Опр.(нихоний)] (* <- lang_ru;; *);
+	[Def.(nihonium)] (* <- lang_en;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -12,6 +14,13 @@ subst_Nh
 			[<b><sc_element sys_idtf="subst_Nh">Нихоний</sc_element></b> — тяжёлый легкоплавкий непереходный <sc_element sys_idtf="radioactive_substance">радиоактивный</sc_element> <sc_element sys_idtf="metal">металл</sc_element>.] 
 			(*
 				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Nh">Nihonium</sc_element></b> is a heavy fusible intransitive <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="metal">metal</sc_element>.] 
+			(*
+				<-lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;
@@ -30,10 +39,13 @@ subst_Nh
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
+		[Утв.(нихоний, получение*)](*<- lang_ru;;*);
+		[Stat.(nihonium, receiving*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:[ Нихоний получают в результате α-распада изотопов московия.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		-> rrel_example:[ Нихоний получают в результате α-распада изотопов московия.] (*<- lang_ru;;*);;
+
+		-> rrel_example:[ Nihonium can be received by moscovium's isotopes' α-decay.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -41,10 +53,13 @@ subst_Nh
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);
+		[Stat.(nihonium, receiving*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:[ Нихоний получают в результате ядерной реакции нептуния.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		-> rrel_example:[ Нихоний получают в результате ядерной реакции нептуния.] (*<- lang_ru;;*);;
+
+		-> rrel_example:[ Nihonium can be received in neptunium's nuclear reaction.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -52,10 +67,13 @@ subst_Nh
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(нихоний , получение*)](*<- lang_ru;;*);;
+		[Утв.(нихоний , получение*)](*<- lang_ru;;*);
+		[Stat.(nihonium, receiving*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:[ Нихоний получают в результате ядерной реакции висмута.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		-> rrel_example:[ Нихоний получают в результате ядерной реакции висмута.] (*<- lang_ru;;*);;
+
+		-> rrel_example:[ Nihonium can be received in bismuth's nuclear reaction.] (*<- lang_en;;*);;
 	*);;
 *);
 

@@ -16,7 +16,11 @@ elem_Md
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/md.html" (* <-lang_ru;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Md">Менделевий</sc_element></b> - трансфермиевый <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>  <sc_element sys_idtf  = "nrel_group">группы</sc_element> актиноидов. ] 
+		(* <-lang_ru;; => nrel_format: format_html;;*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Md">Mendelevium</sc_element></b> is a transfermium <sc_element sys_idtf  = "chemical_element">chemical element</sc_element>  of actinoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ] 
+		(* <-lang_en;; => nrel_format: format_html;;*);;
 		*);;
 	
 	*);
@@ -46,7 +50,8 @@ elem_Md
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(атом менделевия)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом менделевия)] (* <- lang_ru;;	*);
+	[Pic.(mendelevium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/md.png";;
@@ -59,7 +64,8 @@ elem_Md
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(атом менделевия, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом менделевия, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(mendelevium atom, electronic configuration*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ 5f<sup>13</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -73,6 +79,8 @@ Definition_of_mendelevium
 => nrel_main_idtf:
 	[Опр.(атом менделевия)]
 	(* <- lang_ru;;	*);
+	[Def.(mendelevium atom)]
+	(* <- lang_en;;	*);
 	
 <= nrel_using_constants:
 			{

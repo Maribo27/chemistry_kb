@@ -17,6 +17,12 @@ elementary_substance
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Elementary substancé</sc_element></b> is a <sc_element sys_idtf="substance">substance</sc_element> that consists only of <sc_element sys_idtf="atom">atoms</sc_element> of one <sc_element sys_idtf="chemical_element">chemical element</sc_element>.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 
@@ -30,7 +36,8 @@ elementary_substance
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (простое вещество, аллотропия*)](*<- lang_ru;;*);;
+			[Утв. (простое вещество, аллотропия*)](*<- lang_ru;;*);
+			[Stat. (elementary substance, allotropy*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
@@ -40,6 +47,13 @@ elementary_substance
 		<-lang_ru;;
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[One chemical element often can form multiple types of elementary substances (<sc_element sys_idtf="nrel_allotropy">allotropy</sc_element>) which are called allotropic modifications. The phenomenon of allotropy can be caused either by the different composition of the molecules of a given element (<i>composition allotropy</i>) or different molecular structure and the way molecules (atoms) are arranged in <sc_element sys_idtf="crystal">crystals</sc_element> (<i>form allotropy</i>). The ability of the element to form the corresponding allotropic modifications is due to the structure of the atom, which determines the type of <sc_element sys_idtf="chemical_bond">chemical bond</sc_element>, molecule structure and crystals.
+		Various allotropic modifications can pass into each other. For a given chemical element, its allotropic modifications always differ in their physical properties and chemical activity (for example, ozone is more active than oxygen, diamond's <sc_element sys_idtf="nrel_melting_temperature">melting temperature</sc_element> is higher than fullerene's).] 
+		(* 
+		<-lang_en;;
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);;
 
@@ -47,6 +61,8 @@ Definition_of_elementary_substance
 => nrel_main_idtf:
 	[Опр.(простое вещество)]
 	(* <- lang_ru;;	*);
+	[Def.(elementary substance)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> substance; atom; chemical_element;;
@@ -55,5 +71,7 @@ Definition_of_elementary_substance
 
 elementary_substance_chemical_bond
 => nrel_main_idtf:
-	[Разбиение по типу химической связи между атомами]
-	(* <- lang_ru;; *);;
+	[Разбиение простых веществ по типу химической связи между атомами]
+	(* <- lang_ru;; *);
+	[Partitioning elementary substances by atom chemical bond type]
+	(* <- lang_en;; *);;
