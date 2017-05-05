@@ -33,7 +33,7 @@ babbit
 => nrel_alloy_component: elem_Ca;
 => nrel_alloy_component: elem_Na;
 => nrel_alloy_component: elem_Mg;
-=> nrel_density_of_substance: 7400;
+
 
 => nrel_melting_temperature:...
 	(*

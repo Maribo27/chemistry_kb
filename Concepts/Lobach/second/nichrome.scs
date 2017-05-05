@@ -27,7 +27,6 @@ nichrome
 => nrel_alloy_component: elem_Mg;
 => nrel_alloy_component: elem_Si;
 => nrel_alloy_component: elem_Fe;
-=> nrel_density_of_substance: 8200;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;

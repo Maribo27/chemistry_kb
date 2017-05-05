@@ -1,4 +1,7 @@
 elem_Cm
+=> nrel_main_idtf:
+	[curium atom](*<- lang_en;;*);
+	[атом кюрия](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_curium
 	(* 
@@ -66,7 +69,7 @@ elem_Cm
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент кюрий)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом кюрия)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

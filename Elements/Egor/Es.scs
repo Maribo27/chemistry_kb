@@ -1,4 +1,7 @@
 elem_Es
+=> nrel_main_idtf:
+	[einsteinium atom](*<- lang_en;;*);
+	[атом эйнштейния](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_einsteinium
 	(* 
@@ -66,7 +69,7 @@ elem_Es
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент эйнштейний)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом эйнштейния)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

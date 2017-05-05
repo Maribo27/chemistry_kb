@@ -1,4 +1,7 @@
 elem_Cu
+=> nrel_main_idtf:
+	[cuprum atom](*<- lang_en;;*);
+	[атом меди](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_cuprum
 	(* 
@@ -74,7 +77,7 @@ elem_Cu
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент медь)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом меди)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
