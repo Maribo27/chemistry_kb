@@ -1,0 +1,116 @@
+bromination
+=> nrel_main_idtf: 
+[бромирование](* <- lang_ru;; *);
+[bromination](* <- lang_en;; *);;
+
+photography
+=> nrel_main_idtf: 
+[фотография](* <- lang_ru;;	*);
+[photography](* <- lang_en;; *);;
+
+electronics
+=> nrel_main_idtf: 
+[электроника](* <- lang_ru;;	*);
+[electronics](* <- lang_en;;	*);;
+
+leather_industry
+=> nrel_main_idtf: 
+[кожевенная промышленность](* <- lang_ru;; *);
+[leather industry](* <- lang_en;; *);;
+
+textile_industry
+=> nrel_main_idtf: 
+[текстильная промышленность](* <- lang_ru;; *);
+[textile industry](* <- lang_en;; *);;
+
+flotation
+=> nrel_main_idtf: 
+[флотирование](* <- lang_ru;; *);
+[flotation](* <- lang_en;; *);;
+
+war_industry
+=> nrel_main_idtf: 
+[военная промышленность](* <- lang_ru;;	*);
+[war industry](* <- lang_en;;	*);;
+
+mining
+=> nrel_main_idtf: 
+[горное дело](* <- lang_ru;;	*);
+[mining](* <- lang_en;;	*);;
+
+construction
+=> nrel_main_idtf: 
+[строительство](* <- lang_ru;;	*);
+[construction](* <- lang_en;;	*);;
+
+seismic_survey
+=> nrel_main_idtf: 
+[сейсморазведка](* <- lang_ru;;	*);
+[seismic survey](* <- lang_en;;	*);;
+
+material_processing
+=> nrel_main_idtf: 
+[обработка материалов](* <- lang_ru;;	*);
+[material processing](* <- lang_en;;	*);;
+
+fertilizer
+=> nrel_main_idtf: 
+[удобрения](* <- lang_ru;;	*);
+[fertilizer](* <- lang_en;;	*);;
+
+medicine
+=> nrel_main_idtf: 
+[медицина](* <- lang_ru;;	*);
+[medicine](* <- lang_en;;	*);;
+
+metallurgy
+=> nrel_main_idtf: 
+[металлургия]
+(* <- lang_ru;;	*);
+[metallurgy]
+(* <- lang_en;;	*);;
+
+agriculture <- sc_node_not_relation;
+	=> nrel_main_idtf:[земледелие](* <- lang_ru;; *);;
+cooking <- sc_node_not_relation;
+	=> nrel_main_idtf:[приготовление пищи](* <- lang_ru;; *);;
+heat_transfer_agent <- sc_node_not_relation;
+	=> nrel_main_idtf:[теплоноситель](* <- lang_ru;; *);;
+moderator <- sc_node_not_relation;
+	=> nrel_main_idtf:[замедлитель](* <- lang_ru;; *);;
+tool <- sc_node_not_relation;
+	=> nrel_main_idtf:[инструмент](* <- lang_ru;; *);;
+grease <- sc_node_not_relation;
+	=> nrel_main_idtf:[смазка](* <- lang_ru;; *);;
+
+chemical_industry=> nrel_main_idtf:
+	[химическая промышленность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+food_industry=> nrel_main_idtf:
+	[пищевая промышленность](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+margarine_production=> nrel_main_idtf:
+	[производство маргарина](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+food_additive_E949=> nrel_main_idtf:
+	[пищевая добавка E949](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+meteorology=> nrel_main_idtf:
+	[метеорология](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+rocket_fuel=> nrel_main_idtf:
+	[ракетное топливо](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+electric_power_industry=> nrel_main_idtf:
+	[электроэнергетика](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+aeronautics_filling=> nrel_main_idtf:
+	[аэронавтика](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+breathing_mixture=> nrel_main_idtf:
+	[дыхательная смесь](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+geology=> nrel_main_idtf:
+	[геология](* <- lang_ru;; *);
+	<- sc_node_not_relation;;

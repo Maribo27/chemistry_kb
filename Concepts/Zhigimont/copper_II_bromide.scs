@@ -91,14 +91,6 @@ copper_II_bromide
 	
 => nrel_applying: bromination; photography;;
 
-bromination
-=> nrel_main_idtf: 
-[бромирование](* <- lang_ru;; *);
-[bromination](* <- lang_en;; *);;
-photography
-=> nrel_main_idtf: 
-[фотография](* <- lang_ru;;	*);
-[photography](* <- lang_en;; *);;
 
 
 

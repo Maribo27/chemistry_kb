@@ -267,19 +267,6 @@ soft_water <- sc_node_not_relation;
 hard_water <- sc_node_not_relation;
 	=> nrel_main_idtf:[жёсткая вода](* <- lang_ru;; *);;
 
-agriculture <- sc_node_not_relation;
-	=> nrel_main_idtf:[земледелие](* <- lang_ru;; *);;
-cooking <- sc_node_not_relation;
-	=> nrel_main_idtf:[приготовление пищи](* <- lang_ru;; *);;
-heat_transfer_agent <- sc_node_not_relation;
-	=> nrel_main_idtf:[теплоноситель](* <- lang_ru;; *);;
-moderator <- sc_node_not_relation;
-	=> nrel_main_idtf:[замедлитель](* <- lang_ru;; *);;
-tool <- sc_node_not_relation;
-	=> nrel_main_idtf:[инструмент](* <- lang_ru;; *);;
-grease <- sc_node_not_relation;
-	=> nrel_main_idtf:[смазка](* <- lang_ru;; *);;
-
 cuprite => nrel_main_idtf:
     [куприт](*<-lang_ru;;*);
     <- sc_node_not_relation;;
@@ -308,27 +295,7 @@ microlite => nrel_main_idtf:
     [микролит](*<-lang_ru;;*);
     <- sc_node_not_relation;;
 
-    chemical_industry=> nrel_main_idtf:
-	[химическая промышленность](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-food_industry=> nrel_main_idtf:
-	[пищевая промышленность](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-margarine_production=> nrel_main_idtf:
-	[производство маргарина](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-food_additive_E949=> nrel_main_idtf:
-	[пищевая добавка E949](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-meteorology=> nrel_main_idtf:
-	[метеорология](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-rocket_fuel=> nrel_main_idtf:
-	[ракетное топливо](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-electric_power_industry=> nrel_main_idtf:
-	[электроэнергетика](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
+   
 coolant=> nrel_main_idtf:
 	[хладагент](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
@@ -357,15 +324,6 @@ adsorption_selection=> nrel_main_idtf:
 	[адсорбционный отбор](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 
-	aeronautics_filling=> nrel_main_idtf:
-	[аэронавтика](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-breathing_mixture=> nrel_main_idtf:
-	[дыхательная смесь](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-geology=> nrel_main_idtf:
-	[геология](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 purpurite=> nrel_main_idtf:
 	[пурпурит](* <- lang_ru;; *);
 	<- sc_node_not_relation;;

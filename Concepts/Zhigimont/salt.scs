@@ -106,7 +106,7 @@ Definition_of_salt
 	[Опр.(соль)]
 	(* <- lang_ru;;	*);
 	[Def.(salt)]
-	(* <- lang_ru;;	*);
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> complex_substance; water; solution; electrolytic_dissociation; cation; metal; anion; nrel_acid_residue;;

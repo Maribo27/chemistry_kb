@@ -93,19 +93,6 @@ tantalum_carbide
 	
 => nrel_applying: metallurgy;;
 
-carbide
-=> nrel_main_idtf: 
-[карбид]
-(* <- lang_ru;;	*);
-[carbide]
-(* <- lang_en;;	*);;
-
-metallurgy
-=> nrel_main_idtf: 
-[металлургия]
-(* <- lang_ru;;	*);
-[metallurgy]
-(* <- lang_en;;	*);;
 
 
 Definition_of_tantalum_carbide

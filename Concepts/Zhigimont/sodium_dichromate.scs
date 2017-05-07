@@ -88,15 +88,6 @@ sodium_dichromate
 	
 => nrel_applying: leather_industry; electronics;;
 
-dichromic_acid
-=> nrel_main_idtf: 
-[дихромовая кислота](* <- lang_ru;;	*);
-[dichromic acid](* <- lang_en;;	*);;
-
-carcinogen
-=> nrel_main_idtf: 
-[канцероген](* <- lang_ru;;	*);
-[carcinogen](* <- lang_en;;	*);;
 
 
 Definition_of_sodium_dichromate

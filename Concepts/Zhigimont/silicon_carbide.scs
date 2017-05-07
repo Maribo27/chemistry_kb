@@ -95,10 +95,6 @@ silicon_carbide
 	
 => nrel_applying: electronics; construction;;
 
-electronics
-=> nrel_main_idtf: 
-[электроника](* <- lang_ru;;	*);
-[electronics](* <- lang_en;;	*);;
 
 
 Definition_of_silicon_carbide
