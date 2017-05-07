@@ -4,9 +4,9 @@ rrel_solvent
 					   [растворитель'](*<- lang_ru;;*);
 
 => nrel_first_domain:
- 		chemical_substance;
-=> nrel_second_domain:
  		solution;
+=> nrel_second_domain:
+ 		chemical_substance;
 => nrel_definitional_domain:
  		...
  		(*
