@@ -16,7 +16,7 @@ elem_Lu
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lu">Лютеций</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>  <sc_element sys_idtf  = "nrel_group">группы</sc_element> лантаноидов. ]
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lu">Лютеций</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> <sc_element sys_idtf  = "nrel_group">группы</sc_element> лантаноидов. ]
 		(* <-lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lu">Lutetium</sc_element></b> is a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the lantanoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ]

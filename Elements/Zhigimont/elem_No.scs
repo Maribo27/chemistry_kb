@@ -17,11 +17,11 @@ elem_No
 		...
 		(* 
 		-> rrel_example:[
-<b><sc_element sys_idtf  = "elem_No">Нобелий</sc_element> </b>- искусственно полученный трансфермиевый <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>  <sc_element sys_idtf  = "nrel_group">группы</sc_element> актиноидов. ] 
+<b><sc_element sys_idtf  = "elem_No">Нобелий</sc_element></b> - искусственно полученный трансфермиевый <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> <sc_element sys_idtf  = "nrel_group">группы</sc_element> актиноидов. ] 
 (* <-lang_ru;; => nrel_format: format_html;;*);;
 
 -> rrel_example:[
-<b><sc_element sys_idtf  = "elem_No">Nobelium</sc_element> </b> is an artificially received transfermium <sc_element sys_idtf  = "chemical_element">chemical element</sc_element>  of the actinoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ] 
+<b><sc_element sys_idtf  = "elem_No">Nobelium</sc_element></b> is an artificially received transfermium <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the actinoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ] 
 (* <-lang_en;; => nrel_format: format_html;;*);;
 		*);;
 	

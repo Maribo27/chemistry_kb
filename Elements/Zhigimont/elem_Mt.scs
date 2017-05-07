@@ -16,10 +16,10 @@ elem_Mt
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mt">Мейтнерий</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> восьмой  <sc_element sys_idtf  = "nrel_group">группы</sc_element> побочной подгруппы 7-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. ] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mt">Мейтнерий</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> восьмой <sc_element sys_idtf  = "nrel_group">группы</sc_element> побочной подгруппы 7-го <sc_element sys_idtf  = "period">периода</sc_element> периодической системы химических элементов. ] 
 		(* <-lang_ru;; => nrel_format: format_html;;*);;
 
-		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mt">Meitnerium</sc_element></b> is a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of 8th  <sc_element sys_idtf  = "nrel_group">group</sc_element> secondary subgroup 7th <sc_element sys_idtf  = "period">period</sc_element> periodic table. ] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mt">Meitnerium</sc_element></b> is a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the 8th <sc_element sys_idtf  = "nrel_group">group</sc_element> of the 2nd subgroup of the 7th <sc_element sys_idtf  = "period">period</sc_element> of periodic table. ] 
 		(* <-lang_en;; => nrel_format: format_html;;*);;
 		*);;
 	

@@ -16,11 +16,11 @@ elem_Nh
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="elem_Nh">Нихоний</sc_element></b> - <sc_element sys_idtf="chemical_element">химический элемент</sc_element> тринадцатой  <sc_element sys_idtf="nrel_group">группы</sc_element> 7-го <sc_element sys_idtf="period">периода</sc_element>  периодической системы химических элементов.] 
+		-> rrel_example:[<b><sc_element sys_idtf="elem_Nh">Нихоний</sc_element></b> - <sc_element sys_idtf="chemical_element">химический элемент</sc_element> тринадцатой <sc_element sys_idtf="nrel_group">группы</sc_element> 7-го <sc_element sys_idtf="period">периода</sc_element> периодической системы химических элементов.] 
 		(* <-lang_ru;; => nrel_format: format_html;;*);;
 
 
-		-> rrel_example:[<b><sc_element sys_idtf="elem_Nh">Nihonium</sc_element></b> is a <sc_element sys_idtf="chemical_element">chemical element</sc_element> of 13th <sc_element sys_idtf="nrel_group">group</sc_element> 7th <sc_element sys_idtf="period">period</sc_element> of periodic table.] 
+		-> rrel_example:[<b><sc_element sys_idtf="elem_Nh">Nihonium</sc_element></b> is a <sc_element sys_idtf="chemical_element">chemical element</sc_element> of the 13th <sc_element sys_idtf="nrel_group">group</sc_element> of the 7th <sc_element sys_idtf="period">period</sc_element> of periodic table.] 
 		(* <-lang_en;; => nrel_format: format_html;;*);;
 		*);;
 	

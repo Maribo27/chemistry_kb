@@ -21,7 +21,7 @@ elem_Np
 		(* <-lang_ru;; => nrel_format: format_html;;*);;
 
 		-> rrel_example:
-		[<b><sc_element sys_idtf  = "elem_Np">Neptunium</sc_element></b> is the first transuranic <sc_element sys_idtf  = "chemical_element">chemical element</sc_element>  of the actinoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ] 
+		[<b><sc_element sys_idtf  = "elem_Np">Neptunium</sc_element></b> is the first transuranic <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the actinoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ] 
 		(* <-lang_en;; => nrel_format: format_html;;*);;
 		*);;
 	
