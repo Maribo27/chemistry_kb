@@ -16,7 +16,7 @@ rrel_solvent
  				solution
  			};;
  		*);
- 		
+
 <- rrel_key_sc_element:
 	Definition_of_rrel_solvent
 	(* 
@@ -24,13 +24,13 @@ rrel_solvent
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Растворитель</sc_element></b> — <sc_element sys_idtf="liquid">жидкое</sc_element>, <sc_element sys_idtf="solid">твёрдое</sc_element> или <sc_element sys_idtf="gas">газообразное</sc_element> <sc_element sys_idtf="substance">вещество</sc_element>, способное <sc_element sys_idtf="solubility">растворять</sc_element> другие твёрдые, жидкие или газообразные вещества.] 
+		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Растворитель</sc_element></b> — <sc_element sys_idtf="liquid">жидкое</sc_element>, <sc_element sys_idtf="solid">твёрдое</sc_element> или <sc_element sys_idtf="gas">газообразное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, способное <sc_element sys_idtf="nrel_solubility">растворять</sc_element> другие твёрдые, жидкие или газообразные вещества.] 
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
 
-		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Solvent</sc_element></b> is a <sc_element sys_idtf="liquid">liquid</sc_element>, <sc_element sys_idtf="solid">solid</sc_element> or <sc_element sys_idtf="gas">gas</sc_element> <sc_element sys_idtf="hemical_substance">substancec</sc_element> that is able to <sc_element sys_idtf="solubility">dissolve</sc_element> other solid, liquid or gas substances.] 
+		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Solvent</sc_element></b> is a <sc_element sys_idtf="liquid">liquid</sc_element>, <sc_element sys_idtf="solid">solid</sc_element> or <sc_element sys_idtf="gas">gas</sc_element> <sc_element sys_idtf="chemical_substance">substance</sc_element> that is able to <sc_element sys_idtf="nrel_solubility">dissolve</sc_element> other solid, liquid or gas substances.] 
 		(* 
 		<-lang_en;; 
 		=> nrel_format: format_html;;
