@@ -3,6 +3,20 @@ rrel_solute
         => nrel_main_idtf:
                 [solute'](*<- lang_en;;*);
                 [растворенное вещество'](*<- lang_ru;;*);
+
+=> nrel_first_domain:
+ 		chemical_substance;
+=> nrel_second_domain:
+ 		solution;
+=> nrel_definitional_domain:
+ 		...
+ 		(*
+ 			<= nrel_combination:
+ 			{
+ 				chemical_substance;
+ 				solution
+ 			};;
+ 		*);
 				
 <- rrel_key_sc_element:
 	Definition_of_rrel_solute

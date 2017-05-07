@@ -2,6 +2,21 @@ sc_node_role_relation->rrel_solvent;;
 rrel_solvent
 	=> nrel_main_idtf: [solvent'](*<- lang_en;;*);
 					   [растворитель'](*<- lang_ru;;*);
+
+=> nrel_first_domain:
+ 		chemical_substance;
+=> nrel_second_domain:
+ 		solution;
+=> nrel_definitional_domain:
+ 		...
+ 		(*
+ 			<= nrel_combination:
+ 			{
+ 				chemical_substance;
+ 				solution
+ 			};;
+ 		*);
+ 		
 <- rrel_key_sc_element:
 	Definition_of_rrel_solvent
 	(* 
@@ -53,7 +68,7 @@ Definition_of_rrel_solvent
 	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
-				-> liquid; solid; gas; substance; solubility;;
+				-> liquid; solid; gas; substance; nrel_solubility;;
 			*);;
 
 solvent_state
