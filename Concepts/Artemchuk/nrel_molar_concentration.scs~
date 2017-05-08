@@ -43,5 +43,5 @@ Definition_of_nrel_molar_concentration
 
 
 nrel_molar_concentration
-=>nrel_first_domain: substance;
+=>nrel_first_domain: chemical_substance;
 =>nrel_second_domain: number;;

@@ -50,5 +50,5 @@ Definition_of_nrel_solubility
 	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
-				-> substance; solution;;
+				-> chemical_substance; solution;;
 			*);;

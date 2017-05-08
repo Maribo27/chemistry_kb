@@ -18,13 +18,13 @@ alloying
 	<= nrel_using_constants:...
 			(*
 				->chemical_element;;
-				->substance;;
+				-> chemical_substance;;
 				->impurity;;
 				->alloy;;
 			*);;
 	*);
 
-<=nrel_inclusion:substance;
+<=nrel_inclusion: chemical_substance;
 
 <- rrel_key_sc_element: types_of_alloying
 	(*

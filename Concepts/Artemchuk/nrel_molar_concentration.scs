@@ -45,7 +45,7 @@ Definition_of_nrel_molar_concentration
 <= nrel_using_constants:...
 			(*
 				->value;;
-				->substance;;
+				-> chemical_substance;;
 				->solution;;
 			*);;
 

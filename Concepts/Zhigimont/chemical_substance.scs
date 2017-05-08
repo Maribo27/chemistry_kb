@@ -22,13 +22,13 @@ chemical_substance
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="chemical_substance">Химическое вещество</sc_element></b> - <sc_element sys_idtf="substance">вещество</sc_element>, состоящее из <sc_element sys_idtf="atom">атомов</sc_element>; вещества, в которых выделение атомов невозможно или теряет физический смысл (например, <sc_element sys_idtf="plasma">плазма</sc_element> или звёздное вещество), к предмету рассмотрения химией не относят.]
+		-> rrel_example:[<b><sc_element sys_idtf="chemical_substance">Химическое вещество</sc_element></b> - вещество, состоящее из <sc_element sys_idtf="atom">атомов</sc_element>; вещества, в которых выделение атомов невозможно или теряет физический смысл (например, <sc_element sys_idtf="plasma">плазма</sc_element> или звёздное вещество), к предмету рассмотрения химией не относят.]
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
 
-		-> rrel_example:[<b> <sc_element sys_idtf = "chemical_substance">Chemical </ sc_element> </ b> is a <sc_element sys_idtf = "substance">substance </ sc_element> consisting of <sc_element sys_idtf = "atom"> atoms </ sc_element >. Substances in which the separation of atoms is impossible or loses its physical meaning (for example, <sc_element sys_idtf = "plasma"> plasma </ sc_element> or stellar matter), are not considered chemistry.]
+		-> rrel_example:[<b> <sc_element sys_idtf = "chemical_substance">Chemical </ sc_element> </ b> is a substance consisting of <sc_element sys_idtf = "atom"> atoms </ sc_element >. Substances in which the separation of atoms is impossible or loses its physical meaning (for example, <sc_element sys_idtf = "plasma"> plasma </ sc_element> or stellar matter), are not considered chemistry.]
 		(* 
 		<-lang_en;; 
 		=> nrel_format: format_html;;
@@ -72,5 +72,5 @@ Definition_of_chemical_substance
 	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
-				-> substance; atom; plasma;;
+				-> atom; plasma;;
 			*);;

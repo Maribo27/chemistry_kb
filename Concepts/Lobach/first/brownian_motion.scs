@@ -19,7 +19,7 @@ brownian_motion
 				->liquid;;
 				->gas;;
 				->particle;;
-				->substance;;
+				-> chemical_substance;;
 			*);;
 	*);
 

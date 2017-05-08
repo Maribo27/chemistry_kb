@@ -13,7 +13,7 @@ neutralization_reaction
     (*
         -> rrel_example:
             [<p>
-            <b><sc_element sys_idtf = "nrel_exchange_reaction">Реакция нейтрализации</sc_element> — взаимодействие <sc_element sys_idtf = "acid">кислоты</sc_element> и <sc_element sys_idtf = "basis">основания (щелочи)</sc_element> между собой с образованием <sc_element sys_idtf = "salt">соли</sc_element> и слабодиссоциирующего <sc_element sys_idtf = "substance">вещества</sc_element> (<sc_element sys_idtf = "water">воды</sc_element>). В большинстве своем, реакции нейтрализации экзотермичны. К примеру, реакция гидроксида натрия и соляной кислоты:</br>
+            <b><sc_element sys_idtf = "nrel_exchange_reaction">Реакция нейтрализации</sc_element> — взаимодействие <sc_element sys_idtf = "acid">кислоты</sc_element> и <sc_element sys_idtf = "basis">основания (щелочи)</sc_element> между собой с образованием <sc_element sys_idtf = "salt">соли</sc_element> и слабодиссоциирующего <sc_element sys_idtf = "chemical_substance">вещества</sc_element> (<sc_element sys_idtf = "water">воды</sc_element>). В большинстве своем, реакции нейтрализации экзотермичны. К примеру, реакция гидроксида натрия и соляной кислоты:</br>
             НСl + NaOH = NaCl + Н<sub>2</sub>О</br>
             В ионном виде уравнение записывают так:</br>
             Н<sup>+</sup> + ОН<sup>−</sup> = Н<sub>2</sub>О.</br>

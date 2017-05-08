@@ -12,13 +12,13 @@ complex_substance
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Сложное вещество</sc_element></b> — это <sc_element sys_idtf="substance">вещество</sc_element>, состоящее из <sc_element sys_idtf="atom">атомов</sc_element> двух и более разных <sc_element sys_idtf="chemical_element">химических элементов</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Сложное вещество</sc_element></b> — это <sc_element sys_idtf="chemical_substance">вещество</sc_element>, состоящее из <sc_element sys_idtf="atom">атомов</sc_element> двух и более разных <sc_element sys_idtf="chemical_element">химических элементов</sc_element>.] 
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
 
-		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Complex substance</sc_element></b> is a <sc_element sys_idtf="substance">substance</sc_element> consisting of at least 2 different <sc_element sys_idtf="chemical_element">chemical elements'</sc_element> <sc_element sys_idtf="atom">atoms</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf="complex_substance">Complex substance</sc_element></b> is a <sc_element sys_idtf="chemical_substance">substance</sc_element> consisting of at least 2 different <sc_element sys_idtf="chemical_element">chemical elements'</sc_element> <sc_element sys_idtf="atom">atoms</sc_element>.] 
 		(* 
 		<-lang_en;; 
 		=> nrel_format: format_html;;
@@ -42,7 +42,7 @@ complex_substance
 	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
-				-> substance; atom; chemical_element;;
+				-> chemical_substance; atom; chemical_element;;
 				
 			*);;
 

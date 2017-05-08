@@ -17,13 +17,13 @@ nrel_electric_charge
 		*);;
 	<= nrel_using_constants:...
 			(*
-				->substance;;
+				-> chemical_substance;;
 			*);;
 	*);
 
 
 <=nrel_first_domain:...(*
-			->substance;;
+			-> chemical_substance;;
 			->atom;;
 			->chemical_element;;	
 			*);

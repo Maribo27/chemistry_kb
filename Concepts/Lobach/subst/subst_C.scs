@@ -15,7 +15,7 @@ subst_C
 	(*
 		-> rrel_example:
 			[<p>
-				<b>Углерод (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - <sc_element sys_idtf = "substance">вещество</sc_element>, существующее во множестве аллотропных модификаций с очень разнообразными физическими свойствами. 
+				<b>Углерод (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - <sc_element sys_idtf = "chemical_substance">вещество</sc_element>, существующее во множестве аллотропных модификаций с очень разнообразными физическими свойствами. 
 			</p>]
 			(*
 				<- lang_ru;;
@@ -25,7 +25,7 @@ subst_C
 	<= nrel_using_constants:...
 	(*
 		-> elementary_substance;;
-		-> substance;;
+		-> chemical_substance;;
 
 	*);;
 *);

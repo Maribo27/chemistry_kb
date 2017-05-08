@@ -68,7 +68,7 @@ Definition_of_rrel_solvent
 	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
-				-> liquid; solid; gas; substance; nrel_solubility;;
+				-> liquid; solid; gas; chemical_substance; nrel_solubility;;
 			*);;
 
 solvent_state

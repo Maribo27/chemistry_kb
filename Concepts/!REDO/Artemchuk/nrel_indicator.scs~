@@ -13,8 +13,8 @@ nrel_indicator
 				(*<- lang_ru;;*);;
 		*);;
 	*);
-	=> nrel_second_domain:substance;
-	=> nrel_first_domain:substance;
+	=> nrel_second_domain: chemical_substance;
+	=> nrel_first_domain: chemical_substance;
 
 
 <- rrel_key_sc_element: thermoindicators
@@ -49,6 +49,6 @@ Definition_of_nrel_indicator
 <= nrel_using_constants: ... 
 	(* 
 		->nrel_indicator;;
-		->substance;; 
+		-> chemical_substance;; 
 	*);;
 

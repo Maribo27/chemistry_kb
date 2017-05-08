@@ -25,7 +25,7 @@ subst_Ds
 	<= nrel_using_constants:...
 	(*
 		-> elementary_substance;;
-		-> substance;;
+		-> chemical_substance;;
 
 	*);;
 *);

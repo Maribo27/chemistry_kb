@@ -12,13 +12,13 @@ elementary_substance
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Просто́е вещество́</sc_element></b> — <sc_element sys_idtf="substance">вещество</sc_element>, состоящее исключительно из <sc_element sys_idtf="atom">атомов</sc_element> одного <sc_element sys_idtf="chemical_element">химического элемента</sc_element>.]
+		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Просто́е вещество́</sc_element></b> — <sc_element sys_idtf="chemical_substance">вещество</sc_element>, состоящее исключительно из <sc_element sys_idtf="atom">атомов</sc_element> одного <sc_element sys_idtf="chemical_element">химического элемента</sc_element>.]
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
 
-		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Elementary substancé</sc_element></b> is a <sc_element sys_idtf="substance">substance</sc_element> that consists only of <sc_element sys_idtf="atom">atoms</sc_element> of one <sc_element sys_idtf="chemical_element">chemical element</sc_element>.]
+		-> rrel_example:[<b><sc_element sys_idtf="elementary_substance">Elementary substancé</sc_element></b> is a <sc_element sys_idtf="chemical_substance">substance</sc_element> that consists only of <sc_element sys_idtf="atom">atoms</sc_element> of one <sc_element sys_idtf="chemical_element">chemical element</sc_element>.]
 		(* 
 		<-lang_en;; 
 		=> nrel_format: format_html;;
@@ -65,7 +65,7 @@ Definition_of_elementary_substance
 	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
-				-> substance; atom; chemical_element;;
+				-> chemical_substance; atom; chemical_element;;
 			*);;
 
 

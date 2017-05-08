@@ -13,5 +13,5 @@ nrel_quality_composition
 		-> rrel_example:"file://nrel_quality_composition_ru.html" (* <-lang_ru;;*);;
 		*);;
 	*);
-	=> nrel_first_domain: substance;
+	=> nrel_first_domain: chemical_substance;
 	=> nrel_second_domain: chemical_element;;
