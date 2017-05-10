@@ -17,7 +17,11 @@ elem_Lr
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/lr.html" (* <-lang_ru;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lr">Лоуренсий</sc_element></b> - искусственно полученный <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> <sc_element sys_idtf  = "nrel_group">группы</sc_element> актиноидов. ]
+		(* <-lang_ru;; => nrel_format: format_html;; *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lr">Lawrencium</sc_element></b> is an artificially received <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the actinoid <sc_element sys_idtf  = "nrel_group">group</sc_element>. ]
+		(* <-lang_en;; => nrel_format: format_html;; *);;
 		*);;
 	
 	*);
@@ -46,7 +50,8 @@ elem_Lr
 (*
 		
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(атом лоуренсия)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом лоуренсия)] (* <- lang_ru;;	*);
+	[Pic.(lawrencium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/lr.png";;
@@ -58,7 +63,8 @@ elem_Lr
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(атом лоуренсия, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом лоуренсия, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(lawrencium atom, electronic configuration*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn]5f<sup>14</sup>6d<sup>1</sup>7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -69,6 +75,8 @@ Definition_of_lawrencium
 => nrel_main_idtf:
 	[Опр.(атом лоуренсия)]
 	(* <- lang_ru;;	*);
+	[Def.(lawrencium atom)]
+	(* <- lang_en;;	*);
 
 <= nrel_using_constants:
 			{

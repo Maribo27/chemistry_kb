@@ -16,7 +16,11 @@ elem_Mc
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/mc.html" (* <-lang_ru;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mc">Московий</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> пятнадцатой <sc_element sys_idtf  = "nrel_group">группы</sc_element> 7-го <sc_element sys_idtf  = "period">периода</sc_element> периодической системы химических элементов.] 
+		(* <-lang_ru;; => nrel_format: format_html;; *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mc">Moscovium</sc_element></b> is a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the 15th <sc_element sys_idtf  = "nrel_group">group</sc_element> of the 7th <sc_element sys_idtf  = "period">period</sc_element> of periodic table.] 
+		(* <-lang_en;; => nrel_format: format_html;; *);;
 		*);;
 	
 	*);
@@ -39,7 +43,8 @@ elem_Mc
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(атом московия)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом московия)] (* <- lang_ru;;	*);
+	[Pic.(moscovium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/mc.png";;
@@ -51,7 +56,8 @@ elem_Mc
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(атом московия, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом московия, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(moscovium atom, electronic configuration*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>3</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -61,6 +67,8 @@ elem_Mc
 Definition_of_moscovium
 => nrel_main_idtf:
 	[Опр.(атом московия)]
+	(* <- lang_ru;;	*);
+	[Def.(moscovium atom)]
 	(* <- lang_ru;;	*);
 
 <= nrel_using_constants:

@@ -22,6 +22,11 @@ double_salt
 		(* <-lang_ru;; 
 		   => nrel_format: format_html;;
 		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="double_salt">Double salt</sc_element></b> is a <sc_element sys_idtf="salt">salt</sc_element>containing 2 <sc_element sys_idtf="cation">cations</sc_element> types.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
 		*);;
 	*);;
 
@@ -29,6 +34,8 @@ Definition_of_double_salt
 => nrel_main_idtf:
 	[Опр.(двойная соль)]
 	(* <- lang_ru;;	*);
+	[Def.(double salt)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> salt; cation;;

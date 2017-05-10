@@ -22,6 +22,12 @@ salt
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="salt">Salt</sc_element></b> is a <sc_element sys_idtf="complex_substance">complex substance</sc_element> which <sc_element sys_idtf="electrolytic_dissociation">dissociates</sc_element> into <sc_element sys_idtf="cation">cations</sc_element> of <sc_element sys_idtf="metal">metals</sc_element> and <sc_element sys_idtf="anion">anions</sc_element> of <sc_element sys_idtf="nrel_acid_residue">acid residues</sc_element> in <sc_element sys_idtf="water">water</sc_element> <sc_element sys_idtf="solution">solutions</sc_element> .] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 
@@ -30,7 +36,10 @@ salt
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(соль, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(salt, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -96,6 +105,8 @@ Definition_of_salt
 => nrel_main_idtf:
 	[Опр.(соль)]
 	(* <- lang_ru;;	*);
+	[Def.(salt)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> complex_substance; water; solution; electrolytic_dissociation; cation; metal; anion; nrel_acid_residue;;
@@ -103,25 +114,35 @@ Definition_of_salt
 
 salt_substitution
 => nrel_main_idtf:
-	[Разбиение по продуктам замены]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по продуктам замены]
+	(* <- lang_ru;; *);
+	[Partitioning salts by exchange products]
+	(* <- lang_en;; *);;
 
 salt_structure
 => nrel_main_idtf:
-	[Разбиение по числу катионов и анионов]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по числу катионов и анионов]
+	(* <- lang_ru;; *);
+	[Partitioning salts by cation and anion number]
+	(* <- lang_en;; *);;
 
 salt_molecule
 => nrel_main_idtf:
-	[Разбиение по входящим в состав частицам]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по входящим в состав частицам]
+	(* <- lang_ru;; *);
+	[Partitioning salts by comprising particles]
+	(* <- lang_en;; *);;
 
 salt_solubility
 => nrel_main_idtf:
-	[Разбиение по растворимости]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по растворимости]
+	(* <- lang_ru;; *);
+	[Partitioning salts by solubility]
+	(* <- lang_en;; *);;
 	
 subdividing_salt_by_acid
 => nrel_main_idtf:
-	[Разбиение по соответствующим кислотам]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по соответствующим кислотам]
+	(* <- lang_ru;; *);
+	[Partitioning salts by corresponding acids]
+	(* <- lang_en;; *);;

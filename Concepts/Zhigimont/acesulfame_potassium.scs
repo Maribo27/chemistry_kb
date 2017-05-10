@@ -32,6 +32,10 @@ acesulfame_potassium
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
+		*);;-> rrel_example:[<b><sc_element sys_idtf="acesulfame_potassium">Acesulfame potassium</sc_element></b> is a <sc_element sys_idtf="sweetener">sweetener</sc_element> of <sc_element sys_idtf="sulfamic_acid">sulfamic</sc_element> row.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
 		*);;
 		*);;
 	*);
@@ -41,7 +45,8 @@ acesulfame_potassium
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (ацесульфам калия, применение*)](*<- lang_ru;;*);;
+			[Утв. (ацесульфам калия, применение*)](*<- lang_ru;;*);
+			[Stat. (acesulfame potassium, application*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Используется для подслащения <sc_element sys_idtf="carbonated_water">газированных напитков</sc_element>, при изготовлении выпечки, желатиновых десертов и жевательной резинки, также используется в качестве подсластителя некоторых лекарственных форм (сиропы).]
@@ -49,17 +54,12 @@ acesulfame_potassium
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-		*);;
-	*);
 
-<- rrel_key_sc_element: impact_of_acesulfame_potassium
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (ацесульфам калия, воздействие на организм*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[В отдельных средствах массовой информации в публикациях, посвящённых подсластителям, часто утверждается, что ацесульфам может вызывать рак (согласно исследованиям 1970 года), однако 9-месячные токсикологические исследования показали отсутствие связи между приёмом ацесульфама и вероятностью возникновения опухолей.] (* <-lang_ru;; *);;
+			-> rrel_example:[Acesulfame potassium is used for sweetening <sc_element sys_idtf = "carbonated_water"> carbonated water </ sc_element>, baked products, gelatinous desserts, chewing gum and syrups.]
+			(* 
+			<-lang_en;; 
+			=> nrel_format: format_html;;
+			*);;
 		*);;
 	*);;
 
@@ -68,6 +68,8 @@ Definition_of_acesulfame_potassium
 => nrel_main_idtf:
 	[Опр.(ацесульфам калия)]
 	(* <- lang_ru;;	*);
+	[Def.(acesulfame potassium)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> sweetener; sulfamic_acid;;

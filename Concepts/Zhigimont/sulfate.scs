@@ -12,13 +12,20 @@ sulfate
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (сульфат, получение*)](*<- lang_ru;;*);;
+			[Утв. (сульфат, получение*)](*<- lang_ru;;*);
+			[Stat. (sulfate, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
 		-> [Сульфаты образуются при взаимодействии серной кислоты и оснований.]
 		(* 
 		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+
+		-> [Sulfates are formed by the interaction of sulfuric acid and bases.]
+		(* 
+		<-lang_en;;
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -36,6 +43,12 @@ sulfate
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="sulfate">Sulfate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="sulfuric_acid">sulfuric acid</sc_element> H<sub>2</sub>SO<sub>4</sub>] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);;
 
@@ -43,6 +56,8 @@ Definition_of_sulfate
 => nrel_main_idtf:
 	[Опр.(сульфат)]
 	(* <- lang_ru;;	*);
+	[Def.(sulfate)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; salt; sulfuric_acid;;

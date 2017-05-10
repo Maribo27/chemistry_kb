@@ -17,6 +17,12 @@ concentrated_solution
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="concentrated_solution">Concentrated solution</sc_element></b> is a <sc_element sys_idtf="solution">solution</sc_element> with high amount of <sc_element sys_idtf="rrel_solute">solute</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 <- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
@@ -25,6 +31,8 @@ Definition_of_concentrated_solution
 => nrel_main_idtf:
 	[Опр.(концентрированный раствор)]
 	(* <- lang_ru;;	*);
+	[Def.(concentrated solution)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> solution; rrel_solute;;

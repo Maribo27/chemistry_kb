@@ -28,7 +28,7 @@ nrel_alloy_component
 (*
 	->metal;;
 	->chemical_element;;
-	->substance;;
+	-> chemical_substance;;
 *);
 => nrel_first_domain: alloy;
 

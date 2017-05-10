@@ -4,7 +4,9 @@ subst_Mc
 => nrel_main_idtf: [moscovium] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Mc
 (* 
-	=> nrel_main_idtf: [Опр.(московий)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: 
+	[Опр.(московий)] (* <- lang_ru;; *);
+	[Def.(moscovium)] (* <- lang_en;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -12,6 +14,13 @@ subst_Mc
 			[<b><sc_element sys_idtf="subst_Mc">Московий</sc_element></b> — непереходный <sc_element sys_idtf="metal">металл</sc_element>, похожий на висмут.] 
 			(*
 				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+		-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Mc">Moscovium</sc_element></b> is an intransitive <sc_element sys_idtf="metal">metal</sc_element> similar to bismuth.] 
+			(*
+				<-lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;

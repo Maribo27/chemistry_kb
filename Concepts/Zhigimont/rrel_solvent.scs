@@ -2,6 +2,21 @@ sc_node_role_relation->rrel_solvent;;
 rrel_solvent
 	=> nrel_main_idtf: [solvent'](*<- lang_en;;*);
 					   [растворитель'](*<- lang_ru;;*);
+
+=> nrel_first_domain:
+ 		solution;
+=> nrel_second_domain:
+ 		chemical_substance;
+=> nrel_definitional_domain:
+ 		...
+ 		(*
+ 			<= nrel_combination:
+ 			{
+ 				chemical_substance;
+ 				solution
+ 			};;
+ 		*);
+
 <- rrel_key_sc_element:
 	Definition_of_rrel_solvent
 	(* 
@@ -9,9 +24,15 @@ rrel_solvent
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Растворитель</sc_element></b> — <sc_element sys_idtf="liquid">жидкое</sc_element>, <sc_element sys_idtf="solid">твёрдое</sc_element> или <sc_element sys_idtf="gas">газообразное</sc_element> <sc_element sys_idtf="substance">вещество</sc_element>, способное <sc_element sys_idtf="solubility">растворять</sc_element> другие твёрдые, жидкие или газообразные вещества.] 
+		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Растворитель</sc_element></b> — <sc_element sys_idtf="liquid">жидкое</sc_element>, <sc_element sys_idtf="solid">твёрдое</sc_element> или <sc_element sys_idtf="gas">газообразное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, способное <sc_element sys_idtf="nrel_solubility">растворять</sc_element> другие твёрдые, жидкие или газообразные вещества.] 
 		(* 
 		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="rrel_solvent">Solvent</sc_element></b> is a <sc_element sys_idtf="liquid">liquid</sc_element>, <sc_element sys_idtf="solid">solid</sc_element> or <sc_element sys_idtf="gas">gas</sc_element> <sc_element sys_idtf="chemical_substance">substance</sc_element> that is able to <sc_element sys_idtf="nrel_solubility">dissolve</sc_element> other solid, liquid or gas substances.] 
+		(* 
+		<-lang_en;; 
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -22,14 +43,15 @@ rrel_solvent
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (растворитель', применение*)](*<- lang_ru;;*);;
+			[Утв. (растворитель', применение*)](*<- lang_ru;;*);
+			[Stat. (solvent', application*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Обычно используются как органические растворители в химчистках (например, тетрахлорэтилен), как бытовые растворители (например, ацетон, скипидар), для удаления лаков и клея (ацетон, метиловый спирт, этилацетат), в моющих средствах (цитрусовые терпены), в парфюмерии (этанол) и в химическом синтезе.]
-			(* 
-			<-lang_ru;;
-			=> nrel_format: format_html;;
-			*);;
+			(* <-lang_ru;;*);;
+
+			-> rrel_example:[Solvents are usually used as organic solvents in dry cleaners (for example, tetrachlorethylene), as household solvents (for example, acetone, turpentine), for removing varnishes and glues (acetone, methyl, ethyl acetate), in detergents (citrus terpenes), in perfumes (ethanol ) and in chemical synthesis.]
+			(* <-lang_en;;*);;
 		*);;
 	*);
 	
@@ -42,12 +64,16 @@ Definition_of_rrel_solvent
 => nrel_main_idtf:
 	[Опр.(растворитель')]
 	(* <- lang_ru;;	*);
+	[Def.(solvent')]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
-				-> liquid; solid; gas; substance; solubility;;
+				-> liquid; solid; gas; chemical_substance; nrel_solubility;;
 			*);;
 
 solvent_state
 => nrel_main_idtf:
 	[Разбиение растворителей по структуре]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+	[Partitioning solvents by structure]
+	(* <- lang_en;;	*);;

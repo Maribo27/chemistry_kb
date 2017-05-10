@@ -19,7 +19,7 @@ catalyst <- rrel_key_sc_element:
 			*);;
 		*);;
 
-catalyst <= nrel_using_constants: nrel_reaction; substance; reaction_product;;
+catalyst <= nrel_using_constants: nrel_reaction; chemical_substance; reaction_product;;
 
 catalyst <- rrel_key_sc_element:
 		...

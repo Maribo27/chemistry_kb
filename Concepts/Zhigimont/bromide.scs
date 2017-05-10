@@ -9,15 +9,15 @@ bromide
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бромид, получение*)](*<- lang_ru;;*);;
+			[Утв. (бромид, получение*)](*<- lang_ru;;*);
+			[Stat. (bromide, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> [Бромиды образуются при взаимодействии бромоводородной кислоты и оснований.]
-		(* 
-		<-lang_ru;;
-		=> nrel_format: format_html;;
-		*);;
+		-> rrel_example:[Бромиды образуются при взаимодействии бромоводородной кислоты и оснований.]
+		(* <-lang_ru;;*);;
+		-> rrel_example:[Bromides are formed by the interaction of hydrobromic acid and bases.]
+		(* <-lang_en;;*);;
 		*);;
 	*);
 				
@@ -33,6 +33,12 @@ bromide
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="bromide">Bromide</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrobromic_acid">hydrobromic acid</sc_element> HBr.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);;
 
@@ -40,6 +46,8 @@ Definition_of_bromide
 => nrel_main_idtf:
 	[Опр.(бромид)]
 	(* <- lang_ru;;	*);
+	[Def.(bromide)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; salt; hydrobromic_acid;;

@@ -16,6 +16,12 @@ saturated_solution
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="saturated_solution">Saturated solution</sc_element></b> is a <sc_element sys_idtf="solution">solution</sc_element> where the <sc_element sys_idtf="rrel_solute">solute</sc_element> achieved the maximum <sc_element sys_idtf="nrel_concentration">concentration</sc_element> in the given conditions and cannot be dissolved anymore.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);;
 
@@ -23,6 +29,8 @@ Definition_of_saturated_solution
 => nrel_main_idtf:
 	[Опр.(насыщенный раствор)]
 	(* <- lang_ru;;	*);
+	[Def.(saturated solution)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> solution; nrel_concentration; rrel_solute;;

@@ -29,6 +29,11 @@ copper_II_bromide
 		(* <-lang_ru;; 
 		   => nrel_format: format_html;;
 		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="copper_II_bromide">Copper (II) bromide</sc_element></b> is a compound of <sc_element sys_idtf="elem_Cu">copper</sc_element>(II) and <sc_element sys_idtf="elem_Br">bromine</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
 		*);;
 	*);
 
@@ -69,7 +74,10 @@ copper_II_bromide
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(бромид меди(II), твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(copper (II) bromide, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -83,10 +91,6 @@ copper_II_bromide
 	
 => nrel_applying: bromination; photography;;
 
-bromination
-=> nrel_main_idtf: [бромирование](* <- lang_ru;; *);;
-photography
-=> nrel_main_idtf: [фотография](* <- lang_ru;;	*);;
 
 
 
@@ -95,6 +99,8 @@ Definition_of_copper_II_bromide
 => nrel_main_idtf:
 	[Опр.(бромид меди(II))]
 	(* <- lang_ru;;	*);
+	[Def.(copper (II) bromide)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> elem_Cu; elem_Br;;

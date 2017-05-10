@@ -53,6 +53,6 @@ Definition_of_molecular_mass
 
 molecular_mass
 =>nrel_first_domain: chemical_element;
-=>nrel_first_domain: substance;
+=>nrel_first_domain: chemical_substance;
 =>nrel_second_domain: number;;
 

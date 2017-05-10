@@ -11,15 +11,18 @@ silicate
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (силикат, получение*)](*<- lang_ru;;*);;
+			[Утв. (силикат, получение*)](*<- lang_ru;;*);
+			[Stat. (silicate, receiving*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> [Силикаты образуются при взаимодействии кремниевой кислоты и оснований.]
-		(* 
-		<-lang_ru;;
-		=> nrel_format: format_html;;
-		*);;
+		-> rrel_example: 
+		[Силикаты образуются при взаимодействии кремниевой кислоты и оснований.]
+		(* <-lang_ru;;*);;
+
+		-> rrel_example: 
+		[Silicates are received from metasilicic acid and basis interaction.]
+		(* <-lang_en;;*);;
 		*);;
 	*);
 
@@ -36,6 +39,12 @@ silicate
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="silicate">Silicate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="metasilicic_acid">metasilicic acids.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 
@@ -45,6 +54,8 @@ Definition_of_silicate
 => nrel_main_idtf:
 	[Опр.(силикат)]
 	(* <- lang_ru;;	*);
+	[Def.(silicate)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; salt; metasilicic_acid;;

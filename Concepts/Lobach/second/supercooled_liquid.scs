@@ -21,7 +21,7 @@ supercooled_liquid
 	*);
 
 
-<=nrel_inclusion:substance;
+<=nrel_inclusion: chemical_substance;
 
 
 

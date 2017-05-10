@@ -11,15 +11,17 @@ chloride
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлорид, получение*)](*<- lang_ru;;*);;
+			[Утв. (хлорид, получение*)](*<- lang_ru;;*);
+			[Stat. (chloride, receiving*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> [Хлориды образуются при взаимодействии хлороводородной кислоты и оснований.]
-		(* 
-		<-lang_ru;;
-		=> nrel_format: format_html;;
-		*);;
+		-> rrel_example:[Хлориды образуются при взаимодействии хлороводородной кислоты и оснований.]
+		(* <-lang_ru;;*);;
+
+
+		-> rrel_example:[Chlorides are formed by the interaction of hydrochloric acid and bases.]
+		(* <-lang_en;;*);;
 		*);;
 	*);
 				
@@ -35,6 +37,12 @@ chloride
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="chloride">Chloride</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrochloric_acid">hydrochloric acid</sc_element> HCl] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);;
 
@@ -42,6 +50,8 @@ Definition_of_chloride
 => nrel_main_idtf:
 	[Опр.(хлорид)]
 	(* <- lang_ru;;	*);
+	[Def.(chloride)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; salt; chloric_acid;;

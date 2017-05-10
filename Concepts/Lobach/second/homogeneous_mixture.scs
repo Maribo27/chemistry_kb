@@ -9,7 +9,7 @@ homogeneou_mixture
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [<b><sc_element sys_idtf  = "homogeneou_mixture">Однородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element> двух или нескольких <sc_element sys_idtf  = "substance">веществ</sc_element>, в которых даже под микроскопом нельзя обнаружить частицы этих веществ.]
+                                                [<b><sc_element sys_idtf  = "homogeneou_mixture">Однородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element> двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>, в которых даже под микроскопом нельзя обнаружить частицы этих веществ.]
                                                 (*
                                                         <- lang_ru;;
                                                         => nrel_format: format_html;;
@@ -17,7 +17,7 @@ homogeneou_mixture
                                   *);;
         		<= nrel_using_constants:...
                 		(*
-                        		->substance;;
+                        		-> chemical_substance;;
                 		*);;
                 *);;
 

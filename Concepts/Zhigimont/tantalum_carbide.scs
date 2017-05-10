@@ -30,6 +30,11 @@ tantalum_carbide
 		(* <-lang_ru;; 
 		   => nrel_format: format_html;;
 		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="tantalum_carbide">Tantalum carbide</sc_element></b> is a  <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Ta">tantalum</sc_element> and <sc_element sys_idtf="C">carbon</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
 		*);;
 	*);
 
@@ -69,7 +74,12 @@ tantalum_carbide
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(карбид тантала, твёрдое тело)] 
+	(* <- lang_ru;;	*);
+	[Pic.(tantalum carbide, solid)] 
+	(* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -83,16 +93,14 @@ tantalum_carbide
 	
 => nrel_applying: metallurgy;;
 
-carbide
-=> nrel_main_idtf: [карбид](* <- lang_ru;;	*);;
-metallurgy
-=> nrel_main_idtf: [металлургия](* <- lang_ru;;	*);;
 
 
 Definition_of_tantalum_carbide
 => nrel_main_idtf:
 	[Опр.(карбид тантала)]
 	(* <- lang_ru;;	*);
+	[Def.(tantalum carbide)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; elem_Ta; elem_C;;

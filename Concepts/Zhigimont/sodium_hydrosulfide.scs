@@ -31,6 +31,11 @@ sodium_hydrosulfide
 		(* <-lang_ru;; 
 		   => nrel_format: format_html;;
 		   *);;
+
+		 -> rrel_example:[<b><sc_element sys_idtf="sodium_hydrosulfide">Sodium hydrosulfide</sc_element></b> is an <sc_element sys_idtf="acid_salt">acid salt</sc_element> of <sc_element sys_idtf="elem_Na">sodium</sc_element> and <sc_element sys_idtf="hydrogen_sulphide">hydrogen sulfide</sc_element>]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
 		*);;
 	*);
 
@@ -60,12 +65,6 @@ sodium_hydrosulfide
 	
 => nrel_applying: leather_industry; chemical_industry; textile_industry; mining; flotation;;
 
-leather_industry
-=> nrel_main_idtf: [кожевенная промышленность](* <- lang_ru;; *);;
-textile_industry
-=> nrel_main_idtf: [текстильная промышленность](* <- lang_ru;; *);;
-flotation
-=> nrel_main_idtf: [флотирование](* <- lang_ru;; *);;
 
 
 
@@ -74,6 +73,8 @@ Definition_of_sodium_hydrosulfide
 => nrel_main_idtf:
 	[Опр.(гидросульфид натрия)]
 	(* <- lang_ru;;	*);
+	[Def.(sodium hydrosulfide)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> acid_salt; elem_Na; hydrogen_sulfide;;

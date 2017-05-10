@@ -16,7 +16,11 @@ elem_Lv
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/lv.html" (* <-lang_ru;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lv">Ливерморий</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> шестнадцатой <sc_element sys_idtf  = "nrel_group">группы</sc_element> 7-го <sc_element sys_idtf  = "period">периода</sc_element> периодической системы химических элементов. ]
+		(* <-lang_ru;; => nrel_format: format_html;; *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Lv">Livermorium</sc_element></b> is a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the 16th <sc_element sys_idtf  = "nrel_group">group</sc_element> of the 7th <sc_element sys_idtf  = "period">period</sc_element> of periodic table. ]
+		(* <-lang_en;; => nrel_format: format_html;; *);;
 		*);;
 	
 	*);
@@ -42,7 +46,8 @@ elem_Lv
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(атом ливермория)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(атом ливермория)] (* <- lang_ru;;	*);
+	[Pic.(livermorium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://images/lv.png";;
@@ -54,7 +59,8 @@ elem_Lv
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(атом ливермория, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв.(атом ливермория, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(livermorium atom, electronic configuration*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>4</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -65,6 +71,8 @@ Definition_of_livermorium
 => nrel_main_idtf:
 	[Опр.(атом ливермория)]
 	(* <- lang_ru;;	*);
+	[Def.(livermorium atom)]
+	(* <- lang_en;;	*);
 
 <= nrel_using_constants:
 			{

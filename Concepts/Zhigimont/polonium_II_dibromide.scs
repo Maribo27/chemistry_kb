@@ -40,6 +40,12 @@ polonium_II_dibromide
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="polonium_II_dibromide">Polonium(II) dibromide</sc_element></b> is a <sc_element sys_idtf="binary_compound">binary compound</sc_element> of <sc_element sys_idtf="elem_Po">polonium</sc_element>(II) with <sc_element sys_idtf="elem_Br">bromine</sc_element>, polonium <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrobromic_acid">hydrobromic acid</sc_element>.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		   *);;
 		*);;
 	*);;
 
@@ -50,6 +56,8 @@ Definition_of_polonium_II_dibromide
 => nrel_main_idtf:
 	[Опр.(бромид полония(II))]
 	(* <- lang_ru;;	*);
+	[Def.(polonium(II) dibromide)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> binary_compound; elem_Po; elem_Br; salt; hydrobromic_acid;;

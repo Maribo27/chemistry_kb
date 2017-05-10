@@ -4,12 +4,21 @@ subst_Og
 => nrel_main_idtf: [oganesson] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Og
 (* 
-	=> nrel_main_idtf: [Опр.(оганесон)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: 
+	[Опр.(оганесон)] (* <- lang_ru;; *);
+	[Def.(oganesson)] (* <- lang_en;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
 			[<b><sc_element sys_idtf="subst_Og">Оганесон</sc_element></b> — искусственно полученное <sc_element sys_idtf="radioactive_substance">радиоактивное</sc_element> <sc_element sys_idtf="chemical_substance">вещество</sc_element>, не встречающееся в природе.] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+
+			-> rrel_example:
+			[<b><sc_element sys_idtf="subst_Og">Oganesson</sc_element></b> is an artificially received <sc_element sys_idtf="radioactive_substance">radioactive</sc_element> <sc_element sys_idtf="chemical_substance">substance</sc_element> that doesn't exist in nature.] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -29,21 +38,29 @@ subst_Og
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(оганесон , получение*)](*<- lang_ru;;*);;
+		[Утв.(оганесон, получение*)](*<- lang_ru;;*);
+		[Stat.(oganesson, receiving*)](*<- lang_;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Оганесон получают ядерной реакцией криптона со свинцом.] (*<- lang_ru;; => nrel_format: format_html;;*);;
 	*);;
+
+	-> rrel_example:[ Oganesson can be received in nuclear reaction of crypton and plumbum.] (*
+		<- lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 *);
 
 <- rrel_key_sc_element: receiving_Og_from_Ca
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв.(оганесон , получение*)](*<- lang_ru;;*);;
+		[Утв.(оганесон , получение*)](*<- lang_ru;;*);
+		[Stat.(oganesson, receiving*)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Оганесон получают ядерной реакцией кальция.] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		-> rrel_example:[ Oganesson can be received in nuclear reaction of calcium.] (*<- lang_en;; => nrel_format: format_html;;*);;
 	*);;
 *);
 

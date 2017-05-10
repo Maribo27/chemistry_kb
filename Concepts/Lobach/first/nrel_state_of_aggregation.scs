@@ -17,12 +17,12 @@ nrel_state_of_aggregation
 		*);;
 	<= nrel_using_constants:...
 			(*
-				->substance;;
+				-> chemical_substance;;
 			*);;
 	*);
 
 
-<=nrel_first_domain:substance;
+<=nrel_first_domain: chemical_substance;
 
 <=nrel_second_domain:...(*
 			->solid;;
