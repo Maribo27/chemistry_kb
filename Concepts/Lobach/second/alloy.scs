@@ -18,13 +18,21 @@ alloy
 	<= nrel_using_constants:...
 			(*
 				->chemical_element;;
+<<<<<<< HEAD
 				-> chemical_substance;;
+=======
+				->chemical_substance;;
+>>>>>>> d09bcd8d0fb8d1bf45d623249c7c9a7b72ca8712
 				->mixture;;
 			*);;
 	*);
 
 
+<<<<<<< HEAD
 <=nrel_inclusion: chemical_substance;
+=======
+<=nrel_inclusion:chemical_substance;
+>>>>>>> d09bcd8d0fb8d1bf45d623249c7c9a7b72ca8712
 <- rrel_key_sc_element: composition_of_alloy
 	(*
 		<- sc_explanation;;

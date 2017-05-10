@@ -29,7 +29,6 @@ steel
 => nrel_alloy_component: elem_Mn;
 => nrel_alloy_component: elem_S;
 => nrel_alloy_component: elem_Si;
-=> nrel_density_of_substance: 7700;
 
 => nrel_melting_temperature:...
 	(*

@@ -1,0 +1,40 @@
+insoluble_acid
+=> nrel_main_idtf:
+	[нерастворимая кислота]	(*<- lang_ru;;*);
+	[insoluble acid](*<- lang_en;;*);
+<- rrel_key_sc_element:
+	Definition_of_insoluble_acid
+	(* 
+	=> nrel_main_idtf:[Опр.(Нерастворимая кислота)](* <- lang_ru;;	*);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "insoluble_acid">Нерастворимые кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, которые не растворяются при взаимодействии с <sc_element sys_idtf  = "water">водой</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->water;;
+			*);;
+*);
+
+=>nrel_inclusion:
+	metasilicic_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Кремниевая кислота является нерастворимой кислотой, в отличие от большинства других кислот](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: section_acids;;

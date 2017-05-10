@@ -1,8 +1,0 @@
-section_principles_of_filling_orbitals
-=> nrel_main_idtf: [Раздел. Принципы заполнения орбиталей](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_principles_of_filling_orbitals.html" (* <-lang_ru;; *);;
-		*);;

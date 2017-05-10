@@ -1,8 +1,0 @@
-section_covalent_bond 
-=> nrel_main_idtf: [Section. Covalent bond](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_covalent_bond.html" (* <-lang_en;; *);;
-		*);;

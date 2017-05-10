@@ -1,0 +1,115 @@
+elem_Pu
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf: [атом плутония] (* <-lang_ru;;*);
+=> nrel_main_idtf: [plutonium atom] (* <-lang_en;;*);
+=> nrel_idtf: [атом Pu] (* <-lang_ru;;*);
+=> nrel_idtf: [atom Pu] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_elem_Pu
+(* 
+	=> nrel_main_idtf: [Опр.(Атом плутония)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "elem_Pu">Плутоний</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   третьей  <sc_element sys_idtf  = "periodic_group">группы</sc_element>, 7-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+
+<- metal;
+<- actinide;
+
+=> nrel_periodic_number: 94;
+<- group_three;
+<- period_seven;
+
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_four;
+<- oxidation_state_plus_five;
+<- oxidation_state_plus_six;
+<- oxidation_state_plus_seven;
+
+<- valence_three;
+<- valence_four;
+<- valence_five;
+<- valence_six;
+<- valence_seven;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Атом плутония)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Plutonium atom)] (* <- lang_en;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_Pu.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:162(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Pu;
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Pu;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Pu
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом плутония, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>10</sup>4s<sup>2</sup>4p<sup>6</sup>4d<sup>10</sup>5s<sup>2</sup>5p<sup>6</sup>4f<sup>14</sup>5d<sup>10</sup>6s<sup>2</sup>6p<sup>6</sup>5f<sup>6</sup>7s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(атом плутония, свойство изотопа*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/isotopes_table_of_elem_Pu.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_Pu <- number;
+=> nrel_main_idtf:[244,0642](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Pu <- number;
+=> nrel_main_idtf:[1,28](*<-lang_ru;; <- lang_en;;*);;
+
+

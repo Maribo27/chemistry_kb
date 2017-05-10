@@ -1,4 +1,7 @@
 elem_Cf
+=> nrel_main_idtf:
+	[californium atom](*<- lang_en;;*);
+	[атом калифорния](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_californium
 	(* 
@@ -65,7 +68,7 @@ elem_Cf
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент калифорний)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом калифорния)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

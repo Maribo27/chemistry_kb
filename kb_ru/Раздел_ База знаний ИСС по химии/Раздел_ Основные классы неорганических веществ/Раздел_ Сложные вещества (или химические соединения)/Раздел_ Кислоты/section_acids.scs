@@ -1,7 +1,0 @@
-section_acids => nrel_main_idtf: [Раздел. Кислоты](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_acids.html" (* <-lang_ru;; *);;
-		*);;

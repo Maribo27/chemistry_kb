@@ -1,0 +1,126 @@
+elem_Sc
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf: [атом скандия] (* <-lang_ru;;*);
+=> nrel_main_idtf: [scandium atom] (* <-lang_en;;*);
+=> nrel_idtf: [атом Sc] (* <-lang_ru;;*);
+=> nrel_idtf: [atom Sc] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_elem_Sc
+(* 
+	=> nrel_main_idtf: [Опр.(Атом скандия)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "elem_Sc">Скандий</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   третьей  <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 4-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+
+<- metal;
+<- transition_metal;
+<- lithophile;
+<- rare_earth_metal;
+
+=> nrel_periodic_number: 21;
+<- group_three;
+<- period_four;
+
+<- oxidation_state_plus_one;
+<- oxidation_state_plus_two;
+<- oxidation_state_plus_three;
+
+<- valence_three;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Атом скандия)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(scandium atom)] (* <- lang_en;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_Sc.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:162(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Sc;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:144(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Sc;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_Sc
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом скандия, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>1</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+=> nrel_allotropic_modification: ...
+(*
+	-> alfa_Sc;;
+	-> beta_Sc;;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(атом скандия, свойство изотопа*)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/isotopes_table_of_elem_Sc.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_Sc <- number;
+=> nrel_main_idtf:[44,955912(6)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Sc <- number;
+=> nrel_main_idtf:[1,36](*<-lang_ru;; <- lang_en;;*);;
+
+

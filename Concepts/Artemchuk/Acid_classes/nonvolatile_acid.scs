@@ -1,0 +1,44 @@
+nonvolatile_acid
+=> nrel_main_idtf:
+	[нелетучая кислота](* <- lang_ru;; *);
+	[nonvolatile acid](* <- lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_nonvolatile_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Нелетучая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nonvolatile_acid">Нелетучие кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, <sc_element sys_idtf  = "molecule">молекулы</sc_element> которых не переходят в газообразное состояние, то есть не испаряются.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->molecule;;
+			*);;
+	*);
+
+=>nrel_inclusion:
+	metasilicic_acid;
+	sulfuric_acid;
+	orthophosphoric_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Соли, образованные нелетучими кислотами, разлагаются только частично.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: section_acids;;

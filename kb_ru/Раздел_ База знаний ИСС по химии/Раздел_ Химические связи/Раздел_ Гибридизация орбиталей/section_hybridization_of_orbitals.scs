@@ -1,8 +1,0 @@
-section_hybridization_of_orbitals
-=> nrel_main_idtf: [Раздел. Гибридизация орбиталей](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_hybridization_of_orbitals.html" (* <-lang_ru;; *);;
-		*);;

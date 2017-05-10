@@ -1,7 +1,0 @@
-section_basis => nrel_main_idtf: [Section. Basis](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_basis.html" (* <-lang_en;; *);;
-		*);;

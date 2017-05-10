@@ -1,4 +1,7 @@
 elem_Yb
+=> nrel_main_idtf:
+	[ytterbium atom](*<- lang_en;;*);
+	[атом иттербия](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_ytterbium
 	(* 
@@ -74,7 +77,7 @@ elem_Yb
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент иттербий)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом иттербия)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

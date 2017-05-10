@@ -25,7 +25,6 @@ heavy_alloy
 
 <- alloy;
 
-=> nrel_density_of_substance: 16500;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;

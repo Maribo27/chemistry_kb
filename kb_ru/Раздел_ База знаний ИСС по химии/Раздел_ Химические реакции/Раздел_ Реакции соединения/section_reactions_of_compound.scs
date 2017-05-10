@@ -1,8 +1,0 @@
-section_reactions_of_compound
-=> nrel_main_idtf: [Раздел. Реакции соединения](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_reactions_of_compound.html" (* <-lang_ru;; *);;
-		*);;

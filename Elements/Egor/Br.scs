@@ -1,4 +1,7 @@
 elem_Br
+=> nrel_main_idtf:
+	[bromum atom](*<- lang_en;;*);
+	[атом брома](*<- lang_ru;;*);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_bromum
@@ -77,7 +80,7 @@ elem_Br
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент бром)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом брома)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

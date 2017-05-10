@@ -1,0 +1,48 @@
+volatile_acid
+=> nrel_main_idtf:
+	[летучая кислота](* <- lang_ru;; *);
+	[volatile acid]	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_volatile_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Летучая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "volatile_acid">Летучие кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, <sc_element sys_idtf  = "molecule">молекулы</sc_element> которых легко переходят в газообразное состояние, то есть испаряются.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->molecule;;
+			*);;
+	*);
+=>nrel_inclusion:
+	carbonic_acid;
+	hydrosulfuric_acid;
+	sulfurous_acid;
+	nitric_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydrofluoric_acid;
+	hydroiodic_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Менее летучие кислоты вытесняют более летучие из их солей.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: section_acids;;

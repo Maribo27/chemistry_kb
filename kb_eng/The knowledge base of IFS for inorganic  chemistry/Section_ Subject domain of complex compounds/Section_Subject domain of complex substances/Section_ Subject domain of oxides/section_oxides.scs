@@ -1,0 +1,7 @@
+section_oxides => nrel_main_idtf: [Section. Subject domain of oxides](*<- lang_en;;*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_oxides.html" (* <-lang_en;; *);;
+		*);;

@@ -1,8 +1,0 @@
-section_reactions_of_decomposition
-=> nrel_main_idtf: [Section. Reactions of decomposition](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_reactions_of_decomposition.html" (* <-lang_en;; *);;
-		*);;
