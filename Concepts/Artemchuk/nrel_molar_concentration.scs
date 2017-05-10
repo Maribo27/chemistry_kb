@@ -45,21 +45,5 @@ nrel_molar_concentration
 		*);;
 *);
 
-<<<<<<< HEAD
-Definition_of_nrel_molar_concentration
-=> nrel_main_idtf:
-	[Опр.(Молярная концентрация*)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->value;;
-				-> chemical_substance;;
-				->solution;;
-			*);;
-
-
-nrel_molar_concentration
-=======
->>>>>>> d09bcd8d0fb8d1bf45d623249c7c9a7b72ca8712
 =>nrel_first_domain: chemical_substance;
 =>nrel_second_domain: value;;
