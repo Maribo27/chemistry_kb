@@ -73,7 +73,7 @@ receptors_functioning=> nrel_main_idtf:
 alcohol_detoxification=> nrel_main_idtf:
 	[алкогольная детоксикация](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-chalcogens=> nrel_main_idtf:
+chalcogen=> nrel_main_idtf:
 	[халькоген](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 lithophile=> nrel_main_idtf:

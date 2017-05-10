@@ -1,24 +1,33 @@
 hydrobromic_acid
 => nrel_main_idtf:
-	[бромоводородная кислота]
-	(* <- lang_ru;;	*);
-	[hydrobromic acid]
-	(* <- lang_en;;	*);
+	[бромоводородная кислота](* <- lang_ru;; *);
+	[hydrobromic acid](* <- lang_en;; *);
 => nrel_idtf: 
-	[HBr] 
-	(* <-lang_en;;*);;
+	[HBr] (* <-lang_en;;*);
 
-hydrobromic_acid
 <- rrel_key_sc_element:
 	Definition_of_hydrobromic_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Бромоводородная кислота)](* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/hydrobromic_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydrobromic_acid">Бромоводородная кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_bromide">бромоводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>, <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - HBr.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
 		*);;
-	
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_bromide;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+			*);;
 	*);
 
 <- rrel_key_sc_element:
@@ -61,16 +70,3 @@ hydrobromic_acid
 			*);;
 		*);;
 	*);;
-
-Definition_of_hydrobromic_acid
-=> nrel_main_idtf:
-	[Опр.(Бромоводородная кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->hydrogen_bromide;;
-				->water;;
-				->strong_acid;;
-				->monobasic_acid;;
-				->acid;;
-			*);;

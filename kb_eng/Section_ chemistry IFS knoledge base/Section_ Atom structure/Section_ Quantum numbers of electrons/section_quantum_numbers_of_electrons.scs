@@ -1,8 +1,0 @@
-section_quantum_numbers_of_electrons
-=> nrel_main_idtf: [Section. Quantum numbers of electrons](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_quantum_numbers_of_electrons.html" (* <-lang_en;; *);;
-		*);;

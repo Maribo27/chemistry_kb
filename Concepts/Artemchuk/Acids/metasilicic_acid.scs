@@ -1,25 +1,32 @@
 metasilicic_acid
 => nrel_main_idtf:
-	[метакремниевая кислота]
-	(* <- lang_ru;;	*);
-	[metasilicic acid]
-	(* <- lang_en;;	*);
+	[метакремниевая кислота](* <- lang_ru;;	*);
+	[metasilicic acid](* <- lang_en;; *);
 => nrel_idtf: 
-	[H2SiO3] 
-	(* <-lang_en;;*);;
+	[H2SiO3](* <-lang_en;;*);
 
-metasilicic_acid
 <- rrel_key_sc_element:
 	Definition_of_metasilicic_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Метакремниевая кислота)](* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/metasilicic_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "metasilicic_acid">Метакремниевая кислота</sc_element></b> - очень <sc_element sys_idtf  = "weak_acid">слабая</sc_element> <sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>.Химическая формула - H2SiO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
 		*);;
-	
-	*);
+	<= nrel_using_constants:...
+			(*
+				->weak_acid;;
+				->dibasic_acid;;
+				->acid;;
+			*);;
+*);
 
 <- rrel_key_sc_element:
 	... (*
@@ -46,14 +53,3 @@ metasilicic_acid
 			*);;
 		*);;
 	*);;
-
-Definition_of_metasilicic_acid
-=> nrel_main_idtf:
-	[Опр.(Метакремниевая кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->weak_acid;;
-				->dibasic_acid;;
-				->acid;;
-			*);;

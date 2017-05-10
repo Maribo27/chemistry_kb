@@ -1,0 +1,8 @@
+section_chemical_elements
+=> nrel_main_idtf: [Section. Subject domain of chemical elements](*<- lang_en;;*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_chemical_elements.html" (* <-lang_en;; *);;
+		*);;

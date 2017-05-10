@@ -1,8 +1,0 @@
-section_ionic_reaction_and_hydrolysis
-=> nrel_main_idtf: [Section. Ionic reaction. Hydrolysis](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_ionic_reaction_and_hydrolysis.html" (* <-lang_en;; *);;
-		*);;

@@ -1,8 +1,0 @@
-section_full_electronic_formula_of_element 
-=> nrel_main_idtf: [Section. Full electronic formula of element ](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_full_electronic_formula_of_element.html" (* <-lang_en;; *);;
-		*);;

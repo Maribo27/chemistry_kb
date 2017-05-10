@@ -1,25 +1,35 @@
 hydrofluoric_acid
 => nrel_main_idtf:
-	[плавиковая кислота]
-	(* <- lang_ru;;	*);
-	[hydrofluoric acid]
-	(* <- lang_en;;	*);
+	[плавиковая кислота](* <- lang_ru;; *);
+	[hydrofluoric acid](* <- lang_en;; *);
 => nrel_idtf: 
-	[HF] 
-	(* <-lang_en;;*);;
+	[HF](* <-lang_en;;*);
 
-hydrofluoric_acid
 <- rrel_key_sc_element:
 	Definition_of_hydrofluoric_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Плавиковая кислота)](* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/hydrofluoric_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydrofluoric_acid">Плавиковая кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_chloride">фтороводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>, средняя по <sc_element sys_idtf  = "strong_acid">силе</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - HF. Бесцветная, прозрачная <sc_element sys_idtf  = "liquid">жидкость</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
 		*);;
-	
-	*);
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_fluoride;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
 
 <- rrel_key_sc_element:
 	... (*
@@ -46,17 +56,3 @@ hydrofluoric_acid
 			*);;
 		*);;
 	*);;
-
-Definition_of_hydrofluoric_acid
-=> nrel_main_idtf:
-	[Опр.(Плавиковая кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->hydrogen_fluoride;;
-				->water;;
-				->strong_acid;;
-				->monobasic_acid;;
-				->acid;;
-				->liquid;;
-			*);;

@@ -1,0 +1,120 @@
+elem_La
+<= nrel_inclusion: chemical_element;
+<- sc_node_not_relation;
+
+=> nrel_main_idtf: [атом лантана] (* <-lang_ru;;*);
+=> nrel_main_idtf: [lanthanum atom] (* <-lang_en;;*);
+=> nrel_idtf: [атом La] (* <-lang_ru;;*);
+=> nrel_idtf: [atom La] (* <-lang_en;;*);
+
+<- rrel_key_sc_element: definition_of_elem_La
+(* 
+	=> nrel_main_idtf: [Опр.(Атом лантана)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "elem_La">Лантан</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   третьей  <sc_element sys_idtf  = "periodic_group">группы</sc_element>, 6-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> chemical_element;;
+		-> period;;
+		-> periodic_group;;
+	*);;
+*);
+
+
+<- metal;
+<- transition_metal;
+<- lithophile;
+<- rare_earth_metal;
+<- scandium_group;
+
+=> nrel_periodic_number: 57;
+<- group_three;
+<- period_six;
+
+<- oxidation_state_plus_two;
+<- oxidation_state_plus_three;
+
+<- valence_three;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Атом лантана)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Lanthanum atom)] (* <- lang_en;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/elem_La.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:187(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_La;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:169(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_La;;
+	*);;
+*);
+
+<- rrel_key_sc_element: electron_configuration_La
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом лантана, электронная конфигурация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>10</sup>4s<sup>2</sup>4p<sup>6</sup>4d<sup>10</sup>5s<sup>2</sup>5p<sup>6</sup>5d<sup>1</sup>6s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв.(атом лантана, свойство изотопа*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://html/isotopes_table_of_elem_La.html"
+		(*
+			=> nrel_format: format_html;;
+		*);;
+	*);;
+*);;
+
+atomic_mass_La <- number;
+=> nrel_main_idtf:[138,90547(7)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_La <- number;
+=> nrel_main_idtf:[1,1](*<-lang_ru;; <- lang_en;;*);;
+
+

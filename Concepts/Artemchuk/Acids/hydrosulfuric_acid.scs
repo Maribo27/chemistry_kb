@@ -1,25 +1,35 @@
 hydrosulfuric_acid
 => nrel_main_idtf:
-	[сероводородная кислота]
-	(* <- lang_ru;;	*);
-	[hydrochloric acid]
-	(* <- lang_en;;	*);
+	[сероводородная кислота](* <- lang_ru;;	*);
+	[hydrochloric acid](* <- lang_en;; *);
 => nrel_idtf: 
-	[H2S] 
-	(* <-lang_en;;*);;
+	[H2S](* <-lang_en;;*);
 
-hydrosulfuric_acid
 <- rrel_key_sc_element:
 	Definition_of_hydrosulfuric_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Сероводородная кислота)](* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/hydrosulfuric_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydrosulfuric_acid">Сероводородная кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_sulfide">сероводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>,  <sc_element sys_idtf  = "weak_acid">слабая</sc_element> <sc_element sys_idtf  = "nonpersistent_acid">неустойчивая</sc_element> <sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - H2S.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
 		*);;
-	
-	*);
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_sulfide;;
+				->water;;
+				->nonpersistent_acid;;
+				->weak_acid;;
+				->dibasic_acid;;
+				->acid;;
+			*);;
+*);
 
 <- rrel_key_sc_element:
 	... (*
@@ -61,17 +71,3 @@ hydrosulfuric_acid
 			*);;
 		*);;
 	*);;
-
-Definition_of_hydrosulfuric_acid
-=> nrel_main_idtf:
-	[Опр.(Сероводородная кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->hydrogen_sulfide;;
-				->water;;
-				->nonpersistent_acid;;
-				->weak_acid;;
-				->dibasic_acid;;
-				->acid;;
-			*);;

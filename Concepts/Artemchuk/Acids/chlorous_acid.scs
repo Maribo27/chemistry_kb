@@ -1,25 +1,33 @@
 chlorous_acid
 => nrel_main_idtf:
-	[хлористая кислота]
-	(* <- lang_ru;;	*);
-	[chlorous acid]
-	(* <- lang_en;;	*);
+	[хлористая кислота](* <- lang_ru;; *);
+	[chlorous acid]	(* <- lang_en;;	*);
 => nrel_idtf: 
-	[HClO2] 
-	(* <-lang_en;;*);;
+	[HClO2] (* <-lang_en;;*);
 
-chlorous_acid
 <- rrel_key_sc_element:
 	Definition_of_chlorous_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Хлористая кислота)](* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/chlorous_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "chlorous_acid">Хлористая кислота</sc_element></b> - <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element> средней <sc_element sys_idtf  = "strong_acid">силы</sc_element>, в свободном виде <sc_element sys_idtf  = "nonpersistent_acid">неустойчива</sc_element>. Химическая формула - HClO2.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->nonpersistent_acid;;
+			*);;
 		*);;
-	
-	*);
+*);
 
 <- rrel_key_sc_element:
 	... (*
@@ -61,15 +69,3 @@ chlorous_acid
 			*);;
 		*);;
 	*);;
-
-Definition_of_chlorous_acid
-=> nrel_main_idtf:
-	[Опр.(Хлористая кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->strong_acid;;
-				->monobasic_acid;;
-				->acid;;
-				->nonpersistent_acid;;
-			*);;

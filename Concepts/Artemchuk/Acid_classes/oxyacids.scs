@@ -1,0 +1,42 @@
+oxyacid
+=> nrel_main_idtf:
+	[oxyacid](*<- lang_en;;*);
+	[кислородсодержащая кислота](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	   Definition_of_oxyacid
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(Кислородсодержащая кислота)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых содержат один или несколько атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+	<= nrel_using_constants: ... 
+		(* 
+			->acid;;
+			->molecule;; 
+			->elem_O;; 
+		*);;
+*);
+
+=>nrel_inclusion:
+	carbonic_acid;
+	metasilicic_acid;
+	selenic_acid;
+	sulfuric_acid;
+	sulfurous_acid;
+	bromic_acid;
+	chloric_acid;
+	chlorous_acid;
+	iodic_acid;
+	metaarsenious_acid;
+	nitric_acid;
+	boric_acid;
+	orthophosphoric_acid;
+
+<- rrel_key_sc_element: section_acids;;
