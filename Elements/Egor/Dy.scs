@@ -1,4 +1,7 @@
 elem_Dy
+=> nrel_main_idtf:
+	[dysprosium atom](*<- lang_en;;*);
+	[атом диспрозия](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_dysprosium
 	(* 
@@ -70,7 +73,7 @@ elem_Dy
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент диспрозий)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом диспрозия)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

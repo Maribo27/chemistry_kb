@@ -1,4 +1,7 @@
 elem_Hf
+=> nrel_main_idtf:
+	[hafnium atom](*<- lang_en;;*);
+	[атом гафния](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_hafnium
 	(* 
@@ -74,7 +77,7 @@ elem_Hf
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент гафний)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом гафния] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

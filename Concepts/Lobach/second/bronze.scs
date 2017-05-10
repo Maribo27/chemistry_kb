@@ -30,7 +30,6 @@ bronze
 => nrel_alloy_component: elem_Pb;
 => nrel_alloy_component: elem_Zn;
 => nrel_alloy_component: elem_P;
-=> nrel_density_of_substance: 7800;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;

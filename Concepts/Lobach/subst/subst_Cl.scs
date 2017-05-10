@@ -72,7 +72,7 @@ subst_Cl
 <- rrel_key_sc_element:...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (хлоа (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв. (хлор (вещество), изотопная модификация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Изотопы хлора:  <sup>28</sup>Сl, <sup>29</sup>Сl, <sup>30</sup>Сl, <sup>31</sup>Сl, <sup>32</sup>Сl, <sup>33</sup>Сl, <sup>34</sup>Сl, <sup>35</sup>Сl, <sup>36</sup>Сl, <sup>37</sup>Сl, <sup>38</sup>Сl, <sup>39</sup>Сl, <sup>40</sup>Сl, <sup>41</sup>Сl, <sup>42</sup>Сl, <sup>43</sup>Сl, <sup>44</sup>Сl, <sup>45</sup>Сl, <sup>46</sup>Сl, <sup>47</sup>Сl, <sup>48</sup>Сl, <sup>49</sup>Сl, <sup>50</sup>Сl, <sup>51</sup>Сl] (*<- lang_ru;; => nrel_format: format_html;;*);;

@@ -1,4 +1,7 @@
 elem_Cd
+=> nrel_main_idtf:
+	[cadmium atom](*<- lang_en;;*);
+	[атом кадмия](*<- lang_ru;;*);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_cadmium
@@ -73,7 +76,7 @@ elem_Cd
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент кадмий)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом кадмия)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

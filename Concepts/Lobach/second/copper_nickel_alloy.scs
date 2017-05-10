@@ -29,8 +29,6 @@ copper_nickel_alloy
 => nrel_alloy_component: elem_Zn;
 => nrel_alloy_component: elem_Fe;
 => nrel_alloy_component: elem_Mn;
-=> nrel_density_of_substance: 7800;
-
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;

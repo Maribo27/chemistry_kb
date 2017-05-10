@@ -24,7 +24,6 @@ manganin
 => nrel_alloy_component: elem_Cu;
 => nrel_alloy_component: elem_Ni;
 => nrel_alloy_component: elem_Mg;
-=> nrel_density_of_substance: 8400;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;
