@@ -1,0 +1,97 @@
+elem_Tc
+=> nrel_main_idtf: [атом технеция] (* <- lang_ru;; *);
+=> nrel_idtf: [Tc] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_technetium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/tc.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_seven;
+<- period_five;
+=> nrel_periodic_number: forty_three;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_six; 
+<= nrel_inclusion: valence_six;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_thirty_six(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Tc;
+
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_fourty_seven(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Tc;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Tc
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (технеций, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Tc] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>5</sup> 5s<sup>2</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент технеций)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/technetium.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
+
+
+Definition_of_technetium
+=> nrel_main_idtf:
+	[Опр. (технеций)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_Tc <- number;
+=> nrel_main_idtf:[98](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Tc <- number;
+=> nrel_main_idtf:[1,9](*<-lang_ru;; <- lang_en;;*);;

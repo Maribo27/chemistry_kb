@@ -1,0 +1,119 @@
+subst_Sn
+<- sc_node_not_relation;
+=> nrel_main_idtf: [олово] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Sn
+(* 
+	=> nrel_main_idtf: [Опр.(олово)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество олово</b> — 
+<sc_element sys_idtf  = "colour_silver_white">cеребристо-белого цвета</sc_element>
+ мягкий, пластичный <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_silver_white;;
+		-> metal;;
+	*);;
+*);
+
+<- colour_silver_white;
+=> nrel_inclusion: elem_Sn;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_hundred_thirty_two  (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_six_hundred (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: heating
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (олово (вещество), нагревание*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При нагревании олово реагирует с большинством неметаллов. При этом образуются соединения в степени окисления +4, которая более характерна для олова, чем +2. ] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_sn_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (олово (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Олово медленно реагирует c концентрированной соляной кислотой. В разбавленной серной кислоте олово не растворяется, а с концентрированной — реагирует очень медленно.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_sn.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_sn
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (олово, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sn_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_sn
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (олово, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sn_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_sn
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (олово, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sn_(application)2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

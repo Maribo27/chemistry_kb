@@ -1,0 +1,100 @@
+elem_Xe
+=> nrel_main_idtf: [атом ксенона] (* <- lang_ru;; *);
+=> nrel_idtf: [Xe] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_xenon
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/xe.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_eighteen;
+<- period_five;
+=> nrel_periodic_number: fifty_four;
+
+<- nonmetal;
+ 
+<= nrel_inclusion: oxidation_state_zero;
+<= nrel_inclusion: valence_zero;
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_eight(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Xe;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_fourty(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Xe;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Xe
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ксенон, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Xe] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 5s<sup>2</sup>p<sup>6</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент ксенон)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/xenon.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>]			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+
+Definition_of_xenon
+=> nrel_main_idtf:
+	[Опр. (ксенон)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_Xe <- number;
+=> nrel_main_idtf:[131](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Xe <- number;
+=> nrel_main_idtf:[2,6](*<-lang_ru;; <- lang_en;;*);;

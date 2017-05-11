@@ -1,0 +1,119 @@
+subst_Te
+<- sc_node_not_relation;
+=> nrel_main_idtf: [теллур] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Te
+(* 
+	=> nrel_main_idtf: [опр.(теллур)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество теллур</b> — 
+<sc_element sys_idtf  = "colour_silver">серебристого цвета</sc_element> 
+блестящий <sc_element sys_idtf  = "nonmetal">неметалл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_silver;;
+		-> nonmetal;;
+	*);;
+*);
+
+<- colour_silver;
+=> nrel_inclusion: elem_Te;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:four_hundred_fifty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:nine_hundred_ninety (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_te_and_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, кислород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ С кислородом образует соединения TeO, TeO2, TeO3] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_te_and_h
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, водород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Теллур образует соединение с водородом при нагревании] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_te_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При взаимодействии с концентрированной серной кислотой образует сульфит.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_te.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_te
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (теллур, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/te_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_te
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (теллур, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/te_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
