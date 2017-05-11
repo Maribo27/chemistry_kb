@@ -1,10 +1,14 @@
 elem_Ni
+	=> nrel_main_idtf: 
+		[niccolum atom] (* <-lang_en;;*);
+		[атом никеля] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Ni] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Ni] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Niccolum
 (* 
-	=> nrel_main_idtf: [Опр. (никель)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом никеля)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -26,7 +30,7 @@ elem_Ni
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (никель (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом никеля)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -98,7 +102,7 @@ elem_Ni
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (никель, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом никеля, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Ar] 3d<sup>8</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

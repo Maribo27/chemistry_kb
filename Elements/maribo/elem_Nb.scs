@@ -1,10 +1,14 @@
 elem_Nb
+	=> nrel_main_idtf: 
+		[niobium atom] (* <-lang_en;;*);
+		[атом ниобия] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Nb] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Nb] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Niobium
 (* 
-	=> nrel_main_idtf: [Опр. (ниобий)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом ниобия)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -26,7 +30,7 @@ elem_Nb
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (молибден (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (атом ниобия, свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_Nb_isotope.html"
@@ -49,7 +53,7 @@ elem_Nb
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (ниобий (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом ниобия)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -92,7 +96,7 @@ elem_Nb
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (ниобий, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом ниобия, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Kr] 4d<sup>4</sup>5s<sup>1</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

@@ -1,10 +1,14 @@
 elem_Mn
+	=> nrel_main_idtf: 
+		[manganum atom] (* <-lang_en;;*);
+		[атом марганца] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Mn] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Mn] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Manganum
 (* 
-	=> nrel_main_idtf: [Опр. (марганец)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом марганца)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -47,7 +51,7 @@ elem_Mn
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (марганец (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом марганца)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -91,7 +95,7 @@ elem_Mn
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (марганец, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом марганца, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Ar] 3d<sup>5</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

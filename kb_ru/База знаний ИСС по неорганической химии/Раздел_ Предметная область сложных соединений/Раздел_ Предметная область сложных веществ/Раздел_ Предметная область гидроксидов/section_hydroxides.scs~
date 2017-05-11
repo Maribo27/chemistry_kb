@@ -1,7 +1,0 @@
-section_basis => nrel_main_idtf: [Раздел. Основания](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_basis.html" (* <-lang_ru;; *);;
-		*);;

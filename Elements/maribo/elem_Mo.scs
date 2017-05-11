@@ -1,10 +1,14 @@
 elem_Mo
+	=> nrel_main_idtf: 
+		[molybdaenum atom] (* <-lang_en;;*);
+		[атом молибдена] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Mo] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Mo] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Molybdaenum
 (* 
-	=> nrel_main_idtf: [Опр. (молибден)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом молибдена)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -37,7 +41,7 @@ elem_Mo
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (молибден (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом молибдена)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -51,7 +55,7 @@ elem_Mo
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (молибден (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (атом молибдена, свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_Mo_isotope.html"
@@ -104,7 +108,7 @@ elem_Mo
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (молибден, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом молибдена, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Kr] 4d<sup>5</sup>5s<sup>1</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

@@ -1,9 +1,0 @@
-section_salts 
-=> nrel_main_idtf: [Раздел. Соли](*<- lang_ru;;*);
-
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_salts.html" (* <-lang_ru;; *);;
-		*);;

@@ -1,7 +1,0 @@
-section_oxides => nrel_main_idtf: [Раздел. Оксиды](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_oxides.html" (* <-lang_ru;; *);;
-		*);;

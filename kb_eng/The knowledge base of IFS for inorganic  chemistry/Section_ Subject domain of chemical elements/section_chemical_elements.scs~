@@ -1,8 +1,0 @@
-section_periodic_table_of_chemical_elements
-=> nrel_main_idtf: [Section. Periodic table of chemical elements](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_periodic_table_of_chemical_elements.html" (* <-lang_en;; *);;
-		*);;

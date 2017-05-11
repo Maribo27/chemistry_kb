@@ -1,8 +1,0 @@
-section_nonmetals
-=> nrel_main_idtf: [Раздел. Неметаллы](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_nonmetals.html" (* <-lang_ru;; *);;
-		*);;

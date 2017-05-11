@@ -1,8 +1,0 @@
-section_metals
-=> nrel_main_idtf: [Раздел. Металлы](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_metals.html" (* <-lang_ru;; *);;
-		*);;

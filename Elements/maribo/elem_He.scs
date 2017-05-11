@@ -1,9 +1,14 @@
 elem_He
+	=> nrel_main_idtf: 
+		[helium atom] (* <-lang_en;;*);
+		[атом гелия] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom He] (* <-lang_en;;*);
+	=> nrel_idtf: [атом He] (* <-lang_ru;;*);
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
+<- chemical_element;
 <- rrel_key_sc_element: definition_of_Helium
 (* 
-	=> nrel_main_idtf: [Опр. (гелий)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом гелия)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -43,7 +48,7 @@ elem_He
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (гелий (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (атом гелия, свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_He_isotope.html"
@@ -56,7 +61,7 @@ elem_He
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (гелий (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом гелия)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -102,7 +107,7 @@ elem_He
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (гелий, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом гелия, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ 1s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

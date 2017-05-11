@@ -1,10 +1,14 @@
 elem_O
+	=> nrel_main_idtf: 
+		[oxygen atom] (* <-lang_en;;*);
+		[атом кислорода] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom O] (* <-lang_en;;*);
+	=> nrel_idtf: [атом O] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Oxygen
 (* 
-	=> nrel_main_idtf: [Опр. (кислород)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом кислорода)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -26,7 +30,7 @@ elem_O
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (кислород (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (атом кислорода, свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_O_isotope.html"
@@ -63,7 +67,7 @@ elem_O
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (кислород (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом кислорода)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -107,7 +111,7 @@ elem_O
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (кислород, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом кислорода, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [He] 2s<sup>2</sup>2p<sup>4</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

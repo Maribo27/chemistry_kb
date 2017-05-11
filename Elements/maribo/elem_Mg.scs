@@ -1,10 +1,14 @@
 elem_Mg
+	=> nrel_main_idtf: 
+		[magnesium atom] (* <-lang_en;;*);
+		[атом магния] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Mg] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Mg] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Magnesium
 	(* 
-	=> nrel_main_idtf: [Опр. (магний)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом магния)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -28,7 +32,7 @@ elem_Mg
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (магний (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом магния)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -82,7 +86,7 @@ elem_Mg
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (магний, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом магния, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Ne] 3s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

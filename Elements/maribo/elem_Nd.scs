@@ -1,10 +1,14 @@
 elem_Nd
+	=> nrel_main_idtf: 
+		[neodymium atom] (* <-lang_en;;*);
+		[атом неодима] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Nd] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Nd] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Neodymium
 (* 
-	=> nrel_main_idtf: [Опр. (неодим)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом неодима)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -25,7 +29,7 @@ elem_Nd
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (неодим (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом неодима)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -39,7 +43,7 @@ elem_Nd
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (неодим (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (атом неодима, свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_Nd_isotope.html"
@@ -93,7 +97,7 @@ elem_Nd
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (неодим, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом неодима, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Xe] 4f<sup>4</sup>6s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

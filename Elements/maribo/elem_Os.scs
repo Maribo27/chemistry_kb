@@ -1,10 +1,14 @@
 elem_Os
+	=> nrel_main_idtf: 
+		[osmium atom] (* <-lang_en;;*);
+		[атом осмия] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Os] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Os] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Osmium
 (* 
-	=> nrel_main_idtf: [Опр. (осмий)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом осмия)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -26,7 +30,7 @@ elem_Os
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (осмий (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (атом осмия, свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_Os_isotope.html"
@@ -80,7 +84,7 @@ elem_Os
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (осмий, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом осмия, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Xe] 4f<sup>14</sup>5d<sup>6</sup>6s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
@@ -90,7 +94,7 @@ elem_Os
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (осмий (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом осмия)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*

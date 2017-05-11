@@ -1,10 +1,15 @@
 elem_Fe
-<= nrel_inclusion: chemical_element;
+	=> nrel_main_idtf: 
+		[ferrum atom] (* <-lang_en;;*);
+		[атом железа] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Fe] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Fe] (* <-lang_ru;;*);
+<- chemical_element;
 <- sc_node_not_relation;
 
 <- rrel_key_sc_element: definition_of_Fe
 (* 
-	=> nrel_main_idtf: [Опр. (железо)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом железа)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -35,7 +40,7 @@ elem_Fe
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (железо (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом железа)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -79,7 +84,7 @@ elem_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (железо, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом железа, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Ar] 3d<sup>6</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

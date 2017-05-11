@@ -1,10 +1,14 @@
 elem_N
+	=> nrel_main_idtf: 
+		[nitrogenium atom] (* <-lang_en;;*);
+		[атом азота] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom N] (* <-lang_en;;*);
+	=> nrel_idtf: [атом N] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
-<= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Nitrogenium
 (* 
-	=> nrel_main_idtf: [Опр. (азот)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом азота)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -26,7 +30,7 @@ elem_N
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (азот (элемент), свойство изотопа*)] (* <- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв. (атом азота, свойство изотопа*)] (* <- lang_ru;;*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_N_isotope.html"
@@ -63,7 +67,7 @@ elem_N
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (азот (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом азота)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -107,7 +111,7 @@ elem_N
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (азот, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом азота, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [He] 2s<sup>2</sup>2p<sup>3</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;
