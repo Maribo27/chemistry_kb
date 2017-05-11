@@ -4,7 +4,7 @@ elem_H
 
 <- rrel_key_sc_element: definition_of_hydrogenium
 (* 
-	=> nrel_main_idtf: [опр.(водород)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (водород)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -34,7 +34,7 @@ elem_H
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [утв.(водород (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (водород (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_H_isotope.html"
@@ -47,7 +47,7 @@ elem_H
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(водород (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (водород (элемент))] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -109,7 +109,7 @@ elem_H
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(водород, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (водород, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ 1s<sup>1</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

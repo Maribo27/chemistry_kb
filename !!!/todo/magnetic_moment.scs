@@ -8,7 +8,7 @@ magnetic_moment
 (*
     <- definition;;
     => nrel_main_idtf: [Def. (magnetic moment)](*<- lang_en;;*);;
-    => nrel_main_idtf: [опр.(магнитный момент)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр. (магнитный момент)](*<- lang_ru;;*);;
 
     <= nrel_sc_text_translation:...
     (*

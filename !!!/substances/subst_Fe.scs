@@ -4,7 +4,7 @@ subst_Fe
 => nrel_main_idtf: [iron (substance)] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_Fe
 (* 
-	=> nrel_main_idtf: [опр.(железо (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (железо (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -34,7 +34,7 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(железо (вещество), взаимодействие*, кислота)](*<- lang_ru;;*);;
+		[Утв. (железо (вещество), взаимодействие*, кислота)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с кислотами c образованием соли и выделением водорода.] (*<- lang_ru;;*);;
@@ -45,7 +45,7 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(железо (вещество), взаимодействие*, кислород (вещество))](*<- lang_ru;;*);;
+		[Утв. (железо (вещество), взаимодействие*, кислород (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с кислородом.] (*<- lang_ru;;*);;
@@ -56,7 +56,7 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(железо (вещество), взаимодействие*, сера (вещество))](*<- lang_ru;;*);;
+		[Утв. (железо (вещество), взаимодействие*, сера (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с порошком серы.] (*<- lang_ru;;*);;
@@ -67,7 +67,7 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(железо (вещество), взаимодействие*, галоген)](*<- lang_ru;;*);;
+		[Утв. (железо (вещество), взаимодействие*, галоген)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с галогенами.] (*<- lang_ru;;*);;
@@ -78,7 +78,7 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(железо (вещество), взаимодействие*, неметалл)](*<- lang_ru;;*);;
+		[Утв. (железо (вещество), взаимодействие*, неметалл)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с галогенами.] (*<- lang_ru;;*);;
@@ -113,7 +113,7 @@ subst_Fe
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(железо (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (железо (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Fe.jpg"

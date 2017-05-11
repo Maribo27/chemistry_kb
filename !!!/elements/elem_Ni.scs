@@ -4,7 +4,7 @@ elem_Ni
 <= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Niccolum
 (* 
-	=> nrel_main_idtf: [опр.(никель)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (никель)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -26,7 +26,7 @@ elem_Ni
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(никель (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (никель (элемент))] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -98,7 +98,7 @@ elem_Ni
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(никель, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (никель, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Ar] 3d<sup>8</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

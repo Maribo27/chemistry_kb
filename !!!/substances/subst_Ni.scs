@@ -5,7 +5,7 @@ subst_Ni
 <= nrel_inclusion: chemical_substance;
 <- rrel_key_sc_element: definition_of_subst_Ni
 (* 
-	=> nrel_main_idtf: [опр.(никель (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (никель (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -54,7 +54,7 @@ subst_Ni
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(никель (вещество), растворимость*, азотная кислота)](*<- lang_ru;;*);;
+		[Утв. (никель (вещество), растворимость*, азотная кислота)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Никель активно растворяется в разбавленной азотной кислоте.] (*<- lang_ru;;*);;
@@ -65,7 +65,7 @@ subst_Ni
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(никель (вещество), растворимость*, серная кислота)](*<- lang_ru;;*);;
+		[Утв. (никель (вещество), растворимость*, серная кислота)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Никель активно растворяется в горячей концентрированной серной кислоте.] (*<- lang_ru;;*);;
@@ -76,7 +76,7 @@ subst_Ni
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(никель (вещество), растворимость*, оксид углерода, карбонил)](*<- lang_ru;;*);;
+		[Утв. (никель (вещество), растворимость*, оксид углерода, карбонил)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ С оксидом углерода CO никель легко образует летучий и очень ядовитый карбонил Ni(CO)4.] (*<- lang_ru;;*);;
@@ -86,7 +86,7 @@ subst_Ni
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(никель (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (никель (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Niccolum.jpg"

@@ -5,7 +5,7 @@ subst_Mn
 <= nrel_inclusion: chemical_substance;
 <- rrel_key_sc_element: definition_of_subst_Mn
 (* 
-	=> nrel_main_idtf: [опр.(марганец (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (марганец (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -49,7 +49,7 @@ subst_Mn
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(марганец (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (марганец (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Manganesium.jpg"
@@ -70,7 +70,7 @@ subst_Mn
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(марганец (вещество), горение, кислород)](*<- lang_ru;;*);;
+		[Утв. (марганец (вещество), горение, кислород)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Порошкообразный марганец сгорает в кислороде.] (*<- lang_ru;;*);;
@@ -81,7 +81,7 @@ subst_Mn
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(марганец (вещество), нагревание, вода, водород (вещество))](*<- lang_ru;;*);;
+		[Утв. (марганец (вещество), нагревание, вода, водород (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Марганец при нагревании разлагает воду, вытесняя водород.] (*<- lang_ru;;*);;

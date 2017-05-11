@@ -8,7 +8,7 @@ dipole_moment
 (*
     <- definition;;
     => nrel_main_idtf: [Def. (dipole moment)](*<- lang_en;;*);;
-    => nrel_main_idtf: [опр.(дипольный момент)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр. (дипольный момент)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:

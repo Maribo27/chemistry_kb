@@ -7,7 +7,7 @@ salt_forming_oxide
 <- rrel_key_sc_element:...
 (*
     <- definition;;
-    => nrel_main_idtf: [опр.(солеобразующий оксид)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр. (солеобразующий оксид)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:

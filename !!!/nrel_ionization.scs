@@ -12,7 +12,7 @@ nrel_ionization
 <- rrel_key_sc_element:...
 (*
     <- definition;;
-    => nrel_main_idtf: [опр.(ионизация*)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр. (ионизация*)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example: "file://html/ionization rus.html"(*<- lang_ru;;*);;

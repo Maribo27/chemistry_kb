@@ -5,7 +5,7 @@ subst_Os
 <= nrel_inclusion: chemical_substance;
 <- rrel_key_sc_element: definition_of_subst_Os
 (* 
-	=> nrel_main_idtf: [опр.(осмий (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (осмий (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -48,7 +48,7 @@ subst_Os
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(осмий (вещество), взаимодействие*, нагревание, кислород (вещество))](*<- lang_ru;;*);;
+		[Утв. (осмий (вещество), взаимодействие*, нагревание, кислород (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Порошок осмия при нагревании реагирует с кислородом.] (*<- lang_ru;;*);;
@@ -59,7 +59,7 @@ subst_Os
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(осмий (вещество), взаимодействие*, нагревание, галоген)](*<- lang_ru;;*);;
+		[Утв. (осмий (вещество), взаимодействие*, нагревание, галоген)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Порошок осмия при нагревании реагирует с галогенами.] (*<- lang_ru;;*);;
@@ -70,7 +70,7 @@ subst_Os
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(осмий (вещество), взаимодействие*, нагревание, кислота)](*<- lang_ru;;*);;
+		[Утв. (осмий (вещество), взаимодействие*, нагревание, кислота)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Порошок осмия при нагревании реагирует с кислотами.] (*<- lang_ru;;*);;
@@ -80,7 +80,7 @@ subst_Os
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(осмий (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (осмий (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Osmium.jpg"

@@ -6,7 +6,7 @@ heterogeneous_reaction
                 (*
                         <- definition;;
                         => nrel_main_idtf: [Def. (heterogeneous reaction)](*<- lang_en;;*);;
-                        => nrel_main_idtf: [опр.(гетерогенная реакция)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Опр. (гетерогенная реакция)](*<- lang_ru;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:

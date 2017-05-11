@@ -11,7 +11,7 @@ hydroxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [опр.(гидроксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр. (гидроксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -32,7 +32,7 @@ hydroxide
 (*
     <- explanation;;
     => nrel_main_idtf: 
-            [утв.(гидроксид, химический элемент, минерал)](*<- lang_ru;;*);;
+            [Утв. (гидроксид, химический элемент, минерал)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:

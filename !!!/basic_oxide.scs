@@ -7,7 +7,7 @@ basic_oxide
 <- rrel_key_sc_element:...
 (*
     <- definition;;
-    => nrel_main_idtf: [опр.(основный оксид)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр. (основный оксид)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:
@@ -30,7 +30,7 @@ basic_oxide
 <- rrel_key_sc_element:...
 (*
     <- explanation;;
-    => nrel_main_idtf: [утв.(основный оксид, оксид, кислота, взаимодействие*)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Утв. (основный оксид, оксид, кислота, взаимодействие*)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:
@@ -46,7 +46,7 @@ basic_oxide
 (*
     <- explanation;;
     => nrel_main_idtf: 
-        [утв.(основный оксид, вода, кислота, соль)](*<- lang_ru;;*);;
+        [Утв. (основный оксид, вода, кислота, соль)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:[Основный оксид + кислота → соль + вода](*<- lang_ru;;*);;
@@ -57,7 +57,7 @@ basic_oxide
 (*
     <- explanation;;
     => nrel_main_idtf: 
-        [утв.(основный оксид, щелочь, вода)](*<- lang_ru;;*);;
+        [Утв. (основный оксид, щелочь, вода)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:[Основный оксид + вода → щелочь] (*<- lang_ru;;*);;
@@ -70,7 +70,7 @@ basic_oxide
 (*
     <- explanation;;
     => nrel_main_idtf: 
-        [утв.(основный оксид, амфотерный оксид, соль)](*<- lang_ru;;*);;
+        [Утв. (основный оксид, амфотерный оксид, соль)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:[Основный оксид + амфотерный оксид → соль](*<- lang_ru;;*);;
@@ -81,7 +81,7 @@ basic_oxide
 (*
     <- explanation;;
     => nrel_main_idtf: 
-        [утв.(основный оксид, водород (вещество), металл, вода)](*<- lang_ru;;*);;
+        [Утв. (основный оксид, водород (вещество), металл, вода)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:[Основный оксид + водород → металл + вода](*<- lang_ru;;*);;

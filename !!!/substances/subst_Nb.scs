@@ -5,7 +5,7 @@ subst_Nb
 <= nrel_inclusion: chemical_substance;
 <- rrel_key_sc_element: definition_of_subst_Nb
 (* 
-	=> nrel_main_idtf: [опр.(ниобий (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (ниобий (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -52,7 +52,7 @@ subst_Nb
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(ниобий (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (ниобий (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Niobium.jpg"

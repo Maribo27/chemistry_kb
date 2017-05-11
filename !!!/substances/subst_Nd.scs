@@ -5,7 +5,7 @@ subst_Nd
 <= nrel_inclusion: chemical_substance;
 <- rrel_key_sc_element: definition_of_subst_Nd
 (* 
-	=> nrel_main_idtf: [опр.(неодим (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (неодим (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -49,7 +49,7 @@ subst_Nd
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(неодим (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (неодим (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Neodymium.jpg"

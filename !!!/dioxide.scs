@@ -11,7 +11,7 @@ dioxide
 <- rrel_key_sc_element: ...
 (* 
 	<- explanation;;
-	=> nrel_main_idtf: [опр.(диоксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр. (диоксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(* 
 		-> rrel_example:

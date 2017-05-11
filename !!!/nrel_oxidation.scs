@@ -10,7 +10,10 @@ nrel_oxidation
 	(*
 		-> rrel_example:
 			[<p><b>Окисление</b> - <sc_element sys_idtf = "nrel_reaction">химическая реакция</sc_element>, при которой <sc_element sys_idtf = "electron"электроны</sc_element> отбираются у данного <sc_element sys_idtf = "chemical_substance"вещества</sc_element> <sc_element sys_idtf = "rrel_oxidizer"окислителем</sc_element>.</p>]
-				(*<- lang_ru;;*);;
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
 	*);;
 
 	<= nrel_using_constants:...

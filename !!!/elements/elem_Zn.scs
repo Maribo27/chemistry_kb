@@ -1,10 +1,16 @@
 elem_Zn
+	=> nrel_main_idtf: 
+		[zinc atom] (* <-lang_en;;*);
+		[атом цинка] (* <-lang_ru;;*);
+	=> nrel_idtf: [atom Zn] (* <-lang_en;;*);
+	=> nrel_idtf: [атом Zn] (* <-lang_ru;;*);
+
 <- chemical_element;
 <- sc_node_not_relation;
 <= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Zincum
 (* 
-	=> nrel_main_idtf: [опр.(цинк)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (цинк)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -26,7 +32,7 @@ elem_Zn
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(цинк (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (атом цинка)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -109,7 +115,7 @@ elem_Zn
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(цинк, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (атом цинка, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Ar] 3d<sup>10</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

@@ -7,7 +7,7 @@ suboxide
 <- rrel_key_sc_element:...
 (*
     <- definition;;
-    => nrel_main_idtf: [опр.(субоксид)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр. (субоксид)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:
@@ -29,7 +29,7 @@ suboxide
 (*
     <- explanation;;
     => nrel_main_idtf: 
-        [утв.(субоксид, химический элемент)](*<- lang_ru;;*);;
+        [Утв. (субоксид, химический элемент)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:

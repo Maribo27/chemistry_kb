@@ -5,7 +5,7 @@ subst_N
 <= nrel_inclusion: chemical_substance;
 <- rrel_key_sc_element: definition_of_subst_N
 (* 
-	=> nrel_main_idtf: [опр.(азот (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (азот (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -56,7 +56,7 @@ subst_N
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(азот (вещество), газ)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (азот (вещество), газ)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Nitrogenium.jpg"
@@ -70,7 +70,7 @@ subst_N
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(азот (вещество), взаимодействие*, литий (вещество))](*<- lang_ru;;*);;
+		[Утв. (азот (вещество), взаимодействие*, литий (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Азот при обычных условиях реагирует с литием.] (*<- lang_ru;;*);;
@@ -81,7 +81,7 @@ subst_N
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(азот (вещество), нагревание, металл, нитрид)](*<- lang_ru;;*);;
+		[Утв. (азот (вещество), нагревание, металл, нитрид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Азот при нагревании реагирует с некоторыми металлами, образуя нитриды.] (*<- lang_ru;;*);;
@@ -92,7 +92,7 @@ subst_N
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(азот (вещество), нагревание, неметалл, нитрид)](*<- lang_ru;;*);;
+		[Утв. (азот (вещество), нагревание, неметалл, нитрид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Азот при нагревании реагирует с некоторыми неметаллами, образуя нитриды.] (*<- lang_ru;;*);;
@@ -103,7 +103,7 @@ subst_N
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(азот (вещество), взаимодействие*, кислород, оксид азота (II))](*<- lang_ru;;*);;
+		[Утв. (азот (вещество), взаимодействие*, кислород, оксид азота (II))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Азот реагирует с кислородом, образуя оксид азота (II).] (*<- lang_ru;;*);;

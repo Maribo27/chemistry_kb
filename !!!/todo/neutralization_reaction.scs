@@ -8,7 +8,7 @@ neutralization_reaction
 (*
     <- definition;;
     => nrel_main_idtf: [Def. (neutralization reaction)](*<- lang_en;;*);;
-    => nrel_main_idtf: [опр.(реакция нейтрализации)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр. (реакция нейтрализации)](*<- lang_ru;;*);;
     <= nrel_sc_text_translation:...
     (*
         -> rrel_example:

@@ -10,7 +10,7 @@ acid_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [опр.(кислотный оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр. (кислотный оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -34,7 +34,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(кислотный оксид, неметалл, переходный элемент, получение*)](*<- lang_ru;;*);;
+		[Утв. (кислотный оксид, неметалл, переходный элемент, получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -58,7 +58,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(кислотный оксид, вода, кислота)](*<- lang_ru;;*);;
+		[Утв. (кислотный оксид, вода, кислота)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Кислотный оксид + вода → кислота](*<- lang_ru;;*);;
@@ -69,7 +69,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(кислотный оксид, основание, соль, вода)](*<- lang_ru;;*);;
+		[Утв. (кислотный оксид, основание, соль, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Кислотный оксид + основание → соль + вода] (*<- lang_ru;;*);;
@@ -80,7 +80,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(кислотный оксид, основный оксид, соль)](*<- lang_ru;;*);;
+		[Утв. (кислотный оксид, основный оксид, соль)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Кислотный оксид + основный оксид → соль](*<- lang_ru;;*);;
@@ -91,7 +91,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(кислотный оксид, амфотерный оксид, средняя соль)](*<- lang_ru;;*);;
+		[Утв. (кислотный оксид, амфотерный оксид, средняя соль)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Кислотный оксид + амфотерный оксид → средняя соль](*<- lang_ru;;*);;

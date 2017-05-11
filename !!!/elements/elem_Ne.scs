@@ -4,7 +4,7 @@ elem_Ne
 <= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Neon
 (* 
-	=> nrel_main_idtf: [опр.(неон)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (неон)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -26,7 +26,7 @@ elem_Ne
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [утв.(неон (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Утв. (неон (элемент), свойство изотопа*)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example: "file://html/elem_Ne_isotope.html"
@@ -61,7 +61,7 @@ elem_Ne
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(неон (элемент))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Рис. (неон (элемент))] (* <- lang_ru;; *);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -105,7 +105,7 @@ elem_Ne
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(неон, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (неон, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [He] 2s<sup>2</sup>2p<sup>6</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

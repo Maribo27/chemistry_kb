@@ -13,7 +13,7 @@ nrel_hydrogen_bond
 (*
 	<- definition;;
 	=> nrel_main_idtf: [Def. (hydrogen bond*)](*<- lang_en;;*);;
-	=> nrel_main_idtf: [опр.(водородная связь*)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр. (водородная связь*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:

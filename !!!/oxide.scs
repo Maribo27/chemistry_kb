@@ -6,7 +6,7 @@ oxide
 <- rrel_key_sc_element: definition_oxide
 (*
 	<- definition;;
-	=> nrel_main_idtf: [опр.(оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр. (оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:

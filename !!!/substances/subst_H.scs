@@ -4,7 +4,7 @@ subst_H
 => nrel_main_idtf: [hydrogenium (substance)] (* <- lang_en;; *);
 <- rrel_key_sc_element: definition_of_subst_H
 (* 
-	=> nrel_main_idtf: [опр.(водород (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (водород (вещество))] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -32,7 +32,7 @@ subst_H
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(водород (вещество), газ)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (водород (вещество), газ)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_hydrogenium.jpg"
@@ -45,7 +45,7 @@ subst_H
 <- rrel_key_sc_element: interaction_hydrogenium_and_active_metal
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [утв.(водород (вещество), взаимодействие*, активный металл, гидрид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, активный металл, гидрид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Водород реагирует с очень активными металлами, образуя гидриды.] (*<- lang_ru;;*);;
@@ -55,7 +55,7 @@ subst_H
 <- rrel_key_sc_element: interaction_hydrogenium_and_fluorine
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [утв.(водород (вещество), взаимодействие*, фтор (вещество), фтороводород)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, фтор (вещество), фтороводород)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Водород реагирует со фтором, образуя фтороводород.] (*<- lang_ru;;*);;
@@ -65,7 +65,7 @@ subst_H
 <- rrel_key_sc_element: interaction_hydrogenium_and_oxide
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [утв.(водород (вещество), взаимодействие*, оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Водород реагирует с оксидами.] (*<- lang_ru;;*);;
@@ -75,7 +75,7 @@ subst_H
 <- rrel_key_sc_element: interaction_hydrogenium_and_halogen
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [утв.(водород (вещество), взаимодействие*, галоген, галогеноводород)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв. (водород (вещество), взаимодействие*, галоген, галогеноводород)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Водород  в реакции с галогенами образует галогеноводороды.] (*<- lang_ru;;*);;

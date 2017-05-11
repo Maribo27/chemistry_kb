@@ -16,7 +16,7 @@ water
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [опр.(вода)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр. (вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -43,7 +43,7 @@ water
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(вода, атом)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (вода, атом)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:"file://image/water.png"
@@ -114,7 +114,7 @@ water
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(вода, взаимодействие*, активный металл)](*<- lang_ru;;*);;
+		[Утв. (вода, взаимодействие*, активный металл)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Вода реагирует при комнатной температуре с активными металлами. ] (*<- lang_ru;;*);;
@@ -125,7 +125,7 @@ water
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(вода, взаимодействие*, фтор (вещество))](*<- lang_ru;;*);;
+		[Утв. (вода, взаимодействие*, фтор (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Вода реагирует при комнатной температуре со фтором. ] (*<- lang_ru;;*);;
@@ -136,7 +136,7 @@ water
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(вода, взаимодействие*, соль, гидрат)](*<- lang_ru;;*);;
+		[Утв. (вода, взаимодействие*, соль, гидрат)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Вода реагирует при комнатной температуре с солями, образуя гидраты. ] (*<- lang_ru;;*);;
@@ -147,7 +147,7 @@ water
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(вода, взаимодействие*, нагревание, железо (вещество))](*<- lang_ru;;*);;
+		[Утв. (вода, взаимодействие*, нагревание, железо (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Вода реагирует при нагревании с железом. ] (*<- lang_ru;;*);;
@@ -158,7 +158,7 @@ water
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(вода, взаимодействие*, нагревание, магний (вещество))](*<- lang_ru;;*);;
+		[Утв. (вода, взаимодействие*, нагревание, магний (вещество))](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Вода реагирует при нагревании с магнием. ] (*<- lang_ru;;*);;

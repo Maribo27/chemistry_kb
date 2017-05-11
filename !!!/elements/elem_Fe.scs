@@ -4,7 +4,7 @@ elem_Fe
 
 <- rrel_key_sc_element: definition_of_Fe
 (* 
-	=> nrel_main_idtf: [опр.(железо)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (железо)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 	(*
@@ -35,7 +35,7 @@ elem_Fe
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [рис.(железо (элемент))] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (железо (элемент))] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -79,7 +79,7 @@ elem_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(железо, электронная конфигурация*)](*<- lang_ru;;*);;
+		[Утв. (железо, электронная конфигурация*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ [Ar] 3d<sup>6</sup>4s<sup>2</sup>] (*<- lang_en;; => nrel_format: format_html;;*);;

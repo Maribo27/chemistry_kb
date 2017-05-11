@@ -7,7 +7,7 @@ amphoteric_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [опр.(амфотерный оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Опр. (амфотерный оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -30,7 +30,7 @@ amphoteric_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(амфотерный оксид, сильная кислота, соль, вода)](*<- lang_ru;;*);;
+		[Утв. (амфотерный оксид, сильная кислота, соль, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Амфотерный оксид + сильная кислота → соль + вода](*<- lang_ru;;*);;
@@ -41,7 +41,7 @@ amphoteric_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[утв.(амфотерный оксид, сильная щелочь, соль, вода)](*<- lang_ru;;*);;
+		[Утв. (амфотерный оксид, сильная щелочь, соль, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[Амфотерный оксид + сильная щелочь → соль + вода](*<- lang_ru;;*);;
