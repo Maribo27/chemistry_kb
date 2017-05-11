@@ -1,0 +1,98 @@
+subst_U
+<- sc_node_not_relation;
+=> nrel_main_idtf: [уран] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_U
+(* 
+	=> nrel_main_idtf: [опр.(уран)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество уран</b> — тяжёлый 
+<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>
+ глянцеватый <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_silver_white;;
+		-> metal;;
+	*);;
+*);
+
+<- colour_silver_white;
+=> nrel_inclusion: elem_U;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_one_hundred_thirty_two (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_seven_hundred_and_fourty_five (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_u_and_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (уран (вещество), взаимодействие*, кислород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Существует оксид U3O8. Степень окисления в нём формально дробная, а реально он представляет собой смешанный оксид урана (IV) и (VI)] (*<- lang_ru;;*);;
+	*);;
+*);
+ 
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_u.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_u
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (уран, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/u_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_u
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (уран, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/u_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,108 @@
+subst_Ti
+<- sc_node_not_relation;
+=> nrel_main_idtf: [титан] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Ti
+(* 
+	=> nrel_main_idtf: [опр.(титан)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество титан</b> — лёгкий 
+прочный <sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.  </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_silver_white;;
+		-> metal;;
+	*);;
+*);
+
+<- colour_silver_white;
+=> nrel_inclusion: elem_Ti;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_six_hundred_sixty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_two_hundred_and_eighty_seven (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_ti_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (титан (вещество), взаимодействие*, вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[  Титан наиболее подвержен коррозии в органических средах, так как, в присутствии воды на поверхности титанового изделия образуется плотная пассивная пленка из оксидов и гидрида титана] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ti_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (титан (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Титан устойчив к разбавленным растворам многих кислот] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ti.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ti
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ti_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_ti
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ti_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

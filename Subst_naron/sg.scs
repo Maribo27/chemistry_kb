@@ -1,0 +1,52 @@
+subst_Sg
+<- sc_node_not_relation;
+=> nrel_main_idtf: [сиборгий] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Sg
+(* 
+	=> nrel_main_idtf: [опр.(сиборгий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество сиборгий</b> —  радиоактивный 
+<sc_element sys_idtf  = "metal">металл</sc_element>, представляет только научный интерес.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> metal;;
+	*);;
+*);
+
+=> nrel_inclusion: elem_Sg;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+<- rrel_key_sc_element: chemical_properties
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (сиборгий (вещество), химическое свойство*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Предполагают, что сиборгий должен быть аналогом вольфрама и молибдена] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: application_of_sg
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сиборгий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sg_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);;

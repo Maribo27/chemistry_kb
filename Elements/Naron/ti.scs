@@ -1,0 +1,101 @@
+elem_Ti
+=> nrel_main_idtf: [атом титана] (* <- lang_ru;; *);
+=> nrel_idtf: [Ti] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_titanium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/ti.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+
+<- group_four;
+<- period_four;
+=> nrel_periodic_number: twenty_two;
+
+<- metal;
+
+<= nrel_inclusion: oxidation_state_plus_two;oxidation_state_plus_three;oxidation_state_plus_four; 
+<= nrel_inclusion: valence_two;valence_three;valence_four;
+
+
+=> nrel_atomic_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_fourty_seven(*<- number;;*);;
+	*);;
+*);
+
+=> nrel_electronegativity: electronegativity_Ti;
+
+=> nrel_covalent_radius: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_pm:one_hundred_sixty(*<- number;;*);;
+	*);;
+*);
+
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Ti;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Ti
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Ti] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>2</sup> 4s<sup>2</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент титан)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/titanium.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>]	(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+	
+Definition_of_titanium
+=> nrel_main_idtf:
+	[Опр. (титан)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_Ti <- number;
+=> nrel_main_idtf:[232](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Ti <- number;
+=> nrel_main_idtf:[1,54](*<-lang_ru;; <- lang_en;;*);;
