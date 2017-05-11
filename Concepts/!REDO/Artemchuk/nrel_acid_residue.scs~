@@ -13,7 +13,7 @@ nrel_acid_residue
 				(*<- lang_ru;;*);;
 		*);;
 	*);
-	=> nrel_second_domain:substance;
-	=> nrel_first_domain:substance;
+	=> nrel_second_domain: chemical_substance;
+	=> nrel_first_domain: chemical_substance;
 <- rrel_key_sc_element: section_acids;;
 	

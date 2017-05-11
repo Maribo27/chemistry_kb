@@ -31,7 +31,7 @@ metal_ceramics
 	*);
 
 
-<=nrel_inclusion:substance;
+<=nrel_inclusion: chemical_substance;
 
 <- rrel_key_sc_element: properties_of_metal_ceramics
 	(*

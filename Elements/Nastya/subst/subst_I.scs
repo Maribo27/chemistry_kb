@@ -1,0 +1,134 @@
+subst_I
+<= nrel_inclusion: chemical_substance;
+<- sc_node_not_relation;
+=> nrel_main_idtf: [иод] (* <- lang_ru;; *);
+=> nrel_main_idtf: [iodium] (* <- lang_en;; *);
+=> nrel_idtf: [I2](*<- lang_en;;*);
+=> nrel_inclusion: elem_I;
+
+<- rrel_key_sc_element: definition_of_subst_I
+(* 
+	=> nrel_main_idtf: [Опр.(Иод)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество иод</b> - <sc_element sys_idtf = "nonmetal">неметаллические</sc_element> кристаллы чёрно-серого цвета с фиолетовым металлическим блеском, легко образует фиолетовые пары, обладающие резким запахом.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> nonmetal;;
+	*);;
+*);
+
+<- solid;
+<- color_black_and_violet;
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(иод, твердое вещество)] (* <- lang_ru;;	*);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/subst_I.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,93] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [113,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [184,35] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_fusion: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [15,52] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_specific_heat_of_evaporation: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kilojoule_per_mole:...
+		(*
+			=> nrel_main_idtf: [41,95] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_heat_capacity: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_joule_per_kelvin_and_mole:...
+		(*
+			=> nrel_main_idtf: [54,44] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_molar_volume: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_cubic_cm_per_mole:...
+		(*
+			=> nrel_main_idtf: [25,7] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);;

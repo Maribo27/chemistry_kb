@@ -12,6 +12,13 @@ sucrose
 	[sucrose]
 	(* <- lang_en;;	*);;
 
+auride
+=> nrel_main_idtf:
+	[аурид]
+	(* <- lang_ru;;	*);
+	[auride]
+	(* <- lang_en;;	*);;
+
 sweetener
 => nrel_main_idtf:
 	[подсластитель]
@@ -126,14 +133,6 @@ phosphate
 	(* <- lang_ru;; *);
 	[phosphate]
 	(* <- lang_en;; *);;
-
-acidic_oxide
-=> nrel_main_idtf:
-	[кислотный оксид]
-	(* <- lang_ru;; *);
-	[acidic oxide]
-	(* <- lang_en;; *);;
-
 
 soluble_salt
 => nrel_main_idtf:
@@ -260,8 +259,6 @@ multielement_compound
 	[multielement compound]
 	(* <- lang_ru;;	*);;
 	
-
-
 colloidal_solution
 => nrel_main_idtf:
     [colloidal solution]
@@ -370,23 +367,19 @@ patronized_explosive
 	[патронированное взрывчатое вещество]
 	(* <- lang_ru;;	*);;
 
-war_industry
-=> nrel_main_idtf: [военная промышленность](* <- lang_ru;;	*);;
+dichromic_acid
+=> nrel_main_idtf: 
+[дихромовая кислота](* <- lang_ru;;	*);
+[dichromic acid](* <- lang_en;;	*);;
 
-mining
-=> nrel_main_idtf: [горное дело](* <- lang_ru;;	*);;
+carcinogen
+=> nrel_main_idtf: 
+[канцероген](* <- lang_ru;;	*);
+[carcinogen](* <- lang_en;;	*);;
 
-construction
-=> nrel_main_idtf: [строительство](* <- lang_ru;;	*);;
-
-seismic_survey
-=> nrel_main_idtf: [сейсморазведка](* <- lang_ru;;	*);;
-
-material_processing
-=> nrel_main_idtf: [обработка материалов](* <- lang_ru;;	*);;
-
-fertilizer
-=> nrel_main_idtf: [удобрения](* <- lang_ru;;	*);;
-
-medicine
-=> nrel_main_idtf: [медицина](* <- lang_ru;;	*);;
+carbide
+=> nrel_main_idtf: 
+[карбид]
+(* <- lang_ru;;	*);
+[carbide]
+(* <- lang_en;;	*);;

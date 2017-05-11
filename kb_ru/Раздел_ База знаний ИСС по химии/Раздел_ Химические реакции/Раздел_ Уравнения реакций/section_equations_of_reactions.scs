@@ -1,8 +1,0 @@
-section_equations_of_reactions
-=> nrel_main_idtf: [Раздел. Уравнения реакций](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_equations_of_reactions.html" (* <-lang_ru;; *);;
-		*);;

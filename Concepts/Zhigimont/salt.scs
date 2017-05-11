@@ -1,5 +1,7 @@
 salt
 
+<- sc_node_not_relation;
+
 <= nrel_inclusion: complex_substance;
 
 => nrel_main_idtf:
@@ -11,13 +13,19 @@ salt
 <- rrel_key_sc_element:
 	Definition_of_salt
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[<b><sc_element sys_idtf="salt">Со́ль</sc_element></b> — <sc_element sys_idtf="complex_substance">сложное вещество</sc_element>, которое в <sc_element sys_idtf="water">водных</sc_element> <sc_element sys_idtf="solution">растворах</sc_element> <sc_element sys_idtf="electrolytic_dissociation">диссоциирует</sc_element> на <sc_element sys_idtf="cation">катионы</sc_element> <sc_element sys_idtf="metal">металлов</sc_element> и <sc_element sys_idtf="anion">анионы</sc_element> <sc_element sys_idtf="nrel_acid_residue">кислотных остатков</sc_element>.] 
 		(* 
 		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="salt">Salt</sc_element></b> is a <sc_element sys_idtf="complex_substance">complex substance</sc_element> which <sc_element sys_idtf="electrolytic_dissociation">dissociates</sc_element> into <sc_element sys_idtf="cation">cations</sc_element> of <sc_element sys_idtf="metal">metals</sc_element> and <sc_element sys_idtf="anion">anions</sc_element> of <sc_element sys_idtf="nrel_acid_residue">acid residues</sc_element> in <sc_element sys_idtf="water">water</sc_element> <sc_element sys_idtf="solution">solutions</sc_element> .] 
+		(* 
+		<-lang_en;; 
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -28,7 +36,10 @@ salt
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(соль, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(salt, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -88,78 +99,14 @@ salt
     -> sulfide;;
     -> fluoride;;
     -> picrate;;
-	*);
-
-<- rrel_key_sc_element: chemical_properties_of_salt
-
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (соль, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Соли взаимодействуют с кислотами и основаниями, если в результате реакции получается продукт, который выходит из сферы реакции (осадок, <sc_element sys_idtf="gas">газ</sc_element>, малодиссоциирующие вещества, например, вода):<br>
-			BaCl<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> = BaSO<sub>4</sub>↓ + 2HCl<br>
-			NaHCO<sub>3</sub> + HCl = NaCl + H<sub>2</sub>O + CO<sub>2</sub><br>
-			Na<sub>2</sub>SiO3 + 2HCl = 2NaCl + H<sub>2</sub>SiO3↓<br>
-			Соли взаимодействуют с металлами, если свободный металл находится левее металла в составе соли в электрохимическом ряду активности металлов:<br>
-			Cu + HgCl<sub>2</sub> = CuCl<sub>2</sub> + Hg<br>
-			Соли взаимодействуют между собой, если продукт реакции выходит из сферы реакции (образуется газ, осадок или вода); в том числе эти реакции могут проходить с изменением степеней окисления атомов реагентов:<br>
-CaCl<sub>2</sub> + Na<sub>2</sub>CO<sub>3</sub> = CaCO<sub>3</sub>↓ + 2NaCl<br>
-AgNO<sub>3</sub> + NaCl = AgCl↓ + NaNO<sub>3</sub><br>
-K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> + 3Na<sub>2</sub>SO<sub>3</sub> + 4H<sub>2</sub>SO<sub>4</sub> = Cr<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> + 3Na<sub>2</sub>SO<sub>4</sub> + K<sub>2</sub>SO<sub>4</sub> + 4H<sub>2</sub>O<br>
-Некоторые соли разлагаются при нагревании:<br>
-CuCO<sub>3</sub> = CuO + CO<sub>2</sub><br>
-Ca(NO<sub>3</sub>)<sub>2</sub> = Ca(NO<sub>2</sub>)<sub>2</sub> + O<sub>2</sub><br>
-NH<sub>4</sub>NO<sub>3</sub> = N<sub>2</sub>O + 2H<sub>2</sub>O<br>
-NH<sub>4</sub>NO<sub>2</sub> = N<sub>2</sub> + 2H<sub>2</sub>O]
-			(* 
-			<-lang_ru;;
-			=> nrel_format: format_html;;
-			*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: receipt_of_salt
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (соль, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:[Взаимодействие <sc_element sys_idtf="acid">кислот</sc_element> с <sc_element sys_idtf="metal">металлами</sc_element>, <sc_element sys_idtf="basic_oxide">основными</sc_element> и <sc_element sys_idtf="amphoteric_oxide">амфотерными оксидами</sc_element> / гидроксидами:
-
-	H<sub>2</sub>SO<sub>4</sub> + Mg = MgSO<sub>4</sub> + H<sub>2</sub>
-	H<sub>2</sub>SO<sub>4</sub> + MgO = MgSO<sub>4</sub> + H<sub>2</sub>O
-	3H<sub>2</sub>SO<sub>4</sub> + Al<sub>2</sub>O<sub>3</sub> = Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> + 3H<sub>2</sub>O>br>
-	Взаимодействие <sc_element sys_idtf="acidic_oxide">кислотных оксидов</sc_element> c <sc_element sys_idtf="alkali">щелочами</sc_element>, основными и амфотерными оксидами / гидроксидами:
-
-	Ca(OH)<sub>2</sub> + CO<sub>2</sub> = CaCO<sub>3</sub> + H<sub>2</sub>O
-	CaO + SiO<sub>2</sub> = CaSiO<sub>3</sub>
-	Al<sub>2</sub>O<sub>3</sub> + 3SO<sub>3</sub> = Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>
-	Mg(OH)<sub>2</sub> + CO<sub>2</sub> = MgCO<sub>3</sub> + H<sub>2</sub>O
-	Zn(OH)<sub>2</sub> + SO<sub>3</sub> = ZnSO<sub>4</sub> + H<sub>2</sub>O<br>
-	Взаимодействие солей c кислотами, другими солями (если образуется выходящий из сферы реакции продукт):
-
-	CaCO<sub>3</sub> + 2HCl = CaCl<sub>2</sub> + H<sub>2</sub>O + CO<sub>2</sub>
-	CuCl<sub>2</sub> + Na<sub>2</sub>S = 2NaCl + CuS
-	2Na<sub>2</sub>CO<sub>3</sub> + 2MgCl<sub>2</sub> + H<sub>2</sub>O = [Mg(OH)]<sub>2</sub>CO<sub>3</sub> + CO<sub>2</sub> + 4NaCl<br>
-	Взаимодействие <sc_element sys_idtf="elementary_substance">простых веществ</sc_element>:
-Fe + S = FeS<br>
-Взаимодействие <sc_element sys_idtf="base">оснований</sc_element> с <sc_element sys_idtf="nonmetal">неметаллами</sc_element>, например, с галогенами:
-Ca(OH)<sub>2</sub> + Cl<sub>2</sub> = Ca(OCl)Cl + H<sub>2</sub>O]
-		(* 
-		<-lang_ru;;
-			=> nrel_format: format_html;;
-		*);;
-		*);;
 	*);;
 
 Definition_of_salt
 => nrel_main_idtf:
 	[Опр.(соль)]
 	(* <- lang_ru;;	*);
+	[Def.(salt)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> complex_substance; water; solution; electrolytic_dissociation; cation; metal; anion; nrel_acid_residue;;
@@ -167,25 +114,35 @@ Definition_of_salt
 
 salt_substitution
 => nrel_main_idtf:
-	[Разбиение по продуктам замены]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по продуктам замены]
+	(* <- lang_ru;; *);
+	[Partitioning salts by exchange products]
+	(* <- lang_en;; *);;
 
 salt_structure
 => nrel_main_idtf:
-	[Разбиение по числу катионов и анионов]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по числу катионов и анионов]
+	(* <- lang_ru;; *);
+	[Partitioning salts by cation and anion number]
+	(* <- lang_en;; *);;
 
 salt_molecule
 => nrel_main_idtf:
-	[Разбиение по входящим в состав частицам]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по входящим в состав частицам]
+	(* <- lang_ru;; *);
+	[Partitioning salts by comprising particles]
+	(* <- lang_en;; *);;
 
 salt_solubility
 => nrel_main_idtf:
-	[Разбиение по растворимости]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по растворимости]
+	(* <- lang_ru;; *);
+	[Partitioning salts by solubility]
+	(* <- lang_en;; *);;
 	
 subdividing_salt_by_acid
 => nrel_main_idtf:
-	[Разбиение по соответствующим кислотам]
-	(* <- lang_ru;; *);;
+	[Разбиение солей по соответствующим кислотам]
+	(* <- lang_ru;; *);
+	[Partitioning salts by corresponding acids]
+	(* <- lang_en;; *);;

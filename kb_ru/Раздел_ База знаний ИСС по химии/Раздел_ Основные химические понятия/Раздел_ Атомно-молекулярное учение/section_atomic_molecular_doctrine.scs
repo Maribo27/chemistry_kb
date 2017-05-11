@@ -1,8 +1,0 @@
-section_atomic_molecular_doctrine
-=> nrel_main_idtf: [Раздел. Атомно-молекулярное учение](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_atomic_molecular_doctrine.html" (* <-lang_ru;; *);;
-		*);;

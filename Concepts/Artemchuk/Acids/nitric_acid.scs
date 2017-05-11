@@ -1,25 +1,33 @@
 nitric_acid
 => nrel_main_idtf:
-	[азотная кислота]
-	(* <- lang_ru;;	*);
-	[nitric acid]
-	(* <- lang_en;;	*);
+	[азотная кислота](* <- lang_ru;; *);
+	[nitric acid](* <- lang_en;; *);
 => nrel_idtf: 
-	[HNO3] 
-	(* <-lang_en;;*);;
+	[HNO3] 	(* <-lang_en;;*);
 
-nitric_acid
 <- rrel_key_sc_element:
 	Definition_of_nitric_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Азотная кислота)](* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/nitric_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nitric_acid">Азотная кислота</sc_element></b> - <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Бесцветная, дымящая на воздухе <sc_element sys_idtf  = "liquid">жидкость</sc_element>. Химическая формула - HNO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
 		*);;
-	
-	*);
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
 
 <- rrel_key_sc_element:
 	... (*
@@ -71,15 +79,3 @@ nitric_acid
 			*);;
 		*);;
 	*);;
-
-Definition_of_nitric_acid
-=> nrel_main_idtf:
-	[Опр.(Азотная кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->strong_acid;;
-				->monobasic_acid;;
-				->acid;;
-				->liquid;;
-			*);;

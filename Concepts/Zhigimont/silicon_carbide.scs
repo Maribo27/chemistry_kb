@@ -1,4 +1,5 @@
 silicon_carbide
+<- sc_node_not_relation;
 
 <-salt;
 <-carbide;
@@ -25,7 +26,7 @@ silicon_carbide
 <- rrel_key_sc_element:
 	Definition_of_silicon_carbide
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -33,14 +34,54 @@ silicon_carbide
 		(* <-lang_ru;; 
 		   => nrel_format: format_html;;
 		   *);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="silicon_carbide">Silicon carbide</sc_element></b> is a <sc_element sys_idtf="binary_compound">binary</sc_element> <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Si">silicon</sc_element> and <sc_element sys_idtf="elem_C">arbon</sc_element>.]
+		(* <-lang_en;; 
+		   => nrel_format: format_html;;
+		   *);;
 		*);;
 	*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,21] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 2730 (*<- number;;*);;
+	*);;
+*);
+
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_kelvin: 4892 (*<- number;;*);;
+	*);;
+*);
 
 
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(карбид кремния, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(silicon carbide, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -54,14 +95,14 @@ silicon_carbide
 	
 => nrel_applying: electronics; construction;;
 
-electronics
-=> nrel_main_idtf: [электроника](* <- lang_ru;;	*);;
 
 
 Definition_of_silicon_carbide
 => nrel_main_idtf:
 	[Опр.(карбид кремния)]
 	(* <- lang_ru;;	*);
+	[Def.(silicon carbide)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; binary_compound; elem_Si; elem_C;;

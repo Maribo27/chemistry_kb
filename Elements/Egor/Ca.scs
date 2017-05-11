@@ -1,4 +1,7 @@
 elem_Ca
+=> nrel_main_idtf:
+	[calcium atom](*<- lang_en;;*);
+	[атом кальция](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_calcium
 	(* 
@@ -74,7 +77,7 @@ elem_Ca
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент кальций)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом кальция)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

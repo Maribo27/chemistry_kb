@@ -1,5 +1,8 @@
 caesium_chloride
 
+
+<- sc_node_not_relation;
+
 <-chloride;
 <-solid;
 
@@ -18,13 +21,19 @@ caesium_chloride
 <- rrel_key_sc_element:
 	Definition_of_caesium_chloride
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[<b><sc_element sys_idtf="caesium_chloride">Хлори́д це́зия</sc_element></b> — неорганическое <sc_element sys_idtf="binary_compound">бинарное соединение</sc_element> <sc_element sys_idtf="elem_Cs">цезия</sc_element> с <sc_element sys_idtf="elem_Cl">хлором</sc_element>, цезиевая <sc_element sys_idtf="salt">соль</sc_element> <sc_element sys_idtf="hydrochloric_acid">хлороводородной кислоты</sc_element>.] 
 		(* 
 		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="caesium_chloride">Caesium chloride</sc_element></b> is an inorganic <sc_element sys_idtf="binary_compound">cinary compound</sc_element> of <sc_element sys_idtf="elem_Cs">caesium</sc_element> and <sc_element sys_idtf="elem_Cl">chlorine</sc_element>, caesium <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="hydrochloric_acid">hydrochloric acid</sc_element>.] 
+		(* 
+		<-lang_en;; 
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -35,7 +44,10 @@ caesium_chloride
 <- rrel_key_sc_element:
 	...
 	(*
-		<- description_of_a_typical_instance;;
+	<- illustration;;
+	=> nrel_main_idtf: 
+	[Рис.(хлорид цезия, твёрдое тело)] (* <- lang_ru;;	*);
+	[Pic.(caesium_chloride, solid)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:
 		...
 		(*
@@ -54,90 +66,79 @@ caesium_chloride
 	*);
 
 
-<- rrel_key_sc_element: physical_properties_of_caesium_chloride
+<-color_none;
 
+
+<- rrel_key_sc_element: receiving_CsCl_from_caesium_carbonate
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);
+		[Stat.(caesium chloride, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
 	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (хлорид цезия, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
+		-> rrel_example:[ Хлорид цезия получают из карбоната цезия.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium chloride is received from caesium carbonate.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: receiving_CsCl_from_caesium_hydroxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(хлорид цезия, получение*)](*<- lang_ru;;*);
+		[Stat.(caesium chloride, receiving*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Хлорид цезия получают из гидроксида цезия.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Caesium chloride is received from caesium hydroxide.] (*<- lang_en;;*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
 		(*
-			-> rrel_example:[В кристаллическом состоянии — бесцветное вещество с ионной структурой; нелетучее, термически устойчивое. Хлорид цезия хорошо растворим в <sc_element sys_idtf="water">воде</sc_element> и <sc_element sys_idtf="concentrated_solution">концентрированной</sc_element> <sc_element sys_idtf="hydrochloric_acid">соляной кислоте</sc_element>.<br>
-			Хлорид цезия в нормальных условиях представляет собой бесцветное (в крупно-кристаллическом виде) или белое (в виде порошка) соединение, хорошо растворимое в воде (186,5 грамм CsCl в 100 г H<sub>2</sub>O при 20 °С, 250 г при 80 °С, 270,5 г при 100 °С). Гигроскопичен, на воздухе расплывается; более летуч, чем <sc_element sys_idtf="potassium_chloride">хлорид калия</sc_element>. Не образует <sc_element sys_idtf="crystalline_hydrate">кристаллогидратов</sc_element>.]
-			(* 
-			<-lang_ru;; 
-			=> nrel_format: format_html;;
-			*);;
+			=> nrel_main_idtf: [3,983] (* <- lang_en;;*);;
+			<- number;;
 		*);;
-	*);
+	*);;
+*);
 
-<- rrel_key_sc_element: chemical_properties_of_caesium_chloride
-
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (хлорид цезия, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Хлорид цезия при растворении в воде практически полностью <sc_element sys_idtf="electrolytic_dissociation">диссоциирует</sc_element> на ионы, при этом в разбавленном растворе <sc_element sys_idtf="cation">катионы</sc_element> цезия <sc_element sys_idtf="nrel_solvation">сольватированы</sc_element>.<br>
-			В водных растворах вступает в типичные <sc_element sys_idtf="nrel_exchange_reaction">реакции обмена</sc_element> с некоторыми соединениями.<br>
-			Твёрдый CsCl при нагревании с концентрированной <sc_element sys_idtf="sulfuric_acid"></sc_element> (кипячение) или гидросульфатом цезия (550—700 °С) образует сульфат.<br>
-			Очень слабый восстановитель, <sc_element sys_idtf="nrel_oxidation">окисляется</sc_element> до хлора только с помощью сильных окислителей в жёстких условиях.
-			С некоторыми хлоридами образует смешанные соли: 2CsCl • BaCl<sub>2</sub>, 2CsCl • CuCl<sub>2</sub>, CsCl • 2CuCl, CsCl • LiCl и ряд других.<br>
-			Вступает в реакцию с межгалогенными соединениями, образуя полигалогениды.] 
-			(* 
-			<-lang_ru;; 
-			=> nrel_format: format_html;;
-			*);;
-		*);;
-	*);
+		-> rrel_kelvin: 646 (*<- number;;*);;
+	*);;
+*);
 
-<- rrel_key_sc_element: receipt_of_caesium_chloride
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
 	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (хлорид цезия, получение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:[В лабораторных условиях хлорид цезия может быть получен взаимодействием гидроксида, карбоната, гидрокарбоната или сульфида цезия с соляной кислотой.<br>
-		В промышленности хлорид цезия получают переработкой рудного сырья, как правило, <sc_element sys_idtf="pollucite">поллуцита</sc_element> — основного промышленного <sc_element sys_idtf="mineral">минерала</sc_element> цезия. Основной способ вскрытия измельчённого поллуцитового концентрата — обработка его соляной кислотой при повышенной температуре.<br>
-		Выделение хлорида цезия из раствора осуществляют с помощью его осаждения в виде нерастворимых <sc_element sys_idtf="double_salt">двойных солей</sc_element>, используя хлорид сурьмы(III), монохлорид иода или хлорид церия(IV).<br>
-		После отделения и очистки осадка хлорид цезия отделяют от побочного продукта с помощью термического <sc_element sys_idtf="nrel_hydrolysis">гидролиза</sc_element> или осаждением с помощью <sc_element sys_idtf="hydrosulfuric_acid">сероводорода</sc_element> — в обоих случаях CsCl остаётся в растворе.<br>
-		Также сырьём для получения хлорида цезия являются отходы переработки <sc_element sys_idtf="carnallite">карналлита</sc_element>.
-		] 
-		(* 
-		<-lang_ru;; 
-		=> nrel_format: format_html;;
-		*);;
-		*);;
-	*);
-
-<- rrel_key_sc_element: application_of_caesium_chloride
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (хлорид цезия, применение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:"file://html/application_of_caesium_chloride.html" (* <-lang_ru;; *);;
-		*);;
-	*);
+		-> rrel_kelvin: 1295 (*<- number;;*);;
+	*);;
+*);
 
 <- rrel_key_sc_element: toxicity_of_caesium_chloride
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлорид цезия, токсичность*)](*<- lang_ru;;*);;
+			[Утв. (хлорид цезия, токсичность*)](*<- lang_ru;;*);
+			[Stat. (caesium chloride, toxicity*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:[Хлорид цезия является низко токсичным соединением, имеющим низкую степень опасности для человека.<br>
-		Токсические свойства хлорида цезия в больших концентрациях связаны со способностью этого соединения снижать содержание <sc_element sys_idtf="elem_K">калия</sc_element> в организме и частично замещать его в биохимических процессах. Пыль соединения может вызвать раздражение верхних дыхательных путей, респираторные расстройства, астму.] 
-		(* 
-		<-lang_ru;; 
-		=> nrel_format: format_html;;
-		*);;
+		-> rrel_example:[Хлорид цезия является низко токсичным соединением, имеющим низкую степень опасности для человека.] 
+		(* <-lang_ru;;*);;
+		-> rrel_example:[Caesium chloride is a low toxic compound having a low degree of danger to humans.] 
+		(* <-lang_en;;*);;
 		*);;
 	*);;
 
@@ -145,6 +146,8 @@ Definition_of_caesium_chloride
 => nrel_main_idtf:
 	[Опр.(хлорид цезия)]
 	(* <- lang_ru;;	*);
+	[Def.(caesium chloride)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> binary_compound;;

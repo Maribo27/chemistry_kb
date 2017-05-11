@@ -1,0 +1,14 @@
+section_chemical_elements
+=> nrel_main_idtf: [Раздел. Предметная область химических элементов](*<- lang_ru;;*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_chemical_elements.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/table.html" (* <-lang_ru;; *);;
+		*);;

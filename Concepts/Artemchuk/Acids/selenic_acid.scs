@@ -1,25 +1,34 @@
 selenic_acid
 => nrel_main_idtf:
-	[селеновая кислота]
-	(* <- lang_ru;;	*);
-	[selenic acid]
-	(* <- lang_en;;	*);
+	[селеновая кислота] (* <- lang_ru;; *);
+	[selenic acid] (* <- lang_en;; *);
 => nrel_idtf: 
-	[H2SeO4] 
-	(* <-lang_en;;*);;
+	[H2SeO4] (* <-lang_en;;*);
 
-selenic_acid
 <- rrel_key_sc_element:
 	Definition_of_selenic_acid
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:[Опр.(Селеновая кислота)](* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/selenic_acid.html" (* <-lang_ru;; *);;
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "selenic_acid">Селеновая кислота</sc_element></b> - 
+<sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, состоящая из катиона <sc_element sys_idtf  = "elem_H">водорода</sc_element> и аниона селената. Бесцветное кристаллическое вещество, хорошо растворимое в <sc_element sys_idtf  = "water">воде</sc_element>. Химическая формула - H2SeO4.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
 		*);;
-	
-	*);
+	<= nrel_using_constants:...
+			(*
+				->dibasic_acid;;
+				->acid;;
+				->water;;
+				->elem_H;;
+			*);;
+*);
 
 <- rrel_key_sc_element:
 	... (*
@@ -72,15 +81,3 @@ selenic_acid
 			*);;
 		*);;
 	*);;
-
-Definition_of_selenic_acid
-=> nrel_main_idtf:
-	[Опр.(Селеновая кислота)]
-	(* <- lang_ru;;	*);
-<= nrel_using_constants:...
-			(*
-				->dibasic_acid;;
-				->acid;;
-				->water;;
-				->elem_H;;
-			*);;

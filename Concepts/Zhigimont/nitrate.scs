@@ -1,4 +1,6 @@
 nitrate
+
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[нитрат]
 	(* <- lang_ru;; *);
@@ -8,7 +10,7 @@ nitrate
 <- rrel_key_sc_element:
 	Definition_of_nitrate
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,6 +19,31 @@ nitrate
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="nitrate">Nitrate</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element>, <sc_element sys_idtf="salt">salt</sc_element> of <sc_element sys_idtf="nitric_acid">nitric acid</sc_element> HNO<sub>3</sub>] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element: receiving_nitrate
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (нитрат, получение*)](*<- lang_ru;;*);
+			[Stat. (nitrate, receiving*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Нитраты образуются при взаимодействии азотной кислоты и оснований.]
+		(* <-lang_ru;;*);;
+
+		-> rrel_example:[Nitrates are received from nitric acid and basis interaction.]
+		(* <-lang_en;;*);;
 		*);;
 	*);
 
@@ -32,6 +59,8 @@ Definition_of_nitrate
 => nrel_main_idtf:
 	[Опр.(нитрат)]
 	(* <- lang_ru;;	*);
+	[Def.(nitrate)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_compound; salt; nitric_acid;;

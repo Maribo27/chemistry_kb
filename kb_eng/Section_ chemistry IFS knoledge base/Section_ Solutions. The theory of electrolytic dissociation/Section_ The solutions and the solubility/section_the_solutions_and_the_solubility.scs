@@ -1,8 +1,0 @@
-section_the_solutions_and_the_solubility
-=> nrel_main_idtf: [Section. The solutions and the solubility](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_the_solutions_and_the_solubility.html" (* <-lang_en;; *);;
-		*);;

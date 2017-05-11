@@ -15,7 +15,7 @@ mixture
 		*);;
 	<= nrel_using_constants:...
 			(*
-				->substance;;
+				-> chemical_substance;;
 			*);;
 	*);
 <= nrel_subdividing:...

@@ -1,17 +1,25 @@
 diluted_solution
+
+<- sc_node_not_relation;
         => nrel_main_idtf:
                 [diluted solution](*<- lang_en;;*);
                 [разбавленный раствор](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_diluted_solution
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[<b><sc_element sys_idtf="diluted_solution">Разбавленный раствор</sc_element></b> — <sc_element sys_idtf="solution">раствор</sc_element> с низким содержанием <sc_element sys_idtf="rrel_solute">растворённого вещества</sc_element>.<b>] 
 		(* 
 		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="diluted_solution">Diluted solution</sc_element></b> is a <sc_element sys_idtf="solution">solution</sc_element> with low content of <sc_element sys_idtf="rrel_solute">solute</sc_element>.<b>] 
+		(* 
+		<-lang_en;; 
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -21,6 +29,8 @@ Definition_of_diluted_solution
 => nrel_main_idtf:
 	[Опр.(разбавленный раствор)]
 	(* <- lang_ru;;	*);
+	[Def.(diluted solution)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> solution;;

@@ -1,8 +1,0 @@
-section_radioactivity
-=> nrel_main_idtf: [Раздел. Радиоактивность](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_radioactivity.html" (* <-lang_ru;; *);;
-		*);;

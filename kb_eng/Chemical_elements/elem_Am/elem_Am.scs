@@ -1,3 +1,0 @@
-elem_Am
-	=> nrel_main_idtf: [americium] (* <-lang_en;;*);
-	=> nrel_idtf: [Am] (* <-lang_en;;*);;

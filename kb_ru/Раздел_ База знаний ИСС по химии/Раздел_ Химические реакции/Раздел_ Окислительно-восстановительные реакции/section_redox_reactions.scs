@@ -1,8 +1,0 @@
-section_redox_reactions
-=> nrel_main_idtf: [Раздел. Окислительно-восстановительные реакции](*<- lang_ru;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_redox_reactions.html" (* <-lang_ru;; *);;
-		*);;

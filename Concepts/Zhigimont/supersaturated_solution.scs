@@ -1,17 +1,25 @@
 supersaturated_solution
+
+<- sc_node_not_relation;
         => nrel_main_idtf:
-                [unsaturated solution](*<- lang_en;;*);
+                [supersaturated solution](*<- lang_en;;*);
                 [пересыщенный раствор](*<- lang_ru;;*);
                 [перенасыщенный раствор](*<- lang_ru;;*);
 				
 <- rrel_key_sc_element:
 	Definition_of_supersaturated_solution
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[<b><sc_element sys_idtf="supersaturated_solution">Пересыщенный раствор</sc_element></b> — <sc_element sys_idtf="solution">раствор</sc_element>, содержащий при данных условиях больше <sc_element sys_idtf="rrel_solute">растворённого вещества</sc_element>, чем в <sc_element sys_idtf="saturated_solution">насыщенном растворе</sc_element>.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="supersaturated_solution">Supersaturated solution</sc_element></b> is a  <sc_element sys_idtf="solution">solution</sc_element> that contains more <sc_element sys_idtf="rrel_solute">solute</sc_element> than a <sc_element sys_idtf="saturated_solution">saturated solution</sc_element> in the given conditions.] 
 		(* 
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
@@ -25,6 +33,8 @@ Definition_of_supersaturated_solution
 => nrel_main_idtf:
 	[Опр.(пересыщенный раствор)]
 	(* <- lang_ru;;	*);
+	[Def.(supersaturated solution)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> solution; rrel_solute; saturated_solution;;

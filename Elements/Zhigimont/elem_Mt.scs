@@ -1,0 +1,89 @@
+elem_Mt
+
+=> nrel_main_idtf: [атом мейтнерия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [meitnerium atom] (* <- lang_en;; *);
+
+=> nrel_idtf: [Mt] (* <- lang_en;; *);
+
+<- chemical_element;
+<- sc_node_not_relation;
+<= nrel_inclusion: chemical_element;
+
+<- rrel_key_sc_element:
+	Definition_of_meitnerium
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mt">Мейтнерий</sc_element></b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element> восьмой <sc_element sys_idtf  = "nrel_group">группы</sc_element> побочной подгруппы 7-го <sc_element sys_idtf  = "period">периода</sc_element> периодической системы химических элементов. ] 
+		(* <-lang_ru;; => nrel_format: format_html;;*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf  = "elem_Mt">Meitnerium</sc_element></b> is a <sc_element sys_idtf  = "chemical_element">chemical element</sc_element> of the 8th <sc_element sys_idtf  = "nrel_group">group</sc_element> of the 2nd subgroup of the 7th <sc_element sys_idtf  = "period">period</sc_element> of periodic table. ] 
+		(* <-lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	
+	*);
+
+
+
+<- oxidation_state_plus_three;
+<- oxidation_state_plus_one;
+<- oxidation_state_plus_four;
+<- oxidation_state_plus_six;
+<- oxidation_state_plus_nine;
+<- oxidation_state_plus_eight;
+
+<- group_eight;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_nine;
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: 278(*<- number;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(атом мейтнерия)] (* <- lang_ru;;	*);
+	[Pic.(meitnerium atom)] (* <- lang_en;;	*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://images/mt.png";;
+		*);;
+	*);
+
+<- rrel_key_sc_element: electron_configuration_Mt
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв.(атом мейтнерия, электронная конфигурация*)](*<- lang_ru;;*);
+		[Stat.(meitnerium atom, electronic configuration*)](*<- lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ [Rn] 5f<sup>14</sup> 6d<sup>7</sup> 7s<sup>2</sup> ] (*<- lang_en;; => nrel_format: format_html;;*);;
+	*);;
+*);;
+
+
+
+Definition_of_meitnerium
+=> nrel_main_idtf:
+	[Опр.(атом мейтнерия)]
+	(* <- lang_ru;;	*);
+	[Def.(meitnerium atom)]
+	(* <- lang_en;;	*);
+
+<= nrel_using_constants:
+			{
+				chemical_element;
+				period;
+				nrel_group
+				
+			};;

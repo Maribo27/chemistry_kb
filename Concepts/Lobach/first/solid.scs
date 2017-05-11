@@ -17,7 +17,7 @@ solid
 	<= nrel_using_constants:..
 			(*
 				->nrel_state_of_aggregation;;
-				->substance;;
+				-> chemical_substance;;
 			*);;
 	*);
 

@@ -1,5 +1,5 @@
 nrel_atomic_radius
-<- sc_node_not_relation;
+<- sc_node_norole_relation;
 => nrel_main_idtf:
 	[радиус атома*](* <-lang_ru;; *);
 	[atomic radius*](* <- lang_en;; *);;

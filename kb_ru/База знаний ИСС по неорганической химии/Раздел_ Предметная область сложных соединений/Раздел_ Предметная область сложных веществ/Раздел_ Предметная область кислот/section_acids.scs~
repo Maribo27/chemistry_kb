@@ -1,0 +1,20 @@
+section_acids => nrel_main_idtf: [Раздел. Кислоты](*<- lang_ru;;*);
+<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: "file://htmls/section_acids.html" (* <-lang_ru;; *);;
+		*);
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Классификация кислот)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Acid classification)] (* <- lang_en;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://image/acids.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;

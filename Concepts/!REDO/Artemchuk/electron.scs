@@ -67,7 +67,7 @@ Definition_of_electron
 	(* 
 		->electron;;
 		->elementary_particle;; 
-		->substance;; 
+		-> chemical_substance;; 
 	*);;
 
 

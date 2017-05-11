@@ -1,6 +1,7 @@
 binary_compound
 
 
+<- sc_node_not_relation;
 <= nrel_inclusion: chemical_compound;
 
 => nrel_main_idtf:
@@ -12,7 +13,7 @@ binary_compound
 <- rrel_key_sc_element:
 	Definition_of_binary_compound
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -21,66 +22,23 @@ binary_compound
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="binary_compound">Binary compound</sc_element></b> is a <sc_element sys_idtf="chemical_substance">chemical substance</sc_element>formed by 2 <sc_element sys_idtf="chemical_element">chemical elements</sc_element>.]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
 		*);;
-	*);
-
-
-
-
-
-<- rrel_key_sc_element: application_of_binary_compound
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (бинарное соединение, применение*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[В силу того, что к данной группе веществ можно отнести очень большое их количество, можно сказать, что бинарные соединения применяются практически во всех областях деятельности человека, от приготовления пищи до использования в качестве сырья для крупнотоннажных производств.] 
-			(* 
-			<-lang_ru;;
-			*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: chemical_properties_of_binary_compound
-
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (бинарное соединение, химические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Часто бинарные соединения можно получить прямым взаимодействием простых веществ между собой: <br>N2 + 3H2 ⇆ 2NH3 (p, T, кат.)<br>2Na + Cl2 = 2NaCl<br><br>Другие бинарные вещества могут получаться более сложным путём — через <sc_element sys_idtf="nrel_exchange_reaction">реакции обмена</sc_element> или <sc_element sys_idtf="nrel_redox">окислительно-восстановительные реакции</sc_element>:<br>AgNO3(р.) + NaBr(р.) = AgBr↓ + NaNO3(р.)<br>NH4NO3 = N2O + 2H2O (до 250 °C)] 
-			(* 
-			<-lang_ru;;
-			=> nrel_format: format_html;; 
-			*);;
-		*);;
-	*);
-
-
-<- rrel_key_sc_element: physical_properties_of_binary_compound
-
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (бинарное соединение, физические свойства*)](*<- lang_ru;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Группа бинарных соединений включает в себя очень большое число веществ, и, естественно, все эти вещества различаются по физическим свойствам. Среди бинарных соединений есть представляющие собой при нормальных условиях <sc_element sys_idtf="gas">газы</sc_element> (например, <sc_element sys_idtf="ammonia">аммиак</sc_element>, <sc_element sys_idtf="phosphine">фосфин</sc_element>), <sc_element sys_idtf="liquid">жидкости</sc_element> (например, тетрахлорид титана TiCl4, дисульфид углерода CS2) и <sc_element sys_idtf="solid">твёрдые вещества</sc_element> (например, нитрид бора BN, карбид кремния SiC).] 
-			(* 
-			<-lang_ru;;
-			=> nrel_format: format_html;; 
-			*);;
 		*);;
 	*);;
+
 
 
 Definition_of_binary_compound
 => nrel_main_idtf:
 	[Опр.(бинарное соединение)]
 	(* <- lang_ru;;	*);
+	[Def.(binary compound)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> chemical_substance; chemical_element;;

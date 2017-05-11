@@ -1,4 +1,7 @@
 elem_Cl
+=> nrel_main_idtf:
+	[chlorine atom](*<- lang_en;;*);
+	[атом хлора](*<- lang_ru;;*);
 <- rrel_key_sc_element:
 	Definition_of_chlorine
 	(* 
@@ -76,7 +79,7 @@ elem_Cl
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент хлор)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Иллюстрация (атом хлора)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

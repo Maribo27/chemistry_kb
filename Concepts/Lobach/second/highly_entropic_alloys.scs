@@ -26,7 +26,7 @@ highly_entropic_alloys
 	*);
 
 
-<=nrel_inclusion:substance;
+<=nrel_inclusion: chemical_substance;
 
 <- rrel_key_sc_element: highly_entropic_alloys_multicomponent_alloys
 	(*

@@ -27,7 +27,7 @@ Definition_of_formula_unit
 formula_unit <- rrel_key_sc_element: ...
 (*
 <- sc_statement;; 
--> rrel_main_key_sc_element: substance;;
+-> rrel_main_key_sc_element: chemical_substance;;
 => nrel_main_idtf: [Утв.(электрон, химическое вещество)] (*<-lang_ru;;*);;
 <= nrel_sc_text_translation: ...
 		(*

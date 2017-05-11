@@ -1,4 +1,5 @@
 acid_salt
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[кислая соль]
 	(* <- lang_ru;;	*);
@@ -8,7 +9,7 @@ acid_salt
 <- rrel_key_sc_element:
 	Definition_of_acid_salt
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -17,22 +18,33 @@ acid_salt
 		<-lang_ru;; 
 		=> nrel_format: format_html;;
 		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="acid_salt">Acid salt</sc_element></b> is a <sc_element sys_idtf="salt">salt</sc_element>containing 2 types of <sc_element sys_idtf="cation">cations</sc_element>: <sc_element sys_idtf="metal">metal</sc_element> cation(или <sc_element sys_idtf="ammonia">ammonia</sc_element>) and a <sc_element sys_idtf="elem_H">hydrogen</sc_element> cation, and multicharged <sc_element sys_idtf="anion">anion</sc_element> of <sc_element sys_idtf="nrel_acid_residue">acid residue</sc_element>.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
 		*);;
 	*);
 
-<- rrel_key_sc_element: receipt_of_acid_salt
+<- rrel_key_sc_element: receiving_acid_salt
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кислая соль, получение*)](*<- lang_ru;;*);;
+			[Утв. (кислая соль, получение*)](*<- lang_ru;;*);
+			[Stat. (acid salt, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
-		-> [Кислые соли образуются при воздействии избытка кислоты на <sc_element sys_idtf="alkali">щелочь</sc_element>. В зависимости от количества молей кислоты (в данном случае — <sc_element sys_idtf="orthophosphoric_acid">ортофосфорной</sc_element>) могут образовываться дигидроортофосфаты и гидроортофосфаты:<br>
-		1. Ba(OH)<sub>2</sub> + 2H<sub>3</sub>PO<sub>4</sub> → Ba(H<sub>2</sub>PO<sub>4</sub>)<sub>2</sub> + 2H<sub>2</sub>O<br>
-		2. Ba(OH)<sub>2</sub> + H<sub>3</sub>PO<sub>4</sub> → BaHPO<sub>4</sub> + 2H<sub>2</sub>O]
+		-> rrel_example:[Кислые соли образуются при воздействии избытка кислоты на <sc_element sys_idtf="alkali">щелочь</sc_element>. В зависимости от количества молей кислоты (в данном случае — <sc_element sys_idtf="orthophosphoric_acid">ортофосфорной</sc_element>) могут образовываться гидроортофосфаты.]
 		(* 
 		<-lang_ru;;
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[Acidic salts are formed in reactions of excess acid on <sc_element sys_idtf = "alkali"> alkali </ sc_element>. Depending on the amount of moles of acid (in this case <sc_element sys_idtf = "orthophosphoric_acid"> orthophosphoric </ sc_element>), hydroorthophosphates can form.]
+		(* 
+		<-lang_en;;
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -42,6 +54,8 @@ Definition_of_acid_salt
 => nrel_main_idtf:
 	[Опр.(кислая соль)]
 	(* <- lang_ru;;	*);
+	[Def.(acid salt)]
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> salt; cation; metal; ammonia; elem_H; anion; nrel_acid_residue;;

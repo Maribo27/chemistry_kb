@@ -1,4 +1,5 @@
 normal_salt
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[средняя соль]
 	(* <- lang_ru;; *);
@@ -10,13 +11,19 @@ normal_salt
 <- rrel_key_sc_element:
 	Definition_of_normal_salt
 	(* 
-	<- explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
 		-> rrel_example:[<b><sc_element sys_idtf="normal_salt">Средняя (нормальная) соль</sc_element></b> — продукт замещения всех <sc_element sys_idtf="cation">катионов</sc_element> <sc_element sys_idtf="elem_H">водорода</sc_element> в молекулах <sc_element sys_idtf="acid">кислоты</sc_element> на катионы <sc_element sys_idtf="metal">металла</sc_element>.] 
 		(* 
 		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf="normal_salt">Normal salt</sc_element></b> is a product of substitution of all <sc_element sys_idtf="cation">cations</sc_element> of <sc_element sys_idtf="elem_H">hydrogen</sc_element> in <sc_element sys_idtf="acid">acid</sc_element> molecules into cations of <sc_element sys_idtf="metal">matel</sc_element>.] 
+		(* 
+		<-lang_en;; 
 		=> nrel_format: format_html;;
 		*);;
 		*);;
@@ -26,6 +33,8 @@ normal_salt
 Definition_of_normal_salt
 => nrel_main_idtf:
 	[Опр.(средняя соль)]
+	(* <- lang_ru;;	*);
+	[Def.(normal salt)]
 	(* <- lang_ru;;	*);
 <= nrel_using_constants: ...
 			(*

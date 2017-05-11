@@ -1,8 +1,0 @@
-section_selection_of_the_coefficients
-=> nrel_main_idtf: [Section. Selection of the coefficients in the equations of exchange reactions](*<- lang_en;;*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_selection_of_the_coefficients.html" (* <-lang_en;; *);;
-		*);;

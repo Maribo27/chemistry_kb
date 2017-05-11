@@ -32,3 +32,39 @@ color_silver_grey
 color_white_silver 
 	=> nrel_main_idtf: [серебристо-белый цвет](* <- lang_ru;; *);
 	<-sc_node_not_relation;;
+
+color_red
+	=> nrel_main_idtf: [красный цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_green 
+	=> nrel_main_idtf: [зелёный цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_blue
+	=> nrel_main_idtf:[синий цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_yellow
+	=> nrel_main_idtf:[жёлтый цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_black
+	=> nrel_main_idtf:[чёрный цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_brown
+	=> nrel_main_idtf:[коричневый цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_orange
+	=> nrel_main_idtf:[оранжевый цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_gray
+	=> nrel_main_idtf:[серый цвет] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;
+
+color_none
+	=> nrel_main_idtf:[бесцветный] (*<-lang_ru;;*);
+	<- sc_node_not_relation;;

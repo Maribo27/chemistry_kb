@@ -5,7 +5,7 @@ brass
 
 brass
 <- rrel_key_sc_element:
-	Definition_of_bronze
+	Definition_of_brass
 	(* 
 		<- sc_explanation;;
 		
@@ -28,7 +28,6 @@ brass
 => nrel_alloy_component: elem_Fe;
 => nrel_alloy_component: elem_Mn;
 => nrel_alloy_component: elem_Pb;
-=> nrel_density_of_substance: 8300;
  
 => nrel_melting_temperature:...
 	(*
