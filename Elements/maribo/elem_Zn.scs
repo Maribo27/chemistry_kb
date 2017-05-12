@@ -10,7 +10,7 @@ elem_Zn
 <= nrel_inclusion: chemical_element;
 <- rrel_key_sc_element: definition_of_Zincum
 (* 
-	=> nrel_main_idtf: [Опр. (атом цинкf)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (атом цинка)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
