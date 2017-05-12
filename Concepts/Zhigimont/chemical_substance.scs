@@ -12,6 +12,10 @@ chemical_substance
 	(* <- lang_en;;	*);
 
 => nrel_idtf:
+	[вещество]
+	(* <- lang_ru;; *);
+	[substance]
+	(* <- lang_en;; *);
 	[вещество, изучаемое химией]
 	(* <- lang_ru;; *);
 

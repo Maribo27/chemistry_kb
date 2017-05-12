@@ -1,0 +1,130 @@
+subst_Au
+<- sc_node_not_relation;
+=> nrel_main_idtf: [золото] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Au
+(* 
+	=> nrel_main_idtf: [опр.(золото)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество золото</b> — мягкий ковкий 
+<sc_element sys_idtf  = "colour_yellow">жёлтого цвета</sc_element> 
+<sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_yellow;;
+		-> metal;;
+	*);;
+*);
+
+<- colour_yellow;
+=> nrel_inclusion: elem_Au;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_and_sixty_four (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_eight_hundred_and_fifty_six (*<-number;;*);;		
+		*);;
+	*);
+ 
+
+<- rrel_key_sc_element: interaction_au_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (золото (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[  При нормальных условиях оно не взаимодействует с большинством кислот и не образует оксидов, поэтому его относят к благородным металлам, в отличие от обычных металлов, разрушающихся под действием кислот и щелочей.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_au.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_au
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/au_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_au
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/au_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_au
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/au_(application)2.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_au
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/au_(application)3.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+	<- rrel_key_sc_element: application_of_au
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/au_(application)4.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

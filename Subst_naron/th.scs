@@ -1,0 +1,98 @@
+subst_Th
+<- sc_node_not_relation;
+=> nrel_main_idtf: [торий] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Th
+(* 
+	=> nrel_main_idtf: [опр.(торий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество торий</b> — 
+<sc_element sys_idtf  = "colour_gray">серый</sc_element>, мягкий,
+ ковкий, вязкий, слаборадиоактивный 
+<sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_gray;;
+		-> metal;;
+	*);;
+*);
+
+<- colour_gray;
+=> nrel_inclusion: elem_Th;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_seven_hundred_fifty_five (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:four_thousand_seven_hundred_and_eighty_seven (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_th_and_h
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (торий (вещество), взаимодействие*, водород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Реагирует с водородом при нагревании] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_th_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (торий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Торий плохо растворяется в основных кислотах. Он растворим в концентрированных растворах НСl (6-12 моль/л) и HNO3 (8-16 моль/л) в присутствии иона фтора.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_th.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_th
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (торий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/th_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,98 @@
+subst_Ga
+<- sc_node_not_relation;
+=> nrel_main_idtf: [галлий] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Ga
+(* 
+	=> nrel_main_idtf: [опр.(галлий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество галлий</b> — мягкий хрупкий
+ <sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "colour_white_silver">серебристо-белого цвета</sc_element>
+ с синеватым оттенком.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- colour_white_silver;
+=> nrel_inclusion: elem_Ga;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:thirty(*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_two_hundred_and_four (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_ga_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (галлий (вещество), взаимодействие*, вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Галлий медленно реагирует с горячей водой, вытесняя из неё водород и образуя гидроксид галлия(III).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ga_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (галлий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Галлий взаимодействует с минеральными кислотами с выделением водорода и образованием солей.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ga.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ga
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (галлий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ga_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);;

@@ -68,3 +68,40 @@ color_gray
 color_none
 	=> nrel_main_idtf:[бесцветный] (*<-lang_ru;;*);
 	<- sc_node_not_relation;;
+
+colour_red=>nrel_main_idtf:[красный цвет](*<-lang_ru;;*);;
+colour_red<-sc_node_not_relation;;
+
+colour_green=>nrel_main_idtf:[зелёный цвет](*<-lang_ru;;*);;
+colour_green<-sc_node_not_relation;;
+
+colour_blue=>nrel_main_idtf:[синий цвет](*<-lang_ru;;*);;
+colour_blue<-sc_node_not_relation;;
+
+colour_yellow=>nrel_main_idtf:[жёлтый цвет](*<-lang_ru;;*);;
+colour_yellow<-sc_node_not_relation;;
+
+colour_white_blue=>nrel_main_idtf:[бело-голубой цвет](*<-lang_ru;;*);;
+colour_white_blue<-sc_node_not_relation;;
+
+colour_gray_white=>nrel_main_idtf:[серо-белый цвет](*<-lang_ru;;*);;
+colour_gray_white<-sc_node_not_relation;;
+
+colour_silver_white=>nrel_main_idtf:[серебристо-белый цвет](*<-lang_ru;;*);;
+colour_silver_white<-sc_node_not_relation;;
+
+colour_pale_yellow=>nrel_main_idtf:[бледно-жёлтый цвет](*<-lang_ru;;*);;
+colour_pale_yellow<-sc_node_not_relation;;
+
+colour_white_silver=>nrel_main_idtf:[серебристо-белый цвет](*<-lang_ru;;*);;
+colour_white_silver<-sc_node_not_relation;;
+
+colour_dark_grey=>nrel_main_idtf:[тёмно-серый цвет](*<-lang_ru;;*);;
+colour_dark_grey<-sc_node_not_relation;;
+
+colour_silver=>nrel_main_idtf:[серебристый цвет](*<-lang_ru;;*);;
+colour_silver<-sc_node_not_relation;;
+
+colour_gray=>nrel_main_idtf:[серый цвет](*<-lang_ru;;*);;
+colour_gray<-sc_node_not_relation;;
+

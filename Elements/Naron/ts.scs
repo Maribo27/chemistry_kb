@@ -1,0 +1,71 @@
+elem_Ts
+=> nrel_main_idtf: [атом туннессина] (* <- lang_ru;; *);
+=> nrel_idtf: [Ts] (* <- lang_en;; *);
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_tennessee
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/ts.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+			-> chemical_element;;
+			-> period;;
+			-> nrel_group;;
+		*);;
+	*);
+
+<- group_seventeen;
+<- period_seven;
+=> nrel_periodic_number: one_hundred_and_seventeen;
+
+<- nonmetal;
+
+=> nrel_atomic_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_aem: atomic_mass_Ts;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: electron_configuration_Ts
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (теннессин, электронная конфигурация*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[ [Ts] 1s<sup>2</sup> 2s<sup>2</sup>p<sup>6</sup> 3s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 4s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 5s<sup>2</sup>p<sup>6</sup>d<sup>10</sup>f<sup>14</sup> 6s<sup>2</sup>p<sup>6</sup>d<sup>10</sup> 7s<sup>2</sup>p<sup>5</sup>] (*<- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Иллюстрация (химический элемент теннессин)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:
+			"file://image/tennessee.jpg";
+			[<p>P - число <sc_element sys_idtf = "proton">протонов</sc_element>; N - число <sc_element sys_idtf = "neutron">нейтронов</sc_element></p>](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+
+Definition_of_tennessee
+=> nrel_main_idtf:
+	[Опр. (теннессин)]
+	(* <- lang_ru;;	*);;
+
+atomic_mass_Ts <- number;
+=> nrel_main_idtf:[294](*<-lang_ru;; <- lang_en;;*);;
