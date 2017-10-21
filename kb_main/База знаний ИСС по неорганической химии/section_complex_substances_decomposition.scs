@@ -14,7 +14,7 @@ section_complex_substances
 		section_acids
 		(*
 		=> nrel_section_base_order: 
-			section_salts;;
+			section_subject_domain_of_salts;;
 		*);
-		section_salts
+		section_subject_domain_of_salts
 	};;
