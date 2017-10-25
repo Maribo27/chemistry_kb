@@ -1,0 +1,161 @@
+nrel_periodic_number
+	=> nrel_main_idtf: [порядковый номер*](* <- lang_ru;; *);
+	<- sc_node_norole_relation;
+	=> nrel_first_domain: chemical_element;
+	=> nrel_second_domain: number;;
+
+nrel_irradiation 
+	=> nrel_main_idtf: 
+		[облучение*](*<- lang_ru;;*);;
+nrel_electrolysis 
+	=> nrel_main_idtf: 
+		[электролиз*](*<- lang_ru;;*);;
+nrel_radioactive_decay 
+	=> nrel_main_idtf: 
+	[радиоактивный распад*](*<- lang_ru;;*);;
+nrel_air_separation 
+	=> nrel_main_idtf: 
+		[разделение воздуха*](*<- lang_ru;;*);;
+nrel_sublimation 
+	=> nrel_main_idtf: 
+		[сублимация*](*<- lang_ru;;*);;
+
+nrel_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[chemical reaction*] (*<- lang_en;;*);
+		[химическая реакция*] (*<- lang_ru;;*);;
+
+nrel_electronegativity
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[electronegativity*](*<- lang_en;;*);
+	[электроотрицательность*](*<- lang_ru;;*);;
+
+nrel_count_of_inclusion
+	=> nrel_main_idtf:[количество вхождений*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_object_structure
+	=> nrel_main_idtf:[состав*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_compound
+	=> nrel_main_idtf:[соединение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_decomposition
+	=> nrel_main_idtf:[разложение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_optical_activity
+	=> nrel_main_idtf: [оптическая активность*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_charge
+	=> nrel_main_idtf: [заряд*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;	
+
+nrel_heating
+	=> nrel_main_idtf: [нагревание*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;	
+
+nrel_sedimentation
+	=> nrel_main_idtf: [осаждение*](*<-lang_ru;;*);
+	<- chemical_process;
+	<- sc_node_norole_relation;;
+
+nrel_receiving
+	=> nrel_main_idtf: [получение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+	
+nrel_applying
+	=> nrel_main_idtf: [применение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+	
+nrel_decomposition
+	=> nrel_main_idtf: [распад*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_main_characteristics
+	=> nrel_main_idtf: [основные характеристики*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_mass
+	=> nrel_main_idtf: [масса*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_spin
+	=> nrel_main_idtf: [спин*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_gravitational_radius
+	=> nrel_main_idtf: [гравитационный радиус*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_being_in_nature
+	=> nrel_main_idtf: [нахождение в природе*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_reducing_reaction
+	=> nrel_main_idtf: [реакция восстановления*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_isotopic_modification
+	=> nrel_main_idtf: [изотопная модификация*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_being_in_body
+	=> nrel_main_idtf: [нахождение в организме*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_biological_significance
+	=> nrel_main_idtf: [биологическое значение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_alpha_decay
+	=> nrel_main_idtf: [альфа-распад*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_boiling_temperature
+	=> nrel_main_idtf: [температура кипения*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_specific_heat_of_fusion
+	=> nrel_main_idtf: [удельная теплота плавления*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_specific_heat_of_evaporation
+	=> nrel_main_idtf: [удельная теплота испарения*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_hydrolysis
+	=> nrel_main_idtf: [гидролиз*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_decomposition_reaction
+	=> nrel_main_idtf: [реакция разложения*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_calcination
+	=> nrel_main_idtf: [прокаливание*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_molar_heat_capacity
+	=> nrel_main_idtf: [молярная теплоёмкость*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_recuperation
+	=> nrel_main_idtf: [рекуперация*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_allotropic_modification
+	=> nrel_main_idtf: [аллотропная модификация*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_covalent_radius
+	=> nrel_main_idtf: [ковалентный радиус*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_atomic_mass
+	=> nrel_main_idtf: [атомная масса*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_thermal_decomposition
+	=> nrel_main_idtf: [термическое разложение*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_ionization_energy
+	=> nrel_main_idtf: [энергия ионизации*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_molar_volume
+	=> nrel_main_idtf: [молярный объём*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+nrel_nuclear_reaction
+	=> nrel_main_idtf: [ядерная реакция*](*<-lang_ru;;*);
+	<- sc_node_norole_relation;;

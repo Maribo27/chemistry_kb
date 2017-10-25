@@ -1,5 +1,0 @@
-nrel_electronegativity
-<-sc_node_norole_relation;
-=> nrel_main_idtf:
-	[electronegativity*](*<- lang_en;;*);
-	[электроотрицательность*](*<- lang_ru;;*);;

@@ -1,5 +1,0 @@
-radioactive_substance
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[radioactive substance](*<- lang_en;;*);
-	[радиоактивное вещество](*<- lang_ru;;*);;

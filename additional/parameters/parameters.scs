@@ -1,0 +1,8 @@
+color => nrel_main_idtf: [цвет](* <- lang_ru;; *);
+	<- sc_node_not_relation;
+	<- parameter;
+	-> color_white_blue; color_white_silver; color_silver_grey;;
+
+period <- parameter;;
+
+group <- parameter;;
