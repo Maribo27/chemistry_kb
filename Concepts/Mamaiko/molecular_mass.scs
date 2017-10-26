@@ -18,11 +18,7 @@ molecular_mass
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				molecule;
-				molar_mass
-			};
+	
 <- rrel_key_sc_element:
 	... (*
 	
