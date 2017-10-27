@@ -1,0 +1,15 @@
+ui_menu_find_alloy_components <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти компоненты заданного сплава] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find components of given alloy] (* <- lang_en;;*);;
+ui_menu_find_alloy_components => ui_nrel_command_template:
+	[*
+		action_find_alloy_components _-> ._action_find_alloy_components_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_alloy_components_instance _<- question;;
+	*];;
+
+ui_menu_find_alloy_components => ui_nrel_command_lang_template: [Из каких компонентов состоит заданный сплав: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_find_alloy_components => ui_nrel_command_lang_template: [What are the components of given alloy: $ui_arg_1] (* <- lang_en;;*);;
