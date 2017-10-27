@@ -1,0 +1,37 @@
+lib_component_agent_find_alloy_components
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска компонентов заданного сплава]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search components of given alloy]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_alloy_components;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_alloy_components; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_alloy_components;;
+
+action_find_alloy_components => nrel_main_idtf:
+	[действие. Поиска компонентов заданного сплава]
+	(* <- lang_ru;;	*);
+	[action. search components of given alloy]
+	(* <- lang_en;;	*);;
+
