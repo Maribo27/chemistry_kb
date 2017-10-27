@@ -1001,3 +1001,389 @@ nuclear_radiation_detector => nrel_main_idtf: [детектор ядерного
 nuclear_engineering => nrel_main_idtf: [ядерная энергетика](*<- lang_ru;;*);;
 pigment => nrel_main_idtf: [пигмент](*<- lang_ru;;*);;
 cosmetics => nrel_main_idtf: [косметика](*<- lang_ru;;*);;
+
+saccharin
+=> nrel_main_idtf:
+	[сахарин]
+	(* <- lang_ru;;	*);
+	[saccharin]
+	(* <- lang_en;;	*);;
+
+sucrose
+=> nrel_main_idtf:
+	[сахароза]
+	(* <- lang_ru;;	*);
+	[sucrose]
+	(* <- lang_en;;	*);;
+
+auride
+=> nrel_main_idtf:
+	[аурид]
+	(* <- lang_ru;;	*);
+	[auride]
+	(* <- lang_en;;	*);;
+
+sweetener
+=> nrel_main_idtf:
+	[подсластитель]
+	(* <- lang_ru;;	*);
+	[sweetener]
+	(* <- lang_en;;	*);;
+
+polycrystal
+=> nrel_main_idtf:
+	[поликристалл]
+	(* <- lang_ru;;	*);
+	[polycrystal]
+	(* <- lang_en;;	*);;
+
+crystallite
+=> nrel_main_idtf:
+	[кристаллит]
+	(* <- lang_ru;;	*);
+	[crystallite]
+	(* <- lang_en;;	*);;
+
+sulfamic_acid
+=> nrel_main_idtf:
+	[аминосульфоновая кислота]
+	(* <- lang_ru;;	*);
+	[sulfamic acid]
+	(* <- lang_en;;	*);;
+
+dielectric
+=> nrel_main_idtf:
+	[диэлектрик]
+	(* <- lang_ru;; *);
+	[dielectric]
+	(* <- lang_en;; *);;
+
+alkaline_earth_metal
+=> nrel_main_idtf:
+	[щелочноземельный металл]
+	(* <- lang_ru;; *);
+	[alkaline earth metal]
+	(* <- lang_en;; *);;
+
+
+alkali_salt
+=> nrel_main_idtf:
+	[основная соль]
+	(* <- lang_ru;; *);
+	[alkali salt]
+	(* <- lang_en;; *);;
+
+simple_salt
+=> nrel_main_idtf:
+	[простая соль]
+	(* <- lang_ru;; *);
+	[simple salt]
+	(* <- lang_en;; *);;
+
+double_salt
+=> nrel_main_idtf:
+	[двойная соль]
+	(* <- lang_ru;; *);
+	[double salt]
+	(* <- lang_en;; *);;
+
+mixed_salt
+=> nrel_main_idtf:
+	[смешанная соль]
+	(* <- lang_ru;; *);
+	[mixed salt]
+	(* <- lang_en;; *);;
+
+inner_salt
+=> nrel_main_idtf:
+	[внутренняя соль]
+	(* <- lang_ru;; *);
+	[inner salt]
+	(* <- lang_en;; *);;
+
+complex_salt
+=> nrel_main_idtf:
+	[комплексная соль]
+	(* <- lang_ru;; *);
+	[complex salt]
+	(* <- lang_en;; *);;
+	
+base
+=> nrel_main_idtf:
+	[основание]
+	(* <- lang_ru;; *);
+	[base]
+	(* <- lang_en;; *);;
+
+alkali
+=> nrel_main_idtf:
+	[щёлочь]
+	(* <- lang_ru;; *);
+	[щелочь]
+	(* <- lang_ru;; *);
+	[alkali]
+	(* <- lang_en;; *);;
+
+nrel_crystallization
+=> nrel_main_idtf:
+	[кристаллизация*]
+	(* <- lang_ru;; *);
+	[crystallization*]
+	(* <- lang_en;; *);;
+
+phosphate
+=> nrel_main_idtf:
+	[фосфат]
+	(* <- lang_ru;; *);
+	[phosphate]
+	(* <- lang_en;; *);;
+
+soluble_salt
+=> nrel_main_idtf:
+	[растворимая соль]
+	(* <- lang_ru;; *);
+	[soluble salt]
+	(* <- lang_en;; *);;
+
+poorly_soluble_salt
+=> nrel_main_idtf:
+	[малорастворимая соль]
+	(* <- lang_ru;; *);
+	[poorly soluble salt]
+	(* <- lang_en;; *);;
+	
+insoluble_salt
+=> nrel_main_idtf:
+	[нерастворимая соль]
+	(* <- lang_ru;; *);
+	[insoluble salt]
+	(* <- lang_en;; *);;
+
+iodide
+=> nrel_main_idtf:
+	[иодид]
+	(* <- lang_ru;; *);
+	[iodide]
+	(* <- lang_en;; *);;
+
+sulfide
+=> nrel_main_idtf:
+	[сульфид]
+	(* <- lang_ru;; *);
+	[sulfide]
+	(* <- lang_en;; *);;
+
+fluoride
+=> nrel_main_idtf:
+	[фторид]
+	(* <- lang_ru;; *);
+	[fluoride]
+	(* <- lang_en;; *);;
+
+sodium_carbonate
+=> nrel_main_idtf:
+	[карбонат натрия]
+	(* <- lang_ru;; *);
+	[sodium carbonate]
+	(* <- lang_en;; *);;
+
+tripotassium_phosphate
+=> nrel_main_idtf:
+	[ортофосфат калия]
+	(* <- lang_ru;; *);
+	[tripotassium phosphate]
+	(* <- lang_en;; *);;
+
+potassium_chloride
+=> nrel_main_idtf:
+	[хлорид калия]
+	(* <- lang_ru;;  *);
+	[potassium chloride]
+	(* <- lang_en;; *);;
+
+ammonia
+=> nrel_main_idtf:
+	[аммиак]
+	(* <- lang_ru;; *);
+	[ammonia]
+	(* <- lang_en;; *);;
+
+nrel_allotropy
+=> nrel_main_idtf:
+	[аллотропия*]
+	(* <- lang_ru;; *);
+	[allotropy*]
+	(* <- lang_en;; *);;
+
+rrel_organic_solvent
+=> nrel_main_idtf:
+    [organic solvent'](*<- lang_en;;*);
+	[органический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_inorganic_solvent
+=> nrel_main_idtf:
+    [inorganic solvent'](*<- lang_en;;*);
+	[неорганический растворитель']
+	(* <- lang_ru;;	*);;
+	
+rrel_liquid_solvent
+=> nrel_main_idtf:
+    [liquid solvent'](*<- lang_en;;*);
+	[жидкий растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_solid_solvent
+=> nrel_main_idtf:
+    [solid solvent'](*<- lang_en;;*);
+	[твёрдый растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_aprotic_solvent
+=> nrel_main_idtf:
+    [aprotic solvent'](*<- lang_en;;*);
+	[апротонный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_amphidic_solvent
+=> nrel_main_idtf:
+    [amphidic solvent'](*<- lang_en;;*);
+	[амфипротный растворитель']
+	(* <- lang_ru;;	*);;
+
+rrel_protophilic_solvent
+=> nrel_main_idtf:
+    [protophilic solvent'](*<- lang_en;;*);
+	[протофильный растворитель']
+	(* <- lang_ru;;	*);;
+	
+multielement_compound
+=> nrel_main_idtf:
+    [многоэлементное соединение](*<- lang_en;;*);
+	[multielement compound]
+	(* <- lang_ru;;	*);;
+	
+colloidal_solution
+=> nrel_main_idtf:
+    [colloidal solution]
+    (*<- lang_en;;*);
+	[коллоидальный раствор]
+	(* <- lang_ru;;	*);;
+
+molecular_solution
+=> nrel_main_idtf:
+    [molecular solution]
+    (*<- lang_en;;*);
+	[истинный раствор]
+	(* <- lang_ru;;	*);
+	[молекулярный раствор]
+	(* <- lang_ru;;	*);;
+
+nrel_solvation 
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [solvation*]
+    (*<- lang_en;;*);
+	[сольватация*]
+	(* <- lang_ru;;	*);;
+
+picric_acid
+=> nrel_main_idtf:
+    [picric acid]
+    (*<- lang_en;;*);
+	[пикриновая кислота]
+	(* <- lang_ru;;	*);;
+
+gas_explosive
+=> nrel_main_idtf:
+    [gas explosive]
+    (*<- lang_en;;*);
+	[газообразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+liquid_explosive
+=> nrel_main_idtf:
+    [liquid explosive]
+    (*<- lang_en;;*);
+	[жидкое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+gel_explosive
+=> nrel_main_idtf:
+    [gel explosive]
+    (*<- lang_en;;*);
+	[гелеобразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+solid_explosive
+=> nrel_main_idtf:
+    [solid explosive]
+    (*<- lang_en;;*);
+	[твёрдое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+elastic_explosive
+=> nrel_main_idtf:
+    [elastic explosive]
+    (*<- lang_en;;*);
+	[эластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+emulsion_explosive
+=> nrel_main_idtf:
+    [emulsion explosive]
+    (*<- lang_en;;*);
+	[эмульсионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+plastic_explosive
+=> nrel_main_idtf:
+    [plastic explosive]
+    (*<- lang_en;;*);
+	[пластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+suspension_explosive
+=> nrel_main_idtf:
+    [suspension explosive]
+    (*<- lang_en;;*);
+	[суспензионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+pressed_explosive
+=> nrel_main_idtf:
+    [pressed explosive]
+    (*<- lang_en;;*);
+	[прессованное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+cast_explosive
+=> nrel_main_idtf:
+    [cast explosive]
+    (*<- lang_en;;*);
+	[литое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+patronized_explosive
+=> nrel_main_idtf:
+    [patronized explosive]
+    (*<- lang_en;;*);
+	[патронированное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+dichromic_acid
+=> nrel_main_idtf: 
+[дихромовая кислота](* <- lang_ru;;	*);
+[dichromic acid](* <- lang_en;;	*);;
+
+carcinogen
+=> nrel_main_idtf: 
+[канцероген](* <- lang_ru;;	*);
+[carcinogen](* <- lang_en;;	*);;
+
+carbide
+=> nrel_main_idtf: 
+[карбид]
+(* <- lang_ru;;	*);
+[carbide]
+(* <- lang_en;;	*);;

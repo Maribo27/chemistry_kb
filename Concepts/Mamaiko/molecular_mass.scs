@@ -18,11 +18,7 @@ molecular_mass
 		*);;
 	
 	*);
-<= nrel_using_constants:
-			{
-				molecule;
-				molar_mass
-			};
+	
 <- rrel_key_sc_element:
 	... (*
 	
@@ -48,7 +44,12 @@ molecular_mass
 Definition_of_molecular_mass
 => nrel_main_idtf:
 	[Опр.(Молекулярная масса)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+<= nrel_using_constants:
+			{
+				molecule;
+				molar_mass
+			};;
 
 
 molecular_mass
