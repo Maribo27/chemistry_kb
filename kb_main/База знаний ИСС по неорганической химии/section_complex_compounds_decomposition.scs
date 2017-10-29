@@ -7,4 +7,9 @@ section_complex_compounds
 			section_complex_substances;;
 		*);
 		section_complex_substances
+		(*
+		=> nrel_section_base_order: 
+			section_mixtures;;
+		*);
+		section_mixtures
 	};;
