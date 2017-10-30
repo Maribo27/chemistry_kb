@@ -6,7 +6,7 @@
 - Склонировать уже из своего репозитория в папку kb развернутой системы [OSTIS] с заменой (заменить папку menu)
 - Создать новую ветку в локальном репозитории
 ```sh
-$ git remote mainRepository https://github.com/Maribo27/chemistry_kb
+$ git remote add mainRepository https://github.com/Maribo27/chemistry_kb
 ```
 ### Отправка изменений
 - Закоммитить и залить на свой репозиторий локальные изменения
