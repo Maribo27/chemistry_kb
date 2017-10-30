@@ -1,0 +1,37 @@
+lib_component_agent_find_application_of_chemical_substance
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска способов применения данного вещества]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search application of given substance]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_application_of_chemical_substance;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_application_of_chemical_substance; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_application_of_chemical_substance;;
+
+action_find_application_of_chemical_substance => nrel_main_idtf:
+	[действие. Поиск способов применения данного вещества]
+	(* <- lang_ru;;	*);
+	[action. search application of given substance]
+	(* <- lang_en;;	*);;
+
