@@ -1,0 +1,99 @@
+subject_domain_of_mixtures
+=> nrel_main_idtf: 
+	[Предметная область смесей]
+	(* <- lang_ru;;*);
+	[Subject domain of mixtures]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	mixture;	
+-> rrel_not_maximum_studied_object_class:
+	heterogeneou_mixture;
+	homogeneou_mixture;;
+
+mixture
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[смесь]
+	(* <- lang_ru;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_mixture
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+				[<b><sc_element sys_idtf  = "mixture">Смесь</sc_element> </b>-  система, состоящая из двух или более <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>.]
+                    (*
+                     	<- lang_ru;;
+                        => nrel_format: format_html;;
+                    *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				-> chemical_substance;;
+			*);;
+	*);
+<= nrel_subdividing:...
+		      (*
+			      ->homogeneou_mixture;;
+			      ->heterogeneou_mixture;;		  
+		       *);;
+
+Definition_of_mixture
+=> nrel_main_idtf:
+	[Опр.(Смесь)]
+	(* <- lang_ru;;	*);;
+
+heterogeneou_mixture
+		<- sc_node_not_relation;
+        => nrel_main_idtf:
+                [heterogeneous mixture](*<- lang_en;;*);
+                [неоднородная смесь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_heterogeneou_mixture
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Определение (неоднородная смеси)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "heterogeneou_mixture">Неоднородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element>смеси, в которых невооруженным глазом или при помощи микроскопа можно обнаружить частицы двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+        		<= nrel_using_constants:...
+                		(*
+                        		->mixture;;
+               			*);;
+                *);;
+homogeneou_mixture
+		<- sc_node_not_relation;
+        => nrel_main_idtf:
+                [homogeneous mixture](*<- lang_en;;*);
+                [однородная смесь](*<- lang_ru;;*);
+        <- rrel_key_sc_element:
+                Definition_of_homogeneou_mixture
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Определение (однородная смесь)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "homogeneou_mixture">Однородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element> двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>, в которых даже под микроскопом нельзя обнаружить частицы этих веществ.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                  *);;
+        		<= nrel_using_constants:...
+                		(*
+                        		-> chemical_substance;;
+                		*);;
+                *);;
