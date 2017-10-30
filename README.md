@@ -35,7 +35,7 @@ $ git merge mainRepository
 ### Основные ссылки
 - [Google Doc] - у каждого курса свой лист
 - [Trello]
-- [IMS]
+- [База Знаний IMS]
 - [OSTIS]
 
 ### TODO файл
