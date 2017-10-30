@@ -1,7 +1,2 @@
 radioactive_element
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[radioactive element](*<- lang_en;;*);
-	[радиоактивный элемент](*<- lang_ru;;*);
-
 => nrel_inclusion: elem_Os; elem_Ca; elem_K;elem_V;elem_Ge;elem_Se;elem_Rb;elem_Zr;elem_Mo;elem_Cd;elem_In;elem_Te;elem_La;elem_Nd;elem_Sm;elem_Eu;elem_Gd;elem_Lu;elem_Hf;elem_W;elem_Re;elem_Pt;elem_Bi;elem_Th;elem_U;elem_Ra;elem_Rn;elem_At;;

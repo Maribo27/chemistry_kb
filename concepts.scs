@@ -1,3 +1,9 @@
+radioactive_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[radioactive element](*<- lang_en;;*);
+	[радиоактивный элемент](*<- lang_ru;;*);;
+
 chemical_property => nrel_main_idtf:[химическое свойство](*<-lang_ru;;*);
 	<- sc_node_not_relation;
 	<- parameter;;
