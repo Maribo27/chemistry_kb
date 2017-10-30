@@ -8,7 +8,7 @@ hydroxyl_group
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:
-				"file://hydroxyl_group.html"
+				"file://html/hydroxyl_group.html"
 				(*<- lang_ru;;*);;
 		*);;
 	*);

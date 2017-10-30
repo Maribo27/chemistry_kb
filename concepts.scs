@@ -28,56 +28,8 @@ lanthanide => nrel_main_idtf:
 	[лантанид](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 
-silicon_monoxide => nrel_main_idtf:
-	[оксид кремния(II)](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-dinitrogen_monoxide => nrel_main_idtf:
-	[оксид азота(I)](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-nitrogen_monoxide => nrel_main_idtf:
-	[оксид азота(II)](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-carbon_monoxide => nrel_main_idtf:
-	[оксид углерода(II)](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
 oxygen => nrel_main_idtf:
 	[кислород](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-acid_oxide_mineral => nrel_main_idtf:
-	[кислотный окисел](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-basis_oxide_mineral => nrel_main_idtf:
-	[основный окисел](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-amphoteric_oxide_mineral => nrel_main_idtf:
-	[амфотерный окисел](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-indiffirent_oxide_mineral => nrel_main_idtf:
-	[безразличный окисел](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-mixed_oxide_mineral => nrel_main_idtf:
-	[смешанный окисел](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-hydrooxide_mineral => nrel_main_idtf:
-	[гидрокисел](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-simple_oxide_mineral => nrel_main_idtf:
-	[простой окисел](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-complex_oxide_mineral => nrel_main_idtf:
-	[сложный окисел](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 
 hydrogen => nrel_main_idtf:
@@ -111,24 +63,7 @@ carbohydrate => nrel_main_idtf:
 strong_basis
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[сильная щелочь](* <- lang_ru;; *);;
-zinc_oxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[оксид цинка](* <- lang_ru;; *);;
-chromium_oxide_3
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[оксид меди (III)](* <- lang_ru;; *);;
-aluminium_oxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[оксид аллюминия](* <- lang_ru;; *);;
-lead_oxide_2
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[оксид свинца (II)](* <- lang_ru;; *);;
-beryllium_oxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[оксид бериллия](* <- lang_ru;; *);;
-iron_oxide_3
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[оксид железа (III)](* <- lang_ru;; *);;
+
 aqueous_solution_of_ammonia_hydrate
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[водный раствор гидрата аммиака](* <- lang_ru;; *);;
@@ -153,24 +88,9 @@ electron_capture
 organic_formation
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[органическое образование](* <- lang_ru;; *);;
-acetone_peroxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[перекись ацетона](* <- lang_ru;; *);;
-proper_peroxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[правильный пероксид](* <- lang_ru;; *);;
-superperoxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[суперпероксид](* <- lang_ru;; *);;
 inorganic_ozonide
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[неорганический озонид](* <- lang_ru;; *);;
-organic_peroxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[органический пероксид](* <- lang_ru;; *);;
-inorganic_peroxides
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[неорганический пероксид](* <- lang_ru;; *);;
 radiotechnics
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[радиотехника](* <- lang_ru;; *);;
@@ -186,45 +106,13 @@ rocket_technology
 space_technology
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[космическая техника](* <- lang_ru;; *);;
-acid_hydroxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[кислотный гидроксид](* <- lang_ru;; *);;
-amphoteric_hydroxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[амфотерный гидроксид](* <- lang_ru;; *);;
-basic_hydroxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[основный гидроксид](* <- lang_ru;; *);;
-tetroxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[тетроксид](* <- lang_ru;; *);;
+
 pure_metal
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[чистый метал](* <- lang_ru;; *);;
 catalytic_process
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[каталитический процесс](* <- lang_ru;; *);;
-carbon_suboxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[субоксид углерода](* <- lang_ru;; *);;
-boron_suboxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[субоксид бора](* <- lang_ru;; *);;
-rubidium_suboxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[субоксид рубидия](* <- lang_ru;; *);;
-silicon_suboxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[субоксид кремния](* <- lang_ru;; *);;
-caesium_suboxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[субоксид цезия](* <- lang_ru;; *);;
-potassium_oxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[окись калия](* <- lang_ru;; *);;
-carbon_monoxide
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[монооксид углерода](* <- lang_ru;; *);;
 neutron_mass <- sc_node_not_relation;
 	=> nrel_main_idtf:[1,674 927 471(21)·10^(−27) кг](* <- lang_ru;; *);;
 neutron_spin <- sc_node_not_relation;
@@ -494,9 +382,6 @@ potassium_permanganate=> nrel_main_idtf:
 	<- sc_node_not_relation;;
 catalytic_decomposition=> nrel_main_idtf:
 	[каталитическое разложение](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-hydrogen_peroxide=> nrel_main_idtf:
-	[пероксид водорода](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 potassium_chlorate=> nrel_main_idtf:
 	[хлорат калия](* <- lang_ru;; *);
