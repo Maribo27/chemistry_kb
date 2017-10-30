@@ -1,0 +1,58 @@
+subject_domain_of_alloys
+	=> nrel_main_idtf:
+	[Предметная область сплавов]
+	(* <- lang_ru;; *);
+	[Subject domain of alloys]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	alloy;
+
+-> rrel_not_maximum_studied_object_class:
+	mixture;
+	alloying;
+	impurity;
+	steel;
+	cast_iron;
+	duralumin;
+	bronze;
+	brass;
+	babbit;
+	manganin;
+	nichrome;
+	pobedit;
+	amorphous_metals;
+	supercooled_liquid;
+	alloy_hardening;
+	hardening;
+	recrystallization;
+	precipitation_hardening;
+	martensitic_transformation;
+	heavy_alloy;
+	stellite;
+	copper_nickel_alloy;
+	highly_entropic_alloys;
+	hardness;
+	microhardness;
+	sintering;
+	metal_ceramics;
+	heterogeneous_mixture;
+	homogeneous_mixture;
+
+-> rrel_explored_relation:
+	nrel_alloy_component;
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_alloys.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_alloys_eng.html" (* <-lang_en;; *);;
+		*);;
+
