@@ -17,11 +17,18 @@ mixture
 <- sc_node_not_relation;
 => nrel_main_idtf:
 	[смесь]
-	(* <- lang_ru;;	*);
+	(* <- lang_ru;;	*);    
+    [mixture]
+    (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	Definition_of_mixture
 	(* 
+	=> nrel_main_idtf:
+	[Опр.(смесь)]
+	(* <- lang_ru;;	*);
+    [Def.(mixture)]
+    (* <- lang_en;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:
 		...
@@ -30,6 +37,12 @@ mixture
 				[<b><sc_element sys_idtf  = "mixture">Смесь</sc_element> </b>-  система, состоящая из двух или более <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>.]
                     (*
                      	<- lang_ru;;
+                        => nrel_format: format_html;;
+                    *);;
+        -> rrel_example:
+                [<b><sc_element sys_idtf  = "mixture">Mixture</sc_element> </b>-  a system consisting of two or more <sc_element sys_idtf  = "chemical_substance">substance</sc_element>.]
+                    (*
+                        <- lang_en;;
                         => nrel_format: format_html;;
                     *);;
 		*);;
@@ -44,10 +57,7 @@ mixture
 			      ->heterogeneou_mixture;;		  
 		       *);;
 
-Definition_of_mixture
-=> nrel_main_idtf:
-	[Опр.(Смесь)]
-	(* <- lang_ru;;	*);;
+
 
 heterogeneou_mixture
 		<- sc_node_not_relation;
@@ -58,13 +68,20 @@ heterogeneou_mixture
                 Definition_of_heterogeneou_mixture
                 (*
                         <- definition;;
-                        => nrel_main_idtf: [Определение (неоднородная смеси)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Опр.(неоднородная смеси)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(heterogeneou mixture)](*<- lang_en;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
-                                                [<b><sc_element sys_idtf  = "heterogeneou_mixture">Неоднородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element>смеси, в которых невооруженным глазом или при помощи микроскопа можно обнаружить частицы двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>.]
+                                                [<b><sc_element sys_idtf  = "heterogeneou_mixture">Неоднородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element>, в которых невооруженным глазом или при помощи микроскопа можно обнаружить частицы двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>.]
                                                 (*
                                                         <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "heterogeneou_mixture">Heterogeneou mixture</sc_element> </b> – these are <sc_element sys_idtf  = "mixture">mixture</sc_element>, in which, with the naked eye or with a microscope, particles of two or more <sc_element sys_idtf  = "chemical_substance">substance</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
                                                         => nrel_format: format_html;;
                                                 *);;
                                         *);;
@@ -82,13 +99,20 @@ homogeneou_mixture
                 Definition_of_homogeneou_mixture
                 (*
                         <- definition;;
-                        => nrel_main_idtf: [Определение (однородная смесь)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Опр.(однородная смесь)](*<- lang_ru;;*);;
+                        => nrel_main_idtf: [Def.(homogeneou mixture)](*<- lang_en;;*);;
                         <= nrel_sc_text_translation:...
                                 (*
                                         -> rrel_example:
                                                 [<b><sc_element sys_idtf  = "homogeneou_mixture">Однородные смеси</sc_element> </b> – это такие <sc_element sys_idtf  = "mixture">смеси</sc_element> двух или нескольких <sc_element sys_idtf  = "chemical_substance">веществ</sc_element>, в которых даже под микроскопом нельзя обнаружить частицы этих веществ.]
                                                 (*
                                                         <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        -> rrel_example:
+                                                [<b><sc_element sys_idtf  = "homogeneou_mixture">Homogeneou mixture</sc_element> </b> – these are <sc_element sys_idtf  = "mixture">mixture</sc_element> two or more <sc_element sys_idtf  = "chemical_substance">substance</sc_element>, in which even under a microscope it is impossible to detect particles of these substances.]
+                                                (*
+                                                        <- lang_en;;
                                                         => nrel_format: format_html;;
                                                 *);;
                                   *);;
