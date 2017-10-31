@@ -1,0 +1,2048 @@
+subject_domain_of_acids
+	=> nrel_main_idtf:
+	[Предметная область кислот]
+	(* <- lang_ru;; *);
+	[Subject domain of acids]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	acid;
+
+-> rrel_not_maximum_studied_object_class:
+	dibasic_acid;
+	insoluble_acid;
+	monobasic_acid;
+	nonpersistent_acid;
+	nonvolatile_acid;
+	polybasic_acid;
+	resistent_acid;
+	soluble_acid;
+	strong_acid;
+	tribasic_acid;
+	volatile_acid;
+	weak_acid;
+	oxyacid;
+	oxygen_free_acid;
+	bromic_acid;
+	chloric_acid;
+	chlorous_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydrofluoric_acid;
+	hydroiodic_acid;
+	hydrosulfuric_acid;
+	iodic_acid;
+	metaarsenious_acid;
+	nitric_acid;
+	carbonic_acid;
+	metasilicic_acid;
+	selenic_acid;
+	sulfuric_acid;
+	sulfurous_acid;
+	orthophosphoric_acid;
+	boric_acid;
+
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content_html/subject_domain_of_acids.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content_html/subject_domain_of_acids_eng.html" (* <-lang_ru;; *);;
+		*);
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис.(Классификация кислот)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Pic.(Acid classification)] (* <- lang_en;; *);;
+	<- description_of_a_typical_instance;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:"file://content_image/acids.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+acid
+=> nrel_main_idtf:
+        [acid](*<- lang_en;;*);
+        [кислота](*<- lang_ru;;*);
+
+<- rrel_key_sc_element: definition_of_acid
+(* 
+	=> nrel_main_idtf: [Опр.(Кислота)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "acid">Кислота</sc_element></b> - сложное <sc_element sys_idtf  = "chemical_substance">вещество</sc_element>, в <sc_element sys_idtf="molecule">молекуле</sc_element> которого имеется один или несколько атомов водорода, которые могут быть замещены атомами (ионами) <sc_element sys_idtf="metal">металлов</sc_element>. Оставшаяся часть молекулы кислоты называется <sc_element sys_idtf="acid_residue">кислотным остатком</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		->chemical_substance;;
+        	->molecule;;
+        	->atom;;
+        	->metal;;
+        	->acid_residue;;
+	*);;
+*);  
+
+=>nrel_inclusion:
+	dibasic_acid;
+	insoluble_acid;
+	monobasic_acid;
+	nonpersistent_acid;
+	nonvolatile_acid;
+	polybasic_acid;
+	resistent_acid;
+	soluble_acid;
+	strong_acid;
+	tribasic_acid;
+	volatile_acid;
+	weak_acid;
+	oxyacid;
+	oxygen_free_acid;;
+
+dibasic_acid
+=> nrel_main_idtf:
+	[двухосновная кислота](*<- lang_ru;;*);
+	[dibasic acid](*<- lang_en;;*);
+<- rrel_key_sc_element:	Definition_of_dibasic_acid
+	(* 
+	=> nrel_main_idtf:[Опр.(Двухосновная кислота)](* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "dibasic_acid">Двухосновные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, содержащие два <sc_element sys_idtf  = "atom">атома</sc_element> <sc_element sys_idtf  = "elem_H">водорода</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+		(*
+			->acid;;
+			->atom;;
+			->elem_H;;
+		*);;
+*);
+
+=>nrel_inclusion:
+	carbonic_acid;
+	metasilicic_acid;
+	selenic_acid;
+	sulfuric_acid;
+	sulfurous_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Если кислота двухосновная, то она диссоциирует в две ступени.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+insoluble_acid
+=> nrel_main_idtf:
+	[нерастворимая кислота]	(*<- lang_ru;;*);
+	[insoluble acid](*<- lang_en;;*);
+<- rrel_key_sc_element:
+	Definition_of_insoluble_acid
+	(* 
+	=> nrel_main_idtf:[Опр.(Нерастворимая кислота)](* <- lang_ru;;	*);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "insoluble_acid">Нерастворимые кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, которые не растворяются при взаимодействии с <sc_element sys_idtf  = "water">водой</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->water;;
+			*);;
+*);
+
+=>nrel_inclusion:
+	metasilicic_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Кремниевая кислота является нерастворимой кислотой, в отличие от большинства других кислот](* <-lang_ru;; *);;
+		*);;
+*);;
+
+monobasic_acid
+=> nrel_main_idtf:
+	[одноосновная кислота](*<- lang_ru;;*);
+	[monobasic acid](* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_monobasic_acid
+	(* 
+	=> nrel_main_idtf:[Опр.(Одноосновная кислота)](* <- lang_ru;;	*);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "monobasic_acid">Одноосновные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, содержащие ровно один <sc_element sys_idtf  = "atom">атом</sc_element> <sc_element sys_idtf  = "elem_H">водорода</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;		
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;
+*);
+
+=>nrel_inclusion:
+	bromic_acid;
+	chloric_acid;
+	chlorous_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydrofluoric_acid;
+	hydroiodic_acid;
+	hydrosulfuric_acid;
+	iodic_acid;
+	metaarsenious_acid;
+	nitric_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Если кислота одноосновная, то она диссоциирует в одну ступень.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+nonpersistent_acid
+=> nrel_main_idtf:
+	[неустойчивая  кислота](* <- lang_ru;;*);
+	[nonpersistent acid](* <- lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_nonpersistent_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Неустойчивая  кислота)]	(* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nonpersistent_acid">Неустойчивые кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, которые разлагаются при нагревании или при нахождении на свету.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+			*);;
+*);
+
+=>nrel_inclusion:
+	metasilicic_acid;
+	nitric_acid;
+	carbonic_acid;
+	sulfurous_acid;;
+
+nonvolatile_acid
+=> nrel_main_idtf:
+	[нелетучая кислота](* <- lang_ru;; *);
+	[nonvolatile acid](* <- lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_nonvolatile_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Нелетучая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nonvolatile_acid">Нелетучие кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, <sc_element sys_idtf  = "molecule">молекулы</sc_element> которых не переходят в газообразное состояние, то есть не испаряются.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->molecule;;
+			*);;
+	*);
+
+=>nrel_inclusion:
+	metasilicic_acid;
+	sulfuric_acid;
+	orthophosphoric_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Соли, образованные нелетучими кислотами, разлагаются только частично.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+oxyacid
+=> nrel_main_idtf:
+	[oxyacid](*<- lang_en;;*);
+	[кислородсодержащая кислота](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	   Definition_of_oxyacid
+                (*
+                        <- definition;;
+                        => nrel_main_idtf: [Опр.(Кислородсодержащая кислота)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Кислородсодержащие кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых содержат один или несколько атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+	<= nrel_using_constants: ... 
+		(* 
+			->acid;;
+			->molecule;; 
+			->elem_O;; 
+		*);;
+*);
+
+=>nrel_inclusion:
+	carbonic_acid;
+	metasilicic_acid;
+	selenic_acid;
+	sulfuric_acid;
+	sulfurous_acid;
+	bromic_acid;
+	chloric_acid;
+	chlorous_acid;
+	iodic_acid;
+	metaarsenious_acid;
+	nitric_acid;
+	boric_acid;
+	orthophosphoric_acid;;
+
+oxygen_free_acid
+=> nrel_main_idtf:
+	[oxygen-free acid](*<- lang_en;;*);
+	[бескислородная кислота](*<- lang_ru;;*);
+<- rrel_key_sc_element:
+	   Definition_of_oxygen_free_acid
+                (*
+                <- definition;;
+                => nrel_main_idtf: [Def.(Oxygen-free acid)](*<- lang_en;;*);;
+                => nrel_main_idtf: [Опр.(Бескислородная кислота)](*<- lang_ru;;*);;
+                <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Бескислородные кислоты</b> - это <sc_element sys_idtf="acid">кислоты</sc_element>, <sc_element sys_idtf="molecule">молекулы</sc_element> которых не содержат атомов <sc_element sys_idtf="elem_O">кислорода</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+		<= nrel_using_constants: ... 
+			(* 
+				->acid;;
+				->molecule;; 
+				->elem_O;; 
+			*);;
+*);
+=>nrel_inclusion:
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydrofluoric_acid;
+	hydroiodic_acid;
+	hydrosulfuric_acid;;
+
+polybasic_acid
+=> nrel_main_idtf:
+	[многоосновная кислота]	(* <- lang_ru;;	*);
+	[polybasic acid](* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_polybasic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Многоосновная кислота)]	(* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "polybasic_acid">Многоосновные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, содержащие четыре и более <sc_element sys_idtf  = "atom">атомов</sc_element> <sc_element sys_idtf  = "elem_H">водорода</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Многоосновные кислоты диссоциируют ступенчато. Количество ступеней зависит от количества атомов водорода.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+resistent_acid
+=> nrel_main_idtf:
+	[устойчивая кислота](* <- lang_ru;; *);
+	[resistent acid](* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_resistent_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Устойчивая  кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "resistent_acid">Устойчивые кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, которые не разлагаются при нагревании или при нахождении на свету.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+			*);;
+	*);;
+*);
+
+=>nrel_inclusion:
+	hydrosulfuric_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydroiodic_acid;
+	hydrofluoric_acid;;
+
+soluble_acid
+=> nrel_main_idtf:
+	[растворимая кислота](* <- lang_ru;; *);
+	[soluble acid]	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_soluble_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Растворимая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "soluble_acid">Растворимые кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, которые растворяются при взаимодействии с <sc_element sys_idtf  = "water">водой</sc_element>.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->water;;
+			*);;
+	*);
+
+=>nrel_inclusion:
+	sulfuric_acid;
+	nitric_acid;
+	hydrosulfuric_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydroiodic_acid;
+	orthophosphoric_acid;
+	boric_acid;
+	carbonic_acid;
+	sulfurous_acid;
+	hydrofluoric_acid;
+	selenic_acid;
+	bromic_acid;
+	chloric_acid;
+	chlorous_acid;
+	iodic_acid;
+	metaarsenious_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Почти все кислоты (кроме кремниевой, например) растворяются в воде.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+strong_acid
+=> nrel_main_idtf:
+	[сильная кислота](* <- lang_ru;; *);
+	[strong acid](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_strong_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Сильная кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "strong_acid">Сильные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, полностью диссоциированные в разбавленных <sc_element sys_idtf  = "solution">растворах</sc_element>.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->solution;;
+			*);;
+	*);
+
+=>nrel_inclusion:
+	sulfuric_acid;
+	nitric_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydroiodic_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Более сильные кислоты вытесняют менее сильные кислоты из растворов их солей.](* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Бескислородные кислоты получаю при действии сильных кислот на соли более слабых или летучих бескислородных кислот.](* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Кислородсодержащие кислоты получают при действии сильных кислот на соли более слабых или летучих кислородсодержащих кислот.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+tribasic_acid
+=> nrel_main_idtf:
+	[трехосновная кислота]	(* <- lang_ru;;	*);
+	[tribasic acid]	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_tribasic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Трехосновная кислота)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "tribasic_acid">Трехосновные кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, содержащие три <sc_element sys_idtf  = "atom">атома</sc_element> <sc_element sys_idtf  = "elem_H">водорода</sc_element>.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->atom;;
+				->elem_H;;
+			*);;
+	*);
+
+=>nrel_inclusion:
+	orthophosphoric_acid;
+	boric_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Если кислота трехосновная, то она диссоциирует в три ступени.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+volatile_acid
+=> nrel_main_idtf:
+	[летучая кислота](* <- lang_ru;; *);
+	[volatile acid]	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_volatile_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Летучая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "volatile_acid">Летучие кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, <sc_element sys_idtf  = "molecule">молекулы</sc_element> которых легко переходят в газообразное состояние, то есть испаряются.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->molecule;;
+			*);;
+	*);
+=>nrel_inclusion:
+	carbonic_acid;
+	hydrosulfuric_acid;
+	sulfurous_acid;
+	nitric_acid;
+	hydrobromic_acid;
+	hydrochloric_acid;
+	hydrofluoric_acid;
+	hydroiodic_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Менее летучие кислоты вытесняют более летучие из их солей.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+weak_acid
+=> nrel_main_idtf:
+	[слабая кислота](* <- lang_ru;;	*);
+	[weak acid](* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	Definition_of_weak_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Слабая кислота)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "weak_acid">Слабые кислоты</sc_element></b> - <sc_element sys_idtf  = "acid">кислоты</sc_element>, частично диссоциированные в разбавленных <sc_element sys_idtf  = "solution">растворах</sc_element>.</p>]
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->acid;;
+				->solution;;
+			*);;
+	*);
+=>nrel_inclusion:
+	carbonic_acid;
+	metasilicic_acid;
+	boric_acid;
+	hydrosulfuric_acid;
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Слабые кислоты получают посредством взаимодействия солей с растворами сильных кислот.](* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Поскольку, слабые кислоты диссоциируют частично, то определить концентрацию ионов гидроксония в их растворах достаточно сложно.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+boric_acid
+=> nrel_main_idtf:
+	[борная кислота](* <- lang_ru;;	*);
+	[boric acid](* <- lang_en;;*);
+=> nrel_idtf: 
+	[H3BO3](* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_boric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Борная кислота)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "boric_acid">Борная кислота</sc_element></b> - <sc_element sys_idtf  = "weak_acid">слабая</sc_element> <sc_element sys_idtf  = "tribasic_acid">трехосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - H3BO3. Бесцветное кристаллическое вещество в виде чешуек без запаха.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->weak_acid;;
+				->tribasic_acid;;
+				->acid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Борная кислота проявляет очень слабые кислотные свойства. Борная кислота токсична.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Борная кислота сравнительно мало растворима в воде.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/boric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/boric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+bromic_acid
+=> nrel_main_idtf:
+	[бромноватая кислота](* <- lang_ru;; *);
+	[bromic acid] (* <- lang_en;; *);
+=> nrel_idtf: 
+	[HBrO3]	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_bromic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Бромноватая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "bromic_acid">Бромноватая кислота</sc_element></b> - <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, представляющая собой бесцветную (или слегка желтоватую) <sc_element sys_idtf  = "liquid">жидкость</sc_element>. Химическая формула - HBrO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Бромноватая кислота в свободном состоянии не выделена, существует в растворе с максимальной концентрацией до 50%.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/bromic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+carbonic_acid
+=> nrel_main_idtf:
+	[угольная кислота](* <- lang_ru;; *);
+	[carbonic acid]	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2CO3] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_carbonic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Угольная кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "carbonic_acid">Угольная кислота</sc_element></b> - <sc_element sys_idtf  = "weak_acid">слабая</sc_element> <sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, представляющая собой бесцветную <sc_element sys_idtf  = "liquid">жидкость</sc_element>. Химическая формула - H2CO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->weak_acid;;
+				->dibasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Угольная кислота  образуется в малых количествах при растворении углекислого газа в воде.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Угольная кислота в водных растворах неустойчива.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/carbonic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/carbonic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+chloric_acid
+=> nrel_main_idtf:
+	[хлорноватая кислота](* <- lang_ru;; *);
+	[chloric acid]	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[HClO3] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_chloric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Хлорноватая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "chloric_acid">Хлорноватая кислота</sc_element></b> - <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, в которой <sc_element sys_idtf  = "elem_Cl">хлор</sc_element> имеет степень окисления +5. Химическая формула - HClO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->elem_Cl;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Хлорноватая кислота — сильный окислитель.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Хлорноватая кислота в свободном виде не получена; в водных растворах при концентрации ниже 30% на холоде довольно устойчива; в более концентрированных растворах распадается.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/chloric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/chloric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+chlorous_acid
+=> nrel_main_idtf:
+	[хлористая кислота](* <- lang_ru;; *);
+	[chlorous acid]	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[HClO2] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_chlorous_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Хлористая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "chlorous_acid">Хлористая кислота</sc_element></b> - <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element> средней <sc_element sys_idtf  = "strong_acid">силы</sc_element>, в свободном виде <sc_element sys_idtf  = "nonpersistent_acid">неустойчива</sc_element>. Химическая формула - HClO2.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->nonpersistent_acid;;
+			*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[В разбавленном водном растворе хлористая кислота быстро разлагается.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/chlorous_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/chlorous_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+hydrobromic_acid
+=> nrel_main_idtf:
+	[бромоводородная кислота](* <- lang_ru;; *);
+	[hydrobromic acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[HBr] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_hydrobromic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Бромоводородная кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydrobromic_acid">Бромоводородная кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_bromide">бромоводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>, <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - HBr.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_bromide;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+			*);;
+	*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Бромоводородная кислота реагирует с металлами, их оксидами, основаниями.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydrobromic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydrobromic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+hydrochloric_acid
+=> nrel_main_idtf:
+	[соляная кислота](* <- lang_ru;; *);
+	[hydrochloric acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[HCl](* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_hydrochloric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Соляная кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydrochloric_acid">Соляная кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_chloride">хлороводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>, <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - HCl. Бесцветная, прозрачная, едкая <sc_element sys_idtf  = "liquid">жидкость</sc_element>, «дымящаяся» на воздухе.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_chloride;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Соляную кислоту получают растворением газообразного хлороводорода в воде.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydrochloric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+hydrofluoric_acid
+=> nrel_main_idtf:
+	[плавиковая кислота](* <- lang_ru;; *);
+	[hydrofluoric acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[HF](* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_hydrofluoric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Плавиковая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydrofluoric_acid">Плавиковая кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_chloride">фтороводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>, средняя по <sc_element sys_idtf  = "strong_acid">силе</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - HF. Бесцветная, прозрачная <sc_element sys_idtf  = "liquid">жидкость</sc_element>.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_fluoride;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Плавиковая кислота реагирует со многими металлами с образованием фторидов.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydrofluoric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+hydroiodic_acid
+=> nrel_main_idtf:
+	[иодоводородная кислота](* <- lang_ru;;	*);
+	[hydroiodic acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[HI] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_hydroiodic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Иодоводородная кислота)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydroiodic_acid">Иодоводородная кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_iodide">иодоводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>, <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - HI. Бесцветная, прозрачная <sc_element sys_idtf  = "liquid">жидкость</sc_element> с резким запахом.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_iodide;;
+				->water;;
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Иодоводородная кислота — очень сильный восстановитель, поэтому окисляется даже кислородом воздуха.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydroiodic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydroiodic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+hydrosulfuric_acid
+=> nrel_main_idtf:
+	[сероводородная кислота](* <- lang_ru;;	*);
+	[hydrochloric acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[H2S](* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_hydrosulfuric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Сероводородная кислота)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "hydrosulfuric_acid">Сероводородная кислота</sc_element></b> - раствор <sc_element sys_idtf  = "hydrogen_sulfide">сероводорода</sc_element>  в <sc_element sys_idtf  = "water">воде</sc_element>,  <sc_element sys_idtf  = "weak_acid">слабая</sc_element> <sc_element sys_idtf  = "nonpersistent_acid">неустойчивая</sc_element> <sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Химическая формула - H2S.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->hydrogen_sulfide;;
+				->water;;
+				->nonpersistent_acid;;
+				->weak_acid;;
+				->dibasic_acid;;
+				->acid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Сероводородная кислота медленно окисляется кислородом воздуха с выделением серы.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydrosulfuric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/hydrosulfuric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+iodic_acid
+=> nrel_main_idtf:
+	[иодноватая кислота](* <- lang_ru;; *);
+	[iodic acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[HIO3] 	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_iodic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Иодноватая кислота)](* <- lang_ru;; *);;
+
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "iodic_acid">Иодноватая кислота</sc_element></b> - <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, представляющая собой бесцветное кристаллическое вещество, со стеклянным блеском и горьковато-кислым вкусом, устойчивое при обычной температуре. Химическая формула - HIO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Иодноватая кислота хорошо растворима в воде](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/iodic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/iodic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+metaarsenious_acid
+=> nrel_main_idtf:
+	[метамышьяковистая кислота](* <- lang_ru;; *);
+	[metaarsenious acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[HAsO2] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_metaarsenious_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Метамышьяковистая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "metaarsenious_acid">Метамышьяковистая кислота</sc_element></b> - <sc_element sys_idtf  = "weak_acid">слабая</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, существующая только в растворе. Химическая формула - HAsO2.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Метамышьяковистая кислота при прокаливании разлагается.](* <-lang_ru;; *);;
+		*);;
+*);;
+
+metasilicic_acid
+=> nrel_main_idtf:
+	[метакремниевая кислота](* <- lang_ru;;	*);
+	[metasilicic acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[H2SiO3](* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_metasilicic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Метакремниевая кислота)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "metasilicic_acid">Метакремниевая кислота</sc_element></b> - очень <sc_element sys_idtf  = "weak_acid">слабая</sc_element> <sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>.Химическая формула - H2SiO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->weak_acid;;
+				->dibasic_acid;;
+				->acid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Метакремниевая кислота представляет собой желатинообразную массу.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/metasilicic_acid.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+nitric_acid
+=> nrel_main_idtf:
+	[азотная кислота](* <- lang_ru;; *);
+	[nitric acid](* <- lang_en;; *);
+=> nrel_idtf: 
+	[HNO3] 	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_nitric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Азотная кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "nitric_acid">Азотная кислота</sc_element></b> - <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "monobasic_acid">одноосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>. Бесцветная, дымящая на воздухе <sc_element sys_idtf  = "liquid">жидкость</sc_element>. Химическая формула - HNO3.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->monobasic_acid;;
+				->acid;;
+				->liquid;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Азотная кислота смешивается с водой во всех соотношениях.](* <-lang_ru;; *);;
+		*);;
+*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Высококонцентрированная азотная кислота имеет обычно бурую окраску вследствие происходящего на свету процесса разложения.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/nitric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/nitric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+orthophosphoric_acid
+=> nrel_main_idtf:
+	[ортофосфорная кислота]	(* <- lang_ru;;	*);
+	[orthophosphoric acid] (* <- lang_en;; *);
+=> nrel_idtf: 
+	[H3PO4] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_orthophosphoric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Ортофосфорная кислота)]	(* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "orthophosphoric_acid">Ортофосфорная кислота</sc_element></b> - <sc_element sys_idtf  = "tribasic_acid">трехосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element> средней <sc_element sys_idtf  = "strong_acid">силы</sc_element>, которая при стандартных условиях представляет собой бесцветное, гигроскопичное <sc_element sys_idtf  = "solid">твердое</sc_element> вещество, хорошо растворимое в <sc_element sys_idtf  = "water">воде</sc_element>. Химическая формула - H3PO4.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->tribasic_acid;;
+				->acid;;
+				->water;;
+				->solid;;			
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Обычно ортофосфорной кислотой называют 85%-й водный раствор (бесцветная сиропообразная жидкость без запаха). ](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Ортофосфорную кислоту получают из фосфата. ](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[При взаимодействии с очень сильной кислотой ортофосфорная кислота проявляет признаки амфотерности.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Отличительной реакцией ортофосфорной кислоты от других фосфорных кислот является реакция с нитратом серебра — образуется жёлтый осадок.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/orthophosphoric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/orthophosphoric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+selenic_acid
+=> nrel_main_idtf:
+	[селеновая кислота] (* <- lang_ru;; *);
+	[selenic acid] (* <- lang_en;; *);
+=> nrel_idtf: 
+	[H2SeO4] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_selenic_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Селеновая кислота)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "selenic_acid">Селеновая кислота</sc_element></b> - 
+<sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, состоящая из катиона <sc_element sys_idtf  = "elem_H">водорода</sc_element> и аниона селената. Бесцветное кристаллическое вещество, хорошо растворимое в <sc_element sys_idtf  = "water">воде</sc_element>. Химическая формула - H2SeO4.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->dibasic_acid;;
+				->acid;;
+				->water;;
+				->elem_H;;
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Селеновая кислота ядовита, гигроскопична и является сильным окислителем.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Селеновая кислота — одно из немногих соединений (и единственная кислота в чистом виде) растворяющих золото.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/selenic_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/selenic_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+sulfuric_acid
+=> nrel_main_idtf:
+	[серная кислота](* <- lang_ru;;	*);
+	[sulfuric acid]	(* <- lang_en;;	*);
+=> nrel_idtf: 
+	[H2SO4]	(* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_sulfuric_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Серная кислота)](* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "sulfuric_acid">Серная кислота</sc_element></b> - <sc_element sys_idtf  = "strong_acid">сильная</sc_element> <sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element>, отвечающая высшей степени окисления <sc_element sys_idtf  = "elem_S">серы</sc_element> (+6). Химическая формула - H2SO4.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->strong_acid;;
+				->dibasic_acid;;
+				->acid;;
+				->elem_S;;			
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[При обычных условиях концентрированная серная кислота — тяжёлая маслянистая жидкость без цвета и запаха, с кислым «медным» вкусом.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[В промышленности серную кислоту получают окислением диоксида серы до триоксида с последующим взаимодействием SO3 с водой. ](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Серная кислота в концентрированном виде при нагревании — довольно сильный окислитель.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	... (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Концентрированная серная кислота поглощает водяные пары, поэтому она применяется для сушки газов, жидкостей и твёрдых тел.](* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/sulfuric_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/sulfuric_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+sulfurous_acid
+=> nrel_main_idtf:
+	[сернистая кислота] (* <- lang_ru;; *);
+	[sulfurous acid] (* <- lang_en;; *);
+=> nrel_idtf: 
+	[H2SO3] (* <-lang_en;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_sulfurous_acid
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Сернистая кислота)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:
+			[<p><b><sc_element sys_idtf  = "sulfurous_acid">Сернистая кислота</sc_element></b> - 
+<sc_element sys_idtf  = "nonpersistent_acid">неустойчивая</sc_element> <sc_element sys_idtf  = "dibasic_acid">двухосновная</sc_element> <sc_element sys_idtf  = "acid">кислота</sc_element> средней силы. Отвечает степени окисления <sc_element sys_idtf  = "elem_S">серы</sc_element> +4. Химическая формула - H2SO4.</p>]
+			(* 
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			 *);;
+		*);;
+	<= nrel_using_constants:...
+			(*
+				->nonpersistent_acid;;
+				->dibasic_acid;;
+				->acid;;
+				->elem_S;;	
+			*);;
+*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/sulfurous_acid.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://content_image/sulfurous_acid2.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+
