@@ -1,0 +1,15 @@
+aircraft_industry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[авиационная промышленность](* <-lang_ru;; *);
+	[aircraft industry](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aircraft_industry.html"(* <- lang_ru;; *);;
+    *);;
+*);;
