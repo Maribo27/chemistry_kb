@@ -46,6 +46,7 @@ elem_Lv
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: [Рис.(атом ливермория)] (* <- lang_ru;;	*);
 	[Pic.(livermorium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...

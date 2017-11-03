@@ -62,6 +62,7 @@ elem_Mt
 <- rrel_key_sc_element: electron_configuration_Mt
 (*
 	<- explanation;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 		[Утв.(атом мейтнерия, электронная конфигурация*)](*<- lang_ru;;*);
 		[Stat.(meitnerium atom, electronic configuration*)](*<- lang_en;;*);;

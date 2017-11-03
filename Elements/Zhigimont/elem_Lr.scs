@@ -50,6 +50,7 @@ elem_Lr
 (*
 		
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: [Рис.(атом лоуренсия)] (* <- lang_ru;;	*);
 	[Pic.(lawrencium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...
