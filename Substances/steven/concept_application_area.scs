@@ -1,0 +1,7 @@
+concept_application_area
+<- sc_node_no_relation;
+
+=> nrel_main_idtf:
+    [application area](*<- lang_en;;*);
+    [область применения](*<- lang_ru;;*);;
+

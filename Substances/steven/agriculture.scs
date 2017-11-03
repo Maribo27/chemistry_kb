@@ -1,0 +1,15 @@
+agriculture
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[земледелие](* <-lang_ru;; *);
+	[agriculture](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/agriculture.html"(* <- lang_ru;; *);;
+    *);;
+*);;
