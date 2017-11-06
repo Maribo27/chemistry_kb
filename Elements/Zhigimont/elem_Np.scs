@@ -57,6 +57,7 @@ elem_Np
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(атом нептуния)] (* <- lang_ru;;	*);
 	[Pic.(neptinium atom)] (* <- lang_en;;	*);;
