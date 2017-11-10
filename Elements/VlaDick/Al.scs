@@ -1,4 +1,6 @@
 elem_Al
+=> nrel_main_idtf: [атом алюминия] (* <- lang_ru;; *);
+=> nrel_idtf: [Al] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_aluminium

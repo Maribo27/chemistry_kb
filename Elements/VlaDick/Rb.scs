@@ -1,4 +1,6 @@
 elem_Rb
+=> nrel_main_idtf: [атом рубидия] (* <- lang_ru;; *);
+=> nrel_idtf: [Rb] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_rubidium

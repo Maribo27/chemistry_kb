@@ -185,6 +185,8 @@ three_hundred_four
 four_hundred_fifty
 	=> nrel_main_idtf:	[450](* <- lang_ru; lang_en;; *);;
 
+six_hundred_and_sixty
+	=> nrel_main_idtf:	[660](* <- lang_ru; lang_en;; *);;
 six_hundred_eighty_eight
 	=> nrel_main_idtf:	[688](* <- lang_ru; lang_en;; *);;
 
@@ -200,15 +202,21 @@ eight_hundred_eighty_three
 
 nine_hundred_thirty_seven
 	=> nrel_main_idtf:	[937](* <- lang_ru; lang_en;; *);;
+nine_hundred_sixty_two
+	=> nrel_main_idtf:	[962](* <- lang_ru; lang_en;; *);;
 nine_hundred_ninety
 	=> nrel_main_idtf:	[990](* <- lang_ru; lang_en;; *);;
 
+one_thousand_and_forty_seven
+	=> nrel_main_idtf:	[1047](* <- lang_ru; lang_en;; *);;
 one_thousand_and_sixty_four
 	=> nrel_main_idtf:	[1064](* <- lang_ru; lang_en;; *);;
 one_thousand_and_seventy_seven
 	=> nrel_main_idtf:	[1077](* <- lang_ru; lang_en;; *);;
 one_thousand_one_hundred_thirty_two
 	=> nrel_main_idtf:	[1132](* <- lang_ru; lang_en;; *);;
+one_thousand_one_hundred_seventy_six
+	=> nrel_main_idtf:	[1176](* <- lang_ru; lang_en;; *);;
 one_thousand_three_hundred_fourty
 	=> nrel_main_idtf:	[1340](* <- lang_ru; lang_en;; *);;
 one_thousand_three_hundred_and_fifty_six
@@ -221,6 +229,8 @@ one_thousand_four_hundred_seventy_three
 	=> nrel_main_idtf:	[1473](* <- lang_ru; lang_en;; *);;
 one_thousand_five_hundred_fourty_five
 	=> nrel_main_idtf:	[1545](* <- lang_ru; lang_en;; *);;
+one_thousand_five_hundred_sixty_four
+	=> nrel_main_idtf:	[1564](* <- lang_ru; lang_en;; *);;
 one_thousand_six_hundred_and_thirty_seven
 	=> nrel_main_idtf:	[1637](* <- lang_ru; lang_en;; *);;
 one_thousand_six_hundred_sixty
@@ -234,8 +244,12 @@ one_thousand_eight_hundred_eighty_seven
 one_thousand_nine_hundred_fourty_seven
 	=> nrel_main_idtf:	[1947](* <- lang_ru; lang_en;; *);;
 
+two_hundred_and_seventy_one
+	=> nrel_main_idtf:	[2071](* <- lang_ru; lang_en;; *);;
 two_thousand_one_hundred_and_fifty_seven
 	=> nrel_main_idtf:	[2157](* <- lang_ru; lang_en;; *);;
+two_thousand_one_hundred_sixty_two
+	=> nrel_main_idtf:	[2162](* <- lang_ru; lang_en;; *);;
 two_thousand_two_hundred_and_four
 	=> nrel_main_idtf:	[2204](* <- lang_ru; lang_en;; *);;
 two_thousand_three_hundred_and_fifty
@@ -251,6 +265,8 @@ three_thousand_and_seventeen
 	=> nrel_main_idtf:	[3017](* <- lang_ru; lang_en;; *);;
 three_thousand_and_twenty_three
 	=> nrel_main_idtf:	[3023](* <- lang_ru; lang_en;; *);;
+three_thousand_one_hundred_ninety_seven
+	=> nrel_main_idtf:	[3197](* <- lang_ru; lang_en;; *);;
 three_thousand_two_hundred_and_eighty_seven
 	=> nrel_main_idtf:	[3287](* <- lang_ru; lang_en;; *);;
 three_thousand_three_hundred_and_seventy_seven
