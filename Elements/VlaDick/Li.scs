@@ -1,4 +1,6 @@
 elem_Li
+=> nrel_main_idtf: [атом лития] (* <- lang_ru;; *);
+=> nrel_idtf: [Li] (* <- lang_en;; *);
 <- rrel_key_sc_element:
 	Definition_of_lithium
 	(* 

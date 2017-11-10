@@ -1,4 +1,6 @@
 elem_K
+=> nrel_main_idtf: [атом калия] (* <- lang_ru;; *);
+=> nrel_idtf: [K] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_kalium

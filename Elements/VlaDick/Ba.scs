@@ -1,4 +1,6 @@
 elem_Ba
+=> nrel_main_idtf: [атом бария] (* <- lang_ru;; *);
+=> nrel_idtf: [Ba] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_barium

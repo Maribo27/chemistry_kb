@@ -1,4 +1,6 @@
 elem_Au
+=> nrel_main_idtf: [атом золота] (* <- lang_ru;; *);
+=> nrel_idtf: [Au] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_aurum

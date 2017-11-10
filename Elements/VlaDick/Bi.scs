@@ -1,4 +1,6 @@
 elem_Bi
+=> nrel_main_idtf: [атом висмута] (* <- lang_ru;; *);
+=> nrel_idtf: [Bi] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_bismuthum

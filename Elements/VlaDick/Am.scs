@@ -1,4 +1,6 @@
 elem_Am
+=> nrel_main_idtf: [атом америция] (* <- lang_ru;; *);
+=> nrel_idtf: [Am] (* <- lang_en;; *);
 <-sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_americium

@@ -1,4 +1,6 @@
 elem_Na
+=> nrel_main_idtf: [атом натрия] (* <- lang_ru;; *);
+=> nrel_idtf: [Na] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_natrium

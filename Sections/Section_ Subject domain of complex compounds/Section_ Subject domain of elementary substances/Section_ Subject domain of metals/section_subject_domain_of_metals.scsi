@@ -56,6 +56,9 @@ subject_domain_of_metals
 subst_Ac
 <- sc_node_not_relation;
 => nrel_main_idtf: [актиний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [actinium] (* <- lang_en;; *);
+=> nrel_idtf: [Ac](*<- lang_en;;*);
+=> nrel_inclusion: elem_Ac;
 <- rrel_key_sc_element: definition_of_subst_Ac
 (* 
 	=> nrel_main_idtf: [опр.(актиний)] (* <- lang_ru;; *);;
@@ -79,7 +82,7 @@ subst_Ac
 *);
 
 <- color_white_silver ;
-=> nrel_inclusion: elem_Ac;
+
 
 => nrel_state_of_aggregation:...
 (*
@@ -142,6 +145,8 @@ subst_Ac
 subst_Ag
 <- sc_node_not_relation;
 => nrel_main_idtf: [серебро] (* <- lang_ru;; *);
+=> nrel_main_idtf: [silver] (* <- lang_en;; *);
+=> nrel_idtf: [Ag](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Ag
 (* 
 	=> nrel_main_idtf: [опр.(серебро)] (* <- lang_ru;; *);;
@@ -193,6 +198,8 @@ subst_Ag
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(серебро, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -242,6 +249,8 @@ subst_Ag
 subst_Al
 <- sc_node_not_relation;
 => nrel_main_idtf: [алюминий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [aluminum] (* <- lang_en;; *);
+=> nrel_idtf: [Al](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Al
 (* 
 	=> nrel_main_idtf: [опр.(алюминий)] (* <- lang_ru;; *);;
@@ -308,7 +317,9 @@ subst_Al
 		<= nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example:
+			<- illustration;;
+	        => nrel_main_idtf: [Рис.(алюминий, твердое вещество)] (* <- lang_ru;;	*);;
+		    -> rrel_example:
 			"file://image/subst_al.jpg"
 			(*
 			=> nrel_format: format_jpg;;
@@ -342,6 +353,8 @@ subst_Al
 subst_Am
 <- sc_node_not_relation;
 => nrel_main_idtf: [америций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [americium] (* <- lang_en;; *);
+=> nrel_idtf: [Am](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Am
 (* 
 	=> nrel_main_idtf: [опр.(америций)] (* <- lang_ru;; *);;
@@ -403,7 +416,10 @@ subst_Am
 
 
 <- rrel_key_sc_element:...
-	(*
+	(*	
+	
+	    <- illustration;;
+	    => nrel_main_idtf: [Рис.(америций, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -441,6 +457,8 @@ subst_Am
 subst_Bi
 <- sc_node_not_relation;
 => nrel_main_idtf: [висмут] (* <- lang_ru;; *);
+=> nrel_main_idtf: [bismuth] (* <- lang_en;; *);
+=> nrel_idtf: [Bi](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Bi
 (* 
 	=> nrel_main_idtf: [опр.(висмут)] (* <- lang_ru;; *);;
@@ -503,6 +521,8 @@ subst_Bi
 
 <- rrel_key_sc_element:...
 	(*
+	    <- illustration;;
+	    => nrel_main_idtf: [Рис.(висмут, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -551,6 +571,8 @@ subst_Bi
 subst_Au
 <- sc_node_not_relation;
 => nrel_main_idtf: [золото] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gold] (* <- lang_en;; *);
+=> nrel_idtf: [Au](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Au
 (* 
 	=> nrel_main_idtf: [опр.(золото)] (* <- lang_ru;; *);;
@@ -560,7 +582,7 @@ subst_Au
 		-> rrel_example:
 			[<p><b>Простое вещество золото</b> — мягкий ковкий
  <sc_element sys_idtf  = "metal">металл</sc_element>
-<sc_element sys_idtf  = "colour_yellow">жёлтого цвета</sc_element>.</p>] 
+<sc_element sys_idtf  = "color_yellow">жёлтого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -568,12 +590,12 @@ subst_Au
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_yellow ;;
+		-> color_yellow ;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_yellow ;
+<- color_yellow ;
 => nrel_inclusion: elem_Au;
 
 => nrel_state_of_aggregation:...
@@ -598,6 +620,21 @@ subst_Au
 		*);;
 	*);
 
+<- rrel_key_sc_element:...
+	(*			
+	    <- illustration;;
+	    => nrel_main_idtf: [Рис.(золото, твердое вещество)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_au.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
 
 <- rrel_key_sc_element: interaction_au_and_acid
 (*
@@ -610,20 +647,6 @@ subst_Au
 	*);;
 *);
 
-
-<- rrel_key_sc_element:...
-	(*
-		<- description_of_a_typical_instance;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-			"file://image/subst_au.jpg"
-			(*
-			=> nrel_format: format_jpg;;
-			*);;
-		*);;
-	*);
 
 <- rrel_key_sc_element: application_of_au
 	(*
@@ -683,6 +706,8 @@ subst_Au
 subst_Ba
 <- sc_node_not_relation;
 => nrel_main_idtf: [барий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [barium] (* <- lang_en;; *);
+=> nrel_idtf: [Ba](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Ba
 (* 
 	=> nrel_main_idtf: [опр.(барий)] (* <- lang_ru;; *);;
@@ -754,7 +779,9 @@ subst_Ba
 *);
 
 <- rrel_key_sc_element:...
-	(*
+	(*			
+	    <- illustration;;
+	    => nrel_main_idtf: [Рис.(барий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -803,6 +830,8 @@ subst_Ba
 subst_Ga
 <- sc_node_not_relation;
 => nrel_main_idtf: [галлий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gallium] (* <- lang_en;; *);
+=> nrel_idtf: [Ga](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Ga
 (* 
 	=> nrel_main_idtf: [опр.(галлий)] (* <- lang_ru;; *);;
@@ -812,7 +841,7 @@ subst_Ga
 		-> rrel_example:
 			[<p><b>Простое вещество галлий</b> — мягкий хрупкий
  <sc_element sys_idtf  = "metal">металл</sc_element> 
-<sc_element sys_idtf  = "colour_white_silver">серебристо-белого цвета</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
  с синеватым оттенком.</p>] 
 			(*
 				<-lang_ru;;
@@ -821,12 +850,12 @@ subst_Ga
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_white_silver;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_white_silver;
+<- color_white_silver;
 => nrel_inclusion: elem_Ga;
 
 => nrel_state_of_aggregation:...
@@ -876,6 +905,8 @@ subst_Ga
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(галлий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -902,6 +933,8 @@ subst_Ga
 subst_Ge
 <- sc_node_not_relation;
 => nrel_main_idtf: [германий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [germanium] (* <- lang_en;; *);
+=> nrel_idtf: [Ge](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Ge
 (* 
 	=> nrel_main_idtf: [опр.(германий)] (* <- lang_ru;; *);;
@@ -910,7 +943,7 @@ subst_Ge
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество германий</b> — типичный 
-полупроводник <sc_element sys_idtf  = "colour_gray_white">серо-белого цвета</sc_element>, 
+полупроводник <sc_element sys_idtf  = "color_gray_white">серо-белого цвета</sc_element>, 
 с металлическим блеском.</p>] 
 			(*
 				<-lang_ru;;
@@ -919,11 +952,11 @@ subst_Ge
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_gray_white;;
+		-> color_gray_white;;
 	*);;
 *);
 
-<- colour_gray_white;
+<- color_gray_white;
 => nrel_inclusion: elem_Ge;
 
 => nrel_state_of_aggregation:...
@@ -962,6 +995,8 @@ subst_Ge
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(германий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1010,6 +1045,8 @@ subst_Ge
 subst_K
 <- sc_node_not_relation;
 => nrel_main_idtf: [калий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [potassium] (* <- lang_en;; *);
+=> nrel_idtf: [K](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_K
 (* 
 	=> nrel_main_idtf: [опр.(калий)] (* <- lang_ru;; *);;
@@ -1019,7 +1056,7 @@ subst_K
 		-> rrel_example:
 			[<p><b>Простое вещество калий</b> — мягкий 
 <sc_element sys_idtf  = "metal">металл</sc_element> 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.</p>] 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -1027,12 +1064,12 @@ subst_K
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_K;
 
 => nrel_state_of_aggregation:...
@@ -1082,6 +1119,8 @@ subst_K
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(калий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1108,6 +1147,8 @@ subst_K
 subst_Li
 <- sc_node_not_relation;
 => nrel_main_idtf: [литий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lithium] (* <- lang_en;; *);
+=> nrel_idtf: [Li](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Li
 (* 
 	=> nrel_main_idtf: [опр.(литий)] (* <- lang_ru;; *);;
@@ -1117,7 +1158,7 @@ subst_Li
 		-> rrel_example:
 			[<p><b>Простое вещество литий</b> — мягкий
  щелочной <sc_element sys_idtf  = "metal">металл</sc_element> 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.</p>] 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -1125,12 +1166,12 @@ subst_Li
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Li;
 
 => nrel_state_of_aggregation:...
@@ -1169,6 +1210,8 @@ subst_Li
  
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(литий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1217,6 +1260,8 @@ subst_Li
 subst_Na
 <- sc_node_not_relation;
 => nrel_main_idtf: [натрий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [sodium] (* <- lang_en;; *);
+=> nrel_idtf: [Na](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Na
 (* 
 	=> nrel_main_idtf: [опр.(натрий)] (* <- lang_ru;; *);;
@@ -1226,7 +1271,7 @@ subst_Na
 		-> rrel_example:
 			[<p><b>Простое вещество натрий</b> — мягкий 
 щелочной <sc_element sys_idtf  = "metal">металл</sc_element> 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.</p>] 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -1234,12 +1279,12 @@ subst_Na
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Na;
 
 => nrel_state_of_aggregation:...
@@ -1289,6 +1334,8 @@ subst_Na
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(натрий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1315,6 +1362,8 @@ subst_Na
 subst_Rb
 <- sc_node_not_relation;
 => nrel_main_idtf: [рубидий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [rubidium] (* <- lang_en;; *);
+=> nrel_idtf: [Rb](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Rb
 (* 
 	=> nrel_main_idtf: [опр.(рубидий)] (* <- lang_ru;; *);;
@@ -1324,7 +1373,7 @@ subst_Rb
 		-> rrel_example:
 			[<p><b>Простое вещество рубидий</b> — мягкий 
 <sc_element sys_idtf  = "metal">металл</sc_element> 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.</p>] 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -1332,12 +1381,12 @@ subst_Rb
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Rb;
 
 => nrel_state_of_aggregation:...
@@ -1376,6 +1425,8 @@ subst_Rb
  
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(рубидий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1402,6 +1453,8 @@ subst_Rb
 subst_Sg
 <- sc_node_not_relation;
 => nrel_main_idtf: [сиборгий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [seaborgium] (* <- lang_en;; *);
+=> nrel_idtf: [Sg](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Sg
 (* 
 	=> nrel_main_idtf: [опр.(сиборгий)] (* <- lang_ru;; *);;
@@ -1455,6 +1508,8 @@ subst_Sg
 subst_Sm
 <- sc_node_not_relation;
 => nrel_main_idtf: [самарий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [samarium] (* <- lang_en;; *);
+=> nrel_idtf: [Sm](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Sm
 (* 
 	=> nrel_main_idtf: [опр.(самарий)] (* <- lang_ru;; *);;
@@ -1464,7 +1519,7 @@ subst_Sm
 		-> rrel_example:
 			[<p><b>Простое вещество самарий</b> — редкоземельный 
 <sc_element sys_idtf  = "metal">металл</sc_element>
- <sc_element sys_idtf  = "colour_silver">серебристого цвета</sc_element>.</p>] 
+ <sc_element sys_idtf  = "color_silver">серебристого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -1472,12 +1527,12 @@ subst_Sm
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver;;
+		-> color_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver;
+<- color_silver;
 => nrel_inclusion: elem_Sm;
 
 => nrel_state_of_aggregation:...
@@ -1527,6 +1582,8 @@ subst_Sm
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(самарий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1575,6 +1632,8 @@ subst_Sm
 subst_Sn
 <- sc_node_not_relation;
 => nrel_main_idtf: [олово] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tin] (* <- lang_en;; *);
+=> nrel_idtf: [Sn](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Sn
 (* 
 	=> nrel_main_idtf: [Опр.(олово)] (* <- lang_ru;; *);;
@@ -1583,7 +1642,7 @@ subst_Sn
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество олово</b> — 
-<sc_element sys_idtf  = "colour_silver_white">cеребристо-белого цвета</sc_element>
+<sc_element sys_idtf  = "color_white_silver">cеребристо-белого цвета</sc_element>
  мягкий, пластичный <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
@@ -1592,12 +1651,12 @@ subst_Sn
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Sn;
 
 => nrel_state_of_aggregation:...
@@ -1682,6 +1741,8 @@ subst_Sn
 subst_Sr
 <- sc_node_not_relation;
 => nrel_main_idtf: [стронций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [strontium] (* <- lang_en;; *);
+=> nrel_idtf: [Sr](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Sr
 (* 
 	=> nrel_main_idtf: [опр.(стронций)] (* <- lang_ru;; *);;
@@ -1690,7 +1751,7 @@ subst_Sr
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество стронций</b> — мягкий 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element> 
 <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
@@ -1699,12 +1760,12 @@ subst_Sr
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Sr;
 
 => nrel_state_of_aggregation:...
@@ -1754,6 +1815,8 @@ subst_Sr
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(стронций, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1802,6 +1865,8 @@ subst_Sr
 subst_Ta
 <- sc_node_not_relation;
 => nrel_main_idtf: [тантал] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tantalum] (* <- lang_en;; *);
+=> nrel_idtf: [Ta](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Ta
 (* 
 	=> nrel_main_idtf: [опр.(тантал)] (* <- lang_ru;; *);;
@@ -1810,7 +1875,7 @@ subst_Ta
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество тантал</b> — блестящий 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element> 
 <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
@@ -1819,12 +1884,12 @@ subst_Ta
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Ta;
 
 => nrel_state_of_aggregation:...
@@ -1874,6 +1939,8 @@ subst_Ta
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(тантал, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -1911,6 +1978,8 @@ subst_Ta
 subst_Tb
 <- sc_node_not_relation;
 => nrel_main_idtf: [тербий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [terbium] (* <- lang_en;; *);
+=> nrel_idtf: [Tb](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Tb
 (* 
 	=> nrel_main_idtf: [опр.(тербий)] (* <- lang_ru;; *);;
@@ -1920,7 +1989,7 @@ subst_Tb
 		-> rrel_example:
 			[<p><b>Простое вещество тербий</b> — мягкий, вязкий 
 <sc_element sys_idtf  = "metal">металл</sc_element>
- <sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.</p>] 
+ <sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -1928,12 +1997,12 @@ subst_Tb
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Tb;
 
 => nrel_state_of_aggregation:...
@@ -1972,6 +2041,8 @@ subst_Tb
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(тербий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2009,6 +2080,8 @@ subst_Tb
 subst_Tc
 <- sc_node_not_relation;
 => nrel_main_idtf: [технеций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [technetium] (* <- lang_en;; *);
+=> nrel_idtf: [Tc](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Tc
 (* 
 	=> nrel_main_idtf: [опр.(технеций (вещество))] (* <- lang_ru;; *);;
@@ -2017,7 +2090,7 @@ subst_Tc
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество технеций</b> — 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element> 
 радиоактивный <sc_element sys_idtf  = "metal">металл</sc_element> серебристого цвета.</p>] 
 			(*
 				<-lang_ru;;
@@ -2026,12 +2099,12 @@ subst_Tc
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Tc;
 
 => nrel_state_of_aggregation:...
@@ -2082,6 +2155,8 @@ subst_Tc
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(технеций, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2108,6 +2183,8 @@ subst_Tc
 subst_Te
 <- sc_node_not_relation;
 => nrel_main_idtf: [теллур] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tellurium] (* <- lang_en;; *);
+=> nrel_idtf: [Te](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Te
 (* 
 	=> nrel_main_idtf: [опр.(теллур)] (* <- lang_ru;; *);;
@@ -2116,7 +2193,7 @@ subst_Te
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество теллур</b> — 
-<sc_element sys_idtf  = "colour_silver">серебристого цвета</sc_element> 
+<sc_element sys_idtf  = "color_silver">серебристого цвета</sc_element> 
 блестящий <sc_element sys_idtf  = "nonmetal">неметалл</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
@@ -2125,12 +2202,12 @@ subst_Te
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver;;
+		-> color_silver;;
 		-> nonmetal;;
 	*);;
 *);
 
-<- colour_silver;
+<- color_silver;
 => nrel_inclusion: elem_Te;
 
 => nrel_state_of_aggregation:...
@@ -2191,6 +2268,8 @@ subst_Te
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(теллур, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2228,6 +2307,8 @@ subst_Te
 subst_Th
 <- sc_node_not_relation;
 => nrel_main_idtf: [торий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [thorium] (* <- lang_en;; *);
+=> nrel_idtf: [Th](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Th
 (* 
 	=> nrel_main_idtf: [опр.(торий)] (* <- lang_ru;; *);;
@@ -2236,7 +2317,7 @@ subst_Th
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество торий</b> — 
-<sc_element sys_idtf  = "colour_gray">серый</sc_element>, мягкий,
+<sc_element sys_idtf  = "color_gray">серый</sc_element>, мягкий,
  ковкий, вязкий, слаборадиоактивный 
 <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
 			(*
@@ -2246,12 +2327,12 @@ subst_Th
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_gray;;
+		-> color_gray;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_gray;
+<- color_gray;
 => nrel_inclusion: elem_Th;
 
 => nrel_state_of_aggregation:...
@@ -2301,6 +2382,8 @@ subst_Th
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(торий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2327,6 +2410,8 @@ subst_Th
 subst_Ti
 <- sc_node_not_relation;
 => nrel_main_idtf: [титан] (* <- lang_ru;; *);
+=> nrel_main_idtf: [titanium] (* <- lang_en;; *);
+=> nrel_idtf: [Ti](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Ti
 (* 
 	=> nrel_main_idtf: [опр.(титан)] (* <- lang_ru;; *);;
@@ -2336,7 +2421,7 @@ subst_Ti
 		-> rrel_example:
 			[<p><b>Простое вещество титан</b> — лёгкий 
 прочный <sc_element sys_idtf  = "metal">металл</sc_element> 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.  </p>] 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.  </p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -2344,12 +2429,12 @@ subst_Ti
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Ti;
 
 => nrel_state_of_aggregation:...
@@ -2399,6 +2484,8 @@ subst_Ti
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(титан, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2436,6 +2523,8 @@ subst_Ti
 subst_Tl
 <- sc_node_not_relation;
 => nrel_main_idtf: [таллий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [thallium] (* <- lang_en;; *);
+=> nrel_idtf: [Tl](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Tl
 (* 
 	=> nrel_main_idtf: [опр.(таллий)] (* <- lang_ru;; *);;
@@ -2445,7 +2534,7 @@ subst_Tl
 		-> rrel_example:
 			[<p><b>Простое вещество таллий</b> — мягкий 
 <sc_element sys_idtf  = "metal">металл</sc_element>
- <sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element> 
+ <sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element> 
 с голубоватым оттенком.</p>] 
 			(*
 				<-lang_ru;;
@@ -2454,12 +2543,12 @@ subst_Tl
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_Tl;
 
 => nrel_state_of_aggregation:...
@@ -2499,6 +2588,8 @@ subst_Tl
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(таллий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2536,6 +2627,8 @@ subst_Tl
 subst_Tm
 <- sc_node_not_relation;
 => nrel_main_idtf: [тулий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [thulium] (* <- lang_en;; *);
+=> nrel_idtf: [Tm](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_Tm
 (* 
 	=> nrel_main_idtf: [опр.(тулий)] (* <- lang_ru;; *);;
@@ -2545,7 +2638,7 @@ subst_Tm
 		-> rrel_example:
 			[<p><b>Простое вещество тулий</b> — легко 
 обрабатываемый <sc_element sys_idtf  = "metal">металл</sc_element>
- <sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.</p>] 
+ <sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -2553,12 +2646,12 @@ subst_Tm
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver;
+<- color_white_silver;
 => nrel_inclusion: elem_Tm;
 
 => nrel_state_of_aggregation:...
@@ -2620,6 +2713,8 @@ subst_Tm
 subst_U
 <- sc_node_not_relation;
 => nrel_main_idtf: [уран] (* <- lang_ru;; *);
+=> nrel_main_idtf: [uranus] (* <- lang_en;; *);
+=> nrel_idtf: [U](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_U
 (* 
 	=> nrel_main_idtf: [опр.(уран)] (* <- lang_ru;; *);;
@@ -2628,7 +2723,7 @@ subst_U
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество уран</b> — тяжёлый 
-<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
  глянцеватый <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
@@ -2637,12 +2732,12 @@ subst_U
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_white;;
+		-> color_white_silver;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_white;
+<- color_white_silver;
 => nrel_inclusion: elem_U;
 
 => nrel_state_of_aggregation:...
@@ -2682,6 +2777,8 @@ subst_U
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(уран, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2719,6 +2816,8 @@ subst_U
 subst_V
 <- sc_node_not_relation;
 => nrel_main_idtf: [ванадий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [vanadium] (* <- lang_en;; *);
+=> nrel_idtf: [V](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_V
 (* 
 	=> nrel_main_idtf: [опр.(ванадий)] (* <- lang_ru;; *);;
@@ -2728,7 +2827,7 @@ subst_V
 		-> rrel_example:
 			[<p><b>Простое вещество ванадий</b> — пластичный 
 <sc_element sys_idtf  = "metal">металл</sc_element> 
-<sc_element sys_idtf  = "colour_silver_gray">серебристо-серого цвета</sc_element>.</p>] 
+<sc_element sys_idtf  = "color_silver_grey">серебристо-серого цвета</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -2736,12 +2835,12 @@ subst_V
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_gray;;
+		-> color_silver_grey;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_gray;
+<- color_silver_grey;
 => nrel_inclusion: elem_V;
 
 => nrel_state_of_aggregation:...
@@ -2791,6 +2890,8 @@ subst_V
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(ванадий, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -2828,6 +2929,8 @@ subst_V
 subst_W
 <- sc_node_not_relation;
 => nrel_main_idtf: [вольфрам] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tungsten] (* <- lang_en;; *);
+=> nrel_idtf: [W](*<- lang_en;;*);
 <- rrel_key_sc_element: definition_of_subst_W
 (* 
 	=> nrel_main_idtf: [опр.(вольфрам)] (* <- lang_ru;; *);;
@@ -2836,7 +2939,7 @@ subst_W
 	(*
 		-> rrel_example:
 			[<p><b>Простое вещество вольфрам</b> — твёрдый 
-блестящий <sc_element sys_idtf  = "colour_silver_gray">серебристо-серого цвета</sc_element> 
+блестящий <sc_element sys_idtf  = "color_silver_grey">серебристо-серого цвета</sc_element> 
 переходный <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
@@ -2845,12 +2948,12 @@ subst_W
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> colour_silver_gray;;
+		-> color_silver_grey;;
 		-> metal;;
 	*);;
 *);
 
-<- colour_silver_gray;
+<- color_silver_grey;
 => nrel_inclusion: elem_W;
 
 => nrel_state_of_aggregation:...
@@ -2900,6 +3003,8 @@ subst_W
 
 <- rrel_key_sc_element:...
 	(*
+		<- illustration;;
+	    => nrel_main_idtf: [Рис.(вольфрам, твердое вещество)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
