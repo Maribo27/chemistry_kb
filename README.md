@@ -39,6 +39,8 @@ $ rm -f -R  kb
 $ git clone ссылкаНаВашуКопиюРепозитория kb
 $ cd kb
 $ git remote add mainRepository https://github.com/Maribo27/chemistry_kb
+$ git checkout -b mainRepository remotes/mainRepository/master
+$ git checkout master
 ```
 
 ### Отправка изменений
@@ -54,12 +56,15 @@ $ git push
 ### Проверка изменений
 - Перейти на ветку с главным репозиторием
 ```sh
+$ git checkout mainRepository
 $ git status
 ```
 - Если есть изменения, то скачать их
 
 ```sh
-$ git pull mainRepository master
+$ git pull mainRepository
+$ git checkout master
+$ git merge mainRepository
 ```
 
 ### Основные ссылки
