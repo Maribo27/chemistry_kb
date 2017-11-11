@@ -1,4 +1,4 @@
-# Inorgamic Chemistry Knoledge Base
+# Inorganic Chemistry Knoledge Base
 База знаний проекта по химии "0-zone"
 
 ### Инструкция по созданию своей копии базы
