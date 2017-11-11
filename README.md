@@ -59,7 +59,7 @@ $ git push
 $ git checkout mainRepository
 $ git status
 ```
-- Если есть изменения, то скачать их
+- Если есть изменения, то скачать их:
 
 ```sh
 $ git pull mainRepository
