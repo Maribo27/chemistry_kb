@@ -39,8 +39,9 @@ $ rm -f -R  kb
 $ git clone ссылкаНаВашуКопиюРепозитория kb
 $ cd kb
 $ git remote add mainRepository https://github.com/Maribo27/chemistry_kb
-$ git checkout -b mainRepository remotes/mainRepository/master
-$ git checkout master
+$ git fetch mainRepository
+$ git checkout -b main mainRepository/master
+
 ```
 
 ### Отправка изменений
@@ -53,16 +54,11 @@ $ git push
 - Создать пуллреквест (кнопка New Pull Request)
 - Отметить в [Trello]
 
-### Проверка изменений
+### Получение изменений
 - Перейти на ветку с главным репозиторием
 ```sh
 $ git checkout mainRepository
-$ git status
-```
-- Если есть изменения, то скачать их:
-
-```sh
-$ git pull mainRepository
+$ git pull
 $ git checkout master
 $ git merge mainRepository
 ```
