@@ -41,10 +41,11 @@ $ cd kb
 $ git remote add mainRepository https://github.com/Maribo27/chemistry_kb
 $ git fetch mainRepository
 $ git checkout -b main mainRepository/master
+$ git checkout master
 
 ```
 
-### Отправка изменений
+### Отправка изменений (с ветки master)
 - Закоммитить и залить на свой репозиторий локальные изменения
 ```sh
 $ git add --all
@@ -55,12 +56,12 @@ $ git push
 - Отметить в [Trello]
 
 ### Получение изменений
-- Перейти на ветку с главным репозиторием
+- Изменения на ветке master должны быть закомичены и, желательно, приняты мной
 ```sh
-$ git checkout mainRepository
+$ git checkout main
 $ git pull
 $ git checkout master
-$ git merge mainRepository
+$ git merge main
 ```
 
 ### Основные ссылки
