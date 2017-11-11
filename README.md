@@ -85,30 +85,6 @@ $ git pull mainRepository master
 - nrels.scs - относительные понятия и идентификаторы, которых нет в базе, но на них есть ссылки (если берете их на формализацию, то помечаете это в гугл доке и на трелло)
 - rrels.scs - ролевые понятия и идентификаторы, которых нет в базе, но на них есть ссылки (если берете их на формализацию, то помечаете это в гугл доке и на трелло)
 
-### Установка и запуск системы
-Установка осуществляется с системы ubuntu через терминал
-```sh
-$ git clone https://github.com/ShunkevichDV/ostis
-```
-Папка с системой будет называться ostis
-После ссылки можно ввести другое имя папки для скачивания, тогда и дальше вместо слова остис прописываем это имя
-```sh
-$ cd ostis/scripts
-$ ./prepare.sh
-```
-Если что-то спросит, то соглашаемся
-```sh
-$ ./restart_sctp.sh
-```
-Открываем новую вкладку (CTRL + SHIFT + T)
-```sh
-$ ./run_scweb.sh
-```
-Открываем браузер и вводим адрес
-```sh
-localhost:8000
-```
-
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 
