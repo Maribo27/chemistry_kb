@@ -35,6 +35,6 @@ rrel_cubic_cm_per_mole
 	<- sc_node_role_relation;;
 
 rrel_degree_celsius 
-	=> nrel_main_idtf: [<p> <sup>o<sup>C </p>](*<- lang_ru;;*);
+	=> nrel_main_idtf: [°C](*<- lang_ru;;*);
 	=> nrel_idtf: [градус цельсия](*<- lang_ru;;*);
 	<- sc_node_role_relation;;

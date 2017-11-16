@@ -1,6 +1,4 @@
 elem_Bi
-=> nrel_main_idtf: [атом висмута] (* <- lang_ru;; *);
-=> nrel_idtf: [Bi] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_bismuthum
@@ -79,7 +77,7 @@ elem_Bi
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент висмут)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис. (химический элемент висмут)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

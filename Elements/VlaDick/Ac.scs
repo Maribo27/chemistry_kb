@@ -1,6 +1,4 @@
 elem_Ac
-=> nrel_main_idtf: [атом актиния] (* <- lang_ru;; *);
-=> nrel_idtf: [Ac] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_actinium
@@ -76,7 +74,7 @@ elem_Ac
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент актиний)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис. (химический элемент актиний)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

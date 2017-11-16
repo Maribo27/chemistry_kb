@@ -1,0 +1,226 @@
+elem_Ac
+=> nrel_main_idtf:
+	[actinium atom](*<- lang_en;;*);
+	[атом актиния](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Ac](*<- lang_en;;*);
+	[атом Ac](*<- lang_ru;;*);;
+
+
+elem_Ag
+=> nrel_main_idtf:
+	[silver atom](*<- lang_en;;*);
+	[атом серебра](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Ag](*<- lang_en;;*);
+	[атом Ag](*<- lang_ru;;*);
+	[argentum atom](*<- lang_en;;*);;
+
+
+elem_Al
+=> nrel_main_idtf:
+	[aluminium atom](*<- lang_en;;*);
+	[атом алюминия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Al](*<- lang_en;;*);
+	[атом Al](*<- lang_ru;;*);
+	[aluminum atom](*<- lang_en;;*);;
+
+
+elem_Am
+=> nrel_main_idtf:
+	[americium atom](*<- lang_en;;*);
+	[атом америция](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Am](*<- lang_en;;*);
+	[атом Am](*<- lang_ru;;*);;
+
+
+elem_Ar
+=> nrel_main_idtf:
+	[argon atom](*<- lang_en;;*);
+	[атом аргона](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Ar](*<- lang_en;;*);
+	[атом Ar](*<- lang_ru;;*);;
+
+
+elem_At
+=> nrel_main_idtf:
+	[astatium atom](*<- lang_en;;*);
+	[атом астата](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom At](*<- lang_en;;*);
+	[атом At](*<- lang_ru;;*);;
+
+
+elem_Au
+=> nrel_main_idtf:
+	[aurum atom](*<- lang_en;;*);
+	[атом золота](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Au](*<- lang_en;;*);
+	[атом Au](*<- lang_ru;;*);;
+
+
+elem_As
+=> nrel_main_idtf:
+	[arsenic atom](*<- lang_en;;*);
+	[атом мышьяка](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom As](*<- lang_en;;*);
+	[атом As](*<- lang_ru;;*);
+	[arsenicum atom](*<- lang_en;;*);;
+
+
+elem_B
+=> nrel_main_idtf:
+	[borum atom](*<- lang_en;;*);
+	[атом бора](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom B](*<- lang_en;;*);
+	[атом B](*<- lang_ru;;*);
+	[boron atom](*<- lang_en;;*);;
+
+
+elem_Bi
+=> nrel_main_idtf:
+	[bismuthum atom](*<- lang_en;;*);
+	[атом висмута](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Bi](*<- lang_en;;*);
+	[атом Bi](*<- lang_ru;;*);
+	[bismuth atom](*<- lang_en;;*);;
+
+
+elem_Bh
+=> nrel_main_idtf:
+	[bismuthum atom](*<- lang_en;;*);
+	[атом висмута](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Bi](*<- lang_en;;*);
+	[атом Bi](*<- lang_ru;;*);
+	[bismuth atom](*<- lang_en;;*);;
+
+
+elem_Be
+=> nrel_main_idtf:
+	[beryllium atom](*<- lang_en;;*);
+	[атом берилия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Be](*<- lang_en;;*);
+	[атом Be](*<- lang_ru;;*);;
+
+
+elem_Ba
+=> nrel_main_idtf:
+	[barium atom](*<- lang_en;;*);
+	[атом бария](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Ba](*<- lang_en;;*);
+	[атом Ba](*<- lang_ru;;*);;
+
+
+elem_Cs
+=> nrel_main_idtf:
+	[caesium atom](*<- lang_en;;*);
+	[атом цузия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Cs](*<- lang_en;;*);
+	[атом Cs](*<- lang_ru;;*);
+	[cesium atom](*<- lang_en;;*);;
+
+
+elem_Hs
+=> nrel_main_idtf:
+	[hassium atom](*<- lang_en;;*);
+	[атом хассия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Hs](*<- lang_en;;*);
+	[атом Hs](*<- lang_ru;;*);;
+
+
+elem_K
+=> nrel_main_idtf:
+	[potassium atom](*<- lang_en;;*);
+	[атом калия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom K](*<- lang_en;;*);
+	[атом K](*<- lang_ru;;*);
+	[kalium atom](*<- lang_en;;*);;
+
+
+elem_Ir
+=> nrel_main_idtf:
+	[iridium atom](*<- lang_en;;*);
+	[атом иридия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Ir](*<- lang_en;;*);
+	[атом Ir](*<- lang_ru;;*);;
+
+
+elem_Hg
+=> nrel_main_idtf:
+	[mercury atom](*<- lang_en;;*);
+	[атом ртути](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Hg](*<- lang_en;;*);
+	[атом Hg](*<- lang_ru;;*);
+	[hydrargyrum atom](*<- lang_en;;*);
+	[quicksilver atom](*<- lang_en;;*);;
+
+
+
+elem_Fr
+=> nrel_main_idtf:
+	[francium atom](*<- lang_en;;*);
+	[атом франция](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Fr](*<- lang_en;;*);
+	[атом Fr](*<- lang_ru;;*);;
+
+
+elem_Fm
+=> nrel_main_idtf:
+	[fermium atom](*<- lang_en;;*);
+	[атом фермия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Fm](*<- lang_en;;*);
+	[атом Fm](*<- lang_ru;;*);;
+
+
+elem_Na
+=> nrel_main_idtf:
+	[sodium atom](*<- lang_en;;*);
+	[атом натрия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Na](*<- lang_en;;*);
+	[атом Na](*<- lang_ru;;*);
+	[natrium atom](*<- lang_en;;*);;
+
+
+elem_Li
+=> nrel_main_idtf:
+	[lithium atom](*<- lang_en;;*);
+	[атом лития](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Li](*<- lang_en;;*);
+	[атом Li](*<- lang_ru;;*);;
+
+
+elem_Y
+=> nrel_main_idtf:
+	[yttrium atom](*<- lang_en;;*);
+	[атом иттрия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Y](*<- lang_en;;*);
+	[атом Y](*<- lang_ru;;*);;
+
+
+elem_Rb
+=> nrel_main_idtf:
+	[rubidium atom](*<- lang_en;;*);
+	[атом рубидия](*<- lang_ru;;*);
+=> nrel_idtf:
+	[atom Rb](*<- lang_en;;*);
+	[атом Rb](*<- lang_ru;;*);;

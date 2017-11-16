@@ -1,0 +1,15 @@
+color_metallurgy
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[цветная металлургия](* <-lang_ru;; *);
+	[color metallurgy](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/color_metallurgy.html"(* <- lang_ru;; *);;
+    *);;
+*);;

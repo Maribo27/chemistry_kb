@@ -1,0 +1,25 @@
+lib_component_ui_menu_finding_the_binding_energy_of_the_nucleus
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для нахождения энергии связи ядра]
+	(* <- lang_ru;; *);
+	[Library component. User interface command of search substances with a given flame color]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+<- library_of_reusable_components_of_knowledge_bases;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_Domains.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_ui_menu_finding_the_binding_energy_of_the_nucleus  = [*^"file://ui_menu_finding_the_binding_energy_of_the_nucleus.scsi"*];; 

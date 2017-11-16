@@ -1,6 +1,4 @@
 elem_Ba
-=> nrel_main_idtf: [атом бария] (* <- lang_ru;; *);
-=> nrel_idtf: [Ba] (* <- lang_en;; *);
 <- sc_node_not_relation;
 <- rrel_key_sc_element:
 	Definition_of_barium
@@ -78,7 +76,7 @@ elem_Ba
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент барий)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис. (химический элемент барий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
