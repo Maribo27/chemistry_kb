@@ -1,0 +1,98 @@
+chemical_stability
+=> nrel_main_idtf:
+	[химическая стабильность](* <-lang_ru;; *);
+	[chemical stability](* <-lang_en;; *);;
+propane
+=> nrel_main_idtf:
+	[пропан](* <-lang_ru;; *);
+	[propane](* <-lang_en;; *);;
+ethylene
+=> nrel_main_idtf:
+	[этилен](* <-lang_ru;; *);
+	[ethylene](* <-lang_en;; *);;
+nitrous_oxide
+=> nrel_main_idtf:
+	[закись азота](* <-lang_ru;; *);
+	[nitrous oxide](* <-lang_en;; *);;
+sulfurous_anhydride
+=> nrel_main_idtf:
+	[сернистый ангидрид](* <-lang_ru;; *);
+	[sulfurous anhydride](* <-lang_en;; *);;
+methyl_chloride
+=> nrel_main_idtf:
+	[хлористый метил](* <-lang_ru;; *);
+	[methyl chloride](* <-lang_en;; *);;
+ethyl_chloride
+=> nrel_main_idtf:
+	[хлористый этил](* <-lang_ru;; *);
+	[ethyl chloride](* <-lang_en;; *);;
+condensation
+=> nrel_main_idtf:
+	[конденсация](* <-lang_ru;; *);
+	[condensation](* <-lang_en;; *);;
+heat
+=> nrel_main_idtf:
+	[теплота](* <-lang_ru;; *);
+	[heat](* <-lang_en;; *);;
+substance
+=> nrel_main_idtf:
+	[вещество](* <-lang_ru;; *);
+	[substance](* <-lang_en;; *);;
+coolant
+=> nrel_main_idtf:
+	[хладагент](* <-lang_ru;; *);
+	[coolant](* <-lang_en;; *);
+=> nrel_idtf:
+	[холодильный агент](* <-lang_ru;; *);
+=> nrel_applying:chemical_industry;
+//включение
+=> nrel_inclusion:air;ammonia;ethyl_chloride;methyl_chloride;sulfurous_anhydride;carbon_dioxide;nitrous_oxide;ethylene;propane;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(хладагент)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Хладагент - рабочее вещество холодильной машины. которое при кипении отнимает теплоту от охлаждаемого объекта и затем после сжатия передаёт её охлаждающей среде за счёт конденсации.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->substance;boiling;nrel_object;condensation;;
+	*);;
+*);
+//утверждение
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+
+	=>nrel_main_idtf: [Утв.(молекула, хладагент, химическая стабильность)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Молекулы синтетических хладагентов имеют высокую химическую стабильноть](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: molecule;chemical_stability;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);;
+/* //иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (хладагент)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/coolant.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);; */
