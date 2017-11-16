@@ -431,7 +431,7 @@ silicate
 		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (силикат, получение*)](*<- lang_ru;;*);
-			[Stat. (silicate, receiving*)](*<- lang_ru;;*);;
+			[Stat. (silicate, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
@@ -804,7 +804,7 @@ Definition_of_normal_salt
 	[Опр.(средняя соль)]
 	(* <- lang_ru;;	*);
 	[Def.(normal salt)]
-	(* <- lang_ru;;	*);
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> cation; metal; acid; elem_H;;
@@ -848,7 +848,7 @@ nitrate
 		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (нитрат, получение*)](*<- lang_ru;;*);
-			[Stat. (nitrate, receiving*)](*<- lang_ru;;*);;
+			[Stat. (nitrate, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
@@ -1169,7 +1169,7 @@ chloride
 		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (хлорид, получение*)](*<- lang_ru;;*);
-			[Stat. (chloride, receiving*)](*<- lang_ru;;*);;
+			[Stat. (chloride, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
