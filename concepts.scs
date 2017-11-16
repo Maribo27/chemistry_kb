@@ -1,9 +1,3 @@
-radioactive_element
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[radioactive element](*<- lang_en;;*);
-	[радиоактивный элемент](*<- lang_ru;;*);;
-
 chemical_property => nrel_main_idtf:[химическое свойство](*<-lang_ru;;*);
 	<- sc_node_not_relation;
 	<- parameter;;
@@ -113,9 +107,6 @@ space_technology
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[космическая техника](* <- lang_ru;; *);;
 
-pure_metal
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[чистый метал](* <- lang_ru;; *);;
 catalytic_process
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[каталитический процесс](* <- lang_ru;; *);;
@@ -187,9 +178,6 @@ bauxite => nrel_main_idtf:
 spinel => nrel_main_idtf:
     [шпинель](*<-lang_ru;;*);
     <- sc_node_not_relation;;
-hematite => nrel_main_idtf:
-    [гематит](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
 chromite => nrel_main_idtf:
     [хромит](*<-lang_ru;;*);
     <- sc_node_not_relation;;
@@ -201,9 +189,6 @@ microlite => nrel_main_idtf:
     <- sc_node_not_relation;;
 
    
-coolant=> nrel_main_idtf:
-	[хладагент](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 water_vapor_conversion=> nrel_main_idtf:
 	[конверсия водяного пара](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
@@ -240,9 +225,6 @@ carnallit=> nrel_main_idtf:
 	<- sc_node_not_relation;;
 taste=> nrel_main_idtf:
 	[вкус](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-smell=> nrel_main_idtf:
-	[запах](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 bischofite=> nrel_main_idtf:
 	[бисковит](* <- lang_ru;; *);
@@ -401,9 +383,6 @@ metal_compound=> nrel_main_idtf:
 	<- sc_node_not_relation;;
 catalytic_process=> nrel_main_idtf:
 	[каталитический процесс](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-microelement=> nrel_main_idtf:
-	[микроэлемент](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 transition_metal=> nrel_main_idtf:
 	[переходный металл](* <- lang_ru;; *);
@@ -569,10 +548,8 @@ glucose => nrel_main_idtf:[глюкоза](*<-lang_ru;;*);;
 aspartame => nrel_main_idtf:[аспартам](*<-lang_ru;;*);;
 saccharin => nrel_main_idtf:[сахарин](*<-lang_ru;;*);;
 apple_acid => nrel_main_idtf:[яблочная кислота](*<-lang_ru;;*);;
-lemon_acid => nrel_main_idtf:[лимонная кислота](*<-lang_ru;;*);;
 orthophosphoric_acid => nrel_main_idtf:[ортофосфорная кислота](*<-lang_ru;;*);;
 caffeine => nrel_main_idtf:[кофеин](*<-lang_ru;;*);;
-carbon_dioxide => nrel_main_idtf:[углекислый газ](*<-lang_ru;;*);;
 cyclamate => nrel_main_idtf:[цикломат](*<-lang_ru;;*);;
 fatty_acid => nrel_main_idtf:[жирная кислота](*<-lang_ru;;*);;
 surface_active_substance => nrel_main_idtf:[поверхностно-активное вещество](*<-lang_ru;;*);;
@@ -733,12 +710,6 @@ diffusion
 bluing
 	=> nrel_main_idtf: 
 		[воронение](*<- lang_ru;;*);;
-basis
-	=> nrel_main_idtf: 
-		[основание](*<- lang_ru;;*);;
-anion
-	=> nrel_main_idtf: 
-		[анион](*<- lang_ru;;*);;
 alkali_metal
 	=> nrel_main_idtf: 
 		[щелочной металл](*<- lang_ru;;*);;
@@ -766,9 +737,6 @@ proton
 metal
 	=> nrel_main_idtf: 
 		[металл](*<- lang_ru;;*);;
-ion
-	=> nrel_main_idtf: 
-		[ион](*<- lang_ru;;*);;
 foam
 	=> nrel_main_idtf: 
 		[пена](*<- lang_ru;;*);;
@@ -998,22 +966,6 @@ complex_salt
 	(* <- lang_ru;; *);
 	[complex salt]
 	(* <- lang_en;; *);;
-	
-base
-=> nrel_main_idtf:
-	[основание]
-	(* <- lang_ru;; *);
-	[base]
-	(* <- lang_en;; *);;
-
-alkali
-=> nrel_main_idtf:
-	[щёлочь]
-	(* <- lang_ru;; *);
-	[щелочь]
-	(* <- lang_ru;; *);
-	[alkali]
-	(* <- lang_en;; *);;
 
 nrel_crystallization
 => nrel_main_idtf:
@@ -1092,12 +1044,6 @@ potassium_chloride
 	[potassium chloride]
 	(* <- lang_en;; *);;
 
-ammonia
-=> nrel_main_idtf:
-	[аммиак]
-	(* <- lang_ru;; *);
-	[ammonia]
-	(* <- lang_en;; *);;
 
 nrel_allotropy
 => nrel_main_idtf:
