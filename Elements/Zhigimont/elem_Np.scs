@@ -67,7 +67,7 @@ elem_Np
 		*);;
 	*);
 
-<- rrel_key_sc_element: electron_configuration_No
+<- rrel_key_sc_element: electron_configuration_Np
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 

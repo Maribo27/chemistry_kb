@@ -70,7 +70,7 @@ Definition_of_moscovium
 	[Опр.(атом московия)]
 	(* <- lang_ru;;	*);
 	[Def.(moscovium atom)]
-	(* <- lang_ru;;	*);
+	(* <- lang_en;;	*);
 
 <= nrel_using_constants:
 			{
