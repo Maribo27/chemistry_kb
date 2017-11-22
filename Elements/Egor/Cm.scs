@@ -5,7 +5,7 @@ elem_Cm
 <- rrel_key_sc_element:
 	Definition_of_curium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Cm
 <- valence_three; valence_four;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Cm
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -45,7 +45,7 @@ elem_Cm
 
 
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Cm
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -58,7 +58,7 @@ elem_Cm
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кюрий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом кюрия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Rn] 5f<sup>7</sup>6d<sup>1</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);; 
@@ -66,10 +66,11 @@ elem_Cm
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Cm
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом кюрия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом кюрия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(curium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -87,5 +88,7 @@ atomic_mass_Cm <- number;
 
 Definition_of_curium
 => nrel_main_idtf:
-	[Опр.(Кюрий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом кюрия)]
+	(* <- lang_ru;;	*);
+	[Def.(curium atom)]
+	(* <- lang_en;;	*);;

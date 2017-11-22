@@ -5,7 +5,7 @@ elem_Hf
 <- rrel_key_sc_element:
 	Definition_of_hafnium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Hf
 <- valence_three; valence_four; valence_two;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Hf
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Hf
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Hf
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -53,7 +53,7 @@ elem_Hf
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Hf
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -66,7 +66,7 @@ elem_Hf
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гайний, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом гафния, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Xe] 4f<sup>14</sup>5d<sup>2</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -74,10 +74,11 @@ elem_Hf
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Hf
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом гафния] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом гафния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(hafnium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -94,5 +95,7 @@ atomic_mass_Hf <- number;
 
 Definition_of_hafnium
 => nrel_main_idtf:
-	[Опр.(Гафний)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом гафния)]
+	(* <- lang_ru;;	*);
+	[Def.(hafnium atom)]
+	(* <- lang_en;;	*);;

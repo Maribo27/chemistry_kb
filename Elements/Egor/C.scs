@@ -5,7 +5,7 @@ elem_C
 <- rrel_key_sc_element:
 	Definition_of_carbon
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,7 +29,7 @@ elem_C
 <- valence_four;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_C
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_C
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_C
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -53,7 +53,7 @@ elem_C
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_C
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -66,7 +66,9 @@ elem_C
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (углерод, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (carbon atom, электронная конфигурация*)](*<- lang_ru;;*);;
+		=> nrel_main_idtf: 
+			[Stat. (carbon atom, electronic configuration*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [He] 2s<sup>s</sup>2p<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -74,10 +76,11 @@ elem_C
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_C
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом углерода)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом углерода)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(carbon atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -95,5 +98,7 @@ atomic_mass_C <- number;
 
 Definition_of_carbon
 => nrel_main_idtf:
-	[Опр.(Углерод)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом углерода)]
+	(* <- lang_ru;;	*);
+	[Def.(carbon atom)]
+	(* <- lang_en;;	*);;
