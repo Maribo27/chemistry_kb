@@ -6,7 +6,7 @@ elem_Br
 <- rrel_key_sc_element:
 	Definition_of_bromum
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Br
 <- valence_three; valence_one; valence_seven; valence_five;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Br
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -45,7 +45,7 @@ elem_Br
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Br
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -54,7 +54,7 @@ elem_Br
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Br
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -68,7 +68,9 @@ elem_Br
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (бром, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом брома, электронная конфигурация*)](*<- lang_ru;;*);;
+		=> nrel_main_idtf: 
+			[Stat. (bromum atom, electronic configuration*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Ar] 3d<sup>10</sup>4s<sup>2</sup>4p<sup>5</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -77,10 +79,11 @@ elem_Br
 
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Br
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом брома)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом брома)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(bromum atom)] (* <- lang_en;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -97,7 +100,9 @@ elem_Br
 
 Definition_of_bromum
 => nrel_main_idtf:
-	[Опр.(Бром)]
+	[Опр.(атом брома)]
+	(* <- lang_ru;;	*);
+	[Def.(bromum atom)]
 	(* <- lang_ru;;	*);;
 atomic_mass_Br <- number;
 => nrel_main_idtf:[79,9](*<-lang_ru;; <- lang_en;;*);;

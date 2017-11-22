@@ -5,7 +5,7 @@ elem_Ca
 <- rrel_key_sc_element:
 	Definition_of_calcium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,7 +29,7 @@ elem_Ca
 <- oxidation_state_plus_two;
 <- valence_two;
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Ca
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Ca
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Ca
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -53,7 +53,7 @@ elem_Ca
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Ca
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -66,7 +66,7 @@ elem_Ca
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кальций, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом кальция, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Ar] 4s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -74,10 +74,11 @@ elem_Ca
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Ca
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом кальция)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом кальция)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(calcium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -96,5 +97,7 @@ atomic_mass_Ca <- number;
 
 Definition_of_calcium
 => nrel_main_idtf:
-	[Опр.(Кальций)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом кальция)]
+	(* <- lang_ru;;	*);
+	[Def.(calcium atom)]
+	(* <- lang_en;;	*);;

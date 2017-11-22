@@ -5,7 +5,7 @@ elem_Cf
 <- rrel_key_sc_element:
 	Definition_of_californium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Cf
 <- valence_three; valence_four; valence_two;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Cf
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Cf
 			*);
 
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Cf
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -57,7 +57,7 @@ elem_Cf
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (калифорний, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом калифорния, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Rn] 5f<sup>10</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -65,10 +65,11 @@ elem_Cf
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Cf
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом калифорния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом калифорния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(californium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -85,5 +86,7 @@ atomic_mass_Cf <- number;
 
 Definition_of_californium
 => nrel_main_idtf:
-	[Опр.(Калифорний)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом калифорния)]
+	(* <- lang_ru;;	*);
+	[Def.(californium atom)]
+	(* <- lang_en;;	*);;

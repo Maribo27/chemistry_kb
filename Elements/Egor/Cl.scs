@@ -5,7 +5,7 @@ elem_Cl
 <- rrel_key_sc_element:
 	Definition_of_chlorine
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -31,7 +31,7 @@ elem_Cl
 <- valence_three; valence_seven; valence_one; valence_five;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Cl
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -46,7 +46,7 @@ elem_Cl
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Cl
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -55,7 +55,7 @@ elem_Cl
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Cl
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -68,7 +68,7 @@ elem_Cl
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хлор, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом хлора, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Ne] 3s<sup>2</sup>3p<sup>5</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -76,10 +76,11 @@ elem_Cl
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Cl
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом хлора)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом хлора)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(chlorine atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -98,5 +99,7 @@ atomic_mass_Cl <- number;
 
 Definition_of_chlorine
 => nrel_main_idtf:
-	[Опр.(Хлор)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом хлора)]
+	(* <- lang_ru;;	*);
+	[Def.(chlorine atom)]
+	(* <- lang_en;;	*);;

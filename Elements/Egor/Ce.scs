@@ -5,7 +5,7 @@ elem_Ce
 <- rrel_key_sc_element:
 	Definition_of_cerium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,7 +29,7 @@ elem_Ce
 <- oxidation_state_plus_three; oxidation_state_plus_four;
 <- valence_three; valence_four; 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Ce
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -43,7 +43,7 @@ elem_Ce
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Ce
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -52,7 +52,7 @@ elem_Ce
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Ce
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -65,7 +65,7 @@ elem_Ce
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (церий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом церия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Xe] 4f<sup>15</sup>5d<sup>16</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -73,10 +73,11 @@ elem_Ce
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Ce
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом церия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом церия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(cerium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -93,5 +94,7 @@ atomic_mass_Ce <- number;
 
 Definition_of_cerium
 => nrel_main_idtf:
-	[Опр.(Церий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом церия)]
+	(* <- lang_ru;;	*);
+	[Def.(cerium atom)]
+	(* <- lang_en;;	*);;

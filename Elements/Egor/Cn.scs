@@ -5,7 +5,7 @@ elem_Cn
 <- rrel_key_sc_element:
 	Definition_of_copernicium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,7 +29,7 @@ elem_Cn
 
 
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Cn
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -42,7 +42,7 @@ elem_Cn
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (коперниций, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом коперниция, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>10</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -50,10 +50,11 @@ elem_Cn
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Cn
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом коперниция)] (* <- lang_ru;;*);;
+		=> nrel_main_idtf: [Рис.(атом коперниция)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(copernicium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -72,5 +73,7 @@ atomic_mass_Cn <- number;
 
 Definition_of_copernicium
 => nrel_main_idtf:
-	[Опр.(Коперниций)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом коперниция)]
+	(* <- lang_ru;;	*);
+	[Def.(copernicium atom)]
+	(* <- lang_en;;	*);;
