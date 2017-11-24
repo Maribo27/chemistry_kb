@@ -1,0 +1,6 @@
+sc_text_agent_find_element_electronegativity
+-> rrel_key_sc_element:
+	agent_find_element_electronegativity;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_find_element_electronegativity = [*^"file://agent_find_element_electronegativity.scsi"*];;
