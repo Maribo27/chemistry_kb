@@ -3,11 +3,6 @@ cation
 => nrel_main_idtf:
 	[катион](* <-lang_ru;; *);
 	[cation](* <-lang_en;; *);;
-anion
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[анион](* <-lang_ru;; *);
-	[anion](* <-lang_en;; *);;
 simple_ion
 <- sc_node_not_relation;
 => nrel_main_idtf:

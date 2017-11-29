@@ -20,13 +20,13 @@ nrel_positive_charge
 <-sc_node_norole_relation;
 => nrel_main_idtf:
 	[положительный заряд*](* <-lang_ru;; *);
-	[positive charge](* <-lang_en;; *);;
+	[positive charge*](* <-lang_en;; *);;
 
 nrel_negative_charge
 <-sc_node_norole_relation;
 => nrel_main_idtf:
 	[отрицательный заряд*](* <-lang_ru;; *);
-	[negative charge](* <-lang_en;; *);;
+	[negative charge*](* <-lang_en;; *);;
 
 nrel_charge
 <- sc_node_norole_relation;
@@ -97,8 +97,6 @@ nrel_charge
 		<-subject_domain;;
 	*);;
 *);
-//пример
-
 //иллюстрация
 <- rrel_key_sc_element:...
 (*
