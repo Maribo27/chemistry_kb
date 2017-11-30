@@ -95,8 +95,99 @@ scp_program -> agent_find_alloy_components
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
 
-			=> nrel_then: .agent_find_alloy_components_operator_answer;;
+			=> nrel_then: .agent_find_alloy_components_operatorA1;;
 			=> nrel_else: .agent_find_alloy_components_operator_return;;
+			*);;
+
+		-> .agent_find_alloy_components_operatorA1 (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elements_for_reaction;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_alloy_component;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .agent_find_alloy_components_operatorA1_2;;
+			=> nrel_else: .agent_find_alloy_components_operator_return;;
+			*);;
+
+		-> .agent_find_alloy_components_operatorA1_2 (*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var:  rrel_link: _count;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .agent_find_alloy_components_operatorA2;;
+			*);;	
+
+		-> .agent_find_alloy_components_operatorA2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _element_for_reaction;;
+
+			=> nrel_then: .agent_find_alloy_components_operatorA3;;
+			=> nrel_else: .agent_find_alloy_components_operatorB1;;
+			*);;
+
+		-> .agent_find_alloy_components_operatorA3 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .agent_find_alloy_components_operatorA4;;
+			*);;
+
+		-> .agent_find_alloy_components_operatorA4 (*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_goto: .agent_find_alloy_components_operatorA2;;
+			
+			*);;
+
+		-> .agent_find_alloy_components_operatorB1 (*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _common_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_number_of_components;;
+
+			=> nrel_goto: .agent_find_alloy_components_operatorB2;;
+			*);;
+
+		-> .agent_find_alloy_components_operatorB2 (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _counts;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_number_of_components;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+
+			=> nrel_then: .agent_find_alloy_components_operatorB3;;
+			=> nrel_else: .agent_find_alloy_components_operator_return;;
+			*);;
+
+		-> .agent_find_alloy_components_operatorB3 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_number_of_components;;
+
+			=> nrel_goto: .agent_find_alloy_components_operator_answer;;
 			*);;
 
 		-> .agent_find_alloy_components_operator_answer
