@@ -5,7 +5,6 @@ nrel_decomposition
 	[decomposition*](* <-lang_en;; *);
 => nrel_idtf:
 	[реакция разложения*](* <-lang_ru;; *);
-<= nrel_inclusion: nrel_reaction;
 <- binary_relation;
 <- oriented_relation;
 <- antireflexive_relation;

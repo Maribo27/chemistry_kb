@@ -1,15 +1,3 @@
-subject_domain_chemisty
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-[предметная область химия](* <-lang_ru;; *);
-	[subject domain chemisty](* <-lang_en;; *);;
-
-sc_common_type_statement
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-[утверждение общего типа](* <-lang_ru;; *);
-	[common type statement](* <-lang_en;; *);;
-
 chemical_solid
 <-sc_node_not_relation;
 => nrel_main_idtf:
@@ -83,7 +71,6 @@ nrel_charge
 <- rrel_key_sc_element: statement_reactions_and_results
 (*
 	<-statement;;
-	<-sc_common_type_statement;;
 	=>nrel_main_idtf: [Утв.(заряд*, электрический заряд*, электромагнитное взаимодействие*)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
@@ -92,10 +79,6 @@ nrel_charge
 	*);;
 	-> rrel_key_sc_element: nrel_electric_charge;;
 	-> rrel_key_sc_element: nrel_electromagnetic_interaction;;
-	<- rrel_theorem:subject_domain_chemisty
-	(*
-		<-subject_domain;;
-	*);;
 *);
 //иллюстрация
 <- rrel_key_sc_element:...
