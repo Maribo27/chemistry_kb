@@ -1683,3 +1683,318 @@ sarin
 		->"file://image/sarin.png"(*=>nrel_format:format_png;;*);;
 	*);;
 *);;
+
+diamphotoxin
+<-sc_node_not_relation;
+<-zootoxin;
+<-neurotoxin;
+<-hemotoxin;
+=>nrel_main_idtf:
+	[диамфотоксин](*<-lang_ru;;*);
+	[diamphotoxin](*<-lang_en;;*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (диамфотоксин)](*<-lang_ru;;*);
+		[Def. (diamphotoxin)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->zootoxin;;
+		->neurotoxin;;
+		->hemotoxin;;
+
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="diamphotoxin">Диамфотоксин</sc_element></b> - сильнейший <b><sc_element sys_idtf="zootoxin">яд животного происхождения</sc_element></b>, выделенный из личинок и куколок жуков-листоедов нескольких видов рода диамфидия, обладающий <b><sc_element sys_idtf="neurotoxin">нейротоксическими</sc_element></b> и <b><sc_element sys_idtf="hemotoxin">гемотоксическими</sc_element></b> свойствами.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="diamphotoxin">Diamphotoxin</sc_element></b> is the strongest <b><sc_element sys_idtf="zootoxin">zootoxin</sc_element></b>, extracted from larvae and pupae of leaf beetles of several species of the genus dyamphidia, <b><sc_element sys_idtf="neurotoxin">neurotoxic</sc_element></b> and <b><sc_element sys_idtf="hemotoxin">hemotoxic</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (диамфотоксин, смертельная доза*)](*<-lang_ru;;*);
+		[Exp. (diamphotoxin, lethal dose*)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[Средняя <b><sc_element sys_idtf="nrel_lethal_dose">смертельная доза</sc_element></b> <b><sc_element sys_idtf="diamphotoxin">диамфотоксина</sc_element></b> - 0.000025 мг/кг.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[An average <b><sc_element sys_idtf="nrel_lethal_dose">lethal dose</sc_element></b> of <b><sc_element sys_idtf="diamphotoxin">diamphotoxin</sc_element></b> -  0.000025 mg/kg.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (диамфотоксин)](*<-lang_ru;;*);
+		[Pic. (diamphotoxin)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://image/diamphotoxin.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+palitoxin
+<-sc_node_not_relation;
+<-phytotoxin;
+=>nrel_main_idtf:
+	[палитоксин](*<-lang_ru;;*);
+	[palitoxin](*<-lang_en;;*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (палитоксин)](*<-lang_ru;;*);
+		[Def. (palitoxin)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->poison;;
+		->elem_C;;
+		->elem_H;;
+		->elem_N;;
+		->elem_O;;
+		->color_white;;
+		->chemical_substance;;
+		->chemical_formula;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="palitoxin">Палитоксин</sc_element></b> — <b><sc_element sys_idtf="poison">яд</sc_element></b> небелковой природы, <b><sc_element sys_idtf="color_white">белое</sc_element></b> аморфное <b><sc_element sys_idtf="chemical_substance">вещество</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>129</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>223</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>54</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="palitoxin">Palitoxin</sc_element></b> is a non-protein <b><sc_element sys_idtf="poison">poison</sc_element></b>, a <b><sc_element sys_idtf="color_white">white</sc_element></b> amorphous <b><sc_element sys_idtf="chemical_substance">substance</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>129</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>223</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>54</sub>](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (палитоксин, сильная кислота, щёлочь)](*<-lang_ru;;*);
+		[Exp. (palitoxin, strong acid, alkali)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="palitoxin">Палитоксин</sc_element></b> теряет активность в <b><sc_element sys_idtf="strong_acid">сильнокислых</sc_element></b> и <b><sc_element sys_idtf="alkali">щелочных</sc_element></b> средах.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="palitoxin">Palitoxin</sc_element></b> loses its activity in <b><sc_element sys_idtf="strong_acid">strongly acidic</sc_element></b> and <b><sc_element sys_idtf="alkali">alkaline</sc_element></b> media.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (палитоксин)](*<-lang_ru;;*);
+		[Pic. (palitoxin)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://image/palitoxin.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+tetrodotoxin
+<-sc_node_not_relation;
+<-zootoxin;
+<-neurotoxin;
+=>nrel_main_idtf:
+	[тетродотоксин](*<-lang_ru;;*);
+	[tetrodotoxin](*<-lang_en;;*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (тетродотоксин)](*<-lang_ru;;*);
+		[Def. (tetrodotoxin)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->natural_poison;;
+		->elem_C;;
+		->elem_H;;
+		->elem_N;;
+		->elem_O;;
+		->neurotoxin;;
+		->zootoxin;;
+		->chemical_formula;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="tetrodotoxin">Тетродотоксин</sc_element></b> — сильный <b><sc_element sys_idtf="natural_poison">яд естественного происхождения</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">нейротоксического действия</sc_element></b>. Большое количество <b><sc_element sys_idtf="tetrodotoxin">тетродотоксина</sc_element></b> содержится в рыбах из отряда четырёхзубообразные. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="tetrodotoxin">Tetrodotoxin</sc_element></b> is a strong <b><sc_element sys_idtf="natural_poison">poison of natural origin</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">neurotoxic</sc_element></b>. A large amount of <b><sc_element sys_idtf="tetrodotoxin">tetrodotoxin</sc_element></b> is contained in fish from the order of four-toothed. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (тетродотоксин, смертельная доза*)](*<-lang_ru;;*);
+		[Exp. (tetrodotoxin, lethal dose*)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[Средняя <b><sc_element sys_idtf="nrel_lethal_dose">смертельная доза</sc_element></b> <b><sc_element sys_idtf="tetrodotoxin">тетродотоксина</sc_element></b> - 0.01 мг/кг.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[An average <b><sc_element sys_idtf="nrel_lethal_dose">lethal dose</sc_element></b> of <b><sc_element sys_idtf="tetrodotoxin">tetrodotoxin</sc_element></b> -  0.01 mg/kg.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (тетродотоксин)](*<-lang_ru;;*);
+		[Pic. (tetrodotoxin)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://image/tetrodotoxin.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+curare
+<-sc_node_not_relation;
+<-phytotoxin;
+=>nrel_main_idtf:
+	[кураре](*<-lang_ru;;*);
+	[curare](*<-lang_en;;*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (кураре)](*<-lang_ru;;*);
+		[Def. (curare)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->phytotoxin;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="curare">Кураре</sc_element></b> - <b><sc_element sys_idtf="phytotoxin">яд растительного происхождения</sc_element></b>, приготавливаемый из коры растения Strychnos toxifera.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="curare">Curare</sc_element></b> is a <b><sc_element sys_idtf="phytotoxin">poison of plant origin</sc_element></b>, prepared from the bark of the plant Strychnos toxifera.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (кураре, пероральный путь)](*<-lang_ru;;*);
+		[Exp. (curare, peroral_way)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[Попадании <b><sc_element sys_idtf="curare">кураре</sc_element></b> в организм <b><sc_element sys_idtf="peroral_way">перорально</sc_element></b> безопасно.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[The ingestion of <b><sc_element sys_idtf="curare">curare</sc_element></b> into the body <b><sc_element sys_idtf="peroral_way">perorally</sc_element></b> is safe.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (кураре)](*<-lang_ru;;*);
+		[Pic. (curare)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://image/curare.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+orellanine
+<-sc_node_not_relation;
+<-mycotoxin;
+<-nephrotoxin;
+=>nrel_main_idtf:
+	[орелланин](*<-lang_ru;;*);
+	[orellanine](*<-lang_en;;*);
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (орелланин)](*<-lang_ru;;*);
+		[Def. (orellanine)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->elem_C;;
+		->elem_H;;
+		->elem_N;;
+		->elem_O;;
+		->nephrotoxin;;
+		->mycotoxin;;
+		->chemical_formula;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="orellanine">Орелланин</sc_element></b> — опасный <b><sc_element sys_idtf="mycotoxin">микотоксин</sc_element></b>, <b><sc_element sys_idtf="nephrotoxin">поражающий почки</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="orellanine">Orellanin</sc_element></b> is a dangerous <b><sc_element sys_idtf="mycotoxin">mycotoxin</sc_element></b>, that <b><sc_element sys_idtf="nephrotoxin">attacks kidneys</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (орелланин)](*<-lang_ru;;*);
+		[Exp. (orellanine)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[Наиболее известные грибы с содержанием <b><sc_element sys_idtf="orellanine">орелланина</sc_element></b> — <b>Cortinarius orellanus</b> и <b>Cortinarius rubellus</b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[The most famous mushrooms with content of <b><sc_element sys_idtf="orellanine">orellanine</sc_element></b> are <b>Cortinarius orellanus</b> and <b>Cortinarius rubellus</b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (орелланин)](*<-lang_ru;;*);
+		[Pic. (orellanine)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://image/orellanine.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+vx_gas
+<-gas;
+<-artificial_poison;
+<-neurotoxin;
+=>nrel_poisoning_way:
+	peroral_way;
+	dermic_way;
+	inhalation_way;
+=>nrel_main_idtf:
+	[газ VX](*<-lang_ru;;*);
+	[VX gas](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (газ VX)](*<-lang_ru;;*);
+		[Def. (VX gas)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->elem_C;;
+		->elem_H;;
+		->elem_N;;
+		->elem_O;;
+		->elem_P;;
+		->elem_S;;
+		->artificial_poison;;
+		->chemical_formula;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="vx_gas">Газ VX</sc_element></b> — сильнейшее <b><sc_element sys_idtf="artificial_poison">искусственное отравляющее вещество</sc_element></b> <b><sc_element sys_idtf="neurotoxin">нейротоксического действия</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>26</sub><b><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="vx_gas">VX gas</sc_element></b> is strong <b><sc_element sys_idtf="artificial_poison">artificial poisonous substance</sc_element></b> with <b><sc_element sys_idtf="neurotoxin">neurotoxic action</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>26</sub></b><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (газ VX)](*<-lang_ru;;*);
+		[Pic. (VX gas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://image/vx_gas.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
