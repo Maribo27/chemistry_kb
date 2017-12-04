@@ -1,0 +1,27 @@
+//Возвращает следующий элемент списка _next_element для элемента списка _current_element 
+
+scp_program -> proc_list_get_next(*
+	
+	-> rrel_params: ... (*
+		-> rrel_1: rrel_in: _current_element;;
+		-> rrel_2: rrel_out: _next_element;;
+	*);;
+
+	-> rrel_operators: ... (*
+		
+		-> rrel_init: ..proc_list_get_next_operator2 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _current_element;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _next_element;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed:  rrel_scp_const: rrel_list_next;;
+
+			=> nrel_goto: ..proc_list_get_next_operator_return;;
+		*);;
+
+		-> ..proc_list_get_next_operator_return (*
+			<- return;;
+		*);;	
+	*);;
+*);;

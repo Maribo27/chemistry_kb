@@ -1,0 +1,55 @@
+//Создаёт новый элемент списка со значением _new_element_value и добавляет его в список после элемента _last_element.
+//Созданный элемент списка возвращается в _new_element.
+scp_program -> proc_list_append (*
+		-> rrel_params: ... (*
+			-> rrel_1: rrel_in: _last_element;;					// Элемент списка, после которго будет добавлен новый элемент
+			-> rrel_2: rrel_in: _new_element_value;;			// Значение нового элемента
+			-> rrel_3: rrel_out: _new_element;;				// Созданный новый элемент
+		*);;
+		
+		-> rrel_operators: ... (*
+			
+			-> rrel_init: ..proc_list_append_operator1 (*
+				<- call;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: proc_list_new;;
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_var:  _new_element_value;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _new_element;;
+				*);;
+				-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		 		=> nrel_goto: ..proc_list_append_operator2;;
+			*);;
+
+			->..proc_list_append_operator2 (*
+				<-waitReturn;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+		  		=> nrel_goto: ..proc_list_append_operator3;;
+			*);;
+
+			-> ..proc_list_append_operator3 (*
+				<- call;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: proc_list_set_next;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _last_element;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _new_element;;
+				*);;
+				-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+				=> nrel_goto: ..proc_list_append_operator4;;
+			*);;
+			
+			->..proc_list_append_operator4 (*
+				<-waitReturn;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+		  		=> nrel_goto: ..proc_list_append_operator_return;;
+			*);;
+
+			-> ..proc_list_append_operator_return (*
+				<- return;;
+			*);;	
+		*);;
+
+*);;

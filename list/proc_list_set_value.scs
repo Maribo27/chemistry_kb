@@ -1,0 +1,47 @@
+// Устанавливает значение  _element_value для элемента списка _current_element.
+// Поддерживает обработку  _current_element с уже установленным значением.
+
+scp_program -> proc_list_set_value (*
+	
+	-> rrel_params: ... (*
+		-> rrel_1: rrel_in: _current_element;;
+		-> rrel_2: rrel_in: _element_value;;
+	*);;
+
+	-> rrel_operators: ... (*
+		
+		-> rrel_init: ..proc_list_set_value_operator1 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _current_element;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _current_value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_list_value;;
+
+			=> nrel_then: ..proc_list_set_value_operator2;;
+			=> nrel_else: ..proc_list_set_value_operator3;;
+		*);; 
+
+		-> ..proc_list_set_value_operator2 (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc2;;
+
+		=> nrel_goto: ..proc_list_set_value_operator3;;
+		*);;
+
+		-> ..proc_list_set_value_operator3 (*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _current_element;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _element_value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_list_value;;
+
+			=> nrel_goto:  ..proc_list_set_value_operator_return;;
+		*);;
+
+		-> ..proc_list_set_value_operator_return (*
+			<- return;;
+		*);;	
+	*);;
+*);;

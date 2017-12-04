@@ -21,7 +21,7 @@ aqueous_solution
 strong_basis
 => nrel_main_idtf:
 	[сильное основание](* <- lang_ru;; *);
-	[strong basis](* <- lang_en;; *);;
+	[strong base](* <- lang_en;; *);;
 alkali
 => nrel_main_idtf:
 	[щёлочь](* <- lang_ru;; *);
@@ -47,7 +47,7 @@ alkali
 	<=nrel_using_constants:...
 	(*
 		->nrel_solubility;;
-		->strong_basis;;
+		->strong_base;;
 		->aqueous_solution;;
 		->ion;;
 	*);;

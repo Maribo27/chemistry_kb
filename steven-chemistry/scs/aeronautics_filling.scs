@@ -1,0 +1,15 @@
+aeronautics_filling
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[аэронавтика](* <-lang_ru;; *);
+	[aeronautics filling](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/aeronautics_filling.html"(* <- lang_ru;; *);;
+    *);;
+*);;
