@@ -1,0 +1,64 @@
+// Удаляет элементы из списка начиная с елемента _element
+
+scp_program -> proc_list_erase (*
+	-> rrel_params: ... (*
+		->rrel_1: rrel_in: _element;; 
+	*);;
+	
+	-> rrel_operators: ... (*
+		
+		-> rrel_init: ..proc_list_erase_operator1 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _current_element;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _element;;
+
+			=> nrel_goto: ..proc_list_erase_operator2;;
+		*);;
+
+		-> ..proc_list_erase_operator2 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _previous_element;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _current_element;;
+			
+			=> nrel_goto: ..proc_list_erase_operator3;;
+		*);;
+
+		-> ..proc_list_erase_operator4(*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_list_get_next;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _previous_element;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _current_element;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_list_erase_operator5;;
+		*);;
+
+		-> ..proc_list_erase_operator5 (*
+			<-waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: ..proc_list_append_operator6;;
+		*);;
+
+		-> ..proc_list_erase_operator6(*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _previous_element;;
+			
+			=> nrel_goto: ..proc_list_erase_operator7;;
+		*);;
+
+		-> ..proc_list_erase_operator7(*
+			<- ifVarAssign;;
+			->rrel_1: rrel_fixed: rrel_scp_var: _previous_element;;
+
+			=> nrel_then: ..proc_list_erase_operator2;;
+			=> nrel_else: ..proc_list_append_operator_return;;
+		*);;
+
+		-> ..proc_list_append_operator_return (*
+			<- return;;
+		*);;	
+	*);;
+*);;

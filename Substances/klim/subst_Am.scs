@@ -1,0 +1,136 @@
+subst_Am
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[americium (substance)](*<- lang_en;;*);
+	[америций (вещество)](*<- lang_ru;;*);
+
+=> nrel_idtf:
+	[Am (substance)](*<- lang_en;;*);
+	
+=> nrel_inclusion: elem_Am;
+
+
+<- rrel_key_sc_element:  definition_of_subst_Am
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (америций (вещество))](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p>
+				<b>Америций (<sc_element sys_idtf = "elementary_substance">простое вещество</sc_element>)</b> - пластичный и ковкий <sc_element sys_idtf = "radioactivity">радиоактивный</sc_element> <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета.
+			</p>]
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> elementary_substance;;
+		-> radioactivity;;
+		-> metal;;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (америций (вещество), нормальные условия, твердое агрегатное состояние, цвет)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://image/Ac.jpg";;
+	*);;
+*);
+
+
+<= nrel_being_in_nature:americium_in_nature
+(*
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ В природе не найден. ](*<- lang_ru;;*);;
+	*);;
+*);
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> gas;;
+	-> liquid;;
+	-> solid;;
+*);
+
+
+
+<= nrel_receiving:...
+(*
+	-> nrel_radioactive_decay;;
+*);
+
+
+<= nrel_applying: applying_of_Am
+(*
+	-> radiochemical_research;;
+	-> inspection_tool;;
+	-> nuclear_fuel;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Предполагается использовать америций для ядерных реакторов на межпланетных космических кораблях ](*<- lang_ru;;*);;
+	*);;
+*);
+
+
+
+
+
+<- color_white_silver;
+<- no_smell;
+<- no_taste;
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:1176 (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:2607 (*<-number;;*);;		
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Утв. (америций (вещество), изотопная модификация*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://html/Am_isotop_table.html" (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf: [Прим. (америций (вещество), свечение*)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			"file://image/Am_shine.jpg";
+			[ Благодаря своей сильной радиоактивности актиний светится в темноте с бледно-голубым светом, который исходит из окружающего воздуха, ионизированного испускаемыми энергетическими частицами.] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+
+

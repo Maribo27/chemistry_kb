@@ -1,0 +1,108 @@
+subst_Li
+<- sc_node_not_relation;
+=> nrel_main_idtf: [литий] (* <- lang_ru;; *);
+<- rrel_key_sc_element: definition_of_subst_Li
+(* 
+	=> nrel_main_idtf: [опр.(литий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество литий</b> — мягкий
+ щелочной <sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "colour_silver_white">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> colour_silver_white;;
+		-> metal;;
+	*);;
+*);
+
+<- colour_silver_white;
+=> nrel_inclusion: elem_Li;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_hundred_eighty_one (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_three_hundred_fourty (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_li_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (литий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Литий является щелочным металлом, однако относительно устойчив на воздухе.] (*<- lang_ru;;*);;
+	*);;
+*);
+ 
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_li.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_li
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (литий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/li_(application).html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_li
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (литий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/li_(application)1.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element: application_of_li
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (литий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/li_(application)2.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
