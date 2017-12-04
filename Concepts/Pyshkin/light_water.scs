@@ -26,7 +26,6 @@ nrel_kinetic_isotope_effect
 
 light_water
 => nrel_main_idtf:
-        [лёгкая вода](* <-lang_ru;; *);
 	[light water](* <-lang_en;; *);
 
 
@@ -51,7 +50,7 @@ light_water
 *);
 
 //утверждения
-<- rrel_key_sc_element: universal_environment
+<- rrel_key_sc_element: statement_universal_environment
 (*
 	<-statement;;
 	<-sc_common_type_statement;;
@@ -72,7 +71,7 @@ light_water
 	*);;
 *);
 
-<- rrel_key_sc_element: metabolism_organisma
+<- rrel_key_sc_element: statement_metabolism_organisma
 (*
 	<-statement;;
 	<-sc_common_type_statement;;
