@@ -76,7 +76,7 @@ elem_Te
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент теллур)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом теллура)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

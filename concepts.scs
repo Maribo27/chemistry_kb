@@ -759,6 +759,9 @@ neutralization_reaction
 molar_mass
 	=> nrel_main_idtf: 
 		[молярная масса](*<- lang_ru;;*);;
+mass
+	=> nrel_main_idtf: 
+		[масса](*<- lang_ru;;*);;
 functional_group
 	=> nrel_main_idtf: 
 		[функциональная группа](*<- lang_ru;;*);;
