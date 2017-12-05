@@ -22,8 +22,5 @@ soft_water
                 ->salt;;
               
 	*);;
-*);
-
-// включение
-<= nrel_inclusion: water;;
+*);;
 
