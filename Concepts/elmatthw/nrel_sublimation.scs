@@ -39,7 +39,7 @@ nrel_sublimation
 	(*
 		->solid;;
 		->liquid;;
-		->substance;;
+		->chemical_substance;;
 	*);;
 *);
 
