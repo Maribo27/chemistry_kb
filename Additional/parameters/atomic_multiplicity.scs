@@ -1,0 +1,100 @@
+atomic_multiplicity_one 
+=> nrel_main_idtf:	
+	[количество вхождений атома 1](* <- lang_ru;;  *);
+	[atomic multiplicity 1](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[1](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_two => nrel_main_idtf:	
+	[количество вхождений атома 2](* <- lang_ru;;  *);
+	[atomic multiplicity 2](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[2](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_three => nrel_main_idtf:	
+	[количество вхождений атома 3](* <- lang_ru;;  *);
+	[atomic multiplicity 3](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[3](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_four => nrel_main_idtf:	
+	[количество вхождений атома 4](* <- lang_ru;;  *);
+	[atomic multiplicity 4](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[4](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_five => nrel_main_idtf:	
+	[количество вхождений атома 5](* <- lang_ru;;  *);
+	[atomic multiplicity 5](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[5](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_six => nrel_main_idtf:	
+	[количество вхождений атома 6](* <- lang_ru;;  *);
+	[atomic multiplicity 6](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[6](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_seven => nrel_main_idtf:	
+	[количество вхождений атома 7](* <- lang_ru;;  *);
+	[atomic multiplicity 7](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[7](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_eight => nrel_main_idtf:	
+	[количество вхождений атома 8](* <- lang_ru;;  *);
+	[atomic multiplicity 8](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[8](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_nine => nrel_main_idtf:	
+	[количество вхождений атома 9](* <- lang_ru;;  *);
+	[atomic multiplicity 9](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[9](*<-lang_ru;; <- lang_en;;*);;
+*);;
+
+atomic_multiplicity_ten => nrel_main_idtf:	
+	[количество вхождений атома 10](* <- lang_ru;;  *);
+	[atomic multiplicity 10](* <- lang_en;;  *);
+<= nrel_inclusion: atomic_multiplicity;
+=> nrel_measurement:...
+(*
+	<- number;;
+	=> nrel_main_idtf:[10](*<-lang_ru;; <- lang_en;;*);;
+*);;
