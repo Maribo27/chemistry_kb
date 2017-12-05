@@ -88,7 +88,7 @@ radioactive_element
 		->rrel_example:
 			[Радиоактивные элементы с атомными номерами 43, 61, 93 и все последующие называются искусственными, т.к. их получают с помощью искусственно проводимых ядерных реакций.](* <-lang_ru;; *);;
 	*);;
-	-> rrel_key_sc_element: atomic_number;;
+	-> rrel_key_sc_element: nrel_periodic_number;;
 	-> rrel_key_sc_element: artificial_radioactive_element;;
 	-> rrel_key_sc_element: nrel_nuclear_reaction;;
 	<- rrel_theorem:subject_domain_chemisty
@@ -106,7 +106,7 @@ radioactive_element
 		->rrel_example:
 			[14 радиоактивных элементов с атомным номером 90—103 составляют семейство актиноидов.](* <-lang_ru;; *);;
 	*);;
-	-> rrel_key_sc_element: atomic_number;;
+	-> rrel_key_sc_element: nrel_periodic_number;;
 	-> rrel_key_sc_element: actinide;;
 	<- rrel_theorem:subject_domain_chemisty	
 	(*

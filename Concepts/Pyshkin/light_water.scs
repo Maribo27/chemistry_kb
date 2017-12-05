@@ -27,6 +27,7 @@ nrel_kinetic_isotope_effect
 light_water
 => nrel_main_idtf:
 	[light water](* <-lang_en;; *);
+	[лёгкая вода](* <- lang_ru;; *);
 
 
 // определение

@@ -1362,7 +1362,7 @@ Definition_of_carbonate
 	*);
 
 
-<-color_none;
+<-no_color;
 
 
 <- rrel_key_sc_element: receiving_CsCl_from_caesium_carbonate

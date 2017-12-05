@@ -17,6 +17,7 @@ beta_decay
 tritium_water
 => nrel_main_idtf:
 	[tritium water](* <-lang_en;; *);
+	[тритиевая вода](* <- lang_ru;; *);
 => nrel_idtf:
         [T2O](* <-lang_en;; *);
         [сверхтяжёлая вода](* <-lang_ru;; *);

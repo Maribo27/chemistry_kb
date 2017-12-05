@@ -1,6 +1,7 @@
 soft_water
 => nrel_main_idtf:
 	[soft water](* <-lang_en;; *);
+	[мягкая вода](* <- lang_ru;; *);
 
 // определение
 <- rrel_key_sc_element:...

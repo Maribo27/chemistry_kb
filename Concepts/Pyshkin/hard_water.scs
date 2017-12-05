@@ -1,6 +1,7 @@
 hard_water
 => nrel_main_idtf:
 	[hard water](* <-lang_en;; *);
+	[жёсткая вода](* <- lang_ru;; *);
 
 // определение
 <- rrel_key_sc_element:...

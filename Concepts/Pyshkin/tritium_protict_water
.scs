@@ -2,6 +2,7 @@
 tritium_protict_water
 => nrel_main_idtf:
 	[tritium protict water](* <-lang_en;; *);
+	[тритий-протиевая вода](* <- lang_ru;; *);
 => nrel_idtf:
         [THO](* <-lang_en;; *);
 

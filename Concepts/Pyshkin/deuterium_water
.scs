@@ -6,6 +6,7 @@ deuterium
 deuterium_water
 => nrel_main_idtf:
 	[deuterium water](* <-lang_en;; *);
+	[дейтериевая вода](* <- lang_ru;; *);
 => nrel_idtf:
         [D2O](* <-lang_en;; *);
         [тяжёлая вода](* <-lang_ru;; *);

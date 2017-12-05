@@ -2,6 +2,7 @@
 deuterium_protie_water
 => nrel_main_idtf:
 	[deuterium protie water](* <-lang_en;; *);
+	[дейтерий-протиевая вода](* <- lang_ru;; *);
 => nrel_idtf:
         [DHO](* <-lang_en;; *);
 

@@ -2,6 +2,7 @@
 tritium_deuterium_water
 => nrel_main_idtf:
 	[tritium deuterium water](* <-lang_en;; *);
+	[тритий-дейтериевая вода](* <- lang_ru;; *);
 => nrel_idtf:
         [TDO](* <-lang_en;; *);
 
