@@ -138,7 +138,7 @@ scp_program -> agent_find_object_structure
 		(*
 			<- printNl;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_const: [blyat];;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [oops];;
 
 			=> nrel_goto: .agent_find_object_structure_operator10aa;;
 		*);;

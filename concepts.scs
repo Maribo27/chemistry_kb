@@ -28,14 +28,6 @@ lanthanide => nrel_main_idtf:
 	[лантанид](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 
-oxygen => nrel_main_idtf:
-	[кислород](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-hydrogen => nrel_main_idtf:
-	[водород](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
 oligosaccharide => nrel_main_idtf:
 	[олигосахарид](*<-lang_ru;;*);
 	<- sc_node_not_relation;;
@@ -233,7 +225,7 @@ kieserite=> nrel_main_idtf:
 	[кисерит](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 epsomite=> nrel_main_idtf:
-	[кислород](* <- lang_ru;; *);
+	[эпсомит](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 cainite=> nrel_main_idtf:
 	[каинит](* <- lang_ru;; *);
