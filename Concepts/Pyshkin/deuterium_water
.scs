@@ -5,7 +5,6 @@ deuterium
 
 deuterium_water
 => nrel_main_idtf:
-        [дейтериевая вода](* <-lang_ru;; *);
 	[deuterium water](* <-lang_en;; *);
 => nrel_idtf:
         [D2O](* <-lang_en;; *);
@@ -17,10 +16,10 @@ deuterium_water
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(тяжёлая вода)](* <-lang_ru;;*);;
+	=> nrel_main_idtf: [Опр.(дейтериевая вода)](* <-lang_ru;;*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[<b>Дейтериевая вода</b> - <sc_element sys_idtf = "oxide">оксид</sc_element> дейтерия, в котором вместо двух <sc_element sys_idtf = "atom">атомов</sc_element> обычного лёгкого <sc_element sys_idtf = "isotope">изотопа</sc_element> <sc_element sys_idtf = "hydrogen">водорода</sc_element> содержится два <sc_element sys_idtf = "atom">атома</sc_element> тяжёлого <sc_element sys_idtf = "isotope">изотопа</sc_element> <sc_element sys_idtf = "hydrogen">водорода</sc_element> — <sc_element sys_idtf = "deiterium">дейтерия</sc_element>]
+		->rrel_example:[<b>Дейтериевая вода</b> - <sc_element sys_idtf = "water">вода</sc_element>, в <sc_element sys_idtf = "molecule">молекулах</sc_element> которой <sc_element sys_idtf = "atom">атомы</sc_element> <sc_element sys_idtf = "protius">протия</sc_element> замещены <sc_element sys_idtf = "atom">атомами</sc_element> <sc_element sys_idtf = "deuterium">дейтерия</sc_element>.]
 		(* 
 			<-lang_ru;; 
 			=>nrel_format: format_html;;
@@ -29,14 +28,15 @@ deuterium_water
 	<=nrel_using_constants:...
 	(*
 		->water;;
-		->oxide;;
 		->atom;;
-		->isotope;;
 		->hydrogen;;
-		->deiterium;;
+		->deuterium;;
               
 	*);;
 *);
+
+// включение
+<= nrel_inclusion: water;
 
 // иллюстрация
 //<- rrel_key_sc_element:...
@@ -54,29 +54,30 @@ deuterium_water
 
 
 //утверждения
-<- rrel_key_sc_element: formula
+<- rrel_key_sc_element: statement_formula_de
 (*
 	<-statement;;
 	<-sc_common_type_statement;;
 
-	=>nrel_main_idtf: [Утв.(химическая формула)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Утв.(химическая формула, дейтериевая вода)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:
-			[Формула дейтериевой воды обычно записывается как <b>D<sub>2</sub>O</b> или <b><sup>2</sup>H<sub>2</sub>O</b>. ]
+			[Формула дейтериевой воды обычно записывается как <b>D<sub>2</sub>O</b> или <b><sup>2</sup>H<sub>2</sub>O</b>.]
 		(* 
 			<-lang_ru;; 
 			=>nrel_format: format_html;;
 		*);;
 	*);;
 	-> rrel_key_sc_element: chemical_formula;;
+        -> rrel_key_sc_element: deuterium_water;;
 	<- rrel_axiom:subject_domain_chemisty
 	(*
 		<-subject_domain;;
 	*);;
 *);
 
-<- rrel_key_sc_element: fiz_sv
+<- rrel_key_sc_element: statement_fiz_sv
 (*
 	<-statement;;
 	<-sc_common_type_statement;;
@@ -87,10 +88,10 @@ deuterium_water
 		->rrel_example:
 			[Внешне дейтериевая вода выглядит как обычная — бесцветная жидкость без вкуса и запаха.](* <-lang_ru;; *);;
 	*);;
-	-> rrel_key_sc_element: ldeuterium_water;;
+	-> rrel_key_sc_element: deuterium_water;;
 	-> rrel_key_sc_element: liquid;;
 	-> rrel_key_sc_element: no_taste;;
-	-> rrel_key_sc_element: no__smell;;
+	-> rrel_key_sc_element: no_smell;;
 	<- rrel_axiom:subject_domain_chemisty
 	(*
 		<-subject_domain;;
