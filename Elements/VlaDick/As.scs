@@ -75,7 +75,7 @@ elem_As
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент мышьяк)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис. (химический элемент мышьяк)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

@@ -44,6 +44,15 @@ subject_domain_of_salts
 		-> rrel_example: "file://html/section_salts_eng.html" (* <-lang_en;; *);;
 		*);;
 
+dichromate
+
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дихромат]
+	(* <- lang_ru;; *);
+	[dichromate]
+	(* <- lang_en;; *);;
+
 sulfate
 
 <- sc_node_not_relation;
@@ -242,6 +251,7 @@ sodium_dichromate
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(дихромат натрия , твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(sodium dichromate, solid)] (* <- lang_en;;	*);;
@@ -376,6 +386,7 @@ silicon_carbide
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(карбид кремния, твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(silicon carbide, solid)] (* <- lang_en;;	*);;
@@ -420,7 +431,7 @@ silicate
 		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (силикат, получение*)](*<- lang_ru;;*);
-			[Stat. (silicate, receiving*)](*<- lang_ru;;*);;
+			[Stat. (silicate, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
@@ -509,6 +520,7 @@ salt
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(соль, твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(salt, solid)] (* <- lang_en;;	*);;
@@ -792,7 +804,7 @@ Definition_of_normal_salt
 	[Опр.(средняя соль)]
 	(* <- lang_ru;;	*);
 	[Def.(normal salt)]
-	(* <- lang_ru;;	*);
+	(* <- lang_en;;	*);
 <= nrel_using_constants: ...
 			(*
 				-> cation; metal; acid; elem_H;;
@@ -836,7 +848,7 @@ nitrate
 		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (нитрат, получение*)](*<- lang_ru;;*);
-			[Stat. (nitrate, receiving*)](*<- lang_ru;;*);;
+			[Stat. (nitrate, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
@@ -988,6 +1000,7 @@ Definition_of_double_salt
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(бромид меди(II), твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(copper (II) bromide, solid)] (* <- lang_en;;	*);;
@@ -1113,6 +1126,7 @@ chromium_II_carbide
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(карбид хрома(II) , твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(chromium(II) carbide, solid)] (* <- lang_en;;	*);;
@@ -1155,7 +1169,7 @@ chloride
 		<- explanation;;
 		=> nrel_main_idtf: 
 			[Утв. (хлорид, получение*)](*<- lang_ru;;*);
-			[Stat. (chloride, receiving*)](*<- lang_ru;;*);;
+			[Stat. (chloride, receiving*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:
 		...
 		(* 
@@ -1253,6 +1267,7 @@ carbonate
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(карбонат , твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(carbonate, solid)] (* <- lang_en;;	*);;
@@ -1325,6 +1340,7 @@ Definition_of_carbonate
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(хлорид цезия, твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(caesium_chloride, solid)] (* <- lang_en;;	*);;
@@ -1481,6 +1497,7 @@ caesium_auride
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(аурид цезия, твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(caesium auride, solid)] (* <- lang_en;;	*);;
@@ -1859,6 +1876,7 @@ Definition_of_acesulfame_potassium
 	...
 	(*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(карбид тантала, твёрдое тело)] 
 	(* <- lang_ru;;	*);

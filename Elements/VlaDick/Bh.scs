@@ -66,7 +66,7 @@ elem_Bh
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент борий)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис. (химический элемент борий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

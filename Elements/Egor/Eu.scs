@@ -5,7 +5,7 @@ elem_Eu
 <- rrel_key_sc_element:
 	Definition_of_europium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Eu
 <- valence_three;valence_two;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Eu
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -43,7 +43,7 @@ elem_Eu
 			=> nrel_main_idtf:[1,2](*<-lang_ru;; <- lang_en;;*);;
 			*);
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Eu
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -52,7 +52,7 @@ elem_Eu
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Eu
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -65,7 +65,7 @@ elem_Eu
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (европий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом европия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Xe] 4f<sup>7</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -73,10 +73,11 @@ elem_Eu
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Eu
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом европия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом европия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(europium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -94,5 +95,7 @@ atomic_mass_Eu <- number;
 
 Definition_of_europium
 => nrel_main_idtf:
-	[Опр.(Европий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом европия)]
+	(* <- lang_ru;;	*);
+	[Def.(europium atom)]
+	(* <- lang_en;;	*);;

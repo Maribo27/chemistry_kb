@@ -58,6 +58,7 @@ elem_No
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: [Рис.(атом нобелия)] (* <- lang_ru;;	*);
 	[Pic.(nobelium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...

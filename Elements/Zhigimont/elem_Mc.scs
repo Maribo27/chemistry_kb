@@ -43,6 +43,7 @@ elem_Mc
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: [Рис.(атом московия)] (* <- lang_ru;;	*);
 	[Pic.(moscovium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...
@@ -69,7 +70,7 @@ Definition_of_moscovium
 	[Опр.(атом московия)]
 	(* <- lang_ru;;	*);
 	[Def.(moscovium atom)]
-	(* <- lang_ru;;	*);
+	(* <- lang_en;;	*);
 
 <= nrel_using_constants:
 			{

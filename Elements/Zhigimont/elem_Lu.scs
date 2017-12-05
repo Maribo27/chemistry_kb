@@ -50,6 +50,7 @@ elem_Lu
 (*
 		
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: [Рис.(атом лютеция)] (* <- lang_ru;;	*);
 	[Pic.(lutetium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...

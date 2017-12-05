@@ -1,0 +1,65 @@
+radioactive_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[radioactive element](*<- lang_en;;*);
+	[радиоактивный элемент](*<- lang_ru;;*);;
+	
+base
+=> nrel_main_idtf:
+	[основание]
+	(* <- lang_ru;; *);
+	[base]
+	(* <- lang_en;; *);;
+
+alkali
+=> nrel_main_idtf:
+	[щёлочь]
+	(* <- lang_ru;; *);
+	[щелочь]
+	(* <- lang_ru;; *);
+	[alkali]
+	(* <- lang_en;; *);;
+
+basis
+	=> nrel_main_idtf: 
+		[основание](*<- lang_ru;;*);;
+
+hematite => nrel_main_idtf:
+    [гематит](*<-lang_ru;;*);
+    <- sc_node_not_relation;;
+
+ion
+	=> nrel_main_idtf: 
+		[ион](*<- lang_ru;;*);;
+
+pure_metal
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:[чистый метал](* <- lang_ru;; *);;
+
+coolant=> nrel_main_idtf:
+	[хладагент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+smell=> nrel_main_idtf:
+	[запах](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+
+microelement=> nrel_main_idtf:
+	[микроэлемент](* <- lang_ru;; *);
+	<- sc_node_not_relation;;
+	
+lemon_acid => nrel_main_idtf:[лимонная кислота](*<-lang_ru;;*);;
+
+carbon_dioxide => nrel_main_idtf:[углекислый газ](*<-lang_ru;;*);;
+
+
+anion
+	=> nrel_main_idtf: 
+		[анион](*<- lang_ru;;*);;
+
+ammonia
+=> nrel_main_idtf:
+	[аммиак]
+	(* <- lang_ru;; *);
+	[ammonia]
+	(* <- lang_en;; *);;

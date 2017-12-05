@@ -6,7 +6,7 @@ elem_Bk
 <- rrel_key_sc_element:
 	Definition_of_berkelium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Bk
 <-oxidation_state_plus_three;oxidation_state_plus_four;
 <-valence_three;valence_four;
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Bk
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Bk
 			*);
 
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Bk
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -57,7 +57,9 @@ elem_Bk
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (берклий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом берклия, электронная конфигурация*)](*<- lang_ru;;*);;
+		=> nrel_main_idtf: 
+			[Stat. (erkelium atom, electronic configuration*)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Rn] 5f<sup>9</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -65,10 +67,11 @@ elem_Bk
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Bk
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом берклия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом берклия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(berkelium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:
 		...
@@ -87,8 +90,10 @@ elem_Bk
 
 Definition_of_berkelium
 => nrel_main_idtf:
-	[Опр.(Берклий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом берклия)]
+	(* <- lang_ru;;	*);
+	[Def.(berkelium atom)]
+	(* <- lang_en;;	*);;
 
 atomic_mass_Bk <- number;
 => nrel_main_idtf:[247,0703](*<-lang_ru;; <- lang_en;;*);;

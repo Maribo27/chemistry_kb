@@ -1,0 +1,6 @@
+sc_text_of_agent_finding_the_binding_energy_of_the_nucleus
+-> rrel_key_sc_element:
+	agent_finding_the_binding_energy_of_the_nucleus;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_finding_the_binding_energy_of_the_nucleus = [*^"file://agent_finding_the_binding_energy_of_the_nucleus.scsi"*];;

@@ -59,6 +59,7 @@ subst_Lu
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(лютеций, твёрдое тело)] (* <- lang_ru;;	*);
 	[Pic.(lutetium, solid)] (* <- lang_en;;	*);;

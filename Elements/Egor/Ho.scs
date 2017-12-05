@@ -5,7 +5,7 @@ elem_Ho
 <- rrel_key_sc_element:
 	Definition_of_holmium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Ho
 <- valence_three; 
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Ho
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Ho
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Ho
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -53,7 +53,7 @@ elem_Ho
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Ho
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -66,7 +66,7 @@ elem_Ho
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гольмий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом гольмия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Xe] 4f<sup>11</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -74,10 +74,11 @@ elem_Ho
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Ho
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом гольмия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом гольмия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(holmium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -94,5 +95,7 @@ atomic_mass_Ho <- number;
 
 Definition_of_holmium
 => nrel_main_idtf:
-	[Опр.(Гольмий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом гольмия)]
+	(* <- lang_ru;;	*);
+	[Def.(holmium atom)]
+	(* <- lang_en;;	*);;
