@@ -24,9 +24,6 @@ hard_water
 	*);;
 *);
 
-// включение
-<= nrel_inclusion: water;
-
 
 //утверждения
 <- rrel_key_sc_element: statement_zhestkost
