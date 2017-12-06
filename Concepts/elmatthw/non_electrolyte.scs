@@ -1,0 +1,37 @@
+alcohol
+=> nrel_main_idtf:
+	[спирт](* <- lang_ru;; *);
+	[alcohol](* <- lang_en;; *);;
+hydrocarbon
+=> nrel_main_idtf:
+	[углеводород](* <- lang_ru;; *);
+	[hydrocarbon](* <- lang_en;; *);;
+electricity
+=> nrel_main_idtf:
+	[электрический ток](* <- lang_ru;; *);
+	[electricity](* <- lang_en;; *);;
+non_electrolyte
+=> nrel_main_idtf:
+	[неэлектролит](* <- lang_ru;; *);
+	[non-electrolyte](* <- lang_en;; *);
+=>nrel_inclusion: elementary_substance;oxide;hydrocarbon;alcohol;carbohydrate;ether;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(неэлектролит)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Неэлектролиты — вещества, растворы которых не проводят электрический ток.]
+		(* 
+			<-lang_ru;; 
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->substance;;
+		->solution;;
+		->electricity;;
+	*);;
+*);;
