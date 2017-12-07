@@ -1,0 +1,85 @@
+subst_O -> example_subst_O;;
+atomic_multiplicity_two -> (subst_O -> elem_O);;
+
+example_subst_O
+=> nrel_main_idtf:
+	[кислород, массой 33 грамма]
+	(* <- lang_ru;; *);
+=> nrel_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram: ...
+		(*
+			<- number;;
+			=> nrel_main_idtf:[33](*<-lang_ru;; <- lang_en;;*);;
+		*);;
+	*);;
+*);;
+
+water -> example_subst_H2O;;
+atomic_multiplicity_two -> (water -> elem_H);;
+atomic_multiplicity_one -> (water -> elem_O);;
+
+atomic_multiplicity_two -> (subst_O -> elem_O);;
+atomic_multiplicity_one -> (subst_Fe -> elem_Fe);;
+atomic_multiplicity_one -> (subst_Mg -> elem_Mg);;
+atomic_multiplicity_one -> (subst_Mn -> elem_Mn);;
+atomic_multiplicity_one -> (subst_Mo -> elem_Mo);;
+atomic_multiplicity_one -> (subst_Nb -> elem_Nb);;
+atomic_multiplicity_one -> (subst_Zn -> elem_Zn);;
+atomic_multiplicity_one -> (subst_Os -> elem_Os);;
+atomic_multiplicity_one -> (subst_Ni -> elem_Ni);;
+atomic_multiplicity_one -> (subst_Nd -> elem_Nd);;
+
+example_subst_H2O
+=> nrel_main_idtf:
+	[вода, массой 37 грамм]
+	(* <- lang_ru;; *);
+=> nrel_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram: ...
+		(*
+			<- number;;
+			=> nrel_main_idtf:[37](*<-lang_ru;; <- lang_en;;*);;
+		*);;
+	*);;
+*);;
+
+rrel_mol
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[моль']
+	(* <- lang_ru;; *);;
+
+sweet
+<- sc_node_not_relation;
+<= nrel_inclusion: taste;
+=> nrel_main_idtf:
+	[сладкий вкус]
+	(* <- lang_ru;; *);;
+
+agent_error
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ошибка работы агента]
+	(* <- lang_ru;; *);
+=> nrel_error_message:
+	[Введены некорректные данные либо недостаточно информации для решения]
+	(* <- lang_ru;; *);;
+
+nrel_error_message
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[сообщение*]
+	(* <- lang_ru;; *);;
+
+nrel_chemical_amount
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[химическое количество вещества*]
+	(* <- lang_ru;; *);;

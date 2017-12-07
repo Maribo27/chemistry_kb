@@ -87,7 +87,7 @@ elem_Zn
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:138(*<- number;;*);;
+		-> rrel_pm:one_hundred_thirty_eight;;
 	*);;
 *);
 
@@ -98,7 +98,7 @@ elem_Zn
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:125(*<- number;;*);;
+		-> rrel_pm:one_hundred_twenty_five;;
 	*);;
 *);
 

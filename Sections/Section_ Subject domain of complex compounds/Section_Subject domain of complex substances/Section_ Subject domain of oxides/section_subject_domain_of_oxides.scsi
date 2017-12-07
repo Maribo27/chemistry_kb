@@ -1,5 +1,5 @@
 subject_domain_of_oxides
-	=> nrel_main_idtf:
+=> nrel_main_idtf:
 	[Предметная область оксидов]
 	(* <- lang_ru;; *);
 	[Subject domain of oxides]
@@ -28,18 +28,14 @@ subject_domain_of_oxides
 	unsalt_forming_oxide;
 
 
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://content_html/section_oxides.html" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://content_html/section_oxides_eng.html" (* <-lang_en;; *);;
-		*);;
+<= nrel_sc_text_translation: ...
+(* 
+	-> rrel_example: "file://content_html/section_oxides.html" (* <-lang_ru;; *);;
+*);
+<= nrel_sc_text_translation: ...
+(* 
+	-> rrel_example: "file://content_html/section_oxides_eng.html" (* <-lang_en;; *);;
+*);;
 
 oxide
 <- sc_node_not_relation;
@@ -49,13 +45,20 @@ oxide
 <- rrel_key_sc_element: definition_oxide
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 		
+		[Опр. (оксид)](*<- lang_ru;;*);
+		[Def. (oxide)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<b>Оксиды</b> - <sc_element sys_idtf="complex_substance">сложные вещества</sc_element>, в состав которых входят <sc_element sys_idtf="atom">атомы</sc_element> двух <sc_element sys_idtf="chemical_element">химических элементов</sc_element>, один из которых <sc_element sys_idtf="oxygen">кислород</sc_element>.]
+			[<b>Оксиды</b> - <sc_element sys_idtf="complex_substance">сложные вещества</sc_element>, в состав которых входят <sc_element sys_idtf="atom">атомы</sc_element> двух <sc_element sys_idtf="chemical_element">химических элементов</sc_element>, один из которых <sc_element sys_idtf="elem_O">кислород</sc_element>.]
 			(*
 				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[<b>Oxides</b> are <sc_element sys_idtf="complex_substance">complex substances</sc_element>, which contain <sc_element sys_idtf="atom">atoms</sc_element> of two  <sc_element sys_idtf="chemical_element">chemical elements</sc_element>, one of which is <sc_element sys_idtf="elem_O">oxygen</sc_element>.]
+			(*
+				<- lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;
@@ -72,7 +75,9 @@ oxide
 <= nrel_subdividing: salt_formation_subdividing
 (*
 	<- explanation;;
-	=> nrel_main_idtf:[Разбиение по признаку способности к солеобразованию](*<-lang_ru;; *);;
+	=> nrel_main_idtf:
+		[Разбиение по признаку способности к солеобразованию](*<-lang_ru;; *);
+		[Subdividing based on salt formation ability](*<-lang_en;; *);;
 	-> salt_forming_oxide;;
 	-> unsalt_forming_oxide;;
 *);
@@ -80,7 +85,10 @@ oxide
 <= nrel_subdividing: ...
 (*
 	<- explanation;;
-	=> nrel_main_idtf:[Разбиение по количеству атомов кислорода](*<-lang_ru;; *);;
+	=> nrel_main_idtf:
+		[Разбиение по количеству атомов кислорода](*<-lang_ru;; *);
+		[Subdividing based on number of oxygen atoms](*<-lang_en;; *);;
+	-> salt_forming_oxide;;
 	-> dioxide;;
 	-> monoxide;;
 	-> trioxide;;
@@ -89,12 +97,21 @@ oxide
 <- rrel_key_sc_element: ...
 (*
 	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (оксид, соединение, химический элемент, кислород, степень окисления −2)](*<-lang_ru;; *);
+		[Expl. (oxide, compound, chemical element, oxygen, oxidation state -2)](*<-lang_en;; *);;
+
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-		[Бинарное соединение <sc_element sys_idtf="chemical_element">химического элемента</sc_element> с <sc_element sys_idtf="oxygen">кислородом</sc_element> в <sc_element sys_idtf="oxidation_state">степени окисления</sc_element> −2, в котором сам <sc_element sys_idtf="oxygen">кислород</sc_element> связан только с менее электроотрицательным элементом. Химический элемент кислород по электроотрицательности второй после фтора, поэтому к <sc_element sys_idtf="oxide">оксидам</sc_element> относятся почти все соединения химических элементов с кислородом. К исключениям относятся, например, дифторид кислорода OF2]
+		[К <sc_element sys_idtf="oxide">оксидам</sc_element> относятся бинарные соединения <sc_element sys_idtf="chemical_element">химического элемента</sc_element> с <sc_element sys_idtf="elem_O">кислородом</sc_element> в <sc_element sys_idtf="oxidation_state_minus_two">степени окисления −2</sc_element>, в котором сам кислород связан только с менее электроотрицательным элементом.]
 		(*
 			<- lang_ru;;
+			=> nrel_format: format_html;;
+		*);
+		[<sc_element sys_idtf="oxide">Oxides</sc_element> include the binary compounds of a <sc_element sys_idtf="chemical_element">chemical element</sc_element> with <sc_element sys_idtf="elem_O">oxygen</sc_element> in the <sc_element sys_idtf="oxidation_state_minus_two">oxidation state -2</sc_element>, in which oxygen associated with a less electronegative element.]
+		(*
+			<- lang_en;;
 			=> nrel_format: format_html;;
 		*);;
 	*);;
@@ -104,7 +121,8 @@ oxide
 (*
 	-> simple_substance_and_oxygen_interaction
 	(*
-		=> nrel_main_idtf: [Взаимодействие простых веществ с кислородом](* <-lang_ru;; *);;
+		=> nrel_main_idtf: 
+		[Взаимодействие простых веществ с кислородом](* <-lang_ru;; *);;
 	*);;
 	<= nrel_combustion: binary_compound;;
 	<= nrel_thermal_decomposition: salt; acid; basis;;
@@ -123,7 +141,8 @@ acid_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (кислотный оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (кислотный оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -147,6 +166,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (кислотный оксид, неметалл, переходный элемент, получение*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -171,6 +191,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (кислотный оксид, вода, кислота)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -182,6 +203,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (кислотный оксид, основание, соль, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -193,6 +215,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (кислотный оксид, основный оксид, соль)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -204,6 +227,7 @@ acid_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (кислотный оксид, амфотерный оксид, средняя соль)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -220,7 +244,8 @@ amphoteric_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (амфотерный оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (амфотерный оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -243,6 +268,7 @@ amphoteric_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (амфотерный оксид, сильная кислота, соль, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -254,6 +280,7 @@ amphoteric_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (амфотерный оксид, сильная щелочь, соль, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -277,7 +304,8 @@ basic_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (основный оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (основный оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -300,7 +328,8 @@ basic_oxide
 <- rrel_key_sc_element:...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (основный оксид, оксид, кислота, взаимодействие*)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Утв. (основный оксид, оксид, кислота, взаимодействие*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -316,6 +345,7 @@ basic_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (основный оксид, вода, кислота, соль)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -327,6 +357,7 @@ basic_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (основный оксид, щелочь, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -340,6 +371,7 @@ basic_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (основный оксид, амфотерный оксид, соль)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -351,6 +383,7 @@ basic_oxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (основный оксид, водород (вещество), металл, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -373,7 +406,8 @@ dioxide
 <- rrel_key_sc_element: ...
 (* 
 	<- explanation;;
-	=> nrel_main_idtf: [Опр. (диоксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (диоксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(* 
 		-> rrel_example:
@@ -409,7 +443,8 @@ hydroxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (гидроксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (гидроксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -430,6 +465,7 @@ hydroxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 			[Утв. (гидроксид, химический элемент, минерал)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -467,7 +503,8 @@ monoxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (монооксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (монооксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -489,6 +526,7 @@ monoxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 			[Утв. (монооксид, температура*, существование*)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -510,7 +548,8 @@ oxide_mineral
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (окисел)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (окисел)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -552,11 +591,19 @@ oxide_mineral
 <- rrel_key_sc_element: mineral_groups
 	(*
 		<- explanation;;
-		=> nrel_main_idtf: 
-			[Утв. (окисел, минерал)](*<- lang_ru;;*);;
+		
+		=> nrel_main_idtf:
+			[Утв. (окисел, минерал)](*<- lang_ru;;*);
+			[Expl. (oxide mineral, mineral)](*<- lang_ru;;*);;
+		
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:"file://content_html/oxide_mineral.html" (* <-lang_ru;; *);;
+		*);;
+
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://content_html/oxide_mineral_eng.html" (* <-lang_en;; *);;
 		*);;
 	*);
 
@@ -592,7 +639,8 @@ peroxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (пероксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (пероксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -615,7 +663,8 @@ peroxide
 <- rrel_key_sc_element:...
 (*
 	<- explanation;;
-	=> nrel_main_idtf: [Утв. (пероксид, вещество, взрывоопасность)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Утв. (пероксид, вещество, взрывоопасность)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -658,7 +707,8 @@ protoxide
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (закись)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (закись)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -688,7 +738,8 @@ refractory_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (тугоплавкий оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (тугоплавкий оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -727,7 +778,8 @@ salt_forming_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (солеобразующий оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (солеобразующий оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -766,7 +818,8 @@ suboxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (субоксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (субоксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -788,6 +841,7 @@ suboxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (субоксид, химический элемент)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -816,7 +870,8 @@ superoxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (супероксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (супероксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -839,6 +894,7 @@ superoxide
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
+		
 		[Утв. (супероксид, вода, кислород (вещество), пероксид водорода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -867,7 +923,8 @@ trioxide
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (триоксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (триоксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
@@ -909,7 +966,8 @@ unsalt_forming_oxide
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (несолеобразующий оксид)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (несолеобразующий оксид)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
