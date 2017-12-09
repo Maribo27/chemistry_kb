@@ -1,7 +1,3 @@
-water_vapor
-=> nrel_main_idtf:
-	[водяной пар](* <-lang_ru;; *);
-	[water vapor](* <-lang_en;; *);;
 amide
 => nrel_main_idtf:
 	[амид](* <-lang_ru;; *);

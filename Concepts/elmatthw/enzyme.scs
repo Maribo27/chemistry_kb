@@ -1,27 +1,3 @@
-oxidoreductase
-=> nrel_main_idtf:
-	[оксидоредуктаз](* <- lang_ru;; *);
-	[oxidoreductase](* <- lang_en;; *);;
-transferase
-=> nrel_main_idtf:
-	[трансфераз](* <- lang_ru;; *);
-	[transferase](* <- lang_en;; *);;
-hydrolase
-=> nrel_main_idtf:
-	[гидролаз](* <- lang_ru;; *);
-	[hydrolase](* <- lang_en;; *);;
-lyase
-=> nrel_main_idtf:
-	[лиаз](* <- lang_ru;; *);
-	[lyase](* <- lang_en;; *);;
-isomerase
-=> nrel_main_idtf:
-	[изомераз](* <- lang_ru;; *);
-	[isomerase](* <- lang_en;; *);;
-ligase
-=> nrel_main_idtf:
-	[лигаз](* <- lang_ru;; *);
-	[ligase](* <- lang_en;; *);;
 enzyme
 => nrel_main_idtf:
 	[фермент](* <- lang_ru;; *);

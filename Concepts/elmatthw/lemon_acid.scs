@@ -1,35 +1,3 @@
-ethylene_oxide
-=> nrel_main_idtf:
-	[этиленоксид](* <-lang_ru;; *);
-	[ethylene oxide](* <-lang_en;; *);;
-acrylic_acid
-=> nrel_main_idtf:
-	[акриловая кислота](* <-lang_ru;; *);
-	[acrylic acid](* <-lang_en;; *);;
-bertolet
-=> nrel_main_idtf:
-	[бертолетова соль](* <-lang_ru;; *);
-	[bertolet](* <-lang_en;; *);;
-strong_oxidizer
-=> nrel_main_idtf:
-	[сильный окислитель](* <-lang_ru;; *);
-	[strong oxidizer](* <-lang_en;; *);;
-oil_industry
-=> nrel_main_idtf:
-	[нефтяная промышленность](* <-lang_ru;; *);
-	[oil industry](* <-lang_en;; *);;
-citrate
-=> nrel_main_idtf:
-	[цитрат](* <-lang_ru;; *);
-	[citrate](* <-lang_en;; *);;
-ether
-=> nrel_main_idtf:
-	[эфир](* <-lang_ru;; *);
-	[ether](* <-lang_en;; *);;
-carboxylic_acid
-=> nrel_main_idtf:
-	[карбоновая кислота](* <-lang_ru;; *);
-	[carboxylic acid](* <-lang_en;; *);;
 lemon_acid
 => nrel_main_idtf:
 	[лимонная кислота](* <-lang_ru;; *);

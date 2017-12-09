@@ -1,7 +1,3 @@
-energy_level
-=> nrel_main_idtf:
-	[энергетический уровень](* <- lang_ru;; *);
-	[energy level](* <- lang_en;; *);;
 electronic_layer
 => nrel_main_idtf:
 	[электронный слой](* <- lang_ru;; *);

@@ -1,27 +1,3 @@
-salt_solution
-=> nrel_main_idtf:
-	[раствор солей](* <- lang_ru;; *);
-	[salt solution](* <- lang_en;; *);;
-amphoteric_metal
-=> nrel_main_idtf:
-	[амфотерный металл](* <- lang_ru;; *);
-	[amphoteric metal](* <- lang_en;; *);;
-industry
-=> nrel_main_idtf:
-	[промышленность](* <- lang_ru;; *);
-	[industry](* <- lang_en;; *);;
-statement_of_defining_type
-=> nrel_main_idtf:
-	[утверждение определяющего типа](* <- lang_ru;; *);
-	[statement of defining type](* <- lang_en;; *);;
-aqueous_solution
-=> nrel_main_idtf:
-	[водный раствор](* <- lang_ru;; *);
-	[aqueous solution](* <- lang_en;; *);;
-strong_basis
-=> nrel_main_idtf:
-	[сильное основание](* <- lang_ru;; *);
-	[strong basis](* <- lang_en;; *);;
 alkali
 => nrel_main_idtf:
 	[щёлочь](* <- lang_ru;; *);

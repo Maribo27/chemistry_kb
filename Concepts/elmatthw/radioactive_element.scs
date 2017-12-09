@@ -1,21 +1,3 @@
-periodic_system
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-[периодическая система](* <-lang_ru;; *);
-	[periodic system](* <-lang_en;; *);;
-transuranium
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-[трансурановый элемент](* <-lang_ru;; *);
-	[transuranium](* <-lang_en;; *);;
-artificial_radioactive_element
-=> nrel_main_idtf:
-[искусственный радиоактивный элемент](* <-lang_ru;; *);
-	[artificial radioactive element](* <-lang_en;; *);;
-actinide
-=> nrel_main_idtf:
-[актинид](* <-lang_ru;; *);
-	[actinide](* <-lang_en;; *);;
 radioactive_element
 <- sc_node_not_relation;
 => nrel_main_idtf:
