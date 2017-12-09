@@ -1,0 +1,107 @@
+subst_NiOH2
+	=>nrel_main_idtf:
+	[гидроксид никеля(II)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[nickel hydroxide(II)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[NiOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_nickel_hydroxide_2
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид никеля(II) (Ni(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид никеля(II))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:hydroxides;
+///////////
+	<-solid;
+	<-color_light_green;
+	=>nrel_inclusion: elem_Ni;
+	=>nrel_inclusion: hydroxyl_group;
+//////////
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [230-360] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [3,65] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_NiOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид никеля(II), взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид никеля(II) взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_NiOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид никеля(II), разложение*, оксид никеля(II), вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид никеля(II) разлогается на оксид никеля(II) и воду(при 230-360 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид никеля(II))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_NiOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_NiOH2 -> rrel_key_sc_element:nrel_decomposition; nickel_oxide_2; water;;
+interaction_subst_NiOH2_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;

@@ -1,0 +1,127 @@
+subst_InOH3
+	=>nrel_main_idtf:
+	[гидроксид индия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[indium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[InOH3]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_indium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид индия (In(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид индия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:hydroxides;
+///////////
+	<-solid;
+	<-white_color;
+	=>nrel_inclusion: elem_In;
+	=>nrel_inclusion: hydroxyl_group;
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [150] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [340] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,33] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_InOH3_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид индия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид индия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: decomposition_subst_InOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид индия, разложение*, оксид индия, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид индия разлогается на оксид индия и воду(при 340 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид индия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_InOH3.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_InOH3 
+-> rrel_key_sc_element:nrel_decomposition;
+->rrel_key_sc_element: indium_oxide;
+->rrel_key_sc_element: water;;
+interaction_subst_InOH3_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid;
+->rrel_key_sc_element: salt;
+->rrel_key_sc_element: water;;

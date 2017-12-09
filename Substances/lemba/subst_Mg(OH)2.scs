@@ -1,0 +1,117 @@
+subst_MgOH2
+	=>nrel_main_idtf:
+	[гидроксид магния]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[magnesium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[MgOH2]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_magnesium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид магния (Mg(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид магния)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	 <=nrel_inclusion:hydroxides;
+///////////
+	<-solid;
+	//<-white_color;
+	=>nrel_inclusion: elem_Mg;
+	=>nrel_inclusion: hydroxyl_group;
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [350] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,211] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_MgOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид магния, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид магния взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_MgOH2_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид магния, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид магния взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид магния)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_MgOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+interaction_subst_MgOH2_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid; 
+->rrel_key_sc_element:salt;
+->rrel_key_sc_element: water;;
+
+interaction_subst_MgOH2_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide; 
+->rrel_key_sc_element:salt;
+->rrel_key_sc_element: water;;

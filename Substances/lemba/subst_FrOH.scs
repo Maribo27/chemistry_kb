@@ -1,0 +1,10 @@
+subst_FrOH
+	=>nrel_main_idtf:
+	[гидроксид франция]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[francium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[FrOH]
+	(* <- lang_en;; *);;
