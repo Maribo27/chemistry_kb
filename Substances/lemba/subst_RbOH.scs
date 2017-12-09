@@ -32,7 +32,7 @@ subst_RbOH
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	 <=nrel_inclusion:hydroxides;
+	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<- solid;
 	<-no_color;

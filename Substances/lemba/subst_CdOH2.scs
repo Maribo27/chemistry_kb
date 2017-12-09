@@ -32,7 +32,7 @@ subst_CdOH2
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	 <=nrel_inclusion:hydroxides;
+	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
 	<-white_color;

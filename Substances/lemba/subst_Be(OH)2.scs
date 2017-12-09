@@ -31,7 +31,7 @@ subst_BeOH2
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	 <=nrel_inclusion:hydroxides;
+	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<-solid;//<- gel;
 	<-white_color;

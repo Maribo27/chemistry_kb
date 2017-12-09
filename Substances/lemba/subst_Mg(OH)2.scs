@@ -32,7 +32,7 @@ subst_MgOH2
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	 <=nrel_inclusion:hydroxides;
+	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<-solid;
 	//<-white_color;

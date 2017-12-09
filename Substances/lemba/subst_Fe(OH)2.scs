@@ -34,7 +34,7 @@ subst_FeOH2
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	 <=nrel_inclusion:hydroxides;
+	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<- solid;
 	<-color_reddish_brown;

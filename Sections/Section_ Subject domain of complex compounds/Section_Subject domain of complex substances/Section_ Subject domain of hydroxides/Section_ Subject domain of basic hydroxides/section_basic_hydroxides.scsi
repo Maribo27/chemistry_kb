@@ -1,4 +1,4 @@
-subject_domain_of_basic_hydroxide
+subject_domain_of_basic_hydroxides
 => nrel_main_idtf: 
 	[Предметная область основных гидроксидов]
 	(* <- lang_ru;;*);
@@ -12,10 +12,6 @@ subject_domain_of_basic_hydroxide
 	[Предметная область щелочей]
 	(* <- lang_ru;;*);
 	[Subject domain of alkali]
-	(* <- lang_en;; *);
-	[Предметная область сильных гидроксидов]
-	(* <- lang_ru;;*);
-	[Subject domain of strong hydroxides]
 	(* <- lang_en;; *);
 	
 
@@ -35,7 +31,7 @@ subject_domain_of_basic_hydroxide
 	subst_CaOH2;
 	subst_SrOH2;
 	subst_BaOH2;
-	subst_FrOH;
+	//subst_FrOH;//
 	//subst_RaOH2;
 	subst_TlOH;;
 	
@@ -61,10 +57,6 @@ basic_hydroxide
     (* <- lang_en;; *);
 	[основание]
 	(* <- lang_ru;;	*);
-	[strong bases]
-    (* <- lang_en;; *);
-	[сильное основание]
-	(* <- lang_ru;;	*);
 	
 	
 
@@ -81,13 +73,15 @@ basic_hydroxide
 			...
 			(* 
 			-> rrel_example:
-					[<b><sc_element sys_idtf  = "basic_hydroxide">Осно́вные гидрокси́ды </sc_element> </b>-  <sc_element sys_idtf  = "hydroxides">гидроксиды</sc_element> щелочных, щелочноземельных металлов и таллия(Tl), которые хорошо растворимы в воде.]
+					[<b><sc_element sys_idtf  = "basic_hydroxide">Осно́вные гидрокси́ды </sc_element> </b>-  <sc_element sys_idtf  = "hydroxides">гидроксиды</sc_element> <sc_element sys_idtf  = "alkali_metal">щелочных</sc_element>,
+					<sc_element sys_idtf  = "alkaline_earth_metal">щелочноземельных металлов</sc_element> и <sc_element sys_idtf  = "elem_Tl">таллия(Tl)</sc_element>, которые хорошо растворимы в воде.]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
 			-> rrel_example:
-					[<b><sc_element sys_idtf  = "basic_hydroxide">Basic hydroxides</sc_element> </b>-  are <sc_element sys_idtf  = "hydroxides">hydroxides</sc_element> of alkali, alkaline earth metals and thallium (Tl), which are readily soluble in water.]
+					[<b><sc_element sys_idtf  = "basic_hydroxide">Basic hydroxides</sc_element> </b>-  are <sc_element sys_idtf  = "hydroxides">hydroxides</sc_element> of <sc_element sys_idtf  = "alkali_metal">alkali</sc_element>,
+					<sc_element sys_idtf  = "alkaline_earth_metal">alkaline earth metals</sc_element> and <sc_element sys_idtf  = "elem_Tl">thallium(Tl)</sc_element>, which are readily soluble in water.]
 						(*
 							<- lang_en;;
 							=> nrel_format: format_html;;
@@ -97,7 +91,10 @@ basic_hydroxide
 				(*
 					-> hydroxides;;
 					->alkaline_earth_metal;;
-					->alkaline_metal;;
+					->alkali_metal;;
+					->elem_Tl;;
+					->nrel_solubility;;
+					->water;;
 				*);;
 	*);
 	

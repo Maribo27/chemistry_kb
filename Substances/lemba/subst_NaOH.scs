@@ -36,7 +36,7 @@ subst_NaOH
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
-	 <=nrel_inclusion:hydroxides;
+	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<- solid;
 	<-color_white;
