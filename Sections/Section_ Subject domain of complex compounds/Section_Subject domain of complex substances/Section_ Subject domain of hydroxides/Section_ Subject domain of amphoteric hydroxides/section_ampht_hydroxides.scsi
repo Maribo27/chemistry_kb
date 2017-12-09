@@ -18,21 +18,21 @@ subject_domain_of_amphoteric_hydroxide
 -> rrel_not_maximum_studied_object_class:
 	subst_FeOH3;
 	subst_FeOH2;
-	subst_NiOH;//
-	subst_NiOH2;//
+	subst_NiOH;
+	subst_NiOH2;
 	subst_CuOH2;
 	subst_CuOH;
 	subst_ZnOH2;
 	subst_GaOH3;
 	subst_AgOH;
 	subst_CdOH2;
-	subst_InOH3;/
-	subst_SnOH2;//
+	subst_InOH3;
+	subst_SnOH2;
 	subst_AlOH3;
 	subst_TlOH3;
-	subst_PbOH2;//
-	subst_BeOH2;;
-	subst_CrOH3;//
+	subst_PbOH2;
+	subst_BeOH2;
+	subst_CrOH3;;
 	//subst_HgOH2;//
 	
 amphoteric_hydroxide

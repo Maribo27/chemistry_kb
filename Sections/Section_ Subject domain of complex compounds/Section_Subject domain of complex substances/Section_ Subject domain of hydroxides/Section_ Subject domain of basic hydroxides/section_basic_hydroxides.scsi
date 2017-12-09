@@ -37,8 +37,7 @@ subject_domain_of_basic_hydroxide
 	subst_BaOH2;
 	subst_FrOH;
 	//subst_RaOH2;
-	subst_TlOH;
-	//subst_FeOH2;;
+	subst_TlOH;;
 	
 /*<= nrel_subdividing:...
 		      (*
@@ -51,7 +50,7 @@ basic_hydroxide
 => nrel_main_idtf:
 	[основный гидроксид]
 	(* <- lang_ru;;	*);    
-    [basic hydroxides]
+    [basic hydroxide]
     (* <- lang_en;; *);
 =>nrel_idtf:
 	[щелочь]
