@@ -1,28 +1,8 @@
-salt_solution
-=> nrel_main_idtf:
-	[раствор солей](* <- lang_ru;; *);
-	[salt solution](* <- lang_en;; *);;
-amphoteric_metal
-=> nrel_main_idtf:
-	[амфотерный металл](* <- lang_ru;; *);
-	[amphoteric metal](* <- lang_en;; *);;
-industry
-=> nrel_main_idtf:
-	[промышленность](* <- lang_ru;; *);
-	[industry](* <- lang_en;; *);;
-statement_of_defining_type
-=> nrel_main_idtf:
-	[утверждение определяющего типа](* <- lang_ru;; *);
-	[statement of defining type](* <- lang_en;; *);;
-aqueous_solution
-=> nrel_main_idtf:
-	[водный раствор](* <- lang_ru;; *);
-	[aqueous solution](* <- lang_en;; *);;
-strong_base
+/*strong_base
 => nrel_main_idtf:
 	[сильное основание](* <- lang_ru;; *);
-	[strong base](* <- lang_en;; *);;
-alkali
+	[strong base](* <- lang_en;; *);;*/
+/*alkali
 => nrel_main_idtf:
 	[щёлочь](* <- lang_ru;; *);
 	[alkali](* <- lang_en;; *);
@@ -51,23 +31,23 @@ alkali
 		->aqueous_solution;;
 		->ion;;
 	*);;
-*);
+*);*/
 //утверждения
+basic_hydroxide
 <- rrel_key_sc_element:...
 (*
 	<-statement;;
 	<-statement_of_defining_type;;
 
-	=>nrel_main_idtf: [Утв.(щёлочь, гидроксид, щелочной металл, щелочноземельный металл, основание, периодическая система)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Утв.(щёлочь, гидроксид, щелочной металл, щелочноземельный металл, периодическая система)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:
-			[Щёлочи — гидроксиды щелочных, щёлочноземельных металлов, растворимые в воде основания, гидроксиды металлов подгрупп Iа и IIа (начиная с кальция) периодической системы](* <-lang_ru;; *);;
+			[Щёлочи — гидроксиды щелочных, щёлочноземельных металлов, растворимые в воде, гидроксиды металлов подгрупп Iа и IIа (начиная с кальция) периодической системы](* <-lang_ru;; *);;
 	*);;
-	-> rrel_key_sc_element: hydroxide;;
+	-> rrel_key_sc_element: hydroxides;;
 	-> rrel_key_sc_element: alkali_metal;;
 	-> rrel_key_sc_element: alkaline_earth_metal;;
-	-> rrel_key_sc_element: base;;
 	-> rrel_key_sc_element: periodic_system;;
 	<- rrel_theorem:subject_domain_chemisty
 	(*
@@ -100,12 +80,15 @@ alkali
 	<-statement;;
 	<-sc_common_type_statement;;
 
-	=>nrel_main_idtf: [Утв.(взаимодействие, кислотный оксид)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Утв.(щелочь, взаимодействие, кислотный оксид, соль вода)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:"file://html/alkali_interaction_with_acid_oxides.html" (* <-lang_ru;; *);;
 	*);;
 	-> rrel_key_sc_element: acid_oxide;;
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: water;;
+	->rrel_key_sc_element:nrel_interaction;;
 	<- rrel_theorem:subject_domain_chemisty
 	(*
 		<-subject_domain;;
@@ -116,12 +99,15 @@ alkali
 	<-statement;;
 	<-sc_common_type_statement;;
 
-	=>nrel_main_idtf: [Утв.(взаимодействие, кислота)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Утв.(взаимодействие, кислота, соль, вода)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:"file://html/alkali_interaction_with_acids.html" (* <-lang_ru;; *);;
 	*);;
 	-> rrel_key_sc_element: acid;;
+	-> rrel_key_sc_element: salt;;
+	-> rrel_key_sc_element: water;;
+	->rrel_key_sc_element: nrel_interaction;;
 	<- rrel_theorem:subject_domain_chemisty
 	(*
 		<-subject_domain;;
@@ -138,6 +124,9 @@ alkali
 		->rrel_example:"file://html/alkali_interaction_with_amphoteric_metals.html" (* <-lang_ru;; *);;
 	*);;
 	-> rrel_key_sc_element: amphoteric_metal;;
+	->rrel_key_sc_element:nrel_interaction;;
+	->rrel_key_sc_element:amphoteric_oxide;;
+	->rrel_key_sc_element:hydroxides;;
 	<- rrel_theorem:subject_domain_chemisty
 	(*
 		<-subject_domain;;
@@ -148,12 +137,15 @@ alkali
 	<-statement;;
 	<-sc_common_type_statement;;
 
-	=>nrel_main_idtf: [Утв.(взаимодействие, амфотерный оксид)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Утв.(взаимодействие, амфотерный оксид, вода, соль)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:"file://html/alkali_interaction_with_amphoteric_oxides.html" (* <-lang_ru;; *);;
 	*);;
 	-> rrel_key_sc_element: amphoteric_oxide;;
+	->rrel_key_sc_element: water;;
+	->rrel_key_sc_element:nrel_interaction;;
+	->rrel_key_sc_element:salt;;
 	<- rrel_theorem:subject_domain_chemisty
 	(*
 		<-subject_domain;;
@@ -170,6 +162,10 @@ alkali
 		->rrel_example:"file://html/alkali_interaction_with_salt_solutions.html" (* <-lang_ru;; *);;
 	*);;
 	-> rrel_key_sc_element: salt_solution;;
+	-> rrel_key_sc_element: hydroxides;;
+	->rrel_key_sc_element: water;;
+	->rrel_key_sc_element:nrel_interaction;;
+	->rrel_key_sc_element:salt;;
 	<- rrel_theorem:subject_domain_chemisty
 	(*
 		<-subject_domain;;

@@ -1,4 +1,4 @@
-weak_base
+/*weak_base
 => nrel_main_idtf:
 	[слабое основание](* <-lang_ru;; *);
 	[weak base](* <-lang_en;; *);;
@@ -58,3 +58,4 @@ basis
 		<-subject_domain;;
 	*);;
 *);;
+*/

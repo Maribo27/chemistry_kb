@@ -14,10 +14,11 @@ hydroxides
 <- sc_node_not_relation;
 <= nrel_inclusion: multielement_compound;
 => nrel_main_idtf:
-	[гидроксид]
-	(* <- lang_ru;;	*);
-	[hydroxides]
-	(* <- lang_en;;	*);
+	[гидроксид](* <- lang_ru;;	*);
+	[hydroxides](* <- lang_en;;	*);
+	=> nrel_idtf:
+	[гидроокись](*<- lang_ru;;*);
+	[водокись](*<- lang_ru;;*);
 
 <- rrel_key_sc_element:
 	Definition_of_hydroxides
@@ -55,3 +56,4 @@ Definition_of_hydroxides
 			(*
 				-> multielement_compound; hydroxyl_group;;
 			*);;
+			

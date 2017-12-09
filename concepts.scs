@@ -1,3 +1,25 @@
+salt_solution
+=> nrel_main_idtf:
+	[раствор солей](* <- lang_ru;; *);
+	[salt solution](* <- lang_en;; *);;
+amphoteric_metal
+=> nrel_main_idtf:
+	[амфотерный металл](* <- lang_ru;; *);
+	[amphoteric metal](* <- lang_en;; *);;
+industry
+=> nrel_main_idtf:
+	[промышленность](* <- lang_ru;; *);
+	[industry](* <- lang_en;; *);;
+	//?????????
+statement_of_defining_type
+=> nrel_main_idtf:
+	[утверждение определяющего типа](* <- lang_ru;; *);
+	[statement of defining type](* <- lang_en;; *);;
+aqueous_solution
+=> nrel_main_idtf:
+	[водный раствор](* <- lang_ru;; *);
+	[aqueous solution](* <- lang_en;; *);;
+
 tin_oxide//(олово)
 	=>nrel_main_idtf:[оксид олова](* <- lang_ru;; *);
 	=>nrel_main_idtf:[tin oxide](* <- lang_en;; *);
@@ -399,7 +421,7 @@ groundwater <- sc_node_not_relation;
 	=> nrel_main_idtf:[грунтовые воды](* <- lang_ru;; *);;
 ampholyte <- sc_node_not_relation;
 	=> nrel_main_idtf:[амфолит](* <- lang_ru;; *);
-	=> nrel_inclusion: acid; basis;;
+	=> nrel_inclusion: acid; hydroxides;;
 
 light_water <- sc_node_not_relation;
 	=> nrel_main_idtf:[лёгкая вода](* <- lang_ru;; *);;
