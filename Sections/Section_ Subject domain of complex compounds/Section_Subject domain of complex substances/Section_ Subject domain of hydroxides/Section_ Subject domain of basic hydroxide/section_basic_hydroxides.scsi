@@ -2,7 +2,7 @@ subject_domain_of_basic_hydroxides
 => nrel_main_idtf: 
 	[Предметная область основных гидроксидов]
 	(* <- lang_ru;;*);
-	[Subject domain of basic_hydroxide]
+	[Subject domain of basic_hydroxides]
 	(* <- lang_en;; *);
 =>nrel_idtf:
 	[Предметная область оснований]
@@ -37,8 +37,8 @@ subject_domain_of_basic_hydroxides
 	
 /*<= nrel_subdividing:...
 		      (*
-			      ->hydroxides_of_alkali_metals;;
-				  ->hydroxides_of_alkaline_earth_metals;;		  
+			      ->hydroxide_of_alkali_metals;;
+				  ->hydroxide_of_alkaline_earth_metals;;		  
 		       *);;*/
 
 basic_hydroxide
@@ -50,6 +50,8 @@ basic_hydroxide
     (* <- lang_en;; *);
 =>nrel_idtf:
 	[щелочь]
+	(* <- lang_ru;;	*);
+	[щёлочь]
 	(* <- lang_ru;;	*);
 	[alkali]
     (* <- lang_en;; *);
@@ -66,21 +68,21 @@ basic_hydroxide
 		=> nrel_main_idtf:
 		[Опр.(основные гидроксиды)]
 		(* <- lang_ru;;	*);
-		[Def.(basic hydroxides)]
+		[Def.(basic hydroxide)]
 		(* <- lang_en;; *);;
 		<- definition;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
 			-> rrel_example:
-					[<b><sc_element sys_idtf  = "basic_hydroxide">Осно́вные гидрокси́ды </sc_element> </b>-  <sc_element sys_idtf  = "hydroxides">гидроксиды</sc_element> <sc_element sys_idtf  = "alkali_metal">щелочных</sc_element>,
+					[<b><sc_element sys_idtf  = "basic_hydroxide">Осно́вный гидрокси́д </sc_element> </b>-  <sc_element sys_idtf  = "hydroxide">гидроксид</sc_element> <sc_element sys_idtf  = "alkali_metal">щелочных</sc_element>,
 					<sc_element sys_idtf  = "alkaline_earth_metal">щелочноземельных металлов</sc_element> и <sc_element sys_idtf  = "elem_Tl">таллия(Tl)</sc_element>, которые хорошо растворимы в воде.]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
 			-> rrel_example:
-					[<b><sc_element sys_idtf  = "basic_hydroxide">Basic hydroxides</sc_element> </b>-  are <sc_element sys_idtf  = "hydroxides">hydroxides</sc_element> of <sc_element sys_idtf  = "alkali_metal">alkali</sc_element>,
+					[<b><sc_element sys_idtf  = "basic_hydroxide">Basic hydroxide</sc_element> </b>-  are <sc_element sys_idtf  = "hydroxide">hydroxide</sc_element> of <sc_element sys_idtf  = "alkali_metal">alkali</sc_element>,
 					<sc_element sys_idtf  = "alkaline_earth_metal">alkaline earth metals</sc_element> and <sc_element sys_idtf  = "elem_Tl">thallium(Tl)</sc_element>, which are readily soluble in water.]
 						(*
 							<- lang_en;;
@@ -89,7 +91,7 @@ basic_hydroxide
 			*);;
 		<= nrel_using_constants:...
 				(*
-					-> hydroxides;;
+					-> hydroxide;;
 					->alkaline_earth_metal;;
 					->alkali_metal;;
 					->elem_Tl;;

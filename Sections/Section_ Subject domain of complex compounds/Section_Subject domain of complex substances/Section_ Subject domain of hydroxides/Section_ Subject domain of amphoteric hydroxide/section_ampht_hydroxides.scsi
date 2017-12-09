@@ -35,7 +35,7 @@ amphoteric_hydroxide
 => nrel_main_idtf:
 	[амфотерное основание]
 	(* <- lang_ru;;	*);    
-    [amphoteric hydroxides]
+    [amphoteric hydroxide]
     (* <- lang_en;; *);
 	
 
@@ -45,20 +45,20 @@ amphoteric_hydroxide
 		=> nrel_main_idtf:
 		[Опр.(амфотерные гидроксиды)]
 		(* <- lang_ru;;	*);
-		[Def.(amphoteric hydroxides)]
+		[Def.(amphoteric hydroxide)]
 		(* <- lang_en;; *);;
 		<- definition;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
 			-> rrel_example:
-					[<b><sc_element sys_idtf  = "amphoteric_hydroxide">Амфоте́рные гидрокси́ды </sc_element> </b>-  <sc_element sys_idtf  = "hydroxides">гидроксиды</sc_element> амфотерных элементов, в зависимости от условий проявляющие свойства <sc_element sys_idtf  = "acid">кислот</sc_element> или <sc_element sys_idtf  = "basic_hydroxide">осно́вных гидроксидов</sc_element>.]
+					[<b><sc_element sys_idtf  = "amphoteric_hydroxide">Амфоте́рный гидрокси́д </sc_element> </b>-  <sc_element sys_idtf  = "hydroxide">гидроксид</sc_element> амфотерных элементов, в зависимости от условий проявляющие свойства <sc_element sys_idtf  = "acid">кислот</sc_element> или <sc_element sys_idtf  = "basic_hydroxide">осно́вных гидроксидов</sc_element>.]
 						(*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
 			-> rrel_example:
-					[<b><sc_element sys_idtf  = "amphoteric_hydroxide">Amphoteric hydroxides</sc_element> </b>-  are <sc_element sys_idtf  = "hydroxides">hydroxides</sc_element> of amphoteric elements, depending on the conditions, the properties of <sc_element sys_idtf = "acid"> acids</sc_element>  or <sc_element sys_idtf = "basic_hydroxide"> basic hydroxides </sc_element>.]
+					[<b><sc_element sys_idtf  = "amphoteric_hydroxide">Amphoteric hydroxide</sc_element> </b>-  are <sc_element sys_idtf  = "hydroxide">hydroxide</sc_element> of amphoteric elements, depending on the conditions, the properties of <sc_element sys_idtf = "acid"> acids</sc_element>  or <sc_element sys_idtf = "basic_hydroxide"> basic hydroxide </sc_element>.]
 						(*
 							<- lang_en;;
 							=> nrel_format: format_html;;
@@ -66,7 +66,7 @@ amphoteric_hydroxide
 			*);;
 		<= nrel_using_constants:...
 				(*
-					-> hydroxides;;
+					-> hydroxide;;
 					->acid;;
 					->basic_hydroxide;;
 				*);;

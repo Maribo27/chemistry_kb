@@ -226,13 +226,6 @@ complex_hydroxide
 	[complex hydroxide]
 	(* <- lang_en;; *);;
 	
-amphoteric_hydroxide
-	=>nrel_main_idtf:
-	[комплексный гидроксид]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[complex hydroxide]
-	(* <- lang_en;; *);;
 	
 white_color
 	=>nrel_main_idtf:
@@ -1376,9 +1369,8 @@ rrel_protophilic_solvent
 	
 multielement_compound
 => nrel_main_idtf:
-    [многоэлементное соединение](*<- lang_en;;*);
-	[multielement compound]
-	(* <- lang_ru;;	*);;
+    [многоэлементное соединение](* <- lang_ru;;	*);
+	[multielement compound](*<- lang_en;;*);;
 	
 colloidal_solution
 => nrel_main_idtf:
