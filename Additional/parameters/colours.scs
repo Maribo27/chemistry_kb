@@ -9,32 +9,61 @@ color_yellow <= nrel_color_of_the_flame_during_combustion:NaCl;;
 
 
 color_red
-	=> nrel_main_idtf: [красный цвет] (*<-lang_ru;;*);
+	=> nrel_main_idtf: 
+		[красный цвет] (*<-lang_ru;;*);
+	<- color;
+	<- sc_node_not_relation;;
+
+
+color_white
+	=> nrel_main_idtf:
+		[белый цвет](* <- lang_ru;; *);
+		[white color ](* <- lang_en;; *);
+	<- color;
+	<- sc_node_not_relation;;
+
+color_reddish_brown
+	=> nrel_main_idtf:
+		[красновато-коричневый цвет](* <- lang_ru;; *);
+		[reddish-brown color](* <- lang_en;; *);
+	<- color;
+	<- sc_node_not_relation;;
+	
+color_light_green
+	=> nrel_main_idtf:
+		[светло-зеленный цвет](* <- lang_ru;; *);
+		[light green color](* <- lang_en;; *);
 	<- color;
 	<- sc_node_not_relation;;
 
 color_green 
-	=> nrel_main_idtf: [зелёный цвет] (*<-lang_ru;;*);
+	=> nrel_main_idtf: 
+		[зелёный цвет] (*<-lang_ru;;*);
+		[green color](* <- lang_en;; *);;
 	<- color;
 	<- sc_node_not_relation;;
 
 color_blue
-	=> nrel_main_idtf:[синий цвет] (*<-lang_ru;;*);
+	=> nrel_main_idtf:
+		[синий цвет] (*<-lang_ru;;*);
 	<- color;
 	<- sc_node_not_relation;;
 
 color_yellow
-	=> nrel_main_idtf:[жёлтый цвет] (*<-lang_ru;;*);
+	=> nrel_main_idtf:
+		[жёлтый цвет] (*<-lang_ru;;*);
 	<- color;
 	<- sc_node_not_relation;;
 
 color_white_blue 
-	=> nrel_main_idtf: [бело-голубой цвет](* <- lang_ru;; *);
+	=> nrel_main_idtf: 
+		[бело-голубой цвет](* <- lang_ru;; *);
 	<- color;
 	<- sc_node_not_relation;;
 
 color_silver_grey 
-	=> nrel_main_idtf: [серебристо-серый цвет](* <- lang_ru;; *);
+	=> nrel_main_idtf: 
+		[серебристо-серый цвет](* <- lang_ru;; *);
 	<- color;
 	<- sc_node_not_relation;;
 
@@ -103,3 +132,9 @@ strong_smell => nrel_main_idtf: [разкий запах](*<- lang_ru;;*);;
 
 taste -> no_taste;;
 no_taste => nrel_main_idtf: [без вкуса](*<- lang_ru;;*);;
+
+sweet
+<- sc_node_not_relation;
+<= nrel_inclusion: taste;
+=> nrel_main_idtf:
+	[сладкий вкус](* <- lang_ru;; *);;

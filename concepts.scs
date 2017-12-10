@@ -1,14 +1,3 @@
-base
-=> nrel_main_idtf:
-	[основание]
-	(* <- lang_ru;; *);
-	[base]
-	(* <- lang_en;; *);;
-
-basis
-	=> nrel_main_idtf: 
-		[основание](*<- lang_ru;;*);;
-
 pure_metal
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[чистый метал](* <- lang_ru;; *);;
