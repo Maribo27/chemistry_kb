@@ -54,7 +54,6 @@ subst_Lu
 
 <- solid;
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Lu;
 
 <- rrel_key_sc_element:...
 (*
@@ -128,3 +127,5 @@ subst_Lu
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Lu -> elem_Lu);;

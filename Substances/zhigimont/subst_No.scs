@@ -32,7 +32,6 @@ subst_No
 *);
 
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_No;
 
 
 <- rrel_key_sc_element: receiving_No_from_C
@@ -67,3 +66,5 @@ subst_No
 	*);;
 *);;
 
+
+atomic_multiplicity_one -> (subst_No -> elem_No);;
