@@ -4,7 +4,6 @@ subst_In
 => nrel_main_idtf: [индий] (* <- lang_ru;; *);
 => nrel_main_idtf: [indium] (* <- lang_en;; *);
 => nrel_idtf: [In](*<- lang_en;;*);
-=> nrel_inclusion: elem_In;
 
 <- rrel_key_sc_element: definition_of_subst_In
 (* 
@@ -132,3 +131,5 @@ subst_In
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_In -> elem_In);;

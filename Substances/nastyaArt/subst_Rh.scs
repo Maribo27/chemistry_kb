@@ -1,19 +1,18 @@
-subst_Pb
+subst_Rh
 <= nrel_inclusion: chemical_substance;
 <- sc_node_not_relation;
-=> nrel_main_idtf: [свинец] (* <- lang_ru;; *);
-=> nrel_main_idtf: [plumbum] (* <- lang_en;; *);
-=> nrel_idtf: [Pb](*<- lang_en;;*);
-=> nrel_inclusion: elem_Pb;
+=> nrel_main_idtf: [родий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [rhodium] (* <- lang_en;; *);
+=> nrel_idtf: [Rh](*<- lang_en;;*);
 
-<- rrel_key_sc_element: definition_of_subst_Pb
+<- rrel_key_sc_element: definition_of_subst_Rh
 (* 
-	=> nrel_main_idtf: [Опр.(Свинец)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(Родий)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Простое вещество свинец</b> - тяжелый, ковкий, сравнительно легкоплавкий <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета с синеватым отливом.</p>] 
+			[<p><b>Простое вещество родий</b> - твёрдый переходный <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета. Благородный металл платиновой группы.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -31,11 +30,11 @@ subst_Pb
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(свинец, твердое вещество)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(родий, твердое вещество)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:"file://image/subst_Pb.jpg"
+		-> rrel_example:"file://image/subst_Rh.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;
@@ -49,7 +48,7 @@ subst_Pb
 	(*
 		-> rrel_gram_per_cubic_cm:...
 		(*
-			=> nrel_main_idtf: [11,3415] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [12,41] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -62,7 +61,7 @@ subst_Pb
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [600,61] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [2239] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -75,7 +74,7 @@ subst_Pb
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [2022] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [4000] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -88,7 +87,7 @@ subst_Pb
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [4,77] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [21,8] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -101,7 +100,7 @@ subst_Pb
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [177,8] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [494] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -114,7 +113,7 @@ subst_Pb
 	(*
 		-> rrel_joule_per_kelvin_and_mole:...
 		(*
-			=> nrel_main_idtf: [26,65] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [24,95] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -127,8 +126,10 @@ subst_Pb
 	(*
 		-> rrel_cubic_cm_per_mole:...
 		(*
-			=> nrel_main_idtf: [18,3] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [8,3] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Rh -> elem_Rh);;

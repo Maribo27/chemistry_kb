@@ -3,8 +3,7 @@ subst_plastic_S
 <- sc_node_not_relation;
 => nrel_main_idtf: [пластическая сера] (* <- lang_ru;; *);
 => nrel_main_idtf: [plastic sulfur] (* <- lang_en;; *);
-=> nrel_idtf: [Sn](*<- lang_en;;*);
-=> nrel_inclusion: elem_S;
+=> nrel_idtf: [S4](*<- lang_en;;*);
 
 <- rrel_key_sc_element: definition_of_subst_plastic_S
 (* 
@@ -29,3 +28,5 @@ subst_plastic_S
 
 <- solid;
 <- color_broun;;
+
+atomic_multiplicity_four -> (subst_plastic_S -> elem_S);;

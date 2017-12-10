@@ -1,19 +1,18 @@
-subst_Po
+subst_Pa
 <= nrel_inclusion: chemical_substance;
 <- sc_node_not_relation;
-=> nrel_main_idtf: [полоний] (* <- lang_ru;; *);
-=> nrel_main_idtf: [polonium] (* <- lang_en;; *);
-=> nrel_idtf: [Po](*<- lang_en;;*);
-=> nrel_inclusion: elem_Po;
+=> nrel_main_idtf: [протактиний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [protactinium ] (* <- lang_en;; *);
+=> nrel_idtf: [Pa](*<- lang_en;;*);
 
-<- rrel_key_sc_element: definition_of_subst_Po
+<- rrel_key_sc_element: definition_of_subst_Pa
 (* 
-	=> nrel_main_idtf: [Опр.(Полоний)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(Протактиний)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Простое вещество полоний</b> - мягкий радиоактивный <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета.</p>] 
+			[<p><b>Простое вещество протактиний</b> - блестящий серебристо-белый, очень радиоактивный <sc_element sys_idtf = "metal">металл</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -31,11 +30,11 @@ subst_Po
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(полоний, твердое вещество)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(протактиний, твердое вещество)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:"file://image/subst_Po.jpg"
+		-> rrel_example:"file://image/subst_Pa.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;
@@ -49,7 +48,7 @@ subst_Po
 	(*
 		-> rrel_gram_per_cubic_cm:...
 		(*
-			=> nrel_main_idtf: [9,196] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [15,37] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -62,7 +61,7 @@ subst_Po
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [527] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [2113] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -75,7 +74,7 @@ subst_Po
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [1235] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [4300] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -88,7 +87,7 @@ subst_Po
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [10] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [16,7] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -101,7 +100,7 @@ subst_Po
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [102,9] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [481,2] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -114,7 +113,7 @@ subst_Po
 	(*
 		-> rrel_joule_per_kelvin_and_mole:...
 		(*
-			=> nrel_main_idtf: [26,4] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [27,7] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -127,8 +126,10 @@ subst_Po
 	(*
 		-> rrel_cubic_cm_per_mole:...
 		(*
-			=> nrel_main_idtf: [22,7] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [15,0] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Pa -> elem_Pa);;

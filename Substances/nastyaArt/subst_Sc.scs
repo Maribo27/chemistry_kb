@@ -1,19 +1,18 @@
-subst_Pa
+subst_Sc
 <= nrel_inclusion: chemical_substance;
 <- sc_node_not_relation;
-=> nrel_main_idtf: [протактиний] (* <- lang_ru;; *);
-=> nrel_main_idtf: [protactinium ] (* <- lang_en;; *);
-=> nrel_idtf: [Pa](*<- lang_en;;*);
-=> nrel_inclusion: elem_Pa;
+=> nrel_main_idtf: [скандий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [scandium] (* <- lang_en;; *);
+=> nrel_idtf: [Sc](*<- lang_en;;*);
 
-<- rrel_key_sc_element: definition_of_subst_Pa
+<- rrel_key_sc_element: definition_of_subst_Sc
 (* 
-	=> nrel_main_idtf: [Опр.(Протактиний)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(Скандий)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Простое вещество протактиний</b> - блестящий серебристо-белый, очень радиоактивный <sc_element sys_idtf = "metal">металл</sc_element>.</p>] 
+			[<p><b>Простое вещество скандий</b> - умеренно мягкий, лёгкий редкоземельный <sc_element sys_idtf = "metal">металл</sc_element> серебристого цвета с жёлтым отливом.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -26,16 +25,16 @@ subst_Pa
 *);
 
 <- solid;
-<- color_silver;
+<- color_metal;
 
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(протактиний, твердое вещество)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(скандий, твердое вещество)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:"file://image/subst_Pa.jpg"
+		-> rrel_example:"file://image/subst_Sc.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;
@@ -49,7 +48,7 @@ subst_Pa
 	(*
 		-> rrel_gram_per_cubic_cm:...
 		(*
-			=> nrel_main_idtf: [15,37] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [2,99] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -62,7 +61,7 @@ subst_Pa
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [2113] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [1814] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -75,7 +74,7 @@ subst_Pa
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [4300] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [3110] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -88,7 +87,7 @@ subst_Pa
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [16,7] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [15,8] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -101,7 +100,7 @@ subst_Pa
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [481,2] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [332,7] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -114,7 +113,7 @@ subst_Pa
 	(*
 		-> rrel_joule_per_kelvin_and_mole:...
 		(*
-			=> nrel_main_idtf: [27,7] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [25,51] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -132,3 +131,5 @@ subst_Pa
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Sc -> elem_Sc);;

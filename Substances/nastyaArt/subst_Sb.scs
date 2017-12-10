@@ -1,19 +1,20 @@
-subst_Pm
+subst_Sb
 <= nrel_inclusion: chemical_substance;
 <- sc_node_not_relation;
-=> nrel_main_idtf: [прометий] (* <- lang_ru;; *);
-=> nrel_main_idtf: [promethium] (* <- lang_en;; *);
-=> nrel_idtf: [Pm](*<- lang_en;;*);
-=> nrel_inclusion: elem_Pm;
+=> nrel_main_idtf: [сурьма] (* <- lang_ru;; *);
+=> nrel_main_idtf: [antimony] (* <- lang_en;; *);
+=> nrel_idtf: [stibium](*<- lang_en;;*);
+=> nrel_idtf: [Sb](*<- lang_en;;*);
 
-<- rrel_key_sc_element: definition_of_subst_Pm
+
+<- rrel_key_sc_element: definition_of_subst_Sb
 (* 
-	=> nrel_main_idtf: [Опр.(Прометий)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(Сурьма)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Простое вещество прометий</b> - светло-серый радиоактивный <sc_element sys_idtf = "metal">металл</sc_element>.</p>] 
+			[<p><b>Простое вещество сурьма</b> - <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета с синеватым оттенком, грубозернистого строения.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -26,16 +27,16 @@ subst_Pm
 *);
 
 <- solid;
-<- color_gray;
+<- color_silver;
 
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(прометий, твердое вещество)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(сурьма, твердое вещество)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:"file://image/subst_Pm.jpg"
+		-> rrel_example:"file://image/subst_Sb.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;
@@ -49,7 +50,7 @@ subst_Pm
 	(*
 		-> rrel_gram_per_cubic_cm:...
 		(*
-			=> nrel_main_idtf: [7,26] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [6,691] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -62,7 +63,7 @@ subst_Pm
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [1441] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [903,9] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -75,7 +76,7 @@ subst_Pm
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [3273] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [1908] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -88,7 +89,7 @@ subst_Pm
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [7,13] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [20,08] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -101,7 +102,7 @@ subst_Pm
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [330,5] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [195,2] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -114,7 +115,7 @@ subst_Pm
 	(*
 		-> rrel_joule_per_kelvin_and_mole:...
 		(*
-			=> nrel_main_idtf: [27,6] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [25,2] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -127,8 +128,10 @@ subst_Pm
 	(*
 		-> rrel_cubic_cm_per_mole:...
 		(*
-			=> nrel_main_idtf: [19,96] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [18,4] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Sb -> elem_Sb);;

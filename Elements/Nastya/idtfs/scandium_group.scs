@@ -1,3 +1,6 @@
-scandium_group => nrel_main_idtf:
+scandium_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
 	[подгруппа скандия](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
+	[scandium group](* <- lang_en;; *);;
+	

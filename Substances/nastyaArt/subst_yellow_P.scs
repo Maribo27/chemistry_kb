@@ -1,19 +1,18 @@
-subst_Pt
+subst_yellow_P
 <= nrel_inclusion: chemical_substance;
 <- sc_node_not_relation;
-=> nrel_main_idtf: [платина] (* <- lang_ru;; *);
-=> nrel_main_idtf: [platinum] (* <- lang_en;; *);
-=> nrel_idtf: [Pt](*<- lang_en;;*);
-=> nrel_inclusion: elem_Pt;
+=> nrel_main_idtf: [желтый фосфор] (* <- lang_ru;; *);
+=> nrel_main_idtf: [yellow phosphorus] (* <- lang_en;; *);
+=> nrel_idtf: [P4](*<- lang_en;;*);
 
-<- rrel_key_sc_element: definition_of_subst_Pt
+<- rrel_key_sc_element: definition_of_subst_yellow_P
 (* 
-	=> nrel_main_idtf: [Опр.(Платина)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(Желтый фосфор)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Простое вещество платина</b> - тяжёлый, мягкий серебристо-белый <sc_element sys_idtf = "metal">металл</sc_element>.</p>] 
+			[<p><b>Простое вещество желтый фосфор</b> - сильно ядовитое, огнеопасное кристаллическое <sc_element sys_idtf = "chemical_substance">вещество</sc_element> от светло-жёлтого до тёмно-бурого цвета.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -21,21 +20,20 @@ subst_Pt
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> metal;;
+		-> chemical_substance;;
 	*);;
 *);
 
 <- solid;
-<- color_silver;
+<- color_yellow;
 
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(платина, твердое вещество)] (* <- lang_ru;;	*);;
-	<- description_of_a_typical_instance;;
+	=> nrel_main_idtf: [Рис.(желтый фосфор, твердое вещество)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:"file://image/subst_Pt.jpg"
+		-> rrel_example: "file://image/subst_yellow_P.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;
@@ -49,7 +47,7 @@ subst_Pt
 	(*
 		-> rrel_gram_per_cubic_cm:...
 		(*
-			=> nrel_main_idtf: [21,09] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [1,83] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -60,9 +58,9 @@ subst_Pt
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_kelvin:...
+		-> rrel_degree_celsius:...
 		(*
-			=> nrel_main_idtf: [2041,4] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [43,1] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -73,9 +71,9 @@ subst_Pt
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_kelvin:...
+		-> rrel_degree_celsius:...
 		(*
-			=> nrel_main_idtf: [4098] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [280] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -88,7 +86,7 @@ subst_Pt
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [21,76] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [2,51] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -101,7 +99,7 @@ subst_Pt
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [470] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [49,8] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -114,7 +112,7 @@ subst_Pt
 	(*
 		-> rrel_joule_per_kelvin_and_mole:...
 		(*
-			=> nrel_main_idtf: [25,85] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [21,6] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -127,8 +125,10 @@ subst_Pt
 	(*
 		-> rrel_cubic_cm_per_mole:...
 		(*
-			=> nrel_main_idtf: [9,10] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [17,0] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_four -> (subst_yellow_P -> elem_P);;

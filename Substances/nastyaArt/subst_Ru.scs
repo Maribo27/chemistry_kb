@@ -1,19 +1,18 @@
-subst_La
+subst_Ru
 <= nrel_inclusion: chemical_substance;
 <- sc_node_not_relation;
-=> nrel_main_idtf: [лантан] (* <- lang_ru;; *);
-=> nrel_main_idtf: [lanthanum] (* <- lang_en;; *);
-=> nrel_idtf: [La](*<- lang_en;;*);
-=> nrel_inclusion: elem_La;
+=> nrel_main_idtf: [рутений] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Ruthenium] (* <- lang_en;; *);
+=> nrel_idtf: [Ru](*<- lang_en;;*);
 
-<- rrel_key_sc_element: definition_of_subst_La
+<- rrel_key_sc_element: definition_of_subst_Ru
 (* 
-	=> nrel_main_idtf: [Опр.(Лантан)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(Рутений)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Простое вещество лантан</b> - мягкий, ковкий, вязкий <sc_element sys_idtf = "metal">металл</sc_element> серебристо-белого цвета.</p>] 
+			[<p><b>Простое вещество рутений</b> - переходный <sc_element sys_idtf = "metal">металл</sc_element> серебристого цвета. Весьма инертен.</p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -31,11 +30,11 @@ subst_La
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис.(лантан, твердое вещество)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис.(рутений, твердое вещество)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:"file://image/subst_La.jpg"
+		-> rrel_example:"file://image/subst_Ru.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;
@@ -49,7 +48,7 @@ subst_La
 	(*
 		-> rrel_gram_per_cubic_cm:...
 		(*
-			=> nrel_main_idtf: [6,17] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [12,41] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -62,7 +61,7 @@ subst_La
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [1193] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [2607] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -75,7 +74,7 @@ subst_La
 	(*
 		-> rrel_kelvin:...
 		(*
-			=> nrel_main_idtf: [3447] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [4350] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -88,20 +87,7 @@ subst_La
 	(*
 		-> rrel_kilojoule_per_mole:...
 		(*
-			=> nrel_main_idtf: [8,5] (* <- lang_en;;*);;
-			<- number;;
-		*);;
-	*);;
-*);
-
-=> nrel_specific_heat_of_evaporation: ...
-(*
-	<- value;;
-	<= nrel_measurement:...
-	(*
-		-> rrel_kilojoule_per_mole:...
-		(*
-			=> nrel_main_idtf: [402] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [25,5] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -114,7 +100,7 @@ subst_La
 	(*
 		-> rrel_joule_per_kelvin_and_mole:...
 		(*
-			=> nrel_main_idtf: [27,11] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [24,0] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
@@ -127,8 +113,10 @@ subst_La
 	(*
 		-> rrel_cubic_cm_per_mole:...
 		(*
-			=> nrel_main_idtf: [22,5] (* <- lang_en;;*);;
+			=> nrel_main_idtf: [8,3] (* <- lang_en;;*);;
 			<- number;;
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Ru -> elem_Ru);;

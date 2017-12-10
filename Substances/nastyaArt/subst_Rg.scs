@@ -4,7 +4,6 @@ subst_Rg
 => nrel_main_idtf: [рентгений] (* <- lang_ru;; *);
 => nrel_main_idtf: [roentgenium] (* <- lang_en;; *);
 => nrel_idtf: [Rg](*<- lang_en;;*);
-=> nrel_inclusion: elem_Rg;
 
 <- rrel_key_sc_element: definition_of_subst_Rg
 (* 
@@ -24,3 +23,5 @@ subst_Rg
 		-> metal;;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Rg -> elem_Rg);;

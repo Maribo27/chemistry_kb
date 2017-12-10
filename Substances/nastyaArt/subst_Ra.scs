@@ -4,7 +4,6 @@ subst_Ra
 => nrel_main_idtf: [радий] (* <- lang_ru;; *);
 => nrel_main_idtf: [radium] (* <- lang_en;; *);
 => nrel_idtf: [Ra](*<- lang_en;;*);
-=> nrel_inclusion: elem_Ra;
 
 <- rrel_key_sc_element: definition_of_subst_Ra
 (* 
@@ -132,3 +131,5 @@ subst_Ra
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Ra -> elem_Ra);;

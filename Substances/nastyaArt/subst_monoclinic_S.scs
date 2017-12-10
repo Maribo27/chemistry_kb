@@ -6,7 +6,6 @@ subst_monoclinic_S
 => nrel_idtf: [S8](*<- lang_en;;*);
 => nrel_idtf: [бэта сера](*<- lang_ru;;*);
 => nrel_idtf: [beta sulfur](*<- lang_en;;*);
-=> nrel_inclusion: elem_S;
 
 <- rrel_key_sc_element: definition_of_subst_monoclinic_S
 (* 
@@ -71,3 +70,5 @@ subst_monoclinic_S
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_eight -> (subst_monoclinic_S -> elem_S);;

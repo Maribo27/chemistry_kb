@@ -4,7 +4,6 @@ subst_black_P
 => nrel_main_idtf: [черный фосфор] (* <- lang_ru;; *);
 => nrel_main_idtf: [black phosphorus] (* <- lang_en;; *);
 => nrel_idtf: [P4](*<- lang_en;;*);
-=> nrel_inclusion: elem_P;
 
 <- rrel_key_sc_element: definition_of_subst_black_P
 (* 
@@ -66,3 +65,5 @@ subst_black_P
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_four -> (subst_black_P -> elem_P);;

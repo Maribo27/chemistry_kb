@@ -6,7 +6,6 @@ subst_rhombic_S
 => nrel_idtf: [S8](*<- lang_en;;*);
 => nrel_idtf: [альфа сера](*<- lang_ru;;*);
 => nrel_idtf: [alfa sulfur](*<- lang_en;;*);
-=> nrel_inclusion: elem_S;
 
 <- rrel_key_sc_element: definition_of_subst_rhombic_S
 (* 
@@ -72,4 +71,4 @@ subst_rhombic_S
 	*);;
 *);;
 
-
+atomic_multiplicity_eight -> (subst_rhombic_S -> elem_S);;

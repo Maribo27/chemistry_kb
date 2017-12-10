@@ -4,7 +4,6 @@ subst_metal_P
 => nrel_main_idtf: [металлический фосфор] (* <- lang_ru;; *);
 => nrel_main_idtf: [metal phosphorus] (* <- lang_en;; *);
 => nrel_idtf: [P4](*<- lang_en;;*);
-=> nrel_inclusion: elem_P;
 
 <- rrel_key_sc_element: definition_of_subst_metal_P
 (* 
@@ -54,3 +53,5 @@ subst_metal_P
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_four -> (subst_metal_P -> elem_P);;
