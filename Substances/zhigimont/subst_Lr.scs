@@ -33,7 +33,6 @@ subst_Lr
 
 <- solid;
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Lr;
 
 => nrel_ionization_energy: ...
 (*
@@ -52,3 +51,6 @@ subst_Lr
 		-> rrel_kelvin: 1900 (*<- number;;*);;
 	*);;
 *);;
+
+
+atomic_multiplicity_one -> (subst_Lr -> elem_Lr);;

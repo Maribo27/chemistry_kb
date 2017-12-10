@@ -1,0 +1,367 @@
+salt_solution
+=> nrel_main_idtf:
+	[раствор солей](* <- lang_ru;; *);
+	[salt solution](* <- lang_en;; *);;
+amphoteric_metal
+=> nrel_main_idtf:
+	[амфотерный металл](* <- lang_ru;; *);
+	[amphoteric metal](* <- lang_en;; *);;
+industry
+=> nrel_main_idtf:
+	[промышленность](* <- lang_ru;; *);
+	[industry](* <- lang_en;; *);;
+statement_of_defining_type
+=> nrel_main_idtf:
+	[утверждение определяющего типа](* <- lang_ru;; *);
+	[statement of defining type](* <- lang_en;; *);;
+aqueous_solution
+=> nrel_main_idtf:
+	[водный раствор](* <- lang_ru;; *);
+	[aqueous solution](* <- lang_en;; *);;
+strong_basis
+=> nrel_main_idtf:
+	[сильное основание](* <- lang_ru;; *);
+	[strong basis](* <- lang_en;; *);;
+water_vapor
+=> nrel_main_idtf:
+	[водяной пар](* <-lang_ru;; *);
+	[water vapor](* <-lang_en;; *);;
+liquid_ammonia
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[жидкий аммиак](* <-lang_ru;; *);
+	[liquid ammonia](* <-lang_en;; *);;
+
+solid_ammonia
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[твёрдый аммиак](* <-lang_ru;; *);
+	[solid ammonia](* <-lang_en;; *);;
+
+reducing_property
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[восстановительное свойство](* <-lang_ru;; *);
+	[reducing property](* <-lang_en;; *);;
+carbolic_acid
+=> nrel_main_idtf:
+	[карболовая кислота](* <- lang_ru;; *);
+	[carbolic acid](* <- lang_en;; *);;
+iodine_solution
+=> nrel_main_idtf:
+	[раствор йода](* <- lang_ru;; *);
+	[iodine solution](* <- lang_en;; *);;
+germicide_antiseptic
+=> nrel_main_idtf:
+	[гермицидный антисептик](* <- lang_ru;; *);
+	[germicide antiseptic](* <- lang_en;; *);;
+bacteriostatic_antiseptic
+=> nrel_main_idtf:
+	[бактериостатический антисептик](* <- lang_ru;; *);
+	[bacteriostatic antiseptic](* <- lang_en;; *);;
+blood
+=> nrel_main_idtf:
+	[кровь](* <- lang_ru;; *);
+	[blood](* <- lang_en;; *);;
+antifouling_agents
+=> nrel_main_idtf:
+	[противогнилостные средства](* <- lang_ru;; *);
+	[antifouling agents](* <- lang_en;; *);;
+weak_base
+=> nrel_main_idtf:
+	[слабое основание](* <-lang_ru;; *);
+	[weak base](* <-lang_en;; *);;
+strong_base
+=> nrel_main_idtf:
+	[сильное основание](* <-lang_ru;; *);
+	[strong base](* <-lang_en;; *);;
+asphyxiant_gas
+=> nrel_main_idtf:
+	[удушающий газ](* <- lang_ru;; *);
+	[asphyxiant gas](* <- lang_en;; *);;
+cryosurgery
+=> nrel_main_idtf:
+	[криохирургия](* <- lang_ru;; *);
+	[cryosurgery](* <- lang_en;; *);;
+chemical_stability
+=> nrel_main_idtf:
+	[химическая стабильность](* <-lang_ru;; *);
+	[chemical stability](* <-lang_en;; *);;
+propane
+=> nrel_main_idtf:
+	[пропан](* <-lang_ru;; *);
+	[propane](* <-lang_en;; *);;
+ethylene
+=> nrel_main_idtf:
+	[этилен](* <-lang_ru;; *);
+	[ethylene](* <-lang_en;; *);;
+nitrous_oxide
+=> nrel_main_idtf:
+	[закись азота](* <-lang_ru;; *);
+	[nitrous oxide](* <-lang_en;; *);;
+sulfurous_anhydride
+=> nrel_main_idtf:
+	[сернистый ангидрид](* <-lang_ru;; *);
+	[sulfurous anhydride](* <-lang_en;; *);;
+methyl_chloride
+=> nrel_main_idtf:
+	[хлористый метил](* <-lang_ru;; *);
+	[methyl chloride](* <-lang_en;; *);;
+ethyl_chloride
+=> nrel_main_idtf:
+	[хлористый этил](* <-lang_ru;; *);
+	[ethyl chloride](* <-lang_en;; *);;
+condensation
+=> nrel_main_idtf:
+	[конденсация](* <-lang_ru;; *);
+	[condensation](* <-lang_en;; *);;
+heat
+=> nrel_main_idtf:
+	[теплота](* <-lang_ru;; *);
+	[heat](* <-lang_en;; *);;
+energy_level
+=> nrel_main_idtf:
+	[энергетический уровень](* <- lang_ru;; *);
+	[energy level](* <- lang_en;; *);;
+oxidoreductase
+=> nrel_main_idtf:
+	[оксидоредуктаз](* <- lang_ru;; *);
+	[oxidoreductase](* <- lang_en;; *);;
+transferase
+=> nrel_main_idtf:
+	[трансфераз](* <- lang_ru;; *);
+	[transferase](* <- lang_en;; *);;
+hydrolase
+=> nrel_main_idtf:
+	[гидролаз](* <- lang_ru;; *);
+	[hydrolase](* <- lang_en;; *);;
+lyase
+=> nrel_main_idtf:
+	[лиаз](* <- lang_ru;; *);
+	[lyase](* <- lang_en;; *);;
+isomerase
+=> nrel_main_idtf:
+	[изомераз](* <- lang_ru;; *);
+	[isomerase](* <- lang_en;; *);;
+ligase
+=> nrel_main_idtf:
+	[лигаз](* <- lang_ru;; *);
+	[ligase](* <- lang_en;; *);;
+magnetite
+=> nrel_main_idtf:
+	[магнетит](* <-lang_ru;; *);
+	[magnetite](* <-lang_en;; *);;
+limonite
+=> nrel_main_idtf:
+	[лимонит](* <-lang_ru;; *);
+	[limonite](* <-lang_en;; *);;
+siderite
+=> nrel_main_idtf:
+	[сидерит](* <-lang_ru;; *);
+	[siderite](* <-lang_en;; *);;
+hydrothermal_veins
+=> nrel_main_idtf:
+	[гидротермальные жилы](* <-lang_ru;; *);
+	[hydrothermal veins](* <-lang_en;; *);;
+color_brownish_red
+=> nrel_main_idtf:
+	[коричнево-красный цвет](* <-lang_ru;; *);
+	[brownish-red color](* <-lang_en;; *);;
+color_metallic_gray
+=> nrel_main_idtf:
+	[металлический серый цвет](* <-lang_ru;; *);
+	[metallc gray color](* <-lang_en;; *);;
+iron_ore
+=> nrel_main_idtf:
+	[железная руда](* <-lang_ru;; *);
+	[iron ore](* <-lang_en;; *);;
+nrel_hemoglobin_value
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[содержание гемоглобина*](* <- lang_ru;; *);
+	[hemoglobin value*](* <- lang_en;; *);;
+rrel_gram_per_mole
+=> nrel_main_idtf:
+	[грамм на моль'](* <- lang_ru;; *);
+	[gram per mole'](* <- lang_en;; *);;
+cation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[катион](* <-lang_ru;; *);
+	[cation](* <-lang_en;; *);;
+simple_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[простой ион](* <-lang_ru;; *);
+	[simple ion](* <-lang_en;; *);;
+complex_ion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сложный ион](* <-lang_ru;; *);
+	[complex ion](* <-lang_en;; *);;
+particle
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[частица](* <-lang_ru;; *);
+	[particle](* <-lang_en;; *);;
+ethylene_oxide
+=> nrel_main_idtf:
+	[этиленоксид](* <-lang_ru;; *);
+	[ethylene oxide](* <-lang_en;; *);;
+acrylic_acid
+=> nrel_main_idtf:
+	[акриловая кислота](* <-lang_ru;; *);
+	[acrylic acid](* <-lang_en;; *);;
+bertolet
+=> nrel_main_idtf:
+	[бертолетова соль](* <-lang_ru;; *);
+	[bertolet](* <-lang_en;; *);;
+strong_oxidizer
+=> nrel_main_idtf:
+	[сильный окислитель](* <-lang_ru;; *);
+	[strong oxidizer](* <-lang_en;; *);;
+oil_industry
+=> nrel_main_idtf:
+	[нефтяная промышленность](* <-lang_ru;; *);
+	[oil industry](* <-lang_en;; *);;
+citrate
+=> nrel_main_idtf:
+	[цитрат](* <-lang_ru;; *);
+	[citrate](* <-lang_en;; *);;
+ether
+=> nrel_main_idtf:
+	[эфир](* <-lang_ru;; *);
+	[ether](* <-lang_en;; *);;
+carboxylic_acid
+=> nrel_main_idtf:
+	[карбоновая кислота](* <-lang_ru;; *);
+	[carboxylic acid](* <-lang_en;; *);;
+biochemical_process
+=> nrel_main_idtf:
+	[биохимический процесс](* <-lang_ru;; *);
+	[biochemical process](* <-lang_en;; *);;
+alcohol
+=> nrel_main_idtf:
+	[спирт](* <- lang_ru;; *);
+	[alcohol](* <- lang_en;; *);;
+hydrocarbon
+=> nrel_main_idtf:
+	[углеводород](* <- lang_ru;; *);
+	[hydrocarbon](* <- lang_en;; *);;
+electricity
+=> nrel_main_idtf:
+	[электрический ток](* <- lang_ru;; *);
+	[electricity](* <- lang_en;; *);;
+chemical_solid
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[химическое тело](* <-lang_ru;; *);
+	[chemical_solid](* <-lang_en;; *);;
+
+nrel_positive_charge
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[положительный заряд*](* <-lang_ru;; *);
+	[positive charge*](* <-lang_en;; *);;
+
+nrel_negative_charge
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[отрицательный заряд*](* <-lang_ru;; *);
+	[negative charge*](* <-lang_en;; *);;
+nrel_electron_density
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[электронная плотность*](* <- lang_ru;; *);
+	[electron density*](* <- lang_en;; *);;
+nrel_homogeneous_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[homogeneous reaction*] (*<- lang_en;;*);
+		[гомогенная реакция*] (*<- lang_ru;;*);;
+nrel_heterogeneous_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[heterogeneous reaction*] (*<- lang_en;;*);
+		[гетерогенная реакция*] (*<- lang_ru;;*);;
+nrel_exothermic_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[exothermic reaction*] (*<- lang_en;;*);
+		[экзотермическая реакция*] (*<- lang_ru;;*);;
+nrel_endothermic_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[endothermic reaction*] (*<- lang_en;;*);
+		[эндотермическая реакция*] (*<- lang_ru;;*);;
+nrel_reversible_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[reversible reaction*] (*<- lang_en;;*);
+		[обратимая реакция*] (*<- lang_ru;;*);;
+nrel_irreversible_reaction
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[irreversible reaction*] (*<- lang_en;;*);
+		[необратимая реакция*] (*<- lang_ru;;*);;
+
+
+nrel_substitution
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[substitution reaction*] (*<- lang_en;;*);
+		[реакция замещения*] (*<- lang_ru;;*);;
+oligopeptide
+=> nrel_main_idtf:
+	[олигопептид](* <-lang_ru;; *);
+	[oligopeptide](* <-lang_en;; *);;
+polypeptide
+=> nrel_main_idtf:
+	[полипептид](* <-lang_ru;; *);
+	[polypeptide](* <-lang_en;; *);;
+periodic_system
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[периодическая система](* <-lang_ru;; *);
+	[periodic system](* <-lang_en;; *);;
+transuranium
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[трансурановый элемент](* <-lang_ru;; *);
+	[transuranium](* <-lang_en;; *);;
+artificial_radioactive_element
+=> nrel_main_idtf:
+[искусственный радиоактивный элемент](* <-lang_ru;; *);
+	[artificial radioactive element](* <-lang_en;; *);;
+actinide
+=> nrel_main_idtf:
+[актинид](* <-lang_ru;; *);
+	[actinide](* <-lang_en;; *);;
+perfumery
+=> nrel_main_idtf:
+	[парфюмерия](* <-lang_ru;; *);
+	[perfumery](* <-lang_en;; *);;
+ecology
+=> nrel_main_idtf:
+	[экология](* <-lang_ru;; *);
+	[ecology](* <-lang_en;; *);;
+nrel_odor_power
+=> nrel_main_idtf:
+	[сила запаха*](* <-lang_ru;; *);
+	[odor power*](* <-lang_en;; *);;
+oldfactory_receptors
+=> nrel_main_idtf:
+	[рецепторы обоняния](* <-lang_ru;; *);
+	[oldfactory receptors](* <-lang_en;; *);;
+hypotonic_thermal_water
+=> nrel_main_idtf:
+	[гипотоническая термальная вода](* <- lang_ru;; *);
+	[hypotonic thermal water](* <- lang_en;; *);;
+isotonic_thermal_water
+=> nrel_main_idtf:
+	[изотоническая термальная вода](* <- lang_ru;; *);
+	[isotonic thermal water](* <- lang_en;; *);;
+hypertensive_thermal_water
+=> nrel_main_idtf:
+	[гипертоническая термальная вода](* <- lang_ru;; *);
+	[hypertensive thermal water](* <- lang_en;; *);;

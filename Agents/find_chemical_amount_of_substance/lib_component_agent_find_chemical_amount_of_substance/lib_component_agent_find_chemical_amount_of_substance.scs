@@ -1,0 +1,30 @@
+lib_component_agent_find_chemical_amount_of_substance
+=> nrel_main_idtf:
+	[Компонент библиотеки. SC-агент поиск химического количества вещества]
+	(* <- lang_ru;; *);
+	[Library component. SC-agent find chemical amount of substance]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_chemical_amount_of_substance; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_chemical_amount_of_substance; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_Main_concept.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+

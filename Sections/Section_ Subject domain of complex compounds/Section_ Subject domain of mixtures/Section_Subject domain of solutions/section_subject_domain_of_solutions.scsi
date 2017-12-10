@@ -49,8 +49,7 @@ concentrated_solution
 		=> nrel_format: format_html;;
 		*);;
 		*);;
-	*);
-<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+	*);;
 
 Definition_of_concentrated_solution
 => nrel_main_idtf:
@@ -143,6 +142,12 @@ Definition_of_unsaturated_solution
 				
 			*);;
 
+nrel_concentration
+<- sc_node_norole_relation;
+        => nrel_main_idtf:
+                [concentration*](*<- lang_en;;*);
+                [концентрация*](*<- lang_ru;;*);;
+
 
 saturated_solution
 <- sc_node_not_relation;
@@ -213,9 +218,7 @@ supersaturated_solution
 		=> nrel_format: format_html;;
 		*);;
 		*);;
-	*);
-	
-<- rrel_key_sc_element: section_the_solutions_and_the_solubility;;
+	*);;
 
 Definition_of_supersaturated_solution
 => nrel_main_idtf:

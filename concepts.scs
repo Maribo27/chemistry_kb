@@ -1,46 +1,3 @@
-salt_solution
-=> nrel_main_idtf:
-	[раствор солей](* <- lang_ru;; *);
-	[salt solution](* <- lang_en;; *);;
-amphoteric_metal
-=> nrel_main_idtf:
-	[амфотерный металл](* <- lang_ru;; *);
-	[amphoteric metal](* <- lang_en;; *);;
-industry
-=> nrel_main_idtf:
-	[промышленность](* <- lang_ru;; *);
-	[industry](* <- lang_en;; *);;
-	//?????????
-statement_of_defining_type
-=> nrel_main_idtf:
-	[утверждение определяющего типа](* <- lang_ru;; *);
-	[statement of defining type](* <- lang_en;; *);;
-aqueous_solution
-=> nrel_main_idtf:
-	[водный раствор](* <- lang_ru;; *);
-	[aqueous solution](* <- lang_en;; *);;
-
-tin_oxide//(олово)
-	=>nrel_main_idtf:[оксид олова](* <- lang_ru;; *);
-	=>nrel_main_idtf:[tin oxide](* <- lang_en;; *);
-	=>nrel_idtf:[SnO](*<-lang_en;;*);;
-	
-lead_oxide//(свинец)
-	=>nrel_main_idtf:[оксид свинца](* <- lang_ru;; *);
-	=>nrel_main_idtf:[lead oxide](* <- lang_en;; *);
-	=>nrel_idtf:[PbO](*<-lang_en;;*);;
-	
-chromium_oxide_3//
-	=>nrel_main_idtf:
-	[оксид хрома(III)]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[chromium oxide(III)]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Cr2O3]
-	(*<-lang_en;;*);;
-	
 nickel_sulphide_1//
 	=>nrel_main_idtf:
 	[сульфид никеля(I)]
@@ -50,164 +7,6 @@ nickel_sulphide_1//
 	(* <- lang_en;; *);
 	=>nrel_idtf:
 	[Ni2S]
-	(*<-lang_en;;*);;
-	
-lithium_oxide//
-	=>nrel_main_idtf:
-	[оксид лития]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[lithium oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Li2O]
-	(*<-lang_en;;*);;
-	
-sodium_oxide//
-	=>nrel_main_idtf:
-	[оксид натрия]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[sodium oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Na2O]
-	(*<-lang_en;;*);;
-	
-thallium_oxide_1//
-	=>nrel_main_idtf:
-	[оксид таллия (I)]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[thallium oxide(I)]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Na2O]
-	(*<-lang_en;;*);;
-	
-thallium_oxide_3//
-	=>nrel_main_idtf:
-	[оксид таллия (III)]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[thallium oxide(III)]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Na2O]
-	(*<-lang_en;;*);;
-	
-beryllium_oxide
-	=>nrel_main_idtf:
-	[оксид бериллия]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[beryllium oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[BeO]
-	(*<-lang_en;;*);;
-	
-strontium_oxide
-	=>nrel_main_idtf:
-	[оксид стронция]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[strontium oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[SrO]
-	(*<-lang_en;;*);;
-	
-aluminum_oxide
-	=>nrel_main_idtf:
-	[оксид аллюминия]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[aluminum oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Al2O3]
-	(*<-lang_en;;*);;
-	
-gallium_oxide
-	=>nrel_main_idtf:
-	[оксид галлия]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[gallium oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Ga2O3]
-	(*<-lang_en;;*);;
-	
-indium_oxide
-	=>nrel_main_idtf:
-	[оксид индия]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[indium oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[In2O3]
-	(*<-lang_en;;*);;
-	
-cadmium_oxide
-	=>nrel_main_idtf:
-	[оксид кадмия]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[cadmium oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[CdO]
-	(*<-lang_en;;*);;
-	
-iron_oxide_2
-	=>nrel_main_idtf:
-	[оксид железа(II)]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[iron oxide(II)]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[FeO]
-	(*<-lang_en;;*);
-	[оксид ферума(II)]
-	(* <- lang_ru;; *);;
-	
-iron_oxide_3
-	=>nrel_main_idtf:
-	[оксид железа(III)]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[iron oxide(III)]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[Fe2O3]
-	(*<-lang_en;;*);
-	[оксид ферума(III)]
-	(* <- lang_ru;; *);;
-	
-zinc_oxide
-	=>nrel_main_idtf:
-	[оксид цинка]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[zinc oxide]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[ZnO]
-	(*<-lang_en;;*);;
-	
-nickel_oxide_2
-	=>nrel_main_idtf:
-	[оксид никеля(II)]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[nickel oxide(II)]
-	(* <- lang_en;; *);
-	=>nrel_idtf:
-	[NiO]
 	(*<-lang_en;;*);;
 	
 non_transition_metals
@@ -225,59 +24,10 @@ complex_hydroxide
 	=>nrel_main_idtf:
 	[complex hydroxide]
 	(* <- lang_en;; *);;
-	
-	
-white_color
-	=>nrel_main_idtf:
-	[белый цвет]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[white color ]
-	(* <- lang_en;; *);;
 
-
-color_reddish_brown
-	=>nrel_main_idtf:
-	[красновато-коричневый цвет]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[reddish-brown color]
-	(* <- lang_en;; *);;
-	
-color_light_green
-	=>nrel_main_idtf:
-	[светло-зеленный цвет]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[light green color]
-	(* <- lang_en;; *);;
-	
-color_green
-	=>nrel_main_idtf:
-	[зеленный цвет]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[green color]
-	(* <- lang_en;; *);;
-
-color_blue
-	=>nrel_main_idtf:
-	[голубой цвет]
-	(* <- lang_ru;; *);
-	=>nrel_main_idtf:
-	[blue color]
-	(* <- lang_en;; *);;
-	
-color->
-	white_color;	color_reddish_brown;	color_blue;	color_light_green;	color_green;;
-
-chemical_property => nrel_main_idtf:[химическое свойство](*<-lang_ru;;*);
+pure_metal
 	<- sc_node_not_relation;
-	<- parameter;;
-
-physical_property => nrel_main_idtf:[физическое свойство](*<-lang_ru;;*);
-	<- sc_node_not_relation;
-	<- parameter;;
+	=> nrel_main_idtf:[чистый метал](* <- lang_ru;; *);;
 
 radioactive_substance
 <- sc_node_not_relation;
@@ -299,14 +49,6 @@ hydrogen_chloride => nrel_main_idtf:
 
 lanthanide => nrel_main_idtf:
 	[лантанид](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-oxygen => nrel_main_idtf:
-	[кислород](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-hydrogen => nrel_main_idtf:
-	[водород](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 
 oligosaccharide => nrel_main_idtf:
@@ -352,12 +94,6 @@ hydrogen_fluoride
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[фтористый водород](* <- lang_ru;; *);;
 
-ionizing_radiation
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[ионизирующее излучение](* <- lang_ru;; *);;
-electron_capture
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[захват электрона](* <- lang_ru;; *);;
 organic_formation
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[органическое образование](* <- lang_ru;; *);;
@@ -373,95 +109,10 @@ chemical_industry
 nuclear_energy
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[ядерная энергетика](* <- lang_ru;; *);;
-rocket_technology
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[ракетная техника](* <- lang_ru;; *);;
-space_technology
-	<- sc_node_not_relation;
-	=> nrel_main_idtf:[космическая техника](* <- lang_ru;; *);;
-
 catalytic_process
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[каталитический процесс](* <- lang_ru;; *);;
-neutron_mass <- sc_node_not_relation;
-	=> nrel_main_idtf:[1,674 927 471(21)·10^(−27) кг](* <- lang_ru;; *);;
-neutron_spin <- sc_node_not_relation;
-	=> nrel_main_idtf:[0,5](* <- lang_ru;; *);;
-neutron_radius <- sc_node_not_relation;
-	=> nrel_main_idtf:[2,48 * 10^(-52) см](* <- lang_ru;; *);;
 
-
-cryogenic_equipment <- sc_node_not_relation;
-	=> nrel_main_idtf:[криогенная техника](* <- lang_ru;; *);;
-
-breathing_mixture <- sc_node_not_relation;
-	=> nrel_main_idtf:[дыхательная смесь](* <- lang_ru;; *);;
-
-welding <- sc_node_not_relation;
-	=> nrel_main_idtf:[сварка](* <- lang_ru;; *);;
-
-ocean <- sc_node_not_relation;
-	=> nrel_main_idtf:[океан](* <- lang_ru;; *);;
-sea <- sc_node_not_relation;
-	=> nrel_main_idtf:[море](* <- lang_ru;; *);;
-lake <- sc_node_not_relation;
-	=> nrel_main_idtf:[озеро](* <- lang_ru;; *);;
-river <- sc_node_not_relation;
-	=> nrel_main_idtf:[река](* <- lang_ru;; *);;
-ice <- sc_node_not_relation;
-	=> nrel_main_idtf:[лёд](* <- lang_ru;; *);;
-groundwater <- sc_node_not_relation;
-	=> nrel_main_idtf:[грунтовые воды](* <- lang_ru;; *);;
-ampholyte <- sc_node_not_relation;
-	=> nrel_main_idtf:[амфолит](* <- lang_ru;; *);
-	=> nrel_inclusion: acid; hydroxides;;
-
-light_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[лёгкая вода](* <- lang_ru;; *);;
-deuterium_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[дейтериевая вода](* <- lang_ru;; *);;
-tritium_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[тритиевая вода](* <- lang_ru;; *);;
-tritium_deuterium_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[тритий-дейтериевая вода](* <- lang_ru;; *);;
-tritium_protict_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[тритий-протиевая вода](* <- lang_ru;; *);;
-deuterium_protie_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[дейтерий-протиевая вода](* <- lang_ru;; *);;
-precipitation <- sc_node_not_relation;
-	=> nrel_main_idtf:[осадки](* <- lang_ru;; *);;
-
-soft_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[мягкая вода](* <- lang_ru;; *);;
-hard_water <- sc_node_not_relation;
-	=> nrel_main_idtf:[жёсткая вода](* <- lang_ru;; *);;
-
-cuprite => nrel_main_idtf:
-    [куприт](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-corundum => nrel_main_idtf:
-    [корунд](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-diaspora => nrel_main_idtf:
-    [диаспор](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-bauxite => nrel_main_idtf:
-    [боксит](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-spinel => nrel_main_idtf:
-    [шпинель](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-chromite => nrel_main_idtf:
-    [хромит](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-manganite => nrel_main_idtf:
-    [манганит](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-microlite => nrel_main_idtf:
-    [микролит](*<-lang_ru;;*);
-    <- sc_node_not_relation;;
-
-   
 water_vapor_conversion=> nrel_main_idtf:
 	[конверсия водяного пара](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
@@ -487,38 +138,11 @@ adsorption_selection=> nrel_main_idtf:
 	[адсорбционный отбор](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 
-purpurite=> nrel_main_idtf:
-	[пурпурит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 non_toxic_substance=> nrel_main_idtf:
 	[нетоксичное вещество](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-carnallit=> nrel_main_idtf:
-	[карналит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 taste=> nrel_main_idtf:
 	[вкус](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-bischofite=> nrel_main_idtf:
-	[бисковит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-kieserite=> nrel_main_idtf:
-	[кисерит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-epsomite=> nrel_main_idtf:
-	[кислород](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-cainite=> nrel_main_idtf:
-	[каинит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-magnesite=> nrel_main_idtf:
-	[магнезит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-dolomite=> nrel_main_idtf:
-	[доломит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-brucite=> nrel_main_idtf:
-	[брусит](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 thermal_receipt=> nrel_main_idtf:
 	[термическое получение](* <- lang_ru;; *);
@@ -541,36 +165,14 @@ thermoelectric_material=> nrel_main_idtf:
 calcification_reduction=> nrel_main_idtf:
 	[кальцификации](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-gas_nebula=> nrel_main_idtf:
-	[газовая туманность](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-solar_atmosphere=> nrel_main_idtf:
-	[солнечная атмосфера](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-hydrosphere=> nrel_main_idtf:
-	[гидросфера](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 flotation_method=> nrel_main_idtf:
 	[флотация](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 steels_alloying=> nrel_main_idtf:
 	[легирование стали](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-heating_element=> nrel_main_idtf:
-	[нагревательный элемент](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-incandescent_lamp=> nrel_main_idtf:
-	[лампа накаливания](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-	ammonium_nitrite=> nrel_main_idtf:
+ammonium_nitrite=> nrel_main_idtf:
 	[нитрит аммония](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-azide=> nrel_main_idtf:
-	[азид](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-cryotherapy=> nrel_main_idtf:
-	[криотерапия](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 petrochemistry=> nrel_main_idtf:
 	[нефтехимия](* <- lang_ru;; *);
@@ -590,47 +192,11 @@ carbothermic_method=> nrel_main_idtf:
 crystal_cell=> nrel_main_idtf:
 	[кристаллическая решётка](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-earths_crust=> nrel_main_idtf:
-	[земная кора](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 alloying=> nrel_main_idtf:
 	[легирование](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-magnets_manufacture=> nrel_main_idtf:
-	[производство магнитов](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-dielectric=> nrel_main_idtf:
-	[диэлектрик](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-neodymium_glass=> nrel_main_idtf:
-	[неодимовое стекло](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 smell=> nrel_main_idtf:
 	[запах](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-atmosphere=> nrel_main_idtf:
-	[атмосфера](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-cell=> nrel_main_idtf:
-	[клетка](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-signal_lamp=> nrel_main_idtf:
-	[сигнальная лампа](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-photocell=> nrel_main_idtf:
-	[фотоэлемент](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-rectifier=> nrel_main_idtf:
-	[выпрямитель](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-gas_laser=> nrel_main_idtf:
-	[газовый лазер](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-advertising=> nrel_main_idtf:
-	[реклама](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-adsorption=> nrel_main_idtf:
-	[адсорбция](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 low_temperature_rectification=> nrel_main_idtf:
 	[низкотемпературная ректификация](* <- lang_ru;; *);
@@ -651,71 +217,19 @@ potassium_chlorate=> nrel_main_idtf:
 inorganic_synthesis=> nrel_main_idtf:
 	[неорганический синтез](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-metal_compound=> nrel_main_idtf:
-	[металлическое соединение](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
+
 catalytic_process=> nrel_main_idtf:
 	[каталитический процесс](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
+
 transition_metal=> nrel_main_idtf:
 	[переходный металл](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 post_transition_metal=> nrel_main_idtf:
 	[пост-переходный металл](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-chalcophile=> nrel_main_idtf:
-	[халькофил](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-tissue=> nrel_main_idtf:
-	[ткань](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-skin=> nrel_main_idtf:
-	[кожа](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-erythrocyte=> nrel_main_idtf:
-	[эритроцит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-leukocyte=> nrel_main_idtf:
-	[лейкоцит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-muscle=> nrel_main_idtf:
-	[мышца](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-liver=> nrel_main_idtf:
-	[печень](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-pancreas=> nrel_main_idtf:
-	[поджелудочная железа](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-metabolism=> nrel_main_idtf:
-	[обмен веществ](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-immunity=> nrel_main_idtf:
-	[иммунитет](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-hormones_functioning=> nrel_main_idtf:
-	[функционирование гормонов](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-exchange_process=> nrel_main_idtf:
-	[обменный процесс](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 protein_synthesis=> nrel_main_idtf:
 	[синтез белка](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-regeneration=> nrel_main_idtf:
-	[регенерация](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-reproduction=> nrel_main_idtf:
-	[репродукция](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-cell_division=> nrel_main_idtf:
-	[деление клетки](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-cell_growth=> nrel_main_idtf:
-	[рост клетки](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-receptors_functioning=> nrel_main_idtf:
-	[функционирование рецепторов](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 alcohol_detoxification=> nrel_main_idtf:
 	[алкогольная детоксикация](* <- lang_ru;; *);
@@ -729,41 +243,8 @@ lithophile=> nrel_main_idtf:
 siderophile=> nrel_main_idtf:
 	[сидерофил](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-normal_evolution=> nrel_main_idtf:
-	[нормальное развитие](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-enzymatic_reaction=> nrel_main_idtf:
-	[ферментативная реакция](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-contact_dermatitis=> nrel_main_idtf:
-	[аллергия](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-lowering_of_blood_pressure=> nrel_main_idtf:
-	[снижение давления](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-vitiligo=> nrel_main_idtf:
-	[витилиго](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-cornified_tissue=> nrel_main_idtf:
-	[ороговевшая ткань](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-endemic=> nrel_main_idtf:
-	[эндемическое заболевание](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-parathyroid=> nrel_main_idtf:
-	[околощитовидная железа](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 atmophile=> nrel_main_idtf:
 	[атмофил](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-narcotic_effect=> nrel_main_idtf:
-	[наркотический эффект](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-neurological_high_pressure_syndrome=> nrel_main_idtf:
-	[синдром повышенного давления](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-blood_plasma=> nrel_main_idtf:
-	[плазма крови](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
 heavy_element=> nrel_main_idtf:
 	[тяжёлый элемент](* <- lang_ru;; *);
@@ -777,44 +258,7 @@ toxic_substance=> nrel_main_idtf:
 fractional_distillation=> nrel_main_idtf:
 	[фракционная перегонка](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-pyrolusite=> nrel_main_idtf:
-	[пиролюцит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-manganite=> nrel_main_idtf:
-	[манганит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-rhodochrosite=> nrel_main_idtf:
-	[родохрозит](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-psilomelan=> nrel_main_idtf:
-	[псиломелан](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-atomic_hydrogen_welding=> nrel_main_idtf:
-	[сварка атомарным водородом](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 
-coal => nrel_main_idtf:[уголь](*<-lang_ru;;*);;
-graphite => nrel_main_idtf:[графит](*<-lang_ru;;*);;
-paint => nrel_main_idtf:[краска](*<-lang_ru;;*);;
-pen => nrel_main_idtf:[ручка](*<-lang_ru;;*);;
-table => nrel_main_idtf:[стол](*<-lang_ru;;*);;
-plastic => nrel_main_idtf:[пластик](*<-lang_ru;;*);;
-rubber => nrel_main_idtf:[резина](*<-lang_ru;;*);;
-paper => nrel_main_idtf:[бумага](*<-lang_ru;;*);;
-carbonated_water => nrel_main_idtf:[газированная вода](*<-lang_ru;;*);;
-soap => nrel_main_idtf:[мыло](*<-lang_ru;;*);;
-wood => nrel_main_idtf:[древесина](*<-lang_ru;;*);;
-lead => nrel_main_idtf:[грифель](*<-lang_ru;;*);;
-ink => nrel_main_idtf:[чернила](*<-lang_ru;;*);;
-polymer => nrel_main_idtf:[полимер](*<-lang_ru;;*);;
-caoutchouc => nrel_main_idtf:[каучук](*<-lang_ru;;*);;
-vulcanizing_agent => nrel_main_idtf:[вулканизирующий агент](*<-lang_ru;;*);;
-vulcanization_accelerator => nrel_main_idtf:[ускоритель вулканизации](*<-lang_ru;;*);;
-activator => nrel_main_idtf:[активатор](*<-lang_ru;;*);;
-antioxidant => nrel_main_idtf:[противостаритель](*<-lang_ru;;*);;
-active_filler => nrel_main_idtf:[активный наполнитель](*<-lang_ru;;*);;
-inactive_filler => nrel_main_idtf:[неактивный наполнитель](*<-lang_ru;;*);;
-dye => nrel_main_idtf:[краситель](*<-lang_ru;;*);;
 nonferrous_metal => nrel_main_idtf:[цветной металл](*<-lang_ru;;*);;
 cellulose => nrel_main_idtf:[целлюлоза](*<-lang_ru;;*);;
 glucose => nrel_main_idtf:[глюкоза](*<-lang_ru;;*);;
@@ -822,151 +266,19 @@ aspartame => nrel_main_idtf:[аспартам](*<-lang_ru;;*);;
 saccharin => nrel_main_idtf:[сахарин](*<-lang_ru;;*);;
 apple_acid => nrel_main_idtf:[яблочная кислота](*<-lang_ru;;*);;
 orthophosphoric_acid => nrel_main_idtf:[ортофосфорная кислота](*<-lang_ru;;*);;
-caffeine => nrel_main_idtf:[кофеин](*<-lang_ru;;*);;
-cyclamate => nrel_main_idtf:[цикломат](*<-lang_ru;;*);;
 fatty_acid => nrel_main_idtf:[жирная кислота](*<-lang_ru;;*);;
 surface_active_substance => nrel_main_idtf:[поверхностно-активное вещество](*<-lang_ru;;*);;
-structurant => nrel_main_idtf:[структурообразователь](*<-lang_ru;;*);;
-solvent => nrel_main_idtf:[сольвент](*<-lang_ru;;*);;
-stabilizer => nrel_main_idtf:[стабилизатор](*<-lang_ru;;*);;
-antibacterial_agent => nrel_main_idtf:[антибактериальное вещество](*<-lang_ru;;*);;
 glycerol => nrel_main_idtf:[глицерин](*<-lang_ru;;*);;
 lanolin => nrel_main_idtf:[ланолин](*<-lang_ru;;*);;
 lignin => nrel_main_idtf:[лигнин](*<-lang_ru;;*);;
 hemicellulose => nrel_main_idtf:[гемицеллюлоза](*<-lang_ru;;*);;
-clay => nrel_main_idtf:[глина](*<-lang_ru;;*);;
-sludge => nrel_main_idtf:[ил](*<-lang_ru;;*);;
-soot => nrel_main_idtf:[сажа](*<-lang_ru;;*);;
-starch => nrel_main_idtf:[крахмал](*<-lang_ru;;*);;
-kaolin => nrel_main_idtf:[каолин](*<-lang_ru;;*);;
-chalk => nrel_main_idtf:[мел](*<-lang_ru;;*);;
 calcium_carbonate => nrel_main_idtf:[карбонат кальция](*<-lang_ru;;*);;
 magnesium_carbonate => nrel_main_idtf:[карбонат магния](*<-lang_ru;;*);;
-quartz => nrel_main_idtf:[кварц](*<-lang_ru;;*);;
-calcite => nrel_main_idtf:[кальцит](*<-lang_ru;;*);;
-belemnite => nrel_main_idtf:[белемнит](*<-lang_ru;;*);;
-ammonite => nrel_main_idtf:[аммонит](*<-lang_ru;;*);;
-modifier => nrel_main_idtf:[модификатор](*<-lang_ru;;*);;
-preservative => nrel_main_idtf:[консервант](*<-lang_ru;;*);;
 
 bromination
 => nrel_main_idtf: 
 [бромирование](* <- lang_ru;; *);
 [bromination](* <- lang_en;; *);;
-
-photography
-=> nrel_main_idtf: 
-[фотография](* <- lang_ru;;	*);
-[photography](* <- lang_en;; *);;
-
-electronics
-=> nrel_main_idtf: 
-[электроника](* <- lang_ru;;	*);
-[electronics](* <- lang_en;;	*);;
-
-leather_industry
-=> nrel_main_idtf: 
-[кожевенная промышленность](* <- lang_ru;; *);
-[leather industry](* <- lang_en;; *);;
-
-textile_industry
-=> nrel_main_idtf: 
-[текстильная промышленность](* <- lang_ru;; *);
-[textile industry](* <- lang_en;; *);;
-
-flotation
-=> nrel_main_idtf: 
-[флотирование](* <- lang_ru;; *);
-[flotation](* <- lang_en;; *);;
-
-war_industry
-=> nrel_main_idtf: 
-[военная промышленность](* <- lang_ru;;	*);
-[war industry](* <- lang_en;;	*);;
-
-mining
-=> nrel_main_idtf: 
-[горное дело](* <- lang_ru;;	*);
-[mining](* <- lang_en;;	*);;
-
-construction
-=> nrel_main_idtf: 
-[строительство](* <- lang_ru;;	*);
-[construction](* <- lang_en;;	*);;
-
-seismic_survey
-=> nrel_main_idtf: 
-[сейсморазведка](* <- lang_ru;;	*);
-[seismic survey](* <- lang_en;;	*);;
-
-material_processing
-=> nrel_main_idtf: 
-[обработка материалов](* <- lang_ru;;	*);
-[material processing](* <- lang_en;;	*);;
-
-fertilizer
-=> nrel_main_idtf: 
-[удобрения](* <- lang_ru;;	*);
-[fertilizer](* <- lang_en;;	*);;
-
-medicine
-=> nrel_main_idtf: 
-[медицина](* <- lang_ru;;	*);
-[medicine](* <- lang_en;;	*);;
-
-metallurgy
-=> nrel_main_idtf: 
-[металлургия]
-(* <- lang_ru;;	*);
-[metallurgy]
-(* <- lang_en;;	*);;
-
-agriculture <- sc_node_not_relation;
-	=> nrel_main_idtf:[земледелие](* <- lang_ru;; *);;
-cooking <- sc_node_not_relation;
-	=> nrel_main_idtf:[приготовление пищи](* <- lang_ru;; *);;
-heat_transfer_agent <- sc_node_not_relation;
-	=> nrel_main_idtf:[теплоноситель](* <- lang_ru;; *);;
-moderator <- sc_node_not_relation;
-	=> nrel_main_idtf:[замедлитель](* <- lang_ru;; *);;
-tool <- sc_node_not_relation;
-	=> nrel_main_idtf:[инструмент](* <- lang_ru;; *);;
-grease <- sc_node_not_relation;
-	=> nrel_main_idtf:[смазка](* <- lang_ru;; *);;
-
-chemical_industry=> nrel_main_idtf:
-	[химическая промышленность](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-food_industry=> nrel_main_idtf:
-	[пищевая промышленность](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-margarine_production=> nrel_main_idtf:
-	[производство маргарина](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-food_additive_E949=> nrel_main_idtf:
-	[пищевая добавка E949](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-meteorology=> nrel_main_idtf:
-	[метеорология](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-rocket_fuel=> nrel_main_idtf:
-	[ракетное топливо](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-electric_power_industry=> nrel_main_idtf:
-	[электроэнергетика](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-aeronautics_filling=> nrel_main_idtf:
-	[аэронавтика](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-breathing_mixture=> nrel_main_idtf:
-	[дыхательная смесь](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-geology=> nrel_main_idtf:
-	[геология](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
-
-
 
 nrel_ionic_bond
 	=> nrel_main_idtf: 
@@ -1010,9 +322,6 @@ proton
 metal
 	=> nrel_main_idtf: 
 		[металл](*<- lang_ru;;*);;
-foam
-	=> nrel_main_idtf: 
-		[пена](*<- lang_ru;;*);;
 electron_shell
 	=> nrel_main_idtf: 
 		[электронная оболочка](*<- lang_ru;;*);;
@@ -1022,117 +331,13 @@ electron
 electrolytic_dissociation
 	=> nrel_main_idtf: 
 		[электролитическая диссоциация](*<- lang_ru;;*);;
-quantum_mechanics 
-	=> nrel_main_idtf: 
-		[квантовая механика](*<- lang_ru;;*);;
 neutralization_reaction
 	=> nrel_main_idtf: 
 		[реакция нейтрализации](*<- lang_ru;;*);;
 
-molar_mass
-	=> nrel_main_idtf: 
-		[молярная масса](*<- lang_ru;;*);;
-functional_group
-	=> nrel_main_idtf: 
-		[функциональная группа](*<- lang_ru;;*);;
-atomic_number
-	=> nrel_main_idtf: 
-		[атомный номер](*<- lang_ru;;*);;
-
-molybdenite 
-	=> nrel_main_idtf: 
-		[молибденит](*<- lang_ru;;*);;
-
-chalcopyrite 
-	=> nrel_main_idtf: 
-		[халькопирит](*<- lang_ru;;*);;
-
-cassiterite	
-	=> nrel_main_idtf: 
-		[касситерит](*<- lang_ru;;*);;
-
 radioactive_indicator 
 	=> nrel_main_idtf: 
 		[радиоактивный индикатор](*<- lang_ru;;*);;
-
-radioisotope_generator 
-	=> nrel_main_idtf: 
-		[радиоизотопный источник энергии](*<- lang_ru;;*);;
-
-quantity 
-	=> nrel_main_idtf: 
-		[величина](*<- lang_ru;;*);;
-
-nugget 
-	=> nrel_main_idtf: [самородок](*<- lang_ru;;*);;
-aguilarite 
-	=> nrel_main_idtf: [агвиларит](*<- lang_ru;;*);;
-pyrargyrite 
-	=> nrel_main_idtf: [пираргирит](*<- lang_ru;;*);;
-chlorargyrite 
-	=> nrel_main_idtf: [кераргирит](*<- lang_ru;;*);;
-proustite 
-	=> nrel_main_idtf: [прустит](*<- lang_ru;;*);;
-argentite 
-	=> nrel_main_idtf: [аргентит](*<- lang_ru;;*);;
-electrum 
-	=> nrel_main_idtf: [электрум](*<- lang_ru;;*);;
-money 
-	=> nrel_main_idtf: [деньги](*<- lang_ru;;*);;
-jewelry 
-	=> nrel_main_idtf: [ювелирное изделие](*<- lang_ru;;*);;
-disinfection 
-	=> nrel_main_idtf: [дезинфекция](*<- lang_ru;;*);;
-battery 
-	=> nrel_main_idtf: [аккумулятор](*<- lang_ru;;*);;
-
-nepheline => nrel_main_idtf: [нефелин](*<- lang_ru;;*);;
-chrysoberyl => nrel_main_idtf: [хризоберилл](*<- lang_ru;;*);;
-beryl => nrel_main_idtf: [берилл](*<- lang_ru;;*);;
-kaolinite => nrel_main_idtf: [каолинит](*<- lang_ru;;*);;
-feldspar => nrel_main_idtf: [полевой шпат](*<- lang_ru;;*);;
-alunite => nrel_main_idtf: [алунит](*<- lang_ru;;*);;
-
-aircraft_industry => nrel_main_idtf: [авиационная промышленность](*<- lang_ru;;*);;
-aerospace_industry => nrel_main_idtf: [авиакосмическая промышленность](*<- lang_ru;;*);;
-flatware => nrel_main_idtf: [столовый прибор](*<- lang_ru;;*);;
-
-radiochemical_research => nrel_main_idtf: [радиохимическое исследование](*<- lang_ru;;*);;
-inspection_tool => nrel_main_idtf: [контрольно-измерительный  прибор](*<- lang_ru;;*);;
-nuclear_fuel => nrel_main_idtf: [ядерное топливо](*<- lang_ru;;*);;
-
-air => nrel_main_idtf: [воздух](*<- lang_ru;;*);;
-
-laser => nrel_main_idtf: [лазер](*<- lang_ru;;*);;
-firefighting => nrel_main_idtf: [пожаротушение](*<- lang_ru;;*);;
-diving => nrel_main_idtf: [дайвинг](*<- lang_ru;;*);;
-plasmatron => nrel_main_idtf: [плазматрон](*<- lang_ru;;*);;
-
-loellingite => nrel_main_idtf: [леллингит](*<- lang_ru;;*);;
-scorodite => nrel_main_idtf: [скородит](*<- lang_ru;;*);;
-realgar => nrel_main_idtf: [реальгар](*<- lang_ru;;*);;
-orpiment => nrel_main_idtf: [аурипигмент](*<- lang_ru;;*);;
-arsenopyrit => nrel_main_idtf: [арсенопирит](*<- lang_ru;;*);;
-
-painting => nrel_main_idtf: [живопись](*<- lang_ru;;*);;
-pyrotechnics => nrel_main_idtf: [пиротехника](*<- lang_ru;;*);;
-military_industry => nrel_main_idtf: [военная промышленность](*<- lang_ru;;*);;
-
-none_in_nature => nrel_main_idtf: [в природе нет](*<- lang_ru;;*);;
-
-bismuthinite => nrel_main_idtf: [висмутин](*<- lang_ru;;*);;
-aikinite => nrel_main_idtf: [айкинит](*<- lang_ru;;*);;
-tetramorph => nrel_main_idtf: [тетрадимит](*<- lang_ru;;*);;
-cosalite => nrel_main_idtf: [козалит](*<- lang_ru;;*);;
-bismit => nrel_main_idtf: [бисмит](*<- lang_ru;;*);;
-bismuth => nrel_main_idtf: [бисмутит](*<- lang_ru;;*);;
-wittichenit => nrel_main_idtf: [виттихенит](*<- lang_ru;;*);;
-
-semiconductor => nrel_main_idtf: [полупроводник](*<- lang_ru;;*);;
-nuclear_radiation_detector => nrel_main_idtf: [детектор ядерного излучения](*<- lang_ru;;*);;
-nuclear_engineering => nrel_main_idtf: [ядерная энергетика](*<- lang_ru;;*);;
-pigment => nrel_main_idtf: [пигмент](*<- lang_ru;;*);;
-cosmetics => nrel_main_idtf: [косметика](*<- lang_ru;;*);;
 
 saccharin
 => nrel_main_idtf:
@@ -1146,34 +351,6 @@ sucrose
 	[сахароза]
 	(* <- lang_ru;;	*);
 	[sucrose]
-	(* <- lang_en;;	*);;
-
-auride
-=> nrel_main_idtf:
-	[аурид]
-	(* <- lang_ru;;	*);
-	[auride]
-	(* <- lang_en;;	*);;
-
-sweetener
-=> nrel_main_idtf:
-	[подсластитель]
-	(* <- lang_ru;;	*);
-	[sweetener]
-	(* <- lang_en;;	*);;
-
-polycrystal
-=> nrel_main_idtf:
-	[поликристалл]
-	(* <- lang_ru;;	*);
-	[polycrystal]
-	(* <- lang_en;;	*);;
-
-crystallite
-=> nrel_main_idtf:
-	[кристаллит]
-	(* <- lang_ru;;	*);
-	[crystallite]
 	(* <- lang_en;;	*);;
 
 sulfamic_acid
@@ -1238,13 +415,6 @@ complex_salt
 	[комплексная соль]
 	(* <- lang_ru;; *);
 	[complex salt]
-	(* <- lang_en;; *);;
-
-nrel_crystallization
-=> nrel_main_idtf:
-	[кристаллизация*]
-	(* <- lang_ru;; *);
-	[crystallization*]
 	(* <- lang_en;; *);;
 
 phosphate

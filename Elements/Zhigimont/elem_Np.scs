@@ -54,7 +54,7 @@ elem_Np
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
+<- rrel_key_sc_element: neptunium_atom_picture
 (*
 	<- illustration;;
 	<- description_of_a_typical_instance;;

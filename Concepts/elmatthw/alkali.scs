@@ -1,8 +1,4 @@
-/*strong_base
-=> nrel_main_idtf:
-	[сильное основание](* <- lang_ru;; *);
-	[strong base](* <- lang_en;; *);;*/
-/*alkali
+alkali
 => nrel_main_idtf:
 	[щёлочь](* <- lang_ru;; *);
 	[alkali](* <- lang_en;; *);
@@ -27,7 +23,7 @@
 	<=nrel_using_constants:...
 	(*
 		->nrel_solubility;;
-		->strong_base;;
+		->strong_basis;;
 		->aqueous_solution;;
 		->ion;;
 	*);;
@@ -59,13 +55,13 @@ basic_hydroxide
 	<-statement;;
 	<-sc_common_type_statement;;
 
-	=>nrel_main_idtf: [Утв.(щёлочь, H2O, CO2, воздух, раствор, превращение*, карбонат)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Утв.(щёлочь, вода, CO2, воздух, раствор, превращение*, карбонат)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:
 			[В твёрдом состоянии все щёлочи поглощают H2O из воздуха, а также CO2 (также и в состоянии раствора) из воздуха, постепенно превращаясь в карбонаты.](* <-lang_ru;; *);;
 	*);;
-	-> rrel_key_sc_element: H2O;;
+	-> rrel_key_sc_element: water;;
 	-> rrel_key_sc_element: CO2;;
 	-> rrel_key_sc_element: air;;
 	-> rrel_key_sc_element: solution;;
