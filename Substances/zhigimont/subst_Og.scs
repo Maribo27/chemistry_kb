@@ -32,7 +32,6 @@ subst_Og
 *);
 
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Og;
 
 <- rrel_key_sc_element: receiving_Og_from_Kr
 (*
@@ -104,3 +103,5 @@ subst_Og
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Og -> elem_Og);;

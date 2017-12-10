@@ -32,7 +32,6 @@ subst_Mt
 *);
 
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Mt;
 
 
 <- rrel_key_sc_element: receiving_Mt
@@ -60,3 +59,5 @@ subst_Mt
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Mt -> elem_Mt);;
