@@ -3,8 +3,7 @@ subst_red_P
 <- sc_node_not_relation;
 => nrel_main_idtf: [красный фосфор] (* <- lang_ru;; *);
 => nrel_main_idtf: [red phosphorus] (* <- lang_en;; *);
-=> nrel_idtf: [Pn](*<- lang_en;;*);
-=> nrel_inclusion: elem_P;
+=> nrel_idtf: [P](*<- lang_en;;*);
 
 <- rrel_key_sc_element: definition_of_subst_red_P
 (* 
@@ -53,3 +52,5 @@ subst_red_P
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_red_P -> elem_P);;

@@ -4,7 +4,6 @@ subst_Sc
 => nrel_main_idtf: [скандий] (* <- lang_ru;; *);
 => nrel_main_idtf: [scandium] (* <- lang_en;; *);
 => nrel_idtf: [Sc](*<- lang_en;;*);
-=> nrel_inclusion: elem_Sc;
 
 <- rrel_key_sc_element: definition_of_subst_Sc
 (* 
@@ -132,3 +131,5 @@ subst_Sc
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Sc -> elem_Sc);;

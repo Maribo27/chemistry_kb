@@ -4,7 +4,6 @@ subst_Pb
 => nrel_main_idtf: [свинец] (* <- lang_ru;; *);
 => nrel_main_idtf: [plumbum] (* <- lang_en;; *);
 => nrel_idtf: [Pb](*<- lang_en;;*);
-=> nrel_inclusion: elem_Pb;
 
 <- rrel_key_sc_element: definition_of_subst_Pb
 (* 
@@ -132,3 +131,5 @@ subst_Pb
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Pb -> elem_Pb);;

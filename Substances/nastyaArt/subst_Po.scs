@@ -4,7 +4,6 @@ subst_Po
 => nrel_main_idtf: [полоний] (* <- lang_ru;; *);
 => nrel_main_idtf: [polonium] (* <- lang_en;; *);
 => nrel_idtf: [Po](*<- lang_en;;*);
-=> nrel_inclusion: elem_Po;
 
 <- rrel_key_sc_element: definition_of_subst_Po
 (* 
@@ -132,3 +131,5 @@ subst_Po
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Po -> elem_Po);;

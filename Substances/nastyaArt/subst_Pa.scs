@@ -4,7 +4,6 @@ subst_Pa
 => nrel_main_idtf: [протактиний] (* <- lang_ru;; *);
 => nrel_main_idtf: [protactinium ] (* <- lang_en;; *);
 => nrel_idtf: [Pa](*<- lang_en;;*);
-=> nrel_inclusion: elem_Pa;
 
 <- rrel_key_sc_element: definition_of_subst_Pa
 (* 
@@ -132,3 +131,5 @@ subst_Pa
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Pa -> elem_Pa);;

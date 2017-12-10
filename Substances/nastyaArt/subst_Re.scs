@@ -4,7 +4,6 @@ subst_Re
 => nrel_main_idtf: [рений] (* <- lang_ru;; *);
 => nrel_main_idtf: [rhenium] (* <- lang_en;; *);
 => nrel_idtf: [Re](*<- lang_en;;*);
-=> nrel_inclusion: elem_Re;
 
 <- rrel_key_sc_element: definition_of_subst_Re
 (* 
@@ -132,3 +131,5 @@ subst_Re
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Re -> elem_Re);;

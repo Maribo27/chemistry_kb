@@ -4,7 +4,6 @@ subst_La
 => nrel_main_idtf: [лантан] (* <- lang_ru;; *);
 => nrel_main_idtf: [lanthanum] (* <- lang_en;; *);
 => nrel_idtf: [La](*<- lang_en;;*);
-=> nrel_inclusion: elem_La;
 
 <- rrel_key_sc_element: definition_of_subst_La
 (* 
@@ -132,3 +131,5 @@ subst_La
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_La -> elem_La);;

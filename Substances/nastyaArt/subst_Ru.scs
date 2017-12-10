@@ -4,7 +4,6 @@ subst_Ru
 => nrel_main_idtf: [рутений] (* <- lang_ru;; *);
 => nrel_main_idtf: [Ruthenium] (* <- lang_en;; *);
 => nrel_idtf: [Ru](*<- lang_en;;*);
-=> nrel_inclusion: elem_Ru;
 
 <- rrel_key_sc_element: definition_of_subst_Ru
 (* 
@@ -119,3 +118,5 @@ subst_Ru
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Ru -> elem_Ru);;

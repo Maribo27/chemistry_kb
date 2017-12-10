@@ -5,7 +5,6 @@ subst_Sb
 => nrel_main_idtf: [antimony] (* <- lang_en;; *);
 => nrel_idtf: [stibium](*<- lang_en;;*);
 => nrel_idtf: [Sb](*<- lang_en;;*);
-=> nrel_inclusion: elem_Sb;
 
 
 <- rrel_key_sc_element: definition_of_subst_Sb
@@ -134,3 +133,5 @@ subst_Sb
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Sb -> elem_Sb);;
