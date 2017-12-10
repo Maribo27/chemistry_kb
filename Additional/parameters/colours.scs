@@ -39,7 +39,7 @@ color_light_green
 color_green 
 	=> nrel_main_idtf: 
 		[зелёный цвет] (*<-lang_ru;;*);
-		[green color](* <- lang_en;; *);;
+		[green color](* <- lang_en;; *);
 	<- color;
 	<- sc_node_not_relation;;
 
