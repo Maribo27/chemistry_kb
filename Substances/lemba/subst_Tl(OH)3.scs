@@ -35,9 +35,11 @@ subst_TlOH3
 	 <=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-color_reddish_brown;
-	=>nrel_inclusion: elem_Tl;
-	=>nrel_inclusion: hydroxyl_group;
+	<-color_reddish_brown;;
+	atomic_multiplicity_one->(subst_TlOH3 ->elem_Tl);;
+	atomic_multiplicity_three->(subst_TlOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_TlOH3 ->elem_H);;
+subst_TlOH3
 //////////
 
 /*=> nrel_melting_temperature: ...

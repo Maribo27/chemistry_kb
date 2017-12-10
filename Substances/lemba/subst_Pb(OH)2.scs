@@ -35,9 +35,11 @@ subst_PbOH2
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Pb;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_PbOH2 ->elem_Pb);;
+	atomic_multiplicity_two->(subst_PbOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_PbOH2 ->elem_H);;
+subst_PbOH2
 //////////
 
 /*=> nrel_melting_temperature: ...

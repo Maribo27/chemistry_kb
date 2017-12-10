@@ -39,9 +39,11 @@ subst_NaOH
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<- solid;
-	<-color_white;
-	=> nrel_inclusion: elem_Na;
-	=> nrel_inclusion: hydroxyl_group;
+	<-color_white;;
+	atomic_multiplicity_one->(subst_NaOH ->elem_Tl);;
+	atomic_multiplicity_one->(subst_NaOH ->elem_O);;
+	atomic_multiplicity_one->(subst_NaOH ->elem_H);;
+subst_NaOH
 //////////
 => nrel_melting_temperature: ...
 (*

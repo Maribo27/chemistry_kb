@@ -35,9 +35,11 @@ subst_GaOH3
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Ga;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_GaOH3 ->elem_Ga);;
+	atomic_multiplicity_three->(subst_GaOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_GaOH3 ->elem_H);;
+subst_GaOH3
 //////////
 
 

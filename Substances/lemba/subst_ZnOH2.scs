@@ -35,9 +35,15 @@ subst_ZnOH2
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_Zn->elem_Zn);;
+	atomic_multiplicity_two->(subst_ZnOH2->elem_O);;
+	atomic_multiplicity_two->(subst_ZnOH2->elem_H);;
+subst_ZnOH2	
+	/*
 	=>nrel_inclusion: elem_Zn;
-	=>nrel_inclusion: hydroxyl_group;
+	=>nrel_inclusion: hydroxyl_group;*/
+	
 //////////
 
 => nrel_melting_temperature: ...

@@ -35,9 +35,11 @@ subst_CdOH2
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Cd;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_CdOH2 ->elem_Cd);;
+	atomic_multiplicity_two->(subst_CdOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_CdOH2 ->elem_H);;
+subst_CdOH2
 //////////
 
 => nrel_melting_temperature: ...

@@ -37,9 +37,11 @@ subst_FeOH2
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<- solid;
-	<-color_reddish_brown;
-	=> nrel_inclusion: elem_Fe;
-	=> nrel_inclusion: hydroxyl_group;
+	<-color_reddish_brown;;
+	atomic_multiplicity_one->(subst_FeOH2 ->elem_Fe);;
+	atomic_multiplicity_two->(subst_FeOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_FeOH2 ->elem_H);;
+subst_FeOH2
 //////////
 => nrel_decomposition_temperature: ...
 (*

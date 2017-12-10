@@ -35,9 +35,11 @@ subst_LiOH
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<- solid;
-	<-no_color;
-	=> nrel_inclusion: elem_Li;
-	=> nrel_inclusion: hydroxyl_group;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_LiOH ->elem_Li);;
+	atomic_multiplicity_one->(subst_LiOH ->elem_O);;
+	atomic_multiplicity_one->(subst_LiOH ->elem_H);;
+subst_LiOH
 //////////
 => nrel_melting_temperature: ...
 (*

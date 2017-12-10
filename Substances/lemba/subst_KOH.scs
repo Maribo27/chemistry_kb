@@ -39,9 +39,11 @@ subst_KOH
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<- solid;
-	<-no_color;
-	=> nrel_inclusion: elem_K;
-	=> nrel_inclusion: hydroxyl_group;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_KOH ->elem_K);;
+	atomic_multiplicity_one->(subst_KOH ->elem_O);;
+	atomic_multiplicity_one->(subst_KOH ->elem_H);;
+subst_KOH
 //////////
 => nrel_melting_temperature: ...
 (*

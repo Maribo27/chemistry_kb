@@ -36,9 +36,11 @@ subst_AgOH
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	//<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Ag;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_AgOH ->elem_Ag);;
+	atomic_multiplicity_one->(subst_AgOH ->elem_O);;
+	atomic_multiplicity_one->(subst_AgOH ->elem_H);;
+subst_AgOH
 //////////
 /*=> nrel_decomposition_temperature: ...
 (*

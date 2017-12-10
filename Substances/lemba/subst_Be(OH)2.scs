@@ -34,9 +34,11 @@ subst_BeOH2
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<-solid;//<- gel;
-	<-white_color;
-	=> nrel_inclusion: elem_Be;
-	=> nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_BeOH2 ->elem_Be);;
+	atomic_multiplicity_two->(subst_BeOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_BeOH2 ->elem_H);;
+subst_BeOH2
 //////////
 => nrel_decomposition_temperature: ...
 (*

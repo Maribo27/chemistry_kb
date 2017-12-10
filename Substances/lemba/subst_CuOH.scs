@@ -37,9 +37,11 @@ subst_CuOH
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-color_yellow;
-	=>nrel_inclusion: elem_Cu;
-	=>nrel_inclusion: hydroxyl_group;
+	<-color_yellow;;
+	atomic_multiplicity_one->(subst_CuOH ->elem_Cu);;
+	atomic_multiplicity_one->(subst_CuOH ->elem_O);;
+	atomic_multiplicity_one->(subst_CuOH ->elem_H);;
+subst_CuOH
 //////////
 => nrel_decomposition_temperature: ...
 (*

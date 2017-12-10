@@ -35,9 +35,11 @@ subst_NiOH
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-dark_blue_color;
-	=>nrel_inclusion: elem_Ni;
-	=>nrel_inclusion: hydroxyl_group;
+	<-dark_blue_color;;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_Ni);;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_O);;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_H);;
+subst_NiOH
 //////////
 /*
 => nrel_melting_temperature: ...

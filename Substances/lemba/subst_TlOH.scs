@@ -35,9 +35,14 @@ subst_TlOH
 	 <=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Tl;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	
+	atomic_multiplicity_one->(subst_TlOH->elem_Tl);;
+	atomic_multiplicity_one->(subst_TlOH->elem_O);;
+	atomic_multiplicity_one->(subst_TlOH->elem_H);;
+subst_TlOH
+	
+//////////
 //////////
 
 => nrel_decomposition_temperature: ...

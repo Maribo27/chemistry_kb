@@ -35,9 +35,11 @@ subst_SrOH2
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Sr;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_SrOH2 ->elem_Sr);;
+	atomic_multiplicity_two->(subst_SrOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_SrOH2 ->elem_H);;
+subst_SrOH2
 //////////
 
 => nrel_melting_temperature: ...

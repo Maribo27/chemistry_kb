@@ -34,9 +34,11 @@ subst_AlOH3
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Al;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_AlOH3 ->elem_Al);;
+	atomic_multiplicity_three->(subst_AlOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_AlOH3 ->elem_H);;
+subst_AlOH3
 //////////
 
 => nrel_melting_temperature: ...

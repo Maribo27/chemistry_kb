@@ -35,9 +35,11 @@ subst_RbOH
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<- solid;
-	<-no_color;
-	=> nrel_inclusion: elem_Rb;
-	=> nrel_inclusion: hydroxyl_group;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_RbOH ->elem_Rb);;
+	atomic_multiplicity_three->(subst_RbOH ->elem_O);;
+	atomic_multiplicity_three->(subst_RbOH ->elem_H);;
+subst_RbOH
 //////////
 => nrel_melting_temperature: ...
 (*

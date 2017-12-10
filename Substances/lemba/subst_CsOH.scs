@@ -34,9 +34,11 @@ subst_CsOH
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<- solid;
-	<-no_color;
-	=> nrel_inclusion: elem_Cs;
-	=> nrel_inclusion: hydroxyl_group;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_CsOH ->elem_Cs);;
+	atomic_multiplicity_one->(subst_CsOH ->elem_O);;
+	atomic_multiplicity_one->(subst_CsOH ->elem_H);;
+subst_CsOH
 //////////
 => nrel_melting_temperature: ...
 (*

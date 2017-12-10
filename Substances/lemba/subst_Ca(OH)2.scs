@@ -34,9 +34,11 @@ subst_CaOH2
 	 <=nrel_inclusion:basic_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Ca;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_CaOH2 ->elem_Tl);;
+	atomic_multiplicity_two->(subst_CaOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_CaOH2 ->elem_H);;
+subst_CaOH2
 //////////
 => nrel_decomposition_temperature: ...
 (*

@@ -35,9 +35,11 @@ subst_CrOH3
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;
-	=>nrel_inclusion: elem_Cr;
-	=>nrel_inclusion: hydroxyl_group;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_CrOH3 ->elem_Cr);;
+	atomic_multiplicity_three->(subst_CrOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_CrOH3 ->elem_H);;
+subst_CrOH3
 //////////
 
 /*=> nrel_melting_temperature: ...

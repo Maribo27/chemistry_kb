@@ -35,9 +35,11 @@ subst_NiOH2
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-color_light_green;
-	=>nrel_inclusion: elem_Ni;
-	=>nrel_inclusion: hydroxyl_group;
+	<-color_light_green;;
+	atomic_multiplicity_one->(subst_NiOH2 ->elem_Ni);;
+	atomic_multiplicity_two->(subst_NiOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_NiOH2 ->elem_H);;
+subst_NiOH2
 //////////
 
 => nrel_decomposition_temperature: ...

@@ -34,10 +34,12 @@ subst_MgOH2
 ///////////////////////////////////////////////////////////////////
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
-	<-solid;
+	<-solid;;
 	//<-white_color;
-	=>nrel_inclusion: elem_Mg;
-	=>nrel_inclusion: hydroxyl_group;
+	atomic_multiplicity_one->(subst_MgOH2 ->elem_Mg);;
+	atomic_multiplicity_two->(subst_MgOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_MgOH2 ->elem_H);;
+subst_MgOH2
 //////////
 
 => nrel_melting_temperature: ...
