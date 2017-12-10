@@ -50,7 +50,6 @@ subst_Rn
 => nrel_main_idtf: [радон] (* <- lang_ru;; *);
 => nrel_main_idtf: [radon] (* <- lang_en;; *);
 => nrel_idtf: [Rn](*<- lang_en;;*);
-=> nrel_inclusion: elem_Rn;
 
 <- rrel_key_sc_element: definition_of_subst_Rn
 (* 
@@ -160,7 +159,6 @@ subst_I
 => nrel_main_idtf: [иод] (* <- lang_ru;; *);
 => nrel_main_idtf: [iodium] (* <- lang_en;; *);
 => nrel_idtf: [I2](*<- lang_en;;*);
-=> nrel_inclusion: elem_I;
 
 <- rrel_key_sc_element: definition_of_subst_I
 (* 
@@ -368,7 +366,6 @@ subst_S
 => nrel_main_idtf: [сера] (* <- lang_ru;; *);
 => nrel_main_idtf: [sulfur] (* <- lang_en;; *);
 => nrel_idtf: [S](*<- lang_en;;*);
-=> nrel_inclusion: elem_S;
 
 <- rrel_key_sc_element: definition_of_subst_S
 (* 
@@ -521,7 +518,6 @@ subst_Xe
 	*);;
 *);
 
-=> nrel_inclusion: elem_Xe;
 
 => nrel_state_of_aggregation:...
 (*
@@ -599,7 +595,6 @@ subst_Te
 *);
 
 <- colour_silver;
-=> nrel_inclusion: elem_Te;
 
 => nrel_state_of_aggregation:...
 (*
@@ -721,7 +716,6 @@ subst_Si
 *);
 
 <- colour_dark_grey;
-=> nrel_inclusion: elem_Si;
 
 => nrel_state_of_aggregation:...
 (*
@@ -828,7 +822,6 @@ subst_Kr
 	*);;
 *);
 
-=> nrel_inclusion: elem_Kr;
 
 => nrel_state_of_aggregation:...
 (*
@@ -928,7 +921,6 @@ subst_F
 *);
 
 <- colour_pale_yellow;
-=> nrel_inclusion: elem_F;
 
 => nrel_state_of_aggregation:...
 (*
@@ -1685,7 +1677,6 @@ subst_H
 <= nrel_inclusion: chemical_substance;
 <- no_color;
 <- gas;
-=> nrel_inclusion: elem_H;
 <- non_toxic_substance;
 
 <- rrel_key_sc_element:...
@@ -1871,7 +1862,6 @@ subst_Ar
 => nrel_idtf:
 	[Ar](*<- lang_en;;*);
 	
-=> nrel_inclusion: elem_Ar;
 
 
 <- rrel_key_sc_element: definition_of_subst_Ar
@@ -2031,8 +2021,6 @@ subst_As
 => nrel_idtf:
 	[As](*<- lang_en;;*);
 	
-=> nrel_inclusion: elem_As;
-
 
 <- rrel_key_sc_element: definition_of_subst_As
 (*
@@ -2183,9 +2171,6 @@ subst_At
 => nrel_idtf:
 	[At](*<- lang_en;;*);
 	
-
-=> nrel_inclusion: elem_At;
-
 
 <- rrel_key_sc_element: definition_of_subst_At
 (*
@@ -2463,3 +2448,18 @@ subst_Cl
 		-> rrel_example:[Изотопы хлора:  <sup>28</sup>Сl, <sup>29</sup>Сl, <sup>30</sup>Сl, <sup>31</sup>Сl, <sup>32</sup>Сl, <sup>33</sup>Сl, <sup>34</sup>Сl, <sup>35</sup>Сl, <sup>36</sup>Сl, <sup>37</sup>Сl, <sup>38</sup>Сl, <sup>39</sup>Сl, <sup>40</sup>Сl, <sup>41</sup>Сl, <sup>42</sup>Сl, <sup>43</sup>Сl, <sup>44</sup>Сl, <sup>45</sup>Сl, <sup>46</sup>Сl, <sup>47</sup>Сl, <sup>48</sup>Сl, <sup>49</sup>Сl, <sup>50</sup>Сl, <sup>51</sup>Сl] (*<- lang_ru;; => nrel_format: format_html;;*);;
 	*);;
 *);;
+
+
+atomic_multiplicity_one -> (subst_Rn -> elem_Rn);
+(subst_S -> elem_S);
+(subst_Xe -> elem_Xe);
+(subst_Te -> elem_Te);
+(subst_Si -> elem_Si);
+(subst_Kr -> elem_Kr);
+(subst_F -> elem_F);
+(subst_Ar -> elem_Ar);
+(subst_As -> elem_As);
+(subst_At -> elem_At);;
+
+atomic_multiplicity_two -> (subst_I -> elem_I);
+(subst_H -> elem_H);;
