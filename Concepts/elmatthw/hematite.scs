@@ -1,31 +1,3 @@
-magnetite
-=> nrel_main_idtf:
-	[магнетит](* <-lang_ru;; *);
-	[magnetite](* <-lang_en;; *);;
-limonite
-=> nrel_main_idtf:
-	[лимонит](* <-lang_ru;; *);
-	[limonite](* <-lang_en;; *);;
-siderite
-=> nrel_main_idtf:
-	[сидерит](* <-lang_ru;; *);
-	[siderite](* <-lang_en;; *);;
-hydrothermal_veins
-=> nrel_main_idtf:
-	[гидротермальные жилы](* <-lang_ru;; *);
-	[hydrothermal veins](* <-lang_en;; *);;
-color_brownish_red
-=> nrel_main_idtf:
-	[коричнево-красный цвет](* <-lang_ru;; *);
-	[brownish-red color](* <-lang_en;; *);;
-color_metallic_gray
-=> nrel_main_idtf:
-	[металлический серый цвет](* <-lang_ru;; *);
-	[metallc gray color](* <-lang_en;; *);;
-iron_ore
-=> nrel_main_idtf:
-	[железная руда](* <-lang_ru;; *);
-	[iron ore](* <-lang_en;; *);;
 hematite
 => nrel_main_idtf:
 	[гематит](* <-lang_ru;; *);

@@ -1,8 +1,28 @@
+nrel_interaction
+=> nrel_main_idtf:
+	[взаимодействие](* <- lang_ru;; *);
+	[interaction](* <- lang_en;; *);;
+
 nrel_periodic_number
 	=> nrel_main_idtf: [порядковый номер*](* <- lang_ru;; *);
 	<- sc_node_norole_relation;
 	=> nrel_first_domain: chemical_element;
 	=> nrel_second_domain: number;;
+
+nrel_solvation 
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [solvation*]
+    (*<- lang_en;;*);
+	[сольватация*]
+	(* <- lang_ru;;	*);;
+
+nrel_allotropy
+=> nrel_main_idtf:
+	[аллотропия*]
+	(* <- lang_ru;; *);
+	[allotropy*]
+	(* <- lang_en;; *);;
 
 nrel_crystallization
 => nrel_main_idtf:

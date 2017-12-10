@@ -1,11 +1,3 @@
-weak_base
-=> nrel_main_idtf:
-	[слабое основание](* <-lang_ru;; *);
-	[weak base](* <-lang_en;; *);;
-strong_base
-=> nrel_main_idtf:
-	[сильное основание](* <-lang_ru;; *);
-	[strong base](* <-lang_en;; *);;
 basis
 => nrel_main_idtf:
 	[основание](* <-lang_ru;; *);

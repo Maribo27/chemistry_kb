@@ -12,7 +12,7 @@ subject_domain_of_oxides
 
 -> rrel_not_maximum_studied_object_class:
 	dioxide;
-	hydroxide;
+//	hydroxide;
 	monoxide;
 	oxide_mineral;
 	peroxide;
@@ -169,7 +169,7 @@ dioxide
 
 => nrel_inclusion: carbon_dioxide; chlorine_dioxide;;
 
-hydroxide
+/*hydroxide
 <-sc_node_not_relation;
 => nrel_main_idtf:
 	[hydroxide](*<- lang_en;;*);
@@ -227,6 +227,7 @@ hydroxide
 *);
 
 => nrel_inclusion: water;;
+*/
 
 monoxide
 <-sc_node_not_relation;

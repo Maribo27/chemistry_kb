@@ -1,27 +1,3 @@
-carbolic_acid
-=> nrel_main_idtf:
-	[карболовая кислота](* <- lang_ru;; *);
-	[carbolic acid](* <- lang_en;; *);;
-iodine_solution
-=> nrel_main_idtf:
-	[раствор йода](* <- lang_ru;; *);
-	[iodine solution](* <- lang_en;; *);;
-germicide_antiseptic
-=> nrel_main_idtf:
-	[гермицидный антисептик](* <- lang_ru;; *);
-	[germicide antiseptic](* <- lang_en;; *);;
-bacteriostatic_antiseptic
-=> nrel_main_idtf:
-	[бактериостатический антисептик](* <- lang_ru;; *);
-	[bacteriostatic antiseptic](* <- lang_en;; *);;
-blood
-=> nrel_main_idtf:
-	[кровь](* <- lang_ru;; *);
-	[blood](* <- lang_en;; *);;
-antifouling_agents
-=> nrel_main_idtf:
-	[противогнилостные средства](* <- lang_ru;; *);
-	[antifouling agents](* <- lang_en;; *);;
 antiseptic
 => nrel_main_idtf:
 	[антисептик](* <- lang_ru;; *);
