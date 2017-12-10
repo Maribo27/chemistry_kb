@@ -1,0 +1,97 @@
+radioactive_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[радиоактивный элемент](* <-lang_ru;; *);
+	[radioactive_element](* <-lang_en;; *);
+=> nrel_idtf:
+	[радиоактивные элементы](* <-lang_ru;; *);
+// включение и разбиение
+=> nrel_inclusion: elem_Tc;elem_Pm;elem_Po;
+// определение
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(радиоактивный элемент)](* <-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		[Радиоактивный элемент — химический элемент, все изотопы которого радиоактивны.]
+		(* 
+			<-lang_ru;; 
+			=>nrel_format: format_html;;
+		*);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		->chemical_element;;
+		->isotope;;
+		->radioactive;;
+	*);;
+*);
+// иллюстрация
+<- rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf: [Рис. (радиоактивные элементы)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:"file://image/radioactive_element.jpg"
+		(*
+			=>nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+//утверждения
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(радиоактивный элемент, периодическая система, уран, трансурановый элемент)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Те радиоактивные элементы, которые расположены в периодической системе за ураном, называются трансурановыми элементами.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: periodic_system;;
+	-> rrel_key_sc_element: subst_U;;
+	-> rrel_key_sc_element: transuranium;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(радиоактивный элемент, атомный номер, искусственный радиоактивный элемент, ядерная реакция*)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Радиоактивные элементы с атомными номерами 43, 61, 93 и все последующие называются искусственными, т.к. их получают с помощью искусственно проводимых ядерных реакций.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: atomic_number;;
+	-> rrel_key_sc_element: artificial_radioactive_element;;
+	-> rrel_key_sc_element: nrel_nuclear_reaction;;
+	<- rrel_theorem:subject_domain_chemisty
+	(*
+		<-subject_domain;;
+	*);;
+*);
+<- rrel_key_sc_element:...
+(*
+	<-statement;;
+	<-sc_common_type_statement;;
+	=>nrel_main_idtf: [Утв.(радиоактивный элемент, атомный номер, актинид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[14 радиоактивных элементов с атомным номером 90—103 составляют семейство актиноидов.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: atomic_number;;
+	-> rrel_key_sc_element: actinide;;
+	<- rrel_theorem:subject_domain_chemisty	
+	(*
+		<-subject_domain;;
+	*);;
+*);;

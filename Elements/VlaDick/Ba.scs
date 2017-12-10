@@ -76,7 +76,7 @@ elem_Ba
 	...
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (химический элемент барий)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис. (химический элемент барий)] (* <- lang_ru;;	*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*

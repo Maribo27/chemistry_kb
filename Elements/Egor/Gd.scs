@@ -5,7 +5,7 @@ elem_Gd
 <- rrel_key_sc_element:
 	Definition_of_gadolinium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Gd
 <- valence_three;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Gd
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -43,7 +43,7 @@ elem_Gd
 			=> nrel_main_idtf:[1,2](*<-lang_ru;; <- lang_en;;*);;
 			*);
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Gd
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -52,7 +52,7 @@ elem_Gd
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Gd
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -65,7 +65,7 @@ elem_Gd
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (гадолиний, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом гадолиния, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Xe] 4f<sup>7</sup>5d<sup>1</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -73,10 +73,11 @@ elem_Gd
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Gd
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом гадолиния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом гадолиния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(gadolinium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -93,5 +94,7 @@ atomic_mass_Gd <- number;
 
 Definition_of_gadolinium
 => nrel_main_idtf:
-	[Опр.(Гадолиний)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом гадолиния)]
+	(* <- lang_ru;;	*);
+	[Def.(gadolinium atom)]
+	(* <- lang_en;;	*);;

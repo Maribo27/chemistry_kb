@@ -5,7 +5,7 @@ elem_Db
 <- rrel_key_sc_element:
 	Definition_of_dubnium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,12 +30,12 @@ elem_Db
 <- nrel_inclusion: valence_five;
 
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Db
 (*
 	<- quantity;;
 	<= nrel_value:...
 	(*
-		-> rrel_aem: atomic_mass_Os;;
+		-> rrel_aem: atomic_mass_Db;;
 	*);;
 *);
 
@@ -51,10 +51,11 @@ elem_Db
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Db
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом дубния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом дубния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(dubnium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -72,5 +73,7 @@ atomic_mass_Db <- number;
 
 Definition_of_dubnium
 => nrel_main_idtf:
-	[Опр.(Дубний)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом дубния)]
+	(* <- lang_ru;;	*);
+	[Def.(dubnium atom)]
+	(* <- lang_en;;	*);;

@@ -23,7 +23,7 @@ isotope
 			{
 				atom;
 				chemical_element;
-				atomic_number
+				nrel_periodic_number
 			};
 <- rrel_key_sc_element:
 	... (*

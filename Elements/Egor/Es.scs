@@ -5,7 +5,7 @@ elem_Es
 <- rrel_key_sc_element:
 	Definition_of_einsteinium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Es
 <- valence_three;valence_two;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Es
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -45,7 +45,7 @@ elem_Es
 
 
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Es
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -58,7 +58,7 @@ elem_Es
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (эйнштейний, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом эйнштейния, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Rn] 5f<sup>11</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -66,10 +66,11 @@ elem_Es
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Es
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом эйнштейния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом эйнштейния)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(einsteinium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -87,5 +88,7 @@ atomic_mass_Es <- number;
 
 Definition_of_einsteinium
 => nrel_main_idtf:
-	[Опр.(Эйнштейний)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом эйнштейния)]
+	(* <- lang_ru;;	*);
+	[Def.(einsteinium atom)]
+	(* <- lang_en;;	*);;

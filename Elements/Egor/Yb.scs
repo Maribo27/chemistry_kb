@@ -5,7 +5,7 @@ elem_Yb
 <- rrel_key_sc_element:
 	Definition_of_ytterbium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Yb
 <- valence_three; valence_two;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Yb
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Yb
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Yb
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -53,7 +53,7 @@ elem_Yb
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Yb
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -66,7 +66,7 @@ elem_Yb
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (иттербий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом иттербия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Xe] 4f<sup>14</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -74,10 +74,11 @@ elem_Yb
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Yb
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом иттербия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом иттербия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(ytterbium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -94,5 +95,7 @@ atomic_mass_Yb <- number;
 
 Definition_of_ytterbium
 => nrel_main_idtf:
-	[Опр.(Иттербий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(ytterbium atom)]
+	(* <- lang_ru;;	*);
+	[Def.(атом иттербия)]
+	(* <- lang_en;;	*);;

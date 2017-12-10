@@ -1,0 +1,3118 @@
+subject_domain_of_metals
+	=> nrel_main_idtf:
+	[Предметная область металлов]
+	(* <- lang_ru;; *);
+	[Subject domain of metals]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	metal;
+
+-> rrel_not_maximum_studied_object_class:
+	subst_Ac;
+	subst_Ag;
+	subst_Al;
+	subst_Am;
+	subst_Bi;
+	subst_Au;
+	subst_Ba;
+	subst_Ga;
+	subst_Ge;
+	subst_K;
+	subst_Li;
+	subst_Na;
+	subst_Rb;
+	subst_Sg;
+	subst_Sm;
+	subst_Sn;
+	subst_Sr;
+	subst_Ta;
+	subst_Tb;
+	subst_Tc;
+	subst_Te;
+	subst_Th;
+	subst_Ti;
+	subst_Tl;
+	subst_Tm;
+	subst_U;
+	subst_V;
+	subst_W;
+	
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://html/section_metals.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://html/section_metals_eng.html" (* <-lang_en;; *);;
+		*);;
+
+metal
+
+<- sc_node_not_relation;
+
+<= nrel_inclusion: elementary_substance;
+
+=> nrel_main_idtf:
+	[металл]
+	(* <- lang_ru;;	*);
+	[metal]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_salt
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<b><sc_element sys_idtf="metal">Металл</sc_element></b> — химически <sc_element sys_idtf="elementary_substance">простое вещество</sc_element> (а также <sc_element sys_idtf="alloy">сплав</sc_element>), обладающее особым блеском, ковкостью, хорошей теплопроводностью и электропроводностью.] 
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+
+		-> rrel_example:[<b><sc_element sys_idtf = "metal"> Metal </sc_element> </b> - chemically <sc_element sys_idtf = "elementary_substance"> simple substance </sc_element> (and also <sc_element sys_idtf = "alloy"> alloy </sc_element> ), which has a special luster, malleability, good thermal conductivity and electrical conductivity.] 
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+		
+		
+subst_Ac
+<- sc_node_not_relation;
+=> nrel_main_idtf: [актиний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [actinium] (* <- lang_en;; *);
+=> nrel_idtf: [Ac](*<- lang_en;;*);
+=> nrel_inclusion: elem_Ac;
+<- rrel_key_sc_element: definition_of_subst_Ac
+(* 
+	=> nrel_main_idtf: [опр.(актиний)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество актиний</b> — тяжёлый
+ <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple substance actinium</b> — heavy
+ <sc_element sys_idtf  = "metal">metal</sc_element>
+of <sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver ;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver ;
+
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_and_forty_seven (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_one_hundred_ninety_seven(*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receiving
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (актиний (вещество), получение*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Металлический актиний получают восстановлением трифторида актиния парами лития] (*<- lang_ru;;*);;
+		-> rrel_example:[ Metallic actinium is obtained by reduction of actinium trifluoride with lithium vapor] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: application_of_ac
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (актиний, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ac_(application).html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/ac_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/ac_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ac_(application)eng1.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+
+	
+	
+subst_Ag
+<- sc_node_not_relation;
+=> nrel_main_idtf: [серебро] (* <- lang_ru;; *);
+=> nrel_main_idtf: [silver] (* <- lang_en;; *);
+=> nrel_idtf: [Ag](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Ag
+(* 
+	=> nrel_main_idtf: [опр.(серебро)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество серебро</b> — ковкий, пластичный благородный
+ <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple substance silver</b> — the malleable, plastic noble
+ <sc_element sys_idtf  = "metal">metal</sc_element>
+of <sc_element sys_idtf  = "color_white_silver">silvery-white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver ;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver ;
+=> nrel_inclusion: elem_Ag;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:nine_hundred_sixty_two (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_one_hundred_sixty_two(*<-number;;*);;		
+		*);;
+	*);
+
+
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(серебро, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(silver, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ag.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ag
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (кремний, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ag_(application).html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/ag_(application)eng.html" (* <-lang_en;; *);;
+
+			-> rrel_example:"file://html/ag_(application)1.html" (* <-lang_ru;; *);;	
+			-> rrel_example:"file://html/ag_(application)eng1.html" (* <-lang_en;; *);;
+
+			-> rrel_example:"file://html/ag_(application)2.html" (* <-lang_ru;; *);;	
+			-> rrel_example:"file://html/ag_(application)eng2.html" (* <-lang_en;; *);;
+
+			
+		*);;
+	*);;
+
+	
+subst_Al
+<- sc_node_not_relation;
+=> nrel_main_idtf: [алюминий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [aluminum] (* <- lang_en;; *);
+=> nrel_idtf: [Al](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Al
+(* 
+	=> nrel_main_idtf: [опр.(алюминий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество алюминий</b> — лёгкий парамагнитный
+ <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>, легко поддающийся формовке, литью, механической обработке</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple substance aluminum</b> — light paramagnetic
+ <sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_white_silver">silver-white color</sc_element>, easily moldable, cast, machined</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver ;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver ;
+=> nrel_inclusion: elem_Al;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:six_hundred_and_sixty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_five_hundred_and_nineteen(*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receiving
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (алюминий (вещество), получение*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Лабораторный способ получения алюминия предложил Фридрих Вёлер в 1827 году восстановлением металлическим калием безводного хлорида алюминия ] (*<- lang_ru;;*);;
+		-> rrel_example:[ The laboratory method for the production of aluminum was proposed by Friedrich Wöhler in 1827 by the reduction of anhydrous aluminum chloride by metallic potassium] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+	(*
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+			<- illustration;;
+		=> nrel_main_idtf: [Рис.(алюминий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(aluminum, solid)] (* <- lang_en;;*);;
+		    -> rrel_example:
+			"file://image/subst_al.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_al
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (алюминий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/al_(application).html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/al_(application)eng.html" (* <-lang_en;; *);;
+
+			-> rrel_example:"file://html/al_(application)1.html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/al_(application)eng1.html" (* <-lang_en;; *);;
+
+		*);;
+	*);;
+
+	
+subst_Am
+<- sc_node_not_relation;
+=> nrel_main_idtf: [америций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [americium] (* <- lang_en;; *);
+=> nrel_idtf: [Am](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Am
+(* 
+	=> nrel_main_idtf: [опр.(америций)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество америций</b> — радиоактивный
+ <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple americium substance</b> — radioactive
+ <sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_white_silver">silvery-white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver ;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver ;
+=> nrel_inclusion: elem_Am;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_one_hundred_seventy_six(*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_six_hundred_and_seven(*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receiving
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (америций (вещество), получение*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[241Am сейчас получают в промышленном количестве при распаде 241Pu: Pu-241 -> (13,2 года, бета-распад) -> Am-241, а 243Am при распаде 243Pu.] (*<- lang_ru;;*);;
+		-> rrel_example:[241Am is now produced commercially in the decay of 241Pu: Pu-241 -> (13.2 years, beta decay) -> Am-241, and 243Am in the decay of 243Pu.] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+	(*	
+	
+	    <- illustration;;
+		=> nrel_main_idtf: [Рис.(америций, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(americium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_am.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_am
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (америций, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/am_(application).html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/am_(application)eng.html" (* <-lang_en;; *);;
+
+			-> rrel_example:"file://html/am_(application)1.html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/am_(application)eng1.html" (* <-lang_en;; *);;
+
+		*);;
+	*);;
+	
+subst_Bi
+<- sc_node_not_relation;
+=> nrel_main_idtf: [висмут] (* <- lang_ru;; *);
+=> nrel_main_idtf: [bismuth] (* <- lang_en;; *);
+=> nrel_idtf: [Bi](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Bi
+(* 
+	=> nrel_main_idtf: [опр.(висмут)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество висмут</b> — Блестящий
+ <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_silver">серебристого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple bismuth substance</b> — shiny 
+ <sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_silver">silvery color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_silver ;;
+		-> metal;;
+	*);;
+*);
+
+<- color_silver ;
+=> nrel_inclusion: elem_Bi;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_hundred_and_seventy_one (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_five_hundred_sixty_four(*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: receiving
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (висмут (вещество), получение*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Получение висмута основано на переработке полиметаллических медных и свинцовых концентратов и висмутовых руд методами пирометаллургии и гидрометаллургии. ] (*<- lang_ru;;*);;
+		-> rrel_example:[ The production of bismuth is based on the processing of polymetallic copper and lead concentrates and bismuth ores by the methods of pyrometallurgy and hydrometallurgy.] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+	(*
+	    <- illustration;;
+		=> nrel_main_idtf: [Рис.(висмут, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(bismuth, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_bi.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_bi
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (висмут, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/bi_(application).html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/bi_(application)eng.html" (* <-lang_en;; *);;
+
+			-> rrel_example:"file://html/bi_(application)1.html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/bi_(application)eng1.html" (* <-lang_en;; *);;
+
+			-> rrel_example:"file://html/bi_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/bi_(application)eng2.html" (* <-lang_en;; *);;
+			*);;
+	*);;
+	
+subst_Au
+<- sc_node_not_relation;
+=> nrel_main_idtf: [золото] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gold] (* <- lang_en;; *);
+=> nrel_idtf: [Au](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Au
+(* 
+	=> nrel_main_idtf: [опр.(золото)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество золото</b> — мягкий ковкий
+ <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_yellow">жёлтого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple substance gold</b> — soft malleable
+ <sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_yellow">yellow color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_yellow ;;
+		-> metal;;
+	*);;
+*);
+
+<- color_yellow ;
+=> nrel_inclusion: elem_Au;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_and_sixty_four (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_eight_hundred_and_fifty_six(*<-number;;*);;		
+		*);;
+	*);
+
+<- rrel_key_sc_element:...
+	(*			
+	    <- illustration;;
+		=> nrel_main_idtf: [Рис.(золото, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(gold, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_au.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_au_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (золото (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[  При нормальных условиях оно не взаимодействует с большинством кислот и не образует оксидов, поэтому его относят к благородным металлам, в отличие от обычных металлов, разрушающихся под действием кислот и щелочей.] (*<- lang_ru;;*);;
+		-> rrel_example:[  Under normal conditions, it does not interact with most acids and does not form oxides, so it is classified as noble metals, unlike ordinary metals that are destroyed by acids and alkalis.] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: application_of_au
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (золото, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/au_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/au_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/au_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/au_(application)1eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/au_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/au_(application)2eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/au_(application)3.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/au_(application)3eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/au_(application)4.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/au_(application)eng4.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Ba
+<- sc_node_not_relation;
+=> nrel_main_idtf: [барий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [barium] (* <- lang_en;; *);
+=> nrel_idtf: [Ba](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Ba
+(* 
+	=> nrel_main_idtf: [опр.(барий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество барий</b> — мягкий, вязкий 
+ <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple substance of barium</b> — soft, viscous
+ <sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver ;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver ;
+=> nrel_inclusion: elem_Ba;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:seven_hundred_twenty_nine (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_six_hundred_and_thirty_seven (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_ba_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (барий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ На воздухе барий быстро окисляется, образуя смесь оксида бария BaO и нитрида бария Ba3N2, а при незначительном нагревании воспламеняется.] (*<- lang_ru;;*);;
+		-> rrel_example:[ In air, barium rapidly oxidizes, forming a mixture of barium oxide BaO and barium nitride Ba3N2, and with slight heating ignites.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ba_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (барий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Активно взаимодействует с разбавленными кислотами.] (*<- lang_ru;;*);;
+		-> rrel_example:[Actively reacts with dilute acids.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*			
+	    <- illustration;;
+		=> nrel_main_idtf: [Рис.(барий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(barium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ba.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ba
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (барий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ba_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ba_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/ba_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ba_(application)1eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/ba_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ba_(application)2eng.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Ga
+<- sc_node_not_relation;
+=> nrel_main_idtf: [галлий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [gallium] (* <- lang_en;; *);
+=> nrel_idtf: [Ga](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Ga
+(* 
+	=> nrel_main_idtf: [опр.(галлий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество галлий</b> — мягкий хрупкий
+ <sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
+ с синеватым оттенком.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple substance of gallium</b> — soft brittle
+ <sc_element sys_idtf  = "metal">metal</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>
+with a bluish tint.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Ga;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:thirty(*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_two_hundred_and_four (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_ga_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (галлий (вещество), взаимодействие*, вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Галлий медленно реагирует с горячей водой, вытесняя из неё водород и образуя гидроксид галлия(III).] (*<- lang_ru;;*);;
+		-> rrel_example:[ Gallium reacts slowly with hot water, displacing hydrogen from it and forming gallium hydroxide (III).] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ga_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (галлий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Галлий взаимодействует с минеральными кислотами с выделением водорода и образованием солей.] (*<- lang_ru;;*);;
+		-> rrel_example:[Gallium reacts with mineral acids, releasing hydrogen and forming salts.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(галлий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(gallium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ga.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ga
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (галлий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ga_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ga_(application)eng.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Ge
+<- sc_node_not_relation;
+=> nrel_main_idtf: [германий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [germanium] (* <- lang_en;; *);
+=> nrel_idtf: [Ge](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Ge
+(* 
+	=> nrel_main_idtf: [опр.(германий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество германий</b> — типичный 
+полупроводник <sc_element sys_idtf  = "color_gray_white">серо-белого цвета</sc_element>, 
+с металлическим блеском.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple germanium substance</b> — typical
+semiconductor <sc_element sys_idtf  = "color_gray_white">gray-white color</sc_element>, 
+with metallic luster.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_gray_white;;
+	*);;
+*);
+
+<- color_gray_white;
+=> nrel_inclusion: elem_Ge;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:nine_hundred_thirty_seven (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_eight_hundred_and_thirty (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_ge_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (германий (вещество), взаимодействие*, вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При нормальных условиях германий устойчив к действию воздуха и воды, щелочей и кислот.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Under normal conditions, germanium is resistant to the action of air and water, alkalis and acids.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf: [Рис.(германий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(germanium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ge.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ge
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (германий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ge_(application).html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/ge_(application)eng.html" (* <-lang_en;; *);;
+
+			-> rrel_example:"file://html/ge_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ge_(application)eng1.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/ge_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ge_(application)eng2.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_K
+<- sc_node_not_relation;
+=> nrel_main_idtf: [калий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [potassium] (* <- lang_en;; *);
+=> nrel_idtf: [K](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_K
+(* 
+	=> nrel_main_idtf: [опр.(калий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество калий</b> — мягкий 
+<sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple substance of potassium</b> — soft 
+<sc_element sys_idtf  = "metal">metal</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_K;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:sixty_four (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:seven_hundred_seventy_four (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_k_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (калий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При сгорании калия на воздухе образуется надпероксид калия KO2 ] (*<- lang_ru;;*);;
+		-> rrel_example:[When the potassium burns in air, KO2 superoxide is formed] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_k_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (калий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Калий глубоко восстанавливает разбавленные серную и азотную кислоты] (*<- lang_ru;;*);;
+		-> rrel_example:[ Potassium deeply reduces dilute sulfuric and nitric acid] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+	=> nrel_main_idtf: [Рис.(калий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(potassium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_k.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_k
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (калий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/k_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/k_(application)eng.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Li
+<- sc_node_not_relation;
+=> nrel_main_idtf: [литий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [lithium] (* <- lang_en;; *);
+=> nrel_idtf: [Li](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Li
+(* 
+	=> nrel_main_idtf: [опр.(литий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество литий</b> — мягкий
+ щелочной <sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>The simple substance of lithium</b> — soft
+ alkaline <sc_element sys_idtf  = "metal">metal</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Li;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_hundred_eighty_one (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_three_hundred_fourty (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_li_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (литий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Литий является щелочным металлом, однако относительно устойчив на воздухе.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Lithium is an alkali metal, but relatively stable in air.] (*<- lang_en;;*);;
+	*);;
+*);
+ 
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+	=> nrel_main_idtf: [Рис.(литий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(lithium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_li.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_li
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (литий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/li_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/li_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/li_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/li_(application)eng1.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/li_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/li_(application)eng2.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Na
+<- sc_node_not_relation;
+=> nrel_main_idtf: [натрий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [sodium] (* <- lang_en;; *);
+=> nrel_idtf: [Na](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Na
+(* 
+	=> nrel_main_idtf: [опр.(натрий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество натрий</b> — мягкий 
+щелочной <sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple substance sodium</b> — soft
+alkaline <sc_element sys_idtf  = "metal">metal</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Na;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:ninety_eight (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:eight_hundred_eighty_three (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_na_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (натрий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Щелочной металл на воздухе легко окисляется до оксида натрия.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Alkali metal in air is easily oxidized to sodium oxide.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_na_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (натрий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ С концентрированными окисляющими кислотами выделяются продукты восстановления] (*<- lang_ru;;*);;
+		-> rrel_example:[ With concentrated oxidizing acids, recovery products] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+	=> nrel_main_idtf: [Рис.(натрий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(sodium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_na.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_na
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (натрий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/na_(application).html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://html/na_(application)eng.html" (* <-lang_en;; *);;
+
+		*);;
+	*);;
+	
+subst_Rb
+<- sc_node_not_relation;
+=> nrel_main_idtf: [рубидий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [rubidium] (* <- lang_en;; *);
+=> nrel_idtf: [Rb](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Rb
+(* 
+	=> nrel_main_idtf: [опр.(рубидий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество рубидий</b> — мягкий 
+<sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple substance of rubidium</b> — soft 
+<sc_element sys_idtf  = "metal">metal</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Rb;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:thirty_nine (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:six_hundred_eighty_eight (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_rb_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (рубидий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Щелочной металл, крайне неустойчив на воздухе (реагирует с воздухом в присутствии следов воды с воспламенением).] (*<- lang_ru;;*);;
+		-> rrel_example:[ Alkaline metal, highly unstable in air (reacts with air in the presence of traces of water with inflammation).] (*<- lang_en;;*);;
+	*);;
+*);
+ 
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+	   => nrel_main_idtf: [Рис.(рубидий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(rubidium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_rb.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_rb
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (рубидий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/rb_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/rb_(application)eng.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Sg
+<- sc_node_not_relation;
+=> nrel_main_idtf: [сиборгий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [seaborgium] (* <- lang_en;; *);
+=> nrel_idtf: [Sg](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Sg
+(* 
+	=> nrel_main_idtf: [опр.(сиборгий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество сиборгий</b> —  радиоактивный 
+<sc_element sys_idtf  = "metal">металл</sc_element>, представляет только научный интерес.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple matter of syborgium</b> —  radioactive 
+<sc_element sys_idtf  = "metal">metal</sc_element>, represents only scientific interest.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> metal;;
+	*);;
+*);
+
+=> nrel_inclusion: elem_Sg;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+
+<- rrel_key_sc_element: chemical_properties
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (сиборгий (вещество), химическое свойство*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Предполагают, что сиборгий должен быть аналогом вольфрама и молибдена] (*<- lang_ru;;*);;
+
+		-> rrel_example:[ It is suggested that siborgia should be an analog of tungsten and molybdenum] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: application_of_sg
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (сиборгий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sg_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sg_(application)eng.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Sm
+<- sc_node_not_relation;
+=> nrel_main_idtf: [самарий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [samarium] (* <- lang_en;; *);
+=> nrel_idtf: [Sm](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Sm
+(* 
+	=> nrel_main_idtf: [опр.(самарий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество самарий</b> — редкоземельный 
+<sc_element sys_idtf  = "metal">металл</sc_element>
+ <sc_element sys_idtf  = "color_silver">серебристого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple substance of samarium</b> — rare-earth 
+<sc_element sys_idtf  = "metal">metal</sc_element>
+ <sc_element sys_idtf  = "color_silver">silvery color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_silver;
+=> nrel_inclusion: elem_Sm;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_and_seventy_seven (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_seven_hundred_and_eighty_nine (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_sm_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (самарий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ На воздухе медленно окисляется, сначала покрываясь тёмной плёнкой трёхвалентного оксида Sm2O3 и затем полностью рассыпаясь в порошок жёлтого оттенка.] (*<- lang_ru;;*);;
+		-> rrel_example:[ In air, it slowly oxidizes, first covering with a dark film of trivalent oxide Sm2O3 and then completely crumbling into a yellow powder.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_sm_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (самарий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Самарий растворим в кислотах.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Samarium is soluble in acids.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(самарий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(samarium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_sm.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_sm
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (самарий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sm_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sm_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/sm_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sm_(application)eng1.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/sm_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sm_(application)eng2.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Sn
+<- sc_node_not_relation;
+=> nrel_main_idtf: [олово] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tin] (* <- lang_en;; *);
+=> nrel_idtf: [Sn](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Sn
+(* 
+	=> nrel_main_idtf: [Опр.(олово)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество олово</b> — 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
+ мягкий, пластичный <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple substance tin</b> — 
+<sc_element sys_idtf  = "color_white_silver">silvery white</sc_element>
+soft, plastic <sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Sn;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_hundred_thirty_two  (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_six_hundred (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: heating
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (олово (вещество), нагревание*](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При нагревании олово реагирует с большинством неметаллов. При этом образуются соединения в степени окисления +4, которая более характерна для олова, чем +2. ] (*<- lang_ru;;*);;
+		-> rrel_example:[ When heated, tin reacts with most non-metals. In this case, compounds are formed in the oxidation state of +4, which is more typical of tin than +2. ] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_sn_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (олово (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Олово медленно реагирует c концентрированной соляной кислотой. В разбавленной серной кислоте олово не растворяется, а с концентрированной — реагирует очень медленно.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Tin reacts slowly with concentrated hydrochloric acid. In dilute sulfuric acid, tin does not dissolve, and with concentrated sulfur it reacts very slowly.] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: application_of_sn
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (олово, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sn_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sn_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/sn_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sn_(application)eng1.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/sn_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sn_(application)eng2.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Sr
+<- sc_node_not_relation;
+=> nrel_main_idtf: [стронций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [strontium] (* <- lang_en;; *);
+=> nrel_idtf: [Sr](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Sr
+(* 
+	=> nrel_main_idtf: [опр.(стронций)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество стронций</b> — мягкий 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
+<sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple strontium material</b> — soft 
+<sc_element sys_idtf  = "color_white_silver">silvery white</sc_element>
+<sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Sr;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:seven_hundred_sixty_nine (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_three_hundred_and_eighty_four (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_sr_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (стронций (вещество), взаимодействие*, вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ В электрохимическом ряду напряжений стронций находится среди наиболее активных металлов (его нормальный электродный потенциал равен −2,89 В). Энергично реагирует с водой, образуя гидроксид.] (*<- lang_ru;;*);;
+		-> rrel_example:[ In the electrochemical series of stresses, strontium is among the most active metals (its normal electrode potential is -2.89 V). Vigorously reacts with water to form a hydroxide.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_sr_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (стронций (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Взаимодействует с кислотами, вытесняет тяжёлые металлы из их солей. С концентрированными кислотами (H2SO4, HNO3) реагирует слабо.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Interacts with acids, displaces heavy metals from their salts. With concentrated acids (H2SO4, HNO3) reacts poorly.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(стронций, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(strontium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_sr.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_sr
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (стронций, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/sr_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sr_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/sr_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sr_(application)eng1.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/sr_(application)2.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/sr_(application)eng2.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Ta
+<- sc_node_not_relation;
+=> nrel_main_idtf: [тантал] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tantalum] (* <- lang_en;; *);
+=> nrel_idtf: [Ta](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Ta
+(* 
+	=> nrel_main_idtf: [опр.(тантал)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество тантал</b> — блестящий 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
+<sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple tantalum material</b> — shiny 
+<sc_element sys_idtf  = "color_white_silver">silvery white</sc_element>
+<sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Ta;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_and_seventeen (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:five_thousand_four_hundred_fifty_eight (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_ta_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (тантал (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ На воздухе окисляется лишь при температуре свыше 280 °C, покрываясь оксидной плёнкой Ta2O5] (*<- lang_ru;;*);;
+		-> rrel_example:[ In air it is oxidized only at temperatures above 280 ° C, covered with an oxide film of Ta2O5] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ta_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (тантал (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Тантал нерастворим в кислотах и их смесях, кроме смеси плавиковой и азотной кислот; его не растворяет даже царская водка.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Tantalum is insoluble in acids and their mixtures, except for a mixture of hydrofluoric and nitric acids; it does not even dissolve royal vodka.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(тантал, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(tantalum, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ta.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ta
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (тантал, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ta_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ta_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/ta_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ta_(application)eng1.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Tb
+<- sc_node_not_relation;
+=> nrel_main_idtf: [тербий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [terbium] (* <- lang_en;; *);
+=> nrel_idtf: [Tb](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Tb
+(* 
+	=> nrel_main_idtf: [опр.(тербий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество тербий</b> — мягкий, вязкий 
+<sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple terbium substance</b> — soft, viscous 
+<sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Tb;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_three_hundred_and_fifty_six (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_and_twenty_three (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_tb_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (тербий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ На воздухе компактный тербий окисляется медленно, при нагревании во влажном воздухе-несколько быстрее.] (*<- lang_ru;;*);;
+	*);;
+		-> rrel_example:[ In air, the compact terbium oxidizes slowly, when heated in moist air, somewhat faster.] (*<- lang_en;;*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(тербий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(terbium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_tb.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_tb
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (тербий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/tb_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/tb_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/tb_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/tb_(application)eng1.html" (* <-lang_en;; *);;
+		*);; 
+	*);;
+	
+subst_Tc
+<- sc_node_not_relation;
+=> nrel_main_idtf: [технеций] (* <- lang_ru;; *);
+=> nrel_main_idtf: [technetium] (* <- lang_en;; *);
+=> nrel_idtf: [Tc](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Tc
+(* 
+	=> nrel_main_idtf: [опр.(технеций (вещество))] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество технеций</b> — 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element> 
+радиоактивный <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple substance of technetium</b> — 
+<sc_element sys_idtf  = "color_white_silver">silvery white</sc_element> 
+radioactive <sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Tc;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:two_thousand_one_hundred_and_fifty_seven (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:four_thousand_two_hundred_and_sixty_five (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_tc_and_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (технеций (вещество), взаимодействие*, кислород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При взаимодействии с кислородом образует оксиды Tc2O7 и TcO2] (*<- lang_ru;;*);;
+		-> rrel_example:[When interacting with oxygen, it forms oxides of Tc2O7 and TcO2] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_tc_and_s
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (технеций (вещество), взаимодействие*, сера](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При взаимодействии с серой образует сульфиды Tc2S7 и TcS2.] (*<- lang_ru;;*);;
+		-> rrel_example:[ When interacting with sulfur, it forms sulfides of Tc2S7 and TcS2.] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(технеций, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(technetium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_tc.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_tc
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (технеций, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/tc_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/tc_(application)eng.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Te
+<- sc_node_not_relation;
+=> nrel_main_idtf: [теллур] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tellurium] (* <- lang_en;; *);
+=> nrel_idtf: [Te](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Te
+(* 
+	=> nrel_main_idtf: [опр.(теллур)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество теллур</b> — 
+<sc_element sys_idtf  = "color_silver">серебристого цвета</sc_element> 
+блестящий <sc_element sys_idtf  = "nonmetal">неметалл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple tellurium substance</b> — 
+<sc_element sys_idtf  = "color_silver">silvery</sc_element> 
+shiny <sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_silver;
+=> nrel_inclusion: elem_Te;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:four_hundred_fifty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:nine_hundred_ninety (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_te_and_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, кислород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ С кислородом образует соединения TeO, TeO2, TeO3] (*<- lang_ru;;*);;
+		-> rrel_example:[ With oxygen forms compounds TeO, TeO2, TeO3] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_te_and_h
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, водород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Теллур образует соединение с водородом при нагревании] (*<- lang_ru;;*);;
+		-> rrel_example:[ Tellurium forms a compound with hydrogen upon heating] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_te_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (теллур (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ При взаимодействии с концентрированной серной кислотой образует сульфит.] (*<- lang_ru;;*);;
+		-> rrel_example:[ When interacting with concentrated sulfuric acid, it forms a sulfite.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(теллур, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(tellurium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_te.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_te
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (теллур, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/te_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/te_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/te_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/te_(application)eng1.html" (* <-lang_en;; *);;
+		*);; 
+	*);;
+	
+subst_Th
+<- sc_node_not_relation;
+=> nrel_main_idtf: [торий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [thorium] (* <- lang_en;; *);
+=> nrel_idtf: [Th](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Th
+(* 
+	=> nrel_main_idtf: [опр.(торий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество торий</b> — 
+<sc_element sys_idtf  = "color_gray">серый</sc_element>, мягкий,
+ ковкий, вязкий, слаборадиоактивный 
+<sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple substance of thorium</b> — 
+<sc_element sys_idtf  = "color_gray">gray</sc_element>, soft,
+malleable, viscous, slightly radioactive
+<sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_gray;;
+		-> metal;;
+	*);;
+*);
+
+<- color_gray;
+=> nrel_inclusion: elem_Th;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_seven_hundred_fifty_five (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:four_thousand_seven_hundred_and_eighty_seven (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_th_and_h
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (торий (вещество), взаимодействие*, водород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Реагирует с водородом при нагревании] (*<- lang_ru;;*);;
+		-> rrel_example:[Reacts with hydrogen when heated] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_th_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (торий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Торий плохо растворяется в основных кислотах. Он растворим в концентрированных растворах НСl (6-12 моль/л) и HNO3 (8-16 моль/л) в присутствии иона фтора.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Thorium is poorly soluble in basic acids. It is soluble in concentrated solutions of HCl (6-12 mol / l) and HNO3 (8-16 mol / l) in the presence of a fluorine ion.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(торий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(thorium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_th.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_th
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (торий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/th_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/th_(application)eng.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+subst_Ti
+<- sc_node_not_relation;
+=> nrel_main_idtf: [титан] (* <- lang_ru;; *);
+=> nrel_main_idtf: [titanium] (* <- lang_en;; *);
+=> nrel_idtf: [Ti](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Ti
+(* 
+	=> nrel_main_idtf: [опр.(титан)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество титан</b> — лёгкий 
+прочный <sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.  </p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple titanium substance</b> — easy
+lasting <sc_element sys_idtf  = "metal">metal</sc_element> 
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.  </p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Ti;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_six_hundred_sixty (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_two_hundred_and_eighty_seven (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_ti_and_water
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (титан (вещество), взаимодействие*, вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[  Титан наиболее подвержен коррозии в органических средах, так как, в присутствии воды на поверхности титанового изделия образуется плотная пассивная пленка из оксидов и гидрида титана] (*<- lang_ru;;*);;
+		-> rrel_example:[ Titanium is most susceptible to corrosion in organic media, since, in the presence of water, a dense passive film of titanium oxides and hydride is formed on the surface of the titanium product] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_ti_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (титан (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Титан устойчив к разбавленным растворам многих кислот] (*<- lang_ru;;*);;
+		-> rrel_example:[ Titanium is resistant to dilute solutions of many acids] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(титан, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(titanium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_ti.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_ti
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (титан, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/ti_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ti_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/ti_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/ti_(application)eng1.html" (* <-lang_en;; *);;
+		*);; 
+	*);;
+	
+subst_Tl
+<- sc_node_not_relation;
+=> nrel_main_idtf: [таллий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [thallium] (* <- lang_en;; *);
+=> nrel_idtf: [Tl](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Tl
+(* 
+	=> nrel_main_idtf: [опр.(таллий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество таллий</b> — мягкий 
+<sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
+с голубоватым оттенком.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple thallium substance</b> — soft 
+<sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>
+with bluish tint.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Tl;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_hundred_four (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_four_hundred_seventy_three (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_tl_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (таллий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ На воздухе легко окисляется и быстро тускнеет.] (*<- lang_ru;;*);;
+		-> rrel_example:[ In air it is easy to oxidize and quickly fade.] (*<- lang_en;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(таллий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(thallium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_tl.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_tl
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (таллий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/tl_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/tl_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/tl_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/tl_(application)eng1.html" (* <-lang_en;; *);;
+		*);; 
+	*);;
+	
+subst_Tm
+<- sc_node_not_relation;
+=> nrel_main_idtf: [тулий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [thulium] (* <- lang_en;; *);
+=> nrel_idtf: [Tm](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_Tm
+(* 
+	=> nrel_main_idtf: [опр.(тулий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество тулий</b> — легко 
+обрабатываемый <sc_element sys_idtf  = "metal">металл</sc_element>
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>The simple substance of thulium</b> — easily
+processed <sc_element sys_idtf  = "metal">metal</sc_element>
+<sc_element sys_idtf  = "color_white_silver">silvery white color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_Tm;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_five_hundred_fourty_five (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_nine_hundred_fourty_seven (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_tm_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (тулий (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ На воздухе компактный туллий практически не окисляется, при нагр. во влажном воздухе слабо окисляется.] (*<- lang_ru;;*);;
+-> rrel_example:[ In air, compact thallium practically does not oxidize, with heating. in humid air is slightly oxidized.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: application_of_tm
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (тулий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/tm_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/tm_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/tm_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/tm_(application)eng1.html" (* <-lang_en;; *);;
+		*);; 
+	*);;
+	
+subst_U
+<- sc_node_not_relation;
+=> nrel_main_idtf: [уран] (* <- lang_ru;; *);
+=> nrel_main_idtf: [uranus] (* <- lang_en;; *);
+=> nrel_idtf: [U](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_U
+(* 
+	=> nrel_main_idtf: [опр.(уран)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество уран</b> — тяжёлый 
+<sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element>
+ глянцеватый <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple substance uranium</b> — heavy 
+<sc_element sys_idtf  = "color_white_silver">silvery white</sc_element>
+ shiny <sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_white_silver;;
+		-> metal;;
+	*);;
+*);
+
+<- color_white_silver;
+=> nrel_inclusion: elem_U;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_one_hundred_thirty_two (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_seven_hundred_and_fourty_five (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_u_and_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (уран (вещество), взаимодействие*, кислород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Существует оксид U3O8. Степень окисления в нём формально дробная, а реально он представляет собой смешанный оксид урана (IV) и (VI)] (*<- lang_ru;;*);;
+		-> rrel_example:[ There is oxide U3O8. The degree of oxidation in it is formally fractional, but in reality it is a mixed oxide of uranium (IV) and (VI)] (*<- lang_en;;*);;
+	*);;
+*);
+ 
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(уран, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(uranus, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_u.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_u
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (уран, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/u_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/u_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/u_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/u_(application)eng1.html" (* <-lang_en;; *);;
+		*);; 
+	*);;
+	
+subst_V
+<- sc_node_not_relation;
+=> nrel_main_idtf: [ванадий] (* <- lang_ru;; *);
+=> nrel_main_idtf: [vanadium] (* <- lang_en;; *);
+=> nrel_idtf: [V](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_V
+(* 
+	=> nrel_main_idtf: [опр.(ванадий)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество ванадий</b> — пластичный 
+<sc_element sys_idtf  = "metal">металл</sc_element> 
+<sc_element sys_idtf  = "color_silver_grey">серебристо-серого цвета</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>A simple vanadium compound</b> — plastic 
+<sc_element sys_idtf  = "metal">metal</sc_element> 
+<sc_element sys_idtf  = "color_silver_grey">silvery-gray color</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_silver_grey;;
+		-> metal;;
+	*);;
+*);
+
+<- color_silver_grey;
+=> nrel_inclusion: elem_V;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:one_thousand_eight_hundred_eighty_seven (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_three_hundred_and_seventy_seven (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_v_and_o
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (ванадий (вещество), взаимодействие*, кислород](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ С кислородом ванадий образует несколько оксидов: VO, V2O3, VO2,V2O5. Оранжевый V2O5 — кислотный оксид, темно-синий VO2 — амфотерный, остальные оксиды ванадия — основные.] (*<- lang_ru;;*);;
+		-> rrel_example:[ With oxygen, vanadium forms several oxides: VO, V2O3, VO2, V2O5. Orange V2O5 - acid oxide, dark blue VO2 - amphoteric, other vanadium oxides - basic.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_v_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (ванадий (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Он стоек к действию морской воды, разбавленных растворов соляной, азотной и серной кислот, щелочей.] (*<- lang_ru;;*);;
+		-> rrel_example:[ It is resistant to the action of sea water, dilute solutions of hydrochloric, nitric and sulfuric acids, alkalis.] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(ванадий, твёрдое вещество)] (* <- lang_ru;;	*);;
+=> nrel_main_idtf: [Pic.(vanadium, solid)] (* <- lang_en;;*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_v.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_v
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+			[Утв. (ванадий, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/v_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/v_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/v_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/v_(application)eng1.html" (* <-lang_en;; *);;
+		*);; 
+	*);;
+	
+subst_W
+<- sc_node_not_relation;
+=> nrel_main_idtf: [вольфрам] (* <- lang_ru;; *);
+=> nrel_main_idtf: [tungsten] (* <- lang_en;; *);
+=> nrel_idtf: [W](*<- lang_en;;*);
+<- rrel_key_sc_element: definition_of_subst_W
+(* 
+	=> nrel_main_idtf: [опр.(вольфрам)] (* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[<p><b>Простое вещество вольфрам</b> — твёрдый 
+блестящий <sc_element sys_idtf  = "color_silver_grey">серебристо-серого цвета</sc_element> 
+переходный <sc_element sys_idtf  = "metal">металл</sc_element>.</p>] 
+			(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+					-> rrel_example:
+			[<p><b>Simple tungsten material</b> — solid 
+shiny <sc_element sys_idtf  = "color_silver_grey">silvery-gray</sc_element> 
+transition <sc_element sys_idtf  = "metal">metal</sc_element>.</p>] 
+			(*
+				<-lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> color_silver_grey;;
+		-> metal;;
+	*);;
+*);
+
+<- color_silver_grey;
+=> nrel_inclusion: elem_W;
+
+=> nrel_state_of_aggregation:...
+(*
+	-> solid;;
+*);
+
+=> nrel_melting_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:three_thousand_four_hundred_and_twenty_two (*<-number;;*);;		
+		*);;
+	*);
+=> nrel_boiling_temperature:...
+	(*
+	<-quantity;;
+	<=nrel_value:...
+		(*
+		->rrel_degree_celsius:five_thousand_five_hundred_and_fifty_five (*<-number;;*);;		
+		*);;
+	*);
+
+
+<- rrel_key_sc_element: interaction_w_and_air
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вольфрам (вещество), взаимодействие*, воздух](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Вольфрам имеет высокую коррозионную стойкость: при комнатной температуре не изменяется на воздухе] (*<- lang_ru;;*);;
+-> rrel_example:[ Tungsten has a high corrosion resistance: at room temperature does not change in air] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_w_and_acid
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (вольфрам (вещество), взаимодействие*, кислота](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[ Легко растворяется в смеси азотной и плавиковой кислот] (*<- lang_ru;;*);;
+		-> rrel_example:[ Easily soluble in a mixture of nitric and hydrofluoric acids] (*<- lang_en;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+	(*
+		<- illustration;;
+ => nrel_main_idtf: [Рис.(вольфрам, твёрдое вещество)] (* <- lang_ru;;	*);;
+		<- description_of_a_typical_instance;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://image/subst_w.jpg"
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: application_of_w
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [Утв. (вольфрам, применение*)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/w_(application).html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/w_(application)eng.html" (* <-lang_en;; *);;
+			-> rrel_example:"file://html/w_(application)1.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://html/w_(application)eng1.html" (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+

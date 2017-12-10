@@ -64,9 +64,10 @@ elem_Nh
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
+<- rrel_key_sc_element: nihonium_atom_picture
 (*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: [Рис.(атом нихония)] (* <- lang_ru;;	*);
 	[Pic.(nihonium atom)] (* <- lang_en;;	*);;
 		<= nrel_sc_text_translation:...

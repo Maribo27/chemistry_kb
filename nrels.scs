@@ -4,6 +4,13 @@ nrel_periodic_number
 	=> nrel_first_domain: chemical_element;
 	=> nrel_second_domain: number;;
 
+nrel_crystallization
+=> nrel_main_idtf:
+	[кристаллизация*]
+	(* <- lang_ru;; *);
+	[crystallization*]
+	(* <- lang_en;; *);;
+
 nrel_irradiation 
 	=> nrel_main_idtf: 
 		[облучение*](*<- lang_ru;;*);;
@@ -31,10 +38,6 @@ nrel_electronegativity
 => nrel_main_idtf:
 	[electronegativity*](*<- lang_en;;*);
 	[электроотрицательность*](*<- lang_ru;;*);;
-
-nrel_count_of_inclusion
-	=> nrel_main_idtf:[количество вхождений*](*<-lang_ru;;*);
-	<- sc_node_norole_relation;;
 
 nrel_object_structure
 	=> nrel_main_idtf:[состав*](*<-lang_ru;;*);

@@ -1,0 +1,15 @@
+leather_industry
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+	[кожевенная промышленность](* <-lang_ru;; *);
+	[leather industry](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+    <= nrel_sc_text_translation:...
+    (*
+		-> rrel_example:"file://html/leather_industry.html"(* <- lang_ru;; *);;
+    *);;
+*);;

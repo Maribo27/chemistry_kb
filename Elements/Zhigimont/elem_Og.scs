@@ -61,6 +61,7 @@ elem_Og
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
+	<- description_of_a_typical_instance;;
 	=> nrel_main_idtf: 
 	[Рис.(атом оганесона)] (* <- lang_ru;;	*);
 	[Pic.(oganesson atom)] (* <- lang_en;;	*);;

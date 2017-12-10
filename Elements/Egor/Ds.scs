@@ -5,7 +5,7 @@ elem_Ds
 <- rrel_key_sc_element:
 	Definition_of_darmstadtium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -27,7 +27,7 @@ elem_Ds
 <- metal;
 
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Ds
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -40,7 +40,7 @@ elem_Ds
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (дармштадтий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом дармштадтия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Rn] 5f<sup>14</sup>6d<sup>8</sup>7s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -48,10 +48,11 @@ elem_Ds
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Ds
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом дармштадтия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом дармштадтия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(darmstadtium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -68,5 +69,7 @@ atomic_mass_Ds <- number;
 
 Definition_of_darmstadtium
 => nrel_main_idtf:
-	[Опр.(Дармштадтий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом дармштадтия)]
+	(* <- lang_ru;;	*);
+	[Def.(darmstadtium atom)]
+	(* <- lang_en;;	*);;

@@ -30,4 +30,4 @@ ink => nrel_object_structure:dye;modifier;preservative;solvent;;
 cellulose => nrel_object_structure:glucose;;
 glucose => nrel_object_structure:elem_C;elem_H;elem_O;;
 chalk => nrel_object_structure:metal;magnesium_carbonate;quartz;calcite;belemnite;ammonite;calcium_carbonate;;
-chalk => nrel_object_structure:metal;magnesium_carbonate;quartz;calcite;belemnite;ammonite;calcium_carbonate;;
+
