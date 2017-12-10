@@ -1,0 +1,59 @@
+subject_domain_of_hydroxides
+=> nrel_main_idtf: 
+	[Предметная область гидроксидов]
+	(* <- lang_ru;;*);
+	[Subject domain of hydroxides]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	hydroxide;;
+
+hydroxide
+<- sc_node_not_relation;
+<= nrel_inclusion: multielement_compound;
+=> nrel_main_idtf:
+	[гидроксид](* <- lang_ru;;	*);
+	[hydroxide](* <- lang_en;;	*);
+	=> nrel_idtf:
+	[гидроокись](*<- lang_ru;;*);
+	[водокись](*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+	Definition_of_hydroxide
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[<p>
+						<b><sc_element sys_idtf="hydroxide">Гидрокси́ды</sc_element></b> — <sc_element sys_idtf="multielement_compound">многоэлементное соединение</sc_element>, содержащие в составе <sc_element sys_idtf="hydroxyl_group">гидроксильную группу</sc_element> -OH.
+						</p>]
+		(* 
+		<-lang_ru;; 
+		=> nrel_format: format_html;;
+		*);;
+		-> rrel_example:[<p>
+						<b><sc_element sys_idtf="hydroxide">Hydroxide</sc_element></b> are a <sc_element sys_idtf="multielement_compound">multielement compound</sc_element> containing a <sc_element sys_idtf="hydroxyl_group">hydroxyl group</sc_element> -OH.
+						</p>]
+		(* 
+		<-lang_en;; 
+		=> nrel_format: format_html;;
+		*);;
+		*);;
+	*);;
+
+
+
+Definition_of_hydroxide
+=> nrel_main_idtf:
+	[Опр.(гидроксиды)]
+	(* <- lang_ru;;	*);
+	[Def.(hydroxide)]
+	(* <- lang_en;;	*);
+<= nrel_using_constants: ...
+			(*
+				-> multielement_compound; hydroxyl_group;;
+			*);;
+			

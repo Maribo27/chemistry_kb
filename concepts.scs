@@ -1,13 +1,29 @@
-base
-=> nrel_main_idtf:
-	[основание]
+nickel_sulphide_1//
+	=>nrel_main_idtf:
+	[сульфид никеля(I)]
 	(* <- lang_ru;; *);
-	[base]
+	=>nrel_main_idtf:
+	[nickel sulphide (I)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[Ni2S]
+	(*<-lang_en;;*);;
+	
+non_transition_metals
+	=>nrel_main_idtf:
+	[непереходный металл]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[non transition metals]
 	(* <- lang_en;; *);;
-
-basis
-	=> nrel_main_idtf: 
-		[основание](*<- lang_ru;;*);;
+	
+complex_hydroxide
+	=>nrel_main_idtf:
+	[комплексный гидроксид]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[complex hydroxide]
+	(* <- lang_en;; *);;
 
 pure_metal
 	<- sc_node_not_relation;
@@ -523,9 +539,8 @@ rrel_protophilic_solvent
 	
 multielement_compound
 => nrel_main_idtf:
-    [многоэлементное соединение](*<- lang_en;;*);
-	[multielement compound]
-	(* <- lang_ru;;	*);;
+    [многоэлементное соединение](* <- lang_ru;;	*);
+	[multielement compound](*<- lang_en;;*);;
 	
 colloidal_solution
 => nrel_main_idtf:

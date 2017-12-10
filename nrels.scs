@@ -1,3 +1,8 @@
+nrel_interaction
+=> nrel_main_idtf:
+	[взаимодействие](* <- lang_ru;; *);
+	[interaction](* <- lang_en;; *);;
+
 nrel_periodic_number
 	=> nrel_main_idtf: [порядковый номер*](* <- lang_ru;; *);
 	<- sc_node_norole_relation;

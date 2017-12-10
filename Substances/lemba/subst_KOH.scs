@@ -1,0 +1,149 @@
+subst_KOH
+	=>nrel_main_idtf:
+	[гидроксид калия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[potassium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[калиевая щёлочь]
+	(* <- lang_ru;; *);
+	[гидроокись калия]
+	(* <- lang_ru;; *);
+	[каустический поташ]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[KOH]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_potassium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p><b>Гидроксид калия(KOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид калия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<- solid;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_KOH ->elem_K);;
+	atomic_multiplicity_one->(subst_KOH ->elem_O);;
+	atomic_multiplicity_one->(subst_KOH ->elem_H);;
+subst_KOH
+//////////
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [393] (* <- lang_en;;*);;//380−406
+			<- number;;
+		*);;
+	*);;
+*);
+//////////!
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [1327] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,08] (* <- lang_en;;*);;//2,044−2,12
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_KOH_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид калия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид калия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_KOH_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид калия, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_KOH_and_non_transition_metals
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид калия, взаимодействие*, непереходный металл, комплексная соль, водород)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с некоторыми непереходными металлами в растворе с образованием комплексной соли и водорода.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+/*<- rrel_key_sc_element: interaction_subst_KOH_dissociation
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид калия, диссоциация*,вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия в воде диссоциирует] (*<- lang_ru;;*);;
+	*);;
+*);*/
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид калия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_KOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+
+//decomposition_subst_KOH -> rrel_key_sc_element:nrel_decomposition; lithium_oxide; water;;
+interaction_subst_KOH_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_KOH_and_acid_oxide->rrel_key_sc_element: nrel_interaction; acid_oxide; salt;water;;
+interaction_subst_KOH_and_non_transition_metals->rrel_key_sc_element:nrel_interaction;non_transition_metals; complex_salt; hydrogen;;
