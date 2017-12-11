@@ -955,6 +955,11 @@ weak_acid
 		*);;
 *);;
 
+
+atomic_multiplicity_three -> (boric_acid -> elem_H);;
+atomic_multiplicity_one -> (boric_acid -> elem_B);;
+atomic_multiplicity_three -> (boric_acid -> elem_O);;
+
 boric_acid
 => nrel_main_idtf:
 	[борная кислота](* <- lang_ru;;	*);
@@ -1118,6 +1123,10 @@ boric_acid
 		*);;
 	*);;
 
+atomic_multiplicity_one -> (bromic_acid -> elem_H);;
+atomic_multiplicity_one -> (bromic_acid -> elem_Br);;
+atomic_multiplicity_three -> (bromic_acid -> elem_O);;
+
 bromic_acid
 => nrel_main_idtf:
 	[бромноватая кислота](* <- lang_ru;; *);
@@ -1189,6 +1198,10 @@ bromic_acid
 			*);;
 		*);;
 	*);;
+
+atomic_multiplicity_two -> (carbonic_acid -> elem_H);;
+atomic_multiplicity_one -> (carbonic_acid -> elem_C);;
+atomic_multiplicity_three -> (carbonic_acid -> elem_O);;
 
 carbonic_acid
 => nrel_main_idtf:
@@ -1314,6 +1327,11 @@ carbonic_acid
 			*);;
 		*);;
 	*);;
+
+
+atomic_multiplicity_one -> (chloric_acid -> elem_H);;
+atomic_multiplicity_one -> (chloric_acid -> elem_Cl);;
+atomic_multiplicity_three -> (chloric_acid -> elem_O);;
 
 chloric_acid
 => nrel_main_idtf:
@@ -1441,6 +1459,10 @@ chloric_acid
 		*);;
 	*);;
 
+atomic_multiplicity_one -> (chlorous_acid -> elem_H);;
+atomic_multiplicity_one -> (chlorous_acid -> elem_Cl);;
+atomic_multiplicity_two -> (chlorous_acid -> elem_O);;
+
 chlorous_acid
 => nrel_main_idtf:
 	[хлористая кислота](* <- lang_ru;; *);
@@ -1539,6 +1561,9 @@ chlorous_acid
 			*);;
 		*);;
 	*);;
+
+atomic_multiplicity_one -> (hydrobromic_acid -> elem_H);;
+atomic_multiplicity_one -> (hydrobromic_acid -> elem_Br);;
 
 hydrobromic_acid
 => nrel_main_idtf:
@@ -1678,6 +1703,9 @@ hydrobromic_acid
 		*);;
 *);;
 
+atomic_multiplicity_one -> (hydrochloric_acid -> elem_H);;
+atomic_multiplicity_one -> (hydrochloric_acid -> elem_Cl);;
+
 hydrochloric_acid
 => nrel_main_idtf:
 	[соляная кислота](* <- lang_ru;; *);
@@ -1799,6 +1827,9 @@ hydrochloric_acid
 		*);;
 *);;
 
+atomic_multiplicity_one -> (hydrofluoric_acid -> elem_H);;
+atomic_multiplicity_one -> (hydrofluoric_acid -> elem_F);;
+
 hydrofluoric_acid
 => nrel_main_idtf:
 	[плавиковая кислота](* <- lang_ru;; *);
@@ -1919,6 +1950,9 @@ hydrofluoric_acid
 			*);;
 		*);;
 *);;
+
+atomic_multiplicity_one -> (hydroiodic_acid -> elem_H);;
+atomic_multiplicity_one -> (hydroiodic_acid -> elem_I);;
 
 hydroiodic_acid
 => nrel_main_idtf:
@@ -2058,6 +2092,9 @@ hydroiodic_acid
 			*);;
 		*);;
 	*);;
+
+atomic_multiplicity_two -> (hydrosulfuric_acid -> elem_H);;
+atomic_multiplicity_one -> (hydrosulfuric_acid -> elem_S);;
 
 hydrosulfuric_acid
 => nrel_main_idtf:
@@ -2228,6 +2265,10 @@ hydrosulfuric_acid
 		*);;
 *);;
 
+atomic_multiplicity_one -> (iodic_acid -> elem_H);;
+atomic_multiplicity_one -> (iodic_acid -> elem_I);;
+atomic_multiplicity_three -> (iodic_acid -> elem_O);;
+
 iodic_acid
 => nrel_main_idtf:
 	[иодноватая кислота](* <- lang_ru;; *);
@@ -2352,6 +2393,10 @@ iodic_acid
 		*);;
 	*);;
 
+atomic_multiplicity_one -> (metaarsenious_acid -> elem_H);;
+atomic_multiplicity_one -> (metaarsenious_acid -> elem_As);;
+atomic_multiplicity_two -> (metaarsenious_acid -> elem_O);;
+
 metaarsenious_acid
 => nrel_main_idtf:
 	[метамышьяковистая кислота](* <- lang_ru;; *);
@@ -2403,6 +2448,10 @@ metaarsenious_acid
 		-> rrel_example:[Metaarseniousc acid is decomposed upon calcination.](* <-lang_en;; *);;
 		*);;
 *);;
+
+atomic_multiplicity_two -> (metasilicic_acid -> elem_H);;
+atomic_multiplicity_one -> (metasilicic_acid -> elem_Si);;
+atomic_multiplicity_three -> (metasilicic_acid -> elem_O);;
 
 metasilicic_acid
 => nrel_main_idtf:
@@ -2459,6 +2508,10 @@ metasilicic_acid
 			*);;
 		*);;
 	*);;
+
+atomic_multiplicity_one -> (nitric_acid -> elem_H);;
+atomic_multiplicity_one -> (nitric_acid -> elem_N);;
+atomic_multiplicity_three -> (nitric_acid -> elem_O);;
 
 nitric_acid
 => nrel_main_idtf:
@@ -2596,6 +2649,10 @@ nitric_acid
 			*);;
 		*);;
 	*);;
+
+atomic_multiplicity_three -> (orthophosphoric_acid -> elem_H);;
+atomic_multiplicity_one -> (orthophosphoric_acid -> elem_P);;
+atomic_multiplicity_four -> (orthophosphoric_acid -> elem_O);;
 
 orthophosphoric_acid
 => nrel_main_idtf:
@@ -2775,6 +2832,10 @@ orthophosphoric_acid
 		*);;
 *);;
 
+atomic_multiplicity_two -> (selenic_acid -> elem_H);;
+atomic_multiplicity_one -> (selenic_acid -> elem_Se);;
+atomic_multiplicity_four -> (selenic_acid -> elem_O);;
+
 selenic_acid
 => nrel_main_idtf:
 	[селеновая кислота] (* <- lang_ru;; *);
@@ -2928,6 +2989,10 @@ selenic_acid
 			*);;
 		*);;
 	*);;
+
+atomic_multiplicity_two -> (sulfuric_acid -> elem_H);;
+atomic_multiplicity_one -> (sulfuric_acid -> elem_S);;
+atomic_multiplicity_four -> (sulfuric_acid -> elem_O);;
 
 sulfuric_acid
 => nrel_main_idtf:
@@ -3110,6 +3175,10 @@ sulfuric_acid
 			*);;
 		*);;
 	*);;
+
+atomic_multiplicity_two -> (sulfurous_acid -> elem_H);;
+atomic_multiplicity_one -> (sulfurous_acid -> elem_S);;
+atomic_multiplicity_three -> (sulfurous_acid -> elem_O);;
 
 sulfurous_acid
 => nrel_main_idtf:

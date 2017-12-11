@@ -1,7 +1,3 @@
-rrel_gram_per_mole
-=> nrel_main_idtf:
-	[грамм на моль'](* <- lang_ru;; *);
-	[gram per mole'](* <- lang_en;; *);;
 hydrocyanic_acid
 => nrel_main_idtf:
 	[синильная кислота](* <- lang_ru;; *);

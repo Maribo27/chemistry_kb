@@ -1,15 +1,3 @@
-alcohol
-=> nrel_main_idtf:
-	[спирт](* <- lang_ru;; *);
-	[alcohol](* <- lang_en;; *);;
-hydrocarbon
-=> nrel_main_idtf:
-	[углеводород](* <- lang_ru;; *);
-	[hydrocarbon](* <- lang_en;; *);;
-electricity
-=> nrel_main_idtf:
-	[электрический ток](* <- lang_ru;; *);
-	[electricity](* <- lang_en;; *);;
 non_electrolyte
 => nrel_main_idtf:
 	[неэлектролит](* <- lang_ru;; *);

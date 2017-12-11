@@ -1,11 +1,3 @@
-oligopeptide
-=> nrel_main_idtf:
-	[олигопептид](* <-lang_ru;; *);
-	[oligopeptide](* <-lang_en;; *);;
-polypeptide
-=> nrel_main_idtf:
-	[полипептид](* <-lang_ru;; *);
-	[polypeptide](* <-lang_en;; *);;
 peptide
 => nrel_main_idtf:
 	[пептид](* <-lang_ru;; *);

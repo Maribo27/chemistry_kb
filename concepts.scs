@@ -1,13 +1,19 @@
-base
+nickel_sulphide_1//
 => nrel_main_idtf:
-	[основание]
-	(* <- lang_ru;; *);
-	[base]
-	(* <- lang_en;; *);;
-
-basis
-	=> nrel_main_idtf: 
-		[основание](*<- lang_ru;;*);;
+	[сульфид никеля(I)](* <- lang_ru;; *);
+	[nickel sulphide (I)](* <- lang_en;; *);
+=> nrel_idtf:
+	[Ni2S](*<-lang_en;;*);;
+	
+non_transition_metals
+=> nrel_main_idtf:
+	[непереходный металл](* <- lang_ru;; *);
+	[non transition metals](* <- lang_en;; *);;
+	
+complex_hydroxide
+=> nrel_main_idtf:
+	[комплексный гидроксид](* <- lang_ru;; *);
+	[complex hydroxide](* <- lang_en;; *);;
 
 pure_metal
 	<- sc_node_not_relation;
@@ -355,7 +361,6 @@ alkaline_earth_metal
 	[alkaline earth metal]
 	(* <- lang_en;; *);;
 
-
 alkali_salt
 => nrel_main_idtf:
 	[основная соль]
@@ -468,61 +473,10 @@ potassium_chloride
 	[potassium chloride]
 	(* <- lang_en;; *);;
 
-
-nrel_allotropy
-=> nrel_main_idtf:
-	[аллотропия*]
-	(* <- lang_ru;; *);
-	[allotropy*]
-	(* <- lang_en;; *);;
-
-rrel_organic_solvent
-=> nrel_main_idtf:
-    [organic solvent'](*<- lang_en;;*);
-	[органический растворитель']
-	(* <- lang_ru;;	*);;
-	
-rrel_inorganic_solvent
-=> nrel_main_idtf:
-    [inorganic solvent'](*<- lang_en;;*);
-	[неорганический растворитель']
-	(* <- lang_ru;;	*);;
-	
-rrel_liquid_solvent
-=> nrel_main_idtf:
-    [liquid solvent'](*<- lang_en;;*);
-	[жидкий растворитель']
-	(* <- lang_ru;;	*);;
-
-rrel_solid_solvent
-=> nrel_main_idtf:
-    [solid solvent'](*<- lang_en;;*);
-	[твёрдый растворитель']
-	(* <- lang_ru;;	*);;
-
-rrel_aprotic_solvent
-=> nrel_main_idtf:
-    [aprotic solvent'](*<- lang_en;;*);
-	[апротонный растворитель']
-	(* <- lang_ru;;	*);;
-
-rrel_amphidic_solvent
-=> nrel_main_idtf:
-    [amphidic solvent'](*<- lang_en;;*);
-	[амфипротный растворитель']
-	(* <- lang_ru;;	*);;
-
-rrel_protophilic_solvent
-=> nrel_main_idtf:
-    [protophilic solvent'](*<- lang_en;;*);
-	[протофильный растворитель']
-	(* <- lang_ru;;	*);;
-	
 multielement_compound
 => nrel_main_idtf:
-    [многоэлементное соединение](*<- lang_en;;*);
-	[multielement compound]
-	(* <- lang_ru;;	*);;
+    [многоэлементное соединение](* <- lang_ru;;	*);
+	[multielement compound](*<- lang_en;;*);;
 	
 colloidal_solution
 => nrel_main_idtf:
@@ -540,96 +494,11 @@ molecular_solution
 	[молекулярный раствор]
 	(* <- lang_ru;;	*);;
 
-nrel_solvation 
-<- sc_node_norole_relation;
-=> nrel_main_idtf:
-    [solvation*]
-    (*<- lang_en;;*);
-	[сольватация*]
-	(* <- lang_ru;;	*);;
-
 picric_acid
 => nrel_main_idtf:
     [picric acid]
     (*<- lang_en;;*);
 	[пикриновая кислота]
-	(* <- lang_ru;;	*);;
-
-gas_explosive
-=> nrel_main_idtf:
-    [gas explosive]
-    (*<- lang_en;;*);
-	[газообразное взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-liquid_explosive
-=> nrel_main_idtf:
-    [liquid explosive]
-    (*<- lang_en;;*);
-	[жидкое взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-gel_explosive
-=> nrel_main_idtf:
-    [gel explosive]
-    (*<- lang_en;;*);
-	[гелеобразное взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-solid_explosive
-=> nrel_main_idtf:
-    [solid explosive]
-    (*<- lang_en;;*);
-	[твёрдое взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-elastic_explosive
-=> nrel_main_idtf:
-    [elastic explosive]
-    (*<- lang_en;;*);
-	[эластичное взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-emulsion_explosive
-=> nrel_main_idtf:
-    [emulsion explosive]
-    (*<- lang_en;;*);
-	[эмульсионное взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-plastic_explosive
-=> nrel_main_idtf:
-    [plastic explosive]
-    (*<- lang_en;;*);
-	[пластичное взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-suspension_explosive
-=> nrel_main_idtf:
-    [suspension explosive]
-    (*<- lang_en;;*);
-	[суспензионное взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-pressed_explosive
-=> nrel_main_idtf:
-    [pressed explosive]
-    (*<- lang_en;;*);
-	[прессованное взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-cast_explosive
-=> nrel_main_idtf:
-    [cast explosive]
-    (*<- lang_en;;*);
-	[литое взрывчатое вещество]
-	(* <- lang_ru;;	*);;
-
-patronized_explosive
-=> nrel_main_idtf:
-    [patronized explosive]
-    (*<- lang_en;;*);
-	[патронированное взрывчатое вещество]
 	(* <- lang_ru;;	*);;
 
 dichromic_acid

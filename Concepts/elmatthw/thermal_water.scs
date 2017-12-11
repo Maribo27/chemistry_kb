@@ -1,15 +1,3 @@
-hypotonic_thermal_water
-=> nrel_main_idtf:
-	[гипотоническая термальная вода](* <- lang_ru;; *);
-	[hypotonic thermal water](* <- lang_en;; *);;
-isotonic_thermal_water
-=> nrel_main_idtf:
-	[изотоническая термальная вода](* <- lang_ru;; *);
-	[isotonic thermal water](* <- lang_en;; *);;
-hypertensive_thermal_water
-=> nrel_main_idtf:
-	[гипертоническая термальная вода](* <- lang_ru;; *);
-	[hypertensive thermal water](* <- lang_en;; *);;
 thermal_water
 => nrel_main_idtf:
 	[термальная вода](* <- lang_ru;; *);

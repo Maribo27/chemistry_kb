@@ -5,6 +5,7 @@ subst_Fe
 <- rrel_key_sc_element: definition_of_subst_Fe
 (* 
 	=> nrel_main_idtf: [Опр. (железо)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (iron)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -12,6 +13,12 @@ subst_Fe
 			[<p><b>Простое вещество железо</b> — ковкий, вязкий <sc_element sys_idtf  = "metal">металл</sc_element> <sc_element sys_idtf  = "color_white_silver">серебристо-белого цвета</sc_element> с высокой химической реакционной способностью: железо быстро корродирует при высоких <sc_element sys_idtf  = "temperature">температурах</sc_element> или при высокой <sc_element sys_idtf  = "moisture">влажности</sc_element> на <sc_element sys_idtf  = "air">воздухе</sc_element>.</p>] 
 			(*
 				<-lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example:
+			[<p><b>Iron (elementary substance)</b> is a malleable, viscous <sc_element sys_idtf  = "color_white_silver">silver-white</sc_element> <sc_element sys_idtf  = "metal">metal</sc_element> with a high chemical reactivity: iron corrodes rapidly at high <sc_element sys_idtf  = "temperature">temperatures</sc_element> or at high <sc_element sys_idtf  = "air">air</sc_element> <sc_element sys_idtf  = "moisture">humidity</sc_element>.</p>] 
+			(*
+				<-lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;
@@ -28,16 +35,17 @@ subst_Fe
 <- liquid;
 <= nrel_inclusion: chemical_substance;
 <- color_white_silver;
-=> nrel_inclusion: elem_Fe;
 
 <- rrel_key_sc_element: interaction_fe_and_acid
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (железо, взаимодействие*, кислота)](*<- lang_ru;;*);;
+		[Утв. (железо, взаимодействие*, кислота)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, acid)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с кислотами c образованием соли и выделением водорода.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with acids with forming a salt and excretion hydrogen.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -45,21 +53,26 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (железо, взаимодействие*, кислород)](*<- lang_ru;;*);;
+		[Утв. (железо, взаимодействие*, кислород)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, oxygen)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с кислородом.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with oxygen.] (*<- lang_en;;*);;
 	*);;
+	-> rrel_key_sc_element: elem_O;;
 *);
 
 <- rrel_key_sc_element: interaction_fe_and_S
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (железо, взаимодействие*, сера)](*<- lang_ru;;*);;
+		[Утв. (железо, взаимодействие*, сера)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, sulfur)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с порошком серы.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with sulfur powder.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -67,10 +80,12 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (железо, взаимодействие*, галоген)](*<- lang_ru;;*);;
+		[Утв. (железо, взаимодействие*, галоген)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, halogen)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Железо взаимодействует с галогенами.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with halogen.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -78,10 +93,12 @@ subst_Fe
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (железо, взаимодействие*, неметалл)](*<- lang_ru;;*);;
+		[Утв. (железо, взаимодействие*, неметалл)](*<- lang_ru;;*);
+		[Expl. (iron, interaction*, nonmetal)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:[ Железо взаимодействует с галогенами.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Железо взаимодействует с неметаллами.] (*<- lang_ru;;*);;
+		-> rrel_example:[ Iron interacts with nonmetal.] (*<- lang_en;;*);;
 	*);;
 *);
 
@@ -113,7 +130,9 @@ subst_Fe
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (железо, твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: 
+		[Рис. (железо, твёрдое тело)] (* <- lang_ru;;	*);
+		[Pic. (iron, solid)](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Fe.jpg"
@@ -141,7 +160,11 @@ subst_Fe
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_kelvin: 1812 (*<- number;;*);;
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [1812] (* <- lang_en;;*);;
+			<- number;;
+		*);;
 	*);;
 *);
 
@@ -150,7 +173,11 @@ subst_Fe
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_kelvin: 3134 (*<- number;;*);;
+		-> rrel_kelvin: ...
+		(*
+			=> nrel_main_idtf: [3134] (* <- lang_en;;*);;
+			<- number;;
+		*);;
 	*);;
 *);
 

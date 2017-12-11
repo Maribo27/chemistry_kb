@@ -15,7 +15,7 @@ scp_program -> agent_find_chemical_amount_of_substance
 
 	-> rrel_operators: .agent_find_chemical_amount_of_substance_operatorset 
 	(*
-		-> rrel_init: .find_chemical_amount_of_substance_operator01 
+		-> rrel_init: .find_chemical_amount_of_substance_operator_1 
 		(*
 			<- searchElStr3;;
 
@@ -23,10 +23,10 @@ scp_program -> agent_find_chemical_amount_of_substance
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _question;;
 
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator02;;
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_2;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator02 
+		-> .find_chemical_amount_of_substance_operator_2 
 		(*
 			<- searchElStr3;;
 
@@ -34,11 +34,11 @@ scp_program -> agent_find_chemical_amount_of_substance
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _question;;
 
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator03;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operatorreturn;;
+			=> nrel_then: .find_chemical_amount_of_substance_operator_3;;
+			=> nrel_else: .find_chemical_amount_of_substance_operator_error;;
 		*);;
 		
-		-> .agent_find_chemical_amount_of_substance_operator03 
+		-> .find_chemical_amount_of_substance_operator_3 
 		(*
 			<- searchElStr5;;
 		
@@ -48,60 +48,19 @@ scp_program -> agent_find_chemical_amount_of_substance
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_dividend;;
 
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator1;;
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_4;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator1
-		(*
-			<- contAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _molar_mass;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-			
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator2s;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator2s
-		(*
-			<- contAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _mol_mass;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-			
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator2w;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator2w
-		(*
-			<- contAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _chemical_amount;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-			
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator2;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator2
+		-> .find_chemical_amount_of_substance_operator_4
 		(*
 			<- genEl;;
 
 			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator3;;
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_5;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator3
-		(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
-		
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator4;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator4
+		-> .find_chemical_amount_of_substance_operator_5
 		(*
 			<- searchSetStr3;;
 		
@@ -111,219 +70,11 @@ scp_program -> agent_find_chemical_amount_of_substance
 
 			-> rrel_set_1: rrel_assign: rrel_scp_var: _type_set;;
 
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator5;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operatorreturn;;
+			=> nrel_then: .find_chemical_amount_of_substance_operator_6;;
+			=> nrel_else: .find_chemical_amount_of_substance_operator_error;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator5
-		(*
-			<- searchElStr3;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _type_set;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc14;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _type;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator6;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operatorreturn;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator6
-		(*
-			<- eraseEl;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc14;;
-
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator7;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator7
-		(*
-			<- searchSetStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _type;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc15;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;
-			-> rrel_5: rrel_assign: rrel_scp_var: _node;;
-
-			-> rrel_set_5: rrel_assign: rrel_scp_var: rrel_node: _multiplicity;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator9;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator5;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator9
-		(*
-			<- searchElStr3;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiplicity;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc141;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _mult;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator10;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator19;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator10
-		(*
-			<- eraseEl;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc141;;
-
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator11x;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator11x 
-		(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _mult;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _valuex;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator11z;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator9;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator11z
-		(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _valuex;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _at_mult;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator12;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator9;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator12
-		(*
-			<- searchSetStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _type;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc15;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;
-			-> rrel_5: rrel_fixed: rrel_scp_var: _mult;;
-
-			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _elem_set;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator13;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator9;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator13
-		(*
-			<- searchElStr3;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _elem_set;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc141;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator14;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator9;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator14
-		(*
-			<- eraseEl;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc141;;
-
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator15;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator15
-		(*
-			<- searchElStr3;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_const: chemical_element;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator16;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator13;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator16
-	 	(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_atomic_mass;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator162;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator13;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator162
-		(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator163;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator13;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator163
-		(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _nodex;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _rrole;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc22;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_aem;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator164;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operator13;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator164
-		(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _rrole;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _molar;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
-
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator17;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator17
-		(*
-			<- contMult;;
-			-> rrel_1: rrel_fixed: rrel_scp_var: _mol_mass;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _at_mult;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _molar;;
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator18;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator18
-		(*
-			<- contAdd;;
-			-> rrel_1: rrel_fixed: rrel_scp_var: _molar_mass;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _mol_mass;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _molar_mass;;
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator13;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator19
+		-> .find_chemical_amount_of_substance_operator_6
 	 	(*
 			<- searchElStr5;;
 		
@@ -333,125 +84,142 @@ scp_program -> agent_find_chemical_amount_of_substance
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_mass;;
 
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator192;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operatorreturn;;
+			=> nrel_then: .find_chemical_amount_of_substance_operator_9;;
+			=> nrel_else: .find_chemical_amount_of_substance_operator_7;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator192
-		(*
+		-> .find_chemical_amount_of_substance_operator_7
+	 	(*
 			<- searchElStr5;;
 		
-			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator193;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operatorreturn;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator193
-		(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _nodex;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _rrole;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc22;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_gram;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator194;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operatorreturn;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator194
-		(*
-			<- searchElStr5;;
-		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _rrole;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _mass;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
-
-			=> nrel_then: .agent_find_chemical_amount_of_substance_operator20;;
-			=> nrel_else: .agent_find_chemical_amount_of_substance_operatorreturn;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator20
-		(*
-			<- contDiv;;
-			-> rrel_1: rrel_fixed: rrel_scp_var: _chemical_amount;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _mass;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _molar_mass;;
-			=> nrel_goto: .agent_find_chemical_amount_of_substance_operator21a;;
-		*);;
-
-		-> .agent_find_chemical_amount_of_substance_operator21a
-		(*
-			<- genElStr5;;
-
 			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc33;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _chemical_amount;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc34;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_number_of_chemical;;
-			=> nrel_goto:  .agent_find_chemical_amount_of_substance_operator21b;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_amount;;
+
+			=> nrel_then: .find_chemical_amount_of_substance_operator_10;;
+			=> nrel_else: .find_chemical_amount_of_substance_operator_8;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator21b
-		(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc35;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		-> .find_chemical_amount_of_substance_operator_8
+	 	(*
+			<- searchElStr5;;
 		
-			=> nrel_goto:  .agent_find_chemical_amount_of_substance_operator21c;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_N;;
+
+			=> nrel_then: .find_chemical_amount_of_substance_operator_11;;
+			=> nrel_else: .find_chemical_amount_of_substance_operator_error;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator21c
+		-> .find_chemical_amount_of_substance_operator_9
 		(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc36;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _chemical_amount;;
-		
-			=> nrel_goto:  .agent_find_chemical_amount_of_substance_operator21d;;
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_mass;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: rrel_node: _type_set;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_9_wait;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator21d
+		-> .find_chemical_amount_of_substance_operator_9_wait 
 		(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc37;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
-		
-			=> nrel_goto:  .agent_find_chemical_amount_of_substance_operator21e;;
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_gen_answer;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operator21e
+		-> .find_chemical_amount_of_substance_operator_10
 		(*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc38;;
-			-> rrel_3: rrel_fixed: rrel_const: nrel_number_of_chemical;;
-		
-			=> nrel_goto:  .agent_find_chemical_amount_of_substance_operatorgen_answer;;
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_amount;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_10_wait;;
 		*);;
 
-		-> .agent_find_chemical_amount_of_substance_operatorgen_answer
+		-> .find_chemical_amount_of_substance_operator_10_wait 
+		(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_gen_answer;;
+		*);;
+
+		-> .find_chemical_amount_of_substance_operator_11
+		(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_N;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_11_wait;;
+		*);;
+
+		-> .find_chemical_amount_of_substance_operator_11_wait 
+		(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_gen_answer;;
+		*);;
+
+		-> .find_chemical_amount_of_substance_operator_error
+		(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_error_input_data;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .proc_search_of_mass_error_wait;;
+		*);;
+
+		-> .proc_search_of_mass_error_wait 
+		(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set2;;
+			
+			=> nrel_goto: .find_chemical_amount_of_substance_operator_gen_answer;;
+		*);;
+
+		-> .find_chemical_amount_of_substance_operator_gen_answer
 		(*
 			<- genElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
 			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc4;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
 
 			=> nrel_goto: .agent_find_chemical_amount_of_substance_operatorreturn;;

@@ -27,19 +27,6 @@ elem_O
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
-(*
-	<- explanation;;
-	=> nrel_main_idtf: [Утв. (атом кислорода, свойство изотопа*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation: ...
-	(*
-		-> rrel_example: "file://html/elem_O_isotope.html"
-		(*
-			=> nrel_format: format_html;;
-		*);;
-	*);;
-*);
-
 => nrel_periodic_number: eight;
 
 <- gas;
@@ -83,7 +70,7 @@ elem_O
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:60(*<- number;;*);;
+		-> rrel_pm:sixty;;
 	*);;
 *);
 
@@ -94,7 +81,7 @@ elem_O
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:73(*<- number;;*);;
+		-> rrel_pm:seventy_three;;
 	*);;
 *);
 

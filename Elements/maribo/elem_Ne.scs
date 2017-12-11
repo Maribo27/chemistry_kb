@@ -27,19 +27,6 @@ elem_Ne
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
-(*
-	<- explanation;;
-	=> nrel_main_idtf: [Утв. (атом неона, свойство изотопа*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation: ...
-	(*
-		-> rrel_example: "file://html/elem_Ne_isotope.html"
-		(*
-			=> nrel_format: format_html;;
-		*);;
-	*);;
-*);
-
 => nrel_periodic_number: ten;
 
 <- nonmetal;
@@ -81,7 +68,7 @@ elem_Ne
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:38(*<- number;;*);;
+		-> rrel_pm:thirty_eight;;
 	*);;
 *);
 
@@ -92,7 +79,7 @@ elem_Ne
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:58(*<- number;;*);;
+		-> rrel_pm:fifty_eight;;
 	*);;
 *);
 
