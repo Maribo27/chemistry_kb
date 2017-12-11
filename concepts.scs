@@ -143,9 +143,6 @@ aluminothermic_method=> nrel_main_idtf:
 coke_reduction=> nrel_main_idtf:
 	[коксование](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-chemistry=> nrel_main_idtf:
-	[химия](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 organic_synthesis=> nrel_main_idtf:
 	[органический синтез](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
@@ -520,3 +517,13 @@ carbide
 (* <- lang_ru;;	*);
 [carbide]
 (* <- lang_en;;	*);;
+
+science
+=>nrel_main_idtf:
+[наука](*<- lang_ru;;*);
+[science](*<- lang_en;;*);;
+
+nrel_solod_state
+=>nrel_main_idtf:
+[твердое состояние*](*<- lang_ru;;*);
+[solid state*](*<- lang_en;;*);;
