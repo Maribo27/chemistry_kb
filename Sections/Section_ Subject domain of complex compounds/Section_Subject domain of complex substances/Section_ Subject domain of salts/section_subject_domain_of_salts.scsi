@@ -1703,7 +1703,7 @@ Definition_of_bromide
 		=> nrel_format: format_html;;
 		*);;
 
-		-> rrel_example:[Acidic salts are formed in reactions of excess acid on <sc_element sys_idtf = "alkali"> alkali </ sc_element>. Depending on the amount of moles of acid (in this case <sc_element sys_idtf = "orthophosphoric_acid"> orthophosphoric </ sc_element>), hydroorthophosphates can form.]
+		-> rrel_example:[Acidic salts are formed in reactions of excess acid on <sc_element sys_idtf="alkali">alkali</sc_element>. Depending on the amount of moles of acid (in this case <sc_element sys_idtf="orthophosphoric_acid">orthophosphoric</sc_element>), hydroorthophosphates can form.]
 		(* 
 		<-lang_en;;
 		=> nrel_format: format_html;;
@@ -1779,7 +1779,7 @@ Definition_of_acid_salt
 			=> nrel_format: format_html;;
 			*);;
 
-			-> rrel_example:[Acesulfame potassium is used for sweetening <sc_element sys_idtf = "carbonated_water"> carbonated water </ sc_element>, baked products, gelatinous desserts, chewing gum and syrups.]
+			-> rrel_example:[Acesulfame potassium is used for sweetening <sc_element sys_idtf="carbonated_water"> carbonated water </sc_element>, baked products, gelatinous desserts, chewing gum and syrups.]
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -1832,7 +1832,7 @@ Definition_of_acesulfame_potassium
 		   => nrel_format: format_html;;
 		   *);;
 
-		-> rrel_example:[<b><sc_element sys_idtf="tantalum_carbide">Tantalum carbide</sc_element></b> is a  <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Ta">tantalum</sc_element> and <sc_element sys_idtf="C">carbon</sc_element>.]
+		-> rrel_example:[<b><sc_element sys_idtf="tantalum_carbide">Tantalum carbide</sc_element></b> is a <sc_element sys_idtf="chemical_compound">chemical compound</sc_element> of <sc_element sys_idtf="elem_Ta">tantalum</sc_element> and <sc_element sys_idtf="C">carbon</sc_element>.]
 		(* <-lang_en;; 
 		   => nrel_format: format_html;;
 		   *);;
