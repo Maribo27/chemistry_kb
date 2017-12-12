@@ -44,6 +44,6 @@ chemistry
 	=>nrel_main_idtf:
 	[Утв. (химия, квантовая химия, химическая физика, физическая химия, биохимия)](* <-lang_ru;;*);
 	[Expl. (chemistry, quantum chemistry, chemical physics, physical chemistry, biochemistry)](* <-lang_en;;*);;
-	-> rrel_example: "file://html/chemistry_1.html";;
-	-> rrel_example: "file://html/chemistry_1_en.html";;
+	-> rrel_example: "file://html/chemistry_1.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/chemistry_1_en.html"(* <-lang_en;; *);;
 *);;
