@@ -32,7 +32,6 @@ subst_Md
 *);
 
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Md;
 
 => nrel_ionization_energy: ...
 (*
@@ -51,3 +50,5 @@ subst_Md
 		-> rrel_kelvin: 1100 (*<- number;;*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Md -> elem_Md);;

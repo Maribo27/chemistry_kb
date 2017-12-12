@@ -67,7 +67,7 @@ elem_Mn
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:127(*<- number;;*);;
+		-> rrel_pm:one_hundred_twenty_seven;;
 	*);;
 *);
 
@@ -78,7 +78,7 @@ elem_Mn
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:117(*<- number;;*);;
+		-> rrel_pm:one_hundred_and_seventeen;;
 	*);;
 *);
 

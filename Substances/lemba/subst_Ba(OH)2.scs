@@ -1,0 +1,130 @@
+subst_BaOH2
+	=>nrel_main_idtf:
+	[гидроксид бария]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[barium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[едкий барий]
+	(* <- lang_ru;; *);
+	[BaOH2]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_barium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид бария (Ba(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид бария)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<-solid;
+	<-no_color;;
+	atomic_multiplicity_one->(subst_BaOH2 ->elem_Ba);;
+	atomic_multiplicity_three->(subst_BaOH2 ->elem_O);;
+	atomic_multiplicity_three->(subst_BaOH2 ->elem_H);;
+subst_BaOH2
+//////////
+
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [408] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [780] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,5] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:interaction_subst_BaOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид бария, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид бария взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_BaOH2_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид бария, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид бария взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид бария)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_BaOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+interaction_subst_BaOH2_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid;
+->rrel_key_sc_element: salt;
+->rrel_key_sc_element: water;;
+
+interaction_subst_BaOH2_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide;
+->rrel_key_sc_element: salt; 
+->rrel_key_sc_element:water;;

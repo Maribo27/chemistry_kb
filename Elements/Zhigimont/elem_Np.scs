@@ -54,7 +54,7 @@ elem_Np
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
+<- rrel_key_sc_element: neptunium_atom_picture
 (*
 	<- illustration;;
 	<- description_of_a_typical_instance;;
@@ -67,7 +67,7 @@ elem_Np
 		*);;
 	*);
 
-<- rrel_key_sc_element: electron_configuration_No
+<- rrel_key_sc_element: electron_configuration_Np
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 

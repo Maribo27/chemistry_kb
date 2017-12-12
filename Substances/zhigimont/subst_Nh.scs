@@ -32,7 +32,6 @@ subst_Nh
 *);
 
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Nh;
 
 
 <- rrel_key_sc_element: receiving_Nh_from_Mc
@@ -127,3 +126,5 @@ subst_Nh
 		-> rrel_gram_per_cubic_cm: 16 (*<- number;;*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Nh -> elem_Nh);;

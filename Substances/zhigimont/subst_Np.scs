@@ -33,7 +33,6 @@ subst_Np
 *);
 
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Np;
 
 <- rrel_key_sc_element:...
 (*
@@ -146,3 +145,5 @@ subst_Np
 		*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Np -> elem_Np);;

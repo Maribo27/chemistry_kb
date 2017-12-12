@@ -6,7 +6,7 @@ elem_Cd
 <- rrel_key_sc_element:
 	Definition_of_cadmium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Cd
 <- nrel_inclusion: valence_two;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Cd
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -43,7 +43,7 @@ elem_Cd
 			=> nrel_main_idtf:[1,69](*<-lang_ru;; <- lang_en;;*);;
 			*);
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Cd
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -52,7 +52,7 @@ elem_Cd
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Cd
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -65,7 +65,7 @@ elem_Cd
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (кадмий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом кадмия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Kr] 4d<sup>10</sup>5s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -73,10 +73,11 @@ elem_Cd
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Cd
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом кадмия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом кадмия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(cadmium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -95,5 +96,7 @@ atomic_mass_Cd <- number;
 
 Definition_of_cadmium
 => nrel_main_idtf:
-	[Опр.(Кадмий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом кадмия)]
+	(* <- lang_ru;;	*);
+	[Def.(cadmium atom)]
+	(* <- lang_en;;	*);;

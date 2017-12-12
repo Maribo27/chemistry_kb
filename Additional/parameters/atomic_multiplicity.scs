@@ -1,100 +1,86 @@
+atomic_multiplicity 
+	=> nrel_main_idtf: 
+		[количество вхождений атома](* <- lang_ru;; *);
+		[atomic multiplicity](* <- lang_en;; *);
+	<- sc_node_not_relation;
+	<- parameter;;
+
 atomic_multiplicity_one 
+<- sc_node_not_relation;
 => nrel_main_idtf:	
 	[количество вхождений атома 1](* <- lang_ru;;  *);
 	[atomic multiplicity 1](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[1](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:one;;
 
-atomic_multiplicity_two => nrel_main_idtf:	
+atomic_multiplicity_two  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 2](* <- lang_ru;;  *);
 	[atomic multiplicity 2](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[2](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:two;;
 
-atomic_multiplicity_three => nrel_main_idtf:	
+atomic_multiplicity_three  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 3](* <- lang_ru;;  *);
 	[atomic multiplicity 3](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[3](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:three;;
 
-atomic_multiplicity_four => nrel_main_idtf:	
+atomic_multiplicity_four  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 4](* <- lang_ru;;  *);
 	[atomic multiplicity 4](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[4](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:four;;
 
-atomic_multiplicity_five => nrel_main_idtf:	
+atomic_multiplicity_five  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 5](* <- lang_ru;;  *);
 	[atomic multiplicity 5](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[5](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:five;;
 
-atomic_multiplicity_six => nrel_main_idtf:	
+atomic_multiplicity_six  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 6](* <- lang_ru;;  *);
 	[atomic multiplicity 6](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[6](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:six;;
 
-atomic_multiplicity_seven => nrel_main_idtf:	
+atomic_multiplicity_seven  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 7](* <- lang_ru;;  *);
 	[atomic multiplicity 7](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[7](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:seven;;
 
-atomic_multiplicity_eight => nrel_main_idtf:	
+atomic_multiplicity_eight  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 8](* <- lang_ru;;  *);
 	[atomic multiplicity 8](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[8](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:eight;;
 
-atomic_multiplicity_nine => nrel_main_idtf:	
+atomic_multiplicity_nine  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 9](* <- lang_ru;;  *);
 	[atomic multiplicity 9](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[9](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:nine;;
 
-atomic_multiplicity_ten => nrel_main_idtf:	
+atomic_multiplicity_ten  
+<- sc_node_not_relation;
+=> nrel_main_idtf:	
 	[количество вхождений атома 10](* <- lang_ru;;  *);
 	[atomic multiplicity 10](* <- lang_en;;  *);
 <= nrel_inclusion: atomic_multiplicity;
-=> nrel_measurement:...
-(*
-	<- number;;
-	=> nrel_main_idtf:[10](*<-lang_ru;; <- lang_en;;*);;
-*);;
+=> nrel_measurement:ten;;

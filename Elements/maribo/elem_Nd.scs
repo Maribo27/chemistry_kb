@@ -40,19 +40,6 @@ elem_Nd
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
-(*
-	<- explanation;;
-	=> nrel_main_idtf: [Утв. (атом неодима, свойство изотопа*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation: ...
-	(*
-		-> rrel_example: "file://html/elem_Nd_isotope.html"
-		(*
-			=> nrel_format: format_html;;
-		*);;
-	*);;
-*);
-
 => nrel_periodic_number: sixty;
 
 <- metal;
@@ -69,7 +56,7 @@ elem_Nd
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:182(*<- number;;*);;
+		-> rrel_pm:one_hundred_eighty_two;;
 	*);;
 *);
 
@@ -80,7 +67,7 @@ elem_Nd
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:184(*<- number;;*);;
+		-> rrel_pm:one_hundred_eighty_four;;
 	*);;
 *);
 

@@ -6,13 +6,20 @@ rrel_oxidizer
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр. (окислитель')](*<- lang_ru;;*);;
+	=> nrel_main_idtf: 
+		[Опр. (окислитель')](*<- lang_ru;;*);
+		[Def. (oxidizer')](*<- lang_en;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Окислитель</b> - <sc_element sys_idtf = "chemical_substance">вещество</sc_element>, способное отнимать <sc_element sys_idtf = "electron">электроны</sc_element> у другого вещества (<sc_element sys_idtf = "rrel_reducing_agent">восстановителя</sc_element>).</p>]
+			[ <b>Окислитель</b> - <sc_element sys_idtf = "chemical_substance">вещество</sc_element>, способное отнимать <sc_element sys_idtf = "electron">электроны</sc_element> у другого вещества (<sc_element sys_idtf = "rrel_reducing_agent">восстановителя</sc_element>).]
 			(*
-				<-lang_ru;;
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[ <b>Oxidizing agent</b> is a <sc_element sys_idtf = "chemical_substance">substance</sc_element> capable of taking <sc_element sys_idtf = "electron">electrons</sc_element> away from another substance (<sc_element sys_idtf = "rrel_reducing_agent">a reducing agent</sc_element>).]
+			(*
+				<- lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;

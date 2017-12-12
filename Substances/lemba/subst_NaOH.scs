@@ -1,0 +1,159 @@
+subst_NaOH
+	=>nrel_main_idtf:
+	[гидроксид натрия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[sodium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[едкий натр]
+	(* <- lang_ru;; *);
+	[каустическая сода]
+	(* <- lang_ru;; *);
+	=>nrel_idtf:
+	[NaOH]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_sodium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид натрия (NaOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element> .
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид натрия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<- solid;
+	<-color_white;;
+	atomic_multiplicity_one->(subst_NaOH ->elem_Tl);;
+	atomic_multiplicity_one->(subst_NaOH ->elem_O);;
+	atomic_multiplicity_one->(subst_NaOH ->elem_H);;
+subst_NaOH
+//////////
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [1050] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//////////
+=> nrel_boiling_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+	-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [3197] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [2,13] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_NaOH_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид натрия взаимодействует с кислотами c образованием соли и воды.] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_NaOH_and_amphoteric_hydroxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, амфотерный гидроксид, комплексный гидрокссид)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид натрия взаимодействует с амфотерными гидроксидами c образованием комплексного гидроксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_NaOH_and_salt
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, соль, основание)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид натрия взаимодействует с солями c образованием соли и нерастворимого в воде основания.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: interaction_subst_NaOH_and_amphoteric_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, взаимодействие*, амфотерный оксид, комплексный гидроксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с амфотерными оксидами c образованием комплексного гидроксида.] (*<- lang_ru;;*);;
+	*);;
+*);
+/*<- rrel_key_sc_element: interaction_subst_KOH_dissociation
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид натрия, диссоциация*,вода](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид натрия в воде диссоциирует] (*<- lang_ru;;*);;
+	*);;
+*);*/
+
+///////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид натрия в гранулах)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_NaOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;//amphoteric_oxide
+//decomposition_subst_NaOH -> rrel_key_sc_element:nrel_decomposition; sodium_oxide; water;;
+interaction_subst_NaOH_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_NaOH_and_amphoteric_hydroxide->rrel_key_sc_element: nrel_interaction; amphoteric_hydroxide; complex_hydroxide;;
+interaction_subst_NaOH_and_salt->rrel_key_sc_element:nrel_interaction; salt; hydroxides;;
+interaction_subst_NaOH_and_amphoteric_oxide->rrel_key_sc_element:amphoteric_oxide;nrel_interaction; complex_hydroxide;;

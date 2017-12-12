@@ -5,7 +5,7 @@ elem_Cr
 <- rrel_key_sc_element:
 	Definition_of_chromium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Cr
 <- valence_three; valence_four; valence_six; valence_one; valence_two; valence_five;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Cr
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Cr
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Cr
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -53,7 +53,7 @@ elem_Cr
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Cr
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -66,7 +66,7 @@ elem_Cr
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (хром, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом хрома, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Ar] 3d<sup>5</sup>4s<sup>1</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -74,10 +74,11 @@ elem_Cr
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Cr
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом хрома)] (* <- lang_ru;;*);;
+		=> nrel_main_idtf: [Рис.(атом хрома)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(chromium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -94,5 +95,7 @@ atomic_mass_Cr <- number;
 
 Definition_of_chromium
 => nrel_main_idtf:
-	[Опр.(Хром)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом хрома)]
+	(* <- lang_ru;;	*);
+	[Def.(chromium atom)]
+	(* <- lang_en;;	*);;

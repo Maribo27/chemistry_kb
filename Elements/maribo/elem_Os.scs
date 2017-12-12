@@ -27,19 +27,6 @@ elem_Os
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
-(*
-	<- explanation;;
-	=> nrel_main_idtf: [Утв. (атом осмия, свойство изотопа*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation: ...
-	(*
-		-> rrel_example: "file://html/elem_Os_isotope.html"
-		(*
-			=> nrel_format: format_html;;
-		*);;
-	*);;
-*);
-
 => nrel_periodic_number: seventy_six;
 
 <- transition_metal;
@@ -56,7 +43,7 @@ elem_Os
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:135(*<- number;;*);;
+		-> rrel_pm:one_hundred_thirty_five;;
 	*);;
 *);
 
@@ -67,7 +54,7 @@ elem_Os
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:126(*<- number;;*);;
+		-> rrel_pm:one_hundred_twenty_six;;
 	*);;
 *);
 

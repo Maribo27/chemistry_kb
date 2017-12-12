@@ -5,7 +5,7 @@ elem_Cu
 <- rrel_key_sc_element:
 	Definition_of_cuprum
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Cu
 <- valence_three; valence_two; valence_one;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Cu
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -44,7 +44,7 @@ elem_Cu
 			*);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Cu
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -53,7 +53,7 @@ elem_Cu
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Cu
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -66,7 +66,7 @@ elem_Cu
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (медь, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом меди, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Ar] 3d<sup>10</sup>4s<sup>1</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -74,10 +74,11 @@ elem_Cu
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Cu
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом меди)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом меди)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(cuprum atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -95,5 +96,7 @@ atomic_mass_Cu <- number;
 
 Definition_of_cuprum
 => nrel_main_idtf:
-	[Опр.(Медь)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом меди)]
+	(* <- lang_ru;;	*);
+	[Def.(cuprum atom)]
+	(* <- lang_en;;	*);;

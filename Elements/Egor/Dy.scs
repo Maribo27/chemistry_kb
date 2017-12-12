@@ -5,7 +5,7 @@ elem_Dy
 <- rrel_key_sc_element:
 	Definition_of_dysprosium
 	(* 
-	<- sc_explanation;;
+	<- explanation;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -30,7 +30,7 @@ elem_Dy
 <- valence_three;
 
 
-=> nrel_atomic_radius: ...
+=> nrel_atomic_radius: atomic_radius_of_Dy
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -40,7 +40,7 @@ elem_Dy
 *);
 
 
-=> nrel_covalent_radius: ...
+=> nrel_covalent_radius: covalent_radius_of_Dy
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -49,7 +49,7 @@ elem_Dy
 	*);;
 *);
 
-=> nrel_atomic_mass: ...
+=> nrel_atomic_mass: atomic_mass_of_Dy
 (*
 	<- quantity;;
 	<= nrel_value:...
@@ -62,7 +62,7 @@ elem_Dy
 	(*
 		<- explanation;;
 		=> nrel_main_idtf: 
-			[Утв. (диспрозий, электронная конфигурация*)](*<- lang_ru;;*);;
+			[Утв. (атом диспрозия, электронная конфигурация*)](*<- lang_ru;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ [Xe] 4f<sup>10</sup>6s<sup>2</sup> ] (*<- lang_ru;; => nrel_format: format_html;;*);;
@@ -70,10 +70,11 @@ elem_Dy
 	*);
 
 <- rrel_key_sc_element:
-	...
+	illustration_of_Dy
 	(*
 		<- illustration;;
-		=> nrel_main_idtf: [Иллюстрация (атом диспрозия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Рис.(атом диспрозия)] (* <- lang_ru;;	*);;
+		=> nrel_main_idtf: [Pic.(dysprosium atom)] (* <- lang_en;;*);;
 		<- description_of_a_typical_instance;;
 		<= nrel_sc_text_translation:...
 		(*
@@ -90,5 +91,7 @@ atomic_mass_Dy <- number;
 
 Definition_of_dysprosium
 => nrel_main_idtf:
-	[Опр.(Диспрозий)]
-	(* <- lang_ru;;	*);;
+	[Опр.(атом диспрозия)]
+	(* <- lang_ru;;	*);
+	[Def.(dysprosium atom)]
+	(* <- lang_en;;	*);;
