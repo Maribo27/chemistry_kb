@@ -36,8 +36,8 @@ organic_chemistry
 	=>nrel_main_idtf:
 	[Утв. (валентность, углерод, водород, атом, азот, кислород, сера, галоген, бор, фосфор, химический элемент)](* <-lang_ru;;*);
 	[Expl. (valence, carbon, hydrogen, atom, nitrogen, oxygen, sulfur, halogen, boron, phosphorus, chemical element)](* <-lang_en;;*);;
-	-> rrel_example: "file://html/organic_chemistry_1.html";;
-	-> rrel_example: "file://html/organic_chemistry_1_en.html";;
+	-> rrel_example: "file://html/organic_chemistry_1.html"(* <-lang_ru;; *);; 
+	-> rrel_example: "file://html/organic_chemistry_1_en.html"(* <-lang_en;; *);;
 *);
 
 <-rrel_key_sc_element:...(*
@@ -48,6 +48,6 @@ organic_chemistry
 	=>nrel_main_idtf:
 	[Утв. (задача, синтез соединений)](* <-lang_ru;;*);
 	[Expl. (task, synthesis of compounds)](* <-lang_en;;*);;
-	-> rrel_example: "file://html/organic_chemistry_2.html";;
-	-> rrel_example: "file://html/organic_chemistry_2_en.html";;
+	-> rrel_example: "file://html/organic_chemistry_2.html"(* <-lang_ru;; *);; 
+	-> rrel_example: "file://html/organic_chemistry_2_en.html"(* <-lang_en;; *);; 
 *);;
