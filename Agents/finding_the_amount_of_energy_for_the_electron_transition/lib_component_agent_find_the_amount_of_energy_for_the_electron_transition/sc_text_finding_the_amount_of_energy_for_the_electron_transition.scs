@@ -1,0 +1,6 @@
+sc_text_of_agent_finding_the_amount_of_energy_for_the_electron_transition
+-> rrel_key_sc_element:
+	agent_finding_the_amount_of_energy_for_the_electron_transition;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_finding_the_amount_of_energy_for_the_electron_transition = [*^"file://agent_finding_the_amount_of_energy_for_the_electron_transition.scsi"*];;

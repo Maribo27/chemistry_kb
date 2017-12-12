@@ -1,0 +1,13 @@
+sc_text_of_agent_of_finding_buildings_nucleus_koll
+-> rrel_key_sc_element:
+	agent_of_finding_nucleus_koll;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения объединения множеств] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program finding the nucleus_koll of sets] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_of_finding_buildings_nucleus_koll = [*^"file://agent_of_finding_nucleus_koll.scsi"*];;

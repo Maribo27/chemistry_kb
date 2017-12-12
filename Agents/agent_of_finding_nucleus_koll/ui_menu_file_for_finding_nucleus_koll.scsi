@@ -1,0 +1,20 @@
+ui_menu_file_for_finding_nucleus_koll 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Найти количество атомов по химическому количеству] (* <- lang_ru;; *);
+		[ ] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_nucleus_koll _-> ._question_finding_nucleus_koll_instance
+			(*
+				_-> ui_arg_1;;
+				
+			*);;
+		._question_finding_nucleus_koll_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения количества молекул: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[What is the result of the nucleus_koll of $ui_arg_1] 
+		(* <- lang_en;; *);;

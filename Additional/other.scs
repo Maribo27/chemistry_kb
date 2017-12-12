@@ -383,6 +383,18 @@ crystallite
 	(* <- lang_ru;;	*);
 	[crystallite]
 	(* <- lang_en;;	*);;
+  
+physics=>nrel_main_idtf:
+[физика](* <- lang_ru;;*);
+[physics](* <- lang_en;;*);;
+
+biology=>nrel_main_idtf:
+[биология](* <- lang_ru;;*);
+[biology](* <- lang_en;;*);;
+
+medicine=>nrel_main_idtf:
+[медицина](* <- lang_ru;;*);
+[medicine](* <- lang_en;;*);;
 
 gas_explosive
 => nrel_main_idtf:

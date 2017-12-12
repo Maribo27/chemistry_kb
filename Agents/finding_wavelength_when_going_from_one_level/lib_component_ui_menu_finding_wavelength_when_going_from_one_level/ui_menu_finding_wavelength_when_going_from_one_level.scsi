@@ -1,0 +1,18 @@
+ui_menu_finding_wavelength_when_going_from_one_level <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Длину световой волны при переходе электрона с одного подуровня на другой ] (* <- lang_ru;;*);
+=> nrel_main_idtf: [ ] (* <- lang_en;;*);;
+ui_menu_finding_wavelength_when_going_from_one_level => ui_nrel_command_template:
+	[*
+		action_finding_wavelength_when_going_from_one_level _-> ._action_finding_wavelength_when_going_from_one_level_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+				_-> rrel_2:: ... (*
+					_-> rrel_1:: ui_arg_2;;
+				*);;
+			*);;
+		._action_finding_wavelength_when_going_from_one_level_instance _<- question;;
+	*];;
+
+ui_menu_finding_wavelength_when_going_from_one_level => ui_nrel_command_lang_template: [Длина волны света] (* <- lang_ru;;*);;
+ui_menu_finding_wavelength_when_going_from_one_level => ui_nrel_command_lang_template: [ ] (* <- lang_en;;*);;
