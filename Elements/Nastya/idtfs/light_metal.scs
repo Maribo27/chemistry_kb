@@ -1,3 +1,6 @@
-light_metal => nrel_main_idtf:
+light_metal
+<- sc_node_not_relation;
+=> nrel_main_idtf:
 	[легкий металл](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
+	[light metal](* <- lang_en;; *);;
+	

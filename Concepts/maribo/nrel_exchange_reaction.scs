@@ -10,16 +10,23 @@ nrel_exchange_reaction
 	[exchange reaction*](*<- lang_en;;*);
 	[реакция обмена*](*<- lang_ru;;*);
 
-<- rrel_key_sc_element: nrel_exchange_reaction_definition
+<- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf:[Опр. (реакция обмена*)](*<-lang_ru;;*);;
+	=> nrel_main_idtf:
+		[Опр. (реакция обмена*)](*<-lang_ru;;*);
+		[Def. (exchange reaction*)](*<-lang_en;;*);;
 	<=	nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[ <p><b>Реакциями обмена</b> называют химические <sc_element sys_idtf = "nrel_reaction">реакции</sc_element>, протекающие без изменения <sc_element sys_idtf = "oxidation_state">степеней окисления</sc_element> <sc_element sys_idtf = "chemical_element">элементов</sc_element> и приводящие к обмену составных частей <sc_element sys_idtf = "chemical_reagent">реагентов</sc_element>.</p>] 
+			[ <b>Реакциями обмена</b> называют химические <sc_element sys_idtf = "nrel_reaction">реакции</sc_element>, протекающие без изменения <sc_element sys_idtf = "oxidation_state">степеней окисления</sc_element> <sc_element sys_idtf = "chemical_element">элементов</sc_element> и приводящие к обмену составных частей <sc_element sys_idtf = "chemical_reagent">реагентов</sc_element>.] 
 			(*
-				<-lang_ru;;
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);
+			[ <b>Reactions of exchange</b> are chemical <sc_element sys_idtf = "nrel_reaction">reactions</sc_element> that occur without changing the <sc_element sys_idtf = "oxidation_state">oxidation states</sc_element> of <sc_element sys_idtf = "chemical_element">elements</sc_element> and lead to the exchange of constituents of <sc_element sys_idtf = "chemical_reagent">reagents</sc_element>.]
+			(*
+				<- lang_en;;
 				=> nrel_format: format_html;;
 			*);;
 	*);;

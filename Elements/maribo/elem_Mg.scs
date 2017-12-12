@@ -13,7 +13,7 @@ elem_Mg
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:
-			[<p><b>Магний</b> - <sc_element sys_idtf  = "chemical_element">химический элемент</sc_element>   второй   <sc_element sys_idtf  = "periodic_group">группы</sc_element>  , 3-го <sc_element sys_idtf  = "period">периода</sc_element>  периодической системы химических элементов. </p>] 
+			[<p><b>Магний</b> - <sc_element sys_idtf="chemical_element">химический элемент</sc_element>   второй   <sc_element sys_idtf="periodic_group">группы</sc_element>, 3-го <sc_element sys_idtf="period">периода</sc_element>  периодической системы химических элементов. </p>] 
 			(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -58,7 +58,7 @@ elem_Mg
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:160(*<- number;;*);;
+		-> rrel_pm:one_hundred_sixty;;
 	*);;
 *);
 
@@ -69,7 +69,7 @@ elem_Mg
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:136(*<- number;;*);;
+		-> rrel_pm:one_hundred_thirty_six;;
 	*);;
 *);
 

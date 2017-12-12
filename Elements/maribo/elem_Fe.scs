@@ -2,8 +2,9 @@ elem_Fe
 	=> nrel_main_idtf: 
 		[ferrum atom] (* <-lang_en;;*);
 		[атом железа] (* <-lang_ru;;*);
-	=> nrel_idtf: [atom Fe] (* <-lang_en;;*);
-	=> nrel_idtf: [атом Fe] (* <-lang_ru;;*);
+	=> nrel_idtf: 
+		[atom Fe] (* <-lang_en;;*);
+		[атом Fe] (* <-lang_ru;;*);
 <- chemical_element;
 <- sc_node_not_relation;
 
@@ -40,7 +41,9 @@ elem_Fe
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (атом железа)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: 
+		[Рис. (атом железа)] (* <- lang_ru;;*);
+		[Pic. (ferrum atom)] (* <- lang_en;;*);;
 	<- description_of_a_typical_instance;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -56,7 +59,7 @@ elem_Fe
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:126(*<- number;;*);;
+		-> rrel_pm: one_hundred_twenty_six;;
 	*);;
 *);
 
@@ -67,7 +70,7 @@ elem_Fe
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:117(*<- number;;*);;
+		-> rrel_pm:one_hundred_and_seventeen;;
 	*);;
 *);
 
@@ -111,7 +114,11 @@ elem_Fe
 	-> liver;;
 *);;
 
-atomic_mass_Fe <- number;
-=> nrel_main_idtf:[55,847(2)](*<-lang_ru;; <- lang_en;;*);;
-electronegativity_Fe <- number;
-=> nrel_main_idtf:[1,83](*<-lang_ru;; <- lang_en;;*);;
+atomic_mass_Fe 
+	<- number;
+	=> nrel_main_idtf:
+		[55,847(2)](*<-lang_ru;; <- lang_en;;*);;
+electronegativity_Fe
+	<- number;
+	=> nrel_main_idtf:
+		[1,83](*<-lang_ru;; <- lang_en;;*);;

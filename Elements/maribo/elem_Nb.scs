@@ -27,19 +27,6 @@ elem_Nb
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
-(*
-	<- explanation;;
-	=> nrel_main_idtf: [Утв. (атом ниобия, свойство изотопа*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation: ...
-	(*
-		-> rrel_example: "file://html/elem_Nb_isotope.html"
-		(*
-			=> nrel_format: format_html;;
-		*);;
-	*);;
-*);
-
 => nrel_periodic_number: forty_one;
 
 <- transition_metal;
@@ -68,7 +55,7 @@ elem_Nb
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:146(*<- number;;*);;
+		-> rrel_pm:one_hundred_fourty_six;;
 	*);;
 *);
 
@@ -79,7 +66,7 @@ elem_Nb
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:164(*<- number;;*);;
+		-> rrel_pm:one_hundred_sixty_four;;
 	*);;
 *);
 

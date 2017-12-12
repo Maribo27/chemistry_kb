@@ -151,4 +151,4 @@ alkali
 		<-subject_domain;;
 	*);;
 *);
-=>nrel_applying: industry;medicine;;	
+=>nrel_applying: industry;medicine;; 

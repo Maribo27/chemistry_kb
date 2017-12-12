@@ -45,19 +45,6 @@ elem_He
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
-(*
-	<- explanation;;
-	=> nrel_main_idtf: [Утв. (атом гелия, свойство изотопа*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation: ...
-	(*
-		-> rrel_example: "file://html/elem_He_isotope.html"
-		(*
-			=> nrel_format: format_html;;
-		*);;
-	*);;
-*);
-
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
@@ -79,7 +66,7 @@ elem_He
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:31(*<- number;;*);;
+		-> rrel_pm:thirty_one;;
 	*);;
 *);
 
@@ -90,7 +77,7 @@ elem_He
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:28(*<- number;;*);;
+		-> rrel_pm:twenty_eight;;
 	*);;
 *);
 

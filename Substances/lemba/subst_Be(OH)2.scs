@@ -1,0 +1,121 @@
+subst_BeOH2
+	=>nrel_main_idtf:
+	[гидроксид бериллия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[beryllium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[BeOH2]
+	(*<-lang_en;;*);
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_beryllium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид бериллия (Be(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				</p>]
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид бериллия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->alkali;chimical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:basic_hydroxide;
+///////////
+	<-solid;//<- gel;
+	<-white_color;;
+	atomic_multiplicity_one->(subst_BeOH2 ->elem_Be);;
+	atomic_multiplicity_two->(subst_BeOH2 ->elem_O);;
+	atomic_multiplicity_two->(subst_BeOH2 ->elem_H);;
+subst_BeOH2
+//////////
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [138] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [1,92] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_BeOH2_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид бериллия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид калия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_BeOH2_and_alkali
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид бериллия, взаимодействие*, соль,щелочь)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид калия взаимодействует с щелочами с образованием соли.] (*<- lang_ru;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element: decomposition_subst_BeOH2
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид бериллия, разложение*, оксид бериллия, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид бериллия разлогается на оксид бериллия и воду(при 138 градусах Цельсия).] (*<- lang_ru;;*);;
+	*);;
+*);
+
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид бериллия)] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_BeOH2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+decomposition_subst_BeOH2 -> rrel_key_sc_element:nrel_decomposition; beryllium_oxide; water;;
+interaction_subst_BeOH2_and_acid->rrel_key_sc_element:nrel_interaction;acid; salt; water;;
+interaction_subst_BeOH2_and_alkali->rrel_key_sc_element: nrel_interaction; alkali; salt;water;;

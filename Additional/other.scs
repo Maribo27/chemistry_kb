@@ -383,3 +383,92 @@ crystallite
 	(* <- lang_ru;;	*);
 	[crystallite]
 	(* <- lang_en;;	*);;
+  
+physics=>nrel_main_idtf:
+[физика](* <- lang_ru;;*);
+[physics](* <- lang_en;;*);;
+
+biology=>nrel_main_idtf:
+[биология](* <- lang_ru;;*);
+[biology](* <- lang_en;;*);;
+
+medicine=>nrel_main_idtf:
+[медицина](* <- lang_ru;;*);
+[medicine](* <- lang_en;;*);;
+
+gas_explosive
+=> nrel_main_idtf:
+    [gas explosive]
+    (*<- lang_en;;*);
+	[газообразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+liquid_explosive
+=> nrel_main_idtf:
+    [liquid explosive]
+    (*<- lang_en;;*);
+	[жидкое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+gel_explosive
+=> nrel_main_idtf:
+    [gel explosive]
+    (*<- lang_en;;*);
+	[гелеобразное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+solid_explosive
+=> nrel_main_idtf:
+    [solid explosive]
+    (*<- lang_en;;*);
+	[твёрдое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+elastic_explosive
+=> nrel_main_idtf:
+    [elastic explosive]
+    (*<- lang_en;;*);
+	[эластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+emulsion_explosive
+=> nrel_main_idtf:
+    [emulsion explosive]
+    (*<- lang_en;;*);
+	[эмульсионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+plastic_explosive
+=> nrel_main_idtf:
+    [plastic explosive]
+    (*<- lang_en;;*);
+	[пластичное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+suspension_explosive
+=> nrel_main_idtf:
+    [suspension explosive]
+    (*<- lang_en;;*);
+	[суспензионное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+pressed_explosive
+=> nrel_main_idtf:
+    [pressed explosive]
+    (*<- lang_en;;*);
+	[прессованное взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+cast_explosive
+=> nrel_main_idtf:
+    [cast explosive]
+    (*<- lang_en;;*);
+	[литое взрывчатое вещество]
+	(* <- lang_ru;;	*);;
+
+patronized_explosive
+=> nrel_main_idtf:
+    [patronized explosive]
+    (*<- lang_en;;*);
+	[патронированное взрывчатое вещество]
+	(* <- lang_ru;;	*);;

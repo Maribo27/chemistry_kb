@@ -1,0 +1,88 @@
+subject_domain_of_amphoteric_hydroxides
+	=> nrel_main_idtf:
+	[Предметная область амфотерных гидроксидов]
+	(* <- lang_ru;; *);
+	[Subject domain of amphoteric_hydroxide]
+	(* <- lang_en;; *);
+		
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: 
+	amphoteric_hydroxide;
+
+-> rrel_not_maximum_studied_object_class:
+	subst_FeOH3;
+	subst_FeOH2;
+	subst_NiOH;
+	subst_NiOH2;
+	subst_CuOH2;
+	subst_CuOH;
+	subst_ZnOH2;
+	subst_GaOH3;
+	subst_AgOH;
+	subst_CdOH2;
+	subst_InOH3;
+	subst_SnOH2;
+	subst_AlOH3;
+	subst_TlOH3;
+	subst_PbOH2;
+	subst_BeOH2;
+	subst_CrOH3;;
+	//subst_HgOH2;//
+	
+amphoteric_hydroxide
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[амфотерное основание]
+	(* <- lang_ru;;	*);    
+    [amphoteric hydroxide]
+    (* <- lang_en;; *);
+	
+
+<- rrel_key_sc_element:
+	Definition_of_amphoteric_hydroxide
+	(* 
+		=> nrel_main_idtf:
+		[Опр.(амфотерные гидроксиды)]
+		(* <- lang_ru;;	*);
+		[Def.(amphoteric hydroxide)]
+		(* <- lang_en;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:
+					[<b><sc_element sys_idtf  = "amphoteric_hydroxide">Амфоте́рный гидрокси́д </sc_element> </b>-  <sc_element sys_idtf  = "hydroxide">гидроксид</sc_element> амфотерных элементов, в зависимости от условий проявляющие свойства <sc_element sys_idtf  = "acid">кислот</sc_element> или <sc_element sys_idtf  = "basic_hydroxide">осно́вных гидроксидов</sc_element>.]
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+			-> rrel_example:
+					[<b><sc_element sys_idtf  = "amphoteric_hydroxide">Amphoteric hydroxide</sc_element> </b>-  are <sc_element sys_idtf  = "hydroxide">hydroxide</sc_element> of amphoteric elements, depending on the conditions, the properties of <sc_element sys_idtf = "acid"> acids</sc_element>  or <sc_element sys_idtf = "basic_hydroxide"> basic hydroxide </sc_element>.]
+						(*
+							<- lang_en;;
+							=> nrel_format: format_html;;
+						*);;
+			*);;
+		<= nrel_using_constants:...
+				(*
+					-> hydroxide;;
+					->acid;;
+					->basic_hydroxide;;
+				*);;
+	*);
+	
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_ampht.html" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://html/section_ampht_eng.html" (* <-lang_en;; *);;
+		*);;
+
+

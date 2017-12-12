@@ -38,19 +38,6 @@ elem_H
 
 <- rrel_key_sc_element: ...
 (*
-	<- explanation;;
-	=> nrel_main_idtf: [Утв. (атом водорода, свойство изотопа*)] (* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation: ...
-	(*
-		-> rrel_example: "file://html/elem_H_isotope.html"
-		(*
-			=> nrel_format: format_html;;
-		*);;
-	*);;
-*);
-
-<- rrel_key_sc_element: ...
-(*
 	<- illustration;;
 	=> nrel_main_idtf: [Рис. (атом водорода)] (* <- lang_ru;;	*);;
 	<- description_of_a_typical_instance;;
@@ -86,7 +73,7 @@ elem_H
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:53(*<- number;;*);;
+		-> rrel_pm:fifty_three;;
 	*);;
 *);
 
@@ -97,7 +84,7 @@ elem_H
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:32(*<- number;;*);;
+		-> rrel_pm:thirty_two;;
 	*);;
 *);
 
