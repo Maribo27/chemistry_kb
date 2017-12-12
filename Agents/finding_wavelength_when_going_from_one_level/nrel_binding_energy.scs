@@ -1,0 +1,2 @@
+nrel_binding_energy=>nrel_main_idtf:[энергия связи](*<-lang_ru;;*);;
+nrel_binding_energy<-sc_node_norole_relation;;
