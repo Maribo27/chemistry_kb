@@ -1444,14 +1444,14 @@ nrel_dose
 =>nrel_main_idtf:
 	[доза*](*<-lang_ru;;*);
 	[dose*](*<-lang_en;;*);
-=>nrel_first_domain:quantity;
+=>nrel_first_domain:value;
 =>nrel_second_domain:poison;
 =>nrel_definitional_domain:...
 (*
 	<=nrel_combination:...
 	(*
 		->poison;;
-		->quantity;;
+		->value;;
 	*);;
 *);
 <-binary_relation;
@@ -1468,13 +1468,13 @@ nrel_dose
 		[Def. (dose*)](*<-lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->quantity;;
+		->value;;
 		->poison;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="quantity">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="quantity">quantity</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="value">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="value">value</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);;
 
@@ -1484,14 +1484,14 @@ nrel_lethal_dose
 =>nrel_main_idtf:
 	[смертельная доза*](*<-lang_ru;;*);
 	[lethal dose*](*<-lang_en;;*);
-=>nrel_first_domain:quantity;
+=>nrel_first_domain:value;
 =>nrel_second_domain:poison;
 =>nrel_definitional_domain:...
 (*
 	<=nrel_combination:...
 	(*
 		->poison;;
-		->quantity;;
+		->value;;
 	*);;
 *);
 <-binary_relation;
@@ -1508,13 +1508,13 @@ nrel_lethal_dose
 		[Def. (lethal dose*](*<-lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->quantity;;
+		->value;;
 		->poison;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="quantity">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>, вызывающая гибель.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="quantity">quantity</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b> that causes death.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="value">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>, вызывающая гибель.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="value">value</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b> that causes death.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);;
 
