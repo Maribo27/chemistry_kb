@@ -28,8 +28,8 @@ inorganic_chemistry
 	=>nrel_main_idtf:
 	[Утв. (объект)](* <-lang_ru;;*);
 	[Expl. (object)](* <-lang_en;;*);;
-	-> rrel_example: "file://html/inorganic_chemistry_1.html";;
-	-> rrel_example: "file://html/inorganic_chemistry_1_en.html";;
+	-> rrel_example: "file://html/inorganic_chemistry_1.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/inorganic_chemistry_1_en.html"(* <-lang_en;; *);; 
 *);
 
 <-rrel_key_sc_element:...(*
@@ -39,8 +39,8 @@ inorganic_chemistry
 	=>nrel_main_idtf:
 	[Утв. (неорганическая химия, периодический закон)](* <-lang_ru;;*);
 	[Expl. (inorganiс chemistry, periodic law)](* <-lang_en;;*);;
-	-> rrel_example: "file://html/inorganic_chemistry_2.html";;
-	-> rrel_example: "file://html/inorganic_chemistry_2_en.html";;
+	-> rrel_example: "file://html/inorganic_chemistry_2.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/inorganic_chemistry_2_en.html"(* <-lang_en;; *);; 
 *);
 
 <-rrel_key_sc_element:...(*
@@ -50,6 +50,6 @@ inorganic_chemistry
 	=>nrel_main_idtf:
 	[Утв. (неорганическая химия, синтез неорганических соединений)](* <-lang_ru;;*);
 	[Expl. (inorganiс chemistry, inorganic synthesis](* <-lang_en;;*);;
-	-> rrel_example: "file://html/inorganic_chemistry_3.html";;
-	-> rrel_example: "file://html/inorganic_chemistry_3_en.html";;
+	-> rrel_example: "file://html/inorganic_chemistry_3.html"(* <-lang_ru;; *);;
+	-> rrel_example: "file://html/inorganic_chemistry_3_en.html"(* <-lang_en;; *);; 
 *);;

@@ -28,7 +28,6 @@ medical_chemistry;
 bioengineering;
 mathematical_chemistry;
 quantum_chemistry;
-chemistry;
 computational_chemistry;
 computer_chemistry;
 cosmochemistry;
@@ -77,7 +76,6 @@ chemical_sciences
 ->bioengineering;;
 ->mathematical_chemistry;;
 ->quantum_chemistry;;
-->chemistry;;
 ->computational_chemistry;;
 ->computer_chemistry;;
 ->cosmochemistry;;
