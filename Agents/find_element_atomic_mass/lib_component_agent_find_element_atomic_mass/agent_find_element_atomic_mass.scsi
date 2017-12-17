@@ -111,7 +111,7 @@ scp_program -> agent_find_element_atomic_mass
             <- searchElStr5;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _measure;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_aem;;
 
@@ -123,8 +123,8 @@ scp_program -> agent_find_element_atomic_mass
         (*
             <-genElStr5;;
             ->rrel_1:rrel_fixed:rrel_scp_var:_pattern;;
-            ->rrel_2:rrel_assign:rrel_scp_var:rrel_common:_arc1;;
-            ->rrel_3:rrel_fixed:rrel_scp_var:_node;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_const:rrel_common:_common;;
+            ->rrel_3:rrel_fixed:rrel_scp_var:_value;;
             ->rrel_4:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
             ->rrel_5:rrel_fixed:rrel_scp_const:nrel_atomic_mass_aem;;
 
@@ -136,7 +136,7 @@ scp_program -> agent_find_element_atomic_mass
             <-searchSetStr5;;
             ->rrel_1:rrel_fixed:rrel_scp_var:_pattern;;
             ->rrel_2:rrel_assign:rrel_scp_var:rrel_common:_arc1;;
-            ->rrel_3:rrel_assign:rrel_scp_var:_node;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_value;;
             ->rrel_4:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
             ->rrel_5:rrel_fixed:rrel_scp_const:nrel_atomic_mass_aem;;
 
