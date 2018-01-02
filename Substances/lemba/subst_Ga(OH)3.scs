@@ -18,7 +18,7 @@ subst_GaOH3
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид галлия (Ga(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				<b>Гидроксид галлия (Ga(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
 				</p>]
 				(*
 				<-lang_ru;;
@@ -28,14 +28,14 @@ subst_GaOH3
 		=>nrel_main_idtf:[Опр. (гидроксид галлия)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->hydroxides;chimical_substance;;
+				->hydroxides;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;;
+	<-color_white;;
 	atomic_multiplicity_one->(subst_GaOH3 ->elem_Ga);;
 	atomic_multiplicity_three->(subst_GaOH3 ->elem_O);;
 	atomic_multiplicity_three->(subst_GaOH3 ->elem_H);;

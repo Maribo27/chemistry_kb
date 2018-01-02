@@ -20,7 +20,7 @@ subst_FeOH3
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид железа(III)(Fe(OH)3)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element> .
+				<b>Гидроксид железа(III)(Fe(OH)3)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element> .
 				</p>] 
 				(*
 				<-lang_ru;;
@@ -30,7 +30,7 @@ subst_FeOH3
 		=>nrel_main_idtf:[Опр. (гидроксид железа(III))](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->alkali;chimical_substance;;
+				->alkali;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
