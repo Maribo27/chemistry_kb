@@ -1,7 +1,7 @@
 nrel_esterification
 => nrel_main_idtf:
-	[этерификация](* <- lang_ru;; *);
-	[esterification](* <- lang_en;; *);
+	[этерификация*](* <- lang_ru;; *);
+	[esterification*](* <- lang_en;; *);
 <- sc_node_norole_relation;
 <- quasybinary_relation;
 <- oriented_relation;
@@ -19,7 +19,7 @@ nrel_esterification
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(этерификация)](* <-lang_ru;;*);;
+	=> nrel_main_idtf: [Опр.(этерификация*)](* <-lang_ru;;*);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:
