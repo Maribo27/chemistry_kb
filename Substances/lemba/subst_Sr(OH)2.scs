@@ -18,7 +18,7 @@ subst_SrOH2
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид стронция (Sr(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "alkali">щёлочам</sc_element>.
+				<b>Гидроксид стронция (Sr(OH)<sub>2</sub>)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "alkali">щёлочам</sc_element>.
 				</p>] 
 				(*
 				<-lang_ru;;
@@ -28,14 +28,14 @@ subst_SrOH2
 		=>nrel_main_idtf:[Опр. (гидроксид стронция)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->alkali;chimical_substance;;
+				->alkali;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 	<=nrel_inclusion:basic_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;;
+	<-color_white;;
 	atomic_multiplicity_one->(subst_SrOH2 ->elem_Sr);;
 	atomic_multiplicity_two->(subst_SrOH2 ->elem_O);;
 	atomic_multiplicity_two->(subst_SrOH2 ->elem_H);;

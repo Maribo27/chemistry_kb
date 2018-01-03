@@ -17,7 +17,7 @@ subst_AlOH3
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид алюминия (Al(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов/sc_element>.
+				<b>Гидроксид алюминия (Al(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов/sc_element>.
 				</p>] 
 				(*
 				<-lang_ru;;
@@ -27,14 +27,14 @@ subst_AlOH3
 		=>nrel_main_idtf:[Опр. (гидроксид алюминия)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->basia;chimical_substance;;
+				->basia;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;;
+	<-color_white;;
 	atomic_multiplicity_one->(subst_AlOH3 ->elem_Al);;
 	atomic_multiplicity_three->(subst_AlOH3 ->elem_O);;
 	atomic_multiplicity_three->(subst_AlOH3 ->elem_H);;

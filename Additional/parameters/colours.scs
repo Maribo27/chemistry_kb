@@ -18,7 +18,7 @@ color_red
 color_white
 	=> nrel_main_idtf:
 		[белый цвет](* <- lang_ru;; *);
-		[white color ](* <- lang_en;; *);
+		[white color](* <- lang_en;; *);
 	<- color;
 	<- sc_node_not_relation;;
 
@@ -128,7 +128,7 @@ dark_blue_color => nrel_main_idtf: [темно-синий цвет](*<- lang_ru;
 smell -> no_smell;;
 smell -> strong_smell;;
 no_smell => nrel_main_idtf: [без запаха](*<- lang_ru;;*);;
-strong_smell => nrel_main_idtf: [разкий запах](*<- lang_ru;;*);;
+strong_smell => nrel_main_idtf: [резкий запах](*<- lang_ru;;*);;
 
 taste -> no_taste;;
 no_taste => nrel_main_idtf: [без вкуса](*<- lang_ru;;*);;
