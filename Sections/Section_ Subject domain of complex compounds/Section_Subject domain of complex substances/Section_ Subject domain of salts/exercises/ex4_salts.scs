@@ -1,7 +1,7 @@
 ex4_salts
 <- exercises_salts;
 
--> rrel_key_sc_element: potassium_chloride; solution; nitrate; subst_Ag;;
+-> rrel_key_sc_element: potassium_chloride; solution; nitrate; subst_Ag;
 
 => nrel_next: ex5_salts;
 

@@ -1,7 +1,7 @@
 ex2_salts
 <- exercises_salts;
 
--> rrel_key_sc_element: salt; solution; subst_NaOH; rrel_solute;;
+-> rrel_key_sc_element: salt; solution; subst_NaOH; rrel_solute;
 
 => nrel_next: ex3_salts;
 
