@@ -183,11 +183,6 @@ nrel_nuclear_reaction
 	=> nrel_main_idtf: [ядерная реакция*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
 
-nrel_chemical_amount
-<- sc_node_norole_relation;
-=> nrel_main_idtf:
-	[химическое количество вещества*](* <- lang_ru;; *);;
-
 nrel_amount
 <- sc_node_norole_relation;
 => nrel_main_idtf:
@@ -197,3 +192,9 @@ nrel_N
 <- sc_node_norole_relation;
 => nrel_main_idtf:
 	[количество атомов*](* <- lang_ru;; *);;
+
+nrel_exercises
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[exercises*](* <- lang_en;; *);
+	[упражнения*](* <- lang_ru;; *);;
