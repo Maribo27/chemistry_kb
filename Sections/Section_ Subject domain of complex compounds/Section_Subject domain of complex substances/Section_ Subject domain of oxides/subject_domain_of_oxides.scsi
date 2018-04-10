@@ -67,6 +67,15 @@ oxide
 			*);;
 	*);;
 
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:
+			[GlwfVxlYFNI]
+			(*
+				=> nrel_format: format_youtubelink;;
+			*);;
+	*);;
+	
 	<= nrel_using_constants:...
 	(*
 		-> complex_substance;;
