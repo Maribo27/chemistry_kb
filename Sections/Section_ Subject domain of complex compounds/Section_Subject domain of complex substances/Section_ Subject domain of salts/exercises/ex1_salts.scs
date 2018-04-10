@@ -1,7 +1,7 @@
 ex1_salts
 <- exercises_salts;
 
--> rrel_key_sc_element: iodide; sodium; nrel_chemical_amount;
+-> rrel_key_sc_element: iodide; subst_Na; nrel_chemical_amount;
 
 => nrel_next: ex2_salts;
 
