@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/example-common.js",
+        "src/example-paintPanel.js"
+    ],
+
+    "component": "src/example-component.js",
+
+    "target": "static/components/js/example/alloy_ui_component.js"
+}
