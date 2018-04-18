@@ -1,18 +1,18 @@
 /**
- * Example component.
+ * AlloyUIComponent component.
  */
-Example.DrawComponent = {
+AlloyUIComponent.DrawComponent = {
     ext_lang: 'alloy_ui_component',
     formats: ['format_example_json'],
     struct_support: true,
     factory: function (sandbox) {
-        return new Example.DrawWindow(sandbox);
+        return new AlloyUIComponent.DrawWindow(sandbox);
     }
 };
 
-Example.DrawWindow = function (sandbox) {
+AlloyUIComponent.DrawWindow = function (sandbox) {
     this.sandbox = sandbox;
-    this.paintPanel = new Example.PaintPanel(this.sandbox.container);
+    this.paintPanel = new AlloyUIComponent.PaintPanel(this.sandbox.container);
     this.paintPanel.init();
     this.recieveData = function (data) {
         console.log("in recieve data" + data);
@@ -91,4 +91,4 @@ Example.DrawWindow = function (sandbox) {
     this.sandbox.eventStructUpdate = $.proxy(this.eventStructUpdate, this);
     this.sandbox.updateContent();
 };
-SCWeb.core.ComponentManager.appendComponentInitialize(Example.DrawComponent);
+SCWeb.core.ComponentManager.appendComponentInitialize(AlloyUIComponent.DrawComponent);

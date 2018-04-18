@@ -1,4 +1,4 @@
-var Example = {};
+var AlloyUIComponent = {};
 
 function extend(child, parent) {
     var F = function () {
