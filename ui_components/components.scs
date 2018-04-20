@@ -1,0 +1,26 @@
+ui_external_languages -> 
+	example_code;
+	alloy_ui_component;
+	pencil_component;;
+
+
+alloy_ui_component 
+=> nrel_main_idtf:
+    [Команды раздела сплавов]
+    (*<- lang_en;;*);
+	[Alloys section commands]
+	(* <- lang_ru;;	*);;
+
+example_code 
+=> nrel_main_idtf:
+    [Пример]
+    (*<- lang_ru;;*);
+	[Example]
+	(* <- lang_en;;	*);;
+
+pencil_component 
+=> nrel_main_idtf:
+    [Компонент отображения состава предмета]
+    (*<- lang_ru;;*);
+	[Visual component of the object composition]
+	(* <- lang_en;;	*);;
