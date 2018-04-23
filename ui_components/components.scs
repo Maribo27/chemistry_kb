@@ -18,6 +18,13 @@ example_code
 	[Example]
 	(* <- lang_en;;	*);;
 
+electronLayer_ui_component 
+=> nrel_main_idtf:
+    [Компонент построения внешнего электронного слоя атома]
+    (*<- lang_ru;;*);
+	[Visual component of building of atom's external electron layer]
+	(* <- lang_en;;	*);;
+
 pencil_component 
 => nrel_main_idtf:
     [Компонент отображения состава предмета]
