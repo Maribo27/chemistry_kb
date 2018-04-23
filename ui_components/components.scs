@@ -1,7 +1,8 @@
 ui_external_languages -> 
 	example_code;
 	alloy_ui_component;
-	pencil_component;;
+	pencil_component;
+	solution_component;;
 
 
 alloy_ui_component 
@@ -24,3 +25,10 @@ pencil_component
     (*<- lang_ru;;*);
 	[Visual component of the object composition]
 	(* <- lang_en;;	*);;
+
+solution_component
+=> nrel_main_idtf:
+    [Команды раздела растворов]
+    (*<- lang_en;;*);
+	[Solutions section commands]
+	(* <- lang_ru;;	*);;
