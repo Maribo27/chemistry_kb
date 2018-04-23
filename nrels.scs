@@ -193,8 +193,34 @@ nrel_N
 => nrel_main_idtf:
 	[количество атомов*](* <- lang_ru;; *);;
 
+nrel_next_exercise
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [next exercise*]
+    (*<- lang_en;;*);
+	[следующее упражнение*]
+	(* <- lang_ru;;	*);;
+
 nrel_exercises
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-	[exercises*](* <- lang_en;; *);
-	[упражнения*](* <- lang_ru;; *);;
+    [exercises*]
+    (*<- lang_en;;*);
+	[упражнения*]
+	(* <- lang_ru;;	*);;
+
+nrel_mass_fraction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [mass fraction*]
+    (*<- lang_en;;*);
+	[массовая доля*]
+	(* <- lang_ru;;	*);;
+
+nrel_volume_fraction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [volume fraction*]
+    (*<- lang_en;;*);
+	[объёмная доля*]
+	(* <- lang_ru;;	*);;

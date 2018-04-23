@@ -12,7 +12,6 @@ subject_domain_of_oxides
 
 -> rrel_not_maximum_studied_object_class:
 	dioxide;
-//	hydroxide;
 	monoxide;
 	oxide_mineral;
 	peroxide;
@@ -39,6 +38,18 @@ subject_domain_of_oxides
 <= nrel_sc_text_translation: ...
 (* 
 	-> rrel_example: "file://content_html/section_oxides_eng.html" (* <-lang_en;; *);;
+*);
+
+<= nrel_sc_text_translation: ...
+(* 
+	=> nrel_main_idtf: 		
+		[Видео (Классификация и химические свойства оксидов)](*<- lang_ru;;*);
+		[Video (Classification and chemical properties of oxides)](*<- lang_en;;*);;
+	-> rrel_example: [GlwfVxlYFNI]
+		(*
+			=> nrel_format: format_youtubelink;;
+			<-lang_ru;;
+		*);;
 *);;
 
 oxide
