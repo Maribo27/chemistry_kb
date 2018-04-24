@@ -55,7 +55,7 @@ cp -Rfv $base_path/components/solution/static/* $sc_web_static_path
 
 stage "Install component"
 
-append_js $sc_web_path/templates/components.html components/js/chemistry_components/solution.js
+append_js $sc_web_path/templates/components.html components/js/chemistry_components/solution_ui_component.js
 
 cd $sc_web_path/../scripts
 ./install_deps_ubuntu.sh

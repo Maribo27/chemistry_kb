@@ -2,8 +2,8 @@
  * SolutionUIComponent component.
  */
 SolutionUIComponent.DrawComponent = {
-    ext_lang: 'Solution_ui_component',
-    formats: ['format_Solution_json'],
+    ext_lang: 'solution_component',
+    formats: ['format_solution_json'],
     struct_support: true,
     factory: function (sandbox) {
         return new SolutionUIComponent.DrawWindow(sandbox);

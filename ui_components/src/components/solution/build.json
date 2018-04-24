@@ -7,5 +7,5 @@
 
     "component": "src/solution-component.js",
 
-    "target": "static/components/js/chemistry_components/solution.js"
+    "target": "static/components/js/chemistry_components/solution_ui_component.js"
 }

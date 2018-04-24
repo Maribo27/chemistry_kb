@@ -2,7 +2,7 @@ ui_external_languages ->
 	alloy_ui_component;
 	pencil_component;
 	solution_component;
-  electronLayer_ui_component;;
+    electronLayer_ui_component;;
 
 alloy_ui_component 
 => nrel_main_idtf:
@@ -25,9 +25,9 @@ pencil_component
     [Visual component of the object composition]
     (* <- lang_en;;	*);;
     
-solution_component
+solution_component 
 => nrel_main_idtf:
     [Команды раздела растворов]
-    (*<- lang_en;;*);
+    (*<- lang_ru;;*);
     [Solutions section commands]
-    (* <- lang_ru;;	*);;
+    (* <- lang_rn;;	*);;
