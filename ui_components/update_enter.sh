@@ -51,17 +51,13 @@ append_css()
 
 stage "Copy component"
 
-cp -Rfv $base_path/components/pencil/static/* $sc_web_static_path
-cp -Rfv $base_path/components/alloy/static/* $sc_web_static_path
 cp -Rfv $base_path/components/enter/static/* $sc_web_static_path
 
 stage "Install component"
 
-append_js $sc_web_path/templates/components.html components/js/chemistry_components/pencil.js
-append_js $sc_web_path/templates/components.html components/js/chemistry_components/alloy_ui_component.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/enter.js
 
-cd ../../sc-web/scripts
+cd $sc_web_path/../scripts
 ./install_deps_ubuntu.sh
 ./prepare_js.sh
 python build_components.py -i -a
