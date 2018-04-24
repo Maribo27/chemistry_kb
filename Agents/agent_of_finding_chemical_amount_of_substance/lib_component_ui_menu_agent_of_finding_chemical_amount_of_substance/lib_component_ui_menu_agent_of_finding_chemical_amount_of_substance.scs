@@ -1,4 +1,4 @@
-lib_component_ui_menu_find_chemical_amount_of_substance
+lib_component_ui_menu_agent_of_finding_chemical_amount_of_substance
 => nrel_main_idtf:
 	[Компонент библиотеки. Команда пользовательского интерфейса для поиска химического количества вещества]
 	(* <- lang_ru;; *);
@@ -23,4 +23,4 @@ lib_component_ui_menu_find_chemical_amount_of_substance
 		*);;
 	*);;
 	
-lib_component_ui_menu_find_chemical_amount_of_substance = [*^"file://ui_menu_find_chemical_amount_of_substance.scsi"*];; 
+lib_component_ui_menu_agent_of_finding_chemical_amount_of_substance = [*^"file://ui_menu_agent_of_finding_chemical_amount_of_substance.scsi"*];; 
