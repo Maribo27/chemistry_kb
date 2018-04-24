@@ -2,7 +2,7 @@ scp_program -> proc_search_of_amount
 (*
 	-> rrel_params: .proc_search_of_amount_params 
 	(*
-		-> rrel_1: rrel_in: rrel_fixed: _answer;;
+		-> rrel_1: rrel_in: rrel_fixed: _answer_for_chemical_amount_search;;
 		-> rrel_2: rrel_in: rrel_fixed: _substance;;
 	*);;
 
@@ -141,7 +141,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _substance;;
 		
@@ -152,7 +152,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _vl;;
 		
@@ -163,7 +163,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_chemical_amount;;
 		
@@ -174,7 +174,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
 		
@@ -185,7 +185,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
 		
@@ -207,7 +207,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: value;;
 		
@@ -218,7 +218,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
 		
@@ -241,7 +241,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _meas;;
 		
@@ -252,7 +252,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_measurement;;
 		
@@ -263,7 +263,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
 		
@@ -274,7 +274,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
 		
@@ -297,7 +297,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
 		
@@ -308,7 +308,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_mol;;
 		
@@ -319,7 +319,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
 		
@@ -330,7 +330,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
 		
@@ -352,7 +352,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: number;;
 		
@@ -363,7 +363,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
 		
@@ -386,7 +386,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _chemical_amount;;
 		
@@ -397,7 +397,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 		
@@ -408,7 +408,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
 		
@@ -419,7 +419,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
 		
@@ -465,7 +465,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _ans;;
 		
@@ -476,7 +476,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
 		
@@ -487,7 +487,7 @@ scp_program -> proc_search_of_amount
 		(*
 			<- genElStr3;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_chemical_amount_search;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
 		
@@ -498,10 +498,11 @@ scp_program -> proc_search_of_amount
 		(*
 			<- call;;
 			
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_error_input_data;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_chemical_amount_of_substance_operator_message_params 
 			(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong input parameter! It must be a substance with right amount.];;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
 			
