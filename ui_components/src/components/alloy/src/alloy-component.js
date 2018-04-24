@@ -22,15 +22,12 @@ AlloyUIComponent.DrawWindow = function (sandbox) {
 
     function drawAllElements() {
         var dfd = new jQuery.Deferred();
-       // for (var addr in scElements) {
             jQuery.each(scElements, function(j, val){
                 var obj = scElements[j];
                 if (!obj || obj.translated) return;
-// check if object is an arc
                 if (obj.data.type & sc_type_arc_pos_const_perm) {
                     var begin = obj.data.begin;
                     var end = obj.data.end;
-                    // logic for component update should go here
                 }
 
         });
@@ -39,19 +36,15 @@ AlloyUIComponent.DrawWindow = function (sandbox) {
         return dfd.promise();
     }
 
-// resolve keynodes
     var self = this;
     this.needUpdate = false;
     this.requestUpdate = function () {
         var updateVisual = function () {
-// check if object is an arc
             var dfd1 = drawAllElements();
             dfd1.done(function (r) {
                 return;
             });
 
-
-/// @todo: Don't update if there are no new elements
             window.clearTimeout(self.structTimeout);
             delete self.structTimeout;
             if (self.needUpdate)
@@ -86,7 +79,6 @@ AlloyUIComponent.DrawWindow = function (sandbox) {
             });
         });
     };
-// delegate event handlers
     this.sandbox.eventDataAppend = $.proxy(this.receiveData, this);
     this.sandbox.eventStructUpdate = $.proxy(this.eventStructUpdate, this);
     this.sandbox.updateContent();
