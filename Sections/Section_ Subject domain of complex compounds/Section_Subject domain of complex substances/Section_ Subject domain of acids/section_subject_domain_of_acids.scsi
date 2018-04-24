@@ -43,6 +43,13 @@ subject_domain_of_acids
 	sulfurous_acid;
 	orthophosphoric_acid;
 	boric_acid;
+	inorganic_acid;
+	nitrous_acid;
+	carboxylic_acid;
+	formic_acid;
+	acetic_acid;
+	isovaleric_acid;
+	butyric_acid;
 
 <= nrel_sc_text_translation:
 		...
@@ -3361,3 +3368,38 @@ nrel_logarithm_of_acid_dissociation_constant
 
 =>nrel_first_domain: acid;
 =>nrel_second_domain: number;;
+
+inorganic_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:[неорганическая кислота](*<-lang_ru;;*);
+=>nrel_main_idtf:[inorganic acid](*<-lang_en;;*);;
+
+nitrous_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:[азотичтая кислота](*<-lang_ru;;*);
+=>nrel_main_idtf:[nitrous acid](*<-lang_en;;*);;
+
+carboxylic_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:[карбоновая кислота](*<-lang_ru;;*);
+=>nrel_main_idtf:[carboxylic acid](*<-lang_en;;*);;
+
+formic_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:[муравьиная кислота](*<-lang_ru;;*);
+=>nrel_main_idtf:[formic acid](*<-lang_en;;*);;
+
+acetic_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:[уксусная кислота](*<-lang_ru;;*);
+=>nrel_main_idtf:[acetic acid](*<-lang_en;;*);;
+
+butyric_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:[масляная кислота](*<-lang_ru;;*);
+=>nrel_main_idtf:[butyric acid](*<-lang_en;;*);;
+
+isovaleric_acid
+<-sc_node_not_relation;
+=>nrel_main_idtf:[изовалериановая кислота](*<-lang_ru;;*);
+=>nrel_main_idtf:[isovaleric acid](*<-lang_en;;*);;
