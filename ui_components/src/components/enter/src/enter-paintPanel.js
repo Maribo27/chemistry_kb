@@ -29,7 +29,7 @@ EnterComponent.PaintPanel.prototype = {
 					'</form>' + 
 				'</div>' + 
 				'<label for="mass">Введите массу (в граммах):</label>' + 
-				'<input type="text" id="mass" name="mass" pattern="\d+([\.,]\d+)?">' + 
+				'<input type="text" id="mass" name="mass" pattern="\\d+([\\.,]\\d+)?">' + 
 				'<button id="find" type="button">Найти химическое количество</button>' + 
 			'</form>'
 		);
@@ -91,7 +91,11 @@ EnterComponent.PaintPanel.prototype = {
 			console.log('element',element);
 			var mass = $("#mass").val();
 			console.log('mass',mass);
-			self._createElement(element, mass);
+			if (mass.search(/\d+(,\d+)?/g) != -1) {
+				self._createElement(element, mass);
+			} else {
+				alert('Wrong input!');
+			}
 		});
 	},
 

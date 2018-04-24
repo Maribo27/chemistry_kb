@@ -1,22 +1,17 @@
 ui_external_languages -> 
-	example_code;
 	alloy_ui_component;
 	pencil_component;
-	enter_component;;
-
+	enter_component;
+    ui_periodic_table;
+    solution_component;
+    electronLayer_ui_component;
+    wavelength_ui_component;;
 
 alloy_ui_component 
 => nrel_main_idtf:
     [Команды раздела сплавов]
-    (*<- lang_en;;*);
-	[Alloys section commands]
-	(* <- lang_ru;;	*);;
-
-example_code 
-=> nrel_main_idtf:
-    [Пример]
     (*<- lang_ru;;*);
-	[Example]
+	[Alloys section commands]
 	(* <- lang_en;;	*);;
 
 pencil_component 
@@ -32,3 +27,29 @@ enter_component
     (*<- lang_ru;;*);
 	[Visual component of the data entering]
 	(* <- lang_en;;	*);;
+
+ui_periodic_table
+=> nrel_main_idtf:
+    [Периодическая таблица] (* <- lang_ru;; *);
+    [Periodic table] (* <- lang_en;; *);;
+
+solution_component 
+=> nrel_main_idtf:
+    [Команды раздела растворов]
+    (*<- lang_ru;;*);
+    [Solutions section commands]
+    (* <- lang_en;; *);;
+
+electronLayer_ui_component 
+=> nrel_main_idtf:
+    [Компонент построения внешнего электронного слоя атома]
+    (*<- lang_ru;;*);
+    [Visual component of building of atom's external electron layer]
+    (* <- lang_en;; *);;
+    
+wavelength_ui_component 
+=> nrel_main_idtf:
+    [Нахождение длины волны]
+    (*<- lang_ru;;*);
+    [wavelengths section commands]
+    (* <- lang_en;; *);;
