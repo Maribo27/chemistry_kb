@@ -222,8 +222,8 @@ self._showMainMenuNode();
  * ElectronLayerBuilder component.
  */
 ElectronLayerBuilder.DrawComponent = {
-    ext_lang: 'example_code',
-    formats: ['format_example_json'],
+    ext_lang: 'electronLayer_ui_component',
+    formats: ['format_electronLayer_json'],
     struct_support: true,
     factory: function (sandbox) {
         return new ElectronLayerBuilder.DrawWindow(sandbox);
