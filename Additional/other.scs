@@ -84,9 +84,6 @@ gas_laser=> nrel_main_idtf:
 advertising=> nrel_main_idtf:
 	[реклама](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-adsorption=> nrel_main_idtf:
-	[адсорбция](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 chalcophile=> nrel_main_idtf:
 	[халькофил](* <- lang_ru;; *);
 	<- sc_node_not_relation;;

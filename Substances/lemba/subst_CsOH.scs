@@ -17,7 +17,7 @@ subst_CsOH
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид цезия (CsOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)sc_element>.
+				<b>Гидроксид цезия (CsOH)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)sc_element>.
 				</p>] 
 				(*
 				<-lang_ru;;
@@ -27,7 +27,7 @@ subst_CsOH
 		=>nrel_main_idtf:[Опр. (гидроксид цезия)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->alkali;chimical_substance;;
+				->alkali;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////

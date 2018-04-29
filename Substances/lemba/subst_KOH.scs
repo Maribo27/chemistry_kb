@@ -23,7 +23,7 @@ subst_KOH
 			<=nrel_sc_text_translation:...
 			(*
 				-> rrel_example:
-				[<p><b>Гидроксид калия(KOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.</p>] 
+				[<p><b>Гидроксид калия(KOH)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.</p>] 
 				(*
 				<-lang_ru;;
 				=> nrel_format: format_html;;
@@ -32,7 +32,7 @@ subst_KOH
 		=>nrel_main_idtf:[Опр. (гидроксид калия)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->alkali;chimical_substance;;
+				->alkali;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////

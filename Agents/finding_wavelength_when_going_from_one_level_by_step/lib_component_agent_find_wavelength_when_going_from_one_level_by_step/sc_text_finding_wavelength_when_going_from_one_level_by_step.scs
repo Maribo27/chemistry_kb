@@ -1,0 +1,6 @@
+sc_text_of_agent_finding_wavelength_when_going_from_one_level_by_step
+-> rrel_key_sc_element:
+	agent_finding_wavelength_when_going_from_one_level_by_step;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_finding_wavelength_when_going_from_one_level_by_step = [*^"file://agent_finding_wavelength_when_going_from_one_level_by_step.scsi"*];;
