@@ -1,8 +1,28 @@
+nrel_interaction
+=> nrel_main_idtf:
+	[взаимодействие](* <- lang_ru;; *);
+	[interaction](* <- lang_en;; *);;
+
 nrel_periodic_number
 	=> nrel_main_idtf: [порядковый номер*](* <- lang_ru;; *);
 	<- sc_node_norole_relation;
 	=> nrel_first_domain: chemical_element;
 	=> nrel_second_domain: number;;
+
+nrel_solvation 
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [solvation*]
+    (*<- lang_en;;*);
+	[сольватация*]
+	(* <- lang_ru;;	*);;
+
+nrel_allotropy
+=> nrel_main_idtf:
+	[аллотропия*]
+	(* <- lang_ru;; *);
+	[allotropy*]
+	(* <- lang_en;; *);;
 
 nrel_crystallization
 => nrel_main_idtf:
@@ -162,3 +182,45 @@ nrel_molar_volume
 nrel_nuclear_reaction
 	=> nrel_main_idtf: [ядерная реакция*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
+
+nrel_amount
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[объём вещества*](* <- lang_ru;; *);;
+
+nrel_N
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество атомов*](* <- lang_ru;; *);;
+
+nrel_next_exercise
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [next exercise*]
+    (*<- lang_en;;*);
+	[следующее упражнение*]
+	(* <- lang_ru;;	*);;
+
+nrel_exercises
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [exercises*]
+    (*<- lang_en;;*);
+	[упражнения*]
+	(* <- lang_ru;;	*);;
+
+nrel_mass_fraction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [mass fraction*]
+    (*<- lang_en;;*);
+	[массовая доля*]
+	(* <- lang_ru;;	*);;
+
+nrel_volume_fraction
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+    [volume fraction*]
+    (*<- lang_en;;*);
+	[объёмная доля*]
+	(* <- lang_ru;;	*);;

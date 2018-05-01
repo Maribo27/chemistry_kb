@@ -1,11 +1,11 @@
 subst_Mg
 <- sc_node_not_relation;
-=> nrel_main_idtf: [магний (вещество)] (* <- lang_ru;; *);
-=> nrel_main_idtf: [magnesium (substance)] (* <- lang_en;; *);
+=> nrel_main_idtf: [магний] (* <- lang_ru;; *);
+=> nrel_main_idtf: [magnesium] (* <- lang_en;; *);
 <= nrel_inclusion: chemical_substance;
 <- rrel_key_sc_element: definition_of_subst_Mg
 (* 
-	=> nrel_main_idtf: [Опр. (магний (вещество))] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр. (магний)] (* <- lang_ru;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation:...
 	(*
@@ -49,7 +49,7 @@ subst_Mg
 <- rrel_key_sc_element:...
 (*
 	<- illustration;;
-	=> nrel_main_idtf: [Рис. (магний (вещество), твёрдое тело)] (* <- lang_ru;;	*);;
+	=> nrel_main_idtf: [Рис. (магний, твёрдое тело)] (* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example: "file://image/subst_Magnesium.jpg"
@@ -63,7 +63,7 @@ subst_Mg
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (магний (вещество), нагревание, оксид, нитрид, воздух)](*<- lang_ru;;*);;
+		[Утв. (магний, нагревание, оксид, нитрид, воздух)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ При нагревании на воздухе магний сгорает с образованием оксида и небольшого количества нитрида.] (*<- lang_ru;;*);;
@@ -74,7 +74,7 @@ subst_Mg
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (магний (вещество), горение, углекислый газ)](*<- lang_ru;;*);;
+		[Утв. (магний, горение, углекислый газ)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Магний может гореть в углекислом газе.] (*<- lang_ru;;*);;
@@ -85,7 +85,7 @@ subst_Mg
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (магний (вещество), взаимодействие*, вода)](*<- lang_ru;;*);;
+		[Утв. (магний, взаимодействие*, вода)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Раскаленный магний реагирует с водой.] (*<- lang_ru;;*);;
@@ -96,7 +96,7 @@ subst_Mg
 (*
 	<- explanation;;
 	=> nrel_main_idtf: 
-		[Утв. (магний (вещество), растворение, кислота, водород (вещество))](*<- lang_ru;;*);;
+		[Утв. (магний, растворение, кислота, водород)](*<- lang_ru;;*);;
 	<= nrel_sc_text_translation:...
 	(*
 		-> rrel_example:[ Магний в кислотах растворяется с бурным выделением водорода.] (*<- lang_ru;;*);;

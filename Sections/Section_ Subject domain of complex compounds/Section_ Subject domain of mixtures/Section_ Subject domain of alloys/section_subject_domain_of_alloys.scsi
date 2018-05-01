@@ -23,7 +23,6 @@ subject_domain_of_alloys
 	nichrome;
 	pobedit;
 	amorphous_metals;
-	supercooled_liquid;
 	alloy_hardening;
 	hardening;
 	recrystallization;
@@ -2072,67 +2071,7 @@ stellite
 => nrel_alloy_component: 
 	elem_W;elem_Co;elem_Cr;elem_Mo;;
 
-supercooled_liquid
-=> nrel_main_idtf:
-	[переохлаждённая жидкость]
-	(* <- lang_ru;;	*);
-	[supercooled liquid]
-	(* <- lang_en;;	*);;
 
-supercooled_liquid
-<- rrel_key_sc_element:
-	Definition_of_supercooled_liquid
-	(* 
-	=> nrel_main_idtf:
-		[Опр.(переохлаждённая жидкость)] (* <- lang_ru;;	*);
-		[Def.(supercooled liquid)] (* <- lang_en;;	*);;
-	<- explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:[<b><sc_element sys_idtf  = "supercooled_liquid">Переохлаждённая жидкость</sc_element> </b>- <sc_element sys_idtf  = "liquid">жидкость</sc_element> имеющая <sc_element sys_idtf  = "nrel_temperature">температуру</sc_element>температуру ниже температуры кристаллизации при данном давлении.] 
-			(* 
-			<-lang_ru;; 
-			=> nrel_format: format_html;;
-			*);;
-		-> rrel_example:[<b><sc_element sys_idtf  = "supercooled_liquid">Supercooled liquid</sc_element> </b>- <sc_element sys_idtf  = "liquid">liquid</sc_element> which has <sc_element sys_idtf  = "nrel_temperature">temperature</sc_element> below the crystallization temperature at a given pressure.] 
-			(* 
-			<-lang_en;; 
-			=> nrel_format: format_html;;
-			*);;
-		*);;
-	<= nrel_using_constants:...
-			(*
-				->liquid;;
-				->nrel_temperature;;
-			*);;
-	*);
-
-
-<=nrel_inclusion: chemical_substance;
-
-
-
-<- rrel_key_sc_element: supercooled_liquid_liquid_state
-	(*
-		<- explanation;;
-		=> nrel_main_idtf: 
-			[Прим. (переохлаждённая жидкость, неустойчивое состояние, жидкость)](*<- lang_ru;;*);
-			[Node (supercooled liquid, unstable state, liquid)](*<- lang_en;;*);;
-		<= nrel_sc_text_translation:...
-		(*
-			-> rrel_example:[Переохлаждённая жидкость является одним из неустойчивых (метастабильных) состояний жидкости.] 
-			(*
-				<- lang_ru;;
-				=> nrel_format: format_html;;
-			*);;
-			-> rrel_example:[The supercooled liquid is one of the unstable (metastable) states of the liquid.] 
-			(*
-				<- lang_en;;
-				=> nrel_format: format_html;;
-			*);;
-		*);;
-	*);;
 
 
 

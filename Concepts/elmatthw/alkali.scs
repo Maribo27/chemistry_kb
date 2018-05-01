@@ -1,27 +1,3 @@
-salt_solution
-=> nrel_main_idtf:
-	[раствор солей](* <- lang_ru;; *);
-	[salt solution](* <- lang_en;; *);;
-amphoteric_metal
-=> nrel_main_idtf:
-	[амфотерный металл](* <- lang_ru;; *);
-	[amphoteric metal](* <- lang_en;; *);;
-industry
-=> nrel_main_idtf:
-	[промышленность](* <- lang_ru;; *);
-	[industry](* <- lang_en;; *);;
-statement_of_defining_type
-=> nrel_main_idtf:
-	[утверждение определяющего типа](* <- lang_ru;; *);
-	[statement of defining type](* <- lang_en;; *);;
-aqueous_solution
-=> nrel_main_idtf:
-	[водный раствор](* <- lang_ru;; *);
-	[aqueous solution](* <- lang_en;; *);;
-strong_base
-=> nrel_main_idtf:
-	[сильное основание](* <- lang_ru;; *);
-	[strong base](* <- lang_en;; *);;
 alkali
 => nrel_main_idtf:
 	[щёлочь](* <- lang_ru;; *);
@@ -47,7 +23,7 @@ alkali
 	<=nrel_using_constants:...
 	(*
 		->nrel_solubility;;
-		->strong_base;;
+		->strong_basis;;
 		->aqueous_solution;;
 		->ion;;
 	*);;
@@ -67,7 +43,7 @@ alkali
 	-> rrel_key_sc_element: hydroxide;;
 	-> rrel_key_sc_element: alkali_metal;;
 	-> rrel_key_sc_element: alkaline_earth_metal;;
-	-> rrel_key_sc_element: base;;
+	-> rrel_key_sc_element: basis;;
 	-> rrel_key_sc_element: periodic_system;;
 	<- rrel_theorem:subject_domain_chemisty
 	(*
@@ -175,4 +151,4 @@ alkali
 		<-subject_domain;;
 	*);;
 *);
-=>nrel_applying: industry;medicine;;	
+=>nrel_applying: industry;medicine;; 

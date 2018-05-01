@@ -760,7 +760,6 @@ saturated_hydrocarbons
 		*);;
 	*);;
 
-
 unsaturated_hydrocarbons
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[ненасыщенные углеводороды](* <- lang_ru;; *);
@@ -886,4 +885,3 @@ macrocycle_compound
 			-> rrel_example:"file://html/macrocycle_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
 		*);;
 	*);;
-

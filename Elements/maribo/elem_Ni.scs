@@ -74,7 +74,7 @@ elem_Ni
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:124(*<- number;;*);;
+		-> rrel_pm:one_hundred_twenty_four;;
 	*);;
 *);
 
@@ -85,7 +85,7 @@ elem_Ni
 	<- value;;
 	<= nrel_measurement:...
 	(*
-		-> rrel_pm:115(*<- number;;*);;
+		-> rrel_pm:one_hundred_and_fifteen;;
 	*);;
 *);
 

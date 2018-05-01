@@ -1,0 +1,110 @@
+subst_NiOH
+	=>nrel_main_idtf:
+	[гидроксид никеля(I)]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[nickel hydroxide(I)]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[NiOH]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_nickel_hydroxide_1
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид никеля(I) (Ni(OH))</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>] 
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид никеля(I))](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chemical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-dark_blue_color;;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_Ni);;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_O);;
+	atomic_multiplicity_one ->(subst_NiOH ->elem_H);;
+subst_NiOH
+//////////
+/*
+=> nrel_melting_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [150] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [340] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+//
+=> nrel_density_of_substance: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram_per_cubic_cm:...
+		(*
+			=> nrel_main_idtf: [4,33] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);*/
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_NiOH_and_sulfide_alkali_metals
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид никеля(I), взаимодействие*, сульфид, щелочной металл, основание, сульфид никеля(I))](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид никеля(I) взаимодействует с сульфидами щелочных металлов с образованием сульфида никеля (I) и основания .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+
+//////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	=> nrel_main_idtf: [Рис. (гидроксид никеля(I))] (* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/subst_NiOH.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);;
+interaction_subst_NiOH_and_sulfide_alkali_metals->rrel_key_sc_element:nrel_interaction;sulfide; alkale_metal; hydroxides;nickel_sulphide_1;;

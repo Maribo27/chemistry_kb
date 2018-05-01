@@ -10,8 +10,8 @@ subject_domain_of_poisons
 	zootoxin;
 	mineral_poison;
 	artificial_poison;
-	organic_poison;
-	inorganic_poison;
+	organic_artificial_poison;
+	inorganic_artificial_poison;
 	hemotoxin;
 	neurotoxin;
 	myotoxin;
@@ -996,19 +996,30 @@ yperite
 		->organic_artificial_poison;;
 		-> liquid;;
 		-> smell;;
-		-> chemical_formula;;
 		->no_color;;
-		->elem_C;;
-		->elem_H;;
-		->elem_Cl;;
-		->elem_S;;
 	*);;
 	<= nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="yperite">Иприт</sc_element></b> - <b><sc_element sys_idtf="organic_artificial_poison">органический искусственный яд</sc_element></b>, <b><sc_element sys_idtf="no_color">бесцветная</sc_element></b> <b><sc_element sys_idtf="liquid">жидкость</sc_element></b> или <b><sc_element sys_idtf="gas">газ</sc_element></b> с <b><sc_element sys_idtf="smell">горчицы или горчицы, применяемый в качестве боевого отравляющего вещества. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub><sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub><sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>2</sub><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<- lang_ru;; => nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="yperite">Yperite</sc_element></b> is an <b><sc_element sys_idtf="organic_artificial_poison">organic artificial poison</sc_element></b>, <b><sc_element sys_idtf="no_color">colorless</sc_element></b> <b><sc_element sys_idtf="liquid">liquid</sc_element></b> or <b><sc_element sys_idtf="gas">gas</sc_element></b> with <b><sc_element sys_idtf="smell">smell</sc_element></b> of mustard or garlic, which is used as chemical warfare agent. <b><sc_element sys_idtf="chemical_formula">Chemical folmula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub><sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub><sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>2</sub><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<- lang_en;;=> nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="yperite">Иприт</sc_element></b> - <b><sc_element sys_idtf="organic_artificial_poison">органический искусственный яд</sc_element></b>, <b><sc_element sys_idtf="no_color">бесцветная</sc_element></b> <b><sc_element sys_idtf="liquid">жидкость</sc_element></b> или <b><sc_element sys_idtf="gas">газ</sc_element></b> с <b><sc_element sys_idtf="smell">горчицы или горчицы, применяемый в качестве боевого отравляющего вещества.](*<- lang_ru;; => nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="yperite">Yperite</sc_element></b> is an <b><sc_element sys_idtf="organic_artificial_poison">organic artificial poison</sc_element></b>, <b><sc_element sys_idtf="no_color">colorless</sc_element></b> <b><sc_element sys_idtf="liquid">liquid</sc_element></b> or <b><sc_element sys_idtf="gas">gas</sc_element></b> with <b><sc_element sys_idtf="smell">smell</sc_element></b> of mustard or garlic, which is used as chemical warfare agent.](*<- lang_en;;=> nrel_format:format_html;;*);;
 	*);;
 *);
+
+
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (иприт, химическая формула, атом углерода, атом водорода, атом хлора, атом серы)](*<-lang_ru;;*);
+		[Exp. (yperite, chemical formula, carbon atom, hydrogen atom, chlorine atom, sulfur atom)](*<-lang_en;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="yperite">иприта</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub><sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub><sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>2</sub><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<- lang_ru;; => nrel_format:format_html;;*);;
+		-> rrel_example:[<b><sc_element sys_idtf="chemical_formula">Chemical folmula</sc_element></b> of <b><sc_element sys_idtf="yperite">yperite</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sub>4</sub><sc_element sys_idtf="elem_H">H</sc_element><sub>8</sub><sc_element sys_idtf="elem_Cl">Cl</sc_element><sub>2</sub><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<- lang_en;;=> nrel_format:format_html;;*);;
+	*);;
+*);
+
 
 <- rrel_key_sc_element:...
 (*
@@ -1055,18 +1066,28 @@ carbon_monoxide
 	<=nrel_using_constants:...
 	(*
 		->gas;;
-		->elem_C;;
-		->elem_O;;
 		->natural_poison;;
 		->neurotoxin;;
-		->chemical_formula;;
 		->no_color;;
 		->no_smell;;
 	*);;
 	<= nrel_sc_text_translation:...
 	(*
-		-> [<b><sc_element sys_idtf="carbon_monoxide">Монооксид углерода</sc_element></b> - <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b> <b><sc_element sys_idtf="natural_poison">природного происхождения</sc_element></b>, <b><sc_element sys_idtf="gas">газ</sc_element></b> <b><sc_element sys_idtf="no_smell">без запаха</sc_element></b> и <b><sc_element sys_idtf="color">цвета</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
-		-> [<b><sc_element sys_idtf="carbon_monoxide">Carbon monoxide</sc_element></b> - <b><sc_element sys_idtf="natural_poison">natural</sc_element></b> <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b>, a <b><sc_element sys_idtf="gas">gas</sc_element></b> <b><sc_element sys_idtf="no_smell">without smell</sc_element></b> and <b><sc_element sys_idtf="color">color</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical folmula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b>.](*<- lang_en;;=>nrel_format:format_html;;*);;
+		-> [<b><sc_element sys_idtf="carbon_monoxide">Монооксид углерода</sc_element></b> - <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b> <b><sc_element sys_idtf="natural_poison">природного происхождения</sc_element></b>, <b><sc_element sys_idtf="gas">газ</sc_element></b> <b><sc_element sys_idtf="no_smell">без запаха</sc_element></b> и <b><sc_element sys_idtf="color">цвета</sc_element></b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+		-> [<b><sc_element sys_idtf="carbon_monoxide">Carbon monoxide</sc_element></b> - <b><sc_element sys_idtf="natural_poison">natural</sc_element></b> <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b>, a <b><sc_element sys_idtf="gas">gas</sc_element></b> <b><sc_element sys_idtf="no_smell">without smell</sc_element></b> and <b><sc_element sys_idtf="color">color</sc_element></b>.](*<- lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (монооксид углерода, химическая формула, атом углерода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (carbon monoxide, chemical formula, carbon atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="carbon_monoxide">монооксида углерода</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="carbon_monoxide">carbon monoxide</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1113,17 +1134,27 @@ potassium_cyanide
 		[Def. (potassium cyanide)](*<- lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->elem_K;;
-		->elem_C;;
-		->elem_N;;
 		->salt;;
 		->hydrocyanic_acid;;
 		->inorganic_artificial_poison;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="potassium_cyanide">Цианид калия</sc_element></b> - <b><sc_element sys_idtf="elem_K">калиевая</sc_element> <sc_element sys_idtf="salt">соль</sc_element></b> <b><sc_element sys_idtf="hydrocyanic_acid">синильной кислоты</sc_element></b>, сильнейший <b><sc_element sys_idtf="inorganic_artificial_poison">неорганический яд искусственного происхождения</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_K">K</sc_element><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_N">N</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="potassium_cyanide">Potassium cyanide</sc_element></b> - <b><sc_element sys_idtf="elem_K">potassium</sc_element> <sc_element sys_idtf="salt">salt</sc_element></b> of <sc_element sys_idtf="hydrocyanic_acid">hydrocyanic acid</sc_element></b>, the strongest <b><sc_element sys_idtf="inorganic_artificial_poison">inorganic artificial poison</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical folmula</sc_element></b> - <b><sc_element sys_idtf="elem_K">K</sc_element><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_N">N</sc_element>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="potassium_cyanide">Цианид калия</sc_element></b> - <b><sc_element sys_idtf="elem_K">калиевая</sc_element> <sc_element sys_idtf="salt">соль</sc_element></b> <b><sc_element sys_idtf="hydrocyanic_acid">синильной кислоты</sc_element></b>, сильнейший <b><sc_element sys_idtf="inorganic_artificial_poison">неорганический яд искусственного происхождения</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="potassium_cyanide">Potassium cyanide</sc_element></b> - <b><sc_element sys_idtf="elem_K">potassium</sc_element> <sc_element sys_idtf="salt">salt</sc_element></b> of <sc_element sys_idtf="hydrocyanic_acid">hydrocyanic acid</sc_element></b>, the strongest <b><sc_element sys_idtf="inorganic_artificial_poison">inorganic artificial poison</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (цианид калия, химическая формула, атом углерода, атом азота, атом калия)](*<-lang_ru;;*);
+		[Exp. (carbon monoxide, chemical formula, carbon atom, nitrogen atom, potassium atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="potassium_cyanide">цианида калия</sc_element></b> - <b><sc_element sys_idtf="elem_K">K</sc_element><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_N">N</sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="potassium_cyanide">potassium cyanide</sc_element></b> - <b><sc_element sys_idtf="elem_K">K</sc_element><sc_element sys_idtf="elem_C">C</sc_element><sc_element sys_idtf="elem_N">N</sc_element>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1171,17 +1202,26 @@ t_two_toxin
 	(*
 		->organic_compound;;
 		->mycotoxin;;
-		->elem_C;;
-		->elem_H;;
-		->elem_O;;
-		->chemical_formula;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="t_two_toxin">Т-2 токсин</sc_element></b> - <b><sc_element sys_idtf="organic_compound">органическое соединение</sc_element></b>, <b><sc_element sys_idtf="mycotoxin">микотоксин</sc_element></b>, продуцируемый плесневыми грибами рода фузариум. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>24</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>34</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>9</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="t_two_toxin">T-2 toxin</sc_element></b> is an <b><sc_element sys_idtf="organic_compound">organic compound</sc_element></b>, <b><sc_element sys_idtf="mycotoxin">mycotoxin</sc_element></b>, produced by mold fungi of the genus Fusarium. <b><sc_element sys_idtf="chemical_formula">Chemical folmula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>24</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>34</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>9</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="t_two_toxin">Т-2 токсин</sc_element></b> - <b><sc_element sys_idtf="organic_compound">органическое соединение</sc_element></b>, <b><sc_element sys_idtf="mycotoxin">микотоксин</sc_element></b>, продуцируемый плесневыми грибами рода фузариум.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="t_two_toxin">T-2 toxin</sc_element></b> is an <b><sc_element sys_idtf="organic_compound">organic compound</sc_element></b>, <b><sc_element sys_idtf="mycotoxin">mycotoxin</sc_element></b>, produced by mold fungi of the genus Fusarium.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);	
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (Т-2 токсин, химическая формула, атом кислорода, атом углерода, атом водорода)](*<-lang_ru;;*);
+		[Exp. (T-2 toxin, chemical formula, carbon atom, oxygen atom, hydrogen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>24</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>34</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>9</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>24</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>34</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>9</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
 
 <- rrel_key_sc_element:...
 (*
@@ -1286,8 +1326,21 @@ muscarine
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="muscarine">Мускарин</sc_element></b> - <b><sc_element sys_idtf="phytotoxin">фитотоксин</sc_element></b>, содержащийся в грибах (в основном в мухоморах). <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>9</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><sup>+</sup>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="muscarine">Muscarine</sc_element></b> is a <b><sc_element sys_idtf="phytotoxin">phytotoxin/sc_element></b> contained in fungi (mainly in fly agarics). <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>9</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><sup>+</sup>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="muscarine">Мускарин</sc_element></b> - <b><sc_element sys_idtf="phytotoxin">фитотоксин</sc_element></b>, содержащийся в грибах (в основном в мухоморах). ](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="muscarine">Muscarine</sc_element></b> is a <b><sc_element sys_idtf="phytotoxin">phytotoxin/sc_element></b> contained in fungi (mainly in fly agarics).](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (мускарин, химическая формула, атом кислорода, атом углерода, атом водорода, атом азота)](*<-lang_ru;;*);
+		[Exp. (muscarine, chemical formula, carbon atom, oxygen atom, hydrogen atom, nitrogen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="muscarine">мускарина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>9</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><sup>+</sup>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="muscarine">muscarine</sc_element></b>- <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>9</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>20</sub><b><sc_element sys_idtf="elem_N">N</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><sup>+</sup>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1335,20 +1388,29 @@ methanol
 		[Def. (methanol)](*<-lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->elem_C;;
-		->elem_H;;
-		->elem_O;;
 		->neurotoxin;;
 		->liquid;;
 		->no_color;;
 		->poison;;
-		->chemical_formula;;
 	*);;
 
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="methanol">Метанол</sc_element></b> - <b><sc_element sys_idtf="no_color">бесцветная</sc_element> <sc_element sys_idtf="poison">ядовитая</sc_element> <sc_element sys_idtf="liquid">жидкость</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="methanol">Methanol</sc_element></b> - <b><sc_element sys_idtf="no_color">colorless</sc_element> <sc_element sys_idtf="poison">poisonous</sc_element> <sc_element sys_idtf="liquid">liquid</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">neurotoxin</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical folmula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b>](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="methanol">Метанол</sc_element></b> - <b><sc_element sys_idtf="no_color">бесцветная</sc_element> <sc_element sys_idtf="poison">ядовитая</sc_element> <sc_element sys_idtf="liquid">жидкость</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="methanol">Methanol</sc_element></b> - <b><sc_element sys_idtf="no_color">colorless</sc_element> <sc_element sys_idtf="poison">poisonous</sc_element> <sc_element sys_idtf="liquid">liquid</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">neurotoxin</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (метанол, химическая формула, атом кислорода, атом углерода, атом водорода)](*<-lang_ru;;*);
+		[Exp. (methanol, chemical formula, carbon atom, oxygen atom, hydrogen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="methanol">метанола</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="methanol">methanol</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>3</sub><b><sc_element sys_idtf="elem_O">O</sc_element></b><b><sc_element sys_idtf="elem_H">H</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1382,14 +1444,14 @@ nrel_dose
 =>nrel_main_idtf:
 	[доза*](*<-lang_ru;;*);
 	[dose*](*<-lang_en;;*);
-=>nrel_first_domain:quantity;
+=>nrel_first_domain:value;
 =>nrel_second_domain:poison;
 =>nrel_definitional_domain:...
 (*
 	<=nrel_combination:...
 	(*
 		->poison;;
-		->quantity;;
+		->value;;
 	*);;
 *);
 <-binary_relation;
@@ -1406,13 +1468,13 @@ nrel_dose
 		[Def. (dose*)](*<-lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->quantity;;
+		->value;;
 		->poison;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="quantity">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="quantity">quantity</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="value">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="value">value</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);;
 
@@ -1422,14 +1484,14 @@ nrel_lethal_dose
 =>nrel_main_idtf:
 	[смертельная доза*](*<-lang_ru;;*);
 	[lethal dose*](*<-lang_en;;*);
-=>nrel_first_domain:quantity;
+=>nrel_first_domain:value;
 =>nrel_second_domain:poison;
 =>nrel_definitional_domain:...
 (*
 	<=nrel_combination:...
 	(*
 		->poison;;
-		->quantity;;
+		->value;;
 	*);;
 *);
 <-binary_relation;
@@ -1446,13 +1508,13 @@ nrel_lethal_dose
 		[Def. (lethal dose*](*<-lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->quantity;;
+		->value;;
 		->poison;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="quantity">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>, вызывающая гибель.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="quantity">quantity</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b> that causes death.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Доза</sc_element></b> - <b><sc_element sys_idtf="value">величина</sc_element></b> однократно или суммарно поглощённого <b><sc_element sys_idtf="poison">яда</sc_element></b>, вызывающая гибель.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nrel_dose">Dose</sc_element></b> - the <b><sc_element sys_idtf="value">value</sc_element></b> of a single or total absorbed <b><sc_element sys_idtf="poison">poison</sc_element></b> that causes death.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);;
 
@@ -1473,17 +1535,27 @@ nicotine
 	<=nrel_using_constants:...
 	(*
 		->neurotoxin;;
-		->elem_C;;
-		->elem_H;;
-		->elem_N;;
 		->water;;
 		->liquid;;
-		->chemical_formula;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="nicotine">Никотин<sc_element></b> - <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b>, представляющий собой горькую маслянистую <b><sc_element sys_idtf="liquid">жидкость</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>14</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="nicotine">Nicotine<sc_element></b> is a <b><sc_element sys_idtf="neurotoxin">neurotoxin</sc_element></b>, a bitter oily <b><sc_element sys_idtf="liquid">liquid</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>14</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nicotine">Никотин<sc_element></b> - <b><sc_element sys_idtf="neurotoxin">нейротоксин</sc_element></b>, представляющий собой горькую маслянистую <b><sc_element sys_idtf="liquid">жидкость</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="nicotine">Nicotine<sc_element></b> is a <b><sc_element sys_idtf="neurotoxin">neurotoxin</sc_element></b>, a bitter oily <b><sc_element sys_idtf="liquid">liquid</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (никотин, химическая формула, атом азота, атом углерода, атом водорода)](*<-lang_ru;;*);
+		[Exp. (nicotine, chemical formula, carbon atom, hydrogen atom, hydrogen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="nicotine">никотина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>14</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="nicotine">nicotine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>14</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1529,18 +1601,26 @@ strychnine
 	<=nrel_using_constants:...
 	(*
 		->neurotoxin;;
-		->elem_C;;
-		->elem_H;;
-		->elem_N;;
-		->elem_O;;
 		->crystal;;
 		->chemical_substance;;
-		->chemical_formula;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="strychnine">Стрихнин<sc_element></b> - твердое <b><sc_element sys_idtf="crystal">кристаллическое</sc_element></b> <b><sc_element sys_idtf="chemical_substance">вещество</b></sc_element>, <b><sc_element sys_idtf="neurotoxin">нейротоксин</b></sc_element>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>21</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>22</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="strychnine">Strychnine<sc_element></b> is a solid <b><sc_element sys_idtf="crystal">crystalline</sc_element></b> <b><sc_element sys_idtf="chemical_substance">substance</b></sc_element> and <b><sc_element sys_idtf="neurotoxin">neurotoxin</b></sc_element>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>21</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>22</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="strychnine">Стрихнин<sc_element></b> - твердое <b><sc_element sys_idtf="crystal">кристаллическое</sc_element></b> <b><sc_element sys_idtf="chemical_substance">вещество</b></sc_element>, <b><sc_element sys_idtf="neurotoxin">нейротоксин</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="strychnine">Strychnine<sc_element></b> is a solid <b><sc_element sys_idtf="crystal">crystalline</sc_element></b> <b><sc_element sys_idtf="chemical_substance">substance</b></sc_element> and <b><sc_element sys_idtf="neurotoxin">neurotoxin</b></sc_element>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (стрихнин, химическая формула, атом азота, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (strychnine, chemical formula, carbon atom, hydrogen atom, hydrogen atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="strychnine">стрихнина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>21</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>22</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="strychnine">strychnine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>21</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>22</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1585,17 +1665,25 @@ batrachotoxin
 	<=nrel_using_constants:...
 	(*
 		->poison;;
-		->elem_C;;
-		->elem_H;;
-		->elem_N;;
-		->elem_O;;
-		->chemical_formula;;
 		->organic_compound;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="batrachotoxin">Батрахотоксин</sc_element></b> - <b><sc_element sys_idtf="organic_compound">органическое соединение</sc_element></b>, сильнейший <b><sc_element sys_idtf="poison">яд</sc_element></b>, который содержится в кожных железах некоторых видов лягушек-древолазов из рода листолазов. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>31</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>42</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>6</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="batrachotoxin">Batrachotoxin</sc_element></b> is an <b><sc_element sys_idtf="organic_compound">organic compound</sc_element></b>, the strongest <b><sc_element sys_idtf="poison">poison</sc_element></b>, which is contained in the skin glands of some species of tree frogs from the genus of leafworms. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>31</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>42</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>6</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="batrachotoxin">Батрахотоксин</sc_element></b> - <b><sc_element sys_idtf="organic_compound">органическое соединение</sc_element></b>, сильнейший <b><sc_element sys_idtf="poison">яд</sc_element></b>, который содержится в кожных железах некоторых видов лягушек-древолазов из рода листолазов.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="batrachotoxin">Batrachotoxin</sc_element></b> is an <b><sc_element sys_idtf="organic_compound">organic compound</sc_element></b>, the strongest <b><sc_element sys_idtf="poison">poison</sc_element></b>, which is contained in the skin glands of some species of tree frogs from the genus of leafworms.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (батрахотоксин, химическая формула, атом азота, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (batrachotoxin, chemical formula, carbon atom, hydrogen atom, hydrogen atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="batrachotoxin">батрахотоксина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>31</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>42</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>6</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="batrachotoxin">batrachotoxin</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>31</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>42</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>6</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>2</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1639,14 +1727,8 @@ sarin
 	<=nrel_using_constants:...
 	(*
 		->poison;;
-		->elem_C;;
-		->elem_H;;
-		->elem_F;;
-		->elem_O;;
-		->elem_P;;
 		->rrel_organic_solvent;;
 		->water;;
-		->chemical_formula;;
 		->chemical_substance;;
 		->liquid;;
 		->no_color;;
@@ -1654,8 +1736,21 @@ sarin
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="sarin">Зарин</sc_element></b> - <b><sc_element sys_idtf="poison">отравляющее</sc_element></b> <b><sc_element sys_idtf="chemical_substance">вещество</sc_element></b>, которое представляет собой <b><sc_element sys_idtf="liquid">жидкость</sc_element></b> <b><sc_element sys_idtf="no_color">без цвета</sc_element></b> и <b><sc_element sys_idtf="no_smell">без запаха</sc_element></b>; смешивается во всех отношениях с <b><sc_element sys_idtf="water">водой</sc_element></b> и <b><sc_element sys_idtf="rrel_organic_solvent">органическими растворителями</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>4</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>10</sub><b><sc_element sys_idtf="elem_F">F</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="sarin">Sarin</sc_element></b> is a <b><sc_element sys_idtf="poison">poisonous</sc_element></b> <b><sc_element sys_idtf="chemical_substance">substance</sc_element></b>, which is a <b><sc_element sys_idtf="liquid">liquid</sc_element></b> <b><sc_element sys_idtf="no_color">without smell</sc_element></b> and <b><sc_element sys_idtf="no_smell">without color</sc_element></b>; can be mixed with <b><sc_element sys_idtf="water">water</sc_element></b> and <b><sc_element sys_idtf="rrel_organic_solvent">organic solvents</sc_element></b> in any proportions. <b><sc_element sys_idtf="chemical_formula">Chemical folmula/sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>4</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>10</sub><b><sc_element sys_idtf="elem_F">F</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="sarin">Зарин</sc_element></b> - <b><sc_element sys_idtf="poison">отравляющее</sc_element></b> <b><sc_element sys_idtf="chemical_substance">вещество</sc_element></b>, которое представляет собой <b><sc_element sys_idtf="liquid">жидкость</sc_element></b> <b><sc_element sys_idtf="no_color">без цвета</sc_element></b> и <b><sc_element sys_idtf="no_smell">без запаха</sc_element></b>; смешивается во всех отношениях с <b><sc_element sys_idtf="water">водой</sc_element></b> и <b><sc_element sys_idtf="rrel_organic_solvent">органическими растворителями</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="sarin">Sarin</sc_element></b> is a <b><sc_element sys_idtf="poison">poisonous</sc_element></b> <b><sc_element sys_idtf="chemical_substance">substance</sc_element></b>, which is a <b><sc_element sys_idtf="liquid">liquid</sc_element></b> <b><sc_element sys_idtf="no_color">without smell</sc_element></b> and <b><sc_element sys_idtf="no_smell">without color</sc_element></b>; can be mixed with <b><sc_element sys_idtf="water">water</sc_element></b> and <b><sc_element sys_idtf="rrel_organic_solvent">organic solvents</sc_element></b> in any proportions.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (зарин, химическая формула,атом фтора, атом фосфора, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (sarin, chemical formula,fluorine atom, phosporus atom, hydrogen atom, hydrogen atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="sarin">зарина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>4</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>10</sub><b><sc_element sys_idtf="elem_F">F</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="sarin">sarin</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>4</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>10</sub><b><sc_element sys_idtf="elem_F">F</sc_element></b><b><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1752,18 +1847,26 @@ palitoxin
 	<=nrel_using_constants:...
 	(*
 		->poison;;
-		->elem_C;;
-		->elem_H;;
-		->elem_N;;
-		->elem_O;;
 		->color_white;;
 		->chemical_substance;;
-		->chemical_formula;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="palitoxin">Палитоксин</sc_element></b> — <b><sc_element sys_idtf="poison">яд</sc_element></b> небелковой природы, <b><sc_element sys_idtf="color_white">белое</sc_element></b> аморфное <b><sc_element sys_idtf="chemical_substance">вещество</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>129</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>223</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>54</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="palitoxin">Palitoxin</sc_element></b> is a non-protein <b><sc_element sys_idtf="poison">poison</sc_element></b>, a <b><sc_element sys_idtf="color_white">white</sc_element></b> amorphous <b><sc_element sys_idtf="chemical_substance">substance</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>129</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>223</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>54</sub>](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="palitoxin">Палитоксин</sc_element></b> — <b><sc_element sys_idtf="poison">яд</sc_element></b> небелковой природы, <b><sc_element sys_idtf="color_white">белое</sc_element></b> аморфное <b><sc_element sys_idtf="chemical_substance">вещество</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="palitoxin">Palitoxin</sc_element></b> is a non-protein <b><sc_element sys_idtf="poison">poison</sc_element></b>, a <b><sc_element sys_idtf="color_white">white</sc_element></b> amorphous <b><sc_element sys_idtf="chemical_substance">substance</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (палитоксин, химическая формула,атом азота, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (palitoxin, chemical formula, nitrogen atom, hydrogen atom, hydrogen atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="palitoxin">палитоксина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>129</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>223</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>54</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="palitoxin">palitoxin</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>129</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>223</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>54</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1808,18 +1911,27 @@ tetrodotoxin
 	<=nrel_using_constants:...
 	(*
 		->natural_poison;;
-		->elem_C;;
-		->elem_H;;
-		->elem_N;;
-		->elem_O;;
 		->neurotoxin;;
 		->zootoxin;;
-		->chemical_formula;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="tetrodotoxin">Тетродотоксин</sc_element></b> — сильный <b><sc_element sys_idtf="natural_poison">яд естественного происхождения</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">нейротоксического действия</sc_element></b>. Большое количество <b><sc_element sys_idtf="tetrodotoxin">тетродотоксина</sc_element></b> содержится в рыбах из отряда четырёхзубообразные. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="tetrodotoxin">Tetrodotoxin</sc_element></b> is a strong <b><sc_element sys_idtf="natural_poison">poison of natural origin</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">neurotoxic</sc_element></b>. A large amount of <b><sc_element sys_idtf="tetrodotoxin">tetrodotoxin</sc_element></b> is contained in fish from the order of four-toothed. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="tetrodotoxin">Тетродотоксин</sc_element></b> — сильный <b><sc_element sys_idtf="natural_poison">яд естественного происхождения</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">нейротоксического действия</sc_element></b>. Большое количество <b><sc_element sys_idtf="tetrodotoxin">тетродотоксина</sc_element></b> содержится в рыбах из отряда четырёхзубообразные.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="tetrodotoxin">Tetrodotoxin</sc_element></b> is a strong <b><sc_element sys_idtf="natural_poison">poison of natural origin</sc_element></b>, <b><sc_element sys_idtf="neurotoxin">neurotoxic</sc_element></b>. A large amount of <b><sc_element sys_idtf="tetrodotoxin">tetrodotoxin</sc_element></b> is contained in fish from the order of four-toothed.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (тетродотоксин, химическая формула,атом азота, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (tetrodotoxin, chemical formula, nitrogen atom, hydrogen atom, hydrogen atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="tetrodotoxin">тетродотоксина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="tetrodotoxin">tetrodotoxin</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>17</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>3</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>8</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1911,18 +2023,27 @@ orellanine
 		[Def. (orellanine)](*<-lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->elem_C;;
-		->elem_H;;
-		->elem_N;;
-		->elem_O;;
 		->nephrotoxin;;
 		->mycotoxin;;
-		->chemical_formula;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="orellanine">Орелланин</sc_element></b> — опасный <b><sc_element sys_idtf="mycotoxin">микотоксин</sc_element></b>, <b><sc_element sys_idtf="nephrotoxin">поражающий почки</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="orellanine">Orellanin</sc_element></b> is a dangerous <b><sc_element sys_idtf="mycotoxin">mycotoxin</sc_element></b>, that <b><sc_element sys_idtf="nephrotoxin">attacks kidneys</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="orellanine">Орелланин</sc_element></b> — опасный <b><sc_element sys_idtf="mycotoxin">микотоксин</sc_element></b>, <b><sc_element sys_idtf="nephrotoxin">поражающий почки</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="orellanine">Orellanin</sc_element></b> is a dangerous <b><sc_element sys_idtf="mycotoxin">mycotoxin</sc_element></b>, that <b><sc_element sys_idtf="nephrotoxin">attacks kidneys</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (орелланин, химическая формула,атом азота, атом углерода, атом водорода, атом кислорода)](*<-lang_ru;;*);
+		[Exp. (orellanine, chemical formula, nitrogen atom, hydrogen atom, hydrogen atom, oxygen atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="orellanine">орелланина</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="orellanine">orellanine</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>10</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>8</sub><b><sc_element sys_idtf="elem_N">N</sc_element><b><sub>2</sub><sc_element sys_idtf="elem_O">O</sc_element><b><sub>6</sub>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 
@@ -1971,19 +2092,26 @@ vx_gas
 		[Def. (VX gas)](*<-lang_en;;*);;
 	<=nrel_using_constants:...
 	(*
-		->elem_C;;
-		->elem_H;;
-		->elem_N;;
-		->elem_O;;
-		->elem_P;;
-		->elem_S;;
 		->artificial_poison;;
-		->chemical_formula;;
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->[<b><sc_element sys_idtf="vx_gas">Газ VX</sc_element></b> — сильнейшее <b><sc_element sys_idtf="artificial_poison">искусственное отравляющее вещество</sc_element></b> <b><sc_element sys_idtf="neurotoxin">нейротоксического действия</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>26</sub><b><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->[<b><sc_element sys_idtf="vx_gas">VX gas</sc_element></b> is strong <b><sc_element sys_idtf="artificial_poison">artificial poisonous substance</sc_element></b> with <b><sc_element sys_idtf="neurotoxin">neurotoxic action</sc_element></b>. <b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element><b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element><b><sub>26</sub></b><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="vx_gas">Газ VX</sc_element></b> — сильнейшее <b><sc_element sys_idtf="artificial_poison">искусственное отравляющее вещество</sc_element></b> <b><sc_element sys_idtf="neurotoxin">нейротоксического действия</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="vx_gas">VX gas</sc_element></b> is strong <b><sc_element sys_idtf="artificial_poison">artificial poisonous substance</sc_element></b> with <b><sc_element sys_idtf="neurotoxin">neurotoxic action</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element:...
+(*
+	<-explanation;;
+	=>nrel_main_idtf:
+		[Утв. (газ VX, химическая формула,атом азота, атом углерода, атом водорода, атом кислорода, атом фосфора, атом серы)](*<-lang_ru;;*);
+		[Exp. (VX gas, chemical formula, nitrogen atom, hydrogen atom, hydrogen atom, oxygen atom, phosporus atom, sulfur atom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->[<b><sc_element sys_idtf="chemical_formula">Химическая формула</sc_element></b> <b><sc_element sys_idtf="vx_gas">газа VX</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>26</sub><b><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->[<b><sc_element sys_idtf="chemical_formula">Chemical formula</sc_element></b> of <b><sc_element sys_idtf="vx_gas">VX gas</sc_element></b> - <b><sc_element sys_idtf="elem_C">C</sc_element></b><sub>11</sub><b><sc_element sys_idtf="elem_H">H</sc_element></b><sub>26</sub><b><sc_element sys_idtf="elem_N">N</sc_element><sc_element sys_idtf="elem_O">O</sc_element></b><sub>2</sub><b><sc_element sys_idtf="elem_P">P</sc_element><sc_element sys_idtf="elem_S">S</sc_element></b>.](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);
 

@@ -1,0 +1,22 @@
+ui_menu_find_chemical_amount_of_substance 
+<- ui_user_command_class_atom; ui_user_command_class_view_kb;
+=> nrel_main_idtf: 
+	[Каково химическое количество данного вещества?]
+	(* <- lang_ru;;*);
+	[What chemical amount_of this substance?] 
+	(* <- lang_en;;*);;
+
+ui_menu_find_chemical_amount_of_substance 
+=> ui_nrel_command_template:
+	[*
+		action_find_chemical_amount_of_substance _-> ._action_find_chemical_amount_of_substance_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_chemical_amount_of_substance_instance _<- question;;
+	*];;
+
+ui_menu_find_chemical_amount_of_substance 
+=> ui_nrel_command_lang_template: 
+	[Поиск химического количества $ui_arg_1] (* <- lang_ru;;*);
+	[Search chemical amount of $ui_arg_1] (* <- lang_en;;*);;

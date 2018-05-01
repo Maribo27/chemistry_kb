@@ -1,3 +1,5 @@
-nickel_group => nrel_main_idtf:
+nickel_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
 	[подгруппа никеля](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
+	[nickel group](* <- lang_en;; *);;

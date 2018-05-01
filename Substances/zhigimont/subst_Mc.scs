@@ -31,7 +31,6 @@ subst_Mc
 *);
 
 <= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Mc;
 
 => nrel_density_of_substance: ...
 (*
@@ -63,3 +62,5 @@ subst_Mc
 		-> rrel_kelvin: 673 (*<- number;;*);;
 	*);;
 *);;
+
+atomic_multiplicity_one -> (subst_Mc -> elem_Mc);;

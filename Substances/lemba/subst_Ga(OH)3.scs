@@ -1,0 +1,110 @@
+subst_GaOH3
+	=>nrel_main_idtf:
+	[гидроксид галлия]
+	(* <- lang_ru;; *);
+	=>nrel_main_idtf:
+	[gallium hydroxide]
+	(* <- lang_en;; *);
+	=>nrel_idtf:
+	[GaOH3]
+	(*<-lang_en;;*);
+
+///////////////////////////////////////////////////////////////////////////
+	<-rrel_key_sc_element: 
+	Definition_of_gallium_hydroxide
+		(*
+			<-definition;;
+			<=nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+				[<p>				
+				<b>Гидроксид галлия (Ga(OH)<sub>3</sub>)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				</p>]
+				(*
+				<-lang_ru;;
+				=> nrel_format: format_html;;
+				*);;
+			*);;
+		=>nrel_main_idtf:[Опр. (гидроксид галлия)](* <-lang_ru;; => nrel_format: format_html;;*);;
+		<=nrel_using_constants:...
+			(*
+				->hydroxides;chemical_substance;;
+			*);;
+		*);
+///////////////////////////////////////////////////////////////////
+	<=nrel_inclusion:amphoteric_hydroxide;
+///////////
+	<-solid;
+	<-color_white;;
+	atomic_multiplicity_one->(subst_GaOH3 ->elem_Ga);;
+	atomic_multiplicity_three->(subst_GaOH3 ->elem_O);;
+	atomic_multiplicity_three->(subst_GaOH3 ->elem_H);;
+subst_GaOH3
+//////////
+
+
+=> nrel_decomposition_temperature: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_degree_celsius:...
+		(*
+			=> nrel_main_idtf: [400] (* <- lang_en;;*);;
+			<- number;;
+		*);;
+	*);;
+*);
+
+/////////////////////////////////////////////////////////////////////
+<- rrel_key_sc_element:
+ interaction_subst_GaOH3_and_acid
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: 
+		[Утв. (гидроксид галлия, взаимодействие*, кислота, соль, вода)](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Гидроксид галлия взаимодействует с кислотами с образованием соли и воды .] (*<- lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: interaction_subst_GaOH3_and_acid_oxide
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид галлия, взаимодействие*, соль, вода,кислотный оксид)](*<- lang_ru;;*);;//
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид галлия взаимодействует с кислотными оксидами с образованием соли и воды.] (*<- lang_ru;;*);;
+	*);;
+*);
+<- rrel_key_sc_element: decomposition_subst_GaOH3
+(*
+	<- explanation;;
+	=> nrel_main_idtf: 
+		[Утв. (гидроксид галлия, разложение*, оксид стронция, вода)](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Гидроксид галлия ступенчато разлогается при нагревании до 400 градусов Цельсия сначало на GaO(OH) затем на Ga2O3*H2O и затем при нагревании от 540-600 градусов Цельсия на Ga2O3.] (*<- lang_ru;;*);;
+	*);;
+*);;
+
+
+//////////////////////////////////////////////////////////////
+decomposition_subst_GaOH3 
+-> rrel_key_sc_element:nrel_decomposition;
+->rrel_key_sc_element: gallium_oxide;
+->rrel_key_sc_element: water;;
+
+interaction_subst_GaOH3_and_acid
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid; 
+->rrel_key_sc_element:salt; 
+->rrel_key_sc_element:water;;
+
+interaction_subst_GaOH3_and_acid_oxide
+->rrel_key_sc_element:nrel_interaction;
+->rrel_key_sc_element:acid_oxide; 
+->rrel_key_sc_element:salt; 
+->rrel_key_sc_element:water;;

@@ -1,11 +1,3 @@
-asphyxiant_gas
-=> nrel_main_idtf:
-	[удушающий газ](* <- lang_ru;; *);
-	[asphyxiant gas](* <- lang_en;; *);;
-cryosurgery
-=> nrel_main_idtf:
-	[криохирургия](* <- lang_ru;; *);
-	[cryosurgery](* <- lang_en;; *);;
 carbon_dioxide
 => nrel_main_idtf:
 	[углекислый газ](* <- lang_ru;; *);

@@ -1,3 +1,6 @@
-semimetal => nrel_main_idtf:
+semimetal
+<- sc_node_not_relation;
+=> nrel_main_idtf:
 	[полуметалл](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
+	[semimetal](* <- lang_en;; *);;
+	

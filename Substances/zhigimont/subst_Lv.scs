@@ -57,5 +57,6 @@ subst_Lv
 	*);;
 *);
 
-<= nrel_inclusion: chemical_substance;
-=> nrel_inclusion: elem_Lv;;
+<= nrel_inclusion: chemical_substance;;
+
+atomic_multiplicity_one -> (subst_Lv -> elem_Lv);;
