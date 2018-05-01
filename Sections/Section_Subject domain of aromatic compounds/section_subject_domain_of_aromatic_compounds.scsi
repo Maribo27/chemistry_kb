@@ -680,7 +680,7 @@ benzene_cycle
 	=> nrel_idtf:[benzene ring](* <- lang_en;; *);
 
 	<- rrel_key_sc_element:
-	Definition_of_cycle
+	Definition_of_benzene_cycle
 	(*
 		<- definition;;
 		=> nrel_main_idtf:
@@ -737,12 +737,54 @@ saturated_hydrocarbons
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[насыщенные углеводороды](* <- lang_ru;; *);
 	=> nrel_main_idtf:[saturated hydrocarbons](* <- lang_en;; *);
-	=> nrel_idtf:[cycloparaffins](* <- lang_eng;; *);;
+	=> nrel_idtf:[cycloparaffins](* <- lang_eng;; *);
+	=> nrel_idtf:[предельные углеводороды](* <- lang_ru;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_saturated_hydrocarbons
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (насыщенные углеводороды)](* <- lang_ru;; *);
+			[Def. (saturated hydrocarbons)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> organic_compound;;
+			-> saturated_hydrocarbons;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/saturated_hydrocarbons_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/saturated_hydrocarbons_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
+
 
 unsaturated_hydrocarbons
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[ненасыщенные углеводороды](* <- lang_ru;; *);
-	=> nrel_main_idtf:[unsaturated hydrocarbons](* <- lang_en;; *);;
+	=> nrel_main_idtf:[unsaturated hydrocarbons](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_unsaturated_hydrocarbons
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (ненасыщенные углеводороды)](* <- lang_ru;; *);
+			[Def. (unsaturated hydrocarbons)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> organic_compound;;
+			-> unsaturated_hydrocarbons;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/unsaturated_hydrocarbons_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/unsaturated_hydrocarbons_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
 
 organoelement_compound
 	<- sc_node_not_relation;
@@ -757,7 +799,28 @@ nonorganic_compound
 monocycle_compound
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[моноциклическое соединение](* <- lang_ru;; *);
-	=> nrel_main_idtf:[monocycle compound](* <- lang_en;; *);;
+	=> nrel_main_idtf:[monocycle compound](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_monocycle_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (бензольное кольцо)](* <- lang_ru;; *);
+			[Def. (benzene cycle)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			-> monocycle_compound;;
+			-> chemical_compound;;
+			-> cycle;;
+			
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/monocycle_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/monocycle_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
 
 polycycle_compound
 	<- sc_node_not_relation;
@@ -802,5 +865,25 @@ polycycle_compound
 macrocycle_compound
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:[макроциклическое соединение](* <- lang_ru;; *);
-	=> nrel_main_idtf:[macrocycle compound](* <- lang_en;; *);;
+	=> nrel_main_idtf:[macrocycle compound](* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+	Definition_of_macrocycle_compound
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. (макроциклическое соединение)](* <- lang_ru;; *);
+			[Def. (macrocycle compound)](* <- lang_en;; *);;
+		<= nrel_using_constants:...
+		(*
+			->macrocycle_compound;;
+			->organic_compound;;
+			->cycle;;
+		*);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:"file://html/macrocycle_compound_def_ru.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:"file://html/macrocycle_compound_def_eng.html"(* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+	*);;
 
