@@ -33,7 +33,7 @@ elem_P
 <- siderophile;
 <- pnictogen;
 
-=> nrel_periodic_number: 15;
+=> nrel_periodic_number: fifteen;
 <- group_fifteen;
 <- period_three;
 

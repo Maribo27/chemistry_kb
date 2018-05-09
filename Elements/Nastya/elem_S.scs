@@ -33,7 +33,7 @@ elem_S
 <- chalcophile;
 <- chalcogen;
 
-=> nrel_periodic_number: 16;
+=> nrel_periodic_number: sixteen;
 <- group_sixteen;
 <- period_three;
 

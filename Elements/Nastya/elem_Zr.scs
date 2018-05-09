@@ -34,7 +34,7 @@ elem_Zr
 <- lithophile;
 <- titanium_group;
 
-=> nrel_periodic_number: 40;
+=> nrel_periodic_number: forty;
 <- group_four;
 <- period_five;
 

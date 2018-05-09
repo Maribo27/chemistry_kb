@@ -33,7 +33,7 @@ elem_Rf
 <- transition_metal;
 <- titanium_group;
 
-=> nrel_periodic_number: 104;
+=> nrel_periodic_number: one_hundred_and_four;
 <- group_four;
 <- period_seven;
 
