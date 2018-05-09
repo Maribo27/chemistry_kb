@@ -18,6 +18,7 @@ minus_seventeen => nrel_main_idtf:	[-17](* <- lang_ru; lang_en;; *);;
 minus_eighteen => nrel_main_idtf:	[-18](* <- lang_ru; lang_en;; *);;
 minus_nineteen => nrel_main_idtf:	[-19](* <- lang_ru; lang_en;; *);;
 minus_twenty => nrel_main_idtf:	[-20](* <- lang_ru; lang_en;; *);;
+minus_forty_five => nrel_main_idtf:	[-45](* <- lang_ru; lang_en;; *);;
 
 minus_one_hundred_and_twelve => nrel_main_idtf:	[-112](* <- lang_ru; lang_en;; *);;
 minus_one_hundred_and_seven => nrel_main_idtf:	[-107](* <- lang_ru; lang_en;; *);;

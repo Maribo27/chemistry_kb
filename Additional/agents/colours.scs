@@ -1,0 +1,4 @@
+color_red <= nrel_color_of_the_flame_during_combustion:LiCl; SrCl2; CaSO4;Ba;;
+color_green <= nrel_color_of_the_flame_during_combustion:CuSO4; P2;elem_Cu;elem_K;;
+color_blue <= nrel_color_of_the_flame_during_combustion:CuCl;elem_Se;;
+color_yellow <= nrel_color_of_the_flame_during_combustion:NaCl;;
