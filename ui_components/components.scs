@@ -40,6 +40,13 @@ solution_component
     [Solutions section commands]
     (* <- lang_en;; *);;
 
+salt_component 
+=> nrel_main_idtf:
+    [Команды раздела солей]
+    (*<- lang_ru;;*);
+    [Salts section commands]
+    (* <- lang_rn;; *);;
+
 electronLayer_ui_component 
 => nrel_main_idtf:
     [Компонент построения внешнего электронного слоя атома]
