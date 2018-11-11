@@ -6,3 +6,44 @@ subject_domain_of_monosaccharides
 	(* <- lang_en;; *);
 
 <- subject_domain;;
+
+-> rrel_maximum_studied_object_class: monosaccharide;
+-> rrel_not_maximum_studied_object_class:
+	galactose;
+	glucose;
+	maltose;;
+
+monosaccharide
+<- sc_node_not_relation;
+=> nrel_main_idtf:[моносахарид](* <- lang_ru;; *);
+=> nrel_main_idtf:[monosaccharide](* <- lang_en;; *);
+
+<= nrel_subdividing:
+...
+(*	
+	=> nrel_main_idtf:[Разбиение по содержаниюn асимметричных атомов углерода](* <- lang_ru;; *);;
+	-> triose;;
+	-> tetrose;;
+	-> pentose;;
+	-> hexose;;
+	-> heptose;;
+	-> octose;;
+	-> nonose;;
+*);
+
+<= nrel_subdividing:
+...
+(*	
+	=> nrel_main_idtf:[Разбиение по наличию альдо- или кето-группы](* <- lang_ru;; *);;
+	-> aldose;;
+	-> Ketose;;
+*);
+
+<= nrel_subdividing:
+...
+(*	
+	=> nrel_main_idtf:[Разбиение по количеству атомов углерода в цепи](* <- lang_ru;; *);;
+	-> lower;;
+	-> medium;;
+	-> higher;;
+*);
