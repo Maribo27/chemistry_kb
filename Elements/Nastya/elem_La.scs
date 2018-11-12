@@ -35,7 +35,7 @@ elem_La
 <- rare_earth_metal;
 <- scandium_group;
 
-=> nrel_periodic_number: 57;
+=> nrel_periodic_number: fifty_seven;
 <- group_three;
 <- period_six;
 

@@ -1,0 +1,8 @@
+subject_domain_of_alcohols
+=> nrel_main_idtf: 
+	[Предметная область спиртов]
+	(* <- lang_ru;;*);
+	[Subject domain of alcohols]
+	(* <- lang_en;; *);
+
+<- subject_domain;;

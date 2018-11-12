@@ -16,16 +16,16 @@ alloy_ui_component
 
 pencil_component 
 => nrel_main_idtf:
-    [Компонент отображения состава предмета]
+    [Узнать состав предмета]
     (*<- lang_ru;;*);
-	[Visual component of the object composition]
+	[Learn object composition]
 	(* <- lang_en;;	*);;
 
 enter_component 
 => nrel_main_idtf:
-    [Компонент ввода для задач]
+    [Поиск химического количества вещества]
     (*<- lang_ru;;*);
-	[Visual component of the data entering]
+	[Find chemical amount of substance]
 	(* <- lang_en;;	*);;
 
 ui_periodic_table
@@ -39,6 +39,13 @@ solution_component
     (*<- lang_ru;;*);
     [Solutions section commands]
     (* <- lang_en;; *);;
+
+salt_component 
+=> nrel_main_idtf:
+    [Команды раздела солей]
+    (*<- lang_ru;;*);
+    [Salts section commands]
+    (* <- lang_rn;; *);;
 
 electronLayer_ui_component 
 => nrel_main_idtf:

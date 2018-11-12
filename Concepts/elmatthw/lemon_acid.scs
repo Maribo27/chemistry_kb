@@ -58,7 +58,7 @@ lemon_acid
 <- rrel_key_sc_element:...
 (*
 	<-illustration;;
-	=>nrel_main_idtf: [Рис. (аммиак, шаро-стержневая модель)](* <-lang_ru;; *);;
+	=>nrel_main_idtf: [Рис. (лимонная кислота)](* <-lang_ru;; *);;
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:"file://image/lemon_acid.jpg"

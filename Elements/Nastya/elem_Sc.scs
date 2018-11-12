@@ -34,7 +34,7 @@ elem_Sc
 <- lithophile;
 <- rare_earth_metal;
 
-=> nrel_periodic_number: 21;
+=> nrel_periodic_number: twenty_one;
 <- group_three;
 <- period_four;
 
