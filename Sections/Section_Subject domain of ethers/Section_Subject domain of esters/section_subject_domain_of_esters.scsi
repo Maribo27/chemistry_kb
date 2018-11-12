@@ -199,7 +199,7 @@ phosphoric_ester
 			<sc_element sys_idtf="chemical_formula">химическая формула</sc_element> которого
 			(R<sc_element sys_idtf="elem_O">O</sc_element>)
 			<sub>n</sub><sc_element sys_idtf="elem_P">P</sc_element>
-			(<sc_element sys_idtf="">O</sc_element>)
+			(<sc_element sys_idtf="elem_O">O</sc_element>)
 			(<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_H">H</sc_element>)
 			<sub>3 − n</sub>, где R - 
 			<sc_element sys_idtf="hydrocarbon_radical">углеводородный радикал</sc_element>.
@@ -210,7 +210,7 @@ phosphoric_ester
 			<sc_element sys_idtf="chemical_formula">chemical formula</sc_element> of which
 			(R<sc_element sys_idtf="elem_O">O</sc_element>)
 			<sub>n</sub><sc_element sys_idtf="elem_P">P</sc_element>
-			(<sc_element sys_idtf="">O</sc_element>)
+			(<sc_element sys_idtf="elem_O">O</sc_element>)
 			(<sc_element sys_idtf="elem_O">O</sc_element><sc_element sys_idtf="elem_H">H</sc_element>)
 			<sub>3 − n</sub>, where R is 
 			<sc_element sys_idtf="hydrocarbon_radical">hydrocarbon radical</sc_element>.
@@ -798,7 +798,7 @@ ester_of_butyric_acid
 nrel_derived_ester
 =>nrel_main_idtf:[производный сложный эфир*](*<-lang_ru;;*);
 =>nrel_main_idtf:[derived ester*](*<-lang_en;;*);
-<-sc_no_role_relation;
+<-sc_node_norole_relation;
 <-binary_relation;
 <-oriented_relation;
 <-antisymmetric_relation;
@@ -834,7 +834,7 @@ nrel_derived_ester
 			<sc_element sys_idtf="binary_relation">бинарное</sc_element> <sc_element sys_idtf="oriented_relation">ориентированное отношение</sc_element>, связывающее <sc_element sys_idtf="acid">кислоту</sc_element> и производный от нее <sc_element sys_idtf="ester">сложный эфир</sc_element>.  
 		](*<-lang_ru;;=>nrel_format:format_html;;*);;
 		->rrel_example:[
-			<sc_element sys_idtf = "nrel_derived_ester">Derived ester*</sc_element> - <sc_element sys_idtf = "binary_relation"> binary </sc_element> <sc_element sys_idtf = "nrel_derivative_ester"> oriented relation </sc_element> that links <sc_element sys_idtf = "acid"> acid </sc_element> and the derivative <sc_element sys_idtf = "ester">ester</sc_element>.
+			<sc_element sys_idtf = "nrel_derived_ester">Derived ester*</sc_element> - <sc_element sys_idtf = "binary_relation"> binary </sc_element> <sc_element sys_idtf = "oriented_relation"> oriented relation </sc_element> that links <sc_element sys_idtf = "acid"> acid </sc_element> and the derivative <sc_element sys_idtf = "ester">ester</sc_element>.
 		](*<-lang_en;;=>nrel_format:format_html;;*);;
 	*);;
 *);;

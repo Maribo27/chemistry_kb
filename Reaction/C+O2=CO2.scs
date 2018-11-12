@@ -1,0 +1,9 @@
+compound_of_C_O2=>nrel_main_idtf:[Реакция соединения углерода и кислорода](*<-lang_ru;;*);;
+compound_of_C_O2=>nrel_main_idtf:[Carbon and oxigen compound reaction](*<-lang_en;;*);;
+compound_of_C_O2=
+[*
+	..source->chemical_substance_multiplicity_one:subst_C;;
+	..result->chemical_substance_multiplicity_one:carbon_dioxide;;
+	..source->chemical_substance_multiplicity_one:subst_O;;
+	..source=>nrel_compound:..result;;
+*];;

@@ -1,0 +1,10 @@
+exgange_of_CO2_Ca=>nrel_main_idtf:[Реакция обмена углекислого газа и кальция](*<-lang_ru;;*);;
+exgange_of_CO2_Ca=>nrel_main_idtf:[Carbon dioxide and calcium exchange reaction](*<-lang_en;;*);;
+exgange_of_CO2_Ca=
+[*
+	..source->chemical_substance_multiplicity_two:subst_Ca;;
+	..source->chemical_substance_multiplicity_one:carbon_dioxide;;
+	..result->chemical_substance_multiplicity_two:CaO;;
+	..result->chemical_substance_multiplicity_one:subst_C;;
+	nrel_exchange_reaction->(..source=>..result)(*=>nrel_side_effects:...(*->nrel_combustion;;*);;*);;
+*];;

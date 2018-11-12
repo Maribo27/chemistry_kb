@@ -42,8 +42,8 @@ Definition_of_radioactivity
 	(* <- lang_ru;;	*);;
 
 
-
-
+iron_oxide_2<-sc_node_not_relation;;
+carbon_dioxide<-sc_node_not_relation;;
 
 
 

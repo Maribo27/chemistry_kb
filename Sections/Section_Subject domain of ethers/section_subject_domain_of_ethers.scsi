@@ -8,8 +8,6 @@ subject_domain_of_ethers
 
 ether
 <-sc_node_not_relation;
-=>nrel_main_idtf:[эфир](*<-lang_ru;;*);
-=>nrel_main_idtf:[ether](*<-lang_en;;*);
 <=nrel_inclusion:chemical_compound;
 <=nrel_decomposition:...
 (*
@@ -30,8 +28,8 @@ ether
 	*);;
 	<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[<sc_element sys_idrf="ether">Эфир</sc_element> - совокупное название нескольких <sc_element sys_idtf="class">классов</sc_element> <sc_element sys_idtf="chemical_compound">химических соединений</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->rrel_example:[<sc_element sys_idrf ="ether">Ether</sc_element> is the aggregate name of several <sc_element sys_idtf = "class">classes</sc_element> <sc_element sys_idtf = "chemical_compound">chemical compounds</sc_element>.] (*<-lang_en;; =>nrel_format:format_html;; *) ;;
+		->rrel_example:[<sc_element sys_idtf="ether">Эфир</sc_element> - совокупное название нескольких <sc_element sys_idtf="class">классов</sc_element> <sc_element sys_idtf="chemical_compound">химических соединений</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[<sc_element sys_idtf ="ether">Ether</sc_element> is the aggregate name of several <sc_element sys_idtf = "class">classes</sc_element> <sc_element sys_idtf = "chemical_compound">chemical compounds</sc_element>.] (*<-lang_en;; =>nrel_format:format_html;; *) ;;
 	*);;
 *);;
 
@@ -55,7 +53,7 @@ nrel_hydrocarbon_radical_of_ether
 	*);;
 *);;
 
-sc_definition->...
+definition->...
 (*
 	->rrel_key_sc_element:nrel_hydrocarbon_radical_of_ether;;
 	=>nrel_main_idtf:[Опр. (углеводородный радикал эфира*)](*<-lang_ru;;*);;

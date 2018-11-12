@@ -1,0 +1,10 @@
+exchange_HCl_KOH=>nrel_main_idtf:[Реакция обмена соляной кислоты и гидроксида калия](*<-lang_ru;;*);;
+exchange_HCl_KOH=>nrel_main_idtf:[Exchange reaction of hydrochloric acid and potassium hydroxide](*<-lang_en;;*);;
+exchange_HCl_KOH=
+[*
+    ..sourse->chemical_substance_multiplicity_one:hydrochloric_acid;;
+    ..sourse->chemical_substance_multiplicity_one:subst_KOH;;
+    ..result->chemical_substance_multiplicity_one:potassium_chloride;;
+    ..result->chemical_substance_multiplicity_one:water;;
+    ..sourse=>nrel_exchange_reaction:..result;;
+*];;

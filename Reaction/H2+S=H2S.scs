@@ -1,0 +1,9 @@
+compound_of_H2_S=>nrel_main_idtf:[Реакция соединения водорода и серы.](*<-lang_ru;;*);;
+compound_of_H2_S=>nrel_main_idtf:[Hydrogen and sulfur compound reaction.](*<-lang_en;;*);;
+compound_of_H2_S=
+[*
+    ..sourse->chemical_substance_multiplicity_one:subst_H;;
+    ..sourse->chemical_substance_multiplicity_one:subst_S;;
+    ..result->chemical_substance_multiplicity_one:hydrosulfuric_acid;;
+    ..sourse=>nrel_compound:..result;;
+*];;

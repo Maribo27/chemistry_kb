@@ -1,0 +1,9 @@
+reducing_of_CO=>nrel_main_idtf:[Реакция восстановления угарного газа](*<-lang_ru;;*);;
+reducing_of_CO=>nrel_main_idtf:[Carbon monoxide reducing reaction](*<-lang_en;;*);;
+reducing_of_CO=
+[*
+	..source->chemical_substance_multiplicity_one:subst_C;;
+	..source->chemical_substance_multiplicity_one:carbon_dioxide;;
+	..result->chemical_substance_multiplicity_two:carbon_monoxide;;
+	nrel_reducing_reaction->(..source=>..result)(*=>nrel_reaction_conditions:...(*->nrel_heating;;*);;*);;
+*];;

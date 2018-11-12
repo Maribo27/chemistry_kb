@@ -1,0 +1,9 @@
+compound_of_CaCO3=>nrel_main_idtf:[Реакция соединения карбоната кальция](*<-lang_ru;;*);;
+compound_of_CaCO3=>nrel_main_idtf:[Calcium carbonate compound reaction](*<-lang_en;;*);;
+compound_of_CaCO3=
+[*
+	..source->chemical_substance_multiplicity_one:carbon_dioxide;;
+	..source->chemical_substance_multiplicity_one:CaO;;
+	..result->chemical_substance_multiplicity_one:calcium_carbonate;;
+	..source=>nrel_compound:..result;;
+*];;

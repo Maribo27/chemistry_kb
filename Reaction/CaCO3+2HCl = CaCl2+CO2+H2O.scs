@@ -1,0 +1,11 @@
+interaction_of_CaCO3_HCl=
+[*
+	..source->chemical_substance_multiplicity_one:calcium_carbonate;;
+	..source->chemical_substance_multiplicity_two:hydrochloric_acid;;
+	..result->chemical_substance_multiplicity_one:rrel_released_gas:carbon_dioxide;;
+	..result->chemical_substance_multiplicity_one:CaCl2;;
+	..result->chemical_substance_multiplicity_one:water;;
+	..source=>nrel_interaction:..result;;
+*];;
+interaction_of_CaCO3_HCl=>nrel_main_idtf:[Реакция взаимодействия карбоната кальция и хлороводорода](*<-lang_ru;;*);;
+interaction_of_CaCO3_HCl=>nrel_main_idtf:[Calcium carbonate and hydrogen chloride interaction reaction](*<-lang_en;;*);;

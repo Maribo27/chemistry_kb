@@ -1,0 +1,9 @@
+oxidation_of_Fe=>nrel_main_idtf:[Реакция окисления железа(II).](*<-lang_ru;;*);;
+oxidation_of_Fe=>nrel_main_idtf:[Iron(II) oxidation reaction.](*<-lang_en;;*);;
+oxidation_of_Fe=
+[*
+    ..sourse->rrel_oxidizer:chemical_substance_multiplicity_two:subst_Fe;;
+    ..sourse->rrel_reducing_agent:chemical_substance_multiplicity_one:subst_O;;
+    ..result->chemical_substance_multiplicity_two:iron_oxide_2;;
+    ..sourse=>nrel_oxidation_reduction_reaction:..result;;
+*];;

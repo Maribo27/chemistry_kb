@@ -1,0 +1,9 @@
+compound_of_H2_Cl2=>nrel_main_idtf:[Реакция соединения водорода и хлора.](*<-lang_ru;;*);;
+compound_of_H2_Cl2=>nrel_main_idtf:[Hydrogen and chlorine compound reaction.](*<-lang_en;;*);;
+compound_of_H2_Cl2=
+[*
+    ..sourse->chemical_substance_multiplicity_one:subst_H;;
+    ..sourse->chemical_substance_multiplicity_one:subst_Cl;;
+    ..result->chemical_substance_multiplicity_two:hydrochloric_acid;;
+    ..sourse=>nrel_compound:..result;;
+*];;
