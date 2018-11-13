@@ -54,7 +54,7 @@ PencilComponent.PaintPanel.prototype = {
 								sc_type_arc_pos_const_perm,
 								window.scKeynodes.nrel_main_idtf]).done(function(identifiers){  
 									window.sctpClient.get_link_content(identifiers[0][2],'string').done(function(content){
-										container.append('<button id="' + system_id + '" type="button">' + content + '</button>');
+										container.append('<a href="#" id="' + system_id + '" >' + content + '</a>');
 										$('#' + system_id).click(function () {
 											var name = $(this).attr('id');
 											self._play(name);

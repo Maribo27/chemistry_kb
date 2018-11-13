@@ -15,12 +15,7 @@ chemical_formula
 		(* 
 		-> rrel_example:"file://htmls/chemical_formula.html" (* <-lang_ru;; *);;
 		*);;
-	*);
-<= nrel_using_constants:
-			{
-				chemical_compound;
-				chemical_element
-			};;
+	*);;
 	
 	
 
@@ -29,7 +24,13 @@ chemical_formula
 Definition_of_chemical_formula
 => nrel_main_idtf:
 	[Опр.(химическая формула)]
-	(* <- lang_ru;;	*);;
+	(* <- lang_ru;;	*);
+	
+<= nrel_using_constants:
+			{
+				chemical_compound;
+				chemical_element
+			};;
 
 
 

@@ -1,7 +1,19 @@
+nrel_color_of_the_flame_during_combustion 
+	=> nrel_main_idtf: [цвет пламени во время горения] (*<-lang_ru;;*);
+	<- sc_node_norole_relation;;
+
+nrel_reaction_condition
+=> nrel_main_idtf:
+	[условие реакции*](* <- lang_ru;; *);
+	[reaction condition*](* <- lang_en;; *);
+<- sc_node_norole_relation;;
+
+
 nrel_interaction
 => nrel_main_idtf:
-	[взаимодействие](* <- lang_ru;; *);
-	[interaction](* <- lang_en;; *);;
+	[взаимодействие*](* <- lang_ru;; *);
+	[interaction*](* <- lang_en;; *);
+	<- sc_node_norole_relation;;
 
 nrel_periodic_number
 	=> nrel_main_idtf: [порядковый номер*](* <- lang_ru;; *);
