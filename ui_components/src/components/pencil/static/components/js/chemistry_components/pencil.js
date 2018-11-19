@@ -67,6 +67,9 @@ PencilComponent.PaintPanel.prototype = {
 								sc_type_link,
 								sc_type_arc_pos_const_perm,
 								window.scKeynodes.nrel_main_idtf]).done(function(identifiers){  
+                                    console.log(SCWeb.core.Translation.getCurrentLanguage());
+
+
 									window.sctpClient.get_link_content(identifiers[0][2],'string').done(function(content){
 										container.append('<a href="#" id="' + system_id + '" >' + content + '</a>');
 										$('#' + system_id).click(function () {
