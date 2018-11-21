@@ -5,7 +5,7 @@ subject_domain_of_monosaccharides
 	[Subject domain of monosaccharides]
 	(* <- lang_en;; *);
 
-<- subject_domain;;
+<- subject_domain;
 
 -> rrel_maximum_studied_object_class: monosaccharide;
 -> rrel_not_maximum_studied_object_class:
@@ -47,3 +47,105 @@ monosaccharide
 	-> medium;;
 	-> higher;;
 *);
+
+<- rrel_key_sc_element:
+Definition_of_monosaccharide
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (моносахарид)](* <- lang_ru;; *);
+		[Def. (monosaccharide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> chemical_substance;;
+	*);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[<b><sc_element sys_idtf="monosaccharide">Моносахариды</sc_element></b> - <b><sc_element sys_idtf="organic_compound">органические соединения</sc_element></b>, одна из основных групп <b><sc_element sys_idtf="carbohydrate">углеводов</sc_element></b>; самая простая форма сахара.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="monosaccharide">Monosaccharides</sc_element></b> - <b><sc_element sys_idtf="organic_compound">organic compounds</sc_element></b>, one of the main groups of <b><sc_element sys_idtf="carbohydrate">carbohydrates</sc_element></b>; the simplest form of sugar.](* <- lang_en;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (моносахарид)](* <- lang_ru;; *);
+		[Stat. (monosaccharide)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="monosaccharide">Моносахариды</sc_element></b> — стандартные блоки, из которых синтезируются <b><sc_element sys_idtf="disaccharide">дисахариды</sc_element></b> (такие, как <b><sc_element sys_idtf="sucrose">сахароза</sc_element></b>, мальтоза, лактоза), <b><sc_element sys_idtf="oligosaccharide">олигосахариды</sc_element></b> и полисахариды (такие, как <b><sc_element sys_idtf="cellulose">целлюлоза</sc_element></b> и <b><sc_element sys_idtf="starch">крахмал</sc_element></b>), содержат <b><sc_element sys_idtf="hydroxyl_group">гидроксильные группы</sc_element></b> и альдегидную (альдозы) или кетогруппу (кетозы)).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="poison">Monosaccharides</sc_element></b> - the building blocks from which <b><sc_element sys_idtf="disaccharide">disaccharides</sc_element></b> are synthesized (such as <b><sc_element sys_idtf="sucrose">sucrose</sc_element></b>, maltose, lactose), <b><sc_element sys_idtf="oligosaccharide">oligosaccharides</sc_element></b> and polysaccharides (such as <b><sc_element sys_idtf="cellulose">cellulose</sc_element></b> and <b><sc_element sys_idtf="starch">starch</sc_element></b>) contain <b><sc_element sys_idtf="hydroxyl_group">hydroxyl groups</sc_element></b> and aldehyde (aldoses) or ketogroup (ketoses).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+galactose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[галактоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[galactose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (галактоза)](* <- lang_ru;; *);
+		[Def. (galactose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Галактоза</sc_element></b> - <b><sc_element sys_idtf="monosaccharide">моносахарид</sc_element></b> класса <b><sc_element sys_idtf="hexose">гексоз</sc_element></b>, который есть в составе <b><sc_element sys_idtf="disaccharide">дисахарида</sc_element></b> лактозы и других полисахаридов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Galactose</sc_element></b>  is a <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> of the <b><sc_element sys_idtf="hexose">hexose</sc_element></b> class, which is in the composition of the lactose <b><sc_element sys_idtf="disaccharide">disaccharide</sc_element></b> and other polysaccharides.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (галактоза)](* <- lang_ru;; *);
+		[Stat. (galactose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Галактоза</sc_element></b> не является незаменимым питательным веществом.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="natural_poison">Galactose</sc_element></b> is not an essential nutrient.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+glucose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[глюкоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[glucose](* <- lang_en;; *);
+=> nrel_idtf:[декстроза](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (глюкоза)](* <- lang_ru;; *);
+		[Def. (glucose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="glucose">Глюкоза</sc_element></b> – <b><sc_element sys_idtf="monosaccharide">моносахарид</sc_element></b>, являющийся универсальным источником энергии для человека. Это конечный продукт <b><sc_element sys_idtf="hydrolysis">гидролиза</sc_element></b> <b><sc_element sys_idtf="disaccharide">ди</sc_element></b> – и полисахаридов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="glucose">Glucose </sc_element></b> is a <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b>, which is a universal source of energy for humans. This is the end product of the <b><sc_element sys_idtf="hydrolysis">hydrolysis</sc_element></b> of <b><sc_element sys_idtf="disaccharide">di</sc_element></b> - and polysaccharides..](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (glucose)](* <- lang_ru;; *);
+		[Stat. (glucose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="galactose">Галактоза</sc_element></b> не является незаменимым питательным веществом.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="natural_poison">Galactose</sc_element></b> is not an essential nutrient.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
