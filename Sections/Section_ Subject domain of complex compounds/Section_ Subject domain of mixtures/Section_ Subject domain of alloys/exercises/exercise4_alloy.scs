@@ -1,0 +1,24 @@
+exercise4_alloy
+<- exercises_alloy;
+
+-> rrel_key_sc_element: alloy; subst_Cu; subst_Fe; subst_Fe; nrel_mass; sulfuric_acid; metal; nrel_solubility; gas; subst_NaOH; nrel_object_structure;
+
+=> nrel_next_exercise: exercise5_alloy;
+
+=> nrel_main_idtf:
+	[Упражнение 4. Раздел. Предметная область сплавов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Exercise 4. Section. Subject domain of alloys]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_alloy_ru.html" (* <-lang_ru;; *);;
+	*);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://html/exercise4_alloy_en.html" (* <-lang_en;; *);;
+	*);;
