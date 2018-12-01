@@ -565,3 +565,109 @@ barda
         -> rrel_example: "file://images/barda.jpeg"(* => nrel_format: format_jpeg;;*);;
       *);;
   *);;
+
+nrel_alcoholysis 
+  <- sc_node_norole_relation;
+  <- binary_relation;
+  <- oriented_relation;
+
+  <- antireflexive_relation;
+  <- antisymmetric_relation;
+  <- antitransitive_relation;
+
+  => nrel_first_domain: chemical_element;
+  => nrel_second_domain: alcohol;
+
+  => nrel_main_idtf:
+    [алкоголиз*] (* <- lang_ru;; *);
+    [alcoholysis*] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (алкоголиз*)] (* <- lang_ru;; *);
+      [Def. (alcoholysis*)] (* <- lang_en;; *);;
+    <= nrel_using_constants: ... (*
+      -> nrel_exchange_reaction;;
+      -> organic_compound;;
+      -> alcohol;;
+    *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [Алкоголиз — общее название для группы <b><sc_element sys_idtf="nrel_exchange_reaction">обменных реакций</sc_element></b> между различными <b><sc_element sys_idtf="organic_compound">органическими соединениями</sc_element></b> и <b><sc_element sys_idtf="alcohol">спиртами</sc_element></b>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> [Alcoholysis is a common name for a group of <b><sc_element sys_idtf="nrel_exchange_reaction">exchange reactions</sc_element></b> between various <b><sc_element sys_idtf="organic_compound">organic compounds</sc_element></b> and <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b>.] (* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (алкоголиз*)] (* <- lang_ru;; *);
+      [Exp. (alcoholysis*)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [Алкоголиз с участием метанола называют метанолизом.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> [Alcoholysis involving methanol is called methanolysis.] (* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:... (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (алкоголиз*)] (* <- lang_ru;; *);
+      [Pic. (alcoholysis*)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> "file://images/nrel_alcoholysis.png" (* => nrel_format: format_png;; *);;
+    *);;
+  *);;
+
+nrel_nrel_alcohol_fermentation
+  <- sc_node_norole_relation;
+  <- binary_relation;
+  <- oriented_relation;
+
+  <- antireflexive_relation;
+  <- antisymmetric_relation;
+  <- antitransitive_relation;
+
+  => nrel_first_domain: chemical_element;
+  => nrel_second_domain: chemical_element;
+
+  => nrel_main_idtf:
+    [спиртовое брожение*] (* <- lang_ru;; *);
+    [alcohol fermentation*] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (спиртовое брожение*)] (* <- lang_ru;; *);
+      [Def. (alcohol fermentation*)] (* <- lang_en;; *);;
+    <= nrel_using_constants: ... (*
+      -> nrel_exchange_reaction;;
+      -> organic_compound;;
+      -> alcohol;;
+    *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [Спиртовое брожение — биохимическая <b><sc_element sys_idtf="nrel_reaction">реакция</sc_element></b> брожения, осуществляемая микроорганизмами, в результате которой <b><sc_element sys_idtf="carbohydrate">углеводы</sc_element></b>, преобразуется в <b><sc_element sys_idtf="molecule">молекулы</sc_element></b> этанола и <b><sc_element sys_idtf="carbon_dioxide">углекислого газа</sc_element></b>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> [Alcoholic fermentation is a biochemical fermentation <b><sc_element sys_idtf="nrel_reaction">reaction</sc_element></b> carried out by microorganisms, which results in the conversion of <b><sc_element sys_idtf="carbohydrate">carbohydrates</sc_element></b> into <b><sc_element sys_idtf="molecule">molecules</sc_element></b> of ethanol and <b><sc_element sys_idtf="carbon_dioxide">carbon dioxide</sc_element></b>.] (* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (спиртовое брожение*)] (* <- lang_ru;; *);
+      [Exp. (alcohol fermentation*)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> [Спиртовое брожение известно с давних времён и применялось для производства разнообразных <b><sc_element sys_idtf="alcoholic_drink">алкогольных напитков</sc_element></b>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> [Alcoholic fermentation has been known since ancient times and was used to produce a variety of <b><sc_element sys_idtf="alcoholic_drink">alcoholic beverages</sc_element></b>.] (* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:... (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (спиртовое брожение*)] (* <- lang_ru;; *);
+      [Pic. (alcohol fermentation*)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> "file://images/nrel_alcohol_fermentation.png" (* => nrel_format: format_png;; *);;
+    *);;
+  *);;
