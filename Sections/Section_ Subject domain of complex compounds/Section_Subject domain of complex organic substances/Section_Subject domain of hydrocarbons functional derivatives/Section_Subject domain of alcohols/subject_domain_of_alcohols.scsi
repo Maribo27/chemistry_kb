@@ -17,10 +17,10 @@ alcohol
   <= nrel_subdividing:
   ...
   (*  
-    => nrel_main_idtf:[Разбиение по числу гидроксильных групп] (* <- lang_ru;; *);;
-    -> monohydric_alcohols;;
-    -> dihydric_alcohols;;
-    -> triatomic_alcohols;;
+    => nrel_main_idtf: [Разбиение по числу гидроксильных групп] (* <- lang_ru;; *);;
+    -> monohydric_alcohol;;
+    -> dihydric_alcohol;;
+    -> triatomic_alcohol;;
     -> polyhydric_alcohol;;
   *);
 
@@ -167,3 +167,402 @@ polyhydric_alcohol
         -> rrel_example: "file://images/polyhydric_alcohol.png"(* => nrel_format: format_png;;*);;
       *);;
   *);;
+
+dihydric_alcohol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [двухатомный спирт] (* <- lang_ru;; *);
+  => nrel_main_idtf: [dihydric alcohol] (* <- lang_en;; *);
+  => nrel_idtf: [гликоль](* <- lang_ru;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_dihydric_alcohol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (двухатомный_спирт)] (* <- lang_ru;; *);
+      [Def. (dihydric_alcohol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> organic_compound;;
+      -> molecule;;
+      -> hydroxyl_group;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [двухатомные спирты - класс <b><sc_element sys_idtf="organic_compound">органических соединений</sc_element></b>, содержащих в <b><sc_element sys_idtf="molecule">молекуле</sc_element></b> две <b><sc_element sys_idtf="hydroxyl_group">гидроксильные группы</sc_element></b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [dihydric alcohols - a class of <b><sc_element sys_idtf="organic_compound">organic compounds</sc_element></b> containing two <b><sc_element sys_idtf="hydroxyl_group">hydroxyl groups</sc_element></b> in a <b><sc_element sys_idtf="molecule">molecule</sc_element></b>](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (двухатомный_спирт)](* <- lang_ru;; *);
+      [Stat. (dihydric_alcohol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Низшие гликоли представляют собой <b><sc_element sys_idtf="no_color">бесцветные</sc_element></b> прозрачные <b><sc_element sys_idtf="liquid">жидкости</sc_element></b> со <b><sc_element sys_idtf="sweet">сладковатым вкусом</sc_element></b>](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [Lower glycols are <b><sc_element sys_idtf="no_color">colorless</sc_element></b> clear <b><sc_element sys_idtf="liquid">liquids</sc_element></b> with a <b><sc_element sys_idtf="sweet">sweetish taste</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (двухатомный_спирт)](* <- lang_ru;; *);
+      [Pic. (dihydric_alcohol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/dihydric_alcohol.png"(* => nrel_format: format_png;;*);;
+      *);;
+  *);;
+
+technical_alcohol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [технический спирт] (* <- lang_ru;; *);
+  => nrel_main_idtf: [technical alcohol] (* <- lang_en;; *);
+  => nrel_idtf: [денатурат](* <- lang_ru;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_technical_alcohol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (технический_спирт)] (* <- lang_ru;; *);
+      [Def. (technical_alcohol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> alcohol;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Технический спирт — обычно этиловый <b><sc_element sys_idtf="alcohol">спирт</sc_element></b>, однако другие <b><sc_element sys_idtf="alcohol">спирты</sc_element></b> также могут называться техническими.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Technical alcohol - usually ethyl <b><sc_element sys_idtf="alcohol">alcohol</sc_element></b>, but other <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b> can also be called technical.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (технический_спирт)](* <- lang_ru;; *);
+      [Stat. (technical_alcohol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Технический спирт используется при производстве лакокрасочной продукции.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [Technical alcohol is used in the manufacture of paints and varnishes.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (технический_спирт)](* <- lang_ru;; *);
+      [Pic. (technical_alcohol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/technical_alcohol.jpg"(* => nrel_format: format_jpg;;*);;
+      *);;
+  *);;
+
+higher_fatty_alcohols
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [высшие жирные спирты] (* <- lang_ru;; *);
+  => nrel_main_idtf: [higher fatty alcohols.] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_higher_fatty_alcohols
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (высшие_жирные_спирты)] (* <- lang_ru;; *);
+      [Def. (higher_fatty_alcohols.)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> elem_C;;
+      -> atom;;
+      -> alcohol;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Высшие жирные спирты — одноатомные насыщенные и ненасыщенные <b><sc_element sys_idtf="alcohol">спирты</sc_element></b>, содержащие от 6 до 20 <b><sc_element sys_idtf="atom">атомов</sc_element></b> <b><sc_element sys_idtf="elem_C">углерода</sc_element></b> в цепи.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Higher fatty alcohols - monatomic saturated and unsaturated <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b> containing from 6 to 20 <b><sc_element sys_idtf="elem_C">carbon</sc_element></b> <b><sc_element sys_idtf="atom">atoms</sc_element></b> in the chain.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (высшие_жирные_спирты)](* <- lang_ru;; *);
+      [Stat. (higher_fatty_alcohols)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Высшие жирные спирты обладают всеми <b><sc_element sys_idtf="chemical_property">химическими свойствами</sc_element></b> <b><sc_element sys_idtf="alcohol">спиртов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [Higher fatty alcohols have all the <b><sc_element sys_idtf="chemical_property">chemical properties</sc_element></b> of <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (высшие_жирные_спирты)](* <- lang_ru;; *);
+      [Pic. (higher_fatty_alcohols)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/higher_fatty_alcohols.jpg"(* => nrel_format: format_jpg;;*);;
+      *);;
+  *);;
+
+terpene_alcohol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [терпеновый спирт] (* <- lang_ru;; *);
+  => nrel_main_idtf: [terpene alcohol] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_terpene_alcohol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (терпеновый_спирт)] (* <- lang_ru;; *);
+      [Def. (terpene_alcohol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> hydroxyl_group;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Терпеновые спирты — производные терпенов, содержащие <b><sc_element sys_idtf="hydroxyl_group">гидроксо-группу</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Terpene alcohols - derivatives of terpenes containing a <b><sc_element sys_idtf="hydroxy_group">hydroxy group</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (терпеновый_спирт)](* <- lang_ru;; *);
+      [Stat. (terpene_alcohol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Как правило, терпеновые спирты — вязкие <b><sc_element sys_idtf="no_color">бесцветные</sc_element></b> <b><sc_element sys_idtf="liquid">жидкости</sc_element></b>](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [As a rule, terpene alcohols are viscous, <b><sc_element sys_idtf="no_color">colorless</sc_element></b> <b><sc_element sys_idtf="liquid">liquids</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (терпеновый_спирт)](* <- lang_ru;; *);
+      [Pic. (terpene_alcohol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/terpene_alcohol.png"(* => nrel_format: format_png;;*);;
+      *);;
+  *);;
+
+alcoholate
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [алкоголят] (* <- lang_ru;; *);
+  => nrel_main_idtf: [alcoholate] (* <- lang_en;; *);
+  => nrel_idtf: [алкоксид](* <- lang_ru;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_alcoholate
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (алкоголят)] (* <- lang_ru;; *);
+      [Def. (alcoholate)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> product;;
+      -> elem_H;;
+      -> ion;;
+      -> alcohol;;
+      -> cation;;
+      -> hydroxyl_group;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Алкоголяты — <b><sc_element sys_idtf="product">продукты</sc_element></b> замещения <b><sc_element sys_idtf="ion">иона</sc_element></b> <b><sc_element sys_idtf="elem_H">водорода</sc_element></b> <b><sc_element sys_idtf="hydroxyl_group">гидроксильной группы</sc_element></b> <b><sc_element sys_idtf="alcohol">спиртов</sc_element></b> другим <b><sc_element sys_idtf="cation">катионом</sc_element></b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Alcoholates - <b><sc_element sys_idtf="elem_C">product</sc_element></b> of the replacement of the <b><sc_element sys_idtf="elem_H">hydrogen</sc_element></b> <b><sc_element sys_idtf="ion">ion</sc_element></b> of the <b><sc_element sys_idtf="hydroxyl_group">hydroxyl group</sc_element></b> of <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b> by another <b><sc_element sys_idtf="cation">cation</sc_element></b>](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (алкоголят)](* <- lang_ru;; *);
+      [Stat. (alcoholate)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Алкоголяты получают <b><sc_element sys_idtf="nrel_interaction">взаимодействием</sc_element></b> <b><sc_element sys_idtf="alcohol">спиртов</sc_element></b> с <b><sc_element sys_idtf="metal">металлами</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [Alkoxides are made by <b><sc_element sys_idtf="nrel_interaction">reacting</sc_element></b> <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b> with <b><sc_element sys_idtf="metal">metals</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (алкоголят)](* <- lang_ru;; *);
+      [Pic. (alcoholate)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/alcoholate.png"(* => nrel_format: format_png;;*);;
+      *);;
+  *);;
+
+amino_alcohol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [аминоспирт] (* <- lang_ru;; *);
+  => nrel_main_idtf: [amino_alcohol] (* <- lang_en;; *);
+  => nrel_idtf: [аминоалкоголь](* <- lang_ru;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_amino_alcohol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (аминоспирт)] (* <- lang_ru;; *);
+      [Def. (amino_alcohol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> organic_compound;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Аминоспирты — алифатические <b><sc_element sys_idtf="organic_compound">органические соединения</sc_element></b>, содержащие аминогруппу.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Amino alcohols are aliphatic <b><sc_element sys_idtf = "organic_compound"> organic compounds </sc_element></b> containing an amino group.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (аминоспирт)](* <- lang_ru;; *);
+      [Stat. (amino_alcohol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Для аминоспиртов характерны <b><sc_element sys_idtf="nrel_reaction">реакции</sc_element></b> как <b><sc_element sys_idtf="alcohol">спиртов</sc_element></b>, так и аминов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [Amino alcohols are characterized by <b><sc_element sys_idtf="nrel_reaction">reactions</sc_element></b> of both <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b> and amines.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (аминоспирт)](* <- lang_ru;; *);
+      [Pic. (amino_alcohol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/amino_alcohol.jpg"(* => nrel_format: format_jpg;;*);;
+      *);;
+  *);;
+
+HEPES
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [HEPES] (* <- lang_ru;; *);
+  => nrel_main_idtf: [HEPES] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_HEPES
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (HEPES)] (* <- lang_ru;; *);
+      [Def. (HEPES)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...;;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [HEPES - цвиттер-ионный органический буферный агент; один из двадцати в списке буферных растворов Гуда.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [HEPES - zwitterionic organic buffering agent; one of twenty in the list of Hood's buffer solutions.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (HEPES)](* <- lang_ru;; *);
+      [Stat. (HEPES)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [HEPES широко используется в работах, связанными с клеточными культурами.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [HEPES is widely used in cell culture related work.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (HEPES)](* <- lang_ru;; *);
+      [Pic. (HEPES)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/HEPES.png"(* => nrel_format: format_png;;*);;
+      *);;
+  *);;
+
+barda
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [барда] (* <- lang_ru;; *);
+  => nrel_main_idtf: [barda] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_barda
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (барда)] (* <- lang_ru;; *);
+      [Def. (barda)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> alcohol;;
+      -> liquid;;
+      -> color_brown;;
+      -> color;;  
+      -> smell;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Барда — отход производства этилового <b><sc_element sys_idtf="alcohol">спирта</sc_element></b>. <b><sc_element sys_idtf="liquid">Жидкость</sc_element></b> <b><sc_element sys_idtf="color_brown">светло-коричневого</sc_element></b> <b><sc_element sys_idtf="color">цвета</sc_element></b> с неприятным кисловатым <b><sc_element sys_idtf="smell">запахом</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Barda - waste production of ethyl <b><sc_element sys_idtf="alcohol">alcohol</sc_element></b>. <b><sc_element sys_idtf="liquid">Liquid</sc_element></b> <b><sc_element sys_idtf="color_brown">light brown</sc_element></b> <b><sc_element sys_idtf="color">color</sc_element></b> with an unpleasant sourish <b><sc_element sys_idtf="smell">smell</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (барда)](* <- lang_ru;; *);
+      [Stat. (barda)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [В некоторых странах Азии и Латинской Америки первичную барду могут использовать в качестве <b><sc_element sys_idtf="fertilizer">удобрения</sc_element></b> путём прямого внесения в почву.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [In some countries in Asia and Latin America, the primary bard can be used as a <b><sc_element sys_idtf="fertilizer">fertilizer</sc_element></b> by direct application to the soil.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (барда)](* <- lang_ru;; *);
+      [Pic. (barda)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/barda.jpeg"(* => nrel_format: format_jpeg;;*);;
+      *);;
+  *);;
+
