@@ -1,8 +1,71 @@
 subject_domain_of_alcohols
-=> nrel_main_idtf: 
-	[Предметная область спиртов]
-	(* <- lang_ru;;*);
-	[Subject domain of alcohols]
-	(* <- lang_en;; *);
+  => nrel_main_idtf: 
+  	[Предметная область спиртов] (* <- lang_ru;;*);
+  	[Subject domain of alcohols] (* <- lang_en;; *);
 
-<- subject_domain;;
+  <- subject_domain;
+  -> rrel_maximum_studied_object_class: alcohol;
+  -> rrel_not_maximum_studied_object_class:
+    fenol;
+    enol;;
+
+alcohol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [спирт] (* <- lang_ru;; *);
+  => nrel_main_idtf: [alcohol] (* <- lang_en;; *);
+
+  <= nrel_subdividing:
+  ...
+  (*  
+    => nrel_main_idtf:[Разбиение по числу гидроксильных групп] (* <- lang_ru;; *);;
+    -> monohydric_alcohols;;
+    -> dihydric_alcohols;;
+    -> triatomic_alcohols;;
+    -> polyhydric_alcohols;;
+  *);
+
+  <- rrel_key_sc_element:
+  definition_of_alcohol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (спирт)] (* <- lang_ru;; *);
+      [Def. (alcohol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> organic_compound;;
+      -> elem_C;;
+      -> atom;;
+      -> hydroxyl_group;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [<b><sc_element sys_idtf="organic_compound">Органические соединения</sc_element></b>, содержащие одну или более <b><sc_element sys_idtf="hydroxyl_group">гидроксильных групп</sc_element></b>, непосредственно связанных с насыщенным <b><sc_element sys_idtf="atom">атомом</sc_element></b> <b><sc_element sys_idtf="elem_C">углерода</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [<b><sc_element sys_idtf="organic_compound">Organic compounds</sc_element></b> containing one or more <b><sc_element sys_idtf="hydroxyl_group">hydroxyl groups</sc_element></b> directly bonded to a saturated <b><sc_element sys_idtf="elem_C">carbon</sc_element></b> <b><sc_element sys_idtf="atom">atom</sc_element></b>](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (спирт)](* <- lang_ru;; *);
+      [Stat. (alcohol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Cпирты являются промышленно важными продуктами и находят широчайшее применение как в промышленности, так и в повседневных приложениях.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [Alcohol are industrially important products and find the widest application both in industry and in everyday applications.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (спирт)](* <- lang_ru;; *);
+      [Pic. (alcohol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/alcohol.png"(* => nrel_format: format_png;;*);;
+      *);;
+  *);;
