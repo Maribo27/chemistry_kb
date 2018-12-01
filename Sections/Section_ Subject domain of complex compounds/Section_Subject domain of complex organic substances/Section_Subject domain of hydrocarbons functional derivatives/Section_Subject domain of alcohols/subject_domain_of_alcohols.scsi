@@ -21,7 +21,7 @@ alcohol
     -> monohydric_alcohols;;
     -> dihydric_alcohols;;
     -> triatomic_alcohols;;
-    -> polyhydric_alcohols;;
+    -> polyhydric_alcohol;;
   *);
 
   <- rrel_key_sc_element:
@@ -67,5 +67,103 @@ alcohol
       <= nrel_sc_text_translation:...
       (*
         -> rrel_example: "file://images/alcohol.png"(* => nrel_format: format_png;;*);;
+      *);;
+  *);;
+
+enol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [енол] (* <- lang_ru;; *);
+  => nrel_main_idtf: [enol] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_enol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (енол)] (* <- lang_ru;; *);
+      [Def. (enol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> nrel_compound;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Енолы — <b><sc_element sys_idtf="nrel_compound">соединения</sc_element></b>, находящиеся в таутомерном равновесии с соответствующим карбонильным соединением.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Enols - <b><sc_element sys_idtf = "nrel_compound"> compounds </sc_element></b> that are in tautomeric equilibrium with the corresponding carbonyl compound.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (енол)](* <- lang_ru;; *);
+      [Stat. (enol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Карбонильная форма термодинамически выгодней енольной.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [The carbonyl form is thermodynamically more favorable than the enol.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (енол)](* <- lang_ru;; *);
+      [Pic. (enol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/enol.png"(* => nrel_format: format_png;;*);;
+      *);;
+  *);;
+
+polyhydric_alcohol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [многоатомные спирты] (* <- lang_ru;; *);
+  => nrel_main_idtf: [polyhydric alcohols] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_polyhydric_alcohol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (многоатомный_спирт)] (* <- lang_ru;; *);
+      [Def. (polyhydric_alcohol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> organic_compound;;
+      -> alcohol;;
+      -> hydroxyl_group;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Многоатомные <b><sc_element sys_idtf="alcohol">спирты</sc_element></b> — <b><sc_element sys_idtf="organic_compound">органические соединения</sc_element></b> класса <b><sc_element sys_idtf="alcohol">спиртов</sc_element></b>, содержащие в своём составе более одной <b><sc_element sys_idtf="hydroxyl_group">гидроксильной группы</sc_element></b>. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Polyatomic <b><sc_element sys_idtf = "alcohol">alcohols</sc_element></b> - <b><sc_element sys_idtf = "organic_compound">organic compounds</sc_element></b> class <b><sc_element sys_idtf = "alcohol">alcohols</sc_element></b>, containing more than one <b><sc_element sys_idtf = "hydroxyl_group">hydroxyl group</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (многоатомный_спирт)](* <- lang_ru;; *);
+      [Stat. (polyhydric_alcohol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Особое значение многоатомные спирты имеют в двух областях: пищевой промышленности и <b><sc_element sys_idtf="chemistry">химии</sc_element></b> <b><sc_element sys_idtf="polymer">полимеров</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+        -> rrel_example: [Polyhydric alcohols are of particular importance in two areas: the food industry and <b><sc_element sys_idtf="polymer">polymer</sc_element></b> <b><sc_element sys_idtf="chemistry">chemistry</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (многоатомный_спирт)](* <- lang_ru;; *);
+      [Pic. (polyhydric_alcohol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/polyhydric_alcohol.png"(* => nrel_format: format_png;;*);;
       *);;
   *);;
