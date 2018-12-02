@@ -75,7 +75,7 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc14;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _substance;;
 
-			-> rrel_set_1: rrel_assign: rrel_scp_var: _type_set;;
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _substances_set;;
 
 			=> nrel_then: .agent_of_finding_mass_of_substance_operator_6x;;
 			=> nrel_else: .agent_of_finding_mass_of_substance_operator_error_input_parameter;;
@@ -225,9 +225,8 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_molecular_mass;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
 			(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _type_set;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
-				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _molar_mass;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _substances_set;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_node: _molar_mass;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set_molar;;
 			
