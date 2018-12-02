@@ -6,8 +6,26 @@ subject_domain_of_alcohols
   <- subject_domain;
   -> rrel_maximum_studied_object_class: alcohol;
   -> rrel_not_maximum_studied_object_class:
-    fenol;
-    enol;;
+    enol;
+    polyhydric_alcohol;
+    dihydric_alcohol;
+    technical_alcohol;
+    higher_fatty_alcohols;
+    terpene_alcohol;
+    alcoholate;
+    amino_alcohol;
+    HEPES;
+    barda;
+    alcoholic_drink;
+    triatomic_alcohol;
+    monohydric_alcohol;
+    ethanol;
+    methanol;
+    amyl_alcohol;
+    propanol;
+    butanol;
+    nrel_alcohol_fermentation;
+    nrel_alcoholysis;;
 
 alcohol
   <- sc_node_not_relation;
