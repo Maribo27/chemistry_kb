@@ -217,14 +217,7 @@ EnterComponent.PaintPanel.prototype = {
 				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
 					SCWeb.core.Server.resolveScAddr([m], function (key) {
-						var addr = key[m];
-						if (addr != undefined) {
-							console.log('addr exist');
-							self._createGramMeasurement(meas, addr, elementExample);
-						} else {
-							console.log('addr not exist');
-							self._createMassNumber(m, meas, elementExample);
-						}
+						self._createMassNumber(m, meas, elementExample);
 					});
 				});
 			});
@@ -243,14 +236,7 @@ EnterComponent.PaintPanel.prototype = {
 				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
 					SCWeb.core.Server.resolveScAddr([atoms], function (key) {
-						var addr = key[atoms];
-						if (addr != undefined) {
-							console.log('addr exist');
-							self._createMeasurement(meas, addr, elementExample);
-						} else {
-							console.log('addr not exist');
-							self._createNumber(atoms, meas, elementExample);
-						}
+						self._createNumber(atoms, meas, elementExample);
 					});
 				});
 			});
@@ -269,14 +255,7 @@ EnterComponent.PaintPanel.prototype = {
 				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
 					SCWeb.core.Server.resolveScAddr([amount], function (key) {
-						var addr = key[amount];
-						if (addr != undefined) {
-							console.log('addr exist');
-							self._createLiterMeasurement(meas, addr, elementExample);
-						} else {
-							console.log('addr not exist');
-							self._createAmountNumber(amount, meas, elementExample);
-						}
+						self._createAmountNumber(amount, meas, elementExample);
 					});
 				});
 			});

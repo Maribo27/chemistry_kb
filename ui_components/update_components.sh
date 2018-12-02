@@ -69,6 +69,7 @@ append_js $sc_web_path/templates/components.html components/js/chemistry_compone
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/alloy_ui_component.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/mass_enter.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/enter.js
+append_js $sc_web_path/templates/components.html components/js/chemistry_components/salt.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/electronLayerBuilder.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/periodic_table.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/wavelength_ui_component.js
