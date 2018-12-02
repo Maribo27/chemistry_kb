@@ -924,3 +924,151 @@ methanol
         -> rrel_example: "file://images/methanol.png"(* => nrel_format: format_png;; *);;
       *);;
   *);;
+
+amyl_alcohol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [амиловый спирт] (* <- lang_ru;; *);
+  => nrel_main_idtf: [amyl alcohol] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_amyl_alcohol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (амиловый спирт)] (* <- lang_ru;; *);
+      [Def. (amyl alcohol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> monohydric_alcohol;;
+      -> nrel_isomer;;
+      -> alcohol;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Амиловый <b><sc_element sys_idtf="alcohol">спирт</sc_element></b> - C5H11OH и его <b><sc_element sys_idtf="nrel_isomer">изомеры</sc_element></b>: предельные <b><sc_element sys_idtf="monohydric_alcohol">одноатомные спирты</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Amyl <b><sc_element sys_idtf="alcohol">alcohol</sc_element></b> - C5H11OH and its <b><sc_element sys_idtf="nrel_isomer">isomers</sc_element></b> are saturated <b><sc_element sys_idtf="monohydric_alcohol">monohydric alcohols</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (амиловый спирт)](* <- lang_ru;; *);
+      [Stat. (amyl alcohol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Амиловые <b><sc_element sys_idtf="alcohol">спирты</sc_element></b> являются <b><sc_element sys_idtf="no_color">бесцветными</sc_element></b> <b><sc_element sys_idtf="liquid">жидкостями</sc_element></b> с неприятным <b><sc_element sys_idtf="smell">запахом</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Amyl <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b> are <b><sc_element sys_idtf="no_color">colorless</sc_element></b> <b><sc_element sys_idtf="liquid">liquids</sc_element></b> with an unpleasant <b><sc_element sys_idtf="smell">odor</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (амиловый спирт)](* <- lang_ru;; *);
+      [Pic. (amyl alcohol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/amyl_alcohol.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
+
+propanol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [пропанол] (* <- lang_ru;; *);
+  => nrel_main_idtf: [propanol] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_butanol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (пропанол)] (* <- lang_ru;; *);
+      [Def. (propanol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> monohydric_alcohol;;
+      -> chemical_formula;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [Пропанол — <b><sc_element sys_idtf="monohydric_alcohol">одноатомный спирт</sc_element></b> с <b><sc_element sys_idtf="chemical_formula">формулой</sc_element></b> C3H7OH.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Propanol is a <b><sc_element sys_idtf="monohydric_alcohol">monohydric alcohol</sc_element></b> with the <b><sc_element sys_idtf="chemical_formula">formula</sc_element></b> C3H7OH.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (пропанол)](* <- lang_ru;; *);
+      [Stat. (propanol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Пропанол применяют в качестве растворителя для восков, полиамидных чернил, природных и синтетических смол, полиакрилонитрила](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Propanol is used as a solvent for waxes, polyamide inks, natural and synthetic resins, polyacrylonitrile](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (пропанол)](* <- lang_ru;; *);
+      [Pic. (propanol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/propanol.png"(* => nrel_format: format_png;; *);;
+      *);;
+  *);;
+
+butanol
+  <- sc_node_not_relation;
+  => nrel_main_idtf: [бутанол] (* <- lang_ru;; *);
+  => nrel_main_idtf: [butanol] (* <- lang_en;; *);
+
+  <- rrel_key_sc_element:
+  definition_of_butanol
+  (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (бутанол)] (* <- lang_ru;; *);
+      [Def. (butanol)] (* <- lang_en;; *);;
+    <= nrel_using_constants:...
+    (*
+      -> monohydric_alcohol;;
+      -> chemical_formula;;
+    *);;
+    <= nrel_sc_text_translation:...
+    (*
+      -> rrel_example: [бутанол — <b><sc_element sys_idtf="monohydric_alcohol">одноатомный спирт</sc_element></b> с <b><sc_element sys_idtf="chemical_formula">формулой</sc_element></b> C4H9OH.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      -> rrel_example: [butanol is a <b><sc_element sys_idtf="monohydric_alcohol">monohydric alcohol</sc_element></b> with the <b><sc_element sys_idtf="chemical_formula">formula</sc_element></b> C4H9OH.](* <- lang_en;; => nrel_format: format_html;; *);;
+    *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв. (бутанол)](* <- lang_ru;; *);
+      [Stat. (butanol)](* <- lang_en;; *);;
+    <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: [Бутанол применяют как растворитель в лакокрасочной промышленности, в производстве смол и пластификаторов](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Butanol is used as a solvent in the paint industry, in the production of resins and plasticizers](* <- lang_en;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+  <- rrel_key_sc_element:...
+  (*
+    <- illustration;;
+    => nrel_main_idtf:
+      [Рис. (бутанол)](* <- lang_ru;; *);
+      [Pic. (butanol)](* <- lang_en;; *);;
+      <= nrel_sc_text_translation:...
+      (*
+        -> rrel_example: "file://images/butanol.jpg"(* => nrel_format: format_jpg;; *);;
+      *);;
+  *);;
