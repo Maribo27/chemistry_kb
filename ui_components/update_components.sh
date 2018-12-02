@@ -54,10 +54,11 @@ stage "Copy component"
 cp -Rfv $base_path/components/solution/static/* $sc_web_static_path
 cp -Rfv $base_path/components/pencil/static/* $sc_web_static_path
 cp -Rfv $base_path/components/alloy/static/* $sc_web_static_path
+cp -Rfv $base_path/components/mass_enter/static/* $sc_web_static_path
 cp -Rfv $base_path/components/enter/static/* $sc_web_static_path
 cp -Rfv $base_path/components/periodic_table/static/* $sc_web_static_path
 cp -Rfv $base_path/components/electronLayerBuilder/static/* $sc_web_static_path
-cp -Rfv $base_path/components/solution/static/* $sc_web_static_path
+cp -Rfv $base_path/components/salt/static/* $sc_web_static_path
 cp -Rfv $base_path/components/wavelength/static/* $sc_web_static_path
 
 stage "Install component"
@@ -66,8 +67,9 @@ stage "Install component"
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/solution_ui_component.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/pencil.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/alloy_ui_component.js
+append_js $sc_web_path/templates/components.html components/js/chemistry_components/mass_enter.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/enter.js
-append_js $sc_web_path/templates/components.html components/js/chemistry_components/solution_ui_component.js
+append_js $sc_web_path/templates/components.html components/js/chemistry_components/salt.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/electronLayerBuilder.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/periodic_table.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/wavelength_ui_component.js

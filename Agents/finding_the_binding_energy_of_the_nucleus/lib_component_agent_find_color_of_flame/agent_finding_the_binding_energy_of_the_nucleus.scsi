@@ -22,7 +22,8 @@ scp_program -> agent_finding_the_binding_energy_of_the_nucleus
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
-			=> nrel_goto: .agent_finding_the_binding_energy_of_the_nucleus_operator1B;;
+			=> nrel_then: .agent_finding_the_binding_energy_of_the_nucleus_operator1B;;
+			=> nrel_else: .agent_finding_the_binding_energy_of_the_nucleus_operator_return;;
 			*);;
 
 		-> .agent_finding_the_binding_energy_of_the_nucleus_operator1B
