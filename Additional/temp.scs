@@ -31,6 +31,23 @@ example_subst_O
 	*);;
 *);;
 
+subst_O -> example_subst_O_2;;
+example_subst_O_2
+=> nrel_main_idtf:
+	[кислород, химическим количеством 2 моля](* <- lang_ru;; *);
+=> nrel_chemical_amount: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_mol: ...
+		(*
+			<- number;;
+			=> nrel_main_idtf:[2](*<-lang_ru;; <- lang_en;;*);;
+		*);;
+	*);;
+*);;
+
 water -> example_subst_H2O;;
 example_subst_H2O
 => nrel_mass: ...

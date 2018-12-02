@@ -28,13 +28,13 @@ EnterComponent.PaintPanel.prototype = {
 						'</div>' + 
 					'</form>' + 
 				'</div>' + 
-				'<label for="mass">Что известно?</label>' + 
+				'<label for="input_data">Что известно?</label>' + 
 				'<select id="characteristic">' + 
     				'<option value="nrel_mass">Масса (в граммах)</option>' + 
     				'<option value="nrel_amount">Объём (в литрах)</option>' + 
     				'<option value="nrel_N">Количество атомов ( * 10^23)</option>' + 
     			'</select>' + 
-				'<input type="text" id="mass" name="mass" pattern="\\d+(,\\d+)?">' + 
+				'<input type="text" id="input_data" name="input_data" pattern="\\d+(,\\d+)?">' + 
 				'<button id="find" type="button">Найти химическое количество</button>' + 
 			'</form>'
 		);
@@ -96,10 +96,10 @@ EnterComponent.PaintPanel.prototype = {
 			console.log('element',element);
 			var measur = $("#characteristic").val();
 			console.log('measur',measur);
-			var mass = $("#mass").val();
-			console.log('mass',mass);
-			if (mass.search(/^\d+(,\d+)?$/g) != -1) {
-				self._createElement(element, mass, measur);
+			var input_data = $("#input_data").val();
+			console.log('input_data',input_data);
+			if (input_data.search(/^\d+(,\d+)?$/g) != -1) {
+				self._createElement(element, input_data, measur);
 			} else {
 				alert('Wrong input!');
 			}
