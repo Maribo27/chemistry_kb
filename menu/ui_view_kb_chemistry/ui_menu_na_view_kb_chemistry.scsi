@@ -17,5 +17,6 @@ ui_menu_na_view_kb_chemistry <= nrel_ui_commands_decomposition:
 	ui_menu_finding_the_amount_of_energy_for_the_electron_transition;
 	ui_menu_finding_the_binding_energy_of_the_nucleus;
 	ui_menu_finding_wavelength_when_going_from_one_level;
-	ui_menu_file_for_agent_find_elem_valencies
+	ui_menu_file_for_agent_find_elem_valencies;
+	ui_menu_file_for_agent_find_mass_fraction_of_elem_in_subst
 };;
