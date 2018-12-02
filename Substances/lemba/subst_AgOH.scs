@@ -19,7 +19,7 @@ subst_AgOH
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид серебра (AgOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				<b>Гидроксид серебра (AgOH)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к  классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
 				</p>] 
 				(*
 				<-lang_ru;;
@@ -29,14 +29,14 @@ subst_AgOH
 		=>nrel_main_idtf:[Опр. (гидроксид серебра)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->alkali;chimical_substance;;
+				->alkali;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	//<-solid;
-	<-white_color;;
+	<-color_white;;
 	atomic_multiplicity_one->(subst_AgOH ->elem_Ag);;
 	atomic_multiplicity_one->(subst_AgOH ->elem_O);;
 	atomic_multiplicity_one->(subst_AgOH ->elem_H);;

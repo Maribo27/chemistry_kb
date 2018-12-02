@@ -1,0 +1,111 @@
+nrel_reaction_conditions
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[условия реакции*](*<-lang_ru;;*);
+=>nrel_main_idtf:[reaction conditions*](*<-lang_en;;*);
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antisymmetric_relation;
+<-antitransitive_relation;
+=>nrel_first_domain:nrel_reaction;
+=>nrel_second_domain:set;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->nrel_reaction;;
+		->set;;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	=>nrel_main_idtf:[Опр. (условия реакции*)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (reaction conditions*)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->set;;
+		->nrel_reaction;;
+		->parameter;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<sc_element sys_idtf="nrel_reaction_conditions">Условия реакции</sc_element> - <sc_element sys_idtf="set">множество</sc_element> <sc_element sys_idtf="parameter">параметров</sc_element>, необходимых для протекания <sc_element sys_idtf="nrel_reaction">химической реакции</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[<sc_element sys_idtf = "nrel_reaction_conditions">The reaction conditions</sc_element> - <sc_element sys_idtf = "set">set</sc_element> of <sc_element sys_idtf = "parameter">parameters</sc_element> required for <sc_element sys_idtf = "nrel_reaction">chemical reaction</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+nrel_side_effects
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[побочные действия*](*<-lang_ru;;*);
+=>nrel_main_idtf:[side effects*](*<-lang_en;;*);
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antisymmetric_relation;
+<-antitransitive_relation;
+=>nrel_first_domain:nrel_reaction;
+=>nrel_second_domain:set;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:...
+	(*
+		->nrel_reaction;;
+		->set;;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	=>nrel_main_idtf:[Опр. (побочные действия*)](*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def. (side effects*)](*<-lang_en;;*);;
+	<=nrel_using_constants:...
+	(*
+		->set;;
+		->nrel_reaction;;
+		->action;;
+	*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[<sc_element sys_idtf="nrel_side_effects">Побочные действия</sc_element> - <sc_element sys_idtf="set">множество</sc_element> <sc_element sys_idtf="action">дейстивий</sc_element>, причиной которых является <sc_element sys_idtf="nrel_reaction">химическая реакция</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example:[<sc_element sys_idtf = "nrel_side_effects">The side effects</sc_element> - <sc_element sys_idtf = "set">set</sc_element> of <sc_element sys_idtf = "parameter">parameters</sc_element> caused by <sc_element sys_idtf = "nrel_reaction">chemical reaction</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+
+rrel_sludge
+<-sc_node_role_relation;
+=>nrel_main_idtf:[осадок'](*<-lang_ru;;*);
+=>nrel_main_idtf:[sludge'](*<-lang_en;;*);;
+
+rrel_released_gas
+<-sc_node_role_relation;
+=>nrel_main_idtf:[выделяемый газ'](*<-lang_ru;;*);
+=>nrel_main_idtf:[released gas'](*<-lang_en;;*);;
+
+chemical_substance_multiplicity
+<-sc_node_not_relation;
+=>nrel_inclusion:chemical_substance_multiplicity_one;chemical_substance_multiplicity_two;
+=>nrel_main_idtf:[количество вхождений вещества](*<-lang_ru;;*);
+=>nrel_main_idtf:[chemical substance multiplicity](*<-lang_en;;*);;
+
+chemical_substance_multiplicity_one
+<-sc_node_not_relation;
+=>nrel_main_idtf:[количество вхождений вещества 1](*<-lang_ru;;*);
+=>nrel_main_idtf:[chemical substance multiplicity 1](*<-lang_en;;*);;
+
+chemical_substance_multiplicity_two
+<-sc_node_not_relation;
+=>nrel_main_idtf:[количество вхождений вещества 2](*<-lang_ru;;*);
+=>nrel_main_idtf:[chemical substance multiplicity 2](*<-lang_en;;*);;
+
+chemical_substance_multiplicity_four
+<-sc_node_not_relation;
+=>nrel_main_idtf:[количество вхождений вещества 4](*<-lang_ru;;*);
+=>nrel_main_idtf:[chemical substance multiplicity 4](*<-lang_en;;*);;
+
+MgO<-sc_node_not_relation;
+=>nrel_main_idtf:[оксид магния](*<-lang_ru;;*);;
+
+nrel_combustion<-sc_node_norole_relation;
+=>nrel_main_idtf:[горение*](*<-lang_ru;;*);;

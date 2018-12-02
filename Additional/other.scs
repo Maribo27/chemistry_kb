@@ -84,9 +84,6 @@ gas_laser=> nrel_main_idtf:
 advertising=> nrel_main_idtf:
 	[реклама](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
-adsorption=> nrel_main_idtf:
-	[адсорбция](* <- lang_ru;; *);
-	<- sc_node_not_relation;;
 chalcophile=> nrel_main_idtf:
 	[халькофил](* <- lang_ru;; *);
 	<- sc_node_not_relation;;
@@ -472,3 +469,97 @@ patronized_explosive
     (*<- lang_en;;*);
 	[патронированное взрывчатое вещество]
 	(* <- lang_ru;;	*);;
+
+absolute_humidity
+=> nrel_main_idtf:
+    [absolute humidity]
+    (*<- lang_en;;*);
+	[абсолютная влажность]
+	(* <- lang_ru;;	*);;
+
+relative_humidity
+=> nrel_main_idtf:
+    [relative humidity]
+    (*<- lang_en;;*);
+	[относительная влажность]
+	(* <- lang_ru;;	*);;
+
+antroll
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[антрол](* <-lang_ru;; *);
+	[antroll](* <-lang_en;; *);;
+
+phenanthrol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[фенантрол](* <-lang_ru;; *);
+	[phenanthrol](* <-lang_en;; *);;
+
+benzotetrol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[бензотетрол](* <-lang_ru;; *);
+	[benzotetrol](* <-lang_en;; *);;
+
+naphthene
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нафтен](* <-lang_ru;; *);
+	[naphthene](* <-lang_en;; *);;
+
+rrel_degree_fahrenheit
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[нафтен](* <-lang_ru;; *);
+	[naphthene](* <-lang_en;; *);;
+
+dihydroxybenzene
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дигидроксибензол](* <-lang_ru;; *);
+	[dihydroxybenzene](* <-lang_en;; *);;
+
+plants
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[растения](* <-lang_ru;; *);
+	[plants](* <-lang_en;; *);;
+
+alkali_solution
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[раствор аммиака](* <-lang_ru;; *);
+	[alkali solution](* <-lang_en;; *);;
+
+ethanol
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[этанол](* <-lang_ru;; *);
+	[ethanol](* <-lang_en;; *);;
+
+
+ether
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[эфир](* <-lang_ru;; *);
+	[ether](* <-lang_en;; *);;
+
+nrel_isomer
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[изомер*](* <-lang_ru;; *);
+	[isomer*](* <-lang_en;; *);;
+
+strong_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сильное основание](* <-lang_ru;; *);
+	[strong base](* <-lang_en;; *);;
+
+weak_base
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[слабое основание](* <-lang_ru;; *);
+	[weak base](* <-lang_en;; *);;
+

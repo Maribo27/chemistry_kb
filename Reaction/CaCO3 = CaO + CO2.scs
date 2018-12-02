@@ -1,0 +1,9 @@
+decomposition_of_CaCO3_industrial=>nrel_main_idtf:[Реакция разложения карбоната кальция (промышленный способ)](*<-lang_ru;;*);;
+decomposition_of_CaCO3_industrial=>nrel_main_idtf:[Calcium carbonate decomposition reaction (industrial method)](*<-lang_en;;*);;
+decomposition_of_CaCO3_industrial=
+[*
+	..source->chemical_substance_multiplicity_one:calcium_carbonate;;
+	..result->chemical_substance_multiplicity_one:carbon_dioxide;;
+	..result->chemical_substance_multiplicity_two:CaO;;
+	nrel_decomposition_reaction->(..source=>..result)(*=>nrel_reaction_conditions:...(*->nrel_combustion;;*);;*);;
+*];;

@@ -22,7 +22,8 @@ scp_program -> agent_find_element_electronegativity
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
-			=> nrel_goto: .agent_find_element_electronegativity_operator1B;;
+			=> nrel_then: .agent_find_element_electronegativity_operator1B;;
+			=> nrel_else: .agent_find_element_electronegativity_operator_return;;
 			*);;
 
 		-> .agent_find_element_electronegativity_operator1B

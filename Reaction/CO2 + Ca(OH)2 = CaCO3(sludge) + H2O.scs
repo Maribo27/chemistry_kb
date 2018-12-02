@@ -1,0 +1,10 @@
+interaction_of_CO2_CaOH2=>nrel_main_idtf:[Реакция взаимодействия углекислого газа и гидроксида кальция](*<-lang_ru;;*);;
+interaction_of_CO2_CaOH2=>nrel_main_idtf:[Carbon dioxide and calcium hydroxide interaction reaction](*<-lang_en;;*);;
+interaction_of_CO2_CaOH2=
+[*
+	..source->chemical_substance_multiplicity_one:subst_CaOH2;;
+	..source->chemical_substance_multiplicity_one:carbon_dioxide;;
+	..result->chemical_substance_multiplicity_two:rrel_sludge:calcium_carbonate;;
+	..result->chemical_substance_multiplicity_one:water;;
+	..source=>nrel_interaction:..result;;
+*];;

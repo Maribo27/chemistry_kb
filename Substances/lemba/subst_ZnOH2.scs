@@ -18,7 +18,7 @@ subst_ZnOH2
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид цинка (Zn(OH)2)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
+				<b>Гидроксид цинка (Zn(OH)2)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к классу <sc_element sys_idtf = "amphoteric_hydroxide"> амфотерных гидроксидов</sc_element>.
 				</p>] 
 				(*
 				<-lang_ru;;
@@ -28,14 +28,14 @@ subst_ZnOH2
 		=>nrel_main_idtf:[Опр. (гидроксид цинка)](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->hydroxides;chimical_substance;;
+				->hydroxides;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 	<=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;;
+	<-color_white;;
 	atomic_multiplicity_one->(subst_Zn->elem_Zn);;
 	atomic_multiplicity_two->(subst_ZnOH2->elem_O);;
 	atomic_multiplicity_two->(subst_ZnOH2->elem_H);;

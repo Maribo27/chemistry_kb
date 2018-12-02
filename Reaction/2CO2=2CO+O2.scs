@@ -1,0 +1,9 @@
+decomposition_of_CO2=
+[*
+	..2CO2->chemical_substance_multiplicity_two:carbon_dioxide;;
+	..result->chemical_substance_multiplicity_two:carbon_monoxide;;
+	..result->chemical_substance_multiplicity_one:subst_O;;
+	nrel_decomposition_reaction->(..2CO2=>..result)(*=>nrel_reaction_conditions:...(*->nrel_heating;;*);;*);;
+*];;
+decomposition_of_CO2=>nrel_main_idtf:[Реакция разложения углекислого газа](*<-lang_ru;;*);;
+decomposition_of_CO2=>nrel_main_idtf:[Carbon dioxide decomposition reaction](*<-lang_en;;*);;

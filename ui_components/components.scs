@@ -1,0 +1,71 @@
+ui_external_languages ->
+	alloy_ui_component;
+	pencil_component;
+	enter_component;
+    mass_enter_component;
+    ui_periodic_table;
+    solution_component;
+    salt_component;
+    electronLayer_ui_component;
+    wavelength_ui_component;;
+
+alloy_ui_component 
+=> nrel_main_idtf:
+    [Команды раздела сплавов]
+    (*<- lang_ru;;*);
+	[Alloys section commands]
+	(* <- lang_en;;	*);;
+
+pencil_component 
+=> nrel_main_idtf:
+    [Узнать состав предмета]
+    (*<- lang_ru;;*);
+	[Learn object composition]
+	(* <- lang_en;;	*);;
+
+mass_enter_component 
+=> nrel_main_idtf:
+    [Поиск массы вещества]
+    (*<- lang_ru;;*);
+    [Find mass of substance]
+    (* <- lang_en;; *);;
+
+enter_component 
+=> nrel_main_idtf:
+    [Поиск химического количества вещества]
+    (*<- lang_ru;;*);
+	[Find chemical amount of substance]
+	(* <- lang_en;;	*);;
+
+ui_periodic_table
+=> nrel_main_idtf:
+    [Периодическая таблица] (* <- lang_ru;; *);
+    [Periodic table] (* <- lang_en;; *);;
+
+solution_component 
+=> nrel_main_idtf:
+    [Команды раздела растворов]
+    (*<- lang_ru;;*);
+    [Solutions section commands]
+    (* <- lang_en;; *);;
+
+salt_component 
+=> nrel_main_idtf:
+    [Команды раздела солей]
+    (*<- lang_ru;;*);
+    [Salts section commands]
+    (* <- lang_rn;; *);;
+
+electronLayer_ui_component 
+=> nrel_main_idtf:
+    [Компонент построения внешнего электронного слоя атома]
+    (*<- lang_ru;;*);
+    [Visual component of building of atom's external electron layer]
+    (* <- lang_en;; *);;
+    
+wavelength_ui_component 
+=> nrel_main_idtf:
+    [Нахождение длины волны]
+    (*<- lang_ru;;*);
+    [wavelengths section commands]
+    (* <- lang_en;; *);;

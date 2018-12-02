@@ -1,3 +1,0 @@
-pnictogen => nrel_main_idtf:
-	[пниктоген](* <- lang_ru;; *);
-	<- sc_node_not_relation;;

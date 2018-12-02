@@ -1,0 +1,9 @@
+compound_of_Na2O_CO2=>nrel_main_idtf:[Реакция соединения оксида натрия и углекислого газа](*<-lang_ru;;*);;
+compound_of_Na2O_CO2=>nrel_main_idtf:[Carbon dioxide and sodium oxide compound reaction](*<-lang_en;;*);;
+compound_of_Na2O_CO2=
+[*
+	..source->chemical_substance_multiplicity_one:sodium_oxide;;
+	..result->chemical_substance_multiplicity_one:carbon_dioxide;;
+	..source->chemical_substance_multiplicity_one:sodium_carbonate;;
+	..source=>nrel_compound:..result;;
+*];;

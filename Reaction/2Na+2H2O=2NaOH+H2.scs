@@ -1,0 +1,10 @@
+compound_of_Na_H2O=>nrel_main_idtf:[Реакция соединения натрия и воды.](*<-lang_ru;;*);;
+compound_of_Na_H2O=>nrel_main_idtf:[Sodium and water compound reaction.](*<-lang_en;;*);;
+compound_of_Na_H2O=
+[*
+    ..sourse->chemical_substance_multiplicity_two:subst_Na;;
+    ..sourse->chemical_substance_multiplicity_two:water;;
+    ..result->chemical_substance_multiplicity_two:subst_NaOH;;
+    ..result->chemical_substance_multiplicity_one:rrel_released_gas:subst_H;;
+    ..sourse=>nrel_compound:..result;;
+*];;

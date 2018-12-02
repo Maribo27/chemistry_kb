@@ -6,7 +6,13 @@ section_subject_domain_of_chemical_operations
 	(* <- lang_en;; *);
 
 <- not_enough_formed_structure;
-<- atomic_section;;
+
+<- atomic_section;
+
+<= nrel_section_decomposition:
+{
+	section_subject_domain_of_chemical_experiments
+};;
 
 section_subject_domain_of_chemical_operations = [*^"file://section_subject_domain_of_chemical_operations.scsi"*];;
 

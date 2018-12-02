@@ -25,29 +25,3 @@ neutron_spin <- sc_node_not_relation;
 	=> nrel_main_idtf:[0,5](* <- lang_ru;; *);;
 neutron_radius <- sc_node_not_relation;
 	=> nrel_main_idtf:[2,48 * 10^(-52) см](* <- lang_ru;; *);;
-
-molar_amount
-=> nrel_main_idtf:
-	[22,4 л/моль](* <- lang_ru;; *);
-<- value;
-<= nrel_measurement:...
-(*
-	-> rrel_liter_per_mole: ...
-	(*
-		<- number;;
-		=> nrel_main_idtf:[22,4](*<-lang_ru;; <- lang_en;;*);;
-	*);;
-*);;
-
-avogadro
-=> nrel_main_idtf:
-	[6,022 * 10^23 моль^(-1)](* <- lang_ru;; *);
-<- value;
-<= nrel_measurement:...
-(*
-	-> rrel_10_in_23_mole: ...
-	(*
-		<- number;;
-		=> nrel_main_idtf:[6,022](*<-lang_ru;; <- lang_en;;*);;
-	*);;
-*);;

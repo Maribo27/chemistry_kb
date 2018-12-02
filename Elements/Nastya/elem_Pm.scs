@@ -34,7 +34,7 @@ elem_Pm
 <- rare_earth_metal;
 <- lanthanide;
 
-=> nrel_periodic_number: 61;
+=> nrel_periodic_number: sixty_one;
 <- group_three;
 <- period_six;
 

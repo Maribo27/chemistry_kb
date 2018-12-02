@@ -18,7 +18,7 @@ subst_TlOH
 			(*
 				-> rrel_example:
 				[<p>				
-				<b>Гидроксид таллия(I) (TlOH)</b>  -  <sc_element sys_idtf = "chimical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
+				<b>Гидроксид таллия(I) (TlOH)</b>  -  <sc_element sys_idtf = "chemical_substance">химическое вещество</sc_element>, которое относится к  <sc_element sys_idtf = "basic_hydroxide"> основных гидроксидов (щёлочь)</sc_element>.
 				</p>] 
 				(*
 				<-lang_ru;;
@@ -28,14 +28,14 @@ subst_TlOH
 		=>nrel_main_idtf:[Опр. (гидроксид таллия(I))](* <-lang_ru;; => nrel_format: format_html;;*);;
 		<=nrel_using_constants:...
 			(*
-				->alkali;chimical_substance;;
+				->alkali;chemical_substance;;
 			*);;
 		*);
 ///////////////////////////////////////////////////////////////////
 	 <=nrel_inclusion:amphoteric_hydroxide;
 ///////////
 	<-solid;
-	<-white_color;;
+	<-color_white;;
 	
 	atomic_multiplicity_one->(subst_TlOH->elem_Tl);;
 	atomic_multiplicity_one->(subst_TlOH->elem_O);;
