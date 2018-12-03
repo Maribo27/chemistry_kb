@@ -1,7 +1,7 @@
 exercise1_alloy
 <- exercises_alloy;
 
--> rrel_key_sc_element: alloy; subst_Al; subst_Fe; nrel_mass; hydrochloric_acid; nrel_mass_fraction; metal; gas;
+-> rrel_key_sc_element: glass; metal; alloy; subst_Pb; subst_Bi; subst_Sn; nrel_object_structure;
 
 => nrel_next_exercise: exercise2_alloy;
 

@@ -1,7 +1,7 @@
 exercise2_alloy
 <- exercises_alloy;
-
--> rrel_key_sc_element: alloy; subst_Cu; subst_Fe; nrel_mass; hydrochloric_acid; nrel_mass_fraction; metal; gas;
+ 
+-> rrel_key_sc_element: alloy; subst_Mg; subst_Zn; subst_O; mixture; product; nrel_mass;  subst_Cl; nrel_mass_fraction;
 
 => nrel_next_exercise: exercise3_alloy;
 
