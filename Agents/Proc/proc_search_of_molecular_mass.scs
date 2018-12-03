@@ -1,0 +1,292 @@
+scp_program -> proc_search_of_molecular_mass
+(*
+	-> rrel_params: .proc_search_of_molecular_mass_params 
+	(*
+		-> rrel_1: rrel_in: rrel_fixed: _substances_set;;
+		-> rrel_2: rrel_out: rrel_assign: _molar_mass;;
+	*);;
+
+	-> rrel_operators: .proc_search_of_molecular_mass_operatorset 
+	(*
+		-> rrel_init: .proc_search_of_molecular_mass_operator_0 
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Molecular mass calculating procedure is entered];;
+
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_1;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_1
+		(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _molar_mass;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_2;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_2
+		(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _mol_mass;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_3;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_3
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substances_set;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc14;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _substance;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_4;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_info;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_4
+		(*
+			<- eraseEl;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc14;;
+
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_5;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_5
+		(*
+			<- searchSetStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc15;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _node;;
+
+			-> rrel_set_5: rrel_assign: rrel_scp_var: rrel_node: _multiplicity;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_6;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_3;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_6
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _multiplicity;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc141;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _mult;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_7;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_info;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_7
+		(*
+			<- eraseEl;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc141;;
+
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_8;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_8 
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _mult;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _valuex;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_9;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_8x;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_8x
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _mult;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _valuex;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_9;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_6;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_9
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _valuex;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _at_mult;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_10;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_6;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_10
+		(*
+			<- searchSetStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc15;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _mult;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _elem_set;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_11;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_6;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_11
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem_set;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc141;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_12;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_6;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_12
+		(*
+			<- eraseEl;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc141;;
+
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_14;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_13
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_const: chemical_element;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_14;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_11;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_14
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_atomic_mass;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_15;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_11;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_15
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_16;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_15x;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_15x
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_16;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_11;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_16
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _rrole;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc22;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_aem;;
+
+			=> nrel_then: .proc_search_of_molecular_mass_operator_17;;
+			=> nrel_else: .proc_search_of_molecular_mass_operator_11;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_17
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rrole;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _molar;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_18;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_18
+		(*
+			<- contMult;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _mol_mass;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _at_mult;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _molar;;
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_19;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_19
+		(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _molar_mass;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _mol_mass;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _molar_mass;;
+
+			=> nrel_goto: .proc_search_of_molecular_mass_operator_11;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_operator_info
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Molecular mass calculating procedure is ended];;
+
+			=> nrel_goto: .proc_search_of_molecular_mass_return;;
+		*);;
+
+		-> .proc_search_of_molecular_mass_return 
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;
