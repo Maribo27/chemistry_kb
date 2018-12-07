@@ -1,0 +1,34 @@
+heptose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[Гептозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[heptose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (Гептозы)](* <- lang_ru;; *);
+		[Def. (heptose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="heptose">Гептозы</sc_element></b> - класс семиугольных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="heptose">Heptose</sc_element></b> is seven carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (Гептозы)](* <- lang_ru;; *);
+		[Stat. (heptose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Некоторые <b><sc_element sys_idtf="heptose">гептозы</sc_element></b> (например, седогептулоза, манногептулоза) являются промежуточными продуктами в биосинтезе липидов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Some <b><sc_element sys_idtf="heptose">heptoses</sc_element></b> (for example, sedoheptulose, mannoheptulose) are intermediate products in lipid biosynthesis.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
