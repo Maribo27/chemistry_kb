@@ -28,7 +28,6 @@ monosaccharide
 	-> hexose;;
 	-> heptose;;
 	-> octose;;
-	-> nonose;;
 *);
 
 <= nrel_subdividing:
