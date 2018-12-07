@@ -36,7 +36,7 @@ monosaccharide
 (*	
 	=> nrel_main_idtf:[Разбиение по наличию альдо- или кето-группы](* <- lang_ru;; *);;
 	-> aldose;;
-	-> Ketose;;
+	-> ketose;;
 *);
 
 <= nrel_subdividing:
