@@ -15,7 +15,7 @@ heptose
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[<b><sc_element sys_idtf="heptose">Гептозы</sc_element></b> - класс семиугольных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="heptose">Гептозы</sc_element></b> - класс семиуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
 			-> rrel_example:[<b><sc_element sys_idtf="heptose">Heptose</sc_element></b> is seven carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
 		*);;
 *);
