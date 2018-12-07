@@ -1,13 +1,13 @@
 heptose
 <- sc_node_not_relation;
-=> nrel_main_idtf:[Гептозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[гептозы](* <- lang_ru;; *);
 => nrel_main_idtf:[heptose](* <- lang_en;; *);
 
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
 	=> nrel_main_idtf:
-		[Опр. (Гептозы)](* <- lang_ru;; *);
+		[Опр. (гептозы)](* <- lang_ru;; *);
 		[Def. (heptose)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
