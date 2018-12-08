@@ -1,4 +1,5 @@
-lib_component_ui_menu_file_for_agent_find_elem_valencies => nrel_main_idtf:
+lib_component_ui_menu_file_for_agent_find_elem_valencies 
+=> nrel_main_idtf:
 	[Компонент библиотеки. Команда пользовательского интерфейса для поиска валентностей заданного химического элемента]
 	(* <- lang_ru;; *);
 	[Library component. User interface command of search valencies of current chemical element]

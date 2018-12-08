@@ -19,17 +19,10 @@ hydrocarbon_radical
 	<=nrel_sc_text_translation:...
 	(*
 		->rrel_example:[
-<<<<<<< HEAD
-			<sc_element sys_idtf="hydrocarbon_radical">Углеводородный радикал</sc_element> - группа <sc_element sys_idtf="atom">атомов</sc_element>, <sc_element sys_idtf="nrel_compound">соединенных</sc_element> <sc_element sys_idtf="functioanal_group">функциональной группой</sc_element> <sc_element sys_idtf="molecule">молекулы</sc_element>.
-		](*<-lang_ru;;=>nrel_format:format_html;;*);;
-		->rrel_example:[
-			<sc_element sys_idtf = "hydrocarbon_radical"> Hydrocarbon radical </sc_element> is the group <sc_element sys_idtf = "atom"> atoms </sc_element>, <sc_element sys_idtf = "nrel_compound"> connected </sc_element> <sc_element sys_idtf = "functioanal_group" > the functional group </sc_element> <sc_element sys_idtf = "molecule"> molecules </sc_element>.
-=======
 			<sc_element sys_idtf="hydrocarbon_radical">Углеводородный радикал</sc_element> - группа <sc_element sys_idtf="atom">атомов</sc_element>, <sc_element sys_idtf="nrel_compound">соединенных</sc_element> <sc_element sys_idtf="functional_group">функциональной группой</sc_element> <sc_element sys_idtf="molecule">молекулы</sc_element>.
 		](*<-lang_ru;;=>nrel_format:format_html;;*);;
 		->rrel_example:[
 			<sc_element sys_idtf = "hydrocarbon_radical"> Hydrocarbon radical </sc_element> is the group <sc_element sys_idtf = "atom"> atoms </sc_element>, <sc_element sys_idtf = "nrel_compound"> connected </sc_element> <sc_element sys_idtf = "functional_group" > the functional group </sc_element> <sc_element sys_idtf = "molecule"> molecules </sc_element>.
->>>>>>> main
 		](*<-lang_en;;=>nrel_format:format_html;;*);;	
 	*);;
 *);;
@@ -37,9 +30,6 @@ hydrocarbon_radical
 ethyl
 <-sc_node_not_relation;
 =>nrel_main_idtf:[этил](*<-lang_ru;;*);
-<<<<<<< HEAD
-=>nrel_main_idtf:[ethyl](*<-lang_en;;*);;
-=======
 =>nrel_main_idtf:[ethyl](*<-lang_en;;*);
 <-rrel_key_sc_element:...
 (*
@@ -79,14 +69,10 @@ ethyl
 		](*<-lang_en;;=>nrel_format:format_html;;*);;	
 	*);;
 *);;
->>>>>>> main
 
 ethylen
 <-sc_node_not_relation;
 =>nrel_main_idtf:[этилен](*<-lang_ru;;*);
-<<<<<<< HEAD
-=>nrel_main_idtf:[ethylen](*<-lang_en;;*);;
-=======
 =>nrel_main_idtf:[ethylen](*<-lang_en;;*);
 <-rrel_key_sc_element:...
 (*
@@ -110,14 +96,10 @@ ethylen
 		](*<-lang_en;;=>nrel_format:format_html;;*);;	
 	*);;
 *);;
->>>>>>> main
 
 methyl
 <-sc_node_not_relation;
 =>nrel_main_idtf:[метил](*<-lang_ru;;*);
-<<<<<<< HEAD
-=>nrel_main_idtf:[methyl](*<-lang_en;;*);;
-=======
 =>nrel_main_idtf:[methyl](*<-lang_en;;*);
 <-rrel_key_sc_element:...
 (*
@@ -141,14 +123,10 @@ methyl
 		](*<-lang_en;;=>nrel_format:format_html;;*);;	
 	*);;
 *);;
->>>>>>> main
 
 methylen
 <-sc_node_not_relation;
 =>nrel_main_idtf:[метилен](*<-lang_ru;;*);
-<<<<<<< HEAD
-=>nrel_main_idtf:[methylen](*<-lang_en;;*);;
-=======
 =>nrel_main_idtf:[methylen](*<-lang_en;;*);
 <-rrel_key_sc_element:...
 (*
@@ -189,14 +167,10 @@ methylen
 		](*<-lang_en;;=>nrel_format:format_html;;*);;	
 	*);;
 *);;
->>>>>>> main
 
 phenyl
 <-sc_node_not_relation;
 =>nrel_main_idtf:[фенил](*<-lang_ru;;*);
-<<<<<<< HEAD
-=>nrel_main_idtf:[phenyl](*<-lang_en;;*);;
-=======
 =>nrel_main_idtf:[phenyl](*<-lang_en;;*);
 <-rrel_key_sc_element:...
 (*
@@ -220,4 +194,3 @@ phenyl
 		](*<-lang_en;;=>nrel_format:format_html;;*);;	
 	*);;
 *);;
->>>>>>> main

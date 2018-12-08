@@ -12,7 +12,6 @@ lib_component_agent_find_elem_valencies
 -> rrel_key_sc_element: 
 	.platform_independent_realization_of_sc_agent_find_elem_valencies;
 
-
 <- rrel_key_sc_element: 
 	...
 	(*
@@ -25,7 +24,6 @@ lib_component_agent_find_elem_valencies
 				(* <- lang_ru;; *);; 
 		*);;
 	*);;
-
 
 sc_node_not_relation -> action_find_elem_valencies;;
 

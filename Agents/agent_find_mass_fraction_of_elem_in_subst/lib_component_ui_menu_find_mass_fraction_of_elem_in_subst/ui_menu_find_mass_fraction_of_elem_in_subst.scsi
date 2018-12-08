@@ -1,0 +1,23 @@
+ui_menu_find_mass_fraction_of_elem_in_subst 
+<- ui_user_command_class_atom; ui_user_command_class_view_kb;
+=> nrel_main_idtf: 
+	[Какова массовая доля элемента в веществе?]
+	(* <- lang_ru;;*);
+	[What is mass fraction of element in substance?] 
+	(* <- lang_en;;*);;
+
+ui_menu_find_mass_fraction_of_elem_in_subst 
+=> ui_nrel_command_template:
+	[*
+		action_find_mass_fraction_of_elem_in_subst _-> ._action_find_mass_fraction_of_elem_in_subst_instance
+			(*
+                _-> rrel_1:: ui_arg_1;;
+				_-> rrel_2:: ui_arg_2;;
+			*);;
+		._action_find_mass_fraction_of_elem_in_subst_instance _<- question;;
+	*];;
+
+ui_menu_find_mass_fraction_of_elem_in_subst 
+=> ui_nrel_command_lang_template: 
+	[Поиск массовой доли $ui_arg_2 в $ui_arg_1] (* <- lang_ru;;*);
+	[Search mass fraction of $ui_arg_2 in $ui_arg_1] (* <- lang_en;;*);;
