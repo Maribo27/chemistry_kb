@@ -10,15 +10,12 @@ scp_program -> proc_search_of_object_structure
 	(*
 		-> rrel_init: .proc_search_of_object_structure_operator0
 		(*
-			<- printEl;;
+			<- printNl;;
 
-			-> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
+			-> rrel_1: rrel_scp_const: [Object strusture searching procedure is entered];;
 
 			=> nrel_goto: .proc_search_of_object_structure_operator1;;
-		*);; 
-
-
-
+		*);;
 
 		-> .proc_search_of_object_structure_operator1 
 		(*
@@ -33,7 +30,7 @@ scp_program -> proc_search_of_object_structure
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _set1;;
 
 			=> nrel_then: .proc_search_of_object_structure_operator2;;
-			=> nrel_else: .proc_search_of_object_structure_operatorreturn;;
+			=> nrel_else: .proc_search_of_object_structure_info;;
 		*);;
 
 		//поиск по множеству элементов, если оно не пустое, то переходим к следующему пункту, иначе выводим ответ и выходим из программы
@@ -46,7 +43,7 @@ scp_program -> proc_search_of_object_structure
 			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
 
 			=> nrel_then: .proc_search_of_object_structure_operator3;;
-			=> nrel_else: .proc_search_of_object_structure_operatorreturn;;
+			=> nrel_else: .proc_search_of_object_structure_info;;
 		*);;
 
 		//удаление рассматриваемого элемента из множества
@@ -133,7 +130,16 @@ scp_program -> proc_search_of_object_structure
 			=> nrel_goto:  .proc_search_of_object_structure_operator2;;
 		*);;
 
-		->.proc_search_of_object_structure_operatorreturn 
+		-> .proc_search_of_object_structure_info
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Object strusture searching procedure is ended];;
+
+			=> nrel_goto: .proc_search_of_object_structure_operatorreturn;;
+		*);;
+
+		-> .proc_search_of_object_structure_operatorreturn 
 		(*
 			<- return;;
 		*);;

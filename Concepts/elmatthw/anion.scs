@@ -2,7 +2,6 @@ anion
 => nrel_main_idtf:
 	[анион](* <- lang_ru;; *);
 	[anion](* <- lang_en;; *);
-<-gas;base;acid;salt;
 // определение
 <- rrel_key_sc_element:...
 (*

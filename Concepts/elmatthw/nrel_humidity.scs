@@ -12,8 +12,8 @@ nrel_humidity
 <= nrel_subdividing:...
 (*
 	=> nrel_main_idtf:[Разбиение по признаку характеристики влаги.](* <-lang_ru;; *);;
-	-> nrel_relative_humidity;;
-	-> nrel_absolute_humidity;;
+	-> relative_humidity;;
+	-> absolute_humidity;;
 *);
 // домены
 =>nrel_second_domain: integer;

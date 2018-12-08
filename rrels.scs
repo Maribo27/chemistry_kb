@@ -59,6 +59,36 @@ rrel_10_in_23
 => nrel_main_idtf:
 	[10^23'](* <- lang_ru;; *);;
 
+rrel_10_in_minus_24_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-24) кг'](* <- lang_ru;; *);
+	[10^(-24) kg'](* <- lang_en;; *);;
+
+rrel_10_in_minus_27_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-27) кг'](* <- lang_ru;; *);
+	[10^(-27) kg'](* <- lang_en;; *);;
+
+rrel_10_in_minus_31_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-31) кг'](* <- lang_ru;; *);
+	[10^(-31) kg'](* <- lang_en;; *);;
+
+rrel_10_in_minus_8_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(-8) кг'](* <- lang_ru;; *);
+	[10^(-8) kg'](* <- lang_en;; *);;
+
+rrel_10_in_30_kg
+<- sc_node_role_relation;
+=> nrel_main_idtf:
+	[10^(30) кг'](* <- lang_ru;; *);
+	[10^(30) kg'](* <- lang_en;; *);;
+
 rrel_mol
 <- sc_node_role_relation;
 => nrel_main_idtf:

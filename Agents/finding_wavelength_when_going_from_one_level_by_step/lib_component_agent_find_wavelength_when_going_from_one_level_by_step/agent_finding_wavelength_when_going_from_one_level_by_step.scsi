@@ -1,0 +1,278 @@
+agent_finding_wavelength_when_going_from_one_level_by_step
+=> nrel_main_idtf:
+	[ ] (* <- lang_ru;; *);
+	[ ] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_finding_wavelength_when_going_from_one_level_by_step 
+	(*
+	-> rrel_params: .agent_finding_wavelength_when_going_from_one_level_by_step_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_set 
+		(*
+		-> rrel_init: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1A 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1B;;
+			=> nrel_else: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_return;;
+			*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_finding_wavelength_when_going_from_one_level_by_step;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1C;;
+			=> nrel_else: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_return;;
+			*);;
+
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1C (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_add_param;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+					-> rrel_2: rrel_assign: rrel_scp_var: _NUMBER_NODE1;;
+    				-> rrel_3: rrel_assign: rrel_scp_var: _NUMBER_NODE2;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_pr;;
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1C_wait_return;;
+		*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1C_wait_return (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_pr;;
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_gen_answer;;
+		*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_gen_answer
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _ansver_for_agent;;
+
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_gen_answer_waveligth;;
+			*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_gen_answer_waveligth
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _waveligth;;
+
+			=> nrel_goto: ..proc_get_idtf_operator11;;
+			*);;
+
+		-> ..proc_get_idtf_operator11 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER_NODE1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _NUMBER1_idtf;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_then: ..proc_get_idtf_operator21;;		
+			=> nrel_else: ..proc_get_idtf_operator12;;		
+		*);;
+
+		-> ..proc_get_idtf_operator12 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER_NODE1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _NUMBER1_idtf;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: ..proc_get_idtf_operator21;;		
+			=> nrel_else: ..proc_print_idtf_operator_return;;		
+		*);;
+
+
+		-> ..proc_get_idtf_operator21 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER_NODE2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _NUMBER2_idtf;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_then: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A11;;		
+			=> nrel_else: ..proc_get_idtf_operator22;;		
+		*);;
+
+		-> ..proc_get_idtf_operator22 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER_NODE2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _NUMBER2_idtf;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A11;;		
+			=> nrel_else: ..proc_print_idtf_operator_return;;		
+		*);;
+
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A11
+		(*
+		<- contMult;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER1_idtf;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _NUMBER1_idtf;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBER1_idtf;;
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A21;;
+		*);;
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A21
+		(*
+		<- contMult;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER2_idtf;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _NUMBER2_idtf;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBER2_idtf;;
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A12;;
+		*);;
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A12
+		(*
+		<- contDiv;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER1_idtf;;
+		-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBER1_idtf;;
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A22;;
+		*);;
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_A22
+		(*
+		<- contDiv;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBER2_idtf;;
+		-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBER2_idtf;;
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B0;;
+		*);;
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B0
+		(*
+		<- contSub;;
+		-> rrel_1: rrel_assign: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _NUMBER2_idtf;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBER1_idtf;;
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B1;;
+		*);;
+
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B1
+		(*
+		<- contMult;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: [1,0974];;
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B2;;
+		*);;
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B2
+		(*
+		<- contDiv;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B3;;
+		*);;
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B3
+		(*
+		<- contStringConcat;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_2: rrel_fixed: rrel_scp_const: [Согласно <b>второму постулату Бора ( правилу частот)</b> излучение света происходит при квантовом переходе атома из стационарного состояния с большей энергией E m в стационарное состояние с меньшей энергией E n ; энергия излученного фотона равна разности энергий стационарных состояний:
+Eγ = Em − En.</br> Длина волны фотона будет равна частному от энергии фотона и <b>постоянной планка h (h = 6,626⋅10−34 Дж⋅с).</b></br>
+Переход электрона с одного энергетического уровня на другой всегда сопровождается испусканием или поглощением фотона соответствующей частоты.</br>
+Энергия электрона вычисляется по формуле: -1/(n*n), где n-номер <b>электронного уровня</b>];;
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B31;;
+		*);;
+
+		->..agent_finding_wavelength_when_going_from_one_level_by_step_operator_B31
+		(*
+		<- contStringConcat;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: [ e-7];;
+		
+		=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_gen_idtf;;
+		*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_gen_idtf
+			(*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: format_html;;							
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_format;;
+
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1D5;;
+			*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1D5
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1D51;;
+			*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator1D51
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _NUMBERS_SUB;;
+
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_answer;;
+			*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_answer//конечный ответ генерю
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ansver_for_agent;;							
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_success;;
+			*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_success
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_return;;
+			*);;
+
+		-> ..agent_finding_wavelength_when_going_from_one_level_by_step_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;
