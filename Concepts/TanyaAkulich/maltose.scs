@@ -16,8 +16,8 @@ maltose
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[<b><sc_element sys_idtf="maltose">мальтоза</sc_element></b> - природный <b><sc_element sys_idtf="disaccharide">дисахарид</sc_element></b>, состоящий из двух остатков <b><sc_element sys_idtf="glucose">глюкозы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
-			-> rrel_example:[<b><sc_element sys_idtf="maltose">maltose</sc_element></b> is natural <b><sc_element sys_idtf="disaccharide">disaccharide</sc_element></b> consisting of two <b><sc_element sys_idtf="glucose">glucose</sc_element></b> residues.](* <- lang_en;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="maltose">мальтоза</sc_element></b> - <b><sc_element sys_idtf="natural_disaccharide">природный дисахарид</sc_element></b>, состоящий из двух остатков <b><sc_element sys_idtf="glucose">глюкозы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="maltose">maltose</sc_element></b> is <b><sc_element sys_idtf="natural_disaccharide">natural disaccharide</sc_element></b> consisting of two <b><sc_element sys_idtf="glucose">glucose</sc_element></b> residues.](* <- lang_en;; => nrel_format: format_html;;*);;
 		*);;
 *);
 
