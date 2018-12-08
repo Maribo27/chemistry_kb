@@ -1,0 +1,22 @@
+ui_menu_find_mass_of_substance 
+<- ui_user_command_class_atom; ui_user_command_class_view_kb;
+=> nrel_main_idtf: 
+	[Какова масса данного вещества?]
+	(* <- lang_ru;;*);
+	[What mass of this substance?] 
+	(* <- lang_en;;*);;
+
+ui_menu_find_mass_of_substance 
+=> ui_nrel_command_template:
+	[*
+		action_find_mass_of_substance _-> ._action_find_mass_of_substance_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_mass_of_substance_instance _<- question;;
+	*];;
+
+ui_menu_find_mass_of_substance 
+=> ui_nrel_command_lang_template: 
+	[Поиск массы $ui_arg_1] (* <- lang_ru;;*);
+	[Search mass of $ui_arg_1] (* <- lang_en;;*);;

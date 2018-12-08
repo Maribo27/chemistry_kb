@@ -1,0 +1,179 @@
+scp_program -> proc_search_of_n_if_amount_is_given
+(*
+	-> rrel_params: .proc_search_of_n_if_amount_is_given_params 
+	(*
+		-> rrel_1: rrel_in: rrel_fixed: _substance;;
+		-> rrel_2: rrel_out: rrel_assign: _chemical_amount;;
+	*);;
+
+	-> rrel_operators: .proc_search_of_n_if_amount_is_given_operatorset 
+	(*
+		-> rrel_init: .proc_search_of_n_if_amount_is_given_operator_0 
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Chemical amount (V) calculating procedure is entered];;
+
+			=> nrel_goto: .proc_search_of_n_if_amount_is_given_operator_1;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_1
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: molar_amount;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_2;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_1x;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_1x
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: molar_amount;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_2;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_2
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _rrole;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc22;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_liter_per_mole;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_4;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_4
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rrole;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _molar_amount;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_5;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_5
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_amount;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_6;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_6
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_7;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_6x;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_6x
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_7;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_7
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _rrole;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc22;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_liter;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_8;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_8
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rrole;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _amount;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_9;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_9
+		(*
+			<- ifEq;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _amount;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			=> nrel_then: .proc_search_of_n_if_amount_is_given_operator_info;;
+			=> nrel_else: .proc_search_of_n_if_amount_is_given_operator_10;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_10
+		(*
+			<- contDiv;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _chemical_amount;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _amount;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _molar_amount;;
+
+			=> nrel_goto: .proc_search_of_n_if_amount_is_given_operator_info;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_operator_info
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Chemical amount (V) calculating procedure is ended];;
+
+			=> nrel_goto: .proc_search_of_n_if_amount_is_given_return;;
+		*);;
+
+		-> .proc_search_of_n_if_amount_is_given_return 
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;
