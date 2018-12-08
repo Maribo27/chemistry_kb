@@ -1,7 +1,7 @@
-amin_acid
+amino_acid
 => nrel_main_idtf:
 	[аминокислота](* <- lang_ru;; *);
-	[amin acid](* <- lang_en;; *);
+	[amino acid](* <- lang_en;; *);
 // определение
 <- rrel_key_sc_element:...
 (*
@@ -22,6 +22,33 @@ amin_acid
 		->organic_compound;;
 	*);;
 *);
+
+<= nrel_subdividing:
+	amino_acid_radical
+  (* 
+    -> non_polar_amino_acid;;
+    -> polar_uncharged_amino_acid;;
+	-> polar_positive_charged_amino_acid;;
+	-> polar_negative_charged_amino_acid;;
+    -> aromatic_amino_acid;;
+	*);
+
+<= nrel_subdividing:
+	amino_acid_functional_group
+  (* 
+    -> alifatic_amino_acid;;
+    -> aromatic_amino_acid;;
+    -> geterocyclic_amino_acid;;
+	-> imino_acid;;
+	*);
+
+
+<= nrel_subdividing:
+	amino_acid_production
+  (* 
+    -> replaceable_amino_acid;;
+    -> irreplaceable_amino_acid;;
+	*);
 //утверждения
 <- rrel_key_sc_element:...
 (*
