@@ -38,15 +38,6 @@ monosaccharide
 	-> ketose;;
 *);
 
-<= nrel_subdividing:
-...
-(*	
-	=> nrel_main_idtf:[Разбиение по количеству атомов углерода в цепи](* <- lang_ru;; *);;
-	-> lower;;
-	-> medium;;
-	-> higher;;
-*);
-
 <- rrel_key_sc_element:
 Definition_of_monosaccharide
 (*
