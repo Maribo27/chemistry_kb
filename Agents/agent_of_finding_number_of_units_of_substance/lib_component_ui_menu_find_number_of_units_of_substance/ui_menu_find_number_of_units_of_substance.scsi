@@ -1,0 +1,22 @@
+ui_menu_find_number_of_units_of_substance 
+<- ui_user_command_class_atom; ui_user_command_class_view_kb;
+=> nrel_main_idtf: 
+	[Каково число частиц данного вещества?]
+	(* <- lang_ru;;*);
+	[What number of units of this substance?] 
+	(* <- lang_en;;*);;
+
+ui_menu_find_number_of_units_of_substance 
+=> ui_nrel_command_template:
+	[*
+		action_find_number_of_units_of_substance _-> ._action_find_number_of_units_of_substance_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_number_of_units_of_substance_instance _<- question;;
+	*];;
+
+ui_menu_find_number_of_units_of_substance 
+=> ui_nrel_command_lang_template: 
+	[Поиск числа частиц $ui_arg_1] (* <- lang_ru;;*);
+	[Search number of units of $ui_arg_1] (* <- lang_en;;*);;
