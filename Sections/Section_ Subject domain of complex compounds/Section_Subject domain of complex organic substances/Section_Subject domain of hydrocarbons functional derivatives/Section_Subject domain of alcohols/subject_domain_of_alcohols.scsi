@@ -1,5 +1,5 @@
 subject_domain_of_alcohols
-  => nrel_main_idtf: 
+  => nrel_main_idtf:
   	[Предметная область спиртов] (* <- lang_ru;;*);
   	[Subject domain of alcohols] (* <- lang_en;; *);
 
@@ -34,7 +34,7 @@ alcohol
 
   <= nrel_subdividing:
   ...
-  (*  
+  (*
     => nrel_main_idtf: [Разбиение по числу гидроксильных групп] (* <- lang_ru;; *);;
     -> monohydric_alcohol;;
     -> dihydric_alcohol;;
@@ -355,7 +355,7 @@ terpene_alcohol
     <= nrel_sc_text_translation:...
     (*
       -> rrel_example: [Терпеновые спирты - производные терпенов, содержащие <b><sc_element sys_idtf="hydroxyl_group">гидроксо-группу</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
-      -> rrel_example: [Terpene alcohols - derivatives of terpenes containing a <b><sc_element sys_idtf="hydroxy_group">hydroxy group</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+      -> rrel_example: [Terpene alcohols - derivatives of terpenes containing a <b><sc_element sys_idtf="hydroxyl_group">hydroxy group</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;; *);;
     *);;
   *);
 
@@ -549,7 +549,7 @@ barda
       -> alcohol;;
       -> liquid;;
       -> color_brown;;
-      -> color;;  
+      -> color;;
       -> smell;;
     *);;
     <= nrel_sc_text_translation:...
@@ -584,7 +584,7 @@ barda
       *);;
   *);;
 
-nrel_alcoholysis 
+nrel_alcoholysis
   <- sc_node_norole_relation;
   <- binary_relation;
   <- oriented_relation;
@@ -824,7 +824,7 @@ monohydric_alcohol
       [Stat. (monohydric alcohol)](* <- lang_en;; *);;
     <= nrel_sc_text_translation:...
       (*
-        -> rrel_example: [Для одноатомных <b><sc_element sys_idtf="alcoholic">спиртов</sc_element></b> характерна изомерия углеродного скелета и изомерия положения <b><sc_element sys_idtf="hydroxyl_group">гидрокси-группы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+        -> rrel_example: [Для одноатомных <b><sc_element sys_idtf="alcohol">спиртов</sc_element></b> характерна изомерия углеродного скелета и изомерия положения <b><sc_element sys_idtf="hydroxyl_group">гидрокси-группы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
         -> rrel_example: [For monatomic <b><sc_element sys_idtf="alcohol">alcohols</sc_element></b>, isomerism of the carbon skeleton and isomerism of the position of the <b><sc_element sys_idtf="hydroxyl_group">hydroxy group</sc_element></b> are characteristic.](* <- lang_en;; => nrel_format: format_html;; *);;
       *);;
   *);
