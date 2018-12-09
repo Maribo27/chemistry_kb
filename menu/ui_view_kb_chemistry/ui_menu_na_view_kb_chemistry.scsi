@@ -19,6 +19,7 @@ ui_menu_na_view_kb_chemistry <= nrel_ui_commands_decomposition:
 	ui_menu_finding_the_binding_energy_of_the_nucleus;
 	ui_menu_finding_wavelength_when_going_from_one_level;
 	ui_menu_find_mass_of_substance;
+	ui_menu_find_number_of_units_of_substance;
 	ui_menu_find_melting_temperature_of_chemical_substance;
 	ui_menu_find_boiling_temperature_of_chemical_substance;
 	ui_menu_file_for_agent_find_elem_valencies;
