@@ -40,6 +40,7 @@ subject_domain_of_alloys
 -> rrel_explored_relation:
 	nrel_alloy_component;
 	nrel_number_of_components;
+	nrel_number_of_occurrences_of_metal;
 <= nrel_sc_text_translation:
 
 		...
@@ -402,12 +403,12 @@ babbit
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "babbit">Баббит</sc_element> </b> - антифрикционный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "elem_Sn">олова</sc_element> или <sc_element sys_idtf  = "elem_Pb">свинца</sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "babbit">Баббит</sc_element> </b> - антифрикционный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Sn">олова</sc_element> или <sc_element sys_idtf  = "subst_Pb">свинца</sc_element>.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "babbit">Babbit</sc_element> </b> - antifriction <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "elem_Sn">Stannum</sc_element> or <sc_element sys_idtf  = "elem_Pb">Plumbum</sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "babbit">Babbit</sc_element> </b> - antifriction <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Sn">Stannum</sc_element> or <sc_element sys_idtf  = "subst_Pb">Plumbum</sc_element>.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -416,23 +417,23 @@ babbit
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Pb;;
-			-> elem_Sn;;
+			-> subst_Pb;;
+			-> subst_Sn;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Pb;
-=> nrel_alloy_component: elem_Sb;
-=> nrel_alloy_component: elem_Sb;
-=> nrel_alloy_component: elem_Cu;
-=> nrel_alloy_component: elem_Ni;
-=> nrel_alloy_component: elem_As;
-=> nrel_alloy_component: elem_Cd;
-=> nrel_alloy_component: elem_Te;
-=> nrel_alloy_component: elem_Ca;
-=> nrel_alloy_component: elem_Na;
-=> nrel_alloy_component: elem_Mg;
+=> nrel_alloy_component: subst_Pb;
+=> nrel_alloy_component: subst_Sb;
+=> nrel_alloy_component: subst_Sb;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_As;
+=> nrel_alloy_component: subst_Cd;
+=> nrel_alloy_component: subst_Te;
+=> nrel_alloy_component: subst_Ca;
+=> nrel_alloy_component: subst_Na;
+=> nrel_alloy_component: subst_Mg;
 
 
 => nrel_melting_temperature:...
@@ -487,12 +488,12 @@ brass
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "brass">Латунь</sc_element> </b>- двойной или многокомпонентный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "elem_Cu">меди</sc_element>, где основным легирующим компонентом является <sc_element sys_idtf  = "elem_Zn">цинк </sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "brass">Латунь</sc_element> </b>- двойной или многокомпонентный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Cu">меди</sc_element>, где основным легирующим компонентом является <sc_element sys_idtf  = "subst_Zn">цинк </sc_element>.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "brass">Brass</sc_element> </b>- double or multicomponent <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "elem_Cu">Cuprum</sc_element>, where the main alloying component is <sc_element sys_idtf  = "elem_Zn">Zincum </sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "brass">Brass</sc_element> </b>- double or multicomponent <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element>, where the main alloying component is <sc_element sys_idtf  = "subst_Zn">Zincum </sc_element>.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -501,18 +502,18 @@ brass
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Cu;;
-			-> elem_Zn;;
+			-> subst_Cu;;
+			-> subst_Zn;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Zn;
-=> nrel_alloy_component: elem_Cu;
-=> nrel_alloy_component: elem_Ni;
-=> nrel_alloy_component: elem_Fe;
-=> nrel_alloy_component: elem_Mn;
-=> nrel_alloy_component: elem_Pb;
+=> nrel_alloy_component: subst_Zn;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Fe;
+=> nrel_alloy_component: subst_Mn;
+=> nrel_alloy_component: subst_Pb;
  
 => nrel_melting_temperature:...
 	(*
@@ -586,12 +587,12 @@ bronze
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "bronze">Бронза</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "elem_Cu">меди</sc_element>, с <sc_element sys_idtf  = "elem_Sn">оловом</sc_element> в качестве основного компонента.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "bronze">Бронза</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "subst_Cu">меди</sc_element>, с <sc_element sys_idtf  = "subst_Sn">оловом</sc_element> в качестве основного компонента.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "bronze">Bronze</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "elem_Cu">Cuprum</sc_element>, with <sc_element sys_idtf  = "elem_Sn">Stannum</sc_element> as the main component.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "bronze">Bronze</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element>, with <sc_element sys_idtf  = "subst_Sn">Stannum</sc_element> as the main component.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -600,20 +601,20 @@ bronze
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Cu;;
-			-> elem_Sn;;
+			-> subst_Cu;;
+			-> subst_Sn;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Sn;
-=> nrel_alloy_component: elem_Cu;
-=> nrel_alloy_component: elem_Al;
-=> nrel_alloy_component: elem_Si;
-=> nrel_alloy_component: elem_Be;
-=> nrel_alloy_component: elem_Pb;
-=> nrel_alloy_component: elem_Zn;
-=> nrel_alloy_component: elem_P;
+=> nrel_alloy_component: subst_Sn;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Al;
+=> nrel_alloy_component: subst_Si;
+=> nrel_alloy_component: subst_Be;
+=> nrel_alloy_component: subst_Pb;
+=> nrel_alloy_component: subst_Zn;
+=> nrel_alloy_component: subst_P;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;
@@ -632,7 +633,7 @@ bronze
 		<- explanation;;
 		=> nrel_main_idtf: 
 			[Прим. (бронза, медь, алюмийний, кремний, берилий, свинец)](*<- lang_ru;;*);
-			[Note (bronze, elem_Cu, elem_Al, elem_Si, elem_Be, elem_Sn)](*<- lang_en;;*);;
+			[Note (bronze, subst_Cu, subst_Al, subst_Si, subst_Be, subst_Sn)](*<- lang_en;;*);;
 		<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[ К бронзам также относят медные сплавы с алюминием, кремнием, бериллием, свинцом и другими элементами, за исключением цинка (это латунь) и никеля (это мельхиор).] 
@@ -687,12 +688,12 @@ cast_iron
 	<- explanation;;
 	<= nrel_sc_text_translation:...
 	(* 
-		-> rrel_example:[<b><sc_element sys_idtf  = "cast_iron">Чугун</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "elem_Fe">железа</sc_element> с <sc_element sys_idtf  = "elem_C">углеродом</sc_element> (и другими элементами).] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "cast_iron">Чугун</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "subst_Fe">железа</sc_element> с <sc_element sys_idtf  = "subst_C">углеродом</sc_element> (и другими элементами).] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-		-> rrel_example:[<b><sc_element sys_idtf  = "cast_iron">Cast iron</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "elem_Fe">Ferrum</sc_element> with <sc_element sys_idtf  = "elem_C">Carboneum</sc_element> (and other elements).] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "cast_iron">Cast iron</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "subst_Fe">Ferrum</sc_element> with <sc_element sys_idtf  = "subst_C">Carboneum</sc_element> (and other elements).] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -702,8 +703,8 @@ cast_iron
 	<= nrel_using_constants:...
 	(*
 		-> chemical_element;;
-		-> elem_Fe;;
-		-> elem_C;;
+		-> subst_Fe;;
+		-> subst_C;;
 		-> alloy;;
 	*);;
 	
@@ -743,7 +744,7 @@ cast_iron
 
 cast_iron
 => nrel_alloy_component: 
-	elem_Fe; elem_C; elem_P; elem_Mn; elem_S; elem_Si; elem_Al; elem_V; elem_Ni;;
+	subst_Fe; subst_C; subst_P; subst_Mn; subst_S; subst_Si; subst_Al; subst_V; subst_Ni;;
 
 copper_nickel_alloy
 => nrel_main_idtf:
@@ -764,12 +765,12 @@ copper_nickel_alloy
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "copper_nickel_alloy">Медно-никелевый сплав</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплавы</sc_element>на основе <sc_element sys_idtf  = "elem_Cu">меди</sc_element> и содержащие в качестве основного легирующего элемента <sc_element sys_idtf  = "elem_Ni">никель</sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "copper_nickel_alloy">Медно-никелевый сплав</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплавы</sc_element>на основе <sc_element sys_idtf  = "subst_Cu">меди</sc_element> и содержащие в качестве основного легирующего элемента <sc_element sys_idtf  = "subst_Ni">никель</sc_element>.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "copper_nickel_alloy">Copper-nickel alloy</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloys</sc_element> on the basis of <sc_element sys_idtf  = "elem_Cu">Cuprum</sc_element> and containing as the main alloying element <sc_element sys_idtf  = "elem_Ni">Niccolum</sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "copper_nickel_alloy">Copper-nickel alloy</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloys</sc_element> on the basis of <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element> and containing as the main alloying element <sc_element sys_idtf  = "subst_Ni">Niccolum</sc_element>.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -778,17 +779,17 @@ copper_nickel_alloy
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Cu;;
-			-> elem_Ni;;
+			-> subst_Cu;;
+			-> subst_Ni;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Cu;
-=> nrel_alloy_component: elem_Ni;
-=> nrel_alloy_component: elem_Zn;
-=> nrel_alloy_component: elem_Fe;
-=> nrel_alloy_component: elem_Mn;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Zn;
+=> nrel_alloy_component: subst_Fe;
+=> nrel_alloy_component: subst_Mn;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;
@@ -867,12 +868,12 @@ duralumin
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "duralumin">Дюралюминий</sc_element> </b>- группа высокопрочных <sc_element sys_idtf  = "alloy">сплавов</sc_element> на основе <sc_element sys_idtf  = "elem_Al">алюминия</sc_element> с добавками <sc_element sys_idtf  = "elem_Cu">меди</sc_element>, <sc_element sys_idtf  = "elem_Mg">магния</sc_element> и <sc_element sys_idtf  = "elem_Mn">марганца</sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "duralumin">Дюралюминий</sc_element> </b>- группа высокопрочных <sc_element sys_idtf  = "alloy">сплавов</sc_element> на основе <sc_element sys_idtf  = "subst_Al">алюминия</sc_element> с добавками <sc_element sys_idtf  = "subst_Cu">меди</sc_element>, <sc_element sys_idtf  = "subst_Mg">магния</sc_element> и <sc_element sys_idtf  = "subst_Mn">марганца</sc_element>.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "duralumin">Duralumin</sc_element> </b>- high-strength  <sc_element sys_idtf  = "alloy">alloys</sc_element> group on the basis of <sc_element sys_idtf  = "elem_Al">Aluminium</sc_element> with additives <sc_element sys_idtf  = "elem_Cu">Cuprum</sc_element>, <sc_element sys_idtf  = "elem_Mg">Magnesium</sc_element> и <sc_element sys_idtf  = "elem_Mn">Manganum</sc_element>.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "duralumin">Duralumin</sc_element> </b>- high-strength  <sc_element sys_idtf  = "alloy">alloys</sc_element> group on the basis of <sc_element sys_idtf  = "subst_Al">Aluminium</sc_element> with additives <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element>, <sc_element sys_idtf  = "subst_Mg">Magnesium</sc_element> и <sc_element sys_idtf  = "subst_Mn">Manganum</sc_element>.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -881,18 +882,18 @@ duralumin
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Al;;
-			-> elem_Cu;;
-			-> elem_Mg;;
-			-> elem_Mn;;
+			-> subst_Al;;
+			-> subst_Cu;;
+			-> subst_Mg;;
+			-> subst_Mn;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Al;
-=> nrel_alloy_component: elem_Cu;
-=> nrel_alloy_component: elem_Mg;
-=> nrel_alloy_component: elem_Mn;
+=> nrel_alloy_component: subst_Al;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Mg;
+=> nrel_alloy_component: subst_Mn;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;
@@ -1106,12 +1107,12 @@ heavy_alloy
 	<- explanation;;
 	<= nrel_sc_text_translation:...
 	(* 
-		-> rrel_example:[<b><sc_element sys_idtf  = "heavy_alloy">Тяжёлые сплавы</sc_element> </b>- это <sc_element sys_idtf  = "alloy">сплавы</sc_element> на основе <sc_element sys_idtf  = "elem_W">вольфрама</sc_element> с высокой <sc_element sys_idtf  = "nrel_density_of_substance">плотностью</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "heavy_alloy">Тяжёлые сплавы</sc_element> </b>- это <sc_element sys_idtf  = "alloy">сплавы</sc_element> на основе <sc_element sys_idtf  = "subst_W">вольфрама</sc_element> с высокой <sc_element sys_idtf  = "nrel_density_of_substance">плотностью</sc_element>.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-		-> rrel_example:[<b><sc_element sys_idtf  = "heavy_alloy">Heavy alloy</sc_element> </b>-  <sc_element sys_idtf  = "alloy">alloys</sc_element> on the basis of <sc_element sys_idtf  = "elem_W">Wolframium</sc_element> with high <sc_element sys_idtf  = "nrel_density_of_substance">density</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "heavy_alloy">Heavy alloy</sc_element> </b>-  <sc_element sys_idtf  = "alloy">alloys</sc_element> on the basis of <sc_element sys_idtf  = "subst_W">Wolframium</sc_element> with high <sc_element sys_idtf  = "nrel_density_of_substance">density</sc_element>.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -1121,7 +1122,7 @@ heavy_alloy
 	<= nrel_using_constants:...
 	(*
 		-> nrel_density_of_substance;;
-		-> elem_W;;
+		-> subst_W;;
 		-> alloy;;
 	*);;
 	
@@ -1182,7 +1183,7 @@ heavy_alloy
 
 heavy_alloy
 => nrel_alloy_component: 
-	elem_W;elem_Ni;elem_Cu;elem_Fe;elem_Mo;elem_Co;elem_Cr;elem_Ag;;
+	subst_W;subst_Ni;subst_Cu;subst_Fe;subst_Mo;subst_Co;subst_Cr;subst_Ag;;
 
 highly_entropic_alloys
 => nrel_main_idtf:
@@ -1298,12 +1299,12 @@ manganin
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "manganin">Манганин</sc_element> </b> - термостабильный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "elem_Cu">меди (Cu)</sc_element> (около 85 %).] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "manganin">Манганин</sc_element> </b> - термостабильный <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Cu">меди (Cu)</sc_element> (около 85 %).] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "manganin">Manganin</sc_element> </b> - thermostable <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "elem_Cu">Cuprum</sc_element> (about 85 %).] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "manganin">Manganin</sc_element> </b> - thermostable <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Cu">Cuprum</sc_element> (about 85 %).] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -1312,14 +1313,14 @@ manganin
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Cu;;
+			-> subst_Cu;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Cu;
-=> nrel_alloy_component: elem_Ni;
-=> nrel_alloy_component: elem_Mg;
+=> nrel_alloy_component: subst_Cu;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Mg;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;
@@ -1580,12 +1581,12 @@ nichrome
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "nichrome">Нихром</sc_element> </b> - <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "elem_Ni">никеля </sc_element> и<sc_element sys_idtf  = "elem_Cr">хрома </sc_element> .] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "nichrome">Нихром</sc_element> </b> - <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Ni">никеля </sc_element> и<sc_element sys_idtf  = "subst_Cr">хрома </sc_element> .] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "nichrome">Nichrome</sc_element> </b> - <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "elem_Ni">Niccolum </sc_element> and <sc_element sys_idtf  = "elem_Cr">Chromium</sc_element> .] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "nichrome">Nichrome</sc_element> </b> - <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Ni">Niccolum </sc_element> and <sc_element sys_idtf  = "subst_Cr">Chromium</sc_element> .] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -1594,17 +1595,17 @@ nichrome
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Cr;;
-			-> elem_Ni;;
+			-> subst_Cr;;
+			-> subst_Ni;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Cr;
-=> nrel_alloy_component: elem_Ni;
-=> nrel_alloy_component: elem_Mg;
-=> nrel_alloy_component: elem_Si;
-=> nrel_alloy_component: elem_Fe;
+=> nrel_alloy_component: subst_Cr;
+=> nrel_alloy_component: subst_Ni;
+=> nrel_alloy_component: subst_Mg;
+=> nrel_alloy_component: subst_Si;
+=> nrel_alloy_component: subst_Fe;
 => nrel_melting_temperature:...
 	(*
 	<-quantity;;
@@ -1679,12 +1680,12 @@ pobedit
 		
 		<= nrel_sc_text_translation:...
 		(* 
-			-> rrel_example:[<b><sc_element sys_idtf  = "pobedit">Победит</sc_element> </b> - твёрдый <sc_element sys_idtf  = "alloy">сплав</sc_element> карбида вольфрама и <sc_element sys_idtf  = "elem_Co">кобальта</sc_element> в массовом соотношении 96:4.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "pobedit">Победит</sc_element> </b> - твёрдый <sc_element sys_idtf  = "alloy">сплав</sc_element> карбида вольфрама и <sc_element sys_idtf  = "subst_Co">кобальта</sc_element> в массовом соотношении 96:4.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-			-> rrel_example:[<b><sc_element sys_idtf  = "pobedit">Pobedit</sc_element> </b> - solid <sc_element sys_idtf  = "alloy">alloy</sc_element> tungsten carbide and <sc_element sys_idtf  = "elem_Co">Cobaltum</sc_element> in a weight ratio of 96: 4.] 
+			-> rrel_example:[<b><sc_element sys_idtf  = "pobedit">Pobedit</sc_element> </b> - solid <sc_element sys_idtf  = "alloy">alloy</sc_element> tungsten carbide and <sc_element sys_idtf  = "subst_Co">Cobaltum</sc_element> in a weight ratio of 96: 4.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -1693,12 +1694,12 @@ pobedit
 		
 		<= nrel_using_constants:...
 		(*
-			-> elem_Co;;
+			-> subst_Co;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Co;
+=> nrel_alloy_component: subst_Co;
  
 
 <- alloy;
@@ -1919,12 +1920,12 @@ steel
 		
 		<= nrel_sc_text_translation:...
 		(* 
-		-> rrel_example:[<b><sc_element sys_idtf  = "steel">Сталь</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "elem_Fe">железа</sc_element> с <sc_element sys_idtf  = "elem_C">углеродом</sc_element> (и другими элементами).] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "steel">Сталь</sc_element> </b>- <sc_element sys_idtf  = "alloy">сплав</sc_element> <sc_element sys_idtf  = "subst_Fe">железа</sc_element> с <sc_element sys_idtf  = "subst_C">углеродом</sc_element> (и другими элементами).] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-		-> rrel_example:[<b><sc_element sys_idtf  = "steel">Steel</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "elem_Fe">Ferrum</sc_element> with <sc_element sys_idtf  = "elem_C">carbon</sc_element> (and other elements).] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "steel">Steel</sc_element> </b>- <sc_element sys_idtf  = "alloy">alloy</sc_element> <sc_element sys_idtf  = "subst_Fe">Ferrum</sc_element> with <sc_element sys_idtf  = "subst_C">carbon</sc_element> (and other elements).] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -1934,18 +1935,18 @@ steel
 		<= nrel_using_constants:...
 		(*
 			-> chemical_element;;
-			-> elem_Fe;;
-			-> elem_C;;
+			-> subst_Fe;;
+			-> subst_C;;
 			-> alloy;;
 		*);;	
 	*);
 
-=> nrel_alloy_component: elem_Fe;
-=> nrel_alloy_component: elem_C;
-=> nrel_alloy_component: elem_P;
-=> nrel_alloy_component: elem_Mn;
-=> nrel_alloy_component: elem_S;
-=> nrel_alloy_component: elem_Si;
+=> nrel_alloy_component: subst_Fe;
+=> nrel_alloy_component: subst_C;
+=> nrel_alloy_component: subst_P;
+=> nrel_alloy_component: subst_Mn;
+=> nrel_alloy_component: subst_S;
+=> nrel_alloy_component: subst_Si;
 
 => nrel_melting_temperature:...
 	(*
@@ -2019,12 +2020,12 @@ stellite
 	<- explanation;;
 	<= nrel_sc_text_translation:...
 	(* 
-		-> rrel_example:[<b><sc_element sys_idtf  = "stellite">Стеллит</sc_element> </b>- сверхтвердый <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "elem_Co">кобальта</sc_element> и <sc_element sys_idtf  = "elem_Cr">хрома</sc_element> с добавками <sc_element sys_idtf  = "elem_W">вольфрама</sc_element> и/или <sc_element sys_idtf  = "elem_Mo"> молибдена</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "stellite">Стеллит</sc_element> </b>- сверхтвердый <sc_element sys_idtf  = "alloy">сплав</sc_element> на основе <sc_element sys_idtf  = "subst_Co">кобальта</sc_element> и <sc_element sys_idtf  = "subst_Cr">хрома</sc_element> с добавками <sc_element sys_idtf  = "subst_W">вольфрама</sc_element> и/или <sc_element sys_idtf  = "subst_Mo"> молибдена</sc_element>.] 
 			(* 
 			<-lang_ru;; 
 			=> nrel_format: format_html;;
 			*);;
-		-> rrel_example:[<b><sc_element sys_idtf  = "stellite">Stellite</sc_element> </b>- superhard <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "elem_Co">Cobaltum</sc_element> and <sc_element sys_idtf  = "elem_Cr">Chromium</sc_element> with additives <sc_element sys_idtf  = "elem_W">Wolframium</sc_element> and/or <sc_element sys_idtf  = "elem_Mo"> Molybdaenum</sc_element>.] 
+		-> rrel_example:[<b><sc_element sys_idtf  = "stellite">Stellite</sc_element> </b>- superhard <sc_element sys_idtf  = "alloy">alloy</sc_element> on the basis of <sc_element sys_idtf  = "subst_Co">Cobaltum</sc_element> and <sc_element sys_idtf  = "subst_Cr">Chromium</sc_element> with additives <sc_element sys_idtf  = "subst_W">Wolframium</sc_element> and/or <sc_element sys_idtf  = "subst_Mo"> Molybdaenum</sc_element>.] 
 			(* 
 			<-lang_en;; 
 			=> nrel_format: format_html;;
@@ -2034,10 +2035,10 @@ stellite
 	<= nrel_using_constants:...
 	(*
 		-> nrel_density_of_substance;;
-		-> elem_W;;
-		-> elem_Co;;
-		-> elem_Cr;;
-		-> elem_Mo;;
+		-> subst_W;;
+		-> subst_Co;;
+		-> subst_Cr;;
+		-> subst_Mo;;
 		-> alloy;;
 	*);;
 	
@@ -2069,7 +2070,7 @@ stellite
 
 stellite
 => nrel_alloy_component: 
-	elem_W;elem_Co;elem_Cr;elem_Mo;;
+	subst_W;subst_Co;subst_Cr;subst_Mo;;
 
 
 
@@ -2147,4 +2148,16 @@ nrel_number_of_components
 	(* <- lang_en;;	*);;
 
 nrel_alloy_component
+<- binary_relation;;
+
+
+nrel_number_of_occurrences_of_metal
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество вхождений металла*]
+	(* <- lang_ru;;	*);
+	[number of occurrences of metal*]
+	(* <- lang_en;;	*);;
+
+nrel_number_of_occurrences_of_metal
 <- binary_relation;;

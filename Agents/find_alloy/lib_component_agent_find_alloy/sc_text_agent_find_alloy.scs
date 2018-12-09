@@ -1,0 +1,6 @@
+sc_text_agent_find_alloy
+-> rrel_key_sc_element:
+	agent_find_alloy;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_find_alloy = [*^"file://agent_find_alloy.scsi"*];;

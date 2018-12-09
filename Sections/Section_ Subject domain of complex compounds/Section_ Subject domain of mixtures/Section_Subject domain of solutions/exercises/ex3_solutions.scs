@@ -3,7 +3,7 @@ ex3_solutions
 
 -> rrel_key_sc_element: salt; solution; subst_NaOH; orthophosphoric_acid;
 
-=> nrel_next: ex4_solutions;
+=> nrel_next_exercise: ex4_solutions;
 
 => nrel_main_idtf:
 	[Упражнение 3. Раздел. Предметная область растворов]
