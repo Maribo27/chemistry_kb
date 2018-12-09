@@ -21,5 +21,8 @@ ui_menu_na_view_kb_chemistry <= nrel_ui_commands_decomposition:
 	ui_menu_find_mass_of_substance;
 	ui_menu_find_melting_temperature_of_chemical_substance;
 	ui_menu_file_for_agent_find_elem_valencies;
-	ui_menu_find_mass_fraction_of_elem_in_subst
+	ui_menu_find_mass_fraction_of_elem_in_subst;
+	ui_menu_find_isomers_of_hydrocarbons;
+	ui_menu_find_ion_electric_chargel;
+	ui_menu_finding_wavelength_when_going_from_one_level_by_step
 };;
