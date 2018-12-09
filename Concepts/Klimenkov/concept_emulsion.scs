@@ -8,8 +8,9 @@ emulsion <- rrel_key_sc_element:
 		... 
 		(*
 		<- sc_definition;;
-		=> nrel_main_idtf: [Определение: эмульсия] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Definition: emulsion] (* <- lang_en;; *);;
+		=> nrel_main_idtf: [Опр.(эмульсия)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(emulsion)] (* <- lang_en;; *);;
+		<= nrel_using_constants: dispersion;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -19,11 +20,10 @@ emulsion <- rrel_key_sc_element:
 			*);;
 		*);;
 
-emulsion <= nrel_using_constants: dispersion;;
-
 emulsion <- rrel_key_sc_element:...
 		(*
-		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Утв.(эмульсия) ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(emulsion) ] (* <- lang_en;; *);;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*
@@ -34,8 +34,8 @@ emulsion <- rrel_key_sc_element:...
 
 emulsion <- rrel_key_sc_element:...
 		(*
-		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		=> nrel_main_idtf: [Утв.(эмульсия) ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(emulsion) ] (* <- lang_en;; *);;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*
