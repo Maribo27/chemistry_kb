@@ -1,0 +1,34 @@
+octose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[октозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[octose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (октозы)](* <- lang_ru;; *);
+		[Def. (octose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Октозы</sc_element></b> - класс восьмиуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Octose</sc_element></b> is eight carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (октозы)](* <- lang_ru;; *);
+		[Stat. (octose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Октозы</sc_element></b>, ноиозы и лекозы получены из <b><sc_element sys_idtf="hexose">гексоз</sc_element></b> ( <b><sc_element sys_idtf="galactose">глюкозы</sc_element></b> и маннозы) путем последовательного применения реакции удлинения углеродной цепи.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="octose">Octose</sc_element></b>, noosi and leukoses are derived from <b><sc_element sys_idtf="hexose">hexose</sc_element></b> (<b><sc_element sys_idtf="galactose">glucose</sc_element></b> and mannose) by sequentially applying the carbon chain lengthening reaction.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;

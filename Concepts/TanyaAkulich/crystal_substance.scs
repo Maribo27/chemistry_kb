@@ -1,0 +1,34 @@
+crystal_substance
+<- sc_node_not_relation;
+=> nrel_main_idtf:[кристаллическое_вещество](* <- lang_ru;; *);
+=> nrel_main_idtf:[crystal_substance](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (кристаллическое_вещество)](* <- lang_ru;; *);
+		[Def. (crystal_substance)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="crystal_substance">Кристаллическое вещество</sc_element></b> - <b><sc_element sys_idtf="solid">твердое вещество</sc_element></b>, у которого <b><sc_element sys_idtf="atom">атомы</sc_element></b> или <b><sc_element sys_idtf="molecule">молекулы</sc_element></b> образуют правильную упорядоченную <b><sc_element sys_idtf="crystal_cell">кристаллическую решетку</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="crystal_substance">Crystal substance</sc_element></b> is a <b><sc_element sys_idtf="solid">solid</sc_element></b> whose <b><sc_element sys_idtf="atom">atoms</sc_element></b> or <b><sc_element sys_idtf="molecule">molecules</sc_element></b> form a regular ordered <b><sc_element sys_idtf="crystal_cell">crystal cell</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (кристаллическое_вещество)](* <- lang_ru;; *);
+		[Stat. (crystal_substance)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Большинство <b><sc_element sys_idtf="solid">твердых веществ</sc_element></b> существует в кристаллическом состоянии, которое отличается повышенной стабильностью, но это не означает, что они имеют <b><sc_element sys_idtf="crystall">кристаллы</sc_element></b> в прямом смысле этого слова.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Most <b><sc_element sys_idtf="solid">solids</sc_element></b> exist in a crystalline state, which is highly stable, but this does not mean that they have <b><sc_element sys_idtf="crystall">crystals</sc_element></b> in the direct sense of the word.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;

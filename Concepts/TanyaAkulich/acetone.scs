@@ -1,0 +1,36 @@
+acetone
+<- sc_node_not_relation;
+=> nrel_main_idtf:[ацетон](* <- lang_ru;; *);
+=> nrel_main_idtf:[acetone](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (ацетон)](* <- lang_ru;; *);
+		[Def. (acetone)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> acetone;;
+        -> substance;;
+        -> carbonate;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">ацетон</sc_element></b> - это органическое <b><sc_element sys_idtf="substance">вещество</sc_element></b>, простейший представитель насыщенных кетонов.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">Acetone</sc_element></b> is a organic <b><sc_element sys_idtf="substance">matter</sc_element></b>, the simplest representative of saturated ketones.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (ацетон)](* <- lang_ru;; *);
+		[Stat. (acetone)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">Ацетон</sc_element></b> — <b><sc_element sys_idtf="no_color">бесцветная</sc_element></b> подвижная летучая <b><sc_element sys_idtf="liquid">жидкость</sc_element></b> с характерным резким <b><sc_element sys_idtf="smell">запахом</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="acetone">Acetone</sc_element></b> is a <b><sc_element sys_idtf="no_color">colorless</sc_element></b> mobile volatile <b><sc_element sys_idtf="liquid">liquid</sc_element></b> with a characteristic strong <b><sc_element sys_idtf="smell">odor</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;

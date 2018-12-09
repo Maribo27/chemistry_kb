@@ -1,0 +1,34 @@
+triose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[триозы](* <- lang_ru;; *);
+=> nrel_main_idtf:[triose](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (триозы)](* <- lang_ru;; *);
+		[Def. (triose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="triose">триозы</sc_element></b> - класс трехуглеродных <b><sc_element sys_idtf="monosaccharide">моносахаридов</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="triose">triose</sc_element></b> is three carbon <b><sc_element sys_idtf="monosaccharide">monosaccharide</sc_element></b> class.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (триозы)](* <- lang_ru;; *);
+		[Stat. (triose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="triose">Триозы</sc_element></b> и их производные (<b><sc_element sys_idtf="phosphate">фосфаты</sc_element></b>) — важные промежуточные <b><sc_element sys_idtf="product">продукты</sc_element></b> <b><sc_element sys_idtf="metabolism">обмена веществ</sc_element></b> у всех живых <b><sc_element sys_idtf="organism">организмов</sc_element></b>, играющие важную роль в <b><sc_element sys_idtf="cell">клеточном</sc_element></b> дыхании.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="triose">Trioses</sc_element></b> and their derivatives (<b><sc_element sys_idtf="phosphate">phosphates</sc_element></b>) are important intermediate <b><sc_element sys_idtf="product">products</sc_element></b> of <b><sc_element sys_idtf="metabolism">metabolism</sc_element></b> in all living <b><sc_element sys_idtf="organism">organisms</sc_element></b>, playing an important role in <b><sc_element sys_idtf="cell">cellular</sc_element> respiration.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
