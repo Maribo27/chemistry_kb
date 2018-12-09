@@ -1,0 +1,36 @@
+ib_component_agent_find_isomers_of_hydrocarbons
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска изомеров углеводорода]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search isomers of hydrocarbons]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_isomers_of_hydrocarbons;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_find_isomers_of_hydrocarbons; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_isomers_of_hydrocarbons;;
+
+action_find_isomers_of_hydrocarbons => nrel_main_idtf:
+	[действие. Поиска изомеров заданного углеводорода]
+	(* <- lang_ru;;	*);
+	[action. search isomers of given hydrocarbon]
+	(* <- lang_en;;	*);;

@@ -3,7 +3,7 @@ ex2_solutions
 
 -> rrel_key_sc_element: salt; solution; subst_NaOH; rrel_solute;
 
-=> nrel_next: ex3_solutions;
+=> nrel_next_exercise: ex3_solutions;
 
 => nrel_main_idtf:
 	[Упражнение 2. Раздел. Предметная область растворов]

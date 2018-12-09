@@ -1,0 +1,15 @@
+ui_menu_find_isomers_of_hydrocarbons <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти изомеры углеводорода] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find the isomers of the hydrocarbon] (* <- lang_en;;*);;
+ui_menu_find_isomers_of_hydrocarbons => ui_nrel_command_template:
+	[*
+		action_find_isomers_of_hydrocarbons _-> ._action_find_isomers_of_hydrocarbons_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_isomers_of_hydrocarbons_instance _<- question;;
+	*];;
+
+ui_menu_find_isomers_of_hydrocarbons => ui_nrel_command_lang_template: [Какие углеводороды являются изомерами: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_find_isomers_of_hydrocarbons => ui_nrel_command_lang_template: [What hydrocarbons are isomers: $ui_arg_1] (* <- lang_en;;*);;

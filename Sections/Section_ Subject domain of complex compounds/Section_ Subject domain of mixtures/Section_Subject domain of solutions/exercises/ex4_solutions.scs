@@ -3,7 +3,7 @@ ex4_solutions
 
 -> rrel_key_sc_element: potassium_chloride; solution; nitrate; subst_Ag;
 
-=> nrel_next: ex5_solutions;
+=> nrel_next_exercise: ex5_solutions;
 
 => nrel_main_idtf:
 	[Упражнение 4. Раздел. Предметная область растворов]

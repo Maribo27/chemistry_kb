@@ -19,6 +19,6 @@ peptide_bond
 	<=nrel_using_constants:...
 	(*
 		->nrel_chemical_bond;;
-		->protein; peptide; amin_acid;;
+		->protein; peptide; amino_acid;;
 	*);;
 *);;
