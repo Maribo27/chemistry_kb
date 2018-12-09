@@ -24,7 +24,7 @@ peptide
 	*);;
 	<=nrel_using_constants:...
 	(*
-		->chemical_substance; molecule; acid_residue; amin_acid; peptide_bond;;
+		->chemical_substance; molecule; acid_residue; amino_acid; peptide_bond;;
 	*);;
 *);
 //утверждение
@@ -38,7 +38,7 @@ peptide
 			[Пептиды, последовательность которых короче примерно 10-20 аминокислотных остатков, могут также называться олигопептидами; при большей длине последовательности они называются полипептидами; полипептиды могут иметь в молекуле неаминокислотные фрагменты, например углеводные остатки. Белками обычно называют полипептиды, содержащие, примерно, от 50 аминокислотных остатков с молекулярной массой более 5000-10000 дальтон.](* <-lang_ru;; *);;
 	*);;
 	-> rrel_key_sc_element: acid_residue; molecule;;
-	-> rrel_key_sc_element: amin_acid; protein;;
+	-> rrel_key_sc_element: amino_acid; protein;;
 	-> rrel_key_sc_element: oligopeptide; polypeptide;;
 *);
 <- rrel_key_sc_element:...

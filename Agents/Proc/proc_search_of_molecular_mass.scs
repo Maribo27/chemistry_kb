@@ -2,9 +2,8 @@ scp_program -> proc_search_of_molecular_mass
 (*
 	-> rrel_params: .proc_search_of_molecular_mass_params 
 	(*
-		-> rrel_1: rrel_in: rrel_fixed: _type_set;;
-		-> rrel_2: rrel_in: rrel_fixed: _substance;;
-		-> rrel_3: rrel_out: rrel_assign: _molar_mass;;
+		-> rrel_1: rrel_in: rrel_fixed: _substances_set;;
+		-> rrel_2: rrel_out: rrel_assign: _molar_mass;;
 	*);;
 
 	-> rrel_operators: .proc_search_of_molecular_mass_operatorset 
@@ -42,9 +41,9 @@ scp_program -> proc_search_of_molecular_mass
 		(*
 			<- searchElStr3;;
 		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _type_set;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substances_set;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc14;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _type;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _substance;;
 
 			=> nrel_then: .proc_search_of_molecular_mass_operator_4;;
 			=> nrel_else: .proc_search_of_molecular_mass_operator_info;;
@@ -63,7 +62,7 @@ scp_program -> proc_search_of_molecular_mass
 		(*
 			<- searchSetStr5;;
 		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _type;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc15;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;
@@ -142,7 +141,7 @@ scp_program -> proc_search_of_molecular_mass
 		(*
 			<- searchSetStr5;;
 		
-			-> rrel_1: rrel_fixed: rrel_scp_var: _type;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc15;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc16;;

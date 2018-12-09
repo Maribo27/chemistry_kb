@@ -27,7 +27,7 @@ protein
 	*);;
 	<=nrel_using_constants:...
 	(*
-		->amin_acid;;
+		->amino_acid;;
 		->peptide_bond;;
 	*);;
 *);
@@ -57,7 +57,7 @@ protein
 	*);;
 	-> rrel_key_sc_element: digestion;;
 	-> rrel_key_sc_element: enzyme;;
-	-> rrel_key_sc_element: amin_acid;nrel_decomposition;;
+	-> rrel_key_sc_element: amino_acid;nrel_decomposition;;
 *);
 <- rrel_key_sc_element:...
 (*
@@ -83,7 +83,7 @@ protein
 		->rrel_example:
 			[Молекулы белков представляют собой линейные полимеры, состоящие из остатков α-L-аминокислот (которые являются мономерами), также в состав белков могут входить модифицированные аминокислотные остатки и компоненты неаминокислотной природы.](* <-lang_ru;; *);;
 	*);;
-	-> rrel_key_sc_element: molecule; polymer; acid_residue; amin_acid;;
+	-> rrel_key_sc_element: molecule; polymer; acid_residue; amino_acid;;
 *);
 <- rrel_key_sc_element:...
 (*

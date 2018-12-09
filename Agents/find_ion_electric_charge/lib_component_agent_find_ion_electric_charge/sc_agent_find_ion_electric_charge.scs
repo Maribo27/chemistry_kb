@@ -1,0 +1,50 @@
+sc_agent_find_ion_electric_charge
+=> nrel_main_idtf:	
+	[sc-агент поиска электрического заряда заданного иона] (* <- lang_ru;; *);
+	[sc-agent search electric charge of given ion] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_find_ion_electric_charge_condition => ..sc_agent_find_ion_electric_charge_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_find_ion_electric_charge
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_find_ion_electric_charge
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_find_ion_electric_charge
+		};;
+		
+	-> sc_agent_find_ion_electric_charge_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_find_ion_electric_charge_condition
+= [*
+	action_find_ion_electric_charge _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+*];;
+
+..sc_agent_find_ion_electric_charge_result
+= [*
+	action_find_ion_electric_charge _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer_for_checking_domains_of_relation;;
+	.._question _-> .._parameter1;;
+	
+*];;

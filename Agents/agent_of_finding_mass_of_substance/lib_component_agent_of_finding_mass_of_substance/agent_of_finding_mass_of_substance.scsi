@@ -75,10 +75,10 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc14;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _substance;;
 
-			-> rrel_set_1: rrel_assign: rrel_scp_var: _type_set;;
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _substances_set;;
 
 			=> nrel_then: .agent_of_finding_mass_of_substance_operator_6x;;
-			=> nrel_else: .agent_of_finding_mass_of_substance_operator_info;;
+			=> nrel_else: .agent_of_finding_mass_of_substance_operator_error_input_parameter;;
 		*);;
 
 		-> .agent_of_finding_mass_of_substance_operator_6x
@@ -120,7 +120,7 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
 
 			=> nrel_then: .agent_of_finding_mass_of_substance_operator_9x;;
-			=> nrel_else: .agent_of_finding_mass_of_substance_operator_info;;
+			=> nrel_else: .agent_of_finding_mass_of_substance_operator_error_input_parameter;;
 		*);;
 
 		-> .agent_of_finding_mass_of_substance_operator_9x
@@ -134,7 +134,7 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_mol;;
 
 			=> nrel_then: .agent_of_finding_mass_of_substance_operator_10x;;
-			=> nrel_else: .agent_of_finding_mass_of_substance_operator_info;;
+			=> nrel_else: .agent_of_finding_mass_of_substance_operator_error_input_parameter;;
 		*);;
 
 		-> .agent_of_finding_mass_of_substance_operator_10x
@@ -148,7 +148,7 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 
 			=> nrel_then: .agent_of_finding_mass_of_substance_operator_10;;
-			=> nrel_else: .agent_of_finding_mass_of_substance_operator_info;;
+			=> nrel_else: .agent_of_finding_mass_of_substance_operator_error_input_parameter;;
 		*);;
 
 		-> .agent_of_finding_mass_of_substance_operator_6
@@ -191,7 +191,7 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_N;;
 
 			=> nrel_then: .agent_of_finding_mass_of_substance_operator_9;;
-			=> nrel_else: ..agent_of_finding_mass_of_substance_operator_info;;
+			=> nrel_else: .agent_of_finding_mass_of_substance_operator_error_input_data;;
 		*);;
 
 		-> .agent_of_finding_mass_of_substance_operator_9
@@ -225,9 +225,8 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_molecular_mass;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
 			(*
-				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _type_set;;
-				-> rrel_2: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
-				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _molar_mass;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _substances_set;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_node: _molar_mass;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set_molar;;
 			
@@ -250,7 +249,7 @@ scp_program -> agent_of_finding_mass_of_substance
 			-> rrel_1: rrel_fixed: rrel_scp_var: _molar_mass;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
 
-			=> nrel_then: .agent_of_finding_mass_of_substance_operator_info;;
+			=> nrel_then: .agent_of_finding_mass_of_substance_operator_error_input_parameter;;
 			=> nrel_else: .agent_of_finding_mass_of_substance_operator_11;;
 		*);;
 

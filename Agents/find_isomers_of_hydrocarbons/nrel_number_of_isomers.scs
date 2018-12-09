@@ -1,0 +1,5 @@
+nrel_number_of_isomers
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+[количество изомеров*](*<-lang_ru;;*);
+     [number of isomers**](*<-lang_en;;*);;

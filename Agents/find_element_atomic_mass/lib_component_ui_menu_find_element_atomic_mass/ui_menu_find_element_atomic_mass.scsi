@@ -1,5 +1,4 @@
-ui_menu_find_element_atomic_mass <- ui_user_command_class_atom; ui_user_command_class_view_kb;
-
+ui_menu_find_element_atomic_mass <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;
 => nrel_main_idtf: [Найти атомную массу заданного химического элемента] (* <- lang_ru;;*);
 => nrel_main_idtf: [Find the atomic mass of given chemical element] (* <- lang_en;;*);;
 ui_menu_find_element_atomic_mass => ui_nrel_command_template:

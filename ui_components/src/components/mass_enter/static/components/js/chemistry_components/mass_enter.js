@@ -42,13 +42,13 @@ MassEnterComponent.PaintPanel.prototype = {
 						'</div>' + 
 					'</form>' + 
 				'</div>' + 
-				'<label for="mass">Что известно?</label>' + 
+				'<label for="input_data">Что известно?</label>' + 
 				'<select id="characteristic">' + 
-    				'<option value="nrel_chemical_amount">Химической количество (в молях)</option>' + 
+    				'<option value="nrel_chemical_amount">Химическое количество (в молях)</option>' + 
     				'<option value="nrel_amount">Объём (в литрах)</option>' + 
     				'<option value="nrel_N">Количество атомов ( * 10^23)</option>' + 
     			'</select>' + 
-				'<input type="text" id="mass" name="mass" pattern="\\d+(,\\d+)?">' + 
+				'<input type="text" id="input_data" name="input_data" pattern="\\d+(,\\d+)?">' + 
 				'<button id="find" type="button">Найти массу</button>' + 
 			'</form>'
 		);
@@ -110,10 +110,10 @@ MassEnterComponent.PaintPanel.prototype = {
 			console.log('element',element);
 			var measur = $("#characteristic").val();
 			console.log('measur',measur);
-			var mass = $("#mass").val();
-			console.log('mass',mass);
-			if (mass.search(/^\d+(,\d+)?$/g) != -1) {
-				self._createElement(element, mass, measur);
+			var input_data = $("#input_data").val();
+			console.log('input_data',input_data);
+			if (input_data.search(/^\d+(,\d+)?$/g) != -1) {
+				self._createElement(element, input_data, measur);
 			} else {
 				alert('Wrong input!');
 			}
@@ -217,14 +217,7 @@ MassEnterComponent.PaintPanel.prototype = {
 				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
 					SCWeb.core.Server.resolveScAddr([m], function (key) {
-						var addr = key[m];
-						if (addr != undefined) {
-							console.log('addr exist');
-							self._createMolMeasurement(meas, addr, elementExample);
-						} else {
-							console.log('addr not exist');
-							self._createChemicalAmountNumber(m, meas, elementExample);
-						}
+						self._createChemicalAmountNumber(m, meas, elementExample);
 					});
 				});
 			});
@@ -243,14 +236,7 @@ MassEnterComponent.PaintPanel.prototype = {
 				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
 					SCWeb.core.Server.resolveScAddr([atoms], function (key) {
-						var addr = key[atoms];
-						if (addr != undefined) {
-							console.log('addr exist');
-							self._createMeasurement(meas, addr, elementExample);
-						} else {
-							console.log('addr not exist');
-							self._createNumber(atoms, meas, elementExample);
-						}
+						self._createNumber(atoms, meas, elementExample);
 					});
 				});
 			});
@@ -269,14 +255,7 @@ MassEnterComponent.PaintPanel.prototype = {
 				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
 					SCWeb.core.Server.resolveScAddr([amount], function (key) {
-						var addr = key[amount];
-						if (addr != undefined) {
-							console.log('addr exist');
-							self._createLiterMeasurement(meas, addr, elementExample);
-						} else {
-							console.log('addr not exist');
-							self._createAmountNumber(amount, meas, elementExample);
-						}
+						self._createAmountNumber(amount, meas, elementExample);
 					});
 				});
 			});

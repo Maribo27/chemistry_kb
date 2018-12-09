@@ -22,7 +22,8 @@ scp_program -> agent_finding_the_amount_of_energy_for_the_electron_transition
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
-			=> nrel_goto: ..agent_finding_the_amount_of_energy_for_the_electron_transition_operator1B;;
+			=> nrel_then: ..agent_finding_the_amount_of_energy_for_the_electron_transition_operator1B;;
+			=> nrel_else: ..agent_finding_the_amount_of_energy_for_the_electron_transition_operator_return;;
 			*);;
 
 		-> ..agent_finding_the_amount_of_energy_for_the_electron_transition_operator1B
