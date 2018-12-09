@@ -1,0 +1,6 @@
+sc_text_agent_find_mass_fraction_of_elem_in_subst
+-> rrel_key_sc_element:
+	agent_find_mass_fraction_of_elem_in_subst;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_find_mass_fraction_of_elem_in_subst = [*^"file://agent_find_mass_fraction_of_elem_in_subst.scsi"*];;

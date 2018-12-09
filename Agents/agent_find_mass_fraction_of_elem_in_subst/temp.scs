@@ -1,0 +1,22 @@
+test_C3O4
+	=>nrel_main_idtf:[H3O4](*<-lang_en;;*);;
+
+atomic_multiplicity_three->(test_C3O4->elem_H);;
+atomic_multiplicity_four->(test_C3O4->elem_O);;
+
+nrel_mass_fraction
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[массовая доля элемента в веществе*];;
+
+rrel_elem
+<-sc_node_role_relation;
+=>nrel_main_idtf:
+	[элемент'](*<-lang_ru;;*);
+	[element'](*<-lang_en;;*);;
+
+rrel_subst
+<-sc_node_role_relation;
+=>nrel_main_idtf:
+	[вещество'](*<-lang_ru;;*);
+	[substance'](*<-lang_en;;*);;
+

@@ -1,7 +1,9 @@
 sc_agent_find_element_atomic_mass
 => nrel_main_idtf:	
-	[sc-агент поиска атомной массы заданного химического элемента] (* <- lang_ru;; *);
-	[sc-agent search atomic mass of given chemical element] (* <- lang_en;; *);
+	[sc-агент поиска атомной массы заданного химического элемента]
+	(* <- lang_ru;; *);
+	[sc-agent search atomic mass of given chemical element]
+	(* <- lang_en;; *);
 	
 <- abstract_sc_agent;
 
@@ -27,7 +29,7 @@ sc_agent_find_element_atomic_mass
 		agent_find_element_atomic_mass
 		};;
 		
-	-> sc_agent_find_element_atomic_mass_scp 
+	-> sc_agent_find_element_atomic_mass 
 		(* <- active_sc_agent;; *);;
 	*);;
 

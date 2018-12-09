@@ -1,0 +1,34 @@
+natural_disaccharide
+<- sc_node_not_relation;
+=> nrel_main_idtf:[природный_дисахарид](* <- lang_ru;; *);
+=> nrel_main_idtf:[natural_disaccharide](* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (природный_дисахарид)](* <- lang_ru;; *);
+		[Def. (natural_disaccharide)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="natural_disaccharide">Природный дисахарид</sc_element></b> - <b><sc_element sys_idtf="disaccharide">дисахарид</sc_element></b>, встречающийся в природе.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="natural_disaccharide">natural_disaccharide</sc_element></b> is  naturally occuring <b><sc_element sys_idtf="disaccharide">disaccharide</sc_element></b>.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (природный_дисахарид)](* <- lang_ru;; *);
+		[Stat. (natural_disaccharide)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[Обычно <b><sc_element sys_idtf="disaccharide">дисахарид</sc_element></b> получают из природных источников (например, <b><sc_element sys_idtf="sucrose">сахарозу</sc_element></b> — из сахарной свёклы или сахарного тростника, лактозу — из молока животных).](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="disaccharide">Disaccharides</sc_element></b> are usually obtained from natural sources (for example, <b><sc_element sys_idtf="sucrose">sucrose</sc_element></b> - from sugar beet or sugar cane, lactose - from animal milk).](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;

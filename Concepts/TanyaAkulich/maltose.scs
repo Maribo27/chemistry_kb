@@ -1,0 +1,35 @@
+maltose
+<- sc_node_not_relation;
+=> nrel_main_idtf:[мальтоза](* <- lang_ru;; *);
+=> nrel_main_idtf:[maltose](* <- lang_en;; *);
+=> nrel_idtf:[солодовый сахар](* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (мальтоза)](* <- lang_ru;; *);
+		[Def. (maltose)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> monosaccharide;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="maltose">мальтоза</sc_element></b> - <b><sc_element sys_idtf="natural_disaccharide">природный дисахарид</sc_element></b>, состоящий из двух остатков <b><sc_element sys_idtf="glucose">глюкозы</sc_element></b>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="maltose">maltose</sc_element></b> is <b><sc_element sys_idtf="natural_disaccharide">natural disaccharide</sc_element></b> consisting of two <b><sc_element sys_idtf="glucose">glucose</sc_element></b> residues.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+		[Утв. (мальтоза)](* <- lang_ru;; *);
+		[Stat. (maltose)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[В животном и растительном <b><sc_element sys_idtf="organism">организмах</sc_element></b> <b><sc_element sys_idtf="maltose">мальтоза</sc_element></b> образуется при <b><sc_element sys_idtf="enzyme">ферментативном</sc_element></b> расщеплении <b><sc_element sys_idtf="starch">крахмала</sc_element></b> и гликогена.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In animal and plant <b><sc_element sys_idtf="organism">organisms</sc_element></b>, <b><sc_element sys_idtf="maltose">maltose</sc_element></b> is formed by <b><sc_element sys_idtf="enzyme">enzymatic</sc_element></b> breakdown of <b><sc_element sys_idtf="starch">starch</sc_element></b> and glycogen.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
