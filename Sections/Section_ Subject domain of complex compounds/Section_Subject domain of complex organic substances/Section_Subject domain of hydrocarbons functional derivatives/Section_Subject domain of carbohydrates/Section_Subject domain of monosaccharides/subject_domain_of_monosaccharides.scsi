@@ -47,7 +47,9 @@ Definition_of_monosaccharide
 		[Def. (monosaccharide)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
-		-> chemical_substance;;
+		-> organic_compound;;
+		-> monosaccharide;;
+		-> carbohydrate;;
 	*);;
 	<= nrel_sc_text_translation:...
 	(*
@@ -84,7 +86,6 @@ acetone
 	(*
 		-> acetone;;
         -> substance;;
-        -> carbonate;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -119,6 +120,7 @@ aldose
 		[Def. (aldose)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
+		-> aldose;;
 		-> monosaccharide;;
 	*);;
 	<= nrel_sc_text_translation:...
@@ -193,7 +195,11 @@ crystal_substance
 		[Def. (crystal_substance)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
-		-> monosaccharide;;
+		-> crystal_substance;;
+		-> solid;;
+		-> atom;;
+		-> molecule;;
+		-> crystal_cell;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -228,6 +234,7 @@ formalin
       [Опр. (формалин)] (* <- lang_ru;; *);
       [Def. (formalin)] (* <- lang_en;; *);;
     <= nrel_using_constants: ... (*
+      -> formalin;;
       -> methanol;;
     *);;
     <= nrel_sc_text_translation: ... (*
@@ -261,6 +268,9 @@ galactose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> galactose;;
+		-> hexose;;
+		-> disaccharide;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -297,6 +307,9 @@ glucose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> glucose;;
+		-> nrel_hydrolysis;;
+		-> disaccharide;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -331,6 +344,7 @@ glycogen
 		[Def. (glycogen)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
+		-> glycogen;;
 		-> glucose;;
 	*);;
 	<= nrel_sc_text_translation:...
@@ -367,6 +381,7 @@ heptose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> heptose;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -402,6 +417,7 @@ hexose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> hexose;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -437,6 +453,8 @@ ketose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> ketose;;
+		-> ketone;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -510,7 +528,9 @@ maltose
 		[Def. (maltose)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
-		-> monosaccharide;;
+		-> natural_disaccharide;;
+		-> maltose;;
+		-> glucose;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -545,7 +565,8 @@ natural_disaccharide
 		[Def. (natural_disaccharide)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
-		-> monosaccharide;;
+		-> natural_disaccharide;;
+		-> disaccharide;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -623,6 +644,7 @@ octose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> octose;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -657,6 +679,7 @@ pentose
 		[Def. (pentose)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
+		-> pentose;;
 		-> monosaccharide;;
 	*);;
 	<= nrel_sc_text_translation:...
@@ -730,6 +753,7 @@ tetrose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> tetrose;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
@@ -765,6 +789,7 @@ triose
 	<= nrel_using_constants:...
 	(*
 		-> monosaccharide;;
+		-> triose;;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
