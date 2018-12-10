@@ -20,12 +20,10 @@ SolubilityTableComponent.PaintPanel = function (containerId) {
 SolubilityTableComponent.PaintPanel.prototype = {
 
     init: function () {
-	console.log("Init component");
         this._initMarkup(this.containerId);
     },
 
     _initMarkup: function (containerId) {
-	console.log("Init Markup");
         var container = $('#' + containerId);
         var ids = ["anion", "cation"];
 
@@ -75,10 +73,7 @@ SolubilityTableComponent.PaintPanel.prototype = {
 	});
 
 	result = `<h4 class="solubility-table-title">Таблица растворимости кислот, солей и оснований в воде</h4>
-		<table class="solubility-table">${res}</table>
-		<div>
-			
-		</div>`;
+		<table class="solubility-table">${res}</table>`;
 
         container.html(result);
     	},
