@@ -1,0 +1,211 @@
+agent_finding_density_of_substance
+=>nrel_main_idtf:
+    [агентная scp-программа поиска плотности заданного вещества] (* <- lang_ru;; *);
+	[agent scp-program search density of given substance] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_finding_density_of_substance
+(*
+    ->rrel_params: .agent_finding_density_of_substance_params
+    (*
+        ->rrel_1:rrel_in:_event;;
+        ->rrel_2:rrel_in:_input_arc;;
+    *);;
+
+    ->rrel_operators: .agent_finding_density_of_substance_operator_set
+    (*
+        ->rrel_init:.agent_finding_density_of_substance_operator1A
+        (*
+            <-searchElStr3;;
+
+            ->rrel_1:rrel_assign:rrel_scp_var:_temp;;
+            ->rrel_2:rrel_fixed:rrel_scp_var:_input_arc;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_quest;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator1B;;
+            =>nrel_else:.agent_finding_density_of_substance_operator_return;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1B
+        (*
+            <-searchElStr3;;
+
+            ->rrel_1:rrel_fixed:rrel_scp_const:action_finding_density_of_substance;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc1;;
+            ->rrel_3:rrel_fixed:rrel_scp_var:_quest;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator1C;;
+            =>nrel_else:.agent_finding_density_of_substance_operator_return;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1C
+        (*
+            <-searchElStr3;;
+            
+            ->rrel_1:rrel_fixed:rrel_scp_var:_quest;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_pattern;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator_gen_answer;;
+            //=>nrel_else:.agent_finding_density_of_substance_operator_message;;
+            =>nrel_else:.agent_finding_density_of_substance_operator_return;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator_gen_answer
+        (*
+            <-genEl;;
+
+            ->rrel_1:rrel_assign:rrel_node:rrel_const:rrel_scp_var:_answer_for_checking_domains_of_relation;;
+
+            =>nrel_goto:.agent_finding_density_of_substance_operator1D1;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1D1
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _pattern;;
+
+            => nrel_goto: .agent_finding_density_of_substance_operator1D1_2;;         
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1D1_2
+        (*
+            <-genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_density_of_given_substance;;
+
+            => nrel_goto: .agent_finding_density_of_substance_operator1D2;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1D2
+        (*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _node;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_density_of_substance;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator1D3;;
+            =>nrel_else:.agent_finding_density_of_substance_operator_return;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1D3
+        (*
+            <-searchElStr5;;
+            ->rrel_1:rrel_assign:rrel_scp_var:_measure;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_common:_arc1;;
+            ->rrel_3:rrel_fixed:rrel_scp_var:_node;;
+            ->rrel_4:rrel_assign:rrel_scp_var:rrel_const:rrel_pos_const_perm:_arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const: nrel_measurement;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator1D4;;
+            =>nrel_else:.agent_finding_density_of_substance_operator_return;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1D4
+        (*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _measure;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _value;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: rrel_gram_per_cubic_cm;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator1D5;;
+            =>nrel_else:.agent_finding_density_of_substance_operator_return;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1D5_0
+        (*
+            <-searchElStr5;;
+            ->rrel_1:rrel_fixed:rrel_scp_var:_value;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_const:rrel_common:_common;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_temp_link;;
+            ->rrel_4:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const:nrel_main_idtf;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator1Dc;;
+            =>nrel_else: .agent_finding_density_of_substance_operator_return;;
+        *);;
+        ->.agent_finding_density_of_substance_operator1D5
+        (*
+            <-genElStr5;;
+            ->rrel_1:rrel_fixed:rrel_scp_var:_pattern;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_const:rrel_common:_common;;
+            ->rrel_3:rrel_fixed:rrel_scp_var:_value;;
+            ->rrel_4:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const:nrel_density_of_given_substance;;
+
+            =>nrel_goto:.agent_finding_density_of_substance_operator1D6;;
+        *);;
+
+        ->.agent_finding_density_of_substance_operator1D6
+        (*
+            <-searchSetStr5;;
+            ->rrel_1:rrel_fixed:rrel_scp_var:_pattern;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_common:_arc1;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_value;;
+            ->rrel_4:rrel_assign:rrel_scp_var:rrel_pos_const_perm:_arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const:nrel_density_of_given_substance;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator1Dc;;
+            =>nrel_else:.agent_finding_density_of_substance_operator_return;;
+        *);;
+        -> .agent_finding_density_of_substance_operator1Dc
+        (*
+            <-genElStr5;;
+
+            ->rrel_1:rrel_fixed:rrel_scp_var:_value;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_const:rrel_common:_arc1;;
+            ->rrel_3:rrel_assign:rrel_scp_var:_temp_link;;
+            ->rrel_4:rrel_assign:rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const:nrel_main_idtf;;
+
+            =>nrel_goto:.agent_finding_density_of_substance_operator1Dc2;;
+        *);;
+        -> .agent_finding_density_of_substance_operator1Dc2
+        (*
+            <-searchSetStr5;;
+
+            ->rrel_1:rrel_fixed:rrel_scp_var:_value;;
+            ->rrel_2:rrel_assign:rrel_scp_var:rrel_const:rrel_common:_arc1;;
+            ->rrel_3:rrel_fixes:rrel_scp_var:_temp_link;;
+            ->rrel_4:rrel_assign:rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            ->rrel_5:rrel_fixed:rrel_scp_const:nrel_main_idtf;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+
+            =>nrel_then:.agent_finding_density_of_substance_operator_answer;;
+            =>nrel_else: .agent_finding_density_of_substance_operator_return;;
+        *);;
+        -> .agent_finding_density_of_substance_operator_answer
+            (*
+            <- genElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common:_arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;                         
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+            => nrel_goto: .agent_finding_density_of_substance_operator_return;;
+            *);;
+
+        -> .agent_finding_density_of_substance_operator_return
+            (*
+            <- return;;
+            *);;
+    *);;
+*);;
