@@ -2,8 +2,10 @@ ui_external_languages ->
 	alloy_ui_component;
 	pencil_component;
 	enter_component;
+    mass_enter_component;
     ui_periodic_table;
     solution_component;
+    salt_component;
     electronLayer_ui_component;
     wavelength_ui_component;;
 
@@ -16,16 +18,23 @@ alloy_ui_component
 
 pencil_component 
 => nrel_main_idtf:
-    [Компонент отображения состава предмета]
+    [Узнать состав предмета]
     (*<- lang_ru;;*);
-	[Visual component of the object composition]
+	[Learn object composition]
 	(* <- lang_en;;	*);;
+
+mass_enter_component 
+=> nrel_main_idtf:
+    [Поиск массы вещества]
+    (*<- lang_ru;;*);
+    [Find mass of substance]
+    (* <- lang_en;; *);;
 
 enter_component 
 => nrel_main_idtf:
-    [Компонент ввода для задач]
+    [Поиск химического количества вещества]
     (*<- lang_ru;;*);
-	[Visual component of the data entering]
+	[Find chemical amount of substance]
 	(* <- lang_en;;	*);;
 
 ui_periodic_table
@@ -40,6 +49,13 @@ solution_component
     [Solutions section commands]
     (* <- lang_en;; *);;
 
+salt_component 
+=> nrel_main_idtf:
+    [Команды раздела солей]
+    (*<- lang_ru;;*);
+    [Salts section commands]
+    (* <- lang_rn;; *);;
+
 electronLayer_ui_component 
 => nrel_main_idtf:
     [Компонент построения внешнего электронного слоя атома]
@@ -53,3 +69,10 @@ wavelength_ui_component
     (*<- lang_ru;;*);
     [wavelengths section commands]
     (* <- lang_en;; *);;
+
+ui_solubility_table
+<- ui_user_command_class_noatom;
+<- ui_external_languages;
+=> nrel_main_idtf:
+	[Таблица растворимости] (* <- lang_ru;; *);
+	[Solubility table] (* <- lang_en;; *);;

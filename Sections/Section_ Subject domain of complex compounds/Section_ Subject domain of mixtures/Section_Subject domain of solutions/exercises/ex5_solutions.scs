@@ -3,6 +3,8 @@ ex5_solutions
 
 -> rrel_key_sc_element: metasilicic_acid; carbonic_acid; nrel_hydrolysis; sodium_carbonate; silicate; subst_Na; salt; solution;
 
+=> nrel_next_exercise: ex6_solutions;
+
 => nrel_main_idtf:
 	[Упражнение 5. Раздел. Предметная область растворов]
 	(* <- lang_ru;; *);

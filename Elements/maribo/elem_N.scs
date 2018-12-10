@@ -44,7 +44,7 @@ elem_N
 (*
 	-> protein;;
 	-> nucleic_acid;;
-	-> amin_acid;;
+	-> amino_acid;;
 	-> nucleoprotein;;
 	-> chlorophyll;;
 	-> hemoglobin;;

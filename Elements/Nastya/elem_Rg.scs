@@ -33,7 +33,7 @@ elem_Rg
 <- transition_metal;
 <- copper_group;
 
-=> nrel_periodic_number: 111;
+=> nrel_periodic_number: one_hundred_and_eleven;
 <- group_eleven;
 <- period_seven;
 

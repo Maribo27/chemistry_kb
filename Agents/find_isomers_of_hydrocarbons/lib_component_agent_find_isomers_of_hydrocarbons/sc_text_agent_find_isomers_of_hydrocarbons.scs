@@ -1,0 +1,6 @@
+sc_text_agent_find_isomers_of_hydrocarbons
+-> rrel_key_sc_element:
+	agent_find_find_isomers_of_hydrocarbons;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_find_isomers_of_hydrocarbons = [*^"file://agent_find_isomers_of_hydrocarbons.scsi"*];;

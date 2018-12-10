@@ -1,0 +1,37 @@
+lib_component_agent_of_finding_mass_of_substance
+=> nrel_main_idtf:
+	[Компонент библиотеки. SC-агент поиск массы вещества]
+	(* <- lang_ru;; *);
+	[Library component. SC-agent find mass of substance]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_mass_of_substance;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_mass_of_substance; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_mass_of_substance;;
+
+action_find_mass_of_substance => nrel_main_idtf:
+	[Действие. Поиск массы вещества]
+	(* <- lang_ru;;	*);
+	[Action. Search mass of substance]
+	(* <- lang_en;;	*);;
+

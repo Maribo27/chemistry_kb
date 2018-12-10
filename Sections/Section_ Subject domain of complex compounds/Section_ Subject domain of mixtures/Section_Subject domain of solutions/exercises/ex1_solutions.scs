@@ -3,7 +3,7 @@ ex1_solutions
 
 -> rrel_key_sc_element: solution; sulfuric_acid; water;
 
-=> nrel_next: ex2_solutions;
+=> nrel_next_exercise: ex2_solutions;
 
 => nrel_main_idtf:
 	[Упражнение 1. Раздел. Предметная область растворов]

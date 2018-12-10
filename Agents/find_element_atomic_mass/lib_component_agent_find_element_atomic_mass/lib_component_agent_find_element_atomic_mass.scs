@@ -5,11 +5,9 @@ lib_component_agent_find_element_atomic_mass
 	[Library component. sc-agent search atomic mass of given chemical element]
 	(* <- lang_en;; *);
 
-<- library_of_platform_independent_reusable_components; 
-<- library_of_atomic_reusable_components;
-
-=> nrel_attendant_component: 
-	lib_component_ui_menu_find_element_atomic_mass;
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
 
 -> rrel_key_sc_element: 
 	.platform_independent_realization_of_sc_agent_find_element_atomic_mass; 

@@ -42,8 +42,13 @@ EnterComponent.PaintPanel.prototype = {
 						'</div>' + 
 					'</form>' + 
 				'</div>' + 
-				'<label for="mass">Введите массу (в граммах):</label>' + 
-				'<input type="text" id="mass" name="mass" pattern="\\d+(,\\d+)?">' + 
+				'<label for="input_data">Что известно?</label>' + 
+				'<select id="characteristic">' + 
+    				'<option value="nrel_mass">Масса (в граммах)</option>' + 
+    				'<option value="nrel_amount">Объём (в литрах)</option>' + 
+    				'<option value="nrel_N">Количество атомов ( * 10^23)</option>' + 
+    			'</select>' + 
+				'<input type="text" id="input_data" name="input_data" pattern="\\d+(,\\d+)?">' + 
 				'<button id="find" type="button">Найти химическое количество</button>' + 
 			'</form>'
 		);
@@ -103,10 +108,12 @@ EnterComponent.PaintPanel.prototype = {
 		$('#find').click(function () {
 			var element = $("#sysId").val();
 			console.log('element',element);
-			var mass = $("#mass").val();
-			console.log('mass',mass);
-			if (mass.search(/^\d+(,\d+)?$/g) != -1) {
-				self._createElement(element, mass);
+			var measur = $("#characteristic").val();
+			console.log('measur',measur);
+			var input_data = $("#input_data").val();
+			console.log('input_data',input_data);
+			if (input_data.search(/^\d+(,\d+)?$/g) != -1) {
+				self._createElement(element, input_data, measur);
 			} else {
 				alert('Wrong input!');
 			}
@@ -125,7 +132,7 @@ EnterComponent.PaintPanel.prototype = {
 		});
 	},
 
-	_createElement: function (el, m) {
+	_createElement: function (el, m, measur) {
 		console.log('creating element');
 		var self = this;
 		var element = parseInt(el);
@@ -139,33 +146,66 @@ EnterComponent.PaintPanel.prototype = {
 					console.log('create arc:',commonArcOne);
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, window.scKeynodes.nrel_system_identifier, commonArcOne);
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, element, elementExample);
-					self._createValue(elementExample, m);
+					self._createValue(elementExample, m, measur);
 				});
 			});
 		});
 	},
 
-	_createValue: function(elementExample, m) {
+	_createValue: function(elementExample, m, measur) {
 		console.log('creating value');
 		var self = this;
+		if (measur === "nrel_mass") {
+			SCWeb.core.Server.resolveScAddr(['value', 'nrel_mass', 'lang_ru'], function (keynodes) {
+				var nrelMass = keynodes['nrel_mass'];
+				var value = keynodes['value'];
+				var lang = keynodes['lang_ru'];
 
-		SCWeb.core.Server.resolveScAddr(['value', 'nrel_mass', 'lang_ru'], function (keynodes) {
-			var nrelMass = keynodes['nrel_mass'];
-			var value = keynodes['value'];
-			var lang = keynodes['lang_ru'];
-
-			window.sctpClient.create_node(sc_type_const).done(function (val) {
-				console.log('create node val:',val);
-				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, elementExample, val).done(function (commonArcTwo) {
-					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMass, commonArcTwo);
-					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, value, val);
-					self._createMeasurement(val, m, elementExample);
+				window.sctpClient.create_node(sc_type_const).done(function (val) {
+					console.log('create node val:',val);
+					window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, elementExample, val).done(function (commonArcTwo) {
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMass, commonArcTwo);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, value, val);
+						self._createMassMeasurement(val, m, elementExample);
+					});
 				});
 			});
-		});
+		}
+		if (measur === "nrel_amount") {
+			SCWeb.core.Server.resolveScAddr(['value', 'nrel_amount', 'lang_ru'], function (keynodes) {
+				var nrelAmount = keynodes['nrel_amount'];
+				var value = keynodes['value'];
+				var lang = keynodes['lang_ru'];
+
+				window.sctpClient.create_node(sc_type_const).done(function (val) {
+					console.log('create node val:',val);
+					window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, elementExample, val).done(function (commonArcTwo) {
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelAmount, commonArcTwo);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, value, val);
+						self._createAmountMeasurement(val, m, elementExample);
+					});
+				});
+			});
+		}
+		if (measur === "nrel_N") {
+			SCWeb.core.Server.resolveScAddr(['value', 'nrel_N', 'lang_ru'], function (keynodes) {
+				var nrelN = keynodes['nrel_N'];
+				var value = keynodes['value'];
+				var lang = keynodes['lang_ru'];
+
+				window.sctpClient.create_node(sc_type_const).done(function (val) {
+					console.log('create node val:',val);
+					window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, elementExample, val).done(function (commonArcTwo) {
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelN, commonArcTwo);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, value, val);
+						self._createAtomsMeasurement(val, m, elementExample);
+					});
+				});
+			});
+		}
 	},
 
-	_createMeasurement: function (val, m, elementExample) {
+	_createMassMeasurement: function (val, m, elementExample) {
 		console.log('creating measurements');
 		var self = this;    	
 
@@ -177,14 +217,45 @@ EnterComponent.PaintPanel.prototype = {
 				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
 					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
 					SCWeb.core.Server.resolveScAddr([m], function (key) {
-						var addr = key[m];
-						if (addr != undefined) {
-							console.log('addr exist');
-							self._createGramMeasurement(meas, addr, elementExample);
-						} else {
-							console.log('addr not exist');
-							self._createNumber(m, meas, elementExample);
-						}
+						self._createMassNumber(m, meas, elementExample);
+					});
+				});
+			});
+		});
+	},
+
+	_createAtomsMeasurement: function (val, atoms, elementExample) {
+		console.log('creating measurements');
+		var self = this;    	
+
+		SCWeb.core.Server.resolveScAddr(['nrel_measurement'], function (keynodes) {
+			var nrelMeasurement = keynodes['nrel_measurement'];
+
+			window.sctpClient.create_node(sc_type_const).done(function (meas) {
+				console.log('create node meas:',meas);
+				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
+					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
+					SCWeb.core.Server.resolveScAddr([atoms], function (key) {
+						self._createNumber(atoms, meas, elementExample);
+					});
+				});
+			});
+		});
+	},
+
+	_createAmountMeasurement: function (val, amount, elementExample) {
+		console.log('creating measurements');
+		var self = this;    	
+
+		SCWeb.core.Server.resolveScAddr(['nrel_measurement'], function (keynodes) {
+			var nrelMeasurement = keynodes['nrel_measurement'];
+
+			window.sctpClient.create_node(sc_type_const).done(function (meas) {
+				console.log('create node meas:',meas);
+				window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, meas, val).done(function (commonArcThree) {
+					window.sctpClient.create_arc(sc_type_arc_pos_const_perm, nrelMeasurement, commonArcThree);
+					SCWeb.core.Server.resolveScAddr([amount], function (key) {
+						self._createAmountNumber(amount, meas, elementExample);
 					});
 				});
 			});
@@ -192,6 +263,38 @@ EnterComponent.PaintPanel.prototype = {
 	},
 
 	_createNumber: function (m, meas, elementExample) {
+		console.log('creating number');
+		var self = this;    	
+
+		SCWeb.core.Server.resolveScAddr(['number', 'lang_ru', 'lang_en'], function (keynodes) {
+			var number = keynodes['number'];
+			var lang_ru = keynodes['lang_ru'];
+			var lang_en = keynodes['lang_en'];
+		
+			window.sctpClient.create_node(sc_type_const).done(function (num) {
+				console.log('create node num:',num);
+				window.sctpClient.create_link().done(function (numName) {
+					console.log('create link numName:',numName);
+					window.sctpClient.set_link_content(numName, m);
+					window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, num, numName).done(function (commonArcFour) {
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, window.scKeynodes.nrel_system_identifier, commonArcFour);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, number, num);
+						self._createMeasurement(meas, num, elementExample);
+					});
+				});
+				window.sctpClient.create_link().done(function (link_addr) {
+					window.sctpClient.set_link_content(link_addr, m);
+					window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, num, link_addr).done(function (arc_addr) {
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, lang_ru, link_addr);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, lang_en, link_addr);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, window.scKeynodes.nrel_main_idtf, arc_addr);
+					});
+				});
+			});
+		});
+	},
+
+	_createMassNumber: function (m, meas, elementExample) {
 		console.log('creating number');
 		var self = this;    	
 
@@ -223,13 +326,71 @@ EnterComponent.PaintPanel.prototype = {
 		});
 	},
 
+	_createAmountNumber: function (m, meas, elementExample) {
+		console.log('creating number');
+		var self = this;    	
+
+		SCWeb.core.Server.resolveScAddr(['number', 'lang_ru', 'lang_en'], function (keynodes) {
+			var number = keynodes['number'];
+			var lang_ru = keynodes['lang_ru'];
+			var lang_en = keynodes['lang_en'];
+		
+			window.sctpClient.create_node(sc_type_const).done(function (num) {
+				console.log('create node num:',num);
+				window.sctpClient.create_link().done(function (numName) {
+					console.log('create link numName:',numName);
+					window.sctpClient.set_link_content(numName, m);
+					window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, num, numName).done(function (commonArcFour) {
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, window.scKeynodes.nrel_system_identifier, commonArcFour);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, number, num);
+						self._createLiterMeasurement(meas, num, elementExample);
+					});
+				});
+				window.sctpClient.create_link().done(function (link_addr) {
+					window.sctpClient.set_link_content(link_addr, m);
+					window.sctpClient.create_arc(sc_type_arc_common | sc_type_const, num, link_addr).done(function (arc_addr) {
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, lang_ru, link_addr);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, lang_en, link_addr);
+						window.sctpClient.create_arc(sc_type_arc_pos_const_perm, window.scKeynodes.nrel_main_idtf, arc_addr);
+					});
+				});
+			});
+		});
+	},
+
+	_createMeasurement: function (meas, numb, elementExample) {
+		var self = this;
+		console.log('creating grams for numb',numb);
+		SCWeb.core.Server.resolveScAddr(['rrel_10_in_23'], function (keynodes) {
+			var rrel_10_in_23 = keynodes['rrel_10_in_23'];
+			window.sctpClient.create_arc(sc_type_arc_pos_const_perm, meas, numb).done(function (arcOne) {
+				window.sctpClient.create_arc(sc_type_arc_pos_const_perm, rrel_10_in_23, arcOne).done(function () {
+					self._findChemicalAmount(elementExample);
+				});
+			});
+		});
+	},
+
 	_createGramMeasurement: function (meas, numb, elementExample) {
 		var self = this;
 		console.log('creating grams for numb',numb);
 		SCWeb.core.Server.resolveScAddr(['rrel_gram'], function (keynodes) {
-		var rrelGram = keynodes['rrel_gram'];
+			var rrel_gram = keynodes['rrel_gram'];
 			window.sctpClient.create_arc(sc_type_arc_pos_const_perm, meas, numb).done(function (arcOne) {
-				window.sctpClient.create_arc(sc_type_arc_pos_const_perm, rrelGram, arcOne).done(function () {
+				window.sctpClient.create_arc(sc_type_arc_pos_const_perm, rrel_gram, arcOne).done(function () {
+					self._findChemicalAmount(elementExample);
+				});
+			});
+		});
+	},
+
+	_createLiterMeasurement: function (meas, numb, elementExample) {
+		var self = this;
+		console.log('creating grams for numb',numb);
+		SCWeb.core.Server.resolveScAddr(['rrel_liter'], function (keynodes) {
+			var rrel_liter = keynodes['rrel_liter'];
+			window.sctpClient.create_arc(sc_type_arc_pos_const_perm, meas, numb).done(function (arcOne) {
+				window.sctpClient.create_arc(sc_type_arc_pos_const_perm, rrel_liter, arcOne).done(function () {
 					self._findChemicalAmount(elementExample);
 				});
 			});

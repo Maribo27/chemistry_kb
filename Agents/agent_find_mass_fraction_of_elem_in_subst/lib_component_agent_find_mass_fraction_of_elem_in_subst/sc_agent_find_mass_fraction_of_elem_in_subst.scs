@@ -1,0 +1,51 @@
+sc_agent_find_mass_fraction_of_elem_in_subst
+=> nrel_main_idtf:	
+	[sc-агент поиск массовой доли элемента в веществе] (* <- lang_ru;; *);
+	[sc-agent find mass fraction of element in substance] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_find_mass_fraction_of_elem_in_subst_condition => ..sc_agent_find_mass_fraction_of_elem_in_subst_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_find_mass_fraction_of_elem_in_subst
+	};
+	
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_find_mass_fraction_of_elem_in_subst
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_find_mass_fraction_of_elem_in_subst
+		};;
+		
+	-> sc_agent_find_mass_fraction_of_elem_in_subst_scp 
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_find_mass_fraction_of_elem_in_subst_condition
+= [*
+	action_find_mass_fraction_of_elem_in_subst _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> rrel_1:: .._parameter_subst;;
+	.._question _-> rrel_2:: .._parameter_elem;;
+*];;
+
+..sc_agent_find_mass_fraction_of_elem_in_subst_result
+= [*
+	action_find_mass_fraction_of_elem_in_subst _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> rrel_1:: .._parameter_subst;;
+	.._question _-> rrel_2:: .._parameter_elem;;
+*];;

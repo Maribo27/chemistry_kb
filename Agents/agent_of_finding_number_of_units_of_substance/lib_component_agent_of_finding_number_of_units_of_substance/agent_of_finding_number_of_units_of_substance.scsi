@@ -1,0 +1,735 @@
+agent_of_finding_number_of_units_of_substance
+=> nrel_main_idtf:
+	[агентная scp-программа поиска числа частиц вещества] (* <- lang_ru;; *);
+	[agent scp-program of finding number of units of substance] (* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_of_finding_number_of_units_of_substance 
+(*
+	-> rrel_params: .agent_of_finding_number_of_units_of_substance_params 
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+
+	-> rrel_operators: .agent_of_finding_number_of_units_of_substance_operator_set 
+	(*
+		-> rrel_init: .agent_of_finding_number_of_units_of_substance_operator_0 
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_1;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operatorreturn;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_find_number_of_units_of_substance;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_2;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operatorreturn;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_2 
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Agent scp-program of finding number of units of substance started];;
+
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_3;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_3
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer_for_number_of_units_search;;
+
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_4;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_4 
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _substance;;
+
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_5;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_5
+		(*
+			<- searchSetStr3;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _ttype;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc14;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _substance;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _type_set;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_6x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_info;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_6x
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_chemical_amount;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_7x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_6;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_7x
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _meas;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_9x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_8x;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_8x
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _meas;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_9x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_info;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_9x
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _meas;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _rrole;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc22;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_mol;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_10x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_info;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_10x
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rrole;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _n;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_10a;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_info;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_6
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_amount;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_7;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_8;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_7
+		(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_n_if_amount_is_given;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_node: _n;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set;;
+			
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_wait;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_8
+	 	(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_mass;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_9;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_info;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_9
+		(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_n_if_mass_is_given;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _type_set;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: rrel_node: _substance;;
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _n;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set;;
+			
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_wait;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_wait 
+		(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set;;
+			
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_10a;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_10a
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: avogadro;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_11x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_10b;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_10b
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: avogadro;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_11x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_crash;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_11x
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _nodex;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc21;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _rrole;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc22;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_10_in_23_mole;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_12x;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_crash;;
+		*);;
+
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_12x
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _rrole;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _Na;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_10;;
+			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_crash;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_10
+		(*
+			<- contMult;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _N;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _n;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _Na;;
+
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_1;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_1
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _substance;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _vl;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc34;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_N;;
+
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_2;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_2
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _substance;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_3;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_3
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _vl;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_4;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_4
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_N;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_5;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_5
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_6;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_6
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_7;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_7
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: value;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _vl;;
+
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_8;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_8
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: value;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_9;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_9
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_10;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_10
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _meas;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _vl;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc34;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_11;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_11
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _meas;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_12;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_12
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_measurement;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_13;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_13
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_14;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_14
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_15;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_15
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _meas;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _number;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc34;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_10_in_23;;
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_16;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_16
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_17;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_17
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_10_in_23;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_18;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_18
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_19;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_19
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_20;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_20
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
+
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_21;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_21
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: number;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_22;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_22
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_23;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_23
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _number;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _N;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc34;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_24;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_24
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _N;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_25;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_25
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_26;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_26
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_27;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_27
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_28;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_28
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vl;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _N;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc34;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_29;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_29
+		(*
+			<- contStringConcat;;
+			
+			-> rrel_1: rrel_assign: rrel_scp_var: _ans;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _N;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [ *10^23];;
+
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_30;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_30
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _vl;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc33;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ans;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc34;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+			=> nrel_goto:  .agent_of_finding_number_of_units_of_substance_generate_answer_operator_31;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_31
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ans;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_32;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_32
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc33;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_33;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_33
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc13;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc34;;
+		
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_generate_answer_operator_34;;
+		*);;		
+
+		-> .agent_of_finding_number_of_units_of_substance_generate_answer_operator_34
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc4;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_number_of_units_search;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_info;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_error_input_parameter
+		(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_number_of_units_of_substance_operator_message_params 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong input parameter! It must be a substance.];;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set_err;;
+			
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_error_wait;;
+		*);;
+
+		-> .agent_of_finding_mass_of_substance_operator_error_input_data
+		(*
+			<- call;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_finding_number_of_units_of_substance_operator_message_params 
+			(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Not enough data to answer question.];;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set_err;;
+			
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_error_wait;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_error_wait 
+		(*
+			<- waitReturn;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set_err;;
+			
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operator_info;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_crash
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Agent scp-program of finding number of units of substance is crashed];;
+
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operatorreturn;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operator_info
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Agent scp-program of finding number of units of substance is ended];;
+
+			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operatorreturn;;
+		*);;
+
+		-> .agent_of_finding_number_of_units_of_substance_operatorreturn 
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;
