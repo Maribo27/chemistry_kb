@@ -1,0 +1,22 @@
+ui_menu_find_substance_is_metal
+<- ui_user_command_class_atom; ui_user_command_class_view_kb;
+=> nrel_main_idtf: 
+	[Является ли данное вещество металлом?]
+	(* <- lang_ru;;*);
+	[Is this substance a metall?] 
+	(* <- lang_en;;*);;
+
+ui_menu_find_substance_is_metal
+=> ui_nrel_command_template:
+	[*
+		action_find_substance_is_metal _-> ._action_find_substance_is_metal_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_substance_is_metal_instance _<- question;;
+	*];;
+
+ui_menu_find_substance_is_metal
+=> ui_nrel_command_lang_template: 
+	[Определение является ли $ui_arg_1 металлом] (* <- lang_ru;;*);
+	[Is $ui_arg_1 a metal] (* <- lang_en;;*);;
