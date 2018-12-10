@@ -27,6 +27,5 @@ ui_menu_na_view_kb_chemistry <= nrel_ui_commands_decomposition:
 	ui_menu_find_isomers_of_hydrocarbons;
 	ui_menu_finding_wavelength_when_going_from_one_level_by_step;
 	ui_menu_finding_state_of_aggregation;
-	ui_menu_finding_density_of_substance;
-  ui_menu_find_substance_is_metal
+	ui_menu_finding_density_of_substance
 };;
