@@ -1,0 +1,178 @@
+agent_finding_state_of_aggregation
+=> nrel_main_idtf:
+    [агентная scp-программа поиска агрегатного состояния заданного вещества] (* <- lang_ru;; *);
+	[agent scp-program search state of aggregation of given substance] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_finding_state_of_aggregation 
+    (*
+        -> rrel_params: .agent_finding_state_of_aggregation_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+        -> rrel_operators: .agent_finding_state_of_aggregation_operator_set
+            (*
+                -> rrel_init: .agent_finding_state_of_aggregation_operator1A 
+                    (*
+                        <-searchElStr3;;
+
+                        ->rrel_1: rrel_assign: rrel_scp_var: _temp;;
+                        ->rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+                        ->rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operator1B;;
+                    *);;
+                
+                -> .agent_finding_state_of_aggregation_operator1B
+                    (*
+                        <-searchElStr3;;
+
+                        ->rrel_1: rrel_fixed: rrel_scp_const: action_finding_state_of_aggregation;;
+                        ->rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:_arc1;;
+                        ->rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+                        =>nrel_then: .agent_finding_state_of_aggregation_operator1C;;
+                        =>nrel_else: .agent_finding_state_of_aggregation_operator_return;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operator1C
+                    (*
+                        <-searchElStr3;;
+            
+                        ->rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+                        ->rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+                        ->rrel_3: rrel_assign: rrel_scp_var: _pattern;;
+
+                        =>nrel_then: .agent_finding_state_of_aggregation_operator_gen_answer;;
+                        =>nrel_else: .agent_finding_state_of_aggregation_operator_message;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operator_gen_answer
+                    (*
+                        <-genEl;;
+
+                        ->rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operator1D1;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operator1D1
+                    (*
+                        <- genElStr3;;
+
+			            -> rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+			            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+			            -> rrel_3: rrel_fixed: rrel_scp_var: _pattern;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operator1D2;;
+                    *);;
+                ->.agent_finding_state_of_aggregation_operator1D2
+                    (*
+                        <-genElStr3;;
+                        ->rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+                        ->rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+                        ->rrel_3: rrel_fixed: rrel_scp_const: nrel_state_of_aggregation;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operator1D3_0;;
+                    *);;    
+                -> .agent_finding_state_of_aggregation_operator1D3_0
+                    (*
+                        <-searchSetStr5;;
+                        -> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+                        -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			            -> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+                        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_state_of_aggregation;;
+
+                        -> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+                        -> rrel_set_3: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+                        -> rrel_set_4: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+
+                        =>nrel_then: .agent_finding_state_of_aggregation_operator1D3;;
+                        =>nrel_else: .agent_finding_state_of_aggregation_operaator_return;;
+                    *);;
+
+                -> .agent_finding_state_of_aggregation_operator1D3
+                    (*
+                        <-searchSetStr3;;
+
+                        ->rrel_1: rrel_fixed: rrel_scp_var: _node;;
+                        ->rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm:_arc1;;
+                        ->rrel_3: rrel_assign: rrel_scp_var: _value;;
+                        
+                        -> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
+
+                        =>nrel_then: .agent_finding_state_of_aggregation_operator1D4;;
+                        =>nrel_else: .agent_finding_state_of_aggregation_operaator_return;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operator1D4
+                    (*
+                        <-genElStr3;;
+
+                        ->rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+                        ->rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc;;
+                        ->rrel_3: rrel_fixed: rrel_scp_var: _value;;
+
+                        =>nrel_goto:.agent_finding_state_of_aggregation_operator1D5;;
+
+                    *);;
+
+                ->.agent_finding_state_of_aggregation_operator1D5
+                    (*
+                        <-genElStr3;;
+
+                        ->rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
+                        ->rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc1;;
+                        ->rrel_3: rrel_fixed: rrel_scp_var: _arc;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operator_answer;;
+                    *);;
+                ->.agent_finding_state_of_aggregation_operator_answer
+                    (*
+                        <- genElStr5;;
+
+			            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			            -> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common:_arc1;;
+			            -> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;							
+            			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operator_success;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operator_success
+                    (*
+                        <- genElStr3;;
+                        
+                        -> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+			            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			            -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operaator_return;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operator_message
+                    (*
+                        <- call;;
+
+                        -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+                        -> rrel_2: rrel_fixed: rrel_scp_const: .agent_finding_state_of_aggregation_operator_message_params
+                            (*
+                                -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+                                -> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! It must be a structure(rrel_struct).];;
+                            *);;
+                        -> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+                        =>nrel_goto: .agent_finding_state_of_aggregation_operator_message_wait;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operator_message_wait
+                    (*
+                        <- waitReturn;;
+
+                        -> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+                        => nrel_goto: .agent_finding_state_of_aggregation_operaator_return;;
+                    *);;
+                -> .agent_finding_state_of_aggregation_operaator_return
+                    (*
+                        <-return;;
+                    *);;
+            *);;
+    *);;
