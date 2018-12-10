@@ -96,3 +96,54 @@ example_subst_CO
 		*);;
 	*);;
 *);;
+
+subst_H -> example_subst_h;;
+example_subst_h
+=> nrel_main_idtf:
+	[водород, объёмом 116 литров](* <- lang_ru;; *);
+=> nrel_amount: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_liter: ...
+		(*
+			<- number;;
+			=> nrel_main_idtf:[116](*<-lang_ru;; <- lang_en;;*);;
+		*);;
+	*);;
+*);;
+
+CO -> example_subst_co;;
+example_subst_co
+=> nrel_main_idtf:
+	[оксид углерода, химическим количеством 5 моль](* <- lang_ru;; *);
+=> nrel_chemical_amount: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_mol: ...
+		(*
+			<- number;;
+			=> nrel_main_idtf:[5](*<-lang_ru;; <- lang_en;;*);;
+		*);;
+	*);;
+*);;
+
+water -> example_subst_h2o;;
+example_subst_h2o
+=> nrel_main_idtf:
+	[вода, массой 57 грамм](* <- lang_ru;; *);
+=> nrel_mass: ...
+(*
+	<- value;;
+	<= nrel_measurement:...
+	(*
+		-> rrel_gram: ...
+		(*
+			<- number;;
+			=> nrel_main_idtf:[57](*<-lang_ru;; <- lang_en;;*);;
+		*);;
+	*);;
+*);;
