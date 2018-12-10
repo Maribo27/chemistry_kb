@@ -1,0 +1,37 @@
+lib_component_agent_of_finding_substance_is_metal
+=> nrel_main_idtf:
+	[Компонент библиотеки. SC-агент определение является вещество металлом]
+	(* <- lang_ru;; *);
+	[Library component. SC-agent find is substance metal]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_substance_is_metal;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_finding_substance_is_metal; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_substance_is_metal;;
+
+action_find_substance_is_metal => nrel_main_idtf:
+	[Действие. Определение металл вещество или нет]
+	(* <- lang_ru;;	*);
+	[Action. Search is substance metal]
+	(* <- lang_en;;	*);;
+
