@@ -147,7 +147,7 @@ scp_program -> agent_of_finding_number_of_units_of_substance
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 
-			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_10;;
+			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_10a;;
 			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_info;;
 		*);;
 
@@ -246,8 +246,6 @@ scp_program -> agent_of_finding_number_of_units_of_substance
 			=> nrel_then: .agent_of_finding_number_of_units_of_substance_operator_11x;;
 			=> nrel_else: .agent_of_finding_number_of_units_of_substance_operator_crash;;
 		*);;
-
-//эта хуйня может объебаться
 
 		-> .agent_of_finding_number_of_units_of_substance_operator_11x
 		(*
@@ -728,17 +726,6 @@ scp_program -> agent_of_finding_number_of_units_of_substance
 
 			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operatorreturn;;
 		*);;
-
-		-> .agent_of_finding_number_of_units_of_substance_operator_objebalsya
-		(*
-			<- printNl;;
-
-			-> rrel_1: rrel_scp_const: [Ты объебался];;
-
-			=> nrel_goto: .agent_of_finding_number_of_units_of_substance_operatorreturn;;
-		*);;
-
-
 
 		-> .agent_of_finding_number_of_units_of_substance_operatorreturn 
 		(*
