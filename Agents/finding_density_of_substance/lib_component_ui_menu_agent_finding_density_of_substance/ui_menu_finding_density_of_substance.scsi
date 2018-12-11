@@ -1,0 +1,14 @@
+ui_menu_finding_density_of_substance <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;
+=> nrel_main_idtf: [Найти плотность заданного химического вещества] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find the density of given chemical substance] (* <- lang_en;;*);;
+ui_menu_finding_density_of_substance => ui_nrel_command_template:
+	[*
+		action_finding_density_of_substance _-> ._action_finding_density_of_substance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_finding_density_of_substance _<- question;;
+	*];;
+
+ui_menu_finding_density_of_substance => ui_nrel_command_lang_template: [Какую плотность имеет заданный химическое вещество: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_finding_density_of_substance => ui_nrel_command_lang_template: [What is the density of given chemical substance: $ui_arg_1] (* <- lang_en;;*);;

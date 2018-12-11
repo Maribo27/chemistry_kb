@@ -61,9 +61,9 @@ cp -Rfv $base_path/components/electronLayerBuilder/static/* $sc_web_static_path
 cp -Rfv $base_path/components/salt/static/* $sc_web_static_path
 cp -Rfv $base_path/components/wavelength/static/* $sc_web_static_path
 cp -Rfv $base_path/components/solubility_table/static/* $sc_web_static_path
+cp -Rfv $base_path/components/drFormula/static/* $sc_web_static_path
 
 stage "Install component"
-
 
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/solution_ui_component.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/pencil.js
@@ -75,6 +75,7 @@ append_js $sc_web_path/templates/components.html components/js/chemistry_compone
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/periodic_table.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/wavelength_ui_component.js
 append_js $sc_web_path/templates/components.html components/js/chemistry_components/solubility_table.js
+append_js $sc_web_path/templates/components.html components/js/chemistry_components/drFormula.js
 
 append_css $sc_web_path/templates/components.html components/css/chemistry_components/solubility_table.css
 append_css $sc_web_path/templates/components.html components/css/chemistry_components/ui_periodic_table.css

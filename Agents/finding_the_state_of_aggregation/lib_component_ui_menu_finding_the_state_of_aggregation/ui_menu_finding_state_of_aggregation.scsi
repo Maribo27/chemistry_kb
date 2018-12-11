@@ -1,0 +1,15 @@
+ui_menu_finding_state_of_aggregation <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти агрегатное состояние заданного химического вещества] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find the state of aggregation of given chemical substance] (* <- lang_en;;*);;
+ui_menu_finding_state_of_aggregation => ui_nrel_command_template:
+	[*
+		action_finding_state_of_aggregation _-> ._action_finding_state_of_aggregation_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_finding_state_of_aggregation_instance _<- question;;
+	*];;
+
+ui_menu_finding_state_of_aggregation => ui_nrel_command_lang_template: [Какое агрегатное состояние имеет заданный химический элемент: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_finding_state_of_aggregation => ui_nrel_command_lang_template: [What is the aggregate state of given chemical substance: $ui_arg_1] (* <- lang_en;;*);;

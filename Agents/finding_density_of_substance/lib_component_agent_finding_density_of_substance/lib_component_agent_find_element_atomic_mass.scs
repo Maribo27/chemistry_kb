@@ -1,0 +1,35 @@
+lib_component_agent_finding_density_of_substance
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска плотности заданного химического вещества]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search density of given chemical substance]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_finding_density_of_substance; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Domains.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+sc_node_not_relation -> action_finding_density_of_substance;;
+
+action_finding_density_of_substance => nrel_main_idtf:
+	[действие. Поиск плотности заданного химического вещества]
+	(* <- lang_ru;;	*);
+	[action. Search density of given chemical substance]
+	(* <- lang_en;;	*);;
+

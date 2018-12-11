@@ -8,8 +8,9 @@ catalyst <- rrel_key_sc_element:
 		... 
 		(*
 		<- sc_definition;;
-		=> nrel_main_idtf: [Определение: катализатор] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Definition: catalyst] (* <- lang_en;; *);;
+		=> nrel_main_idtf: [Опр.(катализатор)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(catalyst)] (* <- lang_en;; *);;
+		<= nrel_using_constants: nrel_reaction; chemical_substance; reaction_product;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -19,13 +20,12 @@ catalyst <- rrel_key_sc_element:
 			*);;
 		*);;
 
-catalyst <= nrel_using_constants: nrel_reaction; chemical_substance; reaction_product;;
 
 catalyst <- rrel_key_sc_element:
 		...
 		(*
-		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		=> nrel_main_idtf: [Утв.(катализатор) ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(catalyst) ] (* <- lang_en;; *);;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*
@@ -38,8 +38,8 @@ catalyst <- rrel_key_sc_element:
 
 catalyst <- rrel_key_sc_element:...
 		(*
-		=> nrel_main_idtf: [Утверждение: ] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Statement: ] (* <- lang_en;; *);;
+		=> nrel_main_idtf: [Утв.(катализатор)  ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(catalyst) ] (* <- lang_en;; *);;
 		<- sc_statement;;
 		<= nrel_sc_text_translation: ...
 			(*
