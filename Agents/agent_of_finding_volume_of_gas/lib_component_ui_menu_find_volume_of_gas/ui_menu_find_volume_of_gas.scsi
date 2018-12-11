@@ -1,0 +1,22 @@
+ui_menu_find_volume_of_gas 
+<- ui_user_command_class_atom; ui_user_command_class_view_kb;
+=> nrel_main_idtf: 
+	[Каков обьем данного газа?]
+	(* <- lang_ru;;*);
+	[What volume of this gas?] 
+	(* <- lang_en;;*);;
+
+ui_menu_find_volume_of_gas 
+=> ui_nrel_command_template:
+	[*
+		action_find_volume_of_gas _-> ._action_find_volume_of_gas_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_volume_of_gas_instance _<- question;;
+	*];;
+
+ui_menu_find_volume_of_gas 
+=> ui_nrel_command_lang_template: 
+	[Поиск обьем $ui_arg_1] (* <- lang_ru;;*);
+	[Search volume of $ui_arg_1] (* <- lang_en;;*);;
