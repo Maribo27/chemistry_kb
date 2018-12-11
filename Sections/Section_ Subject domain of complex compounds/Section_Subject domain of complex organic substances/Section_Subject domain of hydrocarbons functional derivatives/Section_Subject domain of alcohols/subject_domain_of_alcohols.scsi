@@ -24,6 +24,7 @@ subject_domain_of_alcohols
     amyl_alcohol;
     propanol;
     butanol;
+  -> rrel_explored_relation:
     nrel_alcohol_fermentation;
     nrel_alcoholysis;;
 
