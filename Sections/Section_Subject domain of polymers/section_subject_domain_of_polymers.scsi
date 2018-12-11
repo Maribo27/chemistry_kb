@@ -388,8 +388,8 @@ reactoplast
 	*);;
 	<= nrel_sc_text_translation:...
 	(*
-		-> rrel_example:[Реактопласты (термореактивные пластмассы) — пластмассы, переработка которых в изделия сопровождается необратимой химической реакцией, приводящей к образованию неплавкого и нерастворимого материала.](* <- lang_ru;; => nrel_format: format_html;; *);;
-		-> rrel_example:[Reactor plastics (thermosetting plastics) - plastics, the processing of which into products is accompanied by an irreversible chemical reaction, leading to the formation of non-meltable and insoluble material.](* <- lang_en;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="reactoplast">Реактопласты (термореактивные пластмассы)</sc_element></b> — <sc_element sys_idtf="plastic">пластмассы</sc_element>, переработка которых в изделия сопровождается необратимой химической реакцией, приводящей к образованию неплавкого и нерастворимого материала.](* <- lang_ru;; => nrel_format: format_html;; *);;
+		-> rrel_example:[<b><sc_element sys_idtf="reactoplast">Reactor plastics (thermosetting plastics)</sc_element</b> - <sc_element sys_idtf="plastic">plastics</sc_element>, the processing of which into products is accompanied by an irreversible chemical reaction, leading to the formation of non-meltable and insoluble material.](* <- lang_en;; => nrel_format: format_html;; *);;
 	*);;
 *);;
 
@@ -405,8 +405,8 @@ plastic
 ...
 (*	
 	=> nrel_main_idtf:[Разбиение по признаку природы полимера и характера его перехода из вязкотекучего в стеклообразное состояние при формовании изделий](* <- lang_ru;; *);;
-	-> thermoplastic_plastics;;
-	-> thermosetting_plastics;;
+	-> thermoplastic_plastic;;
+	-> thermosetting_plastic;;
 *);
 
 <- rrel_key_sc_element:
