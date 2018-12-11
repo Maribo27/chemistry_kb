@@ -176,7 +176,6 @@ graphite => nrel_main_idtf:[графит](*<-lang_ru;;*);;
 paint => nrel_main_idtf:[краска](*<-lang_ru;;*);;
 pen => nrel_main_idtf:[ручка](*<-lang_ru;;*);;
 table => nrel_main_idtf:[стол](*<-lang_ru;;*);;
-plastic => nrel_main_idtf:[пластик](*<-lang_ru;;*);;
 rubber => nrel_main_idtf:[резина](*<-lang_ru;;*);;
 paper => nrel_main_idtf:[бумага](*<-lang_ru;;*);;
 carbonated_water => nrel_main_idtf:[газированная вода](*<-lang_ru;;*);;
