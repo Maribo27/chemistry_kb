@@ -54,7 +54,7 @@ subject_domain_of_chemistry_application_area
 	organic_chemistry;
 	ceramics;
 	agrochemistry;
-	polymers;
+	polymer;
 	elastomers;
 	explosives;
 	pharmaceutical_chemistry;
@@ -232,7 +232,7 @@ chemical_industry
 	-> organic_chemistry;;
 	-> ceramics;;
 	-> agrochemistry;;
-	-> polymers;;
+	-> polymer;;
 	-> elastomers;;
 	-> explosives;;
 	-> pharmaceutical_chemistry;;
@@ -291,27 +291,6 @@ agrochemistry
     <= nrel_sc_text_translation:...
     (*
 		-> rrel_example:"file://html/agrochemistry_en.html"(* <- lang_en;; *);;
-    *);;
-*);;
-
-polymer
-<- sc_node_not_relation;
-
-=> nrel_main_idtf:
-	[полимер](* <- lang_ru;; *);
-	[polymer](* <- lang_en;; *);
-
-<- rrel_key_sc_element:...
-(*
-	<- definition;;
-    <= nrel_sc_text_translation:...
-    (*
-		-> rrel_example:"file://html/polymers_rus.html"(* <- lang_ru;; *);;
-    *);;
-
-    <= nrel_sc_text_translation:...
-    (*
-		-> rrel_example:"file://html/polymers_en.html"(* <- lang_en;; *);;
     *);;
 *);;
 
