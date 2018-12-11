@@ -34,9 +34,19 @@ scp_program -> agent_finding_substance_is_metal
                         ->rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:_arc1;;
                         ->rrel_3: rrel_fixed: rrel_scp_var: _aim;;
 
-                        =>nrel_then: .agent_finding_substance_is_metal_operator1C;;
+                        =>nrel_then: .agent_finding_substance_is_metal_operator1C4;;
                         =>nrel_else: .agent_finding_substance_is_metal_operator_return;;
                     *);;
+
+                    -> .agent_finding_substance_is_metal_operator1C4 
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Agent scp-program of finding is substance metal started];;
+
+			=> nrel_goto: .agent_finding_substance_is_metal_operator1C;;
+		*);;
+
                 -> .agent_finding_substance_is_metal_operator1C
                     (*
                         <-searchElStr3;;
@@ -80,7 +90,7 @@ scp_program -> agent_finding_substance_is_metal
                         <-searchSetStr5;;
                         -> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
                         -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
-			            -> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			            -> rrel_3: rrel_assign: rrel_scp_var: _node1;;
 			            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
                         -> rrel_5: rrel_fixed: rrel_scp_const: rrel_key_sc_elemennt;;
 
@@ -94,9 +104,9 @@ scp_program -> agent_finding_substance_is_metal
 				-> .agent_finding_substance_is_metal_operator1D3_1
                     (*
                         <-searchSetStr5;;
-                        -> rrel_1: rrel_fixed: rrel_scp_var: _pattern;;
+                        -> rrel_1: rrel_fixed: rrel_scp_var: _node1;;
                         -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
-			            -> rrel_3: rrel_assign: rrel_scp_var: _node;;
+			            -> rrel_3: rrel_assign: rrel_scp_var: _node2;;
 			            -> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
                         -> rrel_5: rrel_fixed: rrel_scp_const: nrel_using_constants;;
 
@@ -112,9 +122,9 @@ scp_program -> agent_finding_substance_is_metal
                     (*
                         <-searchSetStr3;;
 
-                        ->rrel_1: rrel_fixed: rrel_scp_var: _node;;
+                        ->rrel_1: rrel_fixed: rrel_scp_var: _node2;;
                         ->rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm:_arc1;;
-                        ->rrel_3: rrel_assign: rrel_scp_var: metal;;
+                        ->rrel_3: rrel_fixed: rrel_scp_const: metal;;
                         
                         -> rrel_set_2: rrel_fixed: rrel_scp_var: rrel_set: _answer_for_checking_domains_of_relation;;
 
@@ -127,7 +137,7 @@ scp_program -> agent_finding_substance_is_metal
 
                         ->rrel_1: rrel_fixed: rrel_scp_var: _answer_for_checking_domains_of_relation;;
                         ->rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc;;
-                        ->rrel_3: rrel_fixed: rrel_scp_var: metal;;
+                        ->rrel_3: rrel_fixed: rrel_scp_const: metal;;
 
                         =>nrel_goto:.agent_finding_substance_is_metal_operator1D5;;
 
@@ -163,30 +173,17 @@ scp_program -> agent_finding_substance_is_metal
 			            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			            -> rrel_3: rrel_fixed: rrel_scp_var: _aim;;
 
-                        =>nrel_goto: .agent_finding_substance_is_metal_operaator_return;;
+                        =>nrel_goto: .agent_finding_substance_is_metal_operaator_end;;
                     *);;
-                -> .agent_finding_substance_is_metal_operator_message
-                    (*
-                        <- call;;
+               -> .agent_finding_substance_is_metal_operaator_end
+		(*
+			<- printNl;;
 
-                        -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
-                        -> rrel_2: rrel_fixed: rrel_scp_const: .agent_finding_substance_is_metal_operator_message_params
-                            (*
-                                -> rrel_1: rrel_fixed: rrel_scp_var: _aim;;
-                                -> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! It must be a structure(rrel_struct).];;
-                            *);;
-                        -> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+			-> rrel_1: rrel_scp_const: [Agent scp-program of finding is substance metal is ended];;
 
-                        =>nrel_goto: .agent_finding_substance_is_metal_operator_message_wait;;
-                    *);;
-                -> .agent_finding_substance_is_metal_operator_message_wait
-                    (*
-                        <- waitReturn;;
-
-                        -> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
-
-                        => nrel_goto: .agent_finding_substance_is_metal_operaator_return;;
-                    *);;
+			=> nrel_goto: .agent_finding_substance_is_metal_operaator_return;;
+		*);;
+     
                 -> .agent_finding_substance_is_metal_operaator_return
                     (*
                         <-return;;

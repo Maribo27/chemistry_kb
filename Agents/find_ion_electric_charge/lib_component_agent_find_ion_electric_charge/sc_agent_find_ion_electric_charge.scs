@@ -1,7 +1,9 @@
 sc_agent_find_ion_electric_charge
 => nrel_main_idtf:	
-	[sc-агент поиска электрического заряда заданного иона] (* <- lang_ru;; *);
-	[sc-agent search electric charge of given ion] (* <- lang_en;; *);
+	[sc-агент поиска электрического заряда заданного иона] 
+	(* <- lang_ru;; *);
+	[sc-agent search electric charge of given ion] 
+	(* <- lang_en;; *);
 	
 <- abstract_sc_agent;
 
