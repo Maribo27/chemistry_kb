@@ -1,0 +1,15 @@
+atomic_multiplicity_two -> (subst_O -> elem_O);;
+atomic_multiplicity_two -> (water -> elem_H);;
+atomic_multiplicity_one -> (water -> elem_O);;
+atomic_multiplicity_one -> (subst_Fe -> elem_Fe);;
+atomic_multiplicity_one -> (subst_Mg -> elem_Mg);;
+atomic_multiplicity_one -> (subst_Mn -> elem_Mn);;
+atomic_multiplicity_one -> (subst_Mo -> elem_Mo);;
+atomic_multiplicity_one -> (subst_Cl -> elem_Cl);;
+atomic_multiplicity_one -> (subst_Nb -> elem_Nb);;
+atomic_multiplicity_one -> (subst_Zn -> elem_Zn);;
+atomic_multiplicity_one -> (subst_Os -> elem_Os);;
+atomic_multiplicity_one -> (subst_Ni -> elem_Ni);;
+atomic_multiplicity_one -> (subst_Nd -> elem_Nd);;
+atomic_multiplicity_one -> (CO -> elem_C);;
+atomic_multiplicity_one -> (CO -> elem_O);;

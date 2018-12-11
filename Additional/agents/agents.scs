@@ -1,3 +1,0 @@
-concept_hydrogen_oxide -> H2O;;
-H2O => nrel_inclusion:O;;
-H2O => nrel_inclusion:H;;
