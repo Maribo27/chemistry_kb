@@ -1,5 +1,5 @@
 subject_domain_of_monosaccharides
-=> nrel_main_idtf: 
+=> nrel_main_idtf:
 	[Предметная область моносахаридов]
 	(* <- lang_ru;;*);
 	[Subject domain of monosaccharides]
@@ -9,9 +9,25 @@ subject_domain_of_monosaccharides
 
 -> rrel_maximum_studied_object_class: monosaccharide;
 -> rrel_not_maximum_studied_object_class:
+	acetone;
+	aldose;
+	carbohydrate_metabolism;
+	crystal_substance;
+	formalin;
 	galactose;
 	glucose;
-	maltose;;
+	glycogen;
+	heptose;
+	hexose;
+	ketose;
+	lactic_acid;
+	maltose;
+	natural_disaccharide;
+	octose;
+	pentose;
+	ribulose;
+	tetrose;
+	triose;;
 
 monosaccharide
 <- sc_node_not_relation;
@@ -20,7 +36,7 @@ monosaccharide
 
 <= nrel_subdividing:
 ...
-(*	
+(*
 	=> nrel_main_idtf:[Разбиение по содержаниюn асимметричных атомов углерода](* <- lang_ru;; *);;
 	-> triose;;
 	-> tetrose;;
@@ -32,7 +48,7 @@ monosaccharide
 
 <= nrel_subdividing:
 ...
-(*	
+(*
 	=> nrel_main_idtf:[Разбиение по наличию альдо- или кето-группы](* <- lang_ru;; *);;
 	-> aldose;;
 	-> ketose;;
@@ -223,7 +239,7 @@ crystal_substance
 
 formalin
   <- sc_node_not_relation;
-  
+
   => nrel_main_idtf:
     [формалин] (* <- lang_ru;; *);
     [formalin] (* <- lang_en;; *);
