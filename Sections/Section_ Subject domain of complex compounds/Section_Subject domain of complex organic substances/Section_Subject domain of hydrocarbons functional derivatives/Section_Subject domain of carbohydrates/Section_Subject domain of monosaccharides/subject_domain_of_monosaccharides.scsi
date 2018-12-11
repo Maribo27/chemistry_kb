@@ -161,16 +161,16 @@ aldose
 
 carbohydrate_metabolism
 <- sc_node_not_relation;
-=> nrel_main_idtf:[углеводный_обмен](* <- lang_ru;; *);
-=> nrel_main_idtf:[carbohydrate_metabolism](* <- lang_en;; *);
+=> nrel_main_idtf:[углеводный обмен](* <- lang_ru;; *);
+=> nrel_main_idtf:[carbohydrate metabolism](* <- lang_en;; *);
 => nrel_idtf:[метаболизм углеводов](* <- lang_ru;; *);
 
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
 	=> nrel_main_idtf:
-		[Опр. (углеводный_обмен)](* <- lang_ru;; *);
-		[Def. (carbohydrate_metabolism)](* <- lang_en;; *);;
+		[Опр. (углеводный обмен)](* <- lang_ru;; *);
+		[Def. (carbohydrate metabolism)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
 		-> carbohydrate_metabolism;;
@@ -189,8 +189,8 @@ carbohydrate_metabolism
 (*
 	<- explanation;;
 	=> nrel_main_idtf:
-		[Утв. (углеводный_обмен)](* <- lang_ru;; *);
-		[Stat. (carbohydrate_metabolism)](* <- lang_en;; *);;
+		[Утв. (углеводный обмен)](* <- lang_ru;; *);
+		[Stat. (carbohydrate metabolism)](* <- lang_en;; *);;
 	<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[<b><sc_element sys_idtf="carbohydrate_metabolism">Углеводный обмен</sc_element></b> в <b><sc_element sys_idtf="organism">организмах</sc_element></b> человека состоит из семи процессов.](* <- lang_ru;; => nrel_format: format_html;;*);;
@@ -200,15 +200,15 @@ carbohydrate_metabolism
 
 crystal_substance
 <- sc_node_not_relation;
-=> nrel_main_idtf:[кристаллическое_вещество](* <- lang_ru;; *);
-=> nrel_main_idtf:[crystal_substance](* <- lang_en;; *);
+=> nrel_main_idtf:[кристаллическое вещество](* <- lang_ru;; *);
+=> nrel_main_idtf:[crystal substance](* <- lang_en;; *);
 
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
 	=> nrel_main_idtf:
-		[Опр. (кристаллическое_вещество)](* <- lang_ru;; *);
-		[Def. (crystal_substance)](* <- lang_en;; *);;
+		[Опр. (кристаллическое вещество)](* <- lang_ru;; *);
+		[Def. (crystal substance)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
 		-> crystal_substance;;
@@ -228,8 +228,8 @@ crystal_substance
 (*
 	<- explanation;;
 	=> nrel_main_idtf:
-		[Утв. (кристаллическое_вещество)](* <- lang_ru;; *);
-		[Stat. (crystal_substance)](* <- lang_en;; *);;
+		[Утв. (кристаллическое вещество)](* <- lang_ru;; *);
+		[Stat. (crystal ubstance)](* <- lang_en;; *);;
 	<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Большинство <b><sc_element sys_idtf="solid">твердых веществ</sc_element></b> существует в кристаллическом состоянии, которое отличается повышенной стабильностью, но это не означает, что они имеют <b><sc_element sys_idtf="crystall">кристаллы</sc_element></b> в прямом смысле этого слова.](* <- lang_ru;; => nrel_format: format_html;;*);;
@@ -503,7 +503,7 @@ lactic_acid
 	<- definition;;
 	=> nrel_main_idtf:
 		[Опр. (Молочная кислота)](* <- lang_ru;; *);
-		[Def. (lactic_acid)](* <- lang_en;; *);;
+		[Def. (lactic acid)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
 		-> lactic_acid;;
@@ -522,7 +522,7 @@ lactic_acid
 	<- explanation;;
 	=> nrel_main_idtf:
 		[Утв. (Молочная кислота)](* <- lang_ru;; *);
-		[Stat. (lactic_acid)](* <- lang_en;; *);;
+		[Stat. (lactic acid)](* <- lang_en;; *);;
 	<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[<b><sc_element sys_idtf="lactic_acid">Молочная кислота</sc_element></b> образуется при молочнокислом брожении сахаров, в частности, в прокисшем молоке, при брожении вина и пива.](* <- lang_ru;; => nrel_format: format_html;;*);;
@@ -570,15 +570,15 @@ maltose
 
 natural_disaccharide
 <- sc_node_not_relation;
-=> nrel_main_idtf:[природный_дисахарид](* <- lang_ru;; *);
-=> nrel_main_idtf:[natural_disaccharide](* <- lang_en;; *);
+=> nrel_main_idtf:[природный дисахарид](* <- lang_ru;; *);
+=> nrel_main_idtf:[natural disaccharide](* <- lang_en;; *);
 
 <- rrel_key_sc_element:...
 (*
 	<- definition;;
 	=> nrel_main_idtf:
-		[Опр. (природный_дисахарид)](* <- lang_ru;; *);
-		[Def. (natural_disaccharide)](* <- lang_en;; *);;
+		[Опр. (природный дисахарид)](* <- lang_ru;; *);
+		[Def. (natural disaccharide)](* <- lang_en;; *);;
 	<= nrel_using_constants:...
 	(*
 		-> natural_disaccharide;;
@@ -595,8 +595,8 @@ natural_disaccharide
 (*
 	<- explanation;;
 	=> nrel_main_idtf:
-		[Утв. (природный_дисахарид)](* <- lang_ru;; *);
-		[Stat. (natural_disaccharide)](* <- lang_en;; *);;
+		[Утв. (природный дисахарид)](* <- lang_ru;; *);
+		[Stat. (natural disaccharide)](* <- lang_en;; *);;
 	<= nrel_sc_text_translation:...
 		(*
 			-> rrel_example:[Обычно <b><sc_element sys_idtf="disaccharide">дисахарид</sc_element></b> получают из природных источников (например, <b><sc_element sys_idtf="sucrose">сахарозу</sc_element></b> — из сахарной свёклы или сахарного тростника, лактозу — из молока животных).](* <- lang_ru;; => nrel_format: format_html;;*);;
