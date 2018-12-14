@@ -3,6 +3,7 @@ subject_domain_of_polymers
 	=> nrel_main_idtf:[Subject domain of polymers](* <- lang_en;; *);
 <- subject_domain;
 -> rrel_maximum_studied_object_class: polymer;
+-> rrel_-> rrel_explored_relation: nrel_polymerization_reaction; nrel_degree_of_polymerization; nrel_copolymerization_reaction;
 -> rrel_not_maximum_studied_object_class:
 	monomer_unit;
 	compound_unit;
