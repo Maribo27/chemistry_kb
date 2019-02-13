@@ -20,6 +20,8 @@ heptane;
 octane;
 nonane;
 decane;
+
+->rrel_explored_relation:
 nrel_homologue;
 nrel_isomer;
 
