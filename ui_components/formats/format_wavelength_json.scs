@@ -1,3 +1,4 @@
+/*
 format_wavelength_json
 <- sc_node_not_relation;
 <- format;
@@ -13,3 +14,4 @@ format_wavelength_json
 	*);
 => nrel_mimetype:
 	[application/json];;
+	*/

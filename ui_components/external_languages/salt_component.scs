@@ -1,3 +1,4 @@
+/*
 salt_component 
 <- ui_user_command_class_noatom;
 <- ui_external_languages;
@@ -6,3 +7,4 @@ salt_component
     (*<- lang_ru;;*);
     [Salts section commands]
     (* <- lang_rn;; *);;
+    */

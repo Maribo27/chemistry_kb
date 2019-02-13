@@ -1,3 +1,4 @@
+/*
 wavelength_ui_component 
 <- ui_user_command_class_noatom;
 <- ui_external_languages;
@@ -6,3 +7,4 @@ wavelength_ui_component
     (*<- lang_ru;;*);
     [wavelengths section commands]
     (* <- lang_en;; *);;
+*/
